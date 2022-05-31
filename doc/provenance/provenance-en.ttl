@@ -15,6 +15,7 @@
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0>;
 	 prov:wasRevisionOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.3.2>;
@@ -24,4 +25,5 @@
 :agent1 a prov:Agent; foaf:name "Marina Aguado".
 :agent2 a prov:Agent; foaf:name "Polymnia Vasilopoulou".
 :agent3 a prov:Agent; foaf:name "Edna Ruckhaus".
-:agent4 a prov:Agent; foaf:name "Oscar Corcho:Wouter Beek".
+:agent4 a prov:Agent; foaf:name "Oscar Corcho".
+:agent5 a prov:Agent; foaf:name "Wouter Beek".
