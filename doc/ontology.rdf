@@ -235,7 +235,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI mangnetic fields</rdfs:label>
+        <rdfs:label xml:lang="en">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -252,7 +252,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Existence and TSI compliance of limits in harmonics in the traction current of vehicles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI traction harmonics</rdfs:label>
+        <rdfs:label xml:lang="en">Existence and TSI compliance of limits in harmonics in the traction current of vehicles</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -334,7 +334,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-06</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the type of the contact line system</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">contact line system type</rdfs:label>
+        <rdfs:label xml:lang="en">Type of contact line system</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -359,7 +359,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which contact strip materials are permitted to be used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">contact strip material</rdfs:label>
+        <rdfs:label xml:lang="en">Permitted contact strip material</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -401,7 +401,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Radio requirements used for demonstrating technical compatibility data</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">data radio compatible</rdfs:label>
+        <rdfs:label xml:lang="en">Radio system compatibility data</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -426,7 +426,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Use of eddy current brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">eddy current braking</rdfs:label>
+        <rdfs:label xml:lang="en">Use of eddy current brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -517,7 +517,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">References the geolocation of the end of a tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">end location</rdfs:label>
+        <rdfs:label xml:lang="en">End of tunnel</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -542,7 +542,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-06</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the traction supply system (nominal voltage and frequency).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">energy supply system</rdfs:label>
+        <rdfs:label xml:lang="en">Energy supply system</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -567,7 +567,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:modified>
         <rdfs:comment xml:lang="en">ETCS baseline installed lineside/on-board</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">etcs base line</rdfs:label>
+        <rdfs:label xml:lang="en">ETCS baseline</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -626,7 +626,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">ETCS infill</rdfs:label>
+        <rdfs:label xml:lang="en">ETCS infill installed lineside</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -659,7 +659,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-07</terms:modified>
         <rdfs:comment xml:lang="en">ERTMS / ETCS application level which expresses the possible operating relationships between track and train</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">etcs level type</rdfs:label>
+        <rdfs:label xml:lang="en">ETCS level</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -736,7 +736,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Railway Freight Corridor that the line is designated to.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">freight corridor</rdfs:label>
+        <rdfs:label xml:lang="en">Part of a Railway freight corridor</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -753,7 +753,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Section with train detection limitation, specific for route compatibility check on French network.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">french train detection system limitation</rdfs:label>
+        <rdfs:label xml:lang="en">Section with train detection limitation, only for the French network</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -779,7 +779,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Gauges as defined in European standard or other local gauges, including lower or upper part.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">gauging profile</rdfs:label>
+        <rdfs:label xml:lang="en">Gauging</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -796,7 +796,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">GSM-R active mobiles</rdfs:label>
+        <rdfs:label xml:lang="en">Advised required number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -813,7 +813,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">GSM-R optional functions</rdfs:label>
+        <rdfs:label xml:lang="en">Optional GSM-R functions</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -870,9 +870,9 @@ above the local reference ellipsoid).</rdfs:comment>
         <rinfIndex>1.1.1.3.3.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
-        <rdfs:comment xml:lang="en">GSM-R networks covered by a roaming agreement</rdfs:comment>
+        <rdfs:comment xml:lang="en">GSM-R networks covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/XXXXXXXX</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">GSM-R network coverage</rdfs:label>
+        <rdfs:label xml:lang="en">GSM-R networks covered by a roaming agreement</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -961,7 +961,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of radio legacy systems installed</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">legacy radio system</rdfs:label>
+        <rdfs:label xml:lang="en">Other radio systems installed (Radio Legacy Systems)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -979,7 +979,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Classification of a line according to the INF TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">line category</rdfs:label>
+        <rdfs:label xml:lang="en">Category of line</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -995,7 +995,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Related national railway line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">line national ID</rdfs:label>
+        <rdfs:label xml:lang="en">National line identification</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1011,7 +1011,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Indicates a relationship with a national railway line at a specific kilometer point.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">line referece</rdfs:label>
+        <rdfs:label xml:lang="en">Railway location of Operational point</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1028,7 +1028,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">A combination of the line category and speed at the weakest point of the track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">load capability</rdfs:label>
+        <rdfs:label xml:lang="en">Load Capability</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1053,7 +1053,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Use of magnetic brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">magnetic braking</rdfs:label>
+        <rdfs:label xml:lang="en">Use of magnetic brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1109,7 +1109,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">max sanding output</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum amount of sand</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1143,7 +1143,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Minimum permitted axle load per category of Vehicle, given in tons depending of the category of vehicle.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min axle load per vehicle category</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum axle load by vehicle category</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1233,7 +1233,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:modified>
         <rdfs:comment xml:lang="en">Operational Point at the end of a Section of Line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">OP end</rdfs:label>
+        <rdfs:label xml:lang="en">Operational Point at end of Section of Line</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1250,7 +1250,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:modified>
         <rdfs:comment xml:lang="en">Operational Point at the start of a Section of Line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">OP start</rdfs:label>
+        <rdfs:label xml:lang="en">Operational Point at start of Section of Line</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1267,7 +1267,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
         <rdfs:comment xml:lang="en">Indicates the type on an operational point.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">operational point type</rdfs:label>
+        <rdfs:label xml:lang="en">Type of operational point</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1301,6 +1301,21 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://data.europa.eu/949/otherPantographHead -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/otherPantographHead">
+        <rinfIndex>1.1.1.2.3.2</rinfIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-03</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-03</terms:modified>
+        <rdfs:comment xml:lang="en">Indication of which non-TSI compliant pantograph heads are allowed to be used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Accepted other pantograph heads</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://data.europa.eu/949/otherTrainProtection -->
 
 
@@ -1312,25 +1327,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Other train protection, control and warning systems for degraded situation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">other train protection</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://data.europa.eu/949/pantographHead -->
-
-
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/pantographHead">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rinfIndex>1.1.1.2.3.1</rinfIndex>
-        <rinfIndex>1.1.1.2.3.2</rinfIndex>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
-        <rdfs:comment xml:lang="en">Indication of which TSI compliant pantograph heads are allowed to be used.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">tsi pantograph head</rdfs:label>
+        <rdfs:label xml:lang="en">Other train protection, control and warning systems for degraded situation</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1403,7 +1400,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-02</terms:modified>
         <rdfs:comment xml:lang="en">Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">platform height</rdfs:label>
+        <rdfs:label xml:lang="en">Height of platform</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1452,7 +1449,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Coding for combined transport for semi-trailers as defined in UIC Code.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">profile number for semi-trailers</rdfs:label>
+        <rdfs:label xml:lang="en">Standard combined transport profile number for semi-trailers</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1469,7 +1466,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Coding for combined transport with swap bodies as defined in UIC Code.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">profile number for swap bodies</rdfs:label>
+        <rdfs:label xml:lang="en">Standard combined transport profile number for swap bodies</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1494,7 +1491,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which class B system is installed</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">protection legacy system</rdfs:label>
+        <rdfs:label xml:lang="en">Train protection legacy system</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1535,7 +1532,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">An angle defining the inclination of the head of a rail relative to the running surface.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">rail inclination</rdfs:label>
+        <rdfs:label xml:lang="en">Rail inclination</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1554,7 +1551,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Applicable rolling stock fire category for a tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">rolling stock fire category</rdfs:label>
+        <rdfs:label xml:lang="en">Fire category of rolling stock required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1604,7 +1601,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Indicates the nature of a section of line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">section of line nature</rdfs:label>
+        <rdfs:label xml:lang="en">Nature of Section of Line</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1630,7 +1627,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">References the geolocation of the start of a tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">start location</rdfs:label>
+        <rdfs:label xml:lang="en">Start of tunnel</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1690,7 +1687,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Indicates the related TEN (trans-European network).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TEN classification</rdfs:label>
+        <rdfs:label xml:lang="en">TEN classification (of track, of platform, of siding)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1747,7 +1744,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:modified>
         <rdfs:comment xml:lang="en">Track normal running direction.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">track direction</rdfs:label>
+        <rdfs:label xml:lang="en">Normal running direction</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1780,7 +1777,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Type of track circuits or axle counter to which specific checks are needed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">detection system specific check</rdfs:label>
+        <rdfs:label xml:lang="en">Type of track circuits to which specific checks are needed</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1805,7 +1802,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-07</terms:modified>
         <rdfs:comment xml:lang="en">Indication of supported types of train detection systems.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">train detection system type</rdfs:label>
+        <rdfs:label xml:lang="en">Type of train detection system</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1822,7 +1819,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of rules on the use of composite brake blocks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant composite brake blocks</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of rules on the use of composite brake blocks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1839,7 +1836,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of Ferromagnetic characteristics of wheel material required.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant ferromagnetic wheel material</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of Ferromagnetic characteristics of wheel material required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1856,7 +1853,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether required distance between two consecutive axles is compliant with the TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant max distance consecutive axles</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of maximum permitted distance between two consecutive axles</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1873,7 +1870,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant max impedance wheelset</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1890,7 +1887,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of rules for vehicle metal construction.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant metal construction</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of rules for vehicle metal construction</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1907,7 +1904,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of rules for metal-free space around wheels.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant metal free space</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of rules for metal-free space around wheels</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1924,7 +1921,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of rules on combination of RST characteristics influencing shunting impedance.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant RST shunt impedance</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of rules on combination of RST characteristics influencing shunting impedance</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1941,7 +1938,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI Compliance of rules on sand characteristics.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant sand characteristics</rdfs:label>
+        <rdfs:label xml:lang="en">TSI Compliance of rules on sand characteristics</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1958,7 +1955,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant sanding</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of sanding</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1975,7 +1972,24 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">TSI compliance of rules on shunt assisting devices.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliant shunt devices</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of rules on shunt assisting devices</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/tsiPantographHead -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/tsiPantographHead">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rinfIndex>1.1.1.2.3.1</rinfIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
+        <rdfs:comment xml:lang="en">Indication of which TSI compliant pantograph heads are allowed to be used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Accepted TSI compliant pantograph heads</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -2049,7 +2063,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Radio requirements used for demonstrating technical compatibility voice</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">voice radio compatible</rdfs:label>
+        <rdfs:label xml:lang="en">Radio system compatibility voice</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -2075,7 +2089,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">A single value expressed in millimetres that identifies the track and vehicle wheel set gauge.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">wheel set gauge</rdfs:label>
+        <rdfs:label xml:lang="en">Nominal track gauge</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -2128,7 +2142,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Existence of limit for acceleration of train if stopping or recovering speed close to a level crossing expressed in a specific reference acceleration curve.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">acceleration allowed level crossings</rdfs:label>
+        <rdfs:label xml:lang="en">Acceleration allowed at level crossing</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2145,7 +2159,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">additional braking information document</rdfs:label>
+        <rdfs:label xml:lang="en">Documents available by the IM relating to braking performance</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2212,7 +2226,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-02</terms:modified>
         <rdfs:comment xml:lang="en">Information of the train access level for which the boarding aid can be used. Data is presented as the vertical difference that is overcome by the platform boarding aid in millimetres. The value “0” means that the platform is not equipped with a platform boarding aid.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">area boarding aid</rdfs:label>
+        <rdfs:label xml:lang="en">Areas of use of the platform boarding aid</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2229,7 +2243,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-02</terms:modified>
         <rdfs:comment xml:lang="en">Indication of existence of equipment or staff supporting the train crew in starting the train.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">assistance starting train</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of platform assistance for starting train</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2246,7 +2260,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of whether an automatic dropping device (ADD) required on the vehicle.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">automatic dropping device required</rdfs:label>
+        <rdfs:label xml:lang="en">Automatic dropping device required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2344,7 +2358,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">cant deficiency</rdfs:label>
+        <rdfs:label xml:lang="en">Cant deficiency</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2378,7 +2392,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Document with the procedure(s) for static and dynamic route compatibility checks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">structure check document</rdfs:label>
+        <rdfs:label xml:lang="en">Document with the procedure(s) for static and dynamic route compatibility checks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2395,7 +2409,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
         <rdfs:comment xml:lang="en">Compliance of the tunnel with INF TSI at the maximum permitted speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">compliance with INF TSI</rdfs:label>
+        <rdfs:label xml:lang="en">Compliance of the tunnel with INF TSI</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2462,7 +2476,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
         <rdfs:comment xml:lang="en">Smallest cross section area in square metres of the tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">cross section area</rdfs:label>
+        <rdfs:label xml:lang="en">Cross section area</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2479,7 +2493,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of whether an on board current or power limitation function on vehicles is required.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">current limitation required</rdfs:label>
+        <rdfs:label xml:lang="en">Current or power limitation on board required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2513,7 +2527,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EI declarations concerning requirements of ENE (ENErgy subsytem) on the specific track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of demonstration ENE</rdfs:label>
+        <rdfs:label xml:lang="en">EI declaration of demonstration for track (ENE)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2539,7 +2553,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EI declarations concerning requirements of INF (INFrastructure) TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of demonstration INF</rdfs:label>
+        <rdfs:label xml:lang="en">EI declaration of demonstration for track/siding [INF]</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2558,7 +2572,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EI declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of demonstration SRT</rdfs:label>
+        <rdfs:label xml:lang="en">EI declaration of demonstration for tunnel (SRT)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2626,7 +2640,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether it is allowed to use diesel or other thermal traction in the tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">diesel thermal allowed</rdfs:label>
+        <rdfs:label xml:lang="en">Diesel or other thermal traction allowed</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2643,7 +2657,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Distance between the signboard authorizing the driver to “raise pantograph” or “close the circuit breaker” after passing the phase separation and the end of the phase separation section. Specific for route compatibility check on French network.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">distance sign and phase</rdfs:label>
+        <rdfs:label xml:lang="en">Distance between signboard and phase separation ending</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2694,7 +2708,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Document with the conditions for the use of eddy current brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">eddy current braking conditions document</rdfs:label>
+        <rdfs:label xml:lang="en">Document with the conditions for the use of eddy current brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2778,7 +2792,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-06</terms:modified>
         <rdfs:comment xml:lang="en">Indication if the traction supply system (nominal voltage and frequency) is fully compliant with TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">energy supply system TSI compliant</rdfs:label>
+        <rdfs:label xml:lang="en">Energy supply system TSI compliant</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2812,7 +2826,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether infill is required to access the line for safety reasons.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">ETCS infill line access</rdfs:label>
+        <rdfs:label xml:lang="en">ETCS infill necessary for line access</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2846,7 +2860,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether data for national packet 44 applications is transmitted between track and train.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">ETCS national packet 44</rdfs:label>
+        <rdfs:label xml:lang="en">ETCS national packet 44 application implemented</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2931,7 +2945,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether the use of on-board device for flange lubrication is forbidden</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">flange lube forbidden</rdfs:label>
+        <rdfs:label xml:lang="en">Use of flange lubrication forbidden</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2948,7 +2962,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether rules for activation or deactivation of flange lubrication exist.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">flange lube rules</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of rules on on-board flange lubrication</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -2983,7 +2997,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">gauging check location</rdfs:label>
+        <rdfs:label xml:lang="en">Railway location of particular points requiring specific checks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3001,7 +3015,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Document with the transversal section of the particular points requiring specific checks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">gauging traversal document</rdfs:label>
+        <rdfs:label xml:lang="en">Document with the transversal section of the particular points requiring specific checks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3053,7 +3067,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Maximum value of the gradient for stabling tracks expressed in millimetres per metre.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">gradient</rdfs:label>
+        <rdfs:label xml:lang="en">Gradient for stabling tracks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3070,7 +3084,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Sequence of gradient values and locations of change in gradient.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">gradient profile</rdfs:label>
+        <rdfs:label xml:lang="en">Gradient profile</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3087,7 +3101,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Any additional information on network characteristics or corresponding document available from the IM and stored by the Agency, e.g.; interference level, leading to the recommendation of additional on-board protection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">GSM-R additional network info</rdfs:label>
+        <rdfs:label xml:lang="en">Additional information on network characteristics</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3104,7 +3118,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication if there is no GSMR coverage.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">GSM-R no coverage</rdfs:label>
+        <rdfs:label xml:lang="en">No GSM-R coverage</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3138,7 +3152,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has additional braking information</rdfs:label>
+        <rdfs:label xml:lang="en">Availability by the IM of additional information</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3172,7 +3186,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Specifies whether track construction is with sleepers embedded in ballast or not..</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has ballast</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of ballast</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3223,7 +3237,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether restrictions or conditions due to partial compliance with the CCS TSI exist.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has ETCS restrictions conditions</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of operating restrictions or conditions</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3240,7 +3254,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether an installation for electric shore supply exists (fixed installation for servicing trains).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has electric shore supply</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of electric shore supply</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3259,7 +3273,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether emergency plan exists.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has emergency plan</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of emergency plan</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3276,7 +3290,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether exists an installation for external cleaning facility (fixed installation for servicing trains) as defined in INF TSIs.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has external cleaning</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of external cleaning facilities</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3293,7 +3307,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Existence of trackside hot axle box detector (HABD).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has axle box detector</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of trackside hot axle box detector (HABD)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3310,7 +3324,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether level crossings (including pedestrian track crossing) exist on the section of line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has level crossings</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of level crossings</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3344,7 +3358,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication if other train protection, control and warning systems in normal operation are installed lineside.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has other train protection</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of other train protection, control and warning systems installed</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3378,7 +3392,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether exists an installation for refuelling (fixed installation for servicing trains) as defined in INF TSIs.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has refuelling</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of refuelling</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3403,7 +3417,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-06</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether regenerative braking is permitted or not.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has regenerative brake</rdfs:label>
+        <rdfs:label xml:lang="en">Permission for regenerative braking</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3420,7 +3434,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether an installation for sand restocking exists (fixed installation for servicing trains).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has sand restocking</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of sand restocking</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3454,7 +3468,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Climatic conditions on the line are severe according to European standard.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has severe weather conditions</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of severe climatic conditions</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3488,7 +3502,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of existence of system separation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has system separation</rdfs:label>
+        <rdfs:label xml:lang="en">System separation</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3505,7 +3519,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication if there is any train detection system installed and fully compliant with the CCS TSI requirements.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has TSI train detection</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of train detection system fully compliant with the TSI</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3522,7 +3536,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether exists an installation for toilet discharge (fixed installation for servicing trains) as defined in INF TSIs.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has toilet discharge</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of toilet discharge</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3556,7 +3570,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether exists an installation for water restocking (fixed installation for servicing trains) as defined in INF TSIs.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">has water restocking</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of water restocking</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3590,7 +3604,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Compliance of structures with the High Speed Load Model (HSLM).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">high speed load model compliance</rdfs:label>
+        <rdfs:label xml:lang="en">Compliance of structures with the High Speed Load Model (HSLM) dynamic load model</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3607,7 +3621,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">hot axle box detector direction</rdfs:label>
+        <rdfs:label xml:lang="en">Direction of measurement of trackside HABD</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3624,7 +3638,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Generation of trackside HABD. Specific for the French Italian and Swedish networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">hot axle box detector generation</rdfs:label>
+        <rdfs:label xml:lang="en">Generation of trackside HABD</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3641,7 +3655,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">hot axle box detector identification</rdfs:label>
+        <rdfs:label xml:lang="en">Identification of trackside HABD</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3658,7 +3672,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">hot axle box detector location</rdfs:label>
+        <rdfs:label xml:lang="en">Railway location of trackside HABD</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3675,7 +3689,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">hot axle box detector TSI compliant</rdfs:label>
+        <rdfs:label xml:lang="en">Trackside HABD TSI compliant</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3685,6 +3699,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/imCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.1.0.0.0.1</rinfIndex>
         <rinfIndex>1.1.1.1.8.1</rinfIndex>
@@ -3697,7 +3712,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Infrastructure Manager means any body or undertaking that is responsible in particular for establishing and maintaining railway infrastructure or a part thereof. The Code is a unique identifier for the Infrastructure Manager and it shall be verified on national level.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">IM code</rdfs:label>
+        <rdfs:label xml:lang="en">IM&apos;s code</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3714,7 +3729,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of a track being part of a route with noise restrictions</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">is quiet route</rdfs:label>
+        <rdfs:label xml:lang="en">Belonging to a quieter route</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3767,9 +3782,9 @@ above the local reference ellipsoid).</rdfs:comment>
         <rinfIndex>1.2.2.0.5.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-01</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
-        <rdfs:comment xml:lang="en">Length of a physical object.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Length of a physical object, which can be a section of line, a tunnel, a platform, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">length</rdfs:label>
+        <rdfs:label xml:lang="en">Length (of Section of Line, of Tunnel, of Siding, Usable lenght of Platform)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3843,7 +3858,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Existence of rules and restrictions of a strictly local nature.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">local rules or restrictions</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of rules and restrictions of a strictly local nature</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3868,7 +3883,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Documents regarding the rules or restrictions of a strictly local nature available by the IM.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">local rules or restrictions document</rdfs:label>
+        <rdfs:label xml:lang="en">Reference of the documents regarding the rules or restrictions of a strictly local nature available by the IM</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3902,7 +3917,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Document with the conditions for the use of magnetic brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">magnetic braking conditions document</rdfs:label>
+        <rdfs:label xml:lang="en">Document with the conditions for the use of magnetic brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3946,7 +3961,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the maximum allowable train current at standstill for DC systems expressed in amperes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum standstill current per pantograph</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum current at standstill per pantograph</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3971,7 +3986,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Indication of maximum permitted distance between two consecutive axles in case of TSI non-compliance, given in millimetres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">max distance consecutive axles</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum permitted distance between two consecutive axles in case of TSI non-compliance</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -3988,7 +4003,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Indication of maximum distance between end of train and first axle, given in millimetres, applicable for both sides (front and rear) of a vehicle or train.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">max distance end train first axles</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum distance between end of train and first axle</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4013,7 +4028,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Maximum permitted flange height, given in millimiters.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">max flange height</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum permitted height of the flange</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4038,7 +4053,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">The value of maximum permitted impedance given in ohm in case of TSI non-compliance.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">max impedance wheelset</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum permitted impedance between opposite wheels of a wheelset when not TSI compliant</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4087,7 +4102,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki2.railml.org/wiki/IS:maxTrainCurrent_electrification</terms:source>
         <rdfs:comment xml:lang="en">Maximum current taken by the complete train (composition of one or more units) expressed in amperes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum train current</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum train current</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4104,7 +4119,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Highest point of the section of line above sea level in reference to Normal Amsterdam’s Peil (NAP). The value of the parameter shall be given in metres, with tolerance of +/-100m.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum altitude</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum altitude</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4155,7 +4170,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">The maximum value of the braking distance [in meters] of a train shall be given for the maximum line speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum braking distance</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum braking distance requested</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4180,7 +4195,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the maximum contact wire height expressed in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum contact wire height</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum contact wire height</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4231,7 +4246,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum permitted speed</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum permitted speed</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4290,7 +4305,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Maximum tempertaure allowed for unrestricted operation access, according to European standard.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum temperature</rdfs:label>
+        <rdfs:label xml:lang="en">Temperature range (maximum)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4307,7 +4322,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">maximum train deceleration</rdfs:label>
+        <rdfs:label xml:lang="en">Maximum train deceleration</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4349,7 +4364,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Minimum permitted axle load, given in tons.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min axle load</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted axle load</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4367,7 +4382,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Indication of minimum permitted distance between two consecutive axles, given in millimetres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min distance consecutive axles</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted distance between two consecutive axles</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4392,7 +4407,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Indication of minimum permitted distance between first and last axles, given in millimetres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min distance first and last axles</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted distance between first and last axle</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4417,7 +4432,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Minimum permitted flange height, given in millimiters.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min flange height</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted height of the flange</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4442,7 +4457,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Minimum permitted flange thickness, given in millimiters.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min flange thickness</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted thickness of the flange</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4467,7 +4482,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Minimum permitted width of the rim, given in millimiters.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min rim width</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted width of the rim</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4509,7 +4524,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01</terms:modified>
         <rdfs:comment xml:lang="en">Minimum permitted wheel diameter, given in millimiters.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">min wheel diameter</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum permitted wheel diameter</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4551,7 +4566,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the minimum contact wire height expressed in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">minimum contact wire height</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum contact wire height</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4595,7 +4610,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Radius of the smallest horizontal curve of the track in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">minimum horizontal radius</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum radius of horizontal curve</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4620,7 +4635,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Minimum tempertaure allowed for unrestricted operation access, according to European standard.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">minimum temperature</rdfs:label>
+        <rdfs:label xml:lang="en">Temperature range (minimum)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4637,7 +4652,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Radius of the smallest vertical curve expressed in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">minimum vertical curve radius</rdfs:label>
+        <rdfs:label xml:lang="en">minimum radius of vertical curve</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4662,7 +4677,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">minimum wheel diameter</rdfs:label>
+        <rdfs:label xml:lang="en">Minimum wheel diameter for fixed obtuse crossings</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4679,7 +4694,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether more than one train protection, control and warning system is required to be on-board and active simultaneously.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">multiple train protection required</rdfs:label>
+        <rdfs:label xml:lang="en">Need for more than one train protection, control and warning system required on board</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4696,7 +4711,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">National classification for load capability.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">national load capability</rdfs:label>
+        <rdfs:label xml:lang="en">National classification for load capability</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4715,7 +4730,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
         <rdfs:comment xml:lang="en">Applicable national rolling stock fire category for a tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">national rolling stock fire category</rdfs:label>
+        <rdfs:label xml:lang="en">National fire category of rolling stock required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4812,7 +4827,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-13</terms:modified>
         <rdfs:comment xml:lang="en">Name of an Operational Point.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">op name</rdfs:label>
+        <rdfs:label xml:lang="en">Name of Operational point</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4829,7 +4844,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Type of track gauge changeover facility.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">track gauge changeover facility type</rdfs:label>
+        <rdfs:label xml:lang="en">Type of track gauge changeover facility</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4931,7 +4946,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of contact force allowed expressed in newtons.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">permitted contact force</rdfs:label>
+        <rdfs:label xml:lang="en">Contact force permitted</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4948,7 +4963,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Required information on phase separation. Data is structured as: length [NNN] + switch off breaker [Y/N] + lower pantograph [Y/N]).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">phase information</rdfs:label>
+        <rdfs:label xml:lang="en">Information on phase separation</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4965,7 +4980,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of existence of phase separation and required information.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">phase separation</rdfs:label>
+        <rdfs:label xml:lang="en">Phase separation</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5091,7 +5106,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Existence of roaming to public networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">public network roaming</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of roaming to public networks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5108,7 +5123,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Details on roaming to public networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">public network roaming details</rdfs:label>
+        <rdfs:label xml:lang="en">Details on roaming to public networks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5159,7 +5174,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">raised pantographs distance and speed</rdfs:label>
+        <rdfs:label xml:lang="en">Requirements for number of raised pantographs and spacing between them, at the given speed</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5176,7 +5191,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication of a sections where two steady red lights are required in accordance with Regulation (EU) 2019/773</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">red lights required</rdfs:label>
+        <rdfs:label xml:lang="en">Steady red lights required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5225,7 +5240,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether possibility to activate/deactivate sanding devices by driver, according to instructions from the Infrastructure Manager, is required or not.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">required sanding override</rdfs:label>
+        <rdfs:label xml:lang="en">Sanding override by driver required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5252,6 +5267,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/sidingId">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Siding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.2.2.0.0.2</rinfIndex>
@@ -5259,7 +5275,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-13</terms:modified>
         <rdfs:comment xml:lang="en">Unique siding identification or number within an Operational Point.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">siding id</rdfs:label>
+        <rdfs:label xml:lang="en">Identification of siding</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5293,7 +5309,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">This parameters allows the IM to provide plain text with specific information about the track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">specific information</rdfs:label>
+        <rdfs:label xml:lang="en">Specific information</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5428,7 +5444,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Railway location of structures requiring specific checks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">structure check location</rdfs:label>
+        <rdfs:label xml:lang="en">Railway location of structures requiring specific checks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5445,7 +5461,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Existence of switch over between different protection, control and warning systems while running.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">switch protect control warning</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of switch over between different protection, control and warning systems while running</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5462,7 +5478,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether a switch over between different radio systems and no communication system whilst running exist.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">switch radio system</rdfs:label>
+        <rdfs:label xml:lang="en">Existence of switch over between different radio systems</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5479,7 +5495,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Required information on system separation. Data is structured as: length [NNN] + switch off breaker [Y/N] + lower pantograph [Y/N] +[CharacterString].</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">system separation information</rdfs:label>
+        <rdfs:label xml:lang="en">Information on system separation</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5489,6 +5505,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/tafTAPCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/OperationalPoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.2.0.0.0.3</rinfIndex>
@@ -5496,7 +5513,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Primary code developed for TAF/TAP.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TAF/TAP code</rdfs:label>
+        <rdfs:label xml:lang="en">OP TAF/TAP primary code</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5598,7 +5615,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether tilting functions are supported by ETCS.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">tilting supported</rdfs:label>
+        <rdfs:label xml:lang="en">Indication whether tilting functions are supported by ETCS</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5625,6 +5642,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/trackId">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.1.1.0.0.1</rinfIndex>
@@ -5633,7 +5651,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:modified>
         <rdfs:comment xml:lang="en">Unique track identification or unique track number within a Section of Line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">track id</rdfs:label>
+        <rdfs:label xml:lang="en">Identification of track</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5667,7 +5685,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">detection system specific check document</rdfs:label>
+        <rdfs:label xml:lang="en">Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5684,7 +5702,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">train integrity on-board required</rdfs:label>
+        <rdfs:label xml:lang="en">Train integrity confirmation from on-board necessary for line access</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5733,7 +5751,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
         <rdfs:comment xml:lang="en">Switches and crossings are maintained to in service limit dimension as specified in TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">TSI compliance for switches and crossings</rdfs:label>
+        <rdfs:label xml:lang="en">TSI compliance of in service values for switches and crossings</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5763,7 +5781,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
         <rdfs:comment xml:lang="en">Reference to a document available from the IM with precise description of the tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">tunnel document reference</rdfs:label>
+        <rdfs:label xml:lang="en">Reference to a document available from the IM with precise description of the tunnel</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5773,6 +5791,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/tunnelIdentification">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Tunnel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.1.1.1.8.2</rinfIndex>
@@ -5782,7 +5801,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-13</terms:modified>
         <rdfs:comment xml:lang="en">Unique tunnel identification or unique number within Member State.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">tunnel identification</rdfs:label>
+        <rdfs:label xml:lang="en">Tunnel identification</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5815,7 +5834,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-06</terms:modified>
         <rdfs:comment xml:lang="en">Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014. Specific for the French network.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">umax2</rdfs:label>
+        <rdfs:label xml:lang="en">Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014.</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5825,6 +5844,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/uopid">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/OperationalPoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.2.0.0.0.2</rinfIndex>
@@ -5832,7 +5852,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-11</terms:modified>
         <rdfs:comment xml:lang="en">Code composed of country code and alphanumeric operational point code, as defined in RINF.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">unique operational point id</rdfs:label>
+        <rdfs:label xml:lang="en">Unique OP ID</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5857,7 +5877,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Indication if group 555 is needed/used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">uses group 555</rdfs:label>
+        <rdfs:label xml:lang="en">Use of group 555</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -5988,9 +6008,9 @@ above the local reference ellipsoid).</rdfs:comment>
         <rinfIndex>1.1.1.3.1.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
-        <rdfs:comment xml:lang="en">Unique number for EC declarations concerning requirements of CSS (Command - Control and Signalling subsystem) on the specific track.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Unique number for EC declarations concerning requirements of CCS (Command - Control and Signalling subsystem) on the specific track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of verification CSS</rdfs:label>
+        <rdfs:label xml:lang="en">EC declaration of verification for track (CCS)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -6007,7 +6027,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EC declarations concerning requirements of ENE (ENErgy subsystem) on the specific track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of verification ENE</rdfs:label>
+        <rdfs:label xml:lang="en">EC declaration of verification for track (ENE)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -6033,7 +6053,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EC declarations concerning requirements of INF (INFrastructure) TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of verification INF</rdfs:label>
+        <rdfs:label xml:lang="en">EC declaration of verification for track/siding [INF]</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -6052,7 +6072,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-02</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EC declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">declaration of verification SRT</rdfs:label>
+        <rdfs:label xml:lang="en">EC declaration of verification for tunnel (SRT)</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -6136,6 +6156,13 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:label xml:lang="en">wheelchair spaces</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
     
 
 

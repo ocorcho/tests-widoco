@@ -127,7 +127,7 @@
 <http://data.europa.eu/949/TSIMagneticFields> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle."@en .
 <http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#label> "TSI mangnetic fields"@en .
+<http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#label> "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle"@en .
 <http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/TSITractionHarmonics
@@ -139,7 +139,7 @@
 <http://data.europa.eu/949/TSITractionHarmonics> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence and TSI compliance of limits in harmonics in the traction current of vehicles."@en .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#label> "TSI traction harmonics"@en .
+<http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#label> "Existence and TSI compliance of limits in harmonics in the traction current of vehicles"@en .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/authorizedCountry
@@ -196,7 +196,7 @@
 <http://data.europa.eu/949/contactLineSystemType> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the type of the contact line system"@en .
 <http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "contact line system type"@en .
+<http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of contact line system"@en .
 <http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/contactStripMaterial
@@ -217,7 +217,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/contactStripMaterial> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which contact strip materials are permitted to be used."@en .
 <http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "contact strip material"@en .
+<http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Permitted contact strip material"@en .
 <http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/dataGSMRNetwork
@@ -250,7 +250,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/dataRadioCompatible> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility data"@en .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "data radio compatible"@en .
+<http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "Radio system compatibility data"@en .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/eddyCurrentBraking
@@ -271,7 +271,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/eddyCurrentBraking> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of eddy current brakes."@en .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "eddy current braking"@en .
+<http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "Use of eddy current brakes"@en .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/elementA
@@ -338,7 +338,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/endLocation> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/endLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "References the geolocation of the end of a tunnel."@en .
 <http://data.europa.eu/949/endLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/endLocation> <http://www.w3.org/2000/01/rdf-schema#label> "end location"@en .
+<http://data.europa.eu/949/endLocation> <http://www.w3.org/2000/01/rdf-schema#label> "End of tunnel"@en .
 <http://data.europa.eu/949/endLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/energySupplySystem
@@ -359,7 +359,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/energySupplySystem> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the traction supply system (nominal voltage and frequency)."@en .
 <http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#label> "energy supply system"@en .
+<http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Energy supply system"@en .
 <http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsBaseline
@@ -380,7 +380,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsBaseline> <http://purl.org/dc/terms/modified> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS baseline installed lineside/on-board"@en .
 <http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#label> "etcs base line"@en .
+<http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS baseline"@en .
 <http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsDegradedSituation
@@ -425,7 +425,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsInfill> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation."@en .
 <http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS infill"@en .
+<http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS infill installed lineside"@en .
 <http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsLevel
@@ -448,7 +448,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsLevelType> <http://purl.org/dc/terms/modified> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#comment> "ERTMS / ETCS application level which expresses the possible operating relationships between track and train"@en .
 <http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#label> "etcs level type"@en .
+<http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS level"@en .
 <http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsMVersion
@@ -506,7 +506,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/freightCorridor> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway Freight Corridor that the line is designated to."@en .
 <http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#label> "freight corridor"@en .
+<http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#label> "Part of a Railway freight corridor"@en .
 <http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/frenchTrainDetectionSystemLimitation
@@ -518,7 +518,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Section with train detection limitation, specific for route compatibility check on French network."@en .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "french train detection system limitation"@en .
+<http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "Section with train detection limitation, only for the French network"@en .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gaugingProfile
@@ -540,7 +540,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gaugingProfile> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Gauges as defined in European standard or other local gauges, including lower or upper part."@en .
 <http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#label> "gauging profile"@en .
+<http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Gauging"@en .
 <http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gsmRActiveMobiles
@@ -552,7 +552,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption."@en .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R active mobiles"@en .
+<http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#label> "Advised required number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption"@en .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gsmROptionalFunctions
@@ -564,7 +564,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria."@en .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R optional functions"@en .
+<http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#label> "Optional GSM-R functions"@en .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gsmRRadioDataCommunication
@@ -607,9 +607,9 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.5" .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R networks covered by a roaming agreement"@en .
+<http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R networks covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/XXXXXXXX"@en .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R network coverage"@en .
+<http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R networks covered by a roaming agreement"@en .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasAbstraction
@@ -674,7 +674,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/legacyRadioSystem> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of radio legacy systems installed"@en .
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#label> "legacy radio system"@en .
+<http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Other radio systems installed (Radio Legacy Systems)"@en .
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/lineCategory
@@ -687,7 +687,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/lineCategory> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of a line according to the INF TSI."@en .
 <http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "line category"@en .
+<http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Category of line"@en .
 <http://data.europa.eu/949/lineCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/lineNationalId
@@ -698,7 +698,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/lineNationalId> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/lineNationalId> <http://www.w3.org/2000/01/rdf-schema#comment> "Related national railway line."@en .
 <http://data.europa.eu/949/lineNationalId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/lineNationalId> <http://www.w3.org/2000/01/rdf-schema#label> "line national ID"@en .
+<http://data.europa.eu/949/lineNationalId> <http://www.w3.org/2000/01/rdf-schema#label> "National line identification"@en .
 <http://data.europa.eu/949/lineNationalId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/lineReference
@@ -709,7 +709,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/lineReference> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/lineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a relationship with a national railway line at a specific kilometer point."@en .
 <http://data.europa.eu/949/lineReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/lineReference> <http://www.w3.org/2000/01/rdf-schema#label> "line referece"@en .
+<http://data.europa.eu/949/lineReference> <http://www.w3.org/2000/01/rdf-schema#label> "Railway location of Operational point"@en .
 <http://data.europa.eu/949/lineReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/loadCapability
@@ -721,7 +721,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/loadCapability> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "A combination of the line category and speed at the weakest point of the track."@en .
 <http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#label> "load capability"@en .
+<http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#label> "Load Capability"@en .
 <http://data.europa.eu/949/loadCapability> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/magneticBraking
@@ -742,7 +742,7 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/magneticBraking> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of magnetic brakes."@en .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "magnetic braking"@en .
+<http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "Use of magnetic brakes"@en .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/manufacturer
@@ -784,7 +784,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxSandingOutput> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams."@en .
 <http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#label> "max sanding output"@en .
+<http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum amount of sand"@en .
 <http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumSpeedAndCantDeficiency
@@ -808,7 +808,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted axle load per category of Vehicle, given in tons depending of the category of vehicle."@en .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#label> "min axle load per vehicle category"@en .
+<http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum axle load by vehicle category"@en .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/navigability
@@ -868,7 +868,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/opEnd> <http://purl.org/dc/terms/modified> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/opEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Operational Point at the end of a Section of Line."@en .
 <http://data.europa.eu/949/opEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/opEnd> <http://www.w3.org/2000/01/rdf-schema#label> "OP end"@en .
+<http://data.europa.eu/949/opEnd> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Point at end of Section of Line"@en .
 <http://data.europa.eu/949/opEnd> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/opStart
@@ -880,7 +880,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/opStart> <http://purl.org/dc/terms/modified> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/opStart> <http://www.w3.org/2000/01/rdf-schema#comment> "Operational Point at the start of a Section of Line."@en .
 <http://data.europa.eu/949/opStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/opStart> <http://www.w3.org/2000/01/rdf-schema#label> "OP start"@en .
+<http://data.europa.eu/949/opStart> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Point at start of Section of Line"@en .
 <http://data.europa.eu/949/opStart> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/opType
@@ -892,7 +892,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/opType> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type on an operational point."@en .
 <http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#label> "operational point type"@en .
+<http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of operational point"@en .
 <http://data.europa.eu/949/opType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/operationalRestriction
@@ -913,6 +913,16 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/osmClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/osmClass> <http://www.w3.org/2004/02/skos/core#definition> "Additional concept class according to OpenStreetMap."@en .
 # 
+# http://data.europa.eu/949/otherPantographHead
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/otherPantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.2" .
+<http://data.europa.eu/949/otherPantographHead> <http://purl.org/dc/terms/created> "2022-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/otherPantographHead> <http://purl.org/dc/terms/modified> "2022-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which non-TSI compliant pantograph heads are allowed to be used."@en .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted other pantograph heads"@en .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://data.europa.eu/949/otherTrainProtection
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
@@ -922,21 +932,8 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/otherTrainProtection> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#comment> "Other train protection, control and warning systems for degraded situation."@en .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#label> "other train protection"@en .
+<http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#label> "Other train protection, control and warning systems for degraded situation"@en .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
-# http://data.europa.eu/949/pantographHead
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/pantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.1" .
-<http://data.europa.eu/949/pantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.2" .
-<http://data.europa.eu/949/pantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/pantographHead> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used."@en .
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "tsi pantograph head"@en .
-<http://data.europa.eu/949/pantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/parkingBrakeType
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -989,7 +986,7 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/platformHeight> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres."@en .
 <http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#label> "platform height"@en .
+<http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Height of platform"@en .
 <http://data.europa.eu/949/platformHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/positionOnA
@@ -1023,7 +1020,7 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#comment> "Coding for combined transport for semi-trailers as defined in UIC Code."@en .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#label> "profile number for semi-trailers"@en .
+<http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#label> "Standard combined transport profile number for semi-trailers"@en .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/profileNumberSwapBodies
@@ -1035,7 +1032,7 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#comment> "Coding for combined transport with swap bodies as defined in UIC Code."@en .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#label> "profile number for swap bodies"@en .
+<http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#label> "Standard combined transport profile number for swap bodies"@en .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/protectionLegacySystem
@@ -1056,7 +1053,7 @@ _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/protectionLegacySystem> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which class B system is installed"@en .
 <http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#label> "protection legacy system"@en .
+<http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Train protection legacy system"@en .
 <http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/quieterRoutesExemptedCountry
@@ -1088,7 +1085,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/railInclination> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#comment> "An angle defining the inclination of the head of a rail relative to the running surface."@en .
 <http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#label> "rail inclination"@en .
+<http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#label> "Rail inclination"@en .
 <http://data.europa.eu/949/railInclination> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/rollingStockFireCategory
@@ -1102,7 +1099,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/rollingStockFireCategory> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicable rolling stock fire category for a tunnel."@en .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "rolling stock fire category"@en .
+<http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Fire category of rolling stock required"@en .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/siding
@@ -1137,7 +1134,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/solNature> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the nature of a section of line."@en .
 <http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#label> "section of line nature"@en .
+<http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#label> "Nature of Section of Line"@en .
 <http://data.europa.eu/949/solNature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/startLocation
@@ -1159,7 +1156,7 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/startLocation> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/startLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "References the geolocation of the start of a tunnel."@en .
 <http://data.europa.eu/949/startLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/startLocation> <http://www.w3.org/2000/01/rdf-schema#label> "start location"@en .
+<http://data.europa.eu/949/startLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Start of tunnel"@en .
 <http://data.europa.eu/949/startLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/subCategory
@@ -1205,7 +1202,7 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tenClassification> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the related TEN (trans-European network)."@en .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#label> "TEN classification"@en .
+<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#label> "TEN classification (of track, of platform, of siding)"@en .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/thermalCapacityTSIReference
@@ -1248,7 +1245,7 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/trackDirection> <http://purl.org/dc/terms/modified> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Track normal running direction."@en .
 <http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#label> "track direction"@en .
+<http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Normal running direction"@en .
 <http://data.europa.eu/949/trackDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/trainDetectionSystem
@@ -1271,7 +1268,7 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of track circuits or axle counter to which specific checks are needed."@en .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#label> "detection system specific check"@en .
+<http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#label> "Type of track circuits to which specific checks are needed"@en .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/trainDetectionSystemType
@@ -1292,7 +1289,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/trainDetectionSystemType> <http://purl.org/dc/terms/modified> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of supported types of train detection systems."@en .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "train detection system type"@en .
+<http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of train detection system"@en .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks
@@ -1304,7 +1301,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on the use of composite brake blocks."@en .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant composite brake blocks"@en .
+<http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules on the use of composite brake blocks"@en .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantFerromagneticWheel
@@ -1316,7 +1313,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of Ferromagnetic characteristics of wheel material required."@en .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant ferromagnetic wheel material"@en .
+<http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of Ferromagnetic characteristics of wheel material required"@en .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles
@@ -1328,7 +1325,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether required distance between two consecutive axles is compliant with the TSI."@en .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant max distance consecutive axles"@en .
+<http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of maximum permitted distance between two consecutive axles"@en .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset
@@ -1340,7 +1337,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset."@en .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant max impedance wheelset"@en .
+<http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset"@en .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantMetalConstruction
@@ -1352,7 +1349,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules for vehicle metal construction."@en .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant metal construction"@en .
+<http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules for vehicle metal construction"@en .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantMetalFreeSpace
@@ -1364,7 +1361,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules for metal-free space around wheels."@en .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant metal free space"@en .
+<http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules for metal-free space around wheels"@en .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantRSTShuntImpedance
@@ -1376,7 +1373,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on combination of RST characteristics influencing shunting impedance."@en .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant RST shunt impedance"@en .
+<http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules on combination of RST characteristics influencing shunting impedance"@en .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantSandCharacteristics
@@ -1388,7 +1385,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI Compliance of rules on sand characteristics."@en .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant sand characteristics"@en .
+<http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#label> "TSI Compliance of rules on sand characteristics"@en .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tsiCompliantSanding
@@ -1400,7 +1397,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantSanding> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits."@en .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant sanding"@en .
+<http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of sanding"@en .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/tsiCompliantShuntDevices
@@ -1412,8 +1409,20 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on shunt assisting devices."@en .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliant shunt devices"@en .
+<http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules on shunt assisting devices"@en .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://data.europa.eu/949/tsiPantographHead
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/tsiPantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.1" .
+<http://data.europa.eu/949/tsiPantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/tsiPantographHead> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used."@en .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted TSI compliant pantograph heads"@en .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/vehicleKeeper
 <http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1467,7 +1476,7 @@ _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/voiceRadioCompatible> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility voice"@en .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "voice radio compatible"@en .
+<http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "Radio system compatibility voice"@en .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/wheelSetGauge
@@ -1489,7 +1498,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/wheelSetGauge> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en .
 <http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#label> "wheel set gauge"@en .
+<http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal track gauge"@en .
 <http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/wheelSetGaugeChangeoverFacility
@@ -1525,7 +1534,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/accelerationLevelCrossing> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/accelerationLevelCrossing> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence of limit for acceleration of train if stopping or recovering speed close to a level crossing expressed in a specific reference acceleration curve."@en .
 <http://data.europa.eu/949/accelerationLevelCrossing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/accelerationLevelCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "acceleration allowed level crossings"@en .
+<http://data.europa.eu/949/accelerationLevelCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "Acceleration allowed at level crossing"@en .
 <http://data.europa.eu/949/accelerationLevelCrossing> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/additionalBrakingInformationDocument
@@ -1537,7 +1546,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/additionalBrakingInformationDocument> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI."@en .
 <http://data.europa.eu/949/additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "additional braking information document"@en .
+<http://data.europa.eu/949/additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Documents available by the IM relating to braking performance"@en .
 <http://data.europa.eu/949/additionalBrakingInformationDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/alternativeName
@@ -1584,7 +1593,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/areaBoardingAid> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/areaBoardingAid> <http://www.w3.org/2000/01/rdf-schema#comment> "Information of the train access level for which the boarding aid can be used. Data is presented as the vertical difference that is overcome by the platform boarding aid in millimetres. The value “0” means that the platform is not equipped with a platform boarding aid."@en .
 <http://data.europa.eu/949/areaBoardingAid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/areaBoardingAid> <http://www.w3.org/2000/01/rdf-schema#label> "area boarding aid"@en .
+<http://data.europa.eu/949/areaBoardingAid> <http://www.w3.org/2000/01/rdf-schema#label> "Areas of use of the platform boarding aid"@en .
 <http://data.europa.eu/949/areaBoardingAid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/assistanceStartingTrain
@@ -1596,7 +1605,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/assistanceStartingTrain> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/assistanceStartingTrain> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of existence of equipment or staff supporting the train crew in starting the train."@en .
 <http://data.europa.eu/949/assistanceStartingTrain> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/assistanceStartingTrain> <http://www.w3.org/2000/01/rdf-schema#label> "assistance starting train"@en .
+<http://data.europa.eu/949/assistanceStartingTrain> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of platform assistance for starting train"@en .
 <http://data.europa.eu/949/assistanceStartingTrain> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/automaticDroppingDeviceRequired
@@ -1608,7 +1617,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/automaticDroppingDeviceRequired> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of whether an automatic dropping device (ADD) required on the vehicle."@en .
 <http://data.europa.eu/949/automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#label> "automatic dropping device required"@en .
+<http://data.europa.eu/949/automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#label> "Automatic dropping device required"@en .
 <http://data.europa.eu/949/automaticDroppingDeviceRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/axleSpacing
@@ -1676,7 +1685,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/cantDeficiency> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for."@en .
 <http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "cant deficiency"@en .
+<http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Cant deficiency"@en .
 <http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/catenaryMaxRatedCurrent
@@ -1700,7 +1709,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the procedure(s) for static and dynamic route compatibility checks."@en .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#label> "structure check document"@en .
+<http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Document with the procedure(s) for static and dynamic route compatibility checks"@en .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/complianceInfTsi
@@ -1712,7 +1721,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/complianceInfTsi> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/complianceInfTsi> <http://www.w3.org/2000/01/rdf-schema#comment> "Compliance of the tunnel with INF TSI at the maximum permitted speed."@en .
 <http://data.europa.eu/949/complianceInfTsi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/complianceInfTsi> <http://www.w3.org/2000/01/rdf-schema#label> "compliance with INF TSI"@en .
+<http://data.europa.eu/949/complianceInfTsi> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance of the tunnel with INF TSI"@en .
 <http://data.europa.eu/949/complianceInfTsi> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/compositeBrakeBlockRetrofitted
@@ -1759,7 +1768,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/crossSectionArea> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/crossSectionArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Smallest cross section area in square metres of the tunnel."@en .
 <http://data.europa.eu/949/crossSectionArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/crossSectionArea> <http://www.w3.org/2000/01/rdf-schema#label> "cross section area"@en .
+<http://data.europa.eu/949/crossSectionArea> <http://www.w3.org/2000/01/rdf-schema#label> "Cross section area"@en .
 <http://data.europa.eu/949/crossSectionArea> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/currentLimitationRequired
@@ -1771,7 +1780,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/currentLimitationRequired> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of whether an on board current or power limitation function on vehicles is required."@en .
 <http://data.europa.eu/949/currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#label> "current limitation required"@en .
+<http://data.europa.eu/949/currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#label> "Current or power limitation on board required"@en .
 <http://data.europa.eu/949/currentLimitationRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/dangerousGoodsTankCode
@@ -1795,7 +1804,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/demonstrationENE> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/demonstrationENE> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EI declarations concerning requirements of ENE (ENErgy subsytem) on the specific track."@en .
 <http://data.europa.eu/949/demonstrationENE> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/demonstrationENE> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of demonstration ENE"@en .
+<http://data.europa.eu/949/demonstrationENE> <http://www.w3.org/2000/01/rdf-schema#label> "EI declaration of demonstration for track (ENE)"@en .
 <http://data.europa.eu/949/demonstrationENE> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/demonstrationINF
@@ -1817,7 +1826,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/demonstrationINF> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/demonstrationINF> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EI declarations concerning requirements of INF (INFrastructure) TSI."@en .
 <http://data.europa.eu/949/demonstrationINF> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/demonstrationINF> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of demonstration INF"@en .
+<http://data.europa.eu/949/demonstrationINF> <http://www.w3.org/2000/01/rdf-schema#label> "EI declaration of demonstration for track/siding [INF]"@en .
 <http://data.europa.eu/949/demonstrationINF> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/demonstrationSRT
@@ -1831,7 +1840,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/demonstrationSRT> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/demonstrationSRT> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EI declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."@en .
 <http://data.europa.eu/949/demonstrationSRT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/demonstrationSRT> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of demonstration SRT"@en .
+<http://data.europa.eu/949/demonstrationSRT> <http://www.w3.org/2000/01/rdf-schema#label> "EI declaration of demonstration for tunnel (SRT)"@en .
 <http://data.europa.eu/949/demonstrationSRT> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/designMassExceptionalPayload
@@ -1879,7 +1888,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/dieselThermalAllowed> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/dieselThermalAllowed> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether it is allowed to use diesel or other thermal traction in the tunnel."@en .
 <http://data.europa.eu/949/dieselThermalAllowed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/dieselThermalAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "diesel thermal allowed"@en .
+<http://data.europa.eu/949/dieselThermalAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "Diesel or other thermal traction allowed"@en .
 <http://data.europa.eu/949/dieselThermalAllowed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/distSignToPhaseEnd
@@ -1891,7 +1900,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/distSignToPhaseEnd> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/distSignToPhaseEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the signboard authorizing the driver to “raise pantograph” or “close the circuit breaker” after passing the phase separation and the end of the phase separation section. Specific for route compatibility check on French network."@en .
 <http://data.europa.eu/949/distSignToPhaseEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/distSignToPhaseEnd> <http://www.w3.org/2000/01/rdf-schema#label> "distance sign and phase"@en .
+<http://data.europa.eu/949/distSignToPhaseEnd> <http://www.w3.org/2000/01/rdf-schema#label> "Distance between signboard and phase separation ending"@en .
 <http://data.europa.eu/949/distSignToPhaseEnd> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/drivingCabs
@@ -1927,7 +1936,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the conditions for the use of eddy current brakes."@en .
 <http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#label> "eddy current braking conditions document"@en .
+<http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Document with the conditions for the use of eddy current brakes"@en .
 <http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/emergencyBrake
@@ -1986,7 +1995,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/energySupplySystemTSICompliant> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication if the traction supply system (nominal voltage and frequency) is fully compliant with TSI."@en .
 <http://data.europa.eu/949/energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "energy supply system TSI compliant"@en .
+<http://data.europa.eu/949/energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "Energy supply system TSI compliant"@en .
 <http://data.europa.eu/949/energySupplySystemTSICompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsDataCommApp
@@ -2010,7 +2019,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsInfillLineAccess> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsInfillLineAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether infill is required to access the line for safety reasons."@en .
 <http://data.europa.eu/949/etcsInfillLineAccess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/etcsInfillLineAccess> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS infill line access"@en .
+<http://data.europa.eu/949/etcsInfillLineAccess> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS infill necessary for line access"@en .
 <http://data.europa.eu/949/etcsInfillLineAccess> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsNationalApplications
@@ -2034,7 +2043,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsNationalPacket44> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsNationalPacket44> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether data for national packet 44 applications is transmitted between track and train."@en .
 <http://data.europa.eu/949/etcsNationalPacket44> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/etcsNationalPacket44> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS national packet 44"@en .
+<http://data.europa.eu/949/etcsNationalPacket44> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS national packet 44 application implemented"@en .
 <http://data.europa.eu/949/etcsNationalPacket44> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/etcsOnBoardImplementation
@@ -2094,7 +2103,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/flangeLubeForbidden> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/flangeLubeForbidden> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether the use of on-board device for flange lubrication is forbidden"@en .
 <http://data.europa.eu/949/flangeLubeForbidden> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/flangeLubeForbidden> <http://www.w3.org/2000/01/rdf-schema#label> "flange lube forbidden"@en .
+<http://data.europa.eu/949/flangeLubeForbidden> <http://www.w3.org/2000/01/rdf-schema#label> "Use of flange lubrication forbidden"@en .
 <http://data.europa.eu/949/flangeLubeForbidden> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/flangeLubeRules
@@ -2106,7 +2115,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/flangeLubeRules> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/flangeLubeRules> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether rules for activation or deactivation of flange lubrication exist."@en .
 <http://data.europa.eu/949/flangeLubeRules> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/flangeLubeRules> <http://www.w3.org/2000/01/rdf-schema#label> "flange lube rules"@en .
+<http://data.europa.eu/949/flangeLubeRules> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of rules on on-board flange lubrication"@en .
 <http://data.europa.eu/949/flangeLubeRules> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/flangeLubricationFitted
@@ -2131,7 +2140,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gaugingCheckLocation> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."@en .
 <http://data.europa.eu/949/gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#label> "gauging check location"@en .
+<http://data.europa.eu/949/gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Railway location of particular points requiring specific checks"@en .
 <http://data.europa.eu/949/gaugingCheckLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gaugingTransversalDocument
@@ -2144,7 +2153,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gaugingTransversalDocument> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the transversal section of the particular points requiring specific checks."@en .
 <http://data.europa.eu/949/gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "gauging traversal document"@en .
+<http://data.europa.eu/949/gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Document with the transversal section of the particular points requiring specific checks"@en .
 <http://data.europa.eu/949/gaugingTransversalDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gprsForETCS
@@ -2181,7 +2190,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gradient> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum value of the gradient for stabling tracks expressed in millimetres per metre."@en .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#label> "gradient"@en .
+<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#label> "Gradient for stabling tracks"@en .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gradientProfile
@@ -2193,7 +2202,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gradientProfile> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gradientProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Sequence of gradient values and locations of change in gradient."@en .
 <http://data.europa.eu/949/gradientProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gradientProfile> <http://www.w3.org/2000/01/rdf-schema#label> "gradient profile"@en .
+<http://data.europa.eu/949/gradientProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Gradient profile"@en .
 <http://data.europa.eu/949/gradientProfile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gsmRAdditionalInfo
@@ -2205,7 +2214,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmRAdditionalInfo> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmRAdditionalInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Any additional information on network characteristics or corresponding document available from the IM and stored by the Agency, e.g.; interference level, leading to the recommendation of additional on-board protection."@en .
 <http://data.europa.eu/949/gsmRAdditionalInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gsmRAdditionalInfo> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R additional network info"@en .
+<http://data.europa.eu/949/gsmRAdditionalInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Additional information on network characteristics"@en .
 <http://data.europa.eu/949/gsmRAdditionalInfo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gsmRNoCoverage
@@ -2217,7 +2226,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmRNoCoverage> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmRNoCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication if there is no GSMR coverage."@en .
 <http://data.europa.eu/949/gsmRNoCoverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/gsmRNoCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R no coverage"@en .
+<http://data.europa.eu/949/gsmRNoCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "No GSM-R coverage"@en .
 <http://data.europa.eu/949/gsmRNoCoverage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/gsmRSetsInDrivingCab
@@ -2241,7 +2250,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasAdditionalBrakingInformation> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasAdditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI."@en .
 <http://data.europa.eu/949/hasAdditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasAdditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#label> "has additional braking information"@en .
+<http://data.europa.eu/949/hasAdditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Availability by the IM of additional information"@en .
 <http://data.europa.eu/949/hasAdditionalBrakingInformation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasAutomaticDroppingDevice
@@ -2265,7 +2274,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasBallast> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasBallast> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies whether track construction is with sleepers embedded in ballast or not.."@en .
 <http://data.europa.eu/949/hasBallast> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasBallast> <http://www.w3.org/2000/01/rdf-schema#label> "has ballast"@en .
+<http://data.europa.eu/949/hasBallast> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of ballast"@en .
 <http://data.europa.eu/949/hasBallast> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasCantDefficiencyCompensation
@@ -2301,7 +2310,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasETCSRestrictionsConditions> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasETCSRestrictionsConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether restrictions or conditions due to partial compliance with the CCS TSI exist."@en .
 <http://data.europa.eu/949/hasETCSRestrictionsConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasETCSRestrictionsConditions> <http://www.w3.org/2000/01/rdf-schema#label> "has ETCS restrictions conditions"@en .
+<http://data.europa.eu/949/hasETCSRestrictionsConditions> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of operating restrictions or conditions"@en .
 <http://data.europa.eu/949/hasETCSRestrictionsConditions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasElectricShoreSupply
@@ -2313,7 +2322,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasElectricShoreSupply> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasElectricShoreSupply> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether an installation for electric shore supply exists (fixed installation for servicing trains)."@en .
 <http://data.europa.eu/949/hasElectricShoreSupply> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasElectricShoreSupply> <http://www.w3.org/2000/01/rdf-schema#label> "has electric shore supply"@en .
+<http://data.europa.eu/949/hasElectricShoreSupply> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of electric shore supply"@en .
 <http://data.europa.eu/949/hasElectricShoreSupply> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasEmergencyPlan
@@ -2327,7 +2336,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasEmergencyPlan> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasEmergencyPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether emergency plan exists."@en .
 <http://data.europa.eu/949/hasEmergencyPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasEmergencyPlan> <http://www.w3.org/2000/01/rdf-schema#label> "has emergency plan"@en .
+<http://data.europa.eu/949/hasEmergencyPlan> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of emergency plan"@en .
 <http://data.europa.eu/949/hasEmergencyPlan> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasExternalCleaning
@@ -2339,7 +2348,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasExternalCleaning> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasExternalCleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether exists an installation for external cleaning facility (fixed installation for servicing trains) as defined in INF TSIs."@en .
 <http://data.europa.eu/949/hasExternalCleaning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasExternalCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "has external cleaning"@en .
+<http://data.europa.eu/949/hasExternalCleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of external cleaning facilities"@en .
 <http://data.europa.eu/949/hasExternalCleaning> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasHotAxleBoxDetector
@@ -2351,7 +2360,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasHotAxleBoxDetector> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence of trackside hot axle box detector (HABD)."@en .
 <http://data.europa.eu/949/hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#label> "has axle box detector"@en .
+<http://data.europa.eu/949/hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of trackside hot axle box detector (HABD)"@en .
 <http://data.europa.eu/949/hasHotAxleBoxDetector> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasLevelCrossings
@@ -2363,7 +2372,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasLevelCrossings> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasLevelCrossings> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether level crossings (including pedestrian track crossing) exist on the section of line."@en .
 <http://data.europa.eu/949/hasLevelCrossings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasLevelCrossings> <http://www.w3.org/2000/01/rdf-schema#label> "has level crossings"@en .
+<http://data.europa.eu/949/hasLevelCrossings> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of level crossings"@en .
 <http://data.europa.eu/949/hasLevelCrossings> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasLubricationDevicePrevention
@@ -2387,7 +2396,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasOtherTrainProtection> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasOtherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication if other train protection, control and warning systems in normal operation are installed lineside."@en .
 <http://data.europa.eu/949/hasOtherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasOtherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#label> "has other train protection"@en .
+<http://data.europa.eu/949/hasOtherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of other train protection, control and warning systems installed"@en .
 <http://data.europa.eu/949/hasOtherTrainProtection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/hasParkingBrake
@@ -2411,7 +2420,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasRefuelling> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasRefuelling> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether exists an installation for refuelling (fixed installation for servicing trains) as defined in INF TSIs."@en .
 <http://data.europa.eu/949/hasRefuelling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasRefuelling> <http://www.w3.org/2000/01/rdf-schema#label> "has refuelling"@en .
+<http://data.europa.eu/949/hasRefuelling> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of refuelling"@en .
 <http://data.europa.eu/949/hasRefuelling> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasRegenerativeBrake
@@ -2432,7 +2441,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether regenerative braking is permitted or not."@en .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#label> "has regenerative brake"@en .
+<http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#label> "Permission for regenerative braking"@en .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasSandRestocking
@@ -2444,7 +2453,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasSandRestocking> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasSandRestocking> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether an installation for sand restocking exists (fixed installation for servicing trains)."@en .
 <http://data.europa.eu/949/hasSandRestocking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasSandRestocking> <http://www.w3.org/2000/01/rdf-schema#label> "has sand restocking"@en .
+<http://data.europa.eu/949/hasSandRestocking> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of sand restocking"@en .
 <http://data.europa.eu/949/hasSandRestocking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasSandingPrevention
@@ -2468,7 +2477,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasSevereWeatherConditions> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Climatic conditions on the line are severe according to European standard."@en .
 <http://data.europa.eu/949/hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#label> "has severe weather conditions"@en .
+<http://data.europa.eu/949/hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of severe climatic conditions"@en .
 <http://data.europa.eu/949/hasSevereWeatherConditions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasShuntingRestrictions
@@ -2492,7 +2501,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasSystemSeparation> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasSystemSeparation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of existence of system separation."@en .
 <http://data.europa.eu/949/hasSystemSeparation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasSystemSeparation> <http://www.w3.org/2000/01/rdf-schema#label> "has system separation"@en .
+<http://data.europa.eu/949/hasSystemSeparation> <http://www.w3.org/2000/01/rdf-schema#label> "System separation"@en .
 <http://data.europa.eu/949/hasSystemSeparation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasTSITrainDetection
@@ -2504,7 +2513,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasTSITrainDetection> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasTSITrainDetection> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication if there is any train detection system installed and fully compliant with the CCS TSI requirements."@en .
 <http://data.europa.eu/949/hasTSITrainDetection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasTSITrainDetection> <http://www.w3.org/2000/01/rdf-schema#label> "has TSI train detection"@en .
+<http://data.europa.eu/949/hasTSITrainDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of train detection system fully compliant with the TSI"@en .
 <http://data.europa.eu/949/hasTSITrainDetection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasToiletDischarge
@@ -2516,7 +2525,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasToiletDischarge> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasToiletDischarge> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether exists an installation for toilet discharge (fixed installation for servicing trains) as defined in INF TSIs."@en .
 <http://data.europa.eu/949/hasToiletDischarge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasToiletDischarge> <http://www.w3.org/2000/01/rdf-schema#label> "has toilet discharge"@en .
+<http://data.europa.eu/949/hasToiletDischarge> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of toilet discharge"@en .
 <http://data.europa.eu/949/hasToiletDischarge> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasTrainIntegrityConfirmation
@@ -2540,7 +2549,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasWaterRestocking> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasWaterRestocking> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether exists an installation for water restocking (fixed installation for servicing trains) as defined in INF TSIs."@en .
 <http://data.europa.eu/949/hasWaterRestocking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hasWaterRestocking> <http://www.w3.org/2000/01/rdf-schema#label> "has water restocking"@en .
+<http://data.europa.eu/949/hasWaterRestocking> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of water restocking"@en .
 <http://data.europa.eu/949/hasWaterRestocking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hasWheelSlideProtectionSystem
@@ -2564,7 +2573,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2000/01/rdf-schema#comment> "Compliance of structures with the High Speed Load Model (HSLM)."@en .
 <http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2000/01/rdf-schema#label> "high speed load model compliance"@en .
+<http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance of structures with the High Speed Load Model (HSLM) dynamic load model"@en .
 <http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hotAxleBoxDetectorDirection
@@ -2576,7 +2585,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector direction"@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Direction of measurement of trackside HABD"@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hotAxleBoxDetectorGeneration
@@ -2588,7 +2597,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#comment> "Generation of trackside HABD. Specific for the French Italian and Swedish networks."@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector generation"@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Generation of trackside HABD"@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hotAxleBoxDetectorIdentification
@@ -2600,7 +2609,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hotAxleBoxDetectorIdentification> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#comment> "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector identification"@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "Identification of trackside HABD"@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorIdentification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hotAxleBoxDetectorLocation
@@ -2612,7 +2621,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hotAxleBoxDetectorLocation> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector location"@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Railway location of trackside HABD"@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant
@@ -2624,11 +2633,12 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#comment> "Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks."@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector TSI compliant"@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "Trackside HABD TSI compliant"@en .
 <http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/imCode
 <http://data.europa.eu/949/imCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/imCode> <http://data.europa.eu/949/rinfIndex> "1.1.0.0.0.1" .
 <http://data.europa.eu/949/imCode> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.8.1" .
@@ -2641,7 +2651,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/imCode> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Infrastructure Manager means any body or undertaking that is responsible in particular for establishing and maintaining railway infrastructure or a part thereof. The Code is a unique identifier for the Infrastructure Manager and it shall be verified on national level."@en .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#label> "IM code"@en .
+<http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#label> "IM's code"@en .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/isQuietRoute
@@ -2653,7 +2663,7 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/isQuietRoute> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of a track being part of a route with noise restrictions"@en .
 <http://data.europa.eu/949/isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#label> "is quiet route"@en .
+<http://data.europa.eu/949/isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Belonging to a quieter route"@en .
 <http://data.europa.eu/949/isQuietRoute> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/isSwitchable
@@ -2691,9 +2701,9 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/length> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.5.5" .
 <http://data.europa.eu/949/length> <http://purl.org/dc/terms/created> "2021-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/length> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of a physical object."@en .
+<http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of a physical object, which can be a section of line, a tunnel, a platform, etc."@en .
 <http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#label> "length"@en .
+<http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#label> "Length (of Section of Line, of Tunnel, of Siding, Usable lenght of Platform)"@en .
 <http://data.europa.eu/949/length> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/letterMarking
@@ -2748,7 +2758,7 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence of rules and restrictions of a strictly local nature."@en .
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#label> "local rules or restrictions"@en .
+<http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of rules and restrictions of a strictly local nature"@en .
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/localRulesOrRestrictionsDoc
@@ -2769,7 +2779,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#comment> "Documents regarding the rules or restrictions of a strictly local nature available by the IM."@en .
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#label> "local rules or restrictions document"@en .
+<http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#label> "Reference of the documents regarding the rules or restrictions of a strictly local nature available by the IM"@en .
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/magneticBrakePrevention
@@ -2793,7 +2803,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/magneticBrakingConditionsDocument> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the conditions for the use of magnetic brakes."@en .
 <http://data.europa.eu/949/magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#label> "magnetic braking conditions document"@en .
+<http://data.europa.eu/949/magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Document with the conditions for the use of magnetic brakes"@en .
 <http://data.europa.eu/949/magneticBrakingConditionsDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/massPerWheel
@@ -2830,7 +2840,7 @@ _:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the maximum allowable train current at standstill for DC systems expressed in amperes."@en .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#label> "maximum standstill current per pantograph"@en .
+<http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum current at standstill per pantograph"@en .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maxDistConsecutiveAxles
@@ -2851,7 +2861,7 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of maximum permitted distance between two consecutive axles in case of TSI non-compliance, given in millimetres."@en .
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "max distance consecutive axles"@en .
+<http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum permitted distance between two consecutive axles in case of TSI non-compliance"@en .
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maxDistEndTrainFirstAxle
@@ -2863,7 +2873,7 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxDistEndTrainFirstAxle> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxDistEndTrainFirstAxle> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of maximum distance between end of train and first axle, given in millimetres, applicable for both sides (front and rear) of a vehicle or train."@en .
 <http://data.europa.eu/949/maxDistEndTrainFirstAxle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxDistEndTrainFirstAxle> <http://www.w3.org/2000/01/rdf-schema#label> "max distance end train first axles"@en .
+<http://data.europa.eu/949/maxDistEndTrainFirstAxle> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum distance between end of train and first axle"@en .
 <http://data.europa.eu/949/maxDistEndTrainFirstAxle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maxFlangeHeight
@@ -2884,7 +2894,7 @@ _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxFlangeHeight> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum permitted flange height, given in millimiters."@en .
 <http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#label> "max flange height"@en .
+<http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum permitted height of the flange"@en .
 <http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maxImpedanceWheelset
@@ -2905,7 +2915,7 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of maximum permitted impedance given in ohm in case of TSI non-compliance."@en .
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#label> "max impedance wheelset"@en .
+<http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum permitted impedance between opposite wheels of a wheelset when not TSI compliant"@en .
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maxLengthVehicleNose
@@ -2939,7 +2949,7 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxTrainCurrent> <http://purl.org/dc/terms/source> "https://wiki2.railml.org/wiki/IS:maxTrainCurrent_electrification"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://data.europa.eu/949/maxTrainCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum current taken by the complete train (composition of one or more units) expressed in amperes."@en .
 <http://data.europa.eu/949/maxTrainCurrent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maxTrainCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "maximum train current"@en .
+<http://data.europa.eu/949/maxTrainCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum train current"@en .
 <http://data.europa.eu/949/maxTrainCurrent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumAltitude
@@ -2951,7 +2961,7 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maximumAltitude> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maximumAltitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest point of the section of line above sea level in reference to Normal Amsterdam’s Peil (NAP). The value of the parameter shall be given in metres, with tolerance of +/-100m."@en .
 <http://data.europa.eu/949/maximumAltitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maximumAltitude> <http://www.w3.org/2000/01/rdf-schema#label> "maximum altitude"@en .
+<http://data.europa.eu/949/maximumAltitude> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum altitude"@en .
 <http://data.europa.eu/949/maximumAltitude> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumAverageDeceleration
@@ -2987,7 +2997,7 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maximumBrakingDistance> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum value of the braking distance [in meters] of a train shall be given for the maximum line speed."@en .
 <http://data.europa.eu/949/maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#label> "maximum braking distance"@en .
+<http://data.europa.eu/949/maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum braking distance requested"@en .
 <http://data.europa.eu/949/maximumBrakingDistance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumContactWireHeight
@@ -3008,7 +3018,7 @@ _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maximumContactWireHeight> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the maximum contact wire height expressed in metres."@en .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#label> "maximum contact wire height"@en .
+<http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum contact wire height"@en .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumDesignSpeed
@@ -3044,7 +3054,7 @@ _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maximumPermittedSpeed> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour."@en .
 <http://data.europa.eu/949/maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "maximum permitted speed"@en .
+<http://data.europa.eu/949/maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum permitted speed"@en .
 <http://data.europa.eu/949/maximumPermittedSpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumServiceBrake
@@ -3089,7 +3099,7 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maximumTemperature> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum tempertaure allowed for unrestricted operation access, according to European standard."@en .
 <http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "maximum temperature"@en .
+<http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature range (maximum)"@en .
 <http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/maximumTrainDeceleration
@@ -3101,7 +3111,7 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maximumTrainDeceleration> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#comment> "Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second."@en .
 <http://data.europa.eu/949/maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#label> "maximum train deceleration"@en .
+<http://data.europa.eu/949/maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum train deceleration"@en .
 <http://data.europa.eu/949/maximumTrainDeceleration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/meetsRequirementVehicleAuthorisation
@@ -3134,7 +3144,7 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/minAxleLoad> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted axle load, given in tons."@en .
 <http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#label> "min axle load"@en .
+<http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted axle load"@en .
 <http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/minDistConsecutiveAxles
@@ -3147,7 +3157,7 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/minDistConsecutiveAxles> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of minimum permitted distance between two consecutive axles, given in millimetres."@en .
 <http://data.europa.eu/949/minDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "min distance consecutive axles"@en .
+<http://data.europa.eu/949/minDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted distance between two consecutive axles"@en .
 <http://data.europa.eu/949/minDistConsecutiveAxles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minDistFirstLastAxle
@@ -3168,7 +3178,7 @@ _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of minimum permitted distance between first and last axles, given in millimetres."@en .
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#label> "min distance first and last axles"@en .
+<http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted distance between first and last axle"@en .
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minFlangeHeight
@@ -3189,7 +3199,7 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minFlangeHeight> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted flange height, given in millimiters."@en .
 <http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#label> "min flange height"@en .
+<http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted height of the flange"@en .
 <http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minFlangeThickness
@@ -3210,7 +3220,7 @@ _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minFlangeThickness> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted flange thickness, given in millimiters."@en .
 <http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#label> "min flange thickness"@en .
+<http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted thickness of the flange"@en .
 <http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minRimWidth
@@ -3231,7 +3241,7 @@ _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minRimWidth> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted width of the rim, given in millimiters."@en .
 <http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#label> "min rim width"@en .
+<http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted width of the rim"@en .
 <http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minVehicleImpedance
@@ -3264,7 +3274,7 @@ _:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minWheelDiameter> <http://purl.org/dc/terms/modified> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted wheel diameter, given in millimiters."@en .
 <http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "min wheel diameter"@en .
+<http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum permitted wheel diameter"@en .
 <http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minimumConcaveVerticalRadius
@@ -3297,7 +3307,7 @@ _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minimumContactWireHeight> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the minimum contact wire height expressed in metres."@en .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#label> "minimum contact wire height"@en .
+<http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum contact wire height"@en .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minimumConvexVerticalRadius
@@ -3334,7 +3344,7 @@ _:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "Radius of the smallest horizontal curve of the track in metres."@en .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum horizontal radius"@en .
+<http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum radius of horizontal curve"@en .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minimumTemperature
@@ -3355,7 +3365,7 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minimumTemperature> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum tempertaure allowed for unrestricted operation access, according to European standard."@en .
 <http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "minimum temperature"@en .
+<http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature range (minimum)"@en .
 <http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minimumVerticalRadius
@@ -3367,7 +3377,7 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minimumVerticalRadius> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "Radius of the smallest vertical curve expressed in metres."@en .
 <http://data.europa.eu/949/minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum vertical curve radius"@en .
+<http://data.europa.eu/949/minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum radius of vertical curve"@en .
 <http://data.europa.eu/949/minimumVerticalRadius> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/minimumWheelDiameter
@@ -3388,7 +3398,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/minimumWheelDiameter> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres."@en .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "minimum wheel diameter"@en .
+<http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum wheel diameter for fixed obtuse crossings"@en .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/multipleTrainProtectionRequired
@@ -3400,7 +3410,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/multipleTrainProtectionRequired> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/multipleTrainProtectionRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether more than one train protection, control and warning system is required to be on-board and active simultaneously."@en .
 <http://data.europa.eu/949/multipleTrainProtectionRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/multipleTrainProtectionRequired> <http://www.w3.org/2000/01/rdf-schema#label> "multiple train protection required"@en .
+<http://data.europa.eu/949/multipleTrainProtectionRequired> <http://www.w3.org/2000/01/rdf-schema#label> "Need for more than one train protection, control and warning system required on board"@en .
 <http://data.europa.eu/949/multipleTrainProtectionRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/nationalLoadCapability
@@ -3412,7 +3422,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/nationalLoadCapability> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/nationalLoadCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "National classification for load capability."@en .
 <http://data.europa.eu/949/nationalLoadCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/nationalLoadCapability> <http://www.w3.org/2000/01/rdf-schema#label> "national load capability"@en .
+<http://data.europa.eu/949/nationalLoadCapability> <http://www.w3.org/2000/01/rdf-schema#label> "National classification for load capability"@en .
 <http://data.europa.eu/949/nationalLoadCapability> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/nationalRollingStockFireCategory
@@ -3426,7 +3436,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/nationalRollingStockFireCategory> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/nationalRollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicable national rolling stock fire category for a tunnel."@en .
 <http://data.europa.eu/949/nationalRollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/nationalRollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "national rolling stock fire category"@en .
+<http://data.europa.eu/949/nationalRollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "National fire category of rolling stock required"@en .
 <http://data.europa.eu/949/nationalRollingStockFireCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/netElementPosition
@@ -3493,7 +3503,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/opName> <http://purl.org/dc/terms/modified> "2021-09-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/opName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of an Operational Point."@en .
 <http://data.europa.eu/949/opName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/opName> <http://www.w3.org/2000/01/rdf-schema#label> "op name"@en .
+<http://data.europa.eu/949/opName> <http://www.w3.org/2000/01/rdf-schema#label> "Name of Operational point"@en .
 <http://data.europa.eu/949/opName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/opTypeGaugeChangeover
@@ -3505,7 +3515,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/opTypeGaugeChangeover> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/opTypeGaugeChangeover> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of track gauge changeover facility."@en .
 <http://data.europa.eu/949/opTypeGaugeChangeover> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/opTypeGaugeChangeover> <http://www.w3.org/2000/01/rdf-schema#label> "track gauge changeover facility type"@en .
+<http://data.europa.eu/949/opTypeGaugeChangeover> <http://www.w3.org/2000/01/rdf-schema#label> "Type of track gauge changeover facility"@en .
 <http://data.europa.eu/949/opTypeGaugeChangeover> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/parkingBrake
@@ -3577,7 +3587,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/permittedContactForce> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of contact force allowed expressed in newtons."@en .
 <http://data.europa.eu/949/permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#label> "permitted contact force"@en .
+<http://data.europa.eu/949/permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#label> "Contact force permitted"@en .
 <http://data.europa.eu/949/permittedContactForce> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/phaseInfo
@@ -3589,7 +3599,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/phaseInfo> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/phaseInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Required information on phase separation. Data is structured as: length [NNN] + switch off breaker [Y/N] + lower pantograph [Y/N])."@en .
 <http://data.europa.eu/949/phaseInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/phaseInfo> <http://www.w3.org/2000/01/rdf-schema#label> "phase information"@en .
+<http://data.europa.eu/949/phaseInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Information on phase separation"@en .
 <http://data.europa.eu/949/phaseInfo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/phaseSeparation
@@ -3601,7 +3611,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/phaseSeparation> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/phaseSeparation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of existence of phase separation and required information."@en .
 <http://data.europa.eu/949/phaseSeparation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/phaseSeparation> <http://www.w3.org/2000/01/rdf-schema#label> "phase separation"@en .
+<http://data.europa.eu/949/phaseSeparation> <http://www.w3.org/2000/01/rdf-schema#label> "Phase separation"@en .
 <http://data.europa.eu/949/phaseSeparation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/platformId
@@ -3687,7 +3697,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/publicNetworkRoaming> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/publicNetworkRoaming> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence of roaming to public networks."@en .
 <http://data.europa.eu/949/publicNetworkRoaming> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/publicNetworkRoaming> <http://www.w3.org/2000/01/rdf-schema#label> "public network roaming"@en .
+<http://data.europa.eu/949/publicNetworkRoaming> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of roaming to public networks"@en .
 <http://data.europa.eu/949/publicNetworkRoaming> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/publicNetworkRoamingDetails
@@ -3699,7 +3709,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/publicNetworkRoamingDetails> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/publicNetworkRoamingDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Details on roaming to public networks."@en .
 <http://data.europa.eu/949/publicNetworkRoamingDetails> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/publicNetworkRoamingDetails> <http://www.w3.org/2000/01/rdf-schema#label> "public network roaming details"@en .
+<http://data.europa.eu/949/publicNetworkRoamingDetails> <http://www.w3.org/2000/01/rdf-schema#label> "Details on roaming to public networks"@en .
 <http://data.europa.eu/949/publicNetworkRoamingDetails> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/quasiStaticGuidingForce
@@ -3735,7 +3745,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/raisedPantographsDistanceAndSpeed> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed."@en .
 <http://data.europa.eu/949/raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "raised pantographs distance and speed"@en .
+<http://data.europa.eu/949/raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "Requirements for number of raised pantographs and spacing between them, at the given speed"@en .
 <http://data.europa.eu/949/raisedPantographsDistanceAndSpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/redLightsRequired
@@ -3747,7 +3757,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/redLightsRequired> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/redLightsRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of a sections where two steady red lights are required in accordance with Regulation (EU) 2019/773"@en .
 <http://data.europa.eu/949/redLightsRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/redLightsRequired> <http://www.w3.org/2000/01/rdf-schema#label> "red lights required"@en .
+<http://data.europa.eu/949/redLightsRequired> <http://www.w3.org/2000/01/rdf-schema#label> "Steady red lights required"@en .
 <http://data.europa.eu/949/redLightsRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/referencePassByNoiseLevel
@@ -3781,7 +3791,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/requiredSandingOverride> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/requiredSandingOverride> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether possibility to activate/deactivate sanding devices by driver, according to instructions from the Infrastructure Manager, is required or not."@en .
 <http://data.europa.eu/949/requiredSandingOverride> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/requiredSandingOverride> <http://www.w3.org/2000/01/rdf-schema#label> "required sanding override"@en .
+<http://data.europa.eu/949/requiredSandingOverride> <http://www.w3.org/2000/01/rdf-schema#label> "Sanding override by driver required"@en .
 <http://data.europa.eu/949/requiredSandingOverride> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL
@@ -3798,6 +3808,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/sidingId
 <http://data.europa.eu/949/sidingId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Siding> .
 <http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/sidingId> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.0.2" .
@@ -3805,7 +3816,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/sidingId> <http://purl.org/dc/terms/modified> "2021-09-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique siding identification or number within an Operational Point."@en .
 <http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#label> "siding id"@en .
+<http://data.europa.eu/949/sidingId> <http://www.w3.org/2000/01/rdf-schema#label> "Identification of siding"@en .
 <http://data.europa.eu/949/sidingId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/sleepingPlaces
@@ -3829,7 +3840,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/specificInformation> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/specificInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "This parameters allows the IM to provide plain text with specific information about the track."@en .
 <http://data.europa.eu/949/specificInformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/specificInformation> <http://www.w3.org/2000/01/rdf-schema#label> "specific information"@en .
+<http://data.europa.eu/949/specificInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Specific information"@en .
 <http://data.europa.eu/949/specificInformation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/startIntrinsicCoordinate
@@ -3924,7 +3935,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/structureCheckLocation> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/structureCheckLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway location of structures requiring specific checks."@en .
 <http://data.europa.eu/949/structureCheckLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/structureCheckLocation> <http://www.w3.org/2000/01/rdf-schema#label> "structure check location"@en .
+<http://data.europa.eu/949/structureCheckLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Railway location of structures requiring specific checks"@en .
 <http://data.europa.eu/949/structureCheckLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/switchProtectControlWarning
@@ -3936,7 +3947,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/switchProtectControlWarning> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/switchProtectControlWarning> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence of switch over between different protection, control and warning systems while running."@en .
 <http://data.europa.eu/949/switchProtectControlWarning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/switchProtectControlWarning> <http://www.w3.org/2000/01/rdf-schema#label> "switch protect control warning"@en .
+<http://data.europa.eu/949/switchProtectControlWarning> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of switch over between different protection, control and warning systems while running"@en .
 <http://data.europa.eu/949/switchProtectControlWarning> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/switchRadioSystem
@@ -3948,7 +3959,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/switchRadioSystem> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/switchRadioSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether a switch over between different radio systems and no communication system whilst running exist."@en .
 <http://data.europa.eu/949/switchRadioSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/switchRadioSystem> <http://www.w3.org/2000/01/rdf-schema#label> "switch radio system"@en .
+<http://data.europa.eu/949/switchRadioSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Existence of switch over between different radio systems"@en .
 <http://data.europa.eu/949/switchRadioSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/systemSeparationInfo
@@ -3960,11 +3971,12 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/systemSeparationInfo> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/systemSeparationInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Required information on system separation. Data is structured as: length [NNN] + switch off breaker [Y/N] + lower pantograph [Y/N] +[CharacterString]."@en .
 <http://data.europa.eu/949/systemSeparationInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/systemSeparationInfo> <http://www.w3.org/2000/01/rdf-schema#label> "system separation information"@en .
+<http://data.europa.eu/949/systemSeparationInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Information on system separation"@en .
 <http://data.europa.eu/949/systemSeparationInfo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tafTAPCode
 <http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/OperationalPoint> .
 <http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/tafTAPCode> <http://data.europa.eu/949/rinfIndex> "1.2.0.0.0.3" .
@@ -3972,7 +3984,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/tafTAPCode> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Primary code developed for TAF/TAP."@en .
 <http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#label> "TAF/TAP code"@en .
+<http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#label> "OP TAF/TAP primary code"@en .
 <http://data.europa.eu/949/tafTAPCode> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tenGISId
@@ -4044,7 +4056,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/tiltingSupported> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tiltingSupported> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether tilting functions are supported by ETCS."@en .
 <http://data.europa.eu/949/tiltingSupported> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tiltingSupported> <http://www.w3.org/2000/01/rdf-schema#label> "tilting supported"@en .
+<http://data.europa.eu/949/tiltingSupported> <http://www.w3.org/2000/01/rdf-schema#label> "Indication whether tilting functions are supported by ETCS"@en .
 <http://data.europa.eu/949/tiltingSupported> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/totalVehicleMass
@@ -4061,6 +4073,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/trackId
 <http://data.europa.eu/949/trackId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
 <http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/trackId> <http://data.europa.eu/949/rinfIndex> "1.1.1.0.0.1" .
@@ -4069,7 +4082,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/trackId> <http://purl.org/dc/terms/modified> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique track identification or unique track number within a Section of Line."@en .
 <http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#label> "track id"@en .
+<http://data.europa.eu/949/trackId> <http://www.w3.org/2000/01/rdf-schema#label> "Identification of track"@en .
 <http://data.europa.eu/949/trackId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/trainControlSwitchOverSpecialConditions
@@ -4093,7 +4106,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2."@en .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument> <http://www.w3.org/2000/01/rdf-schema#label> "detection system specific check document"@en .
+<http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2"@en .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/trainIntegrityOnBoardRequired
@@ -4105,7 +4118,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/trainIntegrityOnBoardRequired> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trainIntegrityOnBoardRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons."@en .
 <http://data.europa.eu/949/trainIntegrityOnBoardRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/trainIntegrityOnBoardRequired> <http://www.w3.org/2000/01/rdf-schema#label> "train integrity on-board required"@en .
+<http://data.europa.eu/949/trainIntegrityOnBoardRequired> <http://www.w3.org/2000/01/rdf-schema#label> "Train integrity confirmation from on-board necessary for line access"@en .
 <http://data.europa.eu/949/trainIntegrityOnBoardRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/transportableOnFerry
@@ -4139,7 +4152,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/tsiSwitchCrossing> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiSwitchCrossing> <http://www.w3.org/2000/01/rdf-schema#comment> "Switches and crossings are maintained to in service limit dimension as specified in TSI."@en .
 <http://data.europa.eu/949/tsiSwitchCrossing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tsiSwitchCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance for switches and crossings"@en .
+<http://data.europa.eu/949/tsiSwitchCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of in service values for switches and crossings"@en .
 <http://data.europa.eu/949/tsiSwitchCrossing> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tunnel
@@ -4159,11 +4172,12 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/tunnelDocRef> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tunnelDocRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a document available from the IM with precise description of the tunnel."@en .
 <http://data.europa.eu/949/tunnelDocRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tunnelDocRef> <http://www.w3.org/2000/01/rdf-schema#label> "tunnel document reference"@en .
+<http://data.europa.eu/949/tunnelDocRef> <http://www.w3.org/2000/01/rdf-schema#label> "Reference to a document available from the IM with precise description of the tunnel"@en .
 <http://data.europa.eu/949/tunnelDocRef> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/tunnelIdentification
 <http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Tunnel> .
 <http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/tunnelIdentification> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.8.2" .
@@ -4173,7 +4187,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/tunnelIdentification> <http://purl.org/dc/terms/modified> "2021-09-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique tunnel identification or unique number within Member State."@en .
 <http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "tunnel identification"@en .
+<http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "Tunnel identification"@en .
 <http://data.europa.eu/949/tunnelIdentification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/typeVersionNumber
@@ -4196,11 +4210,12 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/umax2> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/umax2> <http://www.w3.org/2000/01/rdf-schema#comment> "Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014. Specific for the French network."@en .
 <http://data.europa.eu/949/umax2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/umax2> <http://www.w3.org/2000/01/rdf-schema#label> "umax2"@en .
+<http://data.europa.eu/949/umax2> <http://www.w3.org/2000/01/rdf-schema#label> "Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014."@en .
 <http://data.europa.eu/949/umax2> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/uopid
 <http://data.europa.eu/949/uopid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/OperationalPoint> .
 <http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/uopid> <http://data.europa.eu/949/rinfIndex> "1.2.0.0.0.2" .
@@ -4208,7 +4223,7 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/uopid> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#comment> "Code composed of country code and alphanumeric operational point code, as defined in RINF."@en .
 <http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#label> "unique operational point id"@en .
+<http://data.europa.eu/949/uopid> <http://www.w3.org/2000/01/rdf-schema#label> "Unique OP ID"@en .
 <http://data.europa.eu/949/uopid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/usesGroup555
@@ -4229,7 +4244,7 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/usesGroup555> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication if group 555 is needed/used."@en .
 <http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#label> "uses group 555"@en .
+<http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#label> "Use of group 555"@en .
 <http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/vehicleContactForce
@@ -4320,9 +4335,9 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/verificationCSS> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.1.1" .
 <http://data.europa.eu/949/verificationCSS> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/verificationCSS> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/verificationCSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EC declarations concerning requirements of CSS (Command - Control and Signalling subsystem) on the specific track."@en .
+<http://data.europa.eu/949/verificationCSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EC declarations concerning requirements of CCS (Command - Control and Signalling subsystem) on the specific track."@en .
 <http://data.europa.eu/949/verificationCSS> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/verificationCSS> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of verification CSS"@en .
+<http://data.europa.eu/949/verificationCSS> <http://www.w3.org/2000/01/rdf-schema#label> "EC declaration of verification for track (CCS)"@en .
 <http://data.europa.eu/949/verificationCSS> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/verificationENE
@@ -4334,7 +4349,7 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/verificationENE> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/verificationENE> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EC declarations concerning requirements of ENE (ENErgy subsystem) on the specific track."@en .
 <http://data.europa.eu/949/verificationENE> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/verificationENE> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of verification ENE"@en .
+<http://data.europa.eu/949/verificationENE> <http://www.w3.org/2000/01/rdf-schema#label> "EC declaration of verification for track (ENE)"@en .
 <http://data.europa.eu/949/verificationENE> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/verificationINF
@@ -4356,7 +4371,7 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/verificationINF> <http://purl.org/dc/terms/modified> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EC declarations concerning requirements of INF (INFrastructure) TSI."@en .
 <http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of verification INF"@en .
+<http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#label> "EC declaration of verification for track/siding [INF]"@en .
 <http://data.europa.eu/949/verificationINF> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/verificationSRT
@@ -4370,7 +4385,7 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/verificationSRT> <http://purl.org/dc/terms/modified> "2021-09-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/verificationSRT> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique number for EC declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."@en .
 <http://data.europa.eu/949/verificationSRT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/verificationSRT> <http://www.w3.org/2000/01/rdf-schema#label> "declaration of verification SRT"@en .
+<http://data.europa.eu/949/verificationSRT> <http://www.w3.org/2000/01/rdf-schema#label> "EC declaration of verification for tunnel (SRT)"@en .
 <http://data.europa.eu/949/verificationSRT> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://data.europa.eu/949/voiceOperationalCommImpl
@@ -4428,6 +4443,9 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/wheelchairSpaces> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/wheelchairSpaces> <http://www.w3.org/2000/01/rdf-schema#label> "wheelchair spaces"@en .
 <http://data.europa.eu/949/wheelchairSpaces> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # 
 # 
