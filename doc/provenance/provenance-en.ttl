@@ -2,6 +2,28 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<https://data-interop.era.europa.eu/era-vocabulary/> a prov:Entity;
+	 dc:title "ERA vocabulary";
+	 prov:wasAttributedTo <https://julianrojas.org/#me>;
+	 dc:creator <https://julianrojas.org/#me>;
+	 prov:wasAttributedTo <https://dylanvanassche.be/#me>;
+	 dc:contributor <https://dylanvanassche.be/#me>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://pietercolpaert.be/#me>;
+	 dc:contributor <https://pietercolpaert.be/#me>;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.1>;
+	 prov:wasRevisionOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0>;
+	 prov:wasGeneratedAt "2022-06-07";
 .
+:agent0 a prov:Agent; foaf:name "Ivo Velitchkov".
+:agent1 a prov:Agent; foaf:name "Marina Aguado".
+:agent2 a prov:Agent; foaf:name "Polymnia Vasilopoulou".
+:agent3 a prov:Agent; foaf:name "Edna Ruckhaus".
+:agent4 a prov:Agent; foaf:name "Oscar Corcho".
+:agent5 a prov:Agent; foaf:name "Wouter Beek".
