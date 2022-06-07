@@ -11,6 +11,26 @@ An [era:OperationalPoint](#OperationalPoint) is any location for train service o
     
 The following example shows the RDF representaton an operational point 'ATIz' (Inzersdorf Ort (in Iz)) which is part of the Austrian railway infrastructure,  that has seven tracks:
 </span>
+<textarea id="code" name="code">
+era-res-fi:operationalPoints/ATIz 
+     a era:OperationalPoint;
+     era:track             
+          era-res-fi:tracks/ATIz-301;
+     era:track 
+          era-res-fi:tracks/ATIz-302;
+     era:track 
+          era-res-fi:ATIz-303;
+     era:track 
+          era-res-fi:tracks/ATIz-304;
+     era:track 
+          era-res-fi:tracks/ATIz-305;
+     era:track 
+          era-res-fi:tracks/ATIz-307;
+     era:track 
+          era-res-fi:tracks/ATIz-309.
+
+</textarea>
+
 <pre>
 era-res-fi:operationalPoints/ATIz 
      a era:OperationalPoint;
