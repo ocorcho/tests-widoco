@@ -16,7 +16,7 @@ Figure 1 shows the main classes and properties of this vocabulary, which represe
 <p>The following example shows the RDF representation of the operational point &#39;ATIz&#39; (Inzersdorf Ort (in Iz)) which is part of the Austrian railway infrastructure. This <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATIz">operational point</a> has seven tracks:
 </span></p>
 <p>
-<pre><textarea id="code" name="code">
+<pre><div id="code" name="code">
 @PREFIX era: http://data.europa.eu/949/ .
 @PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
 @PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
@@ -29,13 +29,13 @@ era-res-op:ATIz a era:OperationalPoint;
      era:track era-res-track:ATIz-305;
      era:track era-res-track:ATIz-307;
      era:track era-res-track:ATIz-309.
-</textarea></pre>
+</div></pre>
 
 <p>
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz">example</a> shows a <a href="#SectionOfLine">era:SectionOfLine</a> identified as &#39;10601_ATAa_ATIz&#39; that starts (<a href="#opStart">era:opStart</a>) in the operational point &#39;W.Mat.-Altmannsdorf (in Wbf)&#39; and ends (<a href="#opEnd">era:opEnd</a>) in the operational point from the previous example, &#39;Inzersdorf Ort (in Iz)&#39;.
 </span></p>
-<p><pre>
+<p><pre class="example">
 @PREFIX era: http://data.europa.eu/949/ .
 @PREFIX era-res-sol: http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/ .
 @PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
