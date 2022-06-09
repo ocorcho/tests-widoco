@@ -524,7 +524,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-05-31"
+    "@value" : "2022-06-09"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "European Union Agency for Railways"
@@ -535,7 +535,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."
+    "@value" : "his is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -546,14 +546,15 @@
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.3.2"
+    "@value" : "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v2.4.0"
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "v2.4.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionURI" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"
+    "@value" : "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.1"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/Border",
@@ -636,9 +637,6 @@
     "@id" : "http://data.europa.eu/949/PrincipalLocation"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/GradientCruve",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://data.europa.eu/949/GradientCurve",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -709,9 +707,6 @@
     "@language" : "en",
     "@value" : "Line Reference"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-  } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
   } ]
@@ -744,7 +739,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "loop"
+    "@value" : "Loop"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/Track"
@@ -808,9 +803,6 @@
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
   } ]
-}, {
-  "@id" : "http://data.europa.eu/949/NetELement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://data.europa.eu/949/NetElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1078,6 +1070,10 @@
 }, {
   "@id" : "http://data.europa.eu/949/SpotLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-05-04"
+  } ],
   "http://purl.org/dc/terms/source" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "@value" : "https://wiki3.railml.org/wiki/RTM:spotLocation"
@@ -1087,10 +1083,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "spot location"
+    "@value" : "Spot Location"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/Station",
@@ -1107,16 +1103,26 @@
 }, {
   "@id" : "http://data.europa.eu/949/StoppingPlace",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-05-04"
+  } ],
   "http://purl.org/dc/terms/source" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "@value" : "https://wiki3.railml.org/wiki/IS:stoppingPlace"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "stopping place"
+    "@value" : "Stopping Place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/SpotLocation"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/Switch",
@@ -1218,10 +1224,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "topological object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    "@value" : "Topological Object"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -4269,7 +4272,7 @@
     "@value" : "Maximum value of the gradient for stabling tracks expressed in millimetres per metre."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/GradientCruve"
+    "@id" : "http://data.europa.eu/949/GradientCurve"
   }, {
     "@id" : "http://data.europa.eu/949/Siding"
   } ],
@@ -9055,7 +9058,7 @@
   "@id" : "http://data.europa.eu/949/posBegin",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/NetELement"
+    "@id" : "http://data.europa.eu/949/NetElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -9071,7 +9074,7 @@
   "@id" : "http://data.europa.eu/949/posEnd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/NetELement"
+    "@id" : "http://data.europa.eu/949/NetElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"

@@ -19,14 +19,14 @@
                                                                      "Polymnia Vasilopoulou" ,
                                                                      "Wouter Beek" ;
                               <http://purl.org/dc/terms/issued> "2020-07-29"^^xsd:date ;
-                              <http://purl.org/dc/terms/modified> "2022-05-31"^^xsd:date ;
+                              <http://purl.org/dc/terms/modified> "2022-06-09"^^xsd:date ;
                               <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" ;
                               <http://purl.org/dc/terms/title> "ERA vocabulary"@en ;
-                              rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
+                              rdfs:comment "his is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."@en ;
                               rdfs:label "ERA vocabulary"@en ;
-                              owl:priorVersion "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.3.2"^^xsd:anyURI ;
-                              owl:versionInfo "v2.4.0" ;
-                              owl:versionURI "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"^^xsd:anyURI .
+                              owl:priorVersion "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"^^xsd:anyURI ;
+                              owl:versionInfo "v2.4.1"^^xsd:date ;
+                              owl:versionURI "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.1"^^xsd:anyURI .
 
 #################################################################
 #    Annotation properties
@@ -2261,7 +2261,7 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/gradient
 :gradient rdf:type owl:DatatypeProperty ;
-          rdfs:domain :GradientCruve ,
+          rdfs:domain :GradientCurve ,
                       :Siding ;
           rdfs:range xsd:double ;
           :rinfIndex "1.2.2.0.3.1" ;
@@ -3745,7 +3745,7 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/posBegin
 :posBegin rdf:type owl:DatatypeProperty ;
-          rdfs:domain :NetELement ;
+          rdfs:domain :NetElement ;
           rdfs:range xsd:double ;
           rdfs:isDefinedBy <http://data.europa.eu/949/> ;
           rdfs:label "position begin"@en .
@@ -3753,7 +3753,7 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/posEnd
 :posEnd rdf:type owl:DatatypeProperty ;
-        rdfs:domain :NetELement ;
+        rdfs:domain :NetElement ;
         rdfs:range xsd:double ;
         rdfs:isDefinedBy <http://data.europa.eu/949/> ;
         rdfs:label "position end"@en .
@@ -4651,10 +4651,6 @@ above the local reference ellipsoid).""" ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/> .
 
 
-###  http://data.europa.eu/949/GradientCruve
-:GradientCruve rdf:type owl:Class .
-
-
 ###  http://data.europa.eu/949/GradientCurve
 :GradientCurve rdf:type owl:Class ;
                rdfs:subClassOf rdf:Bag ;
@@ -4681,7 +4677,6 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/LineReference
 :LineReference rdf:type owl:Class ;
-               rdfs:subClassOf rdfs:Resource ;
                <http://purl.org/dc/terms/created> "2021-01-29"^^xsd:date ;
                <http://purl.org/dc/terms/modified> "2021-01-29"^^xsd:date ;
                rdfs:comment "A reference to a specific national railway line."@en ;
@@ -4703,7 +4698,7 @@ above the local reference ellipsoid).""" ;
       rdfs:subClassOf :Track ;
       <http://purl.org/dc/terms/source> "Official Journal of the European Union L 139 I/85"@en ;
       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
-      rdfs:label "loop"@en ;
+      rdfs:label "Loop"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Track, connected to the main track, used for passing, crossing and stabling."@en .
 
 
@@ -4727,10 +4722,6 @@ above the local reference ellipsoid).""" ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                      rdfs:label "National Railway Line"@en ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
-###  http://data.europa.eu/949/NetELement
-:NetELement rdf:type owl:Class .
 
 
 ###  http://data.europa.eu/949/NetElement
@@ -4849,10 +4840,11 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/SpotLocation
 :SpotLocation rdf:type owl:Class ;
-              rdfs:subClassOf rdfs:Resource ;
+              <http://purl.org/dc/terms/created> "2022-05-04"^^xsd:date ;
               <http://purl.org/dc/terms/source> "https://wiki3.railml.org/wiki/RTM:spotLocation"^^xsd:anyURI ;
               rdfs:isDefinedBy <http://data.europa.eu/949/> ;
-              rdfs:label "spot location"@en .
+              rdfs:label "Spot Location"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 
 ###  http://data.europa.eu/949/Station
@@ -4875,8 +4867,11 @@ above the local reference ellipsoid).""" ;
 ###  http://data.europa.eu/949/StoppingPlace
 :StoppingPlace rdf:type owl:Class ;
                rdfs:subClassOf :SpotLocation ;
+               <http://purl.org/dc/terms/created> "2022-05-04"^^xsd:date ;
                <http://purl.org/dc/terms/source> "https://wiki3.railml.org/wiki/IS:stoppingPlace"^^xsd:anyURI ;
-               rdfs:label "stopping place"@en .
+               rdfs:isDefinedBy <http://data.europa.eu/949/> ;
+               rdfs:label "Stopping Place"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 
 ###  http://data.europa.eu/949/Switch
@@ -4890,10 +4885,9 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/TopologicalObject
 :TopologicalObject rdf:type owl:Class ;
-                   rdfs:subClassOf rdfs:Resource ;
                    <http://purl.org/dc/terms/created> "2022-05-04"^^xsd:date ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
-                   rdfs:label "topological object"@en ;
+                   rdfs:label "Topological Object"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 

@@ -38,7 +38,7 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#LinearLocation" title="http://data.europa.eu/949/LinearLocation">linear location</a>
       </li>
       <li>
-         <a href="#Loop" title="http://data.europa.eu/949/Loop">loop</a>
+         <a href="#Loop" title="http://data.europa.eu/949/Loop">Loop</a>
       </li>
       <li>
          <a href="#Manufacturer" title="http://data.europa.eu/949/Manufacturer">Manufacturer</a>
@@ -84,7 +84,7 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#SpeedSection" title="http://data.europa.eu/949/SpeedSection">Speed Section</a>
       </li>
       <li>
-         <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">spot location</a>
+         <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
       </li>
       <li>
          <a href="#Station" title="http://data.europa.eu/949/Station">
@@ -92,13 +92,13 @@ This section provides details for each class and property defined by ERA vocabul
          </a>
       </li>
       <li>
-         <a href="#StoppingPlace" title="http://data.europa.eu/949/StoppingPlace">stopping place</a>
+         <a href="#StoppingPlace" title="http://data.europa.eu/949/StoppingPlace">Stopping Place</a>
       </li>
       <li>
          <a href="#Switch" title="http://data.europa.eu/949/Switch">switch</a>
       </li>
       <li>
-         <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">topological object</a>
+         <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
       </li>
       <li>
          <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
@@ -263,6 +263,11 @@ This section provides details for each class and property defined by ERA vocabul
                title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">bag</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#gradient" title="http://data.europa.eu/949/gradient">Gradient for stabling tracks</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="InfrastructureManager">
@@ -340,13 +345,6 @@ This section provides details for each class and property defined by ERA vocabul
          <dd>stable</dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-               target="_blank"
-               title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#kilometer" title="http://data.europa.eu/949/kilometer">kilometer</a>
@@ -381,7 +379,7 @@ This section provides details for each class and property defined by ERA vocabul
       </dl>
    </div>
    <div class="entity" id="Loop">
-      <h3>loop<sup class="type-c" title="class">c</sup>
+      <h3>Loop<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -503,7 +501,7 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">topological object</a>
+            <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -519,7 +517,9 @@ This section provides details for each class and property defined by ERA vocabul
                title="http://data.europa.eu/949/endIntrinsicCoordinate">end intrinsic coordinate</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasImplementation" title="http://data.europa.eu/949/hasImplementation">has implementation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSignal" title="http://data.europa.eu/949/hasSignal">has signal</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#startIntrinsicCoordinate"
+            <sup class="type-op" title="object property">op</sup>, <a href="#posBegin" title="http://data.europa.eu/949/posBegin">position begin</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#posEnd" title="http://data.europa.eu/949/posEnd">position end</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#startIntrinsicCoordinate"
                title="http://data.europa.eu/949/startIntrinsicCoordinate">start intrinsic coordinate</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#voltage" title="http://data.europa.eu/949/voltage">voltage</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -559,7 +559,7 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">topological object</a>
+            <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -955,7 +955,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="SpotLocation">
-      <h3>spot location<sup class="type-c" title="class">c</sup>
+      <h3>Spot Location<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -971,17 +971,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dt>Source</dt>
          <dd>https://wiki3.railml.org/wiki/RTM:spotLocation</dd>
       </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-               target="_blank"
-               title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#StoppingPlace" title="http://data.europa.eu/949/StoppingPlace">stopping place</a>
+            <a href="#StoppingPlace" title="http://data.europa.eu/949/StoppingPlace">Stopping Place</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1027,20 +1024,30 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="StoppingPlace">
-      <h3>stopping place<sup class="type-c" title="class">c</sup>
+      <h3>Stopping Place<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/StoppingPlace</p>
       <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl class="definedBy">
          <dt>Source</dt>
          <dd>https://wiki3.railml.org/wiki/IS:stoppingPlace</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">spot location</a>
+            <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1072,7 +1079,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="TopologicalObject">
-      <h3>topological object<sup class="type-c" title="class">c</sup>
+      <h3>Topological Object<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -1089,13 +1096,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dd>unstable</dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-               target="_blank"
-               title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
@@ -1127,7 +1127,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Loop" title="http://data.europa.eu/949/Loop">loop</a>
+            <a href="#Loop" title="http://data.europa.eu/949/Loop">Loop</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -3779,7 +3779,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">spot location</a>
+               <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -10189,9 +10189,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://data.europa.eu/949/GradientCruve"
-                  target="_blank"
-                  title="http://data.europa.eu/949/GradientCruve">gradient cruve</a>
+               <a href="#GradientCurve" title="http://data.europa.eu/949/GradientCurve">Gradient Curve</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
@@ -11078,7 +11076,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
-               <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">spot location</a>
+               <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -12976,7 +12974,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">spot location</a>
+               <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -13619,9 +13617,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://data.europa.eu/949/NetELement"
-                  target="_blank"
-                  title="http://data.europa.eu/949/NetELement">net e lement</a>
+               <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -13650,9 +13646,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://data.europa.eu/949/NetELement"
-                  target="_blank"
-                  title="http://data.europa.eu/949/NetELement">net e lement</a>
+               <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

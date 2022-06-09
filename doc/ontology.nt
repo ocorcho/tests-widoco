@@ -11,14 +11,14 @@
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> "Polymnia Vasilopoulou" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> "Wouter Beek" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/issued> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/> <http://purl.org/dc/terms/modified> "2022-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/> <http://purl.org/dc/terms/modified> "2022-06-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
-<http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
+<http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#comment> "his is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."@en .
 <http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#priorVersion> "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.3.2"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#versionInfo> "v2.4.0" .
-<http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#versionURI> "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#priorVersion> "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#versionInfo> "v2.4.1"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#versionURI> "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.1"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 # 
 # 
 # #################################################################
@@ -2182,7 +2182,7 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/gradient
 <http://data.europa.eu/949/gradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/GradientCruve> .
+<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/GradientCurve> .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Siding> .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/gradient> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.3.1" .
@@ -3640,14 +3640,14 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/posBegin
 <http://data.europa.eu/949/posBegin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/posBegin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/NetELement> .
+<http://data.europa.eu/949/posBegin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/NetElement> .
 <http://data.europa.eu/949/posBegin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/posBegin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/posBegin> <http://www.w3.org/2000/01/rdf-schema#label> "position begin"@en .
 # 
 # http://data.europa.eu/949/posEnd
 <http://data.europa.eu/949/posEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/posEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/NetELement> .
+<http://data.europa.eu/949/posEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/NetElement> .
 <http://data.europa.eu/949/posEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/posEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/posEnd> <http://www.w3.org/2000/01/rdf-schema#label> "position end"@en .
@@ -4487,9 +4487,6 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/FreightTerminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PrincipalLocation> .
 <http://data.europa.eu/949/FreightTerminal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 # 
-# http://data.europa.eu/949/GradientCruve
-<http://data.europa.eu/949/GradientCruve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://data.europa.eu/949/GradientCurve
 <http://data.europa.eu/949/GradientCurve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/GradientCurve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
@@ -4513,7 +4510,6 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/LineReference
 <http://data.europa.eu/949/LineReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/LineReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://data.europa.eu/949/LineReference> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/LineReference> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/LineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a specific national railway line."@en .
@@ -4533,7 +4529,7 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/Loop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/Track> .
 <http://data.europa.eu/949/Loop> <http://purl.org/dc/terms/source> "Official Journal of the European Union L 139 I/85"@en .
 <http://data.europa.eu/949/Loop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/Loop> <http://www.w3.org/2000/01/rdf-schema#label> "loop"@en .
+<http://data.europa.eu/949/Loop> <http://www.w3.org/2000/01/rdf-schema#label> "Loop"@en .
 <http://data.europa.eu/949/Loop> <http://www.w3.org/2004/02/skos/core#definition> "Track, connected to the main track, used for passing, crossing and stabling."@en .
 # 
 # http://data.europa.eu/949/Manufacturer
@@ -4555,9 +4551,6 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/NationalRailwayLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/NationalRailwayLine> <http://www.w3.org/2000/01/rdf-schema#label> "National Railway Line"@en .
 <http://data.europa.eu/949/NationalRailwayLine> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
-# http://data.europa.eu/949/NetELement
-<http://data.europa.eu/949/NetELement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://data.europa.eu/949/NetElement
 <http://data.europa.eu/949/NetElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -4669,10 +4662,11 @@ _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/SpotLocation
 <http://data.europa.eu/949/SpotLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/SpotLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://data.europa.eu/949/SpotLocation> <http://purl.org/dc/terms/created> "2022-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/SpotLocation> <http://purl.org/dc/terms/source> "https://wiki3.railml.org/wiki/RTM:spotLocation"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://data.europa.eu/949/SpotLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/SpotLocation> <http://www.w3.org/2000/01/rdf-schema#label> "spot location"@en .
+<http://data.europa.eu/949/SpotLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Spot Location"@en .
+<http://data.europa.eu/949/SpotLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/Station
 <http://data.europa.eu/949/Station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -4697,8 +4691,11 @@ _:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://data.europa.eu/949/StoppingPlace
 <http://data.europa.eu/949/StoppingPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/StoppingPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/SpotLocation> .
+<http://data.europa.eu/949/StoppingPlace> <http://purl.org/dc/terms/created> "2022-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/StoppingPlace> <http://purl.org/dc/terms/source> "https://wiki3.railml.org/wiki/IS:stoppingPlace"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://data.europa.eu/949/StoppingPlace> <http://www.w3.org/2000/01/rdf-schema#label> "stopping place"@en .
+<http://data.europa.eu/949/StoppingPlace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
+<http://data.europa.eu/949/StoppingPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Stopping Place"@en .
+<http://data.europa.eu/949/StoppingPlace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/Switch
 <http://data.europa.eu/949/Switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -4710,10 +4707,9 @@ _:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/TopologicalObject
 <http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://data.europa.eu/949/TopologicalObject> <http://purl.org/dc/terms/created> "2022-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "topological object"@en .
+<http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Topological Object"@en .
 <http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/Track

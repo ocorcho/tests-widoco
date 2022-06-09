@@ -1,151 +1,147 @@
 <h2 id="desc" class="list">ERA vocabulary: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Figure 1 shows the classes and properties of the vocabulary that represents the concepts related to the European railway infrastructure and the vehicles authorized to operate over it:</span>
-<center><img src="resources/images/ERA-with-topological-object-classes.drawio.png"><figcaption>Figure 1. Conceptual model for the representation of the information related to the European railway infrastructure and authorized vehicles.</figcaption>
+Figure 1 shows the main classes and properties of this vocabulary, which represent concepts related to the railway infrastructure and to the vehicles authorized to operate over it.</span>
+<center><img src="resources/images/ERA-with-topological-object-classes.png"><figcaption>Figure 1. Conceptual model for the representation of the information related to the railway infrastructure and authorized vehicles.</figcaption>
 </center>
     <br>
 <span class="markdown">
-This vocabulary is divided into two main portions: (1) Railway infrastructure, and (2) Authorized vehicles. The Railway infrastructure portion contains two layers: the Implementation layer that represents the tracks and their related concepts, the line sections, and the operational points, and the Abstraction layer where the network topological concepts are defined. Additionally it reuses the <tt>geosparql</tt> pattern for operational points that are seen as geographical features that have a certain geometry, e.g. coordinates. The Authorized vehicles portion contains information on the vehicles and their keepers, and the vehicle types and their manufacturers.
+This vocabulary is divided into two main portions: (1) Railway infrastructure (presented at the top of the figure), and (2) Authorized vehicles (presented at the bottom of the figure). 
     
-An [era:OperationalPoint](#OperationalPoint) is any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided. The [era:SectionOfLine](#SectionOfLine) is the part of the line between adjacent operational points. These adjacent operational points are defined by properties [era:opStart](#opStart) and [era:opEnd](#opPEnd) which indicate the beginning and the end of a line section. A line section may consist of several tracks; also the operational point is related to one or more tracks. Both relationships are represented by the property [era:track](#track). An [era:Track](#Track) is any running track used for train service movements, and the [era:Siding](#Siding) is any track within an operational point, which is not used for operational routing of a train. An operational point is related to a siding through the property [era:siding](#siding).
+* The **Railway infrastructure** portion contains two layers: the Implementation layer, which represents sections of line, operational points and tracks with all of their related concepts, and the Abstraction layer, where the network topological concepts are defined. Additionally it reuses the <tt>geosparql</tt> pattern for the representation of all operational points as geographical features that have a certain geometry, e.g. coordinates. 
     
-The following example shows the RDF representaton an operational point 'ATIz' (Inzersdorf Ort (in Iz)) which is part of the Austrian railway infrastructure,  that has seven tracks:
+* The **Authorized vehicles** portion contains information on the vehicles and their keepers, as well as vehicle types and their manufacturers.
+    
+An [era:OperationalPoint](#OperationalPoint) is any location that is relevant for train service operations, such as those where train services may begin and end or change route, and where passenger or freight services may be provided. The [era:SectionOfLine](#SectionOfLine) is the part of the line between adjacent operational points. These adjacent operational points are defined by the two properties [era:opStart](#opStart) and [era:opEnd](#opPEnd), which indicate the beginning and the end of a section of line. A section of line may consist of one or several tracks; and also the operational point is related to one or more tracks. Both relationships are represented by the property [era:track](#track). An [era:Track](#Track) is any running track used for train service movements, and the [era:Siding](#Siding) is any track within an operational point, which is not used for thhe operational routing of a train. An operational point is related to a siding through the property [era:siding](#siding).
+    
+The following example shows the RDF representation of the operational point 'ATIz' (Inzersdorf Ort (in Iz)) which is part of the Austrian railway infrastructure. This [operational point](http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATIz) has seven tracks:
 </span>
-
-<div class="turtle pre">
-era-res-fi:operationalPoints/ATIz 
-     a era:OperationalPoint;
-     era:track             
-          era-res-fi:tracks/ATIz-301;
-     era:track 
-          era-res-fi:tracks/ATIz-302;
-     era:track 
-          era-res-fi:ATIz-303;
-     era:track 
-          era-res-fi:tracks/ATIz-304;
-     era:track 
-          era-res-fi:tracks/ATIz-305;
-     era:track 
-          era-res-fi:tracks/ATIz-307;
-     era:track 
-          era-res-fi:tracks/ATIz-309.
-</div>
-<br>
-<textarea id="code" name="code">
-era-res-fi:operationalPoints/ATIz 
-     a era:OperationalPoint;
-     era:track             
-          era-res-fi:tracks/ATIz-301;
-     era:track 
-          era-res-fi:tracks/ATIz-302;
-     era:track 
-          era-res-fi:ATIz-303;
-     era:track 
-          era-res-fi:tracks/ATIz-304;
-     era:track 
-          era-res-fi:tracks/ATIz-305;
-     era:track 
-          era-res-fi:tracks/ATIz-307;
-     era:track 
-          era-res-fi:tracks/ATIz-309.
-</textarea>
-
 <pre>
-era-res-fi:operationalPoints/ATIz 
-     a era:OperationalPoint;
-     era:track             
-          era-res-fi:tracks/ATIz-301;
-     era:track 
-          era-res-fi:tracks/ATIz-302;
-     era:track 
-          era-res-fi:ATIz-303;
-     era:track 
-          era-res-fi:tracks/ATIz-304;
-     era:track 
-          era-res-fi:tracks/ATIz-305;
-     era:track 
-          era-res-fi:tracks/ATIz-307;
-     era:track 
-          era-res-fi:tracks/ATIz-309.
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+@PREFIX era-res-track: <http://data.europa.eu/949/functionalInfrastructure/tracks/> .
+
+era-res-op:ATIz a era:OperationalPoint;
+     era:track era-res-track:ATIz-301;
+     era:track era-res-track:ATIz-302;
+     era:track era-res-track:ATIz-303;
+     era:track era-res-track:ATIz-304;
+     era:track era-res-track:ATIz-305;
+     era:track era-res-track:ATIz-307;
+     era:track era-res-track:ATIz-309.
 </pre>
 <span class="markdown">
-The next example shows a [era:SectionOfLine](#SectionOfLine) identified as '10601_ATAa_ATIz' that starts ([era:opStart](#opStart)) in the operational point 'W.Mat.-Altmannsdorf (in Wbf)' and ends ([era:opEnd](#opEnd)) in the operational point from the previous example, 'Inzersdorf Ort (in Iz)'.
+The next [example](http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz) shows a [era:SectionOfLine](#SectionOfLine) identified as '10601_ATAa_ATIz' that starts ([era:opStart](#opStart)) in the operational point 'W.Mat.-Altmannsdorf (in Wbf)' and ends ([era:opEnd](#opEnd)) in the operational point from the previous example, 'Inzersdorf Ort (in Iz)'.
 </span>
 <pre>
-era-res-fi:sectionsOfLine/10601_ATAa_ATIz
-     a era:SectionOfLine;
-     era:opStart 
-          era-res-fi:operationalPoints/ATAa;
-     era:opEnd
-          era-res-fi:operationalPoints/ATIz.
-era-res-fi:operationalPoints/ATAa
-     a era:OperationalPoint;
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-sol: <http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/> .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+
+era-res-sol:10601_ATAa_ATIz a era:SectionOfLine;
+     era:opStart era-res-op:ATAa;
+     era:opEnd era-res-op:ATIz.
+
+era-res-op:ATAa a era:OperationalPoint;
      era:opName "W.Mat.-Altmannsdorf (in Wbf)"^^xsd:string.
-era-res-fi:operationalPoints/ATIz
-     a era:OperationalPoint;
+
+era-res-op:ATIz a era:OperationalPoint;
      era:opName "Inzersdorf Ort (in Iz)"^^xsd:string.
 </pre>
 <span class="markdown">
 Next, the sidings ([era:Siding](#Siding)) of this operational point related with the property [era:siding](#siding), are presented together with their [era:sidingId](#sidingId) and refuelling information ([era:hasRefuelling](#hasRefuelling)):
 </span>
 <pre>
-era-res-fi:operationalPoints/ATIz 
-     a era:OperationalPoint;
-     era:siding             
-               [era:sidingId "10b";
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+
+era-res-op:ATIz a era:OperationalPoint;
+     era:siding [era:sidingId "10b";
                era:hasRefuelling false];
-     era:siding            
-               [era:sidingId "12b";
+     era:siding [era:sidingId "12b";
                era:hasRefuelling false];
-     era:siding           
-               [era:sidingId "14b";
+     era:siding [era:sidingId "14b";
                era:hasRefuelling false].
 </pre>
 <span class="markdown">
-An operational point is a [geosparql:Feature](http://www.opengis.net/ont/geosparql#Feature) that [geosparql:hasGeometry](http://www.opengis.net/ont/geosparql#hasGeometry) a certain location  ([geosparql:Geometry](http://www.opengis.net/ont/geosparql#Geometry)). This location has a [geo:lat](http://www.w3.org/2003/01/geo/wgs84_pos#lat) and a longitude [geo:long](http://www.w3.org/2003/01/geo/wgs84_pos#lat). The next example shows the coordinates of the operational point 'ATIz':
+As shown in figure 1, an operational point is a [gsp:Feature](http://www.opengis.net/ont/geosparql#Feature). As such, it [gsp:hasGeometry](http://www.opengis.net/ont/geosparql#hasGeometry) a certain location ([gsp:Geometry](http://www.opengis.net/ont/geosparql#Geometry)). This location has a [geo:lat](http://www.w3.org/2003/01/geo/wgs84_pos#lat) and a longitude [geo:long](http://www.w3.org/2003/01/geo/wgs84_pos#lat). The next example shows the coordinates of the operational point 'ATIz':
 </span>
 <pre>
-era-res-fi:operationalPoints/ATIz 
-     a era:OperationalPoint;
-     geosparql:hasGeometry &lt;http://data.europa.eu/949/locations/16.3571944/48.1517344.
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+@PREFIX geo: <http://www.w3.org/2003/01/geo/> .
+@PREFIX gsp: <http://www.opengis.net/ont/geosparql#> .
+
+era-res-op:ATIz a era:OperationalPoint;
+     gsp:hasGeometry &lt;http://data.europa.eu/949/locations/16.3571944/48.1517344.
 &lt;http://data.europa.eu/949/locations/16.3571944/48.1517344 
-               geo:lat "48.1517";
-               geo:long "16.3572".
+        geo:lat "48.1517"^^xsd:double;
+        geo:long "16.3572"^^xsd:double.
 </pre>
 <span class="markdown">
-The next example shows the tunnels ([era:Tunnel](#Tunnel)) where track 'ATAo', that is 'St.Anton am Arlberg', passes through ([era:passesThorughTunnel](#passesThroughTunnel)), their [era:tunnelIdentification](#tunnelIdentification) , and their [era:length](#length).
+The next [example](http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATAo) shows the tunnels ([era:Tunnel](#Tunnel)) where the tracks associated to the operational point 'ATAo', that is 'St.Anton am Arlberg', pass through ([era:passesThroughTunnel](#passesThroughTunnel)), their [era:tunnelIdentification](#tunnelIdentification), and their [era:length](#length).
 </span>
 <pre>
-era-res-fi:operationalPoints/ATAo> 
-     a era:OperationalPoint;
-     era:track era-res-fi:tracks/ATAo_1-301-311;
-     era:track era-res-fi:tracks/ATAo_2-302-312.
-era-res-fi:tracks/ATAo_1-301-311    
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+@PREFIX era-res-track: <http://data.europa.eu/949/functionalInfrastructure/tracks/> .
+
+era-res-op:ATAo a era:OperationalPoint;
+     era:track era-res-track:ATAo_1-(301-311);
+     era:track era-res-track:ATAo_2-(302-312).
+era-res-track:ATAo_1-301-311 a era:Track;
      era:passesThroughTunnel
          [era:tunnelIdentification "WOLFSGRUBEN";
           era:length 1743.0].
-era-res-fi:tracks/ATAo_2-302-312
+era-res-track:ATAo_2-302-312 a era:Track;
      era:passesThroughTunnel
          [era:tunnelIdentification "ARLBERG";
           era:length 10649.0].    
 </pre>
 <span class="markdown">
-In Figure 1 you can see that a Track may have several platforms ([era:platform](#platform)), a train detection system ([era:trainDetectionSystem](#trainDetectionSystem)), a contact line system ([contactLineSystem](#contactLineSystem)), and the ETCS level ([era:etcsLevel](#etcsLevel)). 
-    
+In Figure 1 you can see that an [era:Track](#Track) may have several associated platforms ([era:platform](#platform)), train detection systems ([era:trainDetectionSystem](#trainDetectionSystem)), contact line systems ([contactLineSystem](#contactLineSystem)), and ETCS level ([era:etcsLevel](#etcsLevel)), besides many other properties. 
+
+The next [example](http://data.europa.eu/949/functionalInfrastructure/tracks/0000_IT01854_TR9722-BC-BC02_I) shows a track present in the Italian infrastructure where many of the applicable properties for tracks are provided. The RDF provided in the example is only an excerpt of the full set of attributes applicable to this track.
+</span>
+<pre>
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-track: <http://data.europa.eu/949/functionalInfrastructure/tracks/> .
+
+era-res-track:0000_IT01854_TR9722-BC-BC02_IT05014 a era:Track;
+    rdfs:label	"0000_IT01854_TR9722-BC-BC02_IT05014" ;
+	era:wheelSetGauge	<http://data.europa.eu/949/concepts/nominal-track-gauges/1435> ;
+    ns1:gaugingProfile	<http://data.europa.eu/949/concepts/gaugings/GI2> ,
+		<http://data.europa.eu/949/concepts/gaugings/GC> ;
+	era:maximumTemperature	40 ;
+	era:minimumTemperature	-25 ;
+	era:railInclination	<http://data.europa.eu/949/concepts/rail-inclinations/1%2F20> .
+@prefix ns4:	<http://data.europa.eu/949/concepts/eddy-current-braking/> .
+<http://data.europa.eu/949/functionalInfrastructure/tracks/0000_IT01854_TR9722-BC-BC02_IT05014>	<http://data.europa.eu/949/concepts/eddy-current-braking/eddyCurrentBraking>,	<http://data.europa.eu/949/concepts/eddy-current-braking/not_allowed> ;
+	era:minimumWheelDiameter	330 ;
+	era:minimumHorizontalRadius	556 ;
+    era:maximumContactWireHeight	5.7000000000000001776 ;
+	era:minimumContactWireHeight	5.0999999999999996447 .
+	era:protectionLegacySystem	<http://data.europa.eu/949/concepts/train-protection-legacy-systems/none> ;
+	era:etcsSystemCompatibility	<http://data.europa.eu/949/concepts/etcs-system-compatibilities/ESC-IT-02-RFI-1.0_L2_AVp_MIBO_01> .
+
+</pre>
+<span>    
 A [era:Vehicle](#Vehicle) belongs to a [era:VehicleType](#VehicleType) that has been authorized to operate on the European railway infrastructure. The vehicle is owned ([era:vehicleKeeper](#vehicleKeeper)) by a [era:VehicleKeeper](#VehicleKeeper). A vehicle type is manufactured ([era:manufacturer](#manufacturer)) by a [era:Manufacturer](#Manufacturer). Both manufacturers and vehicle keepers are subclasses of [org:Organization](#Organization).
     
-The next example shows the [era:VehicleType](#VehicleType)  with [era:alternativeName](#alternativeName) "Eurolight IIIA". Its [era:manufacturer](#manufacturer) is "Stadler Rail Valencia S.A.U.".
+The next [example](http://data.europa.eu/949/vehicleTypes#11-006-0001-2-001) shows the [era:VehicleType](#VehicleType)  with [era:alternativeName](#alternativeName) "Eurolight IIIA". Its [era:manufacturer](#manufacturer) is "Stadler Rail Valencia S.A.U.".
     </span>
 <pre>
-&lt;http://data.europa.eu/949/vehicleTypes#11-006-0001-2-001
-     a era:VehicleType;
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-vehicletype: <http://data.europa.eu/949/vehicleTypes#> .
+@PREFIX era-res-manufacturer: <http://data.europa.eu/949/vehicleTypes#> .
+
+era-res-vehicletype:11-006-0001-2-001 a era:VehicleType;
      era:alternativeName "Eurolight IIIA";
      era:manufacturer 
-          &lt;http://data.europa.eu/949/manufacturers/Stadler-Rail-Valencia-SAU..
+          era-res-manufacturer:Stadler-Rail-Valencia-SAU.
 </pre>
 <span class="markdown">
 Figure 2 shows for the Railway infrastructure portion of the ontology, the datatype properties that belong to each class together with their datatype:</span>
-<center><img src="resources/images/ERA-with-topological-object-classes-DP.drawio.png"><figcaption>Figure 2. Conceptual model for the representation of the information related to the European railway infrastructure with datatype properties.</figcaption>
+<center><img src="resources/images/ERA-with-topological-object-classes-DP.png"><figcaption>Figure 2. Conceptual model for the representation of the information related to the European railway infrastructure with datatype properties.</figcaption>
 </center>
     <br>
 
@@ -156,7 +152,7 @@ Figure 3 shows the Track and VehicleType classes with their datatype properties 
 </center>
     <br>
 <span class="markdown">Figure 4 shows the classes of the Railway Infrastructure and Authorized Vehicles portions with their SKOS properties, i.e. object properties where the range is the class SKOS:Concept. Although these are object properties, for readability of the figure we represent these properties inside each class. </span>.
-<center><img src="resources/images/ERA-classes-with-skos.drawio.png"><figcaption>Figure 4. Classes of the ERA vocabulary with their SKOS properties.</figcaption>
+<center><img src="resources/images/ERA-classes-with-skos.png"><figcaption>Figure 4. Classes of the ERA vocabulary with their SKOS properties.</figcaption>
 </center>
     <br>
 
