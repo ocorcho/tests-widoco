@@ -18,8 +18,8 @@ Figure 1 shows the main classes and properties of this vocabulary, which represe
 <p>
 <pre><textarea style="resize:none" readonly id="code" name="code" rows="13" cols="100">
 @PREFIX era: <http://data.europa.eu/949/> .
-@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
-@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+@PREFIX era-res-track: <http://data.europa.eu/949/functionalInfrastructure/tracks/> .
 
 era-res-op:ATIz a era:OperationalPoint;
      era:track era-res-track:ATIz-301;
@@ -30,7 +30,12 @@ era-res-op:ATIz a era:OperationalPoint;
      era:track era-res-track:ATIz-307;
      era:track era-res-track:ATIz-309.
 </textarea></pre>
-
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
 <p>
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz">example</a> shows a <a href="#SectionOfLine">era:SectionOfLine</a> identified as &#39;10601_ATAa_ATIz&#39; that starts (<a href="#opStart">era:opStart</a>) in the operational point &#39;W.Mat.-Altmannsdorf (in Wbf)&#39; and ends (<a href="#opEnd">era:opEnd</a>) in the operational point from the previous example, &#39;Inzersdorf Ort (in Iz)&#39;.
