@@ -40,7 +40,7 @@ era-res-op:ATIz a era:OperationalPoint;
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz">example</a> shows a <a href="#SectionOfLine">era:SectionOfLine</a> identified as &#39;10601_ATAa_ATIz&#39; that starts (<a href="#opStart">era:opStart</a>) in the operational point &#39;W.Mat.-Altmannsdorf (in Wbf)&#39; and ends (<a href="#opEnd">era:opEnd</a>) in the operational point from the previous example, &#39;Inzersdorf Ort (in Iz)&#39;.
 </span></p>
-<p><pre><textarea style="resize:none" readonly id="code2" name="code" rows="11" cols="100">
+<p><pre><textarea style="resize:none" readonly id="code2" name="code">
 @PREFIX era: <http://data.europa.eu/949/> .
 @PREFIX era-res-sol: <http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/> .
 @PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
@@ -63,18 +63,24 @@ era-res-op:ATIz a era:OperationalPoint;
 <span class="markdown">
 Next, the sidings (<a href="#Siding">era:Siding</a>) of this operational point related with the property <a href="#siding">era:siding</a>, are presented together with their <a href="#sidingId">era:sidingId</a> and refuelling information (<a href="#hasRefuelling">era:hasRefuelling</a>):
 </span></p>
-<p><pre>
-@PREFIX era: http://data.europa.eu/949/ .
-@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
+<p><pre><textarea style="resize:none" readonly id="code3" name="code">
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
 
 era-res-op:ATIz a era:OperationalPoint;
-     era:siding [era:sidingId &quot;10b&quot;;
+     era:siding [era:sidingId "10b";
                era:hasRefuelling false];
      era:siding [era:sidingId &quot;12b&quot;;
                era:hasRefuelling false];
      era:siding [era:sidingId &quot;14b&quot;;
                era:hasRefuelling false].
-</pre>
+</textarea></pre>
+<script>
+      var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
 <span class="markdown">
 As shown in figure 1, an operational point is a <a href="http://www.opengis.net/ont/geosparql#Feature">gsp:Feature</a>. As such, it <a href="http://www.opengis.net/ont/geosparql#hasGeometry">gsp:hasGeometry</a> a certain location (<a href="http://www.opengis.net/ont/geosparql#Geometry">gsp:Geometry</a>). This location has a <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a> and a longitude <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:long</a>. The next example shows the coordinates of the operational point &#39;ATIz&#39;:
 </span></p>
