@@ -18,8 +18,8 @@ Figure 1 shows the main classes and properties of this vocabulary, which represe
 <p>
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="13" cols="100">
 @PREFIX era: &lt;http://data.europa.eu/949/&gt; .
-@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
-@PREFIX era-res-track: <http://data.europa.eu/949/functionalInfrastructure/tracks/> .
+@PREFIX era-res-op: &lt;http://data.europa.eu/949/functionalInfrastructure/operationalPoints/&gt; .
+@PREFIX era-res-track: &lt;http://data.europa.eu/949/functionalInfrastructure/tracks/&gt; .
 
 era-res-op:ATIz a era:OperationalPoint;
      era:track era-res-track:ATIz-301;
@@ -41,9 +41,9 @@ era-res-op:ATIz a era:OperationalPoint;
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz">example</a> shows a <a href="#SectionOfLine">era:SectionOfLine</a> identified as &#39;10601_ATAa_ATIz&#39; that starts (<a href="#opStart">era:opStart</a>) in the operational point &#39;W.Mat.-Altmannsdorf (in Wbf)&#39; and ends (<a href="#opEnd">era:opEnd</a>) in the operational point from the previous example, &#39;Inzersdorf Ort (in Iz)&#39;.
 </span></p>
 <p><pre><textarea style="resize:none" readonly id="code2" name="code">
-@PREFIX era: <http://data.europa.eu/949/> .
-@PREFIX era-res-sol: <http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/> .
-@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
+@PREFIX era-res-sol: &lt;http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/&gt; .
+@PREFIX era-res-op: &lt;http://data.europa.eu/949/functionalInfrastructure/operationalPoints/&gt; .
 
 era-res-sol:10601_ATAa_ATIz a era:SectionOfLine;
      era:opStart era-res-op:ATAa;
@@ -64,8 +64,8 @@ era-res-op:ATIz a era:OperationalPoint;
 Next, the sidings (<a href="#Siding">era:Siding</a>) of this operational point related with the property <a href="#siding">era:siding</a>, are presented together with their <a href="#sidingId">era:sidingId</a> and refuelling information (<a href="#hasRefuelling">era:hasRefuelling</a>):
 </span></p>
 <p><pre><textarea style="resize:none" readonly id="code3" name="code">
-@PREFIX era: <http://data.europa.eu/949/> .
-@PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
+@PREFIX era-res-op: &lt;http://data.europa.eu/949/functionalInfrastructure/operationalPoints/&gt; .
 
 era-res-op:ATIz a era:OperationalPoint;
      era:siding [era:sidingId &quot;10b&quot;;
@@ -105,10 +105,10 @@ era-res-op:ATIz a era:OperationalPoint;
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATAo">example</a> shows the tunnels (<a href="#Tunnel">era:Tunnel</a>) where the tracks associated to the operational point &#39;ATAo&#39;, that is &#39;St.Anton am Arlberg&#39;, pass through (<a href="#passesThroughTunnel">era:passesThroughTunnel</a>), their <a href="#tunnelIdentification">era:tunnelIdentification</a>, and their <a href="#length">era:length</a>.
 </span></p>
-<p><pre>
-@PREFIX era: http://data.europa.eu/949/ .
-@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
-@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
+<p><pre><textarea style="resize:none" readonly id="code5" name="code">
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
+@PREFIX era-res-op: &lt;http://data.europa.eu/949/functionalInfrastructure/operationalPoints/&gt; .
+@PREFIX era-res-track: &lt;http://data.europa.eu/949/functionalInfrastructure/tracks/&gt; .
 
 era-res-op:ATAo a era:OperationalPoint;
      era:track era-res-track:ATAo_1-(301-311);
@@ -121,42 +121,60 @@ era-res-track:ATAo_2-302-312 a era:Track;
      era:passesThroughTunnel
          [era:tunnelIdentification &quot;ARLBERG&quot;;
           era:length 10649.0].<br>
-</pre>
+</textarea></pre>
+<script>
+      var editor5 = CodeMirror.fromTextArea(document.getElementById("code5"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
 <span class="markdown">
 In Figure 1 you can see that an <a href="#Track">era:Track</a> may have several associated platforms (<a href="#platform">era:platform</a>), train detection systems (<a href="#trainDetectionSystem">era:trainDetectionSystem</a>), contact line systems (<a href="#contactLineSystem">contactLineSystem</a>), and ETCS level (<a href="#etcsLevel">era:etcsLevel</a>), besides many other properties. </p>
 <p>The next <a href="http://data.europa.eu/949/functionalInfrastructure/tracks/0000_IT01854_TR9722-BC-BC02_I">example</a> shows a track present in the Italian infrastructure where many of the applicable properties for tracks are provided. The RDF provided in the example is only an excerpt of the full set of attributes applicable to this track.
 </span></p>
-<p><pre>
-@PREFIX era: http://data.europa.eu/949/ .
-@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/.
+<p><pre><textarea style="resize:none" readonly id="code6" name="code">
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
+@PREFIX era-res-track: &lt;http://data.europa.eu/949/functionalInfrastructure/tracks/&gt;.
 
 era-res-track:0000_IT01854_TR9722-BC-BC02_IT05014 a era:Track;
-    rdfs:label    &quot;0000_IT01854_TR9722-BC-BC02_IT05014&quot; ;
-    era:wheelSetGauge    http://data.europa.eu/949/concepts/nominal-track-gauges/1435 ;
-    ns1:gaugingProfile    http://data.europa.eu/949/concepts/gaugings/GI2 , http://data.europa.eu/949/concepts/gaugings/GC ;
+    rdfs:label &quot;0000_IT01854_TR9722-BC-BC02_IT05014&quot; ;
+    era:wheelSetGauge    &lt;http://data.europa.eu/949/concepts/nominal-track-gauges/1435&gt; ;
+    era:gaugingProfile    &lt;http://data.europa.eu/949/concepts/gaugings/GI2&gt; , &lt;http://data.europa.eu/949/concepts/gaugings/GC&gt; ;
     era:maximumTemperature    40 ;
     era:minimumTemperature    -25 ;
-    era:railInclination    http://data.europa.eu/949/concepts/rail-inclinations/1%2F20 ;
+    era:railInclination    &lt;http://data.europa.eu/949/concepts/rail-inclinations/1%2F20&gt; ;
     era:minimumWheelDiameter    330 ;
     era:minimumHorizontalRadius    556 ;
     era:maximumContactWireHeight    5.7000000000000001776 ;
     era:minimumContactWireHeight    5.0999999999999996447 .
-    era:protectionLegacySystem    http://data.europa.eu/949/concepts/train-protection-legacy-systems/none ;
-    era:etcsSystemCompatibility    http://data.europa.eu/949/concepts/etcs-system-compatibilities/ESC-IT-02-RFI-1.0_L2_AVp_MIBO_01 .
-</pre>
+    era:protectionLegacySystem    &lt;http://data.europa.eu/949/concepts/train-protection-legacy-systems/none&gt; ;
+    era:etcsSystemCompatibility    &lt;http://data.europa.eu/949/concepts/etcs-system-compatibilities/ESC-IT-02-RFI-1.0_L2_AVp_MIBO_01&gt; .
+</textarea></pre>
+<script>
+      var editor6 = CodeMirror.fromTextArea(document.getElementById("code6"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
 <span><br>A <a href="#Vehicle">era:Vehicle</a> belongs to a <a href="#VehicleType">era:VehicleType</a> that has been authorized to operate on the European railway infrastructure. The vehicle is owned (<a href="#vehicleKeeper">era:vehicleKeeper</a>) by a <a href="#VehicleKeeper">era:VehicleKeeper</a>. A vehicle type is manufactured (<a href="#manufacturer">era:manufacturer</a>) by a <a href="#Manufacturer">era:Manufacturer</a>. Both manufacturers and vehicle keepers are subclasses of <a href="#Organization">org:Organization</a>.</p>
 <p>The next <a href="http://data.europa.eu/949/vehicleTypes#11-006-0001-2-001">example</a> shows the <a href="#VehicleType">era:VehicleType</a>  with <a href="#alternativeName">era:alternativeName</a> &quot;Eurolight IIIA&quot;. Its <a href="#manufacturer">era:manufacturer</a> is &quot;Stadler Rail Valencia S.A.U.&quot;.
-    </span>
-    </span>
-<p><pre>
-@PREFIX era: http://data.europa.eu/949/ .
-@PREFIX era-res-vehicletype: http://data.europa.eu/949/vehicleTypes# .
-@PREFIX era-res-manufacturer: http://data.europa.eu/949/vehicleTypes# .
-<p>era-res-vehicletype:11-006-0001-2-001 a era:VehicleType;
+
+<p><pre><textarea style="resize:none" readonly id="code7" name="code">
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
+@PREFIX era-res-vehicletype: &lt;http://data.europa.eu/949/vehicleTypes#&gt; .
+@PREFIX era-res-manufacturer: &lt;http://data.europa.eu/949/vehicleTypes#&gt; .
+
+era-res-vehicletype:11-006-0001-2-001 a era:VehicleType;
      era:alternativeName &quot;Eurolight IIIA&quot;;
      era:manufacturer 
           era-res-manufacturer:Stadler-Rail-Valencia-SAU.
-</pre>
+</textarea></pre>
+<script>
+      var editor7 = CodeMirror.fromTextArea(document.getElementById("code7"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
 <span class="markdown">
 Figure 2 shows for the Railway infrastructure portion of the ontology, the datatype properties that belong to each class together with their datatype:</span></p>
 <p><center><img src="resources/images/ERA-with-topological-object-classes-DP.png"><figcaption>Figure 2. Conceptual model for the representation of the information related to the European railway infrastructure with datatype properties.</figcaption>
