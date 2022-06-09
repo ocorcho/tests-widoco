@@ -15,7 +15,8 @@ Figure 1 shows the main classes and properties of this vocabulary, which represe
 <p>An <a href="#OperationalPoint">era:OperationalPoint</a> is any location that is relevant for train service operations, such as those where train services may begin and end or change route, and where passenger or freight services may be provided. The <a href="#SectionOfLine">era:SectionOfLine</a> is the part of the line between adjacent operational points. These adjacent operational points are defined by the two properties <a href="#opStart">era:opStart</a> and <a href="#opPEnd">era:opEnd</a>, which indicate the beginning and the end of a section of line. A section of line may consist of one or several tracks; and also the operational point is related to one or more tracks. Both relationships are represented by the property <a href="#track">era:track</a>. An <a href="#Track">era:Track</a> is any running track used for train service movements, and the <a href="#Siding">era:Siding</a> is any track within an operational point, which is not used for thhe operational routing of a train. An operational point is related to a siding through the property <a href="#siding">era:siding</a>.</p>
 <p>The following example shows the RDF representation of the operational point &#39;ATIz&#39; (Inzersdorf Ort (in Iz)) which is part of the Austrian railway infrastructure. This <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATIz">operational point</a> has seven tracks:
 </span></p>
-<p><pre>
+<p>
+<form><textarea id="code" name="code">
 @PREFIX era: http://data.europa.eu/949/ .
 @PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
 @PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
@@ -28,8 +29,8 @@ era-res-op:ATIz a era:OperationalPoint;
      era:track era-res-track:ATIz-305;
      era:track era-res-track:ATIz-307;
      era:track era-res-track:ATIz-309.
-</pre>
-</p>
+</textarea></form>
+
 <p>
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz">example</a> shows a <a href="#SectionOfLine">era:SectionOfLine</a> identified as &#39;10601_ATAa_ATIz&#39; that starts (<a href="#opStart">era:opStart</a>) in the operational point &#39;W.Mat.-Altmannsdorf (in Wbf)&#39; and ends (<a href="#opEnd">era:opEnd</a>) in the operational point from the previous example, &#39;Inzersdorf Ort (in Iz)&#39;.
@@ -52,7 +53,7 @@ Next, the sidings (<a href="#Siding">era:Siding</a>) of this operational point r
 </span></p>
 <p><pre>
 @PREFIX era: http://data.europa.eu/949/ .
-@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .</p>
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
 
 era-res-op:ATIz a era:OperationalPoint;
      era:siding [era:sidingId &quot;10b&quot;;
@@ -108,8 +109,7 @@ In Figure 1 you can see that an <a href="#Track">era:Track</a> may have several 
 era-res-track:0000_IT01854_TR9722-BC-BC02_IT05014 a era:Track;
     rdfs:label    &quot;0000_IT01854_TR9722-BC-BC02_IT05014&quot; ;
     era:wheelSetGauge    http://data.europa.eu/949/concepts/nominal-track-gauges/1435 ;
-    ns1:gaugingProfile    http://data.europa.eu/949/concepts/gaugings/GI2 ,
-        http://data.europa.eu/949/concepts/gaugings/GC ;
+    ns1:gaugingProfile    http://data.europa.eu/949/concepts/gaugings/GI2 , http://data.europa.eu/949/concepts/gaugings/GC ;
     era:maximumTemperature    40 ;
     era:minimumTemperature    -25 ;
     era:railInclination    http://data.europa.eu/949/concepts/rail-inclinations/1%2F20 ;
@@ -122,6 +122,7 @@ era-res-track:0000_IT01854_TR9722-BC-BC02_IT05014 a era:Track;
 </pre>
 <span><br>A <a href="#Vehicle">era:Vehicle</a> belongs to a <a href="#VehicleType">era:VehicleType</a> that has been authorized to operate on the European railway infrastructure. The vehicle is owned (<a href="#vehicleKeeper">era:vehicleKeeper</a>) by a <a href="#VehicleKeeper">era:VehicleKeeper</a>. A vehicle type is manufactured (<a href="#manufacturer">era:manufacturer</a>) by a <a href="#Manufacturer">era:Manufacturer</a>. Both manufacturers and vehicle keepers are subclasses of <a href="#Organization">org:Organization</a>.</p>
 <p>The next <a href="http://data.europa.eu/949/vehicleTypes#11-006-0001-2-001">example</a> shows the <a href="#VehicleType">era:VehicleType</a>  with <a href="#alternativeName">era:alternativeName</a> &quot;Eurolight IIIA&quot;. Its <a href="#manufacturer">era:manufacturer</a> is &quot;Stadler Rail Valencia S.A.U.&quot;.
+    </span>
     </span>
 <p><pre>
 @PREFIX era: http://data.europa.eu/949/ .
