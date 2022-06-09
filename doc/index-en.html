@@ -101,20 +101,6 @@ function loadTOC(){
 <span>Ontology Specification</span>
 </div>
 </div>     
-    <textarea style="resize:none" readonly id="code2" name="code" rows="13" cols="100">
-@PREFIX era: <http://data.europa.eu/949/> .
-@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
-@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
-
-era-res-op:ATIz a era:OperationalPoint;
-     era:track era-res-track:ATIz-301;
-     era:track era-res-track:ATIz-302;
-     era:track era-res-track:ATIz-303;
-     era:track era-res-track:ATIz-304;
-     era:track era-res-track:ATIz-305;
-     era:track era-res-track:ATIz-307;
-     era:track era-res-track:ATIz-309.
-</textarea>
     <div id="abstract"></div>
 <div id="toc"></div>     <div id="introduction"></div>
      <div id="overview"></div>
@@ -131,10 +117,4 @@ The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Pero
 
 </div>
 </body>
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code2"), {
-        mode: "text/turtle",
-        matchBrackets: true
-      });
- </script>
 </html>
