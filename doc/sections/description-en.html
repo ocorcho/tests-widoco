@@ -1,11 +1,11 @@
 <h2 id="desc" class="list">ERA vocabulary: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
+<p><span class="markdown">
 Figure 1 shows the main classes and properties of this vocabulary, which represent concepts related to the railway infrastructure and to the vehicles authorized to operate over it.</span></p>
 <p><center><img src="resources/images/ERA-with-topological-object-classes.png"><figcaption>Figure 1. Conceptual model for the representation of the information related to the railway infrastructure and authorized vehicles.</figcaption>
 </center>
     <br>
 <span class="markdown">
-This vocabulary is divided into two main portions: (1) Railway infrastructure (presented at the top of the figure), and (2) Authorized vehicles (presented at the bottom of the figure). </p>
+<p>This vocabulary is divided into two main portions: (1) Railway infrastructure (presented at the top of the figure), and (2) Authorized vehicles (presented at the bottom of the figure). </p>
 <ul>
 <li><p>The <strong>Railway infrastructure</strong> portion contains two layers: the Implementation layer, which represents sections of line, operational points and tracks with all of their related concepts, and the Abstraction layer, where the network topological concepts are defined. Additionally it reuses the <tt>geosparql</tt> pattern for the representation of all operational points as geographical features that have a certain geometry, e.g. coordinates. </p>
 </li>
@@ -16,10 +16,11 @@ This vocabulary is divided into two main portions: (1) Railway infrastructure (p
 <p>The following example shows the RDF representation of the operational point &#39;ATIz&#39; (Inzersdorf Ort (in Iz)) which is part of the Austrian railway infrastructure. This <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATIz">operational point</a> has seven tracks:
 </span></p>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-op: <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/">http://data.europa.eu/949/functionalInfrastructure/operationalPoints/</a> .
-@PREFIX era-res-track: <a href="http://data.europa.eu/949/functionalInfrastructure/tracks/">http://data.europa.eu/949/functionalInfrastructure/tracks/</a> .</p>
-<p>era-res-op:ATIz a era:OperationalPoint;
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
+@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
+
+era-res-op:ATIz a era:OperationalPoint;
      era:track era-res-track:ATIz-301;
      era:track era-res-track:ATIz-302;
      era:track era-res-track:ATIz-303;
@@ -28,28 +29,32 @@ This vocabulary is divided into two main portions: (1) Railway infrastructure (p
      era:track era-res-track:ATIz-307;
      era:track era-res-track:ATIz-309.
 </pre>
+</p>
+<p>
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/10601_ATAa_ATIz">example</a> shows a <a href="#SectionOfLine">era:SectionOfLine</a> identified as &#39;10601_ATAa_ATIz&#39; that starts (<a href="#opStart">era:opStart</a>) in the operational point &#39;W.Mat.-Altmannsdorf (in Wbf)&#39; and ends (<a href="#opEnd">era:opEnd</a>) in the operational point from the previous example, &#39;Inzersdorf Ort (in Iz)&#39;.
 </span></p>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-sol: <a href="http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/">http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/</a> .
-@PREFIX era-res-op: <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/">http://data.europa.eu/949/functionalInfrastructure/operationalPoints/</a> .</p>
-<p>era-res-sol:10601_ATAa_ATIz a era:SectionOfLine;
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-sol: http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/ .
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
+
+era-res-sol:10601_ATAa_ATIz a era:SectionOfLine;
      era:opStart era-res-op:ATAa;
-     era:opEnd era-res-op:ATIz.</p>
-<p>era-res-op:ATAa a era:OperationalPoint;
-     era:opName &quot;W.Mat.-Altmannsdorf (in Wbf)&quot;^^xsd:string.</p>
-<p>era-res-op:ATIz a era:OperationalPoint;
+     era:opEnd era-res-op:ATIz.
+era-res-op:ATAa a era:OperationalPoint;
+     era:opName &quot;W.Mat.-Altmannsdorf (in Wbf)&quot;^^xsd:string.
+era-res-op:ATIz a era:OperationalPoint;
      era:opName &quot;Inzersdorf Ort (in Iz)&quot;^^xsd:string.
 </pre>
 <span class="markdown">
 Next, the sidings (<a href="#Siding">era:Siding</a>) of this operational point related with the property <a href="#siding">era:siding</a>, are presented together with their <a href="#sidingId">era:sidingId</a> and refuelling information (<a href="#hasRefuelling">era:hasRefuelling</a>):
 </span></p>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-op: <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/">http://data.europa.eu/949/functionalInfrastructure/operationalPoints/</a> .</p>
-<p>era-res-op:ATIz a era:OperationalPoint;
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .</p>
+
+era-res-op:ATIz a era:OperationalPoint;
      era:siding [era:sidingId &quot;10b&quot;;
                era:hasRefuelling false];
      era:siding [era:sidingId &quot;12b&quot;;
@@ -61,13 +66,14 @@ Next, the sidings (<a href="#Siding">era:Siding</a>) of this operational point r
 As shown in figure 1, an operational point is a <a href="http://www.opengis.net/ont/geosparql#Feature">gsp:Feature</a>. As such, it <a href="http://www.opengis.net/ont/geosparql#hasGeometry">gsp:hasGeometry</a> a certain location (<a href="http://www.opengis.net/ont/geosparql#Geometry">gsp:Geometry</a>). This location has a <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a> and a longitude <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:long</a>. The next example shows the coordinates of the operational point &#39;ATIz&#39;:
 </span></p>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-op: <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/">http://data.europa.eu/949/functionalInfrastructure/operationalPoints/</a> .
-@PREFIX geo: <a href="http://www.w3.org/2003/01/geo/">http://www.w3.org/2003/01/geo/</a> .
-@PREFIX gsp: <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a> .</p>
-<p>era-res-op:ATIz a era:OperationalPoint;
-     gsp:hasGeometry &lt;<a href="http://data.europa.eu/949/locations/16.3571944/48.1517344">http://data.europa.eu/949/locations/16.3571944/48.1517344</a>.
-&lt;<a href="http://data.europa.eu/949/locations/16.3571944/48.1517344">http://data.europa.eu/949/locations/16.3571944/48.1517344</a> 
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
+@PREFIX geo: http://www.w3.org/2003/01/geo/ .
+@PREFIX gsp: http://www.opengis.net/ont/geosparql# .
+
+era-res-op:ATIz a era:OperationalPoint;
+     gsp:hasGeometry &lt;http://data.europa.eu/949/locations/16.3571944/48.1517344&gt;.
+&lt;http://data.europa.eu/949/locations/16.3571944/48.1517344&gt; 
         geo:lat &quot;48.1517&quot;^^xsd:double;
         geo:long &quot;16.3572&quot;^^xsd:double.
 </pre>
@@ -75,10 +81,11 @@ As shown in figure 1, an operational point is a <a href="http://www.opengis.net/
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATAo">example</a> shows the tunnels (<a href="#Tunnel">era:Tunnel</a>) where the tracks associated to the operational point &#39;ATAo&#39;, that is &#39;St.Anton am Arlberg&#39;, pass through (<a href="#passesThroughTunnel">era:passesThroughTunnel</a>), their <a href="#tunnelIdentification">era:tunnelIdentification</a>, and their <a href="#length">era:length</a>.
 </span></p>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-op: <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/">http://data.europa.eu/949/functionalInfrastructure/operationalPoints/</a> .
-@PREFIX era-res-track: <a href="http://data.europa.eu/949/functionalInfrastructure/tracks/">http://data.europa.eu/949/functionalInfrastructure/tracks/</a> .</p>
-<p>era-res-op:ATAo a era:OperationalPoint;
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
+@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
+
+era-res-op:ATAo a era:OperationalPoint;
      era:track era-res-track:ATAo_1-(301-311);
      era:track era-res-track:ATAo_2-(302-312).
 era-res-track:ATAo_1-301-311 a era:Track;
@@ -88,38 +95,38 @@ era-res-track:ATAo_1-301-311 a era:Track;
 era-res-track:ATAo_2-302-312 a era:Track;
      era:passesThroughTunnel
          [era:tunnelIdentification &quot;ARLBERG&quot;;
-          era:length 10649.0].<br></pre>
+          era:length 10649.0].<br>
+</pre>
 <span class="markdown">
 In Figure 1 you can see that an <a href="#Track">era:Track</a> may have several associated platforms (<a href="#platform">era:platform</a>), train detection systems (<a href="#trainDetectionSystem">era:trainDetectionSystem</a>), contact line systems (<a href="#contactLineSystem">contactLineSystem</a>), and ETCS level (<a href="#etcsLevel">era:etcsLevel</a>), besides many other properties. </p>
 <p>The next <a href="http://data.europa.eu/949/functionalInfrastructure/tracks/0000_IT01854_TR9722-BC-BC02_I">example</a> shows a track present in the Italian infrastructure where many of the applicable properties for tracks are provided. The RDF provided in the example is only an excerpt of the full set of attributes applicable to this track.
 </span></p>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-track: <a href="http://data.europa.eu/949/functionalInfrastructure/tracks/">http://data.europa.eu/949/functionalInfrastructure/tracks/</a> .</p>
-<p>era-res-track:0000_IT01854_TR9722-BC-BC02_IT05014 a era:Track;
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/.
+
+era-res-track:0000_IT01854_TR9722-BC-BC02_IT05014 a era:Track;
     rdfs:label    &quot;0000_IT01854_TR9722-BC-BC02_IT05014&quot; ;
-    era:wheelSetGauge    <a href="http://data.europa.eu/949/concepts/nominal-track-gauges/1435">http://data.europa.eu/949/concepts/nominal-track-gauges/1435</a> ;
-    ns1:gaugingProfile    <a href="http://data.europa.eu/949/concepts/gaugings/GI2">http://data.europa.eu/949/concepts/gaugings/GI2</a> ,
-        <a href="http://data.europa.eu/949/concepts/gaugings/GC">http://data.europa.eu/949/concepts/gaugings/GC</a> ;
+    era:wheelSetGauge    http://data.europa.eu/949/concepts/nominal-track-gauges/1435 ;
+    ns1:gaugingProfile    http://data.europa.eu/949/concepts/gaugings/GI2 ,
+        http://data.europa.eu/949/concepts/gaugings/GC ;
     era:maximumTemperature    40 ;
     era:minimumTemperature    -25 ;
-    era:railInclination    <a href="http://data.europa.eu/949/concepts/rail-inclinations/1%2F20">http://data.europa.eu/949/concepts/rail-inclinations/1%2F20</a> .
-@prefix ns4:    <a href="http://data.europa.eu/949/concepts/eddy-current-braking/">http://data.europa.eu/949/concepts/eddy-current-braking/</a> .
-<a href="http://data.europa.eu/949/functionalInfrastructure/tracks/0000_IT01854_TR9722-BC-BC02_IT05014">http://data.europa.eu/949/functionalInfrastructure/tracks/0000_IT01854_TR9722-BC-BC02_IT05014</a>    <a href="http://data.europa.eu/949/concepts/eddy-current-braking/eddyCurrentBraking">http://data.europa.eu/949/concepts/eddy-current-braking/eddyCurrentBraking</a>,    <a href="http://data.europa.eu/949/concepts/eddy-current-braking/not_allowed">http://data.europa.eu/949/concepts/eddy-current-braking/not_allowed</a> ;
+    era:railInclination    http://data.europa.eu/949/concepts/rail-inclinations/1%2F20 ;
     era:minimumWheelDiameter    330 ;
     era:minimumHorizontalRadius    556 ;
     era:maximumContactWireHeight    5.7000000000000001776 ;
     era:minimumContactWireHeight    5.0999999999999996447 .
-    era:protectionLegacySystem    <a href="http://data.europa.eu/949/concepts/train-protection-legacy-systems/none">http://data.europa.eu/949/concepts/train-protection-legacy-systems/none</a> ;
-    era:etcsSystemCompatibility    <a href="http://data.europa.eu/949/concepts/etcs-system-compatibilities/ESC-IT-02-RFI-1.0_L2_AVp_MIBO_01">http://data.europa.eu/949/concepts/etcs-system-compatibilities/ESC-IT-02-RFI-1.0_L2_AVp_MIBO_01</a> .</p>
-<p></pre>
+    era:protectionLegacySystem    http://data.europa.eu/949/concepts/train-protection-legacy-systems/none ;
+    era:etcsSystemCompatibility    http://data.europa.eu/949/concepts/etcs-system-compatibilities/ESC-IT-02-RFI-1.0_L2_AVp_MIBO_01 .
+</pre>
 <span><br>A <a href="#Vehicle">era:Vehicle</a> belongs to a <a href="#VehicleType">era:VehicleType</a> that has been authorized to operate on the European railway infrastructure. The vehicle is owned (<a href="#vehicleKeeper">era:vehicleKeeper</a>) by a <a href="#VehicleKeeper">era:VehicleKeeper</a>. A vehicle type is manufactured (<a href="#manufacturer">era:manufacturer</a>) by a <a href="#Manufacturer">era:Manufacturer</a>. Both manufacturers and vehicle keepers are subclasses of <a href="#Organization">org:Organization</a>.</p>
 <p>The next <a href="http://data.europa.eu/949/vehicleTypes#11-006-0001-2-001">example</a> shows the <a href="#VehicleType">era:VehicleType</a>  with <a href="#alternativeName">era:alternativeName</a> &quot;Eurolight IIIA&quot;. Its <a href="#manufacturer">era:manufacturer</a> is &quot;Stadler Rail Valencia S.A.U.&quot;.
-    </span></p>
+    </span>
 <p><pre>
-@PREFIX era: <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a> .
-@PREFIX era-res-vehicletype: <a href="http://data.europa.eu/949/vehicleTypes#">http://data.europa.eu/949/vehicleTypes#</a> .
-@PREFIX era-res-manufacturer: <a href="http://data.europa.eu/949/vehicleTypes#">http://data.europa.eu/949/vehicleTypes#</a> .</p>
+@PREFIX era: http://data.europa.eu/949/ .
+@PREFIX era-res-vehicletype: http://data.europa.eu/949/vehicleTypes# .
+@PREFIX era-res-manufacturer: http://data.europa.eu/949/vehicleTypes# .
 <p>era-res-vehicletype:11-006-0001-2-001 a era:VehicleType;
      era:alternativeName &quot;Eurolight IIIA&quot;;
      era:manufacturer 
