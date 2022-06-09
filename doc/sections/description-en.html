@@ -17,7 +17,7 @@ Figure 1 shows the main classes and properties of this vocabulary, which represe
 </span></p>
 <p>
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="13" cols="100">
-@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
 @PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
 @PREFIX era-res-track: <http://data.europa.eu/949/functionalInfrastructure/tracks/> .
 
@@ -68,7 +68,7 @@ Next, the sidings (<a href="#Siding">era:Siding</a>) of this operational point r
 @PREFIX era-res-op: <http://data.europa.eu/949/functionalInfrastructure/operationalPoints/> .
 
 era-res-op:ATIz a era:OperationalPoint;
-     era:siding [era:sidingId "10b";
+     era:siding [era:sidingId &quot;10b&quot;;
                era:hasRefuelling false];
      era:siding [era:sidingId &quot;12b&quot;;
                era:hasRefuelling false];
@@ -84,18 +84,24 @@ era-res-op:ATIz a era:OperationalPoint;
 <span class="markdown">
 As shown in figure 1, an operational point is a <a href="http://www.opengis.net/ont/geosparql#Feature">gsp:Feature</a>. As such, it <a href="http://www.opengis.net/ont/geosparql#hasGeometry">gsp:hasGeometry</a> a certain location (<a href="http://www.opengis.net/ont/geosparql#Geometry">gsp:Geometry</a>). This location has a <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a> and a longitude <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:long</a>. The next example shows the coordinates of the operational point &#39;ATIz&#39;:
 </span></p>
-<p><pre>
-@PREFIX era: http://data.europa.eu/949/ .
-@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
-@PREFIX geo: http://www.w3.org/2003/01/geo/ .
-@PREFIX gsp: http://www.opengis.net/ont/geosparql# .
+<p><pre><textarea style="resize:none" readonly id="code4" name="code">
+@PREFIX era: &lt;http://data.europa.eu/949/&gt; .
+@PREFIX era-res-op: &lt;http://data.europa.eu/949/functionalInfrastructure/operationalPoints/&gt; .
+@PREFIX geo: &lt;http://www.w3.org/2003/01/geo/&gt; .
+@PREFIX gsp: &lt;http://www.opengis.net/ont/geosparql#&gt; .
 
 era-res-op:ATIz a era:OperationalPoint;
      gsp:hasGeometry &lt;http://data.europa.eu/949/locations/16.3571944/48.1517344&gt;.
 &lt;http://data.europa.eu/949/locations/16.3571944/48.1517344&gt; 
         geo:lat &quot;48.1517&quot;^^xsd:double;
         geo:long &quot;16.3572&quot;^^xsd:double.
-</pre>
+</textarea></pre>
+<script>
+      var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
 <span class="markdown">
 The next <a href="http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ATAo">example</a> shows the tunnels (<a href="#Tunnel">era:Tunnel</a>) where the tracks associated to the operational point &#39;ATAo&#39;, that is &#39;St.Anton am Arlberg&#39;, pass through (<a href="#passesThroughTunnel">era:passesThroughTunnel</a>), their <a href="#tunnelIdentification">era:tunnelIdentification</a>, and their <a href="#length">era:length</a>.
 </span></p>
