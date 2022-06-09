@@ -105,7 +105,22 @@ function loadTOC(){
 <div>
 <span>Ontology Specification</span>
 </div>
-</div>     <div id="abstract"></div>
+</div>     
+    <textarea style="resize:none" readonly id="code" name="code" rows="13" cols="100">
+@PREFIX era: <http://data.europa.eu/949/> .
+@PREFIX era-res-op: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ .
+@PREFIX era-res-track: http://data.europa.eu/949/functionalInfrastructure/tracks/ .
+
+era-res-op:ATIz a era:OperationalPoint;
+     era:track era-res-track:ATIz-301;
+     era:track era-res-track:ATIz-302;
+     era:track era-res-track:ATIz-303;
+     era:track era-res-track:ATIz-304;
+     era:track era-res-track:ATIz-305;
+     era:track era-res-track:ATIz-307;
+     era:track era-res-track:ATIz-309.
+</textarea>
+    <div id="abstract"></div>
 <div id="toc"></div>     <div id="introduction"></div>
      <div id="overview"></div>
      <div id="description"></div>
