@@ -14,7 +14,7 @@
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/modified> "2022-06-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
-<http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#comment> "his is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."@en .
+<http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."@en .
 <http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
 <http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#priorVersion> "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://data.europa.eu/949/> <http://www.w3.org/2002/07/owl#versionInfo> "v2.4.1"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -125,7 +125,8 @@
 <http://data.europa.eu/949/TSIMagneticFields> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.9.1" .
 <http://data.europa.eu/949/TSIMagneticFields> <http://purl.org/dc/terms/created> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/TSIMagneticFields> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle."@en .
+<http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2000/01/rdf-schema#label> "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle"@en .
 <http://data.europa.eu/949/TSIMagneticFields> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -137,7 +138,8 @@
 <http://data.europa.eu/949/TSITractionHarmonics> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.9.2" .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://purl.org/dc/terms/created> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence and TSI compliance of limits in harmonics in the traction current of vehicles."@en .
+<http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence and TSI compliance of limits in harmonics in the traction current of vehicles. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2000/01/rdf-schema#label> "Existence and TSI compliance of limits in harmonics in the traction current of vehicles"@en .
 <http://data.europa.eu/949/TSITractionHarmonics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -148,7 +150,7 @@
 <http://data.europa.eu/949/authorizedCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/authorizedCountry> <http://purl.org/dc/terms/created> "2020-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/authorizedCountry> <http://purl.org/dc/terms/modified> "2020-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/authorizedCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country(ies) in where a vehicle type has been authorized to operate."@en .
+<http://data.europa.eu/949/authorizedCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en .
 <http://data.europa.eu/949/authorizedCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/authorizedCountry> <http://www.w3.org/2000/01/rdf-schema#label> "authorized country"@en .
 <http://data.europa.eu/949/authorizedCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -160,7 +162,7 @@
 <http://data.europa.eu/949/axleBearingConditionMonitoring> <http://data.europa.eu/949/eratvIndex> "4.9.2" .
 <http://data.europa.eu/949/axleBearingConditionMonitoring> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/axleBearingConditionMonitoring> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#comment> "Axle bearing condition monitoring."@en .
+<http://data.europa.eu/949/axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#comment> "Axle bearing condition monitoring. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/axle-monitoring/AxleBearingMonitoring"@en .
 <http://data.europa.eu/949/axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#label> "axle bearing condition monitoring"@en .
 <http://data.europa.eu/949/axleBearingConditionMonitoring> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -171,7 +173,8 @@
 <http://data.europa.eu/949/category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/category> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/category> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/category> <http://www.w3.org/2000/01/rdf-schema#comment> "Vehicle category."@en .
+<http://data.europa.eu/949/category> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/category> <http://www.w3.org/2000/01/rdf-schema#comment> "Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories"@en .
 <http://data.europa.eu/949/category> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/category> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle category"@en .
 <http://data.europa.eu/949/category> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -182,7 +185,7 @@
 <http://data.europa.eu/949/contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/ContactLineSystem> .
 <http://data.europa.eu/949/contactLineSystem> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/contactLineSystem> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact line system present in the section of line."@en .
+<http://data.europa.eu/949/contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact line system present in the section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems"@en .
 <http://data.europa.eu/949/contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#label> "contact line system"@en .
 <http://data.europa.eu/949/contactLineSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -194,7 +197,7 @@
 <http://data.europa.eu/949/contactLineSystemType> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.2.1.1" .
 <http://data.europa.eu/949/contactLineSystemType> <http://purl.org/dc/terms/created> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/contactLineSystemType> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the type of the contact line system"@en .
+<http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the type of the contact line system. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems"@en .
 <http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of contact line system"@en .
 <http://data.europa.eu/949/contactLineSystemType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -215,7 +218,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/contactStripMaterial> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.4" .
 <http://data.europa.eu/949/contactStripMaterial> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/contactStripMaterial> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which contact strip materials are permitted to be used."@en .
+<http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which contact strip materials are permitted to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-strip-materials/ContactStripMaterials"@en .
 <http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Permitted contact strip material"@en .
 <http://data.europa.eu/949/contactStripMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -227,7 +230,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/dataGSMRNetwork> <http://data.europa.eu/949/eratvIndex> "4.13.2.11" .
 <http://data.europa.eu/949/dataGSMRNetwork> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/dataGSMRNetwork> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/dataGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Data SIM Card GSM-R Home Network"@en .
+<http://data.europa.eu/949/dataGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Data SIM Card GSM-R Home Network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en .
 <http://data.europa.eu/949/dataGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/dataGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "data GSM-R network"@en .
 <http://data.europa.eu/949/dataGSMRNetwork> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -248,7 +251,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/dataRadioCompatible> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.10" .
 <http://data.europa.eu/949/dataRadioCompatible> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/dataRadioCompatible> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility data"@en .
+<http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility data. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "Radio system compatibility data"@en .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -269,7 +272,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/eddyCurrentBraking> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.6.2" .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of eddy current brakes."@en .
+<http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking"@en .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "Use of eddy current brakes"@en .
 <http://data.europa.eu/949/eddyCurrentBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -314,7 +317,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/endCouplingType> <http://data.europa.eu/949/eratvIndex> "4.9.1" .
 <http://data.europa.eu/949/endCouplingType> <http://purl.org/dc/terms/created> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/endCouplingType> <http://purl.org/dc/terms/modified> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/endCouplingType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of end coupling (indicating tensile and compressive forces)."@en .
+<http://data.europa.eu/949/endCouplingType> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/endCouplingType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType"@en .
 <http://data.europa.eu/949/endCouplingType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/endCouplingType> <http://www.w3.org/2000/01/rdf-schema#label> "end coupling type"@en .
 <http://data.europa.eu/949/endCouplingType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -357,7 +361,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/energySupplySystem> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.2.1.2" .
 <http://data.europa.eu/949/energySupplySystem> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/energySupplySystem> <http://purl.org/dc/terms/modified> "2021-08-06"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the traction supply system (nominal voltage and frequency)."@en .
+<http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the traction supply system (nominal voltage and frequency). Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/energy-supply-systems/EnergySupplySystems"@en .
 <http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Energy supply system"@en .
 <http://data.europa.eu/949/energySupplySystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -378,7 +382,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsBaseline> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.2.2" .
 <http://data.europa.eu/949/etcsBaseline> <http://purl.org/dc/terms/created> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsBaseline> <http://purl.org/dc/terms/modified> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS baseline installed lineside/on-board"@en .
+<http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS baseline installed lineside/on-board. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-baselines/ETCSBaselines"@en .
 <http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS baseline"@en .
 <http://data.europa.eu/949/etcsBaseline> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -390,7 +394,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsDegradedSituation> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.10.1" .
 <http://data.europa.eu/949/etcsDegradedSituation> <http://purl.org/dc/terms/created> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsDegradedSituation> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsDegradedSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "ERTMS / ETCS application level for degraded situation related to the track side equipment."@en .
+<http://data.europa.eu/949/etcsDegradedSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "ERTMS / ETCS application level for degraded situation related to the track side equipment. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-situation/ETCSSituations"@en .
 <http://data.europa.eu/949/etcsDegradedSituation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsDegradedSituation> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS level for degraded situation"@en .
 <http://data.europa.eu/949/etcsDegradedSituation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -402,7 +406,8 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://data.europa.eu/949/eratvIndex> "4.13.1.1" .
 <http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://purl.org/dc/terms/created> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://purl.org/dc/terms/modified> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS equipment on-board and its level."@en .
+<http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels"@en .
+<http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS equipment level"@en .
 <http://data.europa.eu/949/etcsEquipmentOnBoardLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -423,7 +428,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsInfill> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.2.4" .
 <http://data.europa.eu/949/etcsInfill> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsInfill> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation."@en .
+<http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-infills/ETCSInfills"@en .
 <http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS infill installed lineside"@en .
 <http://data.europa.eu/949/etcsInfill> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -434,7 +439,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/ETCSLevel> .
 <http://data.europa.eu/949/etcsLevel> <http://purl.org/dc/terms/created> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsLevel> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS level available in the section of line."@en .
+<http://data.europa.eu/949/etcsLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS level available in the section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels"@en .
 <http://data.europa.eu/949/etcsLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsLevel> <http://www.w3.org/2000/01/rdf-schema#label> "etcs level"@en .
 <http://data.europa.eu/949/etcsLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -446,7 +451,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsLevelType> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.2.1" .
 <http://data.europa.eu/949/etcsLevelType> <http://purl.org/dc/terms/created> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsLevelType> <http://purl.org/dc/terms/modified> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#comment> "ERTMS / ETCS application level which expresses the possible operating relationships between track and train"@en .
+<http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#comment> "ERTMS / ETCS application level which expresses the possible operating relationships between track and train. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels"@en .
 <http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS level"@en .
 <http://data.europa.eu/949/etcsLevelType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -458,7 +463,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsMVersion> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.2.10" .
 <http://data.europa.eu/949/etcsMVersion> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsMVersion> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsMVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS M_version according to SRS 7.5.1.9."@en .
+<http://data.europa.eu/949/etcsMVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS M_version according to SRS 7.5.1.9. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-m-versions/ETCSMVersions"@en .
 <http://data.europa.eu/949/etcsMVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsMVersion> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS M_version"@en .
 <http://data.europa.eu/949/etcsMVersion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -479,7 +484,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/etcsSystemCompatibility> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.2.9" .
 <http://data.europa.eu/949/etcsSystemCompatibility> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/etcsSystemCompatibility> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/etcsSystemCompatibility> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS requirements used for demonstrating technical compatibility."@en .
+<http://data.europa.eu/949/etcsSystemCompatibility> <http://www.w3.org/2000/01/rdf-schema#comment> "ETCS requirements used for demonstrating technical compatibility. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-system-compatibilities/ETCSSystemCompatibilities"@en .
 <http://data.europa.eu/949/etcsSystemCompatibility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/etcsSystemCompatibility> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS system compatibility"@en .
 <http://data.europa.eu/949/etcsSystemCompatibility> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -491,7 +496,8 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/fireSafetyCategory> <http://data.europa.eu/949/eratvIndex> "4.4.1" .
 <http://data.europa.eu/949/fireSafetyCategory> <http://purl.org/dc/terms/created> "2020-08-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/fireSafetyCategory> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/fireSafetyCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Fire safety category for tunnels."@en .
+<http://data.europa.eu/949/fireSafetyCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories"@en .
+<http://data.europa.eu/949/fireSafetyCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/fireSafetyCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/fireSafetyCategory> <http://www.w3.org/2000/01/rdf-schema#label> "fire safety category"@en .
 <http://data.europa.eu/949/fireSafetyCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -504,7 +510,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/freightCorridor> <http://data.europa.eu/949/rinfIndex> "1.2.1.0.2.3" .
 <http://data.europa.eu/949/freightCorridor> <http://purl.org/dc/terms/created> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/freightCorridor> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway Freight Corridor that the line is designated to."@en .
+<http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway Freight Corridor that the line is designated to. Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/freight-corridor/FreightCorridors"@en .
 <http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2000/01/rdf-schema#label> "Part of a Railway freight corridor"@en .
 <http://data.europa.eu/949/freightCorridor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -516,7 +522,8 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.1.4" .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Section with train detection limitation, specific for route compatibility check on French network."@en .
+<http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Section with train detection limitation, specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations"@en .
+<http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "Section with train detection limitation, only for the French network"@en .
 <http://data.europa.eu/949/frenchTrainDetectionSystemLimitation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -538,7 +545,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gaugingProfile> <http://data.europa.eu/949/rinfIndex> "1.2.1.0.3.4" .
 <http://data.europa.eu/949/gaugingProfile> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gaugingProfile> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Gauges as defined in European standard or other local gauges, including lower or upper part."@en .
+<http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Gauges as defined in European standard or other local gauges, including lower or upper part. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gaugings/GaugingProfiles"@en .
 <http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Gauging"@en .
 <http://data.europa.eu/949/gaugingProfile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -550,7 +557,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.2" .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption."@en .
+<http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-number-active-mobiles/NumberActiveMobiles"@en .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2000/01/rdf-schema#label> "Advised required number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption"@en .
 <http://data.europa.eu/949/gsmRActiveMobiles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -562,7 +569,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.3" .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria."@en .
+<http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-optional-functions/OptionalFunctions"@en .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2000/01/rdf-schema#label> "Optional GSM-R functions"@en .
 <http://data.europa.eu/949/gsmROptionalFunctions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -574,7 +581,8 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmRRadioDataCommunication> <http://data.europa.eu/949/eratvIndex> "4.13.2.7" .
 <http://data.europa.eu/949/gsmRRadioDataCommunication> <http://purl.org/dc/terms/created> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmRRadioDataCommunication> <http://purl.org/dc/terms/modified> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gsmRRadioDataCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R Radio Data communication on board and its Baseline."@en .
+<http://data.europa.eu/949/gsmRRadioDataCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications"@en .
+<http://data.europa.eu/949/gsmRRadioDataCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/gsmRRadioDataCommunication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/gsmRRadioDataCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R radio data communication"@en .
 <http://data.europa.eu/949/gsmRRadioDataCommunication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -595,7 +603,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmRVersion> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.1" .
 <http://data.europa.eu/949/gsmRVersion> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmRVersion> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gsmRVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R version installed lineside/on-board."@en .
+<http://data.europa.eu/949/gsmRVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R version installed lineside/on-board. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-versions/GSMRVersions"@en .
 <http://data.europa.eu/949/gsmRVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/gsmRVersion> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R version"@en .
 <http://data.europa.eu/949/gsmRVersion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -607,7 +615,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.5" .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R networks covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/XXXXXXXX"@en .
+<http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R networks covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "GSM-R networks covered by a roaming agreement"@en .
 <http://data.europa.eu/949/gsmrNetworkCoverage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -651,7 +659,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/inCountry> <http://purl.org/dc/terms/created> "2020-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/inCountry> <http://purl.org/dc/terms/modified> "2020-11-20"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country in which an entity resides."@en .
+<http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country in which an entity resides. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en .
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#label> "in country"@en .
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -672,7 +680,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/legacyRadioSystem> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.6.1" .
 <http://data.europa.eu/949/legacyRadioSystem> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/legacyRadioSystem> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of radio legacy systems installed"@en .
+<http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of radio legacy systems installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/legacy-radio-systems/LegacyRadioSystems"@en .
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Other radio systems installed (Radio Legacy Systems)"@en .
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -685,7 +693,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/lineCategory> <http://data.europa.eu/949/rinfIndex> "1.2.1.0.2.2" .
 <http://data.europa.eu/949/lineCategory> <http://purl.org/dc/terms/created> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/lineCategory> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of a line according to the INF TSI."@en .
+<http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of a line according to the INF TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/line-category/LineCategories"@en .
 <http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/lineCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Category of line"@en .
 <http://data.europa.eu/949/lineCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -719,7 +727,7 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/loadCapability> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.2.4" .
 <http://data.europa.eu/949/loadCapability> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/loadCapability> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "A combination of the line category and speed at the weakest point of the track."@en .
+<http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "A combination of the line category and speed at the weakest point of the track. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/load-capabilities/LoadCapabilities"@en .
 <http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/loadCapability> <http://www.w3.org/2000/01/rdf-schema#label> "Load Capability"@en .
 <http://data.europa.eu/949/loadCapability> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -740,7 +748,8 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/magneticBraking> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.6.3" .
 <http://data.europa.eu/949/magneticBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/magneticBraking> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of magnetic brakes."@en .
+<http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking"@en .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "Use of magnetic brakes"@en .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -770,7 +779,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/manufacturingCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/manufacturingCountry> <http://purl.org/dc/terms/created> "2020-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/manufacturingCountry> <http://purl.org/dc/terms/modified> "2020-11-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/manufacturingCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country in which a vehicle or vehicle type is manufactured."@en .
+<http://data.europa.eu/949/manufacturingCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country in which a vehicle or vehicle type is manufactured. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en .
 <http://data.europa.eu/949/manufacturingCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/manufacturingCountry> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturing country"@en .
 <http://data.europa.eu/949/manufacturingCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -782,7 +791,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/maxSandingOutput> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.17" .
 <http://data.europa.eu/949/maxSandingOutput> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/maxSandingOutput> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams."@en .
+<http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/max-amount-sandings/MaxAmountSandings"@en .
 <http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum amount of sand"@en .
 <http://data.europa.eu/949/maxSandingOutput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -806,7 +815,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.11.1" .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted axle load per category of Vehicle, given in tons depending of the category of vehicle."@en .
+<http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum permitted axle load per category of Vehicle, given in tons depending of the category of vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/min-axle-loads-per-vehicle-category/MinAxleLoadsPerVehicleCategory"@en .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum axle load by vehicle category"@en .
 <http://data.europa.eu/949/minAxleLoadVehicleCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -817,7 +826,8 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/navigability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/navigability> <http://purl.org/dc/terms/created> "2021-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/navigability> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/navigability> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the navigation possibilities between two related topological objects."@en .
+<http://data.europa.eu/949/navigability> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities"@en .
+<http://data.europa.eu/949/navigability> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/navigability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/navigability> <http://www.w3.org/2000/01/rdf-schema#label> "navigability"@en .
 <http://data.europa.eu/949/navigability> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -890,7 +900,8 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/opType> <http://data.europa.eu/949/rinfIndex> "1.2.0.0.0.4" .
 <http://data.europa.eu/949/opType> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/opType> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type on an operational point."@en .
+<http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type on an operational point. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes"@en .
+<http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/opType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of operational point"@en .
 <http://data.europa.eu/949/opType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -930,7 +941,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/otherTrainProtection> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.10.2" .
 <http://data.europa.eu/949/otherTrainProtection> <http://purl.org/dc/terms/created> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/otherTrainProtection> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#comment> "Other train protection, control and warning systems for degraded situation."@en .
+<http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#comment> "Other train protection, control and warning systems for degraded situation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-protection-control-warning/OtherProtectionControlWarnings"@en .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2000/01/rdf-schema#label> "Other train protection, control and warning systems for degraded situation"@en .
 <http://data.europa.eu/949/otherTrainProtection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -942,7 +953,8 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/parkingBrakeType> <http://data.europa.eu/949/eratvIndex> "4.7.3.2" .
 <http://data.europa.eu/949/parkingBrakeType> <http://purl.org/dc/terms/created> "2021-08-26"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/parkingBrakeType> <http://purl.org/dc/terms/modified> "2021-08-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking brake type (if the vehicle is fitted with it)."@en .
+<http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType"@en .
+<http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#label> "parking brake type"@en .
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -984,7 +996,7 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/platformHeight> <http://data.europa.eu/949/rinfIndex> "1.2.1.0.6.5" .
 <http://data.europa.eu/949/platformHeight> <http://purl.org/dc/terms/created> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/platformHeight> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres."@en .
+<http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/platform-heights/PlatformHeights"@en .
 <http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/platformHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Height of platform"@en .
 <http://data.europa.eu/949/platformHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -995,7 +1007,8 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/positionOnA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/positionOnA> <http://purl.org/dc/terms/created> "2021-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/positionOnA> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/positionOnA> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines the position of the topological object A in a relation."@en .
+<http://data.europa.eu/949/positionOnA> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions"@en .
+<http://data.europa.eu/949/positionOnA> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/positionOnA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/positionOnA> <http://www.w3.org/2000/01/rdf-schema#label> "position on A"@en .
 <http://data.europa.eu/949/positionOnA> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1006,7 +1019,8 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/positionOnB> <http://purl.org/dc/terms/created> "2021-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/positionOnB> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines the position of the topological object B in a relation."@en .
+<http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions"@en .
+<http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#label> "position on B"@en .
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1018,7 +1032,7 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.3.5" .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://purl.org/dc/terms/created> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#comment> "Coding for combined transport for semi-trailers as defined in UIC Code."@en .
+<http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#comment> "Coding for combined transport for semi-trailers as defined in UIC Code. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/profile-num-semi-trailers/ProfileNumbersSemiTrailers"@en .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2000/01/rdf-schema#label> "Standard combined transport profile number for semi-trailers"@en .
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1030,7 +1044,7 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.3.4" .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://purl.org/dc/terms/created> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#comment> "Coding for combined transport with swap bodies as defined in UIC Code."@en .
+<http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#comment> "Coding for combined transport with swap bodies as defined in UIC Code. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/profile-num-swap-bodies/ProfileNumbersSwapBodies"@en .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2000/01/rdf-schema#label> "Standard combined transport profile number for swap bodies"@en .
 <http://data.europa.eu/949/profileNumberSwapBodies> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1051,7 +1065,7 @@ _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/protectionLegacySystem> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.5.3" .
 <http://data.europa.eu/949/protectionLegacySystem> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/protectionLegacySystem> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which class B system is installed"@en .
+<http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which class B system is installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-protection-legacy-systems/TrainProtectionLegacySystems"@en .
 <http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Train protection legacy system"@en .
 <http://data.europa.eu/949/protectionLegacySystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1083,7 +1097,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/railInclination> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.4.3" .
 <http://data.europa.eu/949/railInclination> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/railInclination> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#comment> "An angle defining the inclination of the head of a rail relative to the running surface."@en .
+<http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#comment> "An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations"@en .
 <http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/railInclination> <http://www.w3.org/2000/01/rdf-schema#label> "Rail inclination"@en .
 <http://data.europa.eu/949/railInclination> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1097,7 +1111,8 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/rollingStockFireCategory> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.5.7" .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicable rolling stock fire category for a tunnel."@en .
+<http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicable rolling stock fire category for a tunnel. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories"@en .
+<http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Fire category of rolling stock required"@en .
 <http://data.europa.eu/949/rollingStockFireCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1120,7 +1135,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/snowIceHailConditions> <http://data.europa.eu/949/eratvIndex> "4.3.3" .
 <http://data.europa.eu/949/snowIceHailConditions> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/snowIceHailConditions> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Snow, ice and hail conditions."@en .
+<http://data.europa.eu/949/snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Snow, ice and hail conditions. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ice-conditions/IceConditions"@en .
 <http://data.europa.eu/949/snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#label> "snow ice hail conditions"@en .
 <http://data.europa.eu/949/snowIceHailConditions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1132,7 +1147,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/solNature> <http://data.europa.eu/949/rinfIndex> "1.1.0.0.0.6" .
 <http://data.europa.eu/949/solNature> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/solNature> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the nature of a section of line."@en .
+<http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the nature of a section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/sol-natures/SoLNatures"@en .
 <http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/solNature> <http://www.w3.org/2000/01/rdf-schema#label> "Nature of Section of Line"@en .
 <http://data.europa.eu/949/solNature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1165,7 +1180,8 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/subCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/subCategory> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/subCategory> <http://purl.org/dc/terms/modified> "2021-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/subCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Vehicle subcategory."@en .
+<http://data.europa.eu/949/subCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/subCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories"@en .
 <http://data.europa.eu/949/subCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/subCategory> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle subcategory"@en .
 <http://data.europa.eu/949/subCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1177,7 +1193,7 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/supportedPlatformHeight> <http://data.europa.eu/949/eratvIndex> "4.12.3.1" .
 <http://data.europa.eu/949/supportedPlatformHeight> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/supportedPlatformHeight> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/supportedPlatformHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform height for which the vehicle is de­signed."@en .
+<http://data.europa.eu/949/supportedPlatformHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform height for which the vehicle is de­signed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/platform-heights/PlatformHeights"@en .
 <http://data.europa.eu/949/supportedPlatformHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/supportedPlatformHeight> <http://www.w3.org/2000/01/rdf-schema#label> "supported platform height"@en .
 <http://data.europa.eu/949/supportedPlatformHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1200,7 +1216,8 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tenClassification> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.0.3" .
 <http://data.europa.eu/949/tenClassification> <http://purl.org/dc/terms/created> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tenClassification> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the related TEN (trans-European network)."@en .
+<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TenClassifications"@en .
+<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#label> "TEN classification (of track, of platform, of siding)"@en .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1212,7 +1229,7 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/thermalCapacityTSIReference> <http://data.europa.eu/949/eratvIndex> "4.7.2.1.1" .
 <http://data.europa.eu/949/thermalCapacityTSIReference> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/thermalCapacityTSIReference> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference case of a TSI thermal capacity."@en .
+<http://data.europa.eu/949/thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference case of a TSI thermal capacity. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/thermal-capacity/ThermalCapacityTSIReferences"@en .
 <http://data.europa.eu/949/thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#label> "thermal capacity TSI reference"@en .
 <http://data.europa.eu/949/thermalCapacityTSIReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1243,7 +1260,8 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/trackDirection> <http://data.europa.eu/949/rinfIndex> "1.1.1.0.0.2" .
 <http://data.europa.eu/949/trackDirection> <http://purl.org/dc/terms/created> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trackDirection> <http://purl.org/dc/terms/modified> "2021-09-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Track normal running direction."@en .
+<http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Track normal running direction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections"@en .
 <http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/trackDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Normal running direction"@en .
 <http://data.europa.eu/949/trackDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1266,7 +1284,7 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.1.2" .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of track circuits or axle counter to which specific checks are needed."@en .
+<http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of track circuits or axle counter to which specific checks are needed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection-specific-checks/TrainDetectionSystemsSpecificChecks"@en .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#label> "Type of track circuits to which specific checks are needed"@en .
 <http://data.europa.eu/949/trainDetectionSystemSpecificCheck> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1287,7 +1305,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/trainDetectionSystemType> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.1.1" .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://purl.org/dc/terms/created> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://purl.org/dc/terms/modified> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of supported types of train detection systems."@en .
+<http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of supported types of train detection systems. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/TrainDetectionSystems"@en .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of train detection system"@en .
 <http://data.europa.eu/949/trainDetectionSystemType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1299,7 +1317,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.21" .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on the use of composite brake blocks."@en .
+<http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules on the use of composite brake blocks"@en .
 <http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1311,7 +1330,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.14" .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://purl.org/dc/terms/modified> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of Ferromagnetic characteristics of wheel material required."@en .
+<http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of Ferromagnetic characteristics of wheel material required. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of Ferromagnetic characteristics of wheel material required"@en .
 <http://data.europa.eu/949/tsiCompliantFerromagneticWheel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1323,7 +1343,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.2.1" .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://purl.org/dc/terms/created> "2021-08-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether required distance between two consecutive axles is compliant with the TSI."@en .
+<http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of maximum permitted distance between two consecutive axles"@en .
 <http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1335,7 +1356,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.15.1" .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset."@en .
+<http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset"@en .
 <http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1347,7 +1369,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.13" .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules for vehicle metal construction."@en .
+<http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules for vehicle metal construction"@en .
 <http://data.europa.eu/949/tsiCompliantMetalConstruction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1359,7 +1382,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.12" .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules for metal-free space around wheels."@en .
+<http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules for metal-free space around wheels"@en .
 <http://data.europa.eu/949/tsiCompliantMetalFreeSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1371,7 +1395,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.23" .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on combination of RST characteristics influencing shunting impedance."@en .
+<http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules on combination of RST characteristics influencing shunting impedance"@en .
 <http://data.europa.eu/949/tsiCompliantRSTShuntImpedance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1383,7 +1408,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.19" .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI Compliance of rules on sand characteristics."@en .
+<http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2000/01/rdf-schema#label> "TSI Compliance of rules on sand characteristics"@en .
 <http://data.europa.eu/949/tsiCompliantSandCharacteristics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1395,7 +1421,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantSanding> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.16" .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits."@en .
+<http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of sanding"@en .
 <http://data.europa.eu/949/tsiCompliantSanding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
@@ -1407,7 +1434,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.22" .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://purl.org/dc/terms/created> "2021-08-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://purl.org/dc/terms/modified> "2021-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on shunt assisting devices."@en .
+<http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2000/01/rdf-schema#label> "TSI compliance of rules on shunt assisting devices"@en .
 <http://data.europa.eu/949/tsiCompliantShuntDevices> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1419,7 +1447,8 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiPantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.1" .
 <http://data.europa.eu/949/tsiPantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiPantographHead> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used."@en .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted TSI compliant pantograph heads"@en .
 <http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1430,7 +1459,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/VehicleKeeper> .
 <http://data.europa.eu/949/vehicleKeeper> <http://purl.org/dc/terms/created> "2020-11-23"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/vehicleKeeper> <http://purl.org/dc/terms/modified> "2020-11-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the organization that owns/operated a vehicle or wagon."@en .
+<http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the organization that owns/operated a vehicle or wagon. http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en .
 <http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle keeper"@en .
 <http://data.europa.eu/949/vehicleKeeper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1453,7 +1482,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/voiceGSMRNetwork> <http://data.europa.eu/949/eratvIndex> "4.13.2.10" .
 <http://data.europa.eu/949/voiceGSMRNetwork> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/voiceGSMRNetwork> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/voiceGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Voice SIM Card GSM-R Home Network"@en .
+<http://data.europa.eu/949/voiceGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Voice SIM Card GSM-R Home Network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en .
 <http://data.europa.eu/949/voiceGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/voiceGSMRNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "voice GSM-R network"@en .
 <http://data.europa.eu/949/voiceGSMRNetwork> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1474,7 +1503,7 @@ _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/voiceRadioCompatible> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.9" .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility voice"@en .
+<http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility voice. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "Radio system compatibility voice"@en .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1496,7 +1525,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/wheelSetGauge> <http://data.europa.eu/949/rinfIndex> "1.2.1.0.4.1" .
 <http://data.europa.eu/949/wheelSetGauge> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/wheelSetGauge> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en .
+<http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/nominal-track-gauges/NominalTrackGauges"@en .
 <http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal track gauge"@en .
 <http://data.europa.eu/949/wheelSetGauge> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1508,7 +1537,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://data.europa.eu/949/eratvIndex> "4.1.11" .
 <http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://purl.org/dc/terms/created> "2020-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://purl.org/dc/terms/modified> "2021-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "Wheelset gauge changeover facility."@en .
+<http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "Wheelset gauge changeover facility. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gauge-changeover-facilities/GaugeChangeoverFacilities"@en .
 <http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://www.w3.org/2000/01/rdf-schema#label> "wheelset gauge changeover facility"@en .
 <http://data.europa.eu/949/wheelSetGaugeChangeoverFacility> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1703,7 +1732,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/compatibilityProcedureDocument
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
-<http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.2.4.4" .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .

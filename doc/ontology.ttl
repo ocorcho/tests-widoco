@@ -22,7 +22,7 @@
                               <http://purl.org/dc/terms/modified> "2022-06-09"^^xsd:date ;
                               <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" ;
                               <http://purl.org/dc/terms/title> "ERA vocabulary"@en ;
-                              rdfs:comment "his is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."@en ;
+                              rdfs:comment "This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties."@en ;
                               rdfs:label "ERA vocabulary"@en ;
                               owl:priorVersion "https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.0"^^xsd:anyURI ;
                               owl:versionInfo "v2.4.1"^^xsd:date ;
@@ -143,7 +143,8 @@ above the local reference ellipsoid).""" ;
                    :rinfIndex "1.1.1.3.9.1" ;
                    <http://purl.org/dc/terms/created> "2021-08-09"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                   rdfs:comment "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle."@en ;
+                   rdfs:comment "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                "The concept scheme is temporarily non-deferenceable."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -156,7 +157,8 @@ above the local reference ellipsoid).""" ;
                       :rinfIndex "1.1.1.3.9.2" ;
                       <http://purl.org/dc/terms/created> "2021-08-09"^^xsd:date ;
                       <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                      rdfs:comment "Existence and TSI compliance of limits in harmonics in the traction current of vehicles."@en ;
+                      rdfs:comment "Existence and TSI compliance of limits in harmonics in the traction current of vehicles. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                   "The concept scheme is temporarily non-deferenceable."@en ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                       rdfs:label "Existence and TSI compliance of limits in harmonics in the traction current of vehicles"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -168,7 +170,7 @@ above the local reference ellipsoid).""" ;
                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                    <http://purl.org/dc/terms/created> "2020-09-30"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2020-09-30"^^xsd:date ;
-                   rdfs:comment "Indicates the country(ies) in where a vehicle type has been authorized to operate."@en ;
+                   rdfs:comment "Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "authorized country"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -181,7 +183,7 @@ above the local reference ellipsoid).""" ;
                                 :eratvIndex "4.9.2" ;
                                 <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                                 <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                                rdfs:comment "Axle bearing condition monitoring."@en ;
+                                rdfs:comment "Axle bearing condition monitoring. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/axle-monitoring/AxleBearingMonitoring"@en ;
                                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                 rdfs:label "axle bearing condition monitoring"@en ;
                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -193,7 +195,8 @@ above the local reference ellipsoid).""" ;
           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
           <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-          rdfs:comment "Vehicle category."@en ;
+          rdfs:comment "The concept scheme is temporarily non-deferenceable."@en ,
+                       "Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories"@en ;
           rdfs:isDefinedBy <http://data.europa.eu/949/> ;
           rdfs:label "vehicle category"@en ;
           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -205,7 +208,7 @@ above the local reference ellipsoid).""" ;
                    rdfs:range :ContactLineSystem ;
                    <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date ;
-                   rdfs:comment "Contact line system present in the section of line."@en ;
+                   rdfs:comment "Contact line system present in the section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems"@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "contact line system"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -218,7 +221,7 @@ above the local reference ellipsoid).""" ;
                        :rinfIndex "1.1.1.2.2.1.1" ;
                        <http://purl.org/dc/terms/created> "2021-08-06"^^xsd:date ;
                        <http://purl.org/dc/terms/modified> "2021-08-06"^^xsd:date ;
-                       rdfs:comment "Indication of the type of the contact line system"@en ;
+                       rdfs:comment "Indication of the type of the contact line system. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems"@en ;
                        rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                        rdfs:label "Type of contact line system"@en ;
                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -236,7 +239,7 @@ above the local reference ellipsoid).""" ;
                       :rinfIndex "1.1.1.2.3.4" ;
                       <http://purl.org/dc/terms/created> "2020-08-25"^^xsd:date ;
                       <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                      rdfs:comment "Indication of which contact strip materials are permitted to be used."@en ;
+                      rdfs:comment "Indication of which contact strip materials are permitted to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-strip-materials/ContactStripMaterials"@en ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                       rdfs:label "Permitted contact strip material"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -249,7 +252,7 @@ above the local reference ellipsoid).""" ;
                  :eratvIndex "4.13.2.11" ;
                  <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                  <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                 rdfs:comment "Data SIM Card GSM-R Home Network"@en ;
+                 rdfs:comment "Data SIM Card GSM-R Home Network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                  rdfs:label "data GSM-R network"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -267,7 +270,7 @@ above the local reference ellipsoid).""" ;
                      :rinfIndex "1.1.1.3.3.10" ;
                      <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                      <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                     rdfs:comment "Radio requirements used for demonstrating technical compatibility data"@en ;
+                     rdfs:comment "Radio requirements used for demonstrating technical compatibility data. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                      rdfs:label "Radio system compatibility data"@en ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -285,7 +288,7 @@ above the local reference ellipsoid).""" ;
                     :rinfIndex "1.1.1.1.6.2" ;
                     <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                     <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                    rdfs:comment "Use of eddy current brakes."@en ;
+                    rdfs:comment "Use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking"@en ;
                     rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                     rdfs:label "Use of eddy current brakes"@en ;
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -334,7 +337,8 @@ above the local reference ellipsoid).""" ;
                  :eratvIndex "4.9.1" ;
                  <http://purl.org/dc/terms/created> "2021-08-31"^^xsd:date ;
                  <http://purl.org/dc/terms/modified> "2021-08-31"^^xsd:date ;
-                 rdfs:comment "Type of end coupling (indicating tensile and compressive forces)."@en ;
+                 rdfs:comment "The concept scheme is temporarily non-deferenceable."@en ,
+                              "Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType"@en ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                  rdfs:label "end coupling type"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -371,7 +375,7 @@ above the local reference ellipsoid).""" ;
                     :rinfIndex "1.1.1.2.2.1.2" ;
                     <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                     <http://purl.org/dc/terms/modified> "2021-08-06"^^xsd:date ;
-                    rdfs:comment "Indication of the traction supply system (nominal voltage and frequency)."@en ;
+                    rdfs:comment "Indication of the traction supply system (nominal voltage and frequency). Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/energy-supply-systems/EnergySupplySystems"@en ;
                     rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                     rdfs:label "Energy supply system"@en ;
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -389,7 +393,7 @@ above the local reference ellipsoid).""" ;
               :rinfIndex "1.1.1.3.2.2" ;
               <http://purl.org/dc/terms/created> "2021-08-07"^^xsd:date ;
               <http://purl.org/dc/terms/modified> "2021-08-31"^^xsd:date ;
-              rdfs:comment "ETCS baseline installed lineside/on-board"@en ;
+              rdfs:comment "ETCS baseline installed lineside/on-board. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-baselines/ETCSBaselines"@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/> ;
               rdfs:label "ETCS baseline"@en ;
               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -402,7 +406,7 @@ above the local reference ellipsoid).""" ;
                        :rinfIndex "1.1.1.3.10.1" ;
                        <http://purl.org/dc/terms/created> "2021-08-09"^^xsd:date ;
                        <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                       rdfs:comment "ERTMS / ETCS application level for degraded situation related to the track side equipment."@en ;
+                       rdfs:comment "ERTMS / ETCS application level for degraded situation related to the track side equipment. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-situation/ETCSSituations"@en ;
                        rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                        rdfs:label "ETCS level for degraded situation"@en ;
                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -415,7 +419,8 @@ above the local reference ellipsoid).""" ;
                            :eratvIndex "4.13.1.1" ;
                            <http://purl.org/dc/terms/created> "2021-08-31"^^xsd:date ;
                            <http://purl.org/dc/terms/modified> "2021-08-31"^^xsd:date ;
-                           rdfs:comment "ETCS equipment on-board and its level."@en ;
+                           rdfs:comment "ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels"@en ,
+                                        "The concept scheme is temporarily non-deferenceable."@en ;
                            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                            rdfs:label "ETCS equipment level"@en ;
                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -433,7 +438,7 @@ above the local reference ellipsoid).""" ;
             :rinfIndex "1.1.1.3.2.4" ;
             <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
             <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-            rdfs:comment "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation."@en ;
+            rdfs:comment "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-infills/ETCSInfills"@en ;
             rdfs:isDefinedBy <http://data.europa.eu/949/> ;
             rdfs:label "ETCS infill installed lineside"@en ;
             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -445,7 +450,7 @@ above the local reference ellipsoid).""" ;
            rdfs:range :ETCSLevel ;
            <http://purl.org/dc/terms/created> "2021-08-07"^^xsd:date ;
            <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-           rdfs:comment "ETCS level available in the section of line."@en ;
+           rdfs:comment "ETCS level available in the section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels"@en ;
            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
            rdfs:label "etcs level"@en ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -458,7 +463,7 @@ above the local reference ellipsoid).""" ;
                :rinfIndex "1.1.1.3.2.1" ;
                <http://purl.org/dc/terms/created> "2021-08-07"^^xsd:date ;
                <http://purl.org/dc/terms/modified> "2021-08-07"^^xsd:date ;
-               rdfs:comment "ERTMS / ETCS application level which expresses the possible operating relationships between track and train"@en ;
+               rdfs:comment "ERTMS / ETCS application level which expresses the possible operating relationships between track and train. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels"@en ;
                rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                rdfs:label "ETCS level"@en ;
                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -471,7 +476,7 @@ above the local reference ellipsoid).""" ;
               :rinfIndex "1.1.1.3.2.10" ;
               <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
               <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-              rdfs:comment "ETCS M_version according to SRS 7.5.1.9."@en ;
+              rdfs:comment "ETCS M_version according to SRS 7.5.1.9. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-m-versions/ETCSMVersions"@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/> ;
               rdfs:label "ETCS M_version"@en ;
               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -489,7 +494,7 @@ above the local reference ellipsoid).""" ;
                          :rinfIndex "1.1.1.3.2.9" ;
                          <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                          <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                         rdfs:comment "ETCS requirements used for demonstrating technical compatibility."@en ;
+                         rdfs:comment "ETCS requirements used for demonstrating technical compatibility. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-system-compatibilities/ETCSSystemCompatibilities"@en ;
                          rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                          rdfs:label "ETCS system compatibility"@en ;
                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -502,7 +507,8 @@ above the local reference ellipsoid).""" ;
                     :eratvIndex "4.4.1" ;
                     <http://purl.org/dc/terms/created> "2020-08-29"^^xsd:date ;
                     <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-                    rdfs:comment "Fire safety category for tunnels."@en ;
+                    rdfs:comment "Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories"@en ,
+                                 "The concept scheme is temporarily non-deferenceable."@en ;
                     rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                     rdfs:label "fire safety category"@en ;
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -516,7 +522,7 @@ above the local reference ellipsoid).""" ;
                             "1.2.1.0.2.3" ;
                  <http://purl.org/dc/terms/created> "2021-08-03"^^xsd:date ;
                  <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date ;
-                 rdfs:comment "Railway Freight Corridor that the line is designated to."@en ;
+                 rdfs:comment "Railway Freight Corridor that the line is designated to. Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/freight-corridor/FreightCorridors"@en ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                  rdfs:label "Part of a Railway freight corridor"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -529,7 +535,8 @@ above the local reference ellipsoid).""" ;
                                       :rinfIndex "1.1.1.3.7.1.4" ;
                                       <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                                       <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                                      rdfs:comment "Section with train detection limitation, specific for route compatibility check on French network."@en ;
+                                      rdfs:comment "Section with train detection limitation, specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations"@en ,
+                                                   "The concept scheme is temporarily non-deferenceable."@en ;
                                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                       rdfs:label "Section with train detection limitation, only for the French network"@en ;
                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -548,7 +555,7 @@ above the local reference ellipsoid).""" ;
                            "1.2.1.0.3.4" ;
                 <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
                 <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part."@en ;
+                rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gaugings/GaugingProfiles"@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                 rdfs:label "Gauging"@en ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -561,7 +568,7 @@ above the local reference ellipsoid).""" ;
                    :rinfIndex "1.1.1.3.3.2" ;
                    <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                   rdfs:comment "Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption."@en ;
+                   rdfs:comment "Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-number-active-mobiles/NumberActiveMobiles"@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "Advised required number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -574,7 +581,7 @@ above the local reference ellipsoid).""" ;
                        :rinfIndex "1.1.1.3.3.3" ;
                        <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                        <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                       rdfs:comment "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria."@en ;
+                       rdfs:comment "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-optional-functions/OptionalFunctions"@en ;
                        rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                        rdfs:label "Optional GSM-R functions"@en ;
                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -587,7 +594,8 @@ above the local reference ellipsoid).""" ;
                             :eratvIndex "4.13.2.7" ;
                             <http://purl.org/dc/terms/created> "2021-08-31"^^xsd:date ;
                             <http://purl.org/dc/terms/modified> "2021-08-31"^^xsd:date ;
-                            rdfs:comment "GSM-R Radio Data communication on board and its Baseline."@en ;
+                            rdfs:comment "GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications"@en ,
+                                         "The concept scheme is temporarily non-deferenceable."@en ;
                             rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                             rdfs:label "GSM-R radio data communication"@en ;
                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -605,7 +613,7 @@ above the local reference ellipsoid).""" ;
              :rinfIndex "1.1.1.3.3.1" ;
              <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
              <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-             rdfs:comment "GSM-R version installed lineside/on-board."@en ;
+             rdfs:comment "GSM-R version installed lineside/on-board. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-versions/GSMRVersions"@en ;
              rdfs:isDefinedBy <http://data.europa.eu/949/> ;
              rdfs:label "GSM-R version"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -618,7 +626,7 @@ above the local reference ellipsoid).""" ;
                      :rinfIndex "1.1.1.3.3.5" ;
                      <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                      <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                     rdfs:comment "GSM-R networks covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/XXXXXXXX"@en ;
+                     rdfs:comment "GSM-R networks covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                      rdfs:label "GSM-R networks covered by a roaming agreement"@en ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -666,7 +674,7 @@ above the local reference ellipsoid).""" ;
            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
            <http://purl.org/dc/terms/created> "2020-09-01"^^xsd:date ;
            <http://purl.org/dc/terms/modified> "2020-11-20"^^xsd:date ;
-           rdfs:comment "Indicates the country in which an entity resides."@en ;
+           rdfs:comment "Indicates the country in which an entity resides. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en ;
            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
            rdfs:label "in country"@en ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -684,7 +692,7 @@ above the local reference ellipsoid).""" ;
                    :rinfIndex "1.1.1.3.6.1" ;
                    <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                   rdfs:comment "Indication of radio legacy systems installed"@en ;
+                   rdfs:comment "Indication of radio legacy systems installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/legacy-radio-systems/LegacyRadioSystems"@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "Other radio systems installed (Radio Legacy Systems)"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -698,7 +706,7 @@ above the local reference ellipsoid).""" ;
                          "1.2.1.0.2.2" ;
               <http://purl.org/dc/terms/created> "2021-08-02"^^xsd:date ;
               <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date ;
-              rdfs:comment "Classification of a line according to the INF TSI."@en ;
+              rdfs:comment "Classification of a line according to the INF TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/line-category/LineCategories"@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/> ;
               rdfs:label "Category of line"@en ;
               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -735,7 +743,7 @@ above the local reference ellipsoid).""" ;
                 :rinfIndex "1.1.1.1.2.4" ;
                 <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                 <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                rdfs:comment "A combination of the line category and speed at the weakest point of the track."@en ;
+                rdfs:comment "A combination of the line category and speed at the weakest point of the track. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/load-capabilities/LoadCapabilities"@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                 rdfs:label "Load Capability"@en ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -753,7 +761,8 @@ above the local reference ellipsoid).""" ;
                  :rinfIndex "1.1.1.1.6.3" ;
                  <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                  <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                 rdfs:comment "Use of magnetic brakes."@en ;
+                 rdfs:comment "The concept scheme is temporarily non-deferenceable."@en ,
+                              "Use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking"@en ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                  rdfs:label "Use of magnetic brakes"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -781,7 +790,7 @@ above the local reference ellipsoid).""" ;
                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                       <http://purl.org/dc/terms/created> "2020-09-30"^^xsd:date ;
                       <http://purl.org/dc/terms/modified> "2020-11-22"^^xsd:date ;
-                      rdfs:comment "Indicates the country in which a vehicle or vehicle type is manufactured."@en ;
+                      rdfs:comment "Indicates the country in which a vehicle or vehicle type is manufactured. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                       rdfs:label "manufacturing country"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -794,7 +803,7 @@ above the local reference ellipsoid).""" ;
                   :rinfIndex "1.1.1.3.7.17" ;
                   <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                   <http://purl.org/dc/terms/modified> "2021-08-08"^^xsd:date ;
-                  rdfs:comment "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams."@en ;
+                  rdfs:comment "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/max-amount-sandings/MaxAmountSandings"@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                   rdfs:label "Maximum amount of sand"@en ;
                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -820,7 +829,7 @@ above the local reference ellipsoid).""" ;
                             :rinfIndex "1.1.1.3.7.11.1" ;
                             <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                             <http://purl.org/dc/terms/modified> "2021-08-08"^^xsd:date ;
-                            rdfs:comment "Minimum permitted axle load per category of Vehicle, given in tons depending of the category of vehicle."@en ;
+                            rdfs:comment "Minimum permitted axle load per category of Vehicle, given in tons depending of the category of vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/min-axle-loads-per-vehicle-category/MinAxleLoadsPerVehicleCategory"@en ;
                             rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                             rdfs:label "Minimum axle load by vehicle category"@en ;
                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -832,7 +841,8 @@ above the local reference ellipsoid).""" ;
               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://purl.org/dc/terms/created> "2021-04-01"^^xsd:date ;
               <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-              rdfs:comment "Indicates the navigation possibilities between two related topological objects."@en ;
+              rdfs:comment "Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities"@en ,
+                           "The concept scheme is temporarily non-deferenceable."@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/> ;
               rdfs:label "navigability"@en ;
               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -912,7 +922,8 @@ above the local reference ellipsoid).""" ;
         :rinfIndex "1.2.0.0.0.4" ;
         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
         <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-        rdfs:comment "Indicates the type on an operational point."@en ;
+        rdfs:comment "Indicates the type on an operational point. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes"@en ,
+                     "The concept scheme is temporarily non-deferenceable."@en ;
         rdfs:isDefinedBy <http://data.europa.eu/949/> ;
         rdfs:label "Type of operational point"@en ;
         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -956,7 +967,7 @@ above the local reference ellipsoid).""" ;
                       :rinfIndex "1.1.1.3.10.2" ;
                       <http://purl.org/dc/terms/created> "2021-08-09"^^xsd:date ;
                       <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                      rdfs:comment "Other train protection, control and warning systems for degraded situation."@en ;
+                      rdfs:comment "Other train protection, control and warning systems for degraded situation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-protection-control-warning/OtherProtectionControlWarnings"@en ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                       rdfs:label "Other train protection, control and warning systems for degraded situation"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -969,7 +980,8 @@ above the local reference ellipsoid).""" ;
                   :eratvIndex "4.7.3.2" ;
                   <http://purl.org/dc/terms/created> "2021-08-26"^^xsd:date ;
                   <http://purl.org/dc/terms/modified> "2021-08-26"^^xsd:date ;
-                  rdfs:comment "Parking brake type (if the vehicle is fitted with it)."@en ;
+                  rdfs:comment "Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType"@en ,
+                               "The concept scheme is temporarily non-deferenceable."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                   rdfs:label "parking brake type"@en ;
                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1010,7 +1022,7 @@ above the local reference ellipsoid).""" ;
                 :rinfIndex "1.2.1.0.6.5" ;
                 <http://purl.org/dc/terms/created> "2021-08-02"^^xsd:date ;
                 <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                rdfs:comment "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres."@en ;
+                rdfs:comment "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/platform-heights/PlatformHeights"@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                 rdfs:label "Height of platform"@en ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1022,7 +1034,8 @@ above the local reference ellipsoid).""" ;
              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://purl.org/dc/terms/created> "2021-04-03"^^xsd:date ;
              <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-             rdfs:comment "Determines the position of the topological object A in a relation."@en ;
+             rdfs:comment "Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions"@en ,
+                          "The concept scheme is temporarily non-deferenceable."@en ;
              rdfs:isDefinedBy <http://data.europa.eu/949/> ;
              rdfs:label "position on A"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1034,7 +1047,8 @@ above the local reference ellipsoid).""" ;
              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://purl.org/dc/terms/created> "2021-04-03"^^xsd:date ;
              <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-             rdfs:comment "Determines the position of the topological object B in a relation."@en ;
+             rdfs:comment "Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions"@en ,
+                          "The concept scheme is temporarily non-deferenceable."@en ;
              rdfs:isDefinedBy <http://data.europa.eu/949/> ;
              rdfs:label "position on B"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1047,7 +1061,7 @@ above the local reference ellipsoid).""" ;
                            :rinfIndex "1.1.1.1.3.5" ;
                            <http://purl.org/dc/terms/created> "2021-08-03"^^xsd:date ;
                            <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                           rdfs:comment "Coding for combined transport for semi-trailers as defined in UIC Code."@en ;
+                           rdfs:comment "Coding for combined transport for semi-trailers as defined in UIC Code. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/profile-num-semi-trailers/ProfileNumbersSemiTrailers"@en ;
                            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                            rdfs:label "Standard combined transport profile number for semi-trailers"@en ;
                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1060,7 +1074,7 @@ above the local reference ellipsoid).""" ;
                          :rinfIndex "1.1.1.1.3.4" ;
                          <http://purl.org/dc/terms/created> "2021-08-03"^^xsd:date ;
                          <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                         rdfs:comment "Coding for combined transport with swap bodies as defined in UIC Code."@en ;
+                         rdfs:comment "Coding for combined transport with swap bodies as defined in UIC Code. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/profile-num-swap-bodies/ProfileNumbersSwapBodies"@en ;
                          rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                          rdfs:label "Standard combined transport profile number for swap bodies"@en ;
                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1078,7 +1092,7 @@ above the local reference ellipsoid).""" ;
                         :rinfIndex "1.1.1.3.5.3" ;
                         <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                         <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                        rdfs:comment "Indication of which class B system is installed"@en ;
+                        rdfs:comment "Indication of which class B system is installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-protection-legacy-systems/TrainProtectionLegacySystems"@en ;
                         rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                         rdfs:label "Train protection legacy system"@en ;
                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1108,7 +1122,7 @@ above the local reference ellipsoid).""" ;
                  :rinfIndex "1.1.1.1.4.3" ;
                  <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                  <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                 rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
+                 rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations"@en ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                  rdfs:label "Rail inclination"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1123,7 +1137,8 @@ above the local reference ellipsoid).""" ;
                                      "1.2.2.0.5.7" ;
                           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
                           <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date ;
-                          rdfs:comment "Applicable rolling stock fire category for a tunnel."@en ;
+                          rdfs:comment "Applicable rolling stock fire category for a tunnel. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories"@en ,
+                                       "The concept scheme is temporarily non-deferenceable."@en ;
                           rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                           rdfs:label "Fire category of rolling stock required"@en ;
                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1148,7 +1163,7 @@ above the local reference ellipsoid).""" ;
                        :eratvIndex "4.3.3" ;
                        <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                        <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                       rdfs:comment "Snow, ice and hail conditions."@en ;
+                       rdfs:comment "Snow, ice and hail conditions. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ice-conditions/IceConditions"@en ;
                        rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                        rdfs:label "snow ice hail conditions"@en ;
                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1161,7 +1176,7 @@ above the local reference ellipsoid).""" ;
            :rinfIndex "1.1.0.0.0.6" ;
            <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
            <http://purl.org/dc/terms/modified> "2021-08-08"^^xsd:date ;
-           rdfs:comment "Indicates the nature of a section of line."@en ;
+           rdfs:comment "Indicates the nature of a section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/sol-natures/SoLNatures"@en ;
            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
            rdfs:label "Nature of Section of Line"@en ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1192,7 +1207,8 @@ above the local reference ellipsoid).""" ;
              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
              <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date ;
-             rdfs:comment "Vehicle subcategory."@en ;
+             rdfs:comment "The concept scheme is temporarily non-deferenceable."@en ,
+                          "Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories"@en ;
              rdfs:isDefinedBy <http://data.europa.eu/949/> ;
              rdfs:label "vehicle subcategory"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1205,7 +1221,7 @@ above the local reference ellipsoid).""" ;
                          :eratvIndex "4.12.3.1" ;
                          <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
                          <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                         rdfs:comment "Platform height for which the vehicle is de­signed."@en ;
+                         rdfs:comment "Platform height for which the vehicle is de­signed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/platform-heights/PlatformHeights"@en ;
                          rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                          rdfs:label "supported platform height"@en ;
                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1225,7 +1241,8 @@ above the local reference ellipsoid).""" ;
                               "1.2.2.0.0.3" ;
                    <http://purl.org/dc/terms/created> "2021-08-02"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                   rdfs:comment "Indicates the related TEN (trans-European network)."@en ;
+                   rdfs:comment "Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TenClassifications"@en ,
+                                "The concept scheme is temporarily non-deferenceable."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "TEN classification (of track, of platform, of siding)"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1238,7 +1255,7 @@ above the local reference ellipsoid).""" ;
                              :eratvIndex "4.7.2.1.1" ;
                              <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                              <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                             rdfs:comment "Reference case of a TSI thermal capacity."@en ;
+                             rdfs:comment "Reference case of a TSI thermal capacity. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/thermal-capacity/ThermalCapacityTSIReferences"@en ;
                              rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                              rdfs:label "thermal capacity TSI reference"@en ;
                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1267,7 +1284,8 @@ above the local reference ellipsoid).""" ;
                 :rinfIndex "1.1.1.0.0.2" ;
                 <http://purl.org/dc/terms/created> "2021-09-09"^^xsd:date ;
                 <http://purl.org/dc/terms/modified> "2021-09-09"^^xsd:date ;
-                rdfs:comment "Track normal running direction."@en ;
+                rdfs:comment "The concept scheme is temporarily non-deferenceable."@en ,
+                             "Track normal running direction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections"@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                 rdfs:label "Normal running direction"@en ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1292,7 +1310,7 @@ above the local reference ellipsoid).""" ;
                                    :rinfIndex "1.1.1.3.7.1.2" ;
                                    <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                                    <http://purl.org/dc/terms/modified> "2021-08-08"^^xsd:date ;
-                                   rdfs:comment "Type of track circuits or axle counter to which specific checks are needed."@en ;
+                                   rdfs:comment "Type of track circuits or axle counter to which specific checks are needed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection-specific-checks/TrainDetectionSystemsSpecificChecks"@en ;
                                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                    rdfs:label "Type of track circuits to which specific checks are needed"@en ;
                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1310,7 +1328,7 @@ above the local reference ellipsoid).""" ;
                           :rinfIndex "1.1.1.3.7.1.1" ;
                           <http://purl.org/dc/terms/created> "2021-08-07"^^xsd:date ;
                           <http://purl.org/dc/terms/modified> "2021-08-07"^^xsd:date ;
-                          rdfs:comment "Indication of supported types of train detection systems."@en ;
+                          rdfs:comment "Indication of supported types of train detection systems. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/TrainDetectionSystems"@en ;
                           rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                           rdfs:label "Type of train detection system"@en ;
                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1323,7 +1341,8 @@ above the local reference ellipsoid).""" ;
                                   :rinfIndex "1.1.1.3.7.21" ;
                                   <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                                   <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                                  rdfs:comment "TSI compliance of rules on the use of composite brake blocks."@en ;
+                                  rdfs:comment "TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                               "The concept scheme is temporarily non-deferenceable."@en ;
                                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                   rdfs:label "TSI compliance of rules on the use of composite brake blocks"@en ;
                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1336,7 +1355,8 @@ above the local reference ellipsoid).""" ;
                                 :rinfIndex "1.1.1.3.7.14" ;
                                 <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                                 <http://purl.org/dc/terms/modified> "2021-08-08"^^xsd:date ;
-                                rdfs:comment "TSI compliance of Ferromagnetic characteristics of wheel material required."@en ;
+                                rdfs:comment "TSI compliance of Ferromagnetic characteristics of wheel material required. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                             "The concept scheme is temporarily non-deferenceable."@en ;
                                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                 rdfs:label "TSI compliance of Ferromagnetic characteristics of wheel material required"@en ;
                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1349,7 +1369,8 @@ above the local reference ellipsoid).""" ;
                                      :rinfIndex "1.1.1.3.7.2.1" ;
                                      <http://purl.org/dc/terms/created> "2021-08-07"^^xsd:date ;
                                      <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                                     rdfs:comment "Indication whether required distance between two consecutive axles is compliant with the TSI."@en ;
+                                     rdfs:comment "Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                                  "The concept scheme is temporarily non-deferenceable."@en ;
                                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                      rdfs:label "TSI compliance of maximum permitted distance between two consecutive axles"@en ;
                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1362,7 +1383,8 @@ above the local reference ellipsoid).""" ;
                                   :rinfIndex "1.1.1.3.7.15.1" ;
                                   <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                                   <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                                  rdfs:comment "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset."@en ;
+                                  rdfs:comment "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                               "The concept scheme is temporarily non-deferenceable."@en ;
                                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                   rdfs:label "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset"@en ;
                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1375,7 +1397,8 @@ above the local reference ellipsoid).""" ;
                                :rinfIndex "1.1.1.3.7.13" ;
                                <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                                <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                               rdfs:comment "TSI compliance of rules for vehicle metal construction."@en ;
+                               rdfs:comment "TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                            "The concept scheme is temporarily non-deferenceable."@en ;
                                rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                rdfs:label "TSI compliance of rules for vehicle metal construction"@en ;
                                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1388,7 +1411,8 @@ above the local reference ellipsoid).""" ;
                             :rinfIndex "1.1.1.3.7.12" ;
                             <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                             <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                            rdfs:comment "TSI compliance of rules for metal-free space around wheels."@en ;
+                            rdfs:comment "TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                         "The concept scheme is temporarily non-deferenceable."@en ;
                             rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                             rdfs:label "TSI compliance of rules for metal-free space around wheels"@en ;
                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1401,7 +1425,8 @@ above the local reference ellipsoid).""" ;
                                :rinfIndex "1.1.1.3.7.23" ;
                                <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                                <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                               rdfs:comment "TSI compliance of rules on combination of RST characteristics influencing shunting impedance."@en ;
+                               rdfs:comment "TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                            "The concept scheme is temporarily non-deferenceable."@en ;
                                rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                rdfs:label "TSI compliance of rules on combination of RST characteristics influencing shunting impedance"@en ;
                                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1414,7 +1439,8 @@ above the local reference ellipsoid).""" ;
                                  :rinfIndex "1.1.1.3.7.19" ;
                                  <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                                  <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                                 rdfs:comment "TSI Compliance of rules on sand characteristics."@en ;
+                                 rdfs:comment "TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                              "The concept scheme is temporarily non-deferenceable."@en ;
                                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                  rdfs:label "TSI Compliance of rules on sand characteristics"@en ;
                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1427,7 +1453,8 @@ above the local reference ellipsoid).""" ;
                      :rinfIndex "1.1.1.3.7.16" ;
                      <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                      <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                     rdfs:comment "TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits."@en ;
+                     rdfs:comment "TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                  "The concept scheme is temporarily non-deferenceable."@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                      rdfs:label "TSI compliance of sanding"@en ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
@@ -1440,7 +1467,8 @@ above the local reference ellipsoid).""" ;
                           :rinfIndex "1.1.1.3.7.22" ;
                           <http://purl.org/dc/terms/created> "2021-08-08"^^xsd:date ;
                           <http://purl.org/dc/terms/modified> "2021-08-09"^^xsd:date ;
-                          rdfs:comment "TSI compliance of rules on shunt assisting devices."@en ;
+                          rdfs:comment "TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                       "The concept scheme is temporarily non-deferenceable."@en ;
                           rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                           rdfs:label "TSI compliance of rules on shunt assisting devices"@en ;
                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1453,7 +1481,8 @@ above the local reference ellipsoid).""" ;
                    :rinfIndex "1.1.1.2.3.1" ;
                    <http://purl.org/dc/terms/created> "2020-08-25"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date ;
-                   rdfs:comment "Indication of which TSI compliant pantograph heads are allowed to be used."@en ;
+                   rdfs:comment "Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ,
+                                "The concept scheme is temporarily non-deferenceable."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "Accepted TSI compliant pantograph heads"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1465,7 +1494,7 @@ above the local reference ellipsoid).""" ;
                rdfs:range :VehicleKeeper ;
                <http://purl.org/dc/terms/created> "2020-11-23"^^xsd:date ;
                <http://purl.org/dc/terms/modified> "2020-11-23"^^xsd:date ;
-               rdfs:comment "Indicates the organization that owns/operated a vehicle or wagon."@en ;
+               rdfs:comment "Indicates the organization that owns/operated a vehicle or wagon. http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances"@en ;
                rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                rdfs:label "vehicle keeper"@en ;
                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1490,7 +1519,7 @@ above the local reference ellipsoid).""" ;
                   :eratvIndex "4.13.2.10" ;
                   <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                   <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
-                  rdfs:comment "Voice SIM Card GSM-R Home Network"@en ;
+                  rdfs:comment "Voice SIM Card GSM-R Home Network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                   rdfs:label "voice GSM-R network"@en ;
                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1508,7 +1537,7 @@ above the local reference ellipsoid).""" ;
                       :rinfIndex "1.1.1.3.3.9" ;
                       <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                       <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                      rdfs:comment "Radio requirements used for demonstrating technical compatibility voice"@en ;
+                      rdfs:comment "Radio requirements used for demonstrating technical compatibility voice. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                       rdfs:label "Radio system compatibility voice"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1527,7 +1556,7 @@ above the local reference ellipsoid).""" ;
                           "1.2.1.0.4.1" ;
                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
                <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-               rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en ;
+               rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/nominal-track-gauges/NominalTrackGauges"@en ;
                rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                rdfs:label "Nominal track gauge"@en ;
                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1540,7 +1569,7 @@ above the local reference ellipsoid).""" ;
                                  :eratvIndex "4.1.11" ;
                                  <http://purl.org/dc/terms/created> "2020-09-01"^^xsd:date ;
                                  <http://purl.org/dc/terms/modified> "2021-08-25"^^xsd:date ;
-                                 rdfs:comment "Wheelset gauge changeover facility."@en ;
+                                 rdfs:comment "Wheelset gauge changeover facility. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gauge-changeover-facilities/GaugeChangeoverFacilities"@en ;
                                  rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                                  rdfs:label "wheelset gauge changeover facility"@en ;
                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1747,7 +1776,7 @@ above the local reference ellipsoid).""" ;
 ###  http://data.europa.eu/949/compatibilityProcedureDocument
 :compatibilityProcedureDocument rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :Track ;
-                                rdfs:range xsd:double ;
+                                rdfs:range xsd:string ;
                                 :rinfIndex "1.1.1.1.2.4.4" ;
                                 <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                                 <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
