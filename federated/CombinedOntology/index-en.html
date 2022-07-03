@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="resources/primer.css" media="screen" />
+    <link rel="stylesheet" href="resources/rec.css" media="screen" />
+    <link rel="stylesheet" href="resources/extra.css" media="screen" />
+    <link rel="stylesheet" href="resources/owl.css" media="screen" />
+    <link rel="stylesheet" href="resources/code.css" media="screen" />
+    <title>
+      This ontology combines all the extensions to the Federated ontology that
+      have been created for the project SIMPLE
+    </title>
+
+    <!-- SCHEMA.ORG METADATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "TechArticle",
+        "url": "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology",
+        "image": "http://vowl.visualdataweb.org/webvowl/#iri=https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology",
+        "name": "This ontology combines all the extensions to the Federated ontology that have been created for the project SIMPLE",
+        "headline": "This ontology has been created in the context of project SIMPLE",
+        "datePublished": "2022-03-25",
+        "version": "Initial release (including road transport)",
+        "license": "https://creativecommons.org/licenses/by/4.0",
+        "author": [
+          { "@type": "Person", "name": "Oscar Corcho" },
+          { "@type": "Person", "name": " Alberto Megina" },
+          { "@type": "Person", "name": " Mario de Lucas" },
+          { "@type": "Person", "name": " XXXXX" }
+        ]
+      }
+    </script>
+
+    <script src="resources/jquery.js"></script>
+    <script src="resources/marked.min.js"></script>
+    <script>
+      function loadHash() {
+        jQuery(".markdown").each(function (el) {
+          jQuery(this)
+            .after(marked(jQuery(this).text()))
+            .remove();
+        });
+        var hash = location.hash;
+        if ($(hash).offset() != null) {
+          $("html, body").animate({ scrollTop: $(hash).offset().top }, 0);
+        }
+        loadTOC();
+      }
+      function loadTOC() {
+        //process toc dynamically
+        var t = "<h2>Table of contents</h2><ul>";
+        i = 1;
+        j = 0;
+        jQuery(".list").each(function () {
+          if (jQuery(this).is("h2")) {
+            if (j > 0) {
+              t += "</ul>";
+              j = 0;
+            }
+            t +=
+              "<li>" +
+              i +
+              ". <a href=#" +
+              jQuery(this).attr("id") +
+              ">" +
+              jQuery(this).ignore("span").text() +
+              "</a></li>";
+            i++;
+          }
+          if (jQuery(this).is("h3")) {
+            if (j == 0) {
+              t += "<ul>";
+            }
+            j++;
+            t +=
+              "<li>" +
+              (i - 1) +
+              "." +
+              j +
+              ". " +
+              "<a href=#" +
+              jQuery(this).attr("id") +
+              ">" +
+              jQuery(this).ignore("span").text() +
+              "</a></li>";
+          }
+        });
+        t += "</ul>";
+        $("#toc").html(t);
+      }
+      $.fn.ignore = function (sel) {
+        return this.clone()
+          .find(sel || ">*")
+          .remove()
+          .end();
+      };
+      $(window).resize(function(){
+        if($(window).innerWidth() < 1250){
+          document.getElementsByTagName("body")[0].className="toc-inline";
+        }
+      });
+      $(window).resize(function(){
+        if($(window).innerWidth() > 1250){
+          document.getElementsByTagName("body")[0].className="toc-sidebar";
+        }
+      });
+      
+    </script>
+  </head>
+
+  <body class="toc-sidebar">
+    <div class="container">
+      <div class="head">
+        <div style="float: right">
+          language <a href="index-en.html"><b>en</b></a>
+        </div>
+        <h1>
+          This ontology combines all the extensions to the Federated ontology
+          that have been created for the project SIMPLE
+        </h1>
+        <h2>Release 2022-03-25</h2>
+
+        <dl>
+          <dt>This version:</dt>
+          <dd>
+            <a
+              href="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/0.1.1"
+              >https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/0.1.1</a
+            >
+          </dd>
+          <dt>Latest version:</dt>
+          <dd>
+            <a
+              href="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology"
+              >https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology</a
+            >
+          </dd>
+          <dt>Revision:</dt>
+          <dd>Initial release (including road transport)</dd>
+          <dt>Authors:</dt>
+          <dd>
+            Oscar Corcho, (<a href="https://oeg.fi.upm.es/"
+              >Ontology Engineering Group - Universidad Politécnica de Madrid</a
+            >)
+          </dd>
+          <dd>
+            Alberto Megina, (<a href="https://oeg.fi.upm.es/"
+              >Ontology Engineering Group - Universidad Politécnica de Madrid</a
+            >)
+          </dd>
+          <dd>
+            Mario de Lucas, (<a href="https://oeg.fi.upm.es/"
+              >Ontology Engineering Group - Universidad Politécnica de Madrid</a
+            >)
+          </dd>
+          <dd>XXXXX</dd>
+
+          <dt>Publisher:</dt>
+          <dd>
+            <a href="https://oeg.fi.upm.es/">Ontology Engineering Group</a>, (<a
+              href="http://www.upm.es/"
+              >Universidad Politécnica de Madrid</a
+            >)
+          </dd>
+          <dt>Download serialization:</dt>
+          <dd>
+            <span
+              ><a href="ontology.json" target="_blank"
+                ><img
+                  src="https://img.shields.io/badge/Format-JSON_LD-blue.svg"
+                  alt="JSON-LD"
+              /></a> </span
+            ><span
+              ><a href="ontology.xml" target="_blank"
+                ><img
+                  src="https://img.shields.io/badge/Format-RDF/XML-blue.svg"
+                  alt="RDF/XML"
+              /></a> </span
+            ><span
+              ><a href="ontology.nt" target="_blank"
+                ><img
+                  src="https://img.shields.io/badge/Format-N_Triples-blue.svg"
+                  alt="N-Triples"
+              /></a> </span
+            ><span
+              ><a href="ontology.ttl" target="_blank"
+                ><img
+                  src="https://img.shields.io/badge/Format-TTL-blue.svg"
+                  alt="TTL"
+              /></a>
+            </span>
+          </dd>
+          <dt>License:</dt>
+          <dd>
+            <a
+              href="https://creativecommons.org/licenses/by/4.0"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0-blue.svg"
+                alt="https://creativecommons.org/licenses/by/4.0"
+            /></a>
+            <a
+              href="https://creativecommons.org/licenses/by/4.0"
+              rel="license"
+              target="_blank"
+            >
+              <img
+                src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+                style="border-width: 0"
+                alt="License"
+              />
+            </a>
+            <br />
+          </dd>
+          <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> -->
+          <dt>Cite as:</dt>
+          <dd>
+            Oscar Corcho, Alberto Megina, Mario de Lucas (Ontology Engineering
+            Group - Universidad Politécnica de Madrid), XXXXX (Indra).
+            Extensions to the Federated ontology for SIMPLE. Revision: Initial
+            release. Retrieved from:
+            https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/0.1.1
+          </dd>
+        </dl>
+
+        <a href="provenance/provenance-en.html" target="_blank"
+          >Provenance of this page</a
+        >
+        <hr />
+      </div>
+      <div class="status">
+        <div>
+          <span>Ontology Specification Draft</span>
+        </div>
+      </div>
+      <div id="abstract">
+        <h2>Abstract</h2>
+        <p>This ontology has been created in the SIMPLE context of a collaboration between the Ontology Engineering Group and Indra.</p>
+        <p>Este vocabulario se ha desarrollado en el contexto de acción sobre el sector logístico bajo el proyecto de plataforma SIMPLE. Dicho proyecto ha sido creado en colaboración con Puertos del Estado (PdE), ADIF y Ministerio de Transporte, Movilidad y Agenda Urbana (MITMA) en relación con el exepdiente 008/20.</p>
+      </div>
+
+      <nav id="toc">
+        <h2 class="introductory" id="table-of-contents">Table of Contents</h2>
+        <ol class="toc" role="directory">
+            <li class="tocline"><a href="#intro" class="tocxref"><span class="secno">1. </span>Introduction</a>
+            <ol class="toc">
+                <li class="tocline"><a href="#ns" class="tocxref"><span class="secno">1.1 </span>Namespace declarations</a>
+            </ol>
+          </li>
+          <li class="tocline"><a href="#overview" class="tocxref"><span class="secno">2. </span>Extensions to the Federated ontology for SIMPLE: Overview</a></li>
+           <li class="tocline"><a href="#description" class="tocxref"><span class="secno">3. </span>SIMPLE: Description</a>
+            <ol class="toc">
+              <li class="tocline"><a href="#descriptionEvents" class="tocxref"><span class="secno">3.1 </span>Eventos</a>
+              <li class="tocline"><a href="#descriptionLegal" class="tocxref"><span class="secno">3.1 </span>Personas legales</a>
+              <li class="tocline"><a href="#descriptionBusiness" class="tocxref"><span class="secno">3.3 </span>Servicios de negocios</a>
+              <li class="tocline"><a href="#namedindividuals" class="tocxref"><span class="secno">3.4 </span>Ejemplos de usos</a>
+          </ol>
+          </li>
+
+           <li class="tocline"><a href="#crossref" class="tocxref"><span class="secno">4. </span>Cross reference for Extensions to the Federated ontology for SIMPLE classes, properties and dataproperties</a>
+                <ol class="toc">
+                    <li class="tocline"><a href="#properties" class="tocxref"><span class="secno">4.1 </span>Object Properties</a></li>
+                </ol>
+              </li>
+              <li class="tocline"><a href="#appendix" class="tocxref"><span class="secno">5. </span>Appendix</a>
+                <ol class="toc">
+                    <li class="tocline"><a href="#transporteTerrestre" class="tocxref"><span class="secno">5.1 </span>Transporte multimodal por carretera</a></li>
+                    <li class="tocline"><a href="#transporteTer-Fer" class="tocxref"><span class="secno">5.2 </span>Transporte multimodal carretera-ferrocarril</a></li>
+                </ol>
+            <li class="tocline"><a href="#ref" class="tocxref"><span class="secno">6. </span>References</a>
+            <li class="tocline"><a href="#ack" class="tocxref"><span class="secno">7. </span>Acknowledgments</a>
+            </li>
+        </ol>
+    </nav>
+
+      <!--INTRODUCTION SECTION-->
+      <div id="introduction">
+        <h2 id="intro" class="list">
+          Introduction
+          <span class="backlink"> back to <a href="#toc">ToC</a></span>
+        </h2>
+        <p>Este vocabulario representa la información del servicio logístico español. Este incluye el transpote por vía terrestre, ferroviaría y naval además de toda la infraestructura y personal involucrado en las tareas logísticas.</p>
+        <p>Se ha tenido muy en cuenta la ontología europea FEDeRATED que ofrece una visión común en el sector logístico, aportando interoperabilidad y visibilidad a lo largo de la cadena multimodal de envíos. Además, se extiende dicha ontología para cubrir las necesidades de desarrollo del projecto actual.</p>
+        <div id="namespacedeclarations">
+          <h3 id="ns" class="list">Namespace declarations</h3>
+          <div id="ns" align="center">
+            <table>
+              <caption>
+                <a href="#ns"> Table 1</a
+                >: Namespaces used in the document
+              </caption>
+              <tbody>
+                <tr>
+                  <td><b>simpledt</b></td>
+                  <td>
+                    &lt;https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology&gt;
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>federated</b></td>
+                  <td>
+                    &lt;https://vocab.plataformasimple.es/def/logistics/federated&gt;
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>owl</b></td>
+                  <td>&lt;http://www.w3.org/2002/07/owl&gt;</td>
+                </tr>
+                <tr>
+                  <td><b>rdf</b></td>
+                  <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td>
+                </tr>
+                <tr>
+                  <td><b>xsd</b></td>
+                  <td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td>
+                </tr>
+                <tr>
+                  <td><b>digitaltwin</b></td>
+                  <td>
+                    &lt;https://ontology.tno.nl/logistics/federated/DigitalTwin&gt;
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>rdfs</b></td>
+                  <td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td>
+                </tr>
+                <tr>
+                  <td><b>businessservice</b></td>
+                  <td>
+                    &lt;https://ontology.tno.nl/logistics/federated/BusinessService&gt;
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>logisticsroles</b></td>
+                  <td>
+                    &lt;https://ontology.tno.nl/logistics/federated/LogisticsRoles&gt;
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!--OVERVIEW SECTION-->
+      <div id="overview">
+        <h2 id="overv" class="list">
+          Extensions to the Federated ontology for SIMPLE: Overview
+          <span class="backlink"> back to <a href="#toc">ToC</a></span>
+        </h2>
+        <span class="markdown">
+          This ontology has the following classes and properties.</span
+        >
+        <h4>Object Properties</h4>
+        <ul class="hlist">
+          <li>
+            <a
+              href="#/BusinessServicehasArrivalLocation"
+              title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation"
+            >
+              <span>business servicehas arrival location</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/BusinessServicehasDepartureLocation"
+              title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation"
+            >
+              <span>business servicehas departure location</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/BusinessServicehasLocationDestination"
+              title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination"
+            >
+              <span>business servicehas location destination</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/BusinessServicehasLocationOrigin"
+              title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin"
+            >
+              <span>business servicehas location origin</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/BusinessServicehasMiddleDestination"
+              title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination"
+            >
+              <span>business servicehas middle destination</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/BusinessServicehasMiddleOrigin"
+              title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin"
+            >
+              <span>business servicehas middle origin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--DESCRIPTION SECTION-->
+      <div id="description">
+        <h2 id="desc" class="list">
+          SIMPLE: Description
+          <span class="backlink"> back to <a href="#toc">ToC</a></span>
+        </h2>
+        <p>
+          Este vocabulario representa toda la información acerca de envíos incluyendo
+          mercancías, infraestructura, medios de transporte, personal, eventos y
+          transacciones de negocio.
+        </p>
+        <p>
+          Una visión general de la ontología se muestra en el siguiente diagrama. En
+          los siguientes puntos se irá desgranando cada uno de sus principales
+          componentes.
+        </p>
+        <center>
+          <img
+            src="resources/images/general.svg"
+            alt="Diagrama de Event"
+            width="100%"
+          />
+          <figcaption>Figura 1. Visión global de la ontología.</figcaption>
+        </center>
+      
+        <div id="descriptionEvents">
+          <h3 id="descEvents" class="list">Events</h3>
+          <p>
+            Un <a href="https://vocab.plataformasimple.es/def/logistics/federated/Event">Evento</a> se define como la asociación o interacción entre dos o más
+            <a href="https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin">Gemelos Digitales</a>  y/o <a href="https://vocab.plataformasimple.es/def/logistics/federated/BusinessService">Servicios de Negocio</a>, que comienzan y terminan con
+            unos hitos con sus correspondientes fechas y/u horas de inicio y fin,
+            siendo sus atributos esenciales hito, fecha y hora.
+          </p>
+          <p>
+            Un Evento representa acciones, hitos, transacciones o cualquier otra
+            actividad del mundo real. Existen diferentes tipologías de Eventos y se
+            estructuran en base a los siguientes grupos de Eventos: Servicios
+            Logísticos, Transacciones Comerciales, Incidencias y Acuerdos
+            Contractuales.
+          </p>
+          <p>Las propiedades de un <a href="https://vocab.plataformasimple.es/def/logistics/federated/Event">Evento</a> de cualquier tipo son:</p>
+          <ul>
+            <li>dct:identifier: identificar el evento.</li>
+            <li>
+              event:hasDateTimeType: establece una asociación entre el Evento y su
+              tipo de sello de tiempo. Puede tener los valores event:Actual ,
+              event:Estimated, event:Expected, event:Requested o event:Planned.
+            </li>
+            <li>
+              event:hasMilestone: establece una asociación entre el Evento y su hito.
+              Puede tener los valores event:start o event:end.
+            </li>
+            <li>
+              event:hasTimeStamp: establece una asociación entre el Evento y sus
+              sellos de tiempo.
+            </li>
+            <li>
+              event:involvesBusinessTransaction: establece una asociación entre el
+              Evento y un Transacción Comercial.
+            </li>
+            <li>
+              event:involvesDigitalTwin: establece una asociación entre el Evento y un
+              Gemelo Digital.
+            </li>
+            <li>
+              event:involvesLogisticsActor: establece una asociación entre el Evento y
+              un Actor Logístico.
+            </li>
+            <li>
+              event:involvesPhysicalInfrastructure: establece una asociación entre el
+              Evento y la Localización donde se lleva a cabo.
+            </li>
+            <li>
+              simpledt:relatedDocumentation: recoge documentación sobre el Evento,
+              como por ejemplo, la Carta de Porte.
+            </li>
+          </ul>
+      
+          <div class="example">
+            <div class="example-title marker">
+              <span>Ejemplo 1: Instanciación de un evento.</span>
+            </div>
+            <pre class="hljs" aria-busy="false" aria-live="polite">
+        
+        
+           <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event_generic</span></span> a event:Event ;
+              dct:identifier “Event_generic” ;
+              event:hasDateTimeType event:Actual ; # It could be also Estimated, Expected, Planned
+              event:hasMilestone event:start ; # It could be also end
+              event:hasTimeStamp “xxxxxxx”^^xsd:dateTime;
+              event:involvesBusinessTransaction <span class="hljs-name">example:</span><span class="hljs-literal">XXX</span>;
+              event:involvesDigitalTwin <span class="hljs-name">example:</span><span class="hljs-literal">XXX</span>;
+              event:involvesLogisticsActor <span class="hljs-name">example:</span><span class="hljs-literal">XXX</span>;
+              event:involvesPhysicalInfrastructure <span class="hljs-name">example:</span><span class="hljs-literal">XXX</span>;
+              simpledt:relatedDocumentation <span class="hljs-name">example:</span><span class="hljs-literal">XXX</span>.
+           </pre>
+          </div>
+      
+          <p>En el siguiente diagrama se muestran el diagrama de eventos:</p>
+      
+          <center>
+            <img src="resources/images/events.svg" alt="Diagrama de Event" width="100%"/>
+            <figcaption>
+              Figura 2. Clasificación de los Eventos que se identifican en la
+              ontología.
+            </figcaption>
+          </center>
+        </div>
+      
+        <div id="descriptionLegal">
+          <h3 id="descLegal" class="list">LegalPerson</h3>
+          <p>
+            Además de eventos también se disponen de entidades que modelan las
+            distintas personas legales. Los distintos roles que pueden desarrillar los
+            diferentes actores que pueden estar involucrados en los Eventos de SIMPLE,
+            de acuerdo con las normativas vigentes de transporte, son:
+          </p>
+          <ul>
+            <li>
+              Remitente o Cargador (<em>Consignor||Sender</em>), actor que interviene
+              como emisor de la mercancía.
+            </li>
+            <li>
+              Expedidor (<em>Issuer</em>), actor que expide o entrega la carga al
+              Transportista.
+            </li>
+            <li>
+              Destinatario (<em>Consignee</em>), actor que interviene como receptor de
+              la mercancía.
+            </li>
+            <li>
+              Operador de Transporte o Porteador (<em>Carrier</em>), actor que tiene
+              por obligación realizar el transporte de mercancías.
+            </li>
+            <li>
+              Depositario (<em>Depositary</em>), actor respondable de indicar al
+              depositante de quien tiene que recibir la carga y a quien debe
+              entregarla.
+            </li>
+            <li>
+              Depositante (<em>Depositor</em>), actor responsable del depósito de la
+              carga.
+            </li>
+            <li>
+              Autoridad (<em>Authority</em>), actor que ejerce funciones de Autoridad
+              en cada tipo de transporte o depósito.
+            </li>
+            <li>
+              Notificado (<em>Notify</em>), actor que tiene que ser informado de los
+              Eventos que puedan ocurrir por su participación en un flujo logístico.
+            </li>
+          </ul>
+          <p>
+            La representación de cada uno de los actores previamente citados está
+            formada por las siguientes propiedades:
+          </p>
+          <ul>
+            <li>Dirección del actor logístico (actorAddress || hasLocation)</li>
+            <li>Identificador del actor logístico (actorID)</li>
+            <li>Nombre del actor logístico (actorName)</li>
+            <li>Página web del actor logístico (actorWebsite)</li>
+            <li>Número de contacto del actor logístico (bookingNumber)</li>
+          </ul>
+          <p>Un ejemplo en RDF sería el siguiente:</p>
+          <div class="example">
+            <div class="example-title marker">
+              <span>Ejemplo X: Instanciación de una persona legal en Turtle</span>
+            </div>
+            <pre class="hljs xml" aria-busy="false" aria-live="polite">
+          
+          
+             <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Sender</span></span>  a logisticsRoles:Sender ;
+              businessService:actorAddress <span class="hljs-literal">"43 Halton Rd, Carterton"</span>;
+              businessService:actorID <span class="hljs-literal">"Sender_1"</span>;	
+              businessService:actorName <span class="hljs-literal">"Sender_1"</span>;	
+              businessService:actorWebsite <span class="hljs-literal">"www.example.sender.com"</span>;	
+              businessService:bookingNumber <span class="hljs-literal">"+44 000 00 00"</span>;	
+              
+             </pre>
+          </div>
+          <p>A continuación se muestra un diagrama con la información mencionada:</p>
+      
+          <center>
+            <img
+              src="resources/images/legalPerson.svg"
+              alt="Diagrama de LegalPerson"
+			  width="100%"
+            />
+            <figcaption>
+              Figura 3. Clasificación de las Personas Legales que se identifican en la
+              ontología.
+            </figcaption>
+          </center>
+        </div>
+      
+        <div id="descriptionBusiness">
+          <h3 id="descEvents" class="list">Business Service</h3>
+          <p>
+            Dentro del módulo de Business Service se encuentran principalmente los
+            conceptos de Shipment y Consignment que forman las transacciones de
+            negocio. Mientras que Consignment modela cada traslado individial,
+            Shipment engloba a todos los Consignment incluidos en un mismo envío.
+            Ambos ellos disponen de los siguientes atributos:
+          </p>
+          <ul>
+            <li>bs:createdBy: identifica al creador del servicio de negocio.</li>
+            <li>
+              bs:contractCarriageCondition: especifica la condición del transporte
+              incluida en el contrato.
+            </li>
+            <li>bs:hasSequenceNumber: número identificativo del servicio.</li>
+            <li>bs:hasService: relación entre servicios de negocio.</li>
+            <li>bs:involvedActor: relación con una persona legal.</li>
+            <li>bs:involvedEvent: relación con un evento.</li>
+            <li>bs:isInvolvedIn: relación con un evento.</li>
+            <li>
+              bs:partOfTransportMovementType: describe si la transacción comercial es
+              parte del transporte principal, actual o previo.
+            </li>
+            <li>
+              bs:transportPlanIssuanceTime: fecha en que se emite el servicio de
+              transporte.
+            </li>
+            <li>
+              bs:transportPlanSequenceNumber: número identificativo del plan de
+              transporte.
+            </li>
+            <li>bs:transportPlanTotalNumber: número total del plan de transporte.</li>
+          </ul>
+          <p>
+            Por otra parte disponemos de la entidad LogisticsService que modela
+            cualquier servicio prestado a un cliente por un proveedor de servicios de
+            logística o transporte y cuenta con las siguientes propiedades:
+          </p>
+          <ul>
+            <li>bs:hasService: relación entre servicios de negocio.</li>
+            <li>bs:hasLocation: localización de los servicios logísticos.</li>
+            <li>
+              bs:packageProducts: productos empacados que forman parte del servicio
+              logístico
+            </li>
+            <li>bs:serviceName: nombre descriptivo del servicio logístico.</li>
+            <li>
+              bs:usedTransportMeans: medios de transporte involucrados en el servicio
+              logístico.
+            </li>
+          </ul>
+      
+          <p>A continuación se muestra el diagrama con las entidades explicadas:</p>
+          <center>
+            <img
+              src="resources/images/businessService.svg"
+              alt="Diagrama de BusinessService"
+			  width="100%"
+            />
+            <figcaption>
+              Figura 4. Servicios de negocios involucrados en el proceso logístico.
+            </figcaption>
+          </center>
+        </div>
+      
+        <!--CROSSREF SECTION-->
+        <div id="crossref">
+          <h2 id="crossreference" class="list">
+            Cross reference for Extensions to the Federated ontology for SIMPLE
+            classes, properties and dataproperties
+            <span class="backlink"> back to <a href="#toc">ToC</a></span>
+          </h2>
+          This section provides details for each class and property defined by
+          Extensions to the Federated ontology for SIMPLE.
+          <div id="objectproperties">
+            <h3 id="properties" class="list">Object Properties</h3>
+            <ul class="hlist">
+              <li>
+                <a
+                  href="#/BusinessServicehasArrivalLocation"
+                  title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation"
+                >
+                  <span>business servicehas arrival location</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/BusinessServicehasDepartureLocation"
+                  title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation"
+                >
+                  <span>business servicehas departure location</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/BusinessServicehasLocationDestination"
+                  title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination"
+                >
+                  <span>business servicehas location destination</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/BusinessServicehasLocationOrigin"
+                  title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin"
+                >
+                  <span>business servicehas location origin</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/BusinessServicehasMiddleDestination"
+                  title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination"
+                >
+                  <span>business servicehas middle destination</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#/BusinessServicehasMiddleOrigin"
+                  title="https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin"
+                >
+                  <span>business servicehas middle origin</span>
+                </a>
+              </li>
+            </ul>
+            <div class="entity" id="/BusinessServicehasArrivalLocation">
+              <h3>
+                business servicehas arrival location<sup
+                  class="type-op"
+                  title="object property"
+                  >op</sup
+                >
+                <span class="backlink">
+                  back to <a href="#toc">ToC</a> or
+                  <a href="#objectproperties">Object Property ToC</a>
+                </span>
+              </h3>
+              <p>
+                <strong>IRI:</strong>
+                https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation
+              </p>
+              <div class="description">
+                <dl>
+                  <dt>has super-properties</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+                      >has location</span
+                    >
+                    <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has domain</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#TransportService"
+                      >transport service</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has range</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+                      >physical object</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="entity" id="/BusinessServicehasDepartureLocation">
+              <h3>
+                business servicehas departure location<sup
+                  class="type-op"
+                  title="object property"
+                  >op</sup
+                >
+                <span class="backlink">
+                  back to <a href="#toc">ToC</a> or
+                  <a href="#objectproperties">Object Property ToC</a>
+                </span>
+              </h3>
+              <p>
+                <strong>IRI:</strong>
+                https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation
+              </p>
+              <div class="description">
+                <dl>
+                  <dt>has super-properties</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+                      >has location</span
+                    >
+                    <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has domain</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#TransportService"
+                      >transport service</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has range</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+                      >physical object</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="entity" id="/BusinessServicehasLocationDestination">
+              <h3>
+                business servicehas location destination<sup
+                  class="type-op"
+                  title="object property"
+                  >op</sup
+                >
+                <span class="backlink">
+                  back to <a href="#toc">ToC</a> or
+                  <a href="#objectproperties">Object Property ToC</a>
+                </span>
+              </h3>
+              <p>
+                <strong>IRI:</strong>
+                https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination
+              </p>
+              <div class="description">
+                <dl>
+                  <dt>has super-properties</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+                      >has location</span
+                    >
+                    <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has domain</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#Shipment"
+                      >shipment</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has range</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+                      >physical object</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="entity" id="/BusinessServicehasLocationOrigin">
+              <h3>
+                business servicehas location origin<sup
+                  class="type-op"
+                  title="object property"
+                  >op</sup
+                >
+                <span class="backlink">
+                  back to <a href="#toc">ToC</a> or
+                  <a href="#objectproperties">Object Property ToC</a>
+                </span>
+              </h3>
+              <p>
+                <strong>IRI:</strong>
+                https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin
+              </p>
+              <div class="description">
+                <dl>
+                  <dt>has super-properties</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+                      >has location</span
+                    >
+                    <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has domain</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#Shipment"
+                      >shipment</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has range</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+                      >physical object</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="entity" id="/BusinessServicehasMiddleDestination">
+              <h3>
+                business servicehas middle destination<sup
+                  class="type-op"
+                  title="object property"
+                  >op</sup
+                >
+                <span class="backlink">
+                  back to <a href="#toc">ToC</a> or
+                  <a href="#objectproperties">Object Property ToC</a>
+                </span>
+              </h3>
+              <p>
+                <strong>IRI:</strong>
+                https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination
+              </p>
+              <div class="description">
+                <dl>
+                  <dt>has super-properties</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+                      >has location</span
+                    >
+                    <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has domain</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#Consignment"
+                      >consignment</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has range</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+                      >physical object</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="entity" id="/BusinessServicehasMiddleOrigin">
+              <h3>
+                business servicehas middle origin<sup
+                  class="type-op"
+                  title="object property"
+                  >op</sup
+                >
+                <span class="backlink">
+                  back to <a href="#toc">ToC</a> or
+                  <a href="#objectproperties">Object Property ToC</a>
+                </span>
+              </h3>
+              <p>
+                <strong>IRI:</strong>
+                https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin
+              </p>
+              <div class="description">
+                <dl>
+                  <dt>has super-properties</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+                      >has location</span
+                    >
+                    <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has domain</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/BusinessService#Consignment"
+                      >consignment</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has range</dt>
+                  <dd>
+                    <span
+                      class="dotted"
+                      title="https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+                      >physical object</span
+                    >
+                    <sup class="type-c" title="class">c</sup>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="legend">
+            <h2>
+              Legend <span class="backlink"> back to <a href="#toc">ToC</a></span>
+            </h2>
+            <div class="entity">
+              <sup class="type-c" title="Classes">c</sup>: Classes <br />
+              <sup class="type-op" title="Object Properties">op</sup>: Object
+              Properties <br />
+              <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties
+              <br />
+              <sup class="type-ni" title="Named Individuals">ni</sup>: Named
+              Individuals
+            </div>
+          </div>
+        </div>
+      
+        <!--APPENDIX SECTION-->
+        <div id="appendix">
+          <h2 class="list">
+            Apéndice
+            <span class="backlink"> back to <a href="#toc">ToC</a></span>
+          </h2>
+      
+          <p>
+            A continuación se exponen algunos casos de uso con la finalidad de
+            facilitar la comprensión de este vocabulario.
+          </p>
+      
+          <div id="transporteTerrestre">
+            <h3 id="desc" class="list">
+              Transporte terrestre
+              <span class="backlink"> back to <a href="#toc">ToC</a></span>
+            </h3>
+            <p>
+              En este caso de uso, se representa el envío de unos neumáticos por parte
+              de la empresa Michelín hacia la empresa PSA. Para ello, Michelín utiliza
+              los servicios logísticos de Gefco para el transporte de dichas
+              mercancías.
+            </p>
+            <center>
+              <img
+                src="resources/images/ejemploCarretera.svg"
+                alt="Diagrama de EjemploCarretera"
+				width="100%"
+              />
+              <figcaption>
+                Figura 5. Representación de todos los actores involucrados en el envío
+                de mercancías del caso de uso propuesto.
+              </figcaption>
+            </center>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Transacciones de negocio</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment13</span></span> a  bs:Shipment ; #Tramo global que puede contener a uno o muchos subtramos. 
+                bs:createdBy <span class="hljs-literal">"Michelin"</span>;	
+                bs:consigmentCreationTime <span class="hljs-literal">"Michelin"</span>;	
+                bs:consigmentUpdateTime <span class="hljs-literal">"XX"</span>;	
+                bs:contractCarriageConditions <span class="hljs-literal">"XX"</span>;	
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Michelin</span></span> ;
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSA</span></span> ;
+                bs:involvedForwarder <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GEFCO</span></span> ;
+                bs:TransportPlanIssuanceTime "2022-02-16T16:00:00Z" ;
+                bs:involvedEvent ex:Event ; 
+                bs:partOfTransportMovementType classifications:BreakBulk ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">MichelinWarehouse</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSAFactory</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-28T21:32:52"^^xsd:dateTime ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consigment12</span></span> ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consigment23</span></span> .
+              </pre>
+            </div>
+            <div>
+              Esta orden, que todavía no supone ninguna transacción logística esta formada por dos tramos bien diferenciados, <em><strong>Consignment12</strong></em> y  <em><strong>Consignment23</strong></em>. Estos, a su vez, recogen la siguiente información:
+            </div>
+
+            <div class="example">
+              <div class="example-title marker">
+                <span>Transacciones de negocio específicas</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consigment12</span></span> a  bs:Consigment ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">MichelinWarehouse</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-16T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService12 ; #Servicio logístico
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Michelin</span></span> ; 
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GEFCO</span></span> ;
+                bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Carreras</span></span> ;
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consigment23</span></span> a  bs:Consigment ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSAFactory</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-23T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService23 ; 
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GEFCO</span></span> ; 
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSA</span></span> ;
+                bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FINSA</span></span> ;
+              </pre>
+            </div>
+
+            <div>
+              Los <em><strong>Consignments</strong></em> también se relacionan con los servicis logísticos <em><strong>LogisticService12</strong></em> y <em><strong>LogisticService23</strong></em> que se encargan de materializar en el plano logístico los acuerdos de negocio.
+            </div>
+
+            <div class="example">
+              <div class="example-title marker">
+                <span>Operaciones logísticas</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService12</span></span> a  bs:TransportService ;
+                bs:serviceName "Servicio de transporte de Michelin a Gefco" ;
+                bs:hasDepartureLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">MichelinWarehouse</span></span>  ; 
+                bs:hasArrivalLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span> ;
+                bs:hasLogisticsServiceProvider <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Carreras</span></span> ;
+                bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Package13</span></span> ;
+                bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Neumaticos1</span></span> ;
+                bs:transportMeans <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span> .
+                bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer13</span></span> ;
+                simple-bs:involveDriver <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Driver1</span></span> ; 
+              
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService23</span></span> a  bs:TransportService ;
+                bs:serviceName "Servicio de transporte de Gefco a PSA" ;
+                bs:hasDepartureLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span>  ; 
+                bs:hasArrivalLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSAFactory</span></span> ;
+                bs:hasLogisticsServiceProvider <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FINSA</span></span> ;
+                bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Package13</span></span> ;
+                bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Neumaticos1</span></span> ;
+                bs:transportMeans <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck2</span></span> .
+                bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer23</span></span> ;
+                simple-bs:involveDriver <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Driver2</span></span> ; 
+              </pre>
+            </div>
+
+            <div>
+              Los siguientes elementos que aparecen en el proceso de la cadena logística son los eventos de salida y llegada. En ambos casos, se tiene, en primera instancia, la planificación de salida y llegada. Posteriormente, se crean los eventos reales de salida y llegada.
+            </div>
+
+            <div class="example">
+              <div class="example-title marker">
+                <span>Eventos</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1</span></span> a event:DepartureEvent ;
+                event:hasDateTimeType classifications:planned ; 
+                event:hasSubmissionTimeStamp "2022-02-16T05:00:00:00Z"^^xsd:dateTime ;
+                event:hasTimeStamp "2022-02-16T04:50:00:00Z"^^xsd:dateTime ;
+                event:hasMilestone event:start ;
+                event:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment13</span></span> ;
+                simple-event:LogisticsService <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService12</span></span> ; 
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                event:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">MichelinWarehouse</span></span> ;
+                
+                
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2</span></span> a event:DepartureEvent ;
+                event:hasDateTimeType classifications:actual ; 
+                event:hasSubmissionTimeStamp "2022-02-16T19:32:11:00Z"^^xsd:dateTime ;
+                event:hasTimeStamp "2022-02-16T18:58:31:00Z"^^xsd:dateTime ;
+                event:hasMilestone event:end ;
+                event:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment13</span></span> ;
+                simple-event:LogisticsService <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService12</span></span> ; 
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                event:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">MichelinWarehouse</span></span> ;
+              </pre>
+            </div>
+
+            <div>
+              Y los eventos de llegada:
+            </div>
+
+            <div class="example">
+              <div class="example-title marker">
+                <span>Eventos llegada</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event3</span></span> a event:ArrivalEvent ;
+                event:hasDateTimeType classifications:planned ; 
+                event:hasSubmissionTimeStamp "2022-02-23T01:10:00:00Z"^^xsd:dateTime ;
+                event:hasTimeStamp "2022-02-23T00:50:00:00Z"^^xsd:dateTime ;
+                event:hasMilestone event:estimated ;
+                event:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment13</span></span> ;
+                simple-event:LogisticsService <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService23</span></span> ; 
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck2</span></span>;
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer2</span></span>;
+                event:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span> ;
+                
+                
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event4</span></span> a event:ArrivalEvent ;
+                event:hasDateTimeType classifications:actual ; 
+                event:hasSubmissionTimeStamp "2022-02-23T23:00:50:00Z"^^xsd:dateTime ;
+                event:hasTimeStamp "2022-02-23T22:50:00:00Z"^^xsd:dateTime ;
+                event:hasMilestone event:end ;
+                event:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment13</span></span> ;
+                simple-event:LogisticsService <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService23</span></span> ; 
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck2</span></span>;
+                event:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer2</span></span>;
+                event:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span> ;
+              </pre>
+            </div>
+
+            <div>
+              Entidades involucradas en este ejemplo:
+            </div>
+
+            <div class="example">
+              <div class="example-title marker">
+                <span>Entidades involucradas</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              # Package Neumaticos de michelín
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Package13</span></span> a  dt:Package ;
+                dct:identifier "M_2022_100" ;
+                classifications:packageCode "100" ;
+                dt:hasUNNumber simple-kos:XXX  ; 
+                dt:numberOfPackages "2"^^xsd:integer ;
+                dt:packageLevelType "XXXXXX" .  # No examples yet
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Neumaticos1</span></span> a  dt:Goods ;          
+                dt:goodsDescription "200 neumáticos en dos pallets" ;
+                dt:goodsWeight "200"^^xsd:integer ;
+                dt:grossMass "250"^^xsd:integer ;
+                dt:goodsTypeCode simple-kos:neumaticos ;
+                dt:damageRemarks "sin daños" .
+                
+              # Entidades involucradas en este ejemplo
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Michelin</span></span> a  bs:LegalEntity .
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSA</span></span> a  bs:LegalEntity .          
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GEFCO</span></span> a  bs:LegalEntity .          
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Carreras</span></span> a  bs:LegalEntity .        
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FINSA</span></span> a  bs:LegalEntity .         
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">MichelinWarehouse</span></span> a  dt:PhysicalObject .
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">GefcoStorage1</span></span> a  dt:PhysicalObject .
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PSAFactory</span></span> a  dt:PhysicalObject .
+
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span> a dt:Trailer ;
+              dt:TrailerLicensePlate "0000 ABC" .
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span> a dt:Truck ;
+                dt:TrailerLicensePlate "00001 ABC" .
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Driver1</span></span> a simple-bs:Driver ;
+                bs:logisticsRoleName "Juan Palomo" ;
+                bs:logisticsRoleID "000000001" .
+
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Driver2</span></span> a simple-bs:Driver ;
+                bs:logisticsRoleName "Rafael Alonso" ;
+                bs:logisticsRoleID "000000002" .
+      
+              <span class="hljs-tag"><span class="hljs-name">simple-bs:</span><span class="hljs-attr">Driver</span></span> rdfs:subclassOf bs:LogisticsServiceProvider . 
+              </pre>
+            </div>
+          </div>
+          <div id="transporteTer-Fer">
+            <h3 id="desc" class="list">
+              Transporte multimodal carretera-ferrocarril
+              <span class="backlink"> back to <a href="#toc">ToC</a></span>
+            </h3>
+            <p>En este ejemplo se describe una instanciación del modelo semántico de FEDeRATED, combinado con algunas especializaciones añadidas en la red de ontologías SIMPLE, para un conjunto de envíos que combinan transporte por carretera con transporte por ferrocarril.</p>
+            <p>El ejemplo considera, por un lado, el envío de un contenedor con neumáticos desde un almacén de la empresa <span class="hljs-name">Neumaticos_AA</span> a la fábrica de vehículos <span class="hljs-name">Vehiculos_AA</span>, utilizando en primer lugar un camión de la empresa
+              <span class="hljs-name">TransportesCarretera_AA</span> y a continuación transporte por ferrocarril, así como el envío de un contenedor con piezas metálicas desde el almacén de la empresa <span class="hljs-name">PiezasMetalicas_AA</span>
+              a la misma fábrica de vehículos <span class="hljs-name">Vehiculos_AA</span>, utilizando también una combinación de transporte en camión de la empresa <span class="hljs-name">TransportesCarretera_BB</span> y ferrocarril.
+              Ambos envíos, en el tramo realizado por el ferrocarril, se encuentran en el mismo tren, formado por dos vagones. </p>
+            <p>Se debe considerar que este es un ejemplo simplificado del tipo de información que se generará y almacenará, puesto que se puede esperar que el número de vagones de un tren siempre será mucho mayor. El objetivo de este ejemplo es ilustrar los distintos aspectos que deben ser considerados en este contexto.</p>
+            <h4>Prefijos que serán utilizados en este ejemplo</h4>
+            <p>De manera general, se utilizarán los siguientes prefijos (que están siendo usados de manera generalizada para todos los modelos semánticos) para hacer referencia a las distintas ontologías que forman parte de las redes de ontologías SIMPLE y FEDeRATED.</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Prefijos generales</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+            @prefix xsd: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">www.w3.org/2001/XMLSchema</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix dct: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">purl.org/dc/terms</span></span><span class="hljs-name">/&gt; .</span>
+            @prefix rdfs: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">www.w3.org/2000/01/rdf-schema</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix owl: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">www.w3.org/2002/07/owl</span></span><span class="hljs-name">#&gt; .</span>
+              </pre>
+            </div>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Prefijos de FEDeRATED</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+            @prefix dt: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">ontology.tno.nl/logistics/federated/DigitalTwin</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix cl: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">ontology.tno.nl/logistics/federated/Classifications</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix ev: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">ontology.tno.nl/logistics/federated/Event</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix pi: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">ontology.tno.nl/logistics/federated/PhysicalInfrastructure</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix bs: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">ontology.tno.nl/logistics/federated/BusinessService</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix lr: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">ontology.tno.nl/logistics/federated/LogisticRoles</span></span><span class="hljs-name">#&gt; .</span>
+
+              </pre>
+            </div>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Prefijos de SIMPLE</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+            @prefix example: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">datos.plataformasimple.es/recurso/example</span></span><span class="hljs-name">/&gt; .</span>
+            @prefix simple-dt: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">vocab.plataformasimple.es/def/logistics/federated/DigitalTwin</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix simple-cl: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">vocab.plataformasimple.es/def/logistics/federated/Classifications</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix simple-ev: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">vocab.plataformasimple.es/def/logistics/federated/Event</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix simple-pi: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix simple-bs: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">vocab.plataformasimple.es/def/logistics/federated/BusinessService</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix simple-lr: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">vocab.plataformasimple.es/def/logistics/federated/LogisticRoles</span></span><span class="hljs-name">#&gt; .</span>
+            @prefix simple-kos: <span class="hljs-tag"><span class="hljs-name">&lt;http://</span><span class="hljs-attr">https://vocab.plataformasimple.es/kos</span></span><span class="hljs-name">&gt; .</span>
+
+              </pre>
+            </div>
+            <h4>Transacciones de negocios utilizadas en el ejemplo</h4>
+            <p>Se consideran dos transacciones de negocio de alto nivel en el contexto de este ejemplo:</p>
+              <ul>
+                <li>
+                  <span class="hljs-name">Shipment1</span> para el envío desde el almacén de la empresa <span class="hljs-name">Neumaticos_AA</span> a la fábrica de vehículos <span class="hljs-name">Vehiculos_AA</span>, gestionado por la empresa de gestión de transportes <span class="hljs-name">EmpresaGestionTransporte_AA</span>. 
+                </li>
+                <li>
+                  <span class="hljs-name">Shipment2</span> para el envío desde el almacén de la empresa <span class="hljs-name">PiezasMetalicas_AA</span> a la fábrica de vehículos <span class="hljs-name">Vehiculos_AA</span>, gestionado por la empresa de gestión de transportes <span class="hljs-name">EmpresaGestionTransporte_BB</span>.
+                </li>
+              </ul>
+
+            <p>A continuación se incluye el código RDF correspondiente a estas dos transacciones de negocios, que no suponen aún ninguna operación logística. Ambas transacciones de negocio comparten algunos aspectos como el destino final de la mercancía o la fecha esperada de entrega (aunque podría no ser el caso, pero se considera así pues llegarán en el mismo tren y se puede considerar que en el momento de acordar la transacción de negocio se ha acordado este punto).</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Transacciones de negocio</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment1</span></span> a  bs:Shipment ; 
+                bs:createdBy <span class="hljs-literal">"Neumaticos AA"</span>;	
+                bs:consigmentCreationTime <span class="hljs-literal">"XX"</span>;	
+                bs:consigmentUpdateTime <span class="hljs-literal">"XX"</span>;	
+                bs:contractCarriageConditions <span class="hljs-literal">"XX"</span>;	
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Neumaticos_AA</span></span> ;
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Vehiculos_AA</span></span> ;
+                bs:involvedForwarder <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaGestionTransporte_AA</span></span> ;
+                bs:TransportPlanIssuanceTime "2022-02-16T16:00:00Z" ;
+                bs:involvedEvent ex:Event ; 
+                bs:partOfTransportMovementType classifications:BreakBulk ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenNeumaticos_AA</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-18T21:32:52"^^xsd:dateTime ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_1</span></span> ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_3</span></span> ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder1_2</span></span> .
+              
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Shipment2</span></span> a  bs:Shipment ; 
+                bs:createdBy <span class="hljs-literal">"Piezas Metalicas AA"</span>;	
+                bs:consigmentCreationTime <span class="hljs-literal">"XX"</span>;	
+                bs:consigmentUpdateTime <span class="hljs-literal">"XX"</span>;	
+                bs:contractCarriageConditions <span class="hljs-literal">"XX"</span>;	
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PiezasMetalicas_AA</span></span> ;
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Vehiculos_AA</span></span> ;
+                bs:involvedForwarder <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaGestionTransporte_BB</span></span> ;
+                bs:TransportPlanIssuanceTime "2022-02-15T12:00:00Z" ;
+                bs:involvedEvent ex:Event ; 
+                bs:partOfTransportMovementType classifications:BreakBulk ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenPiezasMetalicas_AA</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-18T21:32:52"^^xsd:dateTime ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment2_1</span></span> ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder2_2</span></span> ;
+                simple-bs:containsBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment2_3</span></span> .
+              </pre>
+            </div>
+			<center>
+              <img
+                src="resources/images/ferrocarril0.svg"
+                alt="Transacciones de negocio"
+				width="100%"
+              />
+              <figcaption>
+                Figura 6. Transacciones de negocio usadas.
+              </figcaption>
+            </center>
+            <p>Asimismo, cada una de estas dos transacciones de negocio se convierte en varias transacciones de negocio más específicas, correspondientes al envío por carretera por una empresa de transportes, el tratamiento del contenedor en la terminal de carga y el envío por ferrocarril hasta el punto de destino:</p>
+            <ul>
+              <li>
+                <span class="hljs-name">Consignment1_1</span> para el envío por carretera desde el almacén de la empresa <span class="hljs-name">Neumaticos_AA</span> a la terminal de ferrocarril <span class="hljs-name">Terminal_AA</span>.
+              </li>
+              <li>
+                <span class="hljs-name">CargoHandlingOrder1_2</span> para la operación de gestión de la carga dentro de la terminal de ferrocarril <span class="hljs-name">Terminal_AA</span>.
+              </li>
+              <li>
+                <span class="hljs-name">Consignment1_3</span> para el envío por ferrocarril desde la terminal de ferrocarril <span class="hljs-name">Terminal_AA</span> a la fábrica de vehículos <span class="hljs-name">Vehiculos_AA</span>.
+              </li>
+              <li>
+                <span class="hljs-name">Consignment2_1</span> para el envío por carretera desde el almacén de la empresa <span class="hljs-name">PiezasMetalicas_AA</span> a la terminal de ferrocarril <span class="hljs-name">Terminal_AA</span>.
+              </li>
+              <li>
+                <span class="hljs-name">CargoHandlingOrder2_2</span> para la operación de gestión de la carga dentro de la terminal de ferrocarril <span class="hljs-name">Terminal_AA</span>.
+              </li>
+              <li>
+                <span class="hljs-name">Consignment2_3</span> para el envío por ferrocarril desde la terminal de ferrocarril <span class="hljs-name">Terminal_AA</span> a la fábrica de vehículos <span class="hljs-name">Vehiculos_AA</span>.
+              </li>
+            </ul>
+            <p>A continuación se incluye el código RDF correspondiente a estas seis transacciones de negocios:</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Transacciones de negocios</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_1</span></span> a  bs:Consigment ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenNeumaticos_AA</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-16T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService1_1 ; 
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Neumaticos_AA</span></span> ; 
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaCargoHandling_AA</span></span> ;
+                bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesCarretera_AA</span></span> ;
+                simple-dt:relatedDocumentation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CMR1_1</span></span> ;
+                bs:involvedEvent <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_1</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_2</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_3</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_4</span></span> .
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment2_1</span></span> a  bs:Consigment ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenPiezasMetalicas_AA</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-16T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService2_1 ; 
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PiezasMetalicas_AA</span></span> ; 
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaCargoHandling_AA</span></span> ;
+                bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesCarretera_BB</span></span> ;
+                simple-dt:relatedDocumentation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CMR2_1</span></span> ;
+                bs:involvedEvent <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_1_1</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_1_2</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_1_3</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_1_4</span></span> .
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder1_2</span></span> a  simple-bs:CargoHandlingOrder ; 
+                simple-bs:expectedDeliveryTime "2022-04-18T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService1_2 ; 
+                bs:involvedShuntingYard <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaCargoHandling_AA</span></span> ; 
+                bs:involvedEvent <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_1</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_2</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_3</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_4</span></span> .
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder2_2</span></span> a  simple-bs:CargoHandlingOrder ; 
+                simple-bs:expectedDeliveryTime "2022-04-18T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService2_2 ; 
+                bs:involvedShuntingYard <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaCargoHandling_AA</span></span> ; 
+                bs:involvedEvent <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_2_1</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_2_2</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_2_3</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event2_2_4</span></span> .
+              
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_3</span></span> a  bs:Consigment ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-18T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService1_3 ; 
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesFerroviarios_AA</span></span> ; 
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Vehiculos_AA</span></span> ;
+                bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesFerroviarios_AA</span></span> ;          
+                bs:involvedEvent <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_3_1</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_3_2</span></span> .
+      
+              <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment2_3</span></span> a  bs:Consigment ; 
+                simple-bs:hasLocationOrigin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                simple-bs:hasLocationDestination <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> ;
+                simple-bs:expectedDeliveryTime "2022-04-18T21:32:52"^^xsd:dateTime ;
+                bs:hasService ex:LogisticService2_3 ; 
+                bs:involvedConsignor <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesFerroviarios_AA</span></span> ; 
+                bs:involvedConsignee <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Vehiculos_AA</span></span> ;
+                bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesFerroviarios_AA</span></span> ;
+                bs:involvedEvent <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_3_1</span></span>,<span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_3_2</span></span> .      
+              </pre>
+            </div>
+			<center>
+              <img
+                src="resources/images/ferrocarril1.svg"
+                alt="Transacciones de negocio específicas"
+				width="100%"
+              />
+              <figcaption>
+                Figura 7. Transacciones de negocio específicas.
+              </figcaption>
+            </center>
+            <h4>Entidades (organizaciones, lugares, documentos) involucradas</h4>
+            <p>En los ejemplos anteriores han aparecido un gran número de entidades (empresas), lugares y documentos cuyos datos deberán estar disponibles en el modelo semántico, y que son reutilizados en todo momento cuando estas entidades están involucradas en alguna transacción. De manera simplificada, se incluye información de todas ellas, que podrá ser completada con más detalles (datos de contacto, datos fiscales, etc.)</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Entidades involucradas en este ejemplo</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Neumaticos_AA</span></span> a  bs:LegalEntity .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">PiezasMetalicas_AA</span></span> a  bs:LegalEntity .          
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Vehiculos_AA</span></span> a  bs:LegalEntity .          
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaGestionTransporte_AA</span></span> a  bs:LegalEntity .        
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaGestionTransporte_BB</span></span> a  bs:LegalEntity .         
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesCarretera_AA</span></span> a  dt:LegalEntity .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesCarretera_BB</span></span> a  dt:LegalEntity .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">ShuntingYard_AA</span></span> a  dt:LegalEntity .
+
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenNeumaticos_AA</span></span> a  dt:Location .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenPiezasMetalicas_AA</span></span> a  dt:Location .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> a  dt:Location .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> a  dt:Location .
+                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CMR1_1</span></span> a  simple-dt:CMR .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CMR2_1</span></span> a  simple-dt:CMR .
+             </pre>
+            </div>
+            <h4>Operaciones logísticas involucradas en el ejemplo</h4>
+            <p>Cada una de las seis transacciones de negocios específicas que han sido detalladas en la sección anterior se relaciona con un servicio logístico. En cuatro de los casos se trata de un servicio logístico de transporte y en dos de los casos se trata de un servicio logístico de tratamiento de carga.</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Operaciones logísticas involucradas</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_1</span></span> a  bs:TransportService ;
+                  bs:serviceName "Servicio de transporte de almacén de neumáticos AA a terminal de carga AA por parte de la empresa Transportes Carretera AA" ;
+                  bs:hasDepartureLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenNeumaticos_AA</span></span>  ; 
+                  bs:hasArrivalLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                  bs:hasLogisticsServiceProvider <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">XXX</span></span> ;
+                  bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">neumaticos1</span></span> ;
+                  bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package1</span></span> ;
+                  bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span> ;
+                  bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesCarretera_AA</span></span> ;
+                  simple-bs:involveDriver <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Driver1</span></span> ; 
+                  bs:transportMeans <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span> .
+              
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_2</span></span> a  simple-bs:CargoHandlingService ;
+                  bs:serviceName "Servicio de tratamiento de la carga en la Terminal AA, donde se descarga del transportista por carretera y se colocará en un vagón de un tren" ;
+                  bs:hasLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                  bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">neumaticos1</span></span> ;
+                  bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package1</span></span> ;
+                  bs:involvedOperator <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaCargoHandling_AA</span></span> .
+                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService2_1</span></span> a  bs:TransportService ;
+                  bs:serviceName "Servicio de transporte de almacén de piezas metálicas AA a terminal de carga AA  por parte de la empresa Transportes Carretera BB" ;
+                  bs:hasDepartureLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenPiezasMetalicas_AA</span></span>  ; 
+                  bs:hasArrivalLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                  bs:hasLogisticsServiceProvider <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">XXX</span></span> ;
+                  bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">piezasmetalicas1</span></span> ;
+                  bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package2</span></span> ;
+                  bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer2</span></span> ;
+                  bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesCarretera_BB</span></span> ;
+                  simple-bs:involveDriver <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Driver2</span></span> ; 
+                  bs:transportMeans <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck2</span></span> .
+
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService2_2</span></span> a  simple-bs:CargoHandlingService ;
+                  bs:serviceName "Servicio de tratamiento de la carga en la Terminal AA, donde se descarga del transportista por carretera y se colocará en un vagón de un tren" ;
+                  bs:hasLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> ;
+                  bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">piezasmetalicas1</span></span> ;
+                  bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package2</span></span> ;
+                  bs:involvedOperator <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">EmpresaCargoHandling_AA</span></span> .
+                                  
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_3</span></span> a  bs:TransportService ;
+                  bs:serviceName "Servicio de transporte de terminal de carga Terminal AA a fábrica de vehículos AA por parte de la empresa Transportes Ferrioviarios AA" ;
+                  bs:hasDepartureLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span>  ; 
+                  bs:hasArrivalLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> ;
+                  bs:hasLogisticsServiceProvider <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">XXX</span></span> ;
+                  bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">neumaticos1</span></span> ;
+                  bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package1</span></span> ;
+                  bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon1</span></span> ;
+                  bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span> ;
+                  bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesFerroviarios_AA</span></span> ;
+                  bs:transportMeans <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span> .
+                                  
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService2_3</span></span> a  bs:TransportService ;
+                  bs:serviceName "Servicio de transporte de terminal de carga Terminal AA a fábrica de vehículos AA por parte de la empresa Transportes Ferrioviarios AA" ;
+                  bs:hasDepartureLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span>  ; 
+                  bs:hasArrivalLocation <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> ;
+                  bs:hasLogisticsServiceProvider <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">XXX</span></span> ;
+                  bs:useGoods  <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">piezasmetalicas1</span></span> ;
+                  bs:usedPackage <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package2</span></span> ;
+                  bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon2</span></span> ;
+                  bs:usedtransportEquipment <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container2</span></span> ;
+                  bs:involvedCarrier <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">TransportesFerroviarios_AA</span></span> ;
+                  bs:transportMeans <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span> .
+             </pre>
+            </div>
+			<center>
+              <img
+                src="resources/images/ferrocarril2.svg"
+                alt="Operaciones logísticas"
+				width="100%"
+              />
+              <figcaption>
+                Figura 8. Operaciones logísticas involucradas.
+              </figcaption>
+            </center>
+            <h4>Entidades (equipamientos, medios de transporte) involucrados</h4>
+            <p>En los ejemplos anteriores han aparecido varias entidades de tipo equipamiento (trailers, vagones de tren, contenedores) o medio de transporte (camiones, trenes) como parte de los servicios logísticos. También han aparecido las mercancías específicas (neumaticos1, piezasmetalicas1) y los paquetes en las que están embaladas y son enviadas (package1, package2) De manera simplificada, se incluye información de todas ellas, que podrá ser completada con más detalles (números de matrículas, identificadores específicos, etc.)</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Entidades (equipamientos, medios de transporte) involucrados</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">  
+                <span>#Equipamiento</span>              
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span> a dt:Trailer ;
+                  dt:TrailerLicensePlate "0001 ABC" .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer2</span></span> a dt:Trailer ;
+                  dt:TrailerLicensePlate "0002 ABC" .
+            
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span> a dt:Truck ;
+                  dt:truckLicensePlate "00001 ABC" .            
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck2</span></span> a dt:Truck ;
+                  dt:truckLicensePlate "00002 ABC" .
+                              
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span> a dt:Container .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container2</span></span> a dt:Container .
+                
+                <span>#Medios de transporte</span>
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon1</span></span> a dt:RailwayWagon .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon2</span></span> a dt:RailwayWagon .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span> a dt:Train .
+
+                <span>#Mercancías</span> 
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">neumaticos1</span></span> a  dt:Goods ;          
+                  dt:goodsDescription "20 neumáticos de tipo XX" ;
+                  dt:goodsWeight "200"^^xsd:integer ;
+                  dt:grossMass "250"^^xsd:integer ;
+                  dt:goodsTypeCode simple-cl:neumaticos ;
+                  dt:damageRemarks "sin daños" .
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">piezasmetalicas1</span></span> a  dt:Goods ;          
+                  dt:goodsDescription "50 piezas metálicas para carrocería de coche" ;
+                  dt:goodsWeight "200"^^xsd:integer ;
+                  dt:grossMass "250"^^xsd:integer ;
+                  dt:goodsTypeCode simple-cl:piezasmetalicas ;
+                  dt:damageRemarks "sin daños" .
+
+                <span>#Embalajes</span>
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package1</span></span> a  dt:Package ;
+                  dct:identifier "M_2022_100" ;
+                  cl:packageCode "XXX" ;
+                  dt:hasUNNumber simple-kos:XXX ;
+                  dt:numberOfPackages "2"^^xsd:integer ;
+                  dt:packageLevelType "XXXXXX" . 
+                  dt:packageLevelName "XXXXXX" . 
+                  dt:packageTypeNumericCode "XXXXXX" . 
+
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">package2</span></span> a  dt:Package ;
+                  dct:identifier "M_2022_200" ;
+                  cl:packageCode "XXX" ;
+                  dt:hasUNNumber simple-kos:XXX ;
+                  dt:numberOfPackages "2"^^xsd:integer ;
+                  dt:packageLevelType "XXXXXX" . 
+                  dt:packageLevelName "XXXXXX" . 
+                  dt:packageTypeNumericCode "XXXXXX" . 
+             </pre>
+            </div>
+            <h4>Eventos involucrados en el ejemplo</h4>
+            <p>En general, se generarán un gran número de eventos en el contexto de las operaciones logísticas que se producen en este contexto, incluyendo los eventos de salida y llegada, donde en primera instancia se generan los de la planificación de salida y llegada y posteriormente los de salida y llegada reales. También hay eventos de carga y descarga de mercancía, y de generación del pie de tren.</p>
+            <h5>Eventos relacionados con el transporte en carretera</h5>
+            <p>El primer conjunto de eventos que se presenta a continuación tiene que ver con la salida planificada (17 de abril de 2022 a las 16:00:00 registrado el 16 de febrero de 2022) y real (17 de abril de 2022 a las 16:10:00 registrado ese mismo día a las 16:15) de las mercancías del almacén de neumáticos AlmacenNeumaticos_AA. Es posible que en algunas situaciones el primer event (salida planificada) no se registre.</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Eventos relacionados con el transporte en carretera</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_1</span></span></span> a ev:DepartureEvent ;
+                  ev:hasDateTimeType cl:planned ; 
+                  ev:hasSubmissionTimeStamp "2022-02-16T16:00:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-02-17T16:00:00Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:start ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_1</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_1</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenNeumaticos_AA</span></span> .
+                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_2</span></span></span> a ev:DepartureEvent ;
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-02-17T16:15:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-02-17T16:10:00Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:start ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_1</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_1</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">AlmacenNeumaticos_AA</span></span> .
+             </pre>
+            </div>
+            <p>A continuación el conjunto de eventos de llegada (planificado y real) a la terminal de carga. Es importante destacar que podría haber varios eventos de llegada esperada durante el transcurso del transporte, si el camión correspondiente va actualizando su llegada esperada en varias ocasiones durante el trayecto. Por simplicidad, sólo se considerará un evento de llegada planificado nada más salir del almacén y un evento de llegada real al llegar a la terminal de carga ferroviaria. También es posible que en algunas situaciones no se registre el evento de llegada estimado (<span class="hljs-name">Event1_1_3</span>).</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Eventos relacionados con el transporte en carretera</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_3</span></span></span> a ev:ArrivalEvent ;
+                  ev:hasDateTimeType cl:estimated ; 
+                  ev:hasSubmissionTimeStamp "2022-02-17T16:15:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-17T20:00:00Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:start ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_1</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_1</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_1_4</span></span></span> a ev:ArrivalEvent, simple-ev:GateInEvent ;
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-17T19:55:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-17T19:50:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_1</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_1</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+             </pre>
+            </div>
+			<center>
+              <img
+                src="resources/images/ferrocarril3.svg"
+                alt="Eventos relacionados con el transporte en carretera"
+				width="100%"
+              />
+              <figcaption>
+                Figura 9. Eventos relacionados con el transporte en carretera.
+              </figcaption>
+            </center>
+            <p>Los eventos involucrados en el <span class="hljs-name">Consignment2_1</span> (el otro camión que lleva piezas metálicas) serán similares.</p>
+            <h5>Eventos relacionados con los procesos en la terminal ferroviaria</h5>
+            <p>Una vez que los camiones han llegado a la terminal ferroviaria, se realizará el proceso de admisión de carga (y descarga de los camiones), así como la carga en vagones, que formarán finalmente lo que se conoce como pie de tren, listo para realizar su salida. Asimismo, el camión saldrá de la terminal.</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Eventos relacionados con con los procesos en la terminal ferroviaria</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_1</span></span></span> a ev:DischargeEvent ; # It may also be DropOffEvent
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-17T20:35:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-17T20:30:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder1_2</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_2</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Trailer1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span>;
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_3</span></span></span> a ev:LoadEvent ; 
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-17T22:35:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-17T22:30:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder1_2</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_2</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span>; # If already known
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_2</span></span></span> a simple-ev:GateOutEvent ; 
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-17T20:45:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-17T20:40:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder1_2</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_2</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Truck1</span></span>;                  
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+                  
+                # Este puede ser que ya no se necesite.
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_2_2</span></span></span> a simple-ev:GateOutEvent ; # Evento relacionado con la generación del pie de tren, involucrando los dos contenedores y vagones
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-17T23:35:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-17T22:30:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">CargoHandlingOrder1_2</span></span> ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_2</span></span> ; 
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container2</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon2</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span>;                 
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+             </pre>
+            </div>
+			<center>
+              <img
+                src="resources/images/ferrocarril4.svg"
+                alt="Eventos relacionados con los procesos en la terminal ferroviaria"
+				width="100%"
+              />
+              <figcaption>
+                Figura 10. Eventos relacionados con los procesos en la terminal ferroviaria.
+              </figcaption>
+            </center>
+            <h5>Eventos relacionados con el envío desde la terminal ferroviaria a la dirección de destino</h5>
+            <p>Una vez que el pie de tren se monta, está listo para realizar su salida y llegar a destino.</p>
+            <div class="example">
+              <div class="example-title marker">
+                <span>Eventos relacionados con el envío desde la terminal ferroviaria a la dirección de destino</span>
+              </div>
+              <pre class="hljs xml" aria-busy="false" aria-live="polite">                
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_3_1</span></span></span> a ev:DepartureEvent ;
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-18T04:00:00Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-18T04:00:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_3</span></span>, <span class="hljs-name">example:</span><span class="hljs-attr">Consignment2_3</span></span>  ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_3</span></span>,  ;<span class="hljs-name">example:</span><span class="hljs-attr">LogisticService2_3</span></span>  ;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container2</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon2</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span>;  
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Terminal_AA</span></span> .
+				  
+                <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Event1_3_2</span></span></span> a ev:ArrivalEvent ;
+                  ev:hasDateTimeType cl:actual ; 
+                  ev:hasSubmissionTimeStamp "2022-04-18T22:00:52Z"^^xsd:dateTime ;
+                  ev:hasTimeStamp "2022-04-18T22:00:01Z"^^xsd:dateTime ;
+                  ev:hasMilestone ev:end ;
+                  ev:involvesBusinessTransaction <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Consignment1_3</span></span>, <span class="hljs-name">example:</span><span class="hljs-attr">Consignment2_3</span></span>  ;
+                  ev:involves <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">LogisticService1_3</span></span>,  ;<span class="hljs-name">example:</span><span class="hljs-attr">LogisticService2_3</span></span>  ;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon1</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Container2</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">RailwayWagon2</span></span>;
+                  ev:involvesDigitalTwin <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">Train1</span></span>;  
+                  ev:involvesPhysicalInfraestructure <span class="hljs-tag"><span class="hljs-name">example:</span><span class="hljs-attr">FabricaVehiculos_AA</span></span> .
+             </pre>
+            </div>
+			<center>
+              <img
+                src="resources/images/ferrocarril5.svg"
+                alt="Eventos relacionados con el envío desde la terminal ferroviaria a la dirección de destino"
+				width="100%"
+              />
+              <figcaption>
+                Figura 11. Eventos relacionados con el envío desde la terminal ferroviaria a la dirección de destino.
+              </figcaption>
+            </center>
+
+
+
+
+            <!-- END OF EXAMPLE -->
+          </div>
+        </div>
+      
+        <!--REFERENCES SECTION-->
+        <div id="references">
+          <h2 id="ref" class="list">
+            References
+            <span class="backlink"> back to <a href="#toc">ToC</a></span>
+          </h2>
+          <span class="markdown">
+            Add your references here. It is recommended to have them as a list.</span
+          >
+        </div>
+        <div id="acknowledgements">
+          <h2 id="ack" class="list">
+            Acknowledgements
+            <span class="backlink"> back to <a href="#toc">ToC</a></span>
+          </h2>
+          <p>
+            The authors would like to thank
+            <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing
+            <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL
+            Documentation Environment, which is used for representing the Cross
+            Referencing Section of this document and
+            <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing
+            <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used
+            to create the template used in this documentation.
+          </p>
+        </div>
+      </div>
+   
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/Classifications> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/Event> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation
+<https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> .
+<https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+<https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+<https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+<https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+<https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#Consignment
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#Shipment
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#TransportService
+# 
+# https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

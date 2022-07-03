@@ -1,0 +1,85 @@
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://www.w3.org/2002/07/owl#versionIRI> <https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin/0.2.2> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://www.w3.org/2002/07/owl#imports> <https://ontology.tno.nl/logistics/federated/DigitalTwin> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/elements/1.1/creator> "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/elements/1.1/creator> "XXXXX (Indra)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Digital Twins ontology of the Federated platform, as required by the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin.owl" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/terms/issued> "2022-07-03" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-dt" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology has been created in the context of the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin> <http://www.w3.org/2002/07/owl#versionInfo> "Release containing entities required for the representation of road and train transport"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#BusinessTransaction> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#Document> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite asociar documentos a transacciones de negocio"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows associating documents to business transactions"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/2000/01/rdf-schema#label> "Documentación relacionada"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation> <http://www.w3.org/2000/01/rdf-schema#label> "related documentation"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#BusinessTransaction
+<https://ontology.tno.nl/logistics/federated/BusinessService#BusinessTransaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontology.tno.nl/logistics/federated/Event#Event
+<https://ontology.tno.nl/logistics/federated/Event#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/DigitalTwin#Document> .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR> <http://www.w3.org/2000/01/rdf-schema#comment> "Also known as CMR consignment note, it is a document used for the regulation of road freight transport, and serves as an international agreement. The document has been adopted by most of the European states with the purpose to regulate legal issues concerning road freight transportation"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR> <http://www.w3.org/2000/01/rdf-schema#comment> "La carta de porte es un documento del transporte terrestre que rige el traslado de mercancía. Este documento legal, emitido por el transportista, es el equivalente al conocimiento de embarque en el transporte marítimo. En este se especifican todos los datos relevantes de la mercancía transportada"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR> <http://www.w3.org/2000/01/rdf-schema#label> "CMR"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR> <http://www.w3.org/2000/01/rdf-schema#label> "Carta de porte"@es .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

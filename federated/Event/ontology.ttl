@@ -1,0 +1,85 @@
+@prefix : <https://vocab.plataformasimple.es/def/logistics/federated/Event#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://vocab.plataformasimple.es/def/logistics/federated/Event#> .
+
+<https://vocab.plataformasimple.es/def/logistics/federated/Event> rdf:type owl:Ontology ;
+                                                                   owl:versionIRI <https://vocab.plataformasimple.es/def/logistics/federated/Event/0.2.2> ;
+                                                                   owl:imports <https://ontology.tno.nl/logistics/federated/Event> ;
+                                                                   <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                             "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                             "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                             "XXXXX (Indra)" ;
+                                                                   <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/Event" ;
+                                                                   <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Event ontology of the Federated platform, as required by the SIMPLE project" ;
+                                                                   <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/Event.owl" ;
+                                                                   <http://purl.org/dc/terms/issued> "2022-03-07" ;
+                                                                   <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-ev" ;
+                                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/Event#" ;
+                                                                   rdfs:comment "This ontology has been created in the context of the SIMPLE project" ;
+                                                                   owl:versionInfo "Release containing entities required for the representation of road and train transport, including concepts like GateIn and GateOut Events and Issue Events."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/Event#GateInEvent
+:GateInEvent rdf:type owl:Class ;
+             rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/Event#ArrivalEvent> ;
+             rdfs:comment "A Gate-In Event is used to record the entry of a TransportMeans in a terminal (e.g., a truck enters into a train terminal to deliver a container)."@en ,
+                          "Evento que registra la entrada en una terminal de un medio de transporte (por ejemplo, un camión entra en una terminal ferroviaria para entregar un contenedor)"@es ;
+             rdfs:label "Evento de entrada en terminal"@es ,
+                        "Gate-In Event"@en .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/Event#GateOutEvent
+:GateOutEvent rdf:type owl:Class ;
+              rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/Event#DepartureEvent> ;
+              rdfs:comment "A Gate-Out Event is used to record the departure of a TransportMeans from a terminal (e.g., a truck goes out of a train terminal where it has delivered or has loaded a container)."@en ,
+                           "Evento que registra la salida de una terminal de un medio de transporte (por ejemplo, un camión sale de una terminal ferroviaria donde ha entregado o cargado un contenedor)"@es ;
+              rdfs:label "Evento de salida de terminal"@es ,
+                         "Gate-Out Event"@en .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/Event#IssueEvent
+:IssueEvent rdf:type owl:Class ;
+            rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/Event#AtomicEvent> ;
+            rdfs:comment "An Issue Event is used to describe any type of incidence that may happen during the logistics chain process."@en ,
+                         "Una incidencia que puede ocurrir en cualquier fase del proceso logístico"@es ;
+            rdfs:label "Incidencia"@es ,
+                       "Issue Event"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

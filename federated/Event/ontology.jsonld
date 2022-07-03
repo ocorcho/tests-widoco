@@ -1,0 +1,125 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "XXXXX (Indra)"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/Event"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ontology for the representation of the extensions to the Event ontology of the Federated platform, as required by the SIMPLE project"
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/Event.owl"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2022-03-07"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "simple-ev"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/Event#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology has been created in the context of the SIMPLE project"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Event/0.2.2"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "Release containing entities required for the representation of road and train transport, including concepts like GateIn and GateOut Events and Issue Events."
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Event#GateInEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Gate-In Event is used to record the entry of a TransportMeans in a terminal (e.g., a truck enters into a train terminal to deliver a container)."
+  }, {
+    "@language" : "es",
+    "@value" : "Evento que registra la entrada en una terminal de un medio de transporte (por ejemplo, un camión entra en una terminal ferroviaria para entregar un contenedor)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Evento de entrada en terminal"
+  }, {
+    "@language" : "en",
+    "@value" : "Gate-In Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/Event#ArrivalEvent"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Event#GateOutEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Gate-Out Event is used to record the departure of a TransportMeans from a terminal (e.g., a truck goes out of a train terminal where it has delivered or has loaded a container)."
+  }, {
+    "@language" : "es",
+    "@value" : "Evento que registra la salida de una terminal de un medio de transporte (por ejemplo, un camión sale de una terminal ferroviaria donde ha entregado o cargado un contenedor)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Evento de salida de terminal"
+  }, {
+    "@language" : "en",
+    "@value" : "Gate-Out Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/Event#DepartureEvent"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Event#IssueEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Issue Event is used to describe any type of incidence that may happen during the logistics chain process."
+  }, {
+    "@language" : "es",
+    "@value" : "Una incidencia que puede ocurrir en cualquier fase del proceso logístico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Incidencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Issue Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/Event#AtomicEvent"
+  } ]
+} ]

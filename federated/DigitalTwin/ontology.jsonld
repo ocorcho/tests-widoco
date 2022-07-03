@@ -1,0 +1,114 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#BusinessTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/Event#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "XXXXX (Indra)"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ontology for the representation of the extensions to the Digital Twins ontology of the Federated platform, as required by the SIMPLE project"
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin.owl"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2022-07-03"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "simple-dt"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology has been created in the context of the SIMPLE project"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin/0.2.2"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "Release containing entities required for the representation of road and train transport"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#CMR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Also known as CMR consignment note, it is a document used for the regulation of road freight transport, and serves as an international agreement. The document has been adopted by most of the European states with the purpose to regulate legal issues concerning road freight transportation"
+  }, {
+    "@language" : "es",
+    "@value" : "La carta de porte es un documento del transporte terrestre que rige el traslado de mercancía. Este documento legal, emitido por el transportista, es el equivalente al conocimiento de embarque en el transporte marítimo. En este se especifican todos los datos relevantes de la mercancía transportada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CMR"
+  }, {
+    "@language" : "es",
+    "@value" : "Carta de porte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#Document"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin#relatedDocumentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad permite asociar documentos a transacciones de negocio"
+  }, {
+    "@language" : "en",
+    "@value" : "This property allows associating documents to business transactions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#BusinessTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Documentación relacionada"
+  }, {
+    "@language" : "en",
+    "@value" : "related documentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#Document"
+  } ]
+} ]

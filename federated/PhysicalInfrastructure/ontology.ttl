@@ -1,0 +1,98 @@
+@prefix : <https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#> .
+
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> rdf:type owl:Ontology ;
+                                                                                    owl:versionIRI <https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure/0.2.2> ;
+                                                                                    owl:imports <https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure> ;
+                                                                                    <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                                              "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                                              "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                                              "XXXXX (Indra)" ;
+                                                                                    <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure" ;
+                                                                                    <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Physical Infrastructure ontology of the Federated platform, as required by the SIMPLE project" ;
+                                                                                    <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure.owl" ;
+                                                                                    <http://purl.org/dc/terms/issued> "2022-07-03" ;
+                                                                                    <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-pi" ;
+                                                                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#" ;
+                                                                                    rdfs:comment "This ontology has been created in the context of the project SIMPLE" ;
+                                                                                    owl:versionInfo "Release containing entities required for the representation of road and train transport"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/address
+<http://schema.org/address> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/telephone
+<http://schema.org/telephone> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://schema.org/address> ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://schema.org/email> ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://schema.org/telephone> ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
+          rdfs:comment "A location with additional attributes as requested in the context of the Plataforma SIMPLE"@en ,
+                       "UIna localización con atributos adicionales necesarios y utilizados por la plataforma SIMPLE"@es ;
+          rdfs:label "Localización"@es ,
+                     "Location"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

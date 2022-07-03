@@ -1,0 +1,57 @@
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://www.w3.org/2002/07/owl#versionIRI> <https://vocab.plataformasimple.es/def/logistics/federated/Classifications/0.2.2> .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://www.w3.org/2002/07/owl#imports> <https://ontology.tno.nl/logistics/federated/Classifications> .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/elements/1.1/creator> "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/elements/1.1/creator> "XXXXX (Indra)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/Classifications" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Classifications ontology of the Federated platform, as required by the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/Classifications.owl" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/terms/issued> "2022-07-03" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-cl" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/Classifications#" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology has been created in the context of the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications> <http://www.w3.org/2002/07/owl#versionInfo> "Release containing entities required for the representation of road and train transport"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/Classifications#CMR
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications#CMR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://vocab.plataformasimple.es/def/logistics/federated/Classifications#CMR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/Classifications#DocumentType> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

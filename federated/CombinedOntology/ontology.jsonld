@@ -1,0 +1,104 @@
+[ {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#Consignment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#Shipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#TransportService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService"
+  }, {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Classifications"
+  }, {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/DigitalTwin"
+  }, {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/Event"
+  }, {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles"
+  }, {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasArrivalLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasDepartureLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasLocationOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#Consignment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/CombinedOntology/BusinessServicehasMiddleOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#Consignment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation"
+  } ]
+} ]

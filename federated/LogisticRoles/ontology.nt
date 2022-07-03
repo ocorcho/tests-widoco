@@ -1,0 +1,535 @@
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://www.w3.org/2002/07/owl#versionIRI> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles/0.2.2> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/elements/1.1/creator> "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/elements/1.1/creator> "XXXXX (Indra)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Logistic Roles ontology of the Federated platform, as required by the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles.owl" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/terms/issued> "2022-07-03" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-lr" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology has been created in the context of the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> <http://www.w3.org/2002/07/owl#versionInfo> "Release containing entities required for the representation of road and train transport"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived
+<https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#involves
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#involves> <http://www.w3.org/2000/01/rdf-schema#label> "Involves" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#isAbout
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is About" .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves> <http://www.w3.org/2000/01/rdf-schema#label> "involves"@en .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#logisticsRoleName
+<https://ontology.tno.nl/logistics/federated/BusinessService#logisticsRoleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson
+<https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans
+<https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontology.tno.nl/logistics/federated/Event#Event
+<https://ontology.tno.nl/logistics/federated/Event#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://ontology.tno.nl/logistics/federated/LogisticRoles#isAbout> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "An Enterprise, Person or Organization can have different roles depending on the context. This class defines these different roles." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "Logistics roles that describe the different functions of companies regarding services." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Business Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "Logistics roles that describe the different commercial functions of companies." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Commercial Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#DropOffLocation
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DropOffLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DropOffLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DropOffLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where cargo on a transport means was dropped off. Modality 'road'." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DropOffLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Drop Off Location Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "Logistics roles that describe the different financial functions of companies." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://ontology.tno.nl/logistics/federated/LogisticRoles#involves> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/Event#Event> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://ontology.tno.nl/logistics/federated/LogisticRoles#involves> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://ontology.tno.nl/logistics/federated/LogisticRoles#involves> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans> .
+_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/Event#Event> .
+_:genid7 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "A location such as hub or port can have different roles depending on the context. This class defines these different roles." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Location Roles" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> <https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://ontology.tno.nl/logistics/federated/BusinessService#logisticsRoleName> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "Logistics roles that describe the different functions of companies during transportation." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Logistics Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PickupLocation
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PickupLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PickupLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PickupLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A location where cargo is picked up by a transport means." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PickupLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Pickup Location Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfAcceptance
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfAcceptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfAcceptance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfAcceptance> <http://www.w3.org/2000/01/rdf-schema#comment> "Place of acceptance of a product." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfAcceptance> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Acceptance Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfArrival
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfArrival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfArrival> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfArrival> <http://www.w3.org/2000/01/rdf-schema#comment> "A place of a call of a transport means following (in time) the last place of departure (milestone value is departure)" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfArrival> <http://www.w3.org/2000/01/rdf-schema#label> "Arrival Location Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where a new customs domain is entered by a transport means during its itinerary." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "Border Crossing Place Role" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing> <https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where a transport means stops on a voyage." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Call Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDelivery
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDelivery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDelivery> <http://www.w3.org/2000/01/rdf-schema#comment> "A place of receipt by a consignee or place of delivery is the place where the cargo is handed over by a carrier according a business transaction to the recipeint (consignee). The transport means and the cargo have to be at the location mentioned in a business transaction between a carrier and its customer." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDelivery> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Delivery Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where a transport means arrived (milestone value: arrival) and is able to depart." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture> <http://www.w3.org/2000/01/rdf-schema#comment> "The first place of call of a transport means or a place of call of a transport means following arrival." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture> <http://www.w3.org/2000/01/rdf-schema#label> "Departure Location Role" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Departure Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> <http://www.w3.org/2002/07/owl#equivalentClass> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> <http://www.w3.org/2000/01/rdf-schema#comment> "For modality 'road'. Same as place of discharge." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> <http://www.w3.org/2000/01/rdf-schema#label> "Inland Terminal" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> <http://www.w3.org/2000/01/rdf-schema#comment> "A place of loading is the place where the cargo is offered for transport by a business transaction to the service provider that is the carrier, where the transport means is considered to be the main modality. The cargo and the transport means have to be at that location." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Loading Role" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> <https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfReceipt
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfReceipt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfReceipt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfReceipt> <http://www.w3.org/2000/01/rdf-schema#comment> "A place of receipt is the place where the cargo is offered for transport by a business transaction to the service provider that is the carrier and has to be transported by that carrier to the place of loading of the main transport. The cargo has to be at that location." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfReceipt> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Receipt" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStripping
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStripping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStripping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStripping> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where goods is unloaded from a container." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStripping> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Stripping Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStuffing
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStuffing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStuffing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStuffing> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where goods is loaded into an empty container which is then sealed and transported to the carrier for loading on a transport means." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStuffing> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Stuffing Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading> <http://www.w3.org/2000/01/rdf-schema#comment> "A place of unloading is the place to where the cargo has to be transported by a business transaction to the service provider that is the carrier and will be discharged/unloaded from that transport means. The cargo and the transport means have to be at that location." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Unloading Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfCall
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfCall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfCall> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where a vessel stops on a voyage. The necessary context is a location and transport means with modality 'sea'." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfCall> <http://www.w3.org/2000/01/rdf-schema#label> "Port of Call Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfDischarge
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfDischarge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfDischarge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfDischarge> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where a vessel (partially) discharges or unloads its shipments." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfDischarge> <http://www.w3.org/2000/01/rdf-schema#label> "Port of Discharge Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfLoading
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfLoading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfLoading> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfLoading> <http://www.w3.org/2000/01/rdf-schema#comment> "A port where shipments are loaded aboard a vessel for transport." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfLoading> <http://www.w3.org/2000/01/rdf-schema#label> "Port of Loading Role" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "These are roles that are found elsewhere in the supply chain than described by bussiness, commercial, financial or logistical roles. Such as the consumer or producer of products." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Supply Chain Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location
+<https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que conduce un vehículo"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/2000/01/rdf-schema#comment> "Someone who drives a vehicle."@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/2000/01/rdf-schema#label> "Conductor"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/2000/01/rdf-schema#label> "Driver"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> <http://www.w3.org/2004/02/skos/core#narrower> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> <http://www.w3.org/2004/02/skos/core#narrower> <https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> <http://www.w3.org/2000/01/rdf-schema#comment> "Any public organization responsible for governing one or more regulations and/or maintenance and capacity optimization of public infrastructure can be identified as an Authority. Capacity optimization of public infrastructure can also be expressed by access restrictions, e.g. city distribution restrictions in city centers, expressed by time windows and types of vehicles that are allowed to access. As such, municipalities are also in scope of FEDeRATED." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> <http://www.w3.org/2000/01/rdf-schema#label> "Authority" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Bank
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Bank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Bank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Bank> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial institution licensed to receive deposits and make loans." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Bank> <http://www.w3.org/2000/01/rdf-schema#label> "Bank" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Carrier
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Carrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Carrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Carrier> <http://www.w3.org/2000/01/rdf-schema#comment> "The organization that is responsible for transport of goods/containers with a transport means (truck, vessel, etc.). Each modality has a different name per modality: airline (air), shipping line (sea), barge operator (inlande waterways), railway undertaking (rail), and carrier (road). These should also be supported by the model" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Carrier> <http://www.w3.org/2000/01/rdf-schema#label> "Carrier" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee> <http://www.w3.org/2000/01/rdf-schema#comment> "A consignee is the role of an enterprise where it is the operator and/or owner of a logistical function at a place with the role 'place of delivery'. A consignee can act as customer (e.g. Terms of Delivery is 'ex works').  \r\ndefintions 2: A consignee is the role of an enterprise where it is the operator and/or owner of a logistical function at a place with the role 'place of delivery'. A consignee can act as customer (e.g. Terms of Delivery is 'ex works')." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee> <http://www.w3.org/2000/01/rdf-schema#label> "Consignee" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee> <https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor> <http://www.w3.org/2000/01/rdf-schema#comment> "A consignor is the role of an enterprise where it is the operator and/or owner of a logistical function at a place with the role 'place of acceptance'. A consignor can act as customer.  Consignor is the person sending a shipment to be delivered whether by land, sea or air. Some carriers, such as national postal entities, use the term \"sender\" or \"shipper\" but in the event of a legal dispute the proper and technical term \"consignor\" will generally be used.\r\n\r\nIf Sender sends a widget to Receiver via a delivery service, Sender is the consignor and Receiver is the consignee." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor> <http://www.w3.org/2000/01/rdf-schema#label> "Consignor" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor> <https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Consumer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consumer> <http://www.w3.org/2000/01/rdf-schema#comment> "A consumer consumes the goods that were supplied through the supply chain." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Consumer> <http://www.w3.org/2000/01/rdf-schema#label> "Consumer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#ContactPerson
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ContactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ContactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ContactPerson> <http://www.w3.org/2000/01/rdf-schema#comment> "Any employee that acts as a contact person of an organization towards other organizations" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ContactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Person" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Customer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Customer> <http://www.w3.org/2000/01/rdf-schema#comment> "Any enterprise that requires a business service from any other enterprise that is able to provide can be identified as a customer.Ã‚Â " .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Customer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority> <http://www.w3.org/2004/02/skos/core#broader> <https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "The organization providing permission for goods movements compliant with (VAT) regulations." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Customs Authority" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Declarant
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Declarant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Declarant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Declarant> <http://www.w3.org/2000/01/rdf-schema#comment> "The enterprise lodging a declaration (on behalf of his customer, it is called a customs agent) based on declaration services it provides. This can be a forwarder (import, export, transit) or a shipping -/airline (ENS, incoming goods). A shipper or consignee can also act as declarant." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Declarant> <http://www.w3.org/2004/02/skos/core#altLabel> "Declerant" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#DeliveryParty
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DeliveryParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DeliveryParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DeliveryParty> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the operator of the location for final delivery of the goods." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DeliveryParty> <http://www.w3.org/2000/01/rdf-schema#label> "Delivery Party" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#DispatchParty
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DispatchParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DispatchParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DispatchParty> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the operator of the location where the goods have to be shipped from." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#DispatchParty> <http://www.w3.org/2000/01/rdf-schema#label> "Dispatch Party" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Exporter
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Exporter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Exporter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Exporter> <http://www.w3.org/2000/01/rdf-schema#comment> "Name and address of party who makes - or on whose behalf a Customs clearing agent or other authorized person makes - an export declaration. This may include a manufacturer, seller or other person." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Exporter> <http://www.w3.org/2000/01/rdf-schema#label> "Exporter" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Forwarder
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Forwarder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Forwarder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Forwarder> <http://www.w3.org/2000/01/rdf-schema#comment> "A forwarder is the service provider in a business transaction providing a transport - and other (administrative) services to a consignor or consignee acting as customer." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Forwarder> <http://www.w3.org/2000/01/rdf-schema#label> "Forwarder" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Importer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Importer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Importer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Importer> <http://www.w3.org/2000/01/rdf-schema#comment> "Name and address of party who makes - or on whose behalf a Customs clearing agent or other authorized person makes - an import declaration. This may include a person who has possession of the goods or to whom the goods are consigned." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Importer> <http://www.w3.org/2000/01/rdf-schema#label> "Importer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Insurer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Insurer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Insurer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Insurer> <http://www.w3.org/2000/01/rdf-schema#comment> "A company that issues insurance contracts to provide with financial coverage in the case of unexpected events." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Insurer> <http://www.w3.org/2000/01/rdf-schema#label> "Insurer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Issuer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Issuer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Issuer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Issuer> <http://www.w3.org/2000/01/rdf-schema#comment> "An employee of the authority that issued the security status of a business transaction." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Issuer> <http://www.w3.org/2000/01/rdf-schema#label> "Issuer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#NotifyParty
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#NotifyParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#NotifyParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#NotifyParty> <http://www.w3.org/2000/01/rdf-schema#comment> "The contact person to be notified when a shipment arrives at its destination." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#NotifyParty> <http://www.w3.org/2000/01/rdf-schema#label> "Notify Party" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> <http://www.w3.org/2004/02/skos/core#narrower> <https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> <http://www.w3.org/2004/02/skos/core#narrower> <https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic operator role." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> <http://www.w3.org/2000/01/rdf-schema#label> "Operator Roles" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Payee
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payee> <http://www.w3.org/2000/01/rdf-schema#comment> "A company that is paid for it services or goods." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payee> <http://www.w3.org/2000/01/rdf-schema#label> "Payee" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Payer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payer> <http://www.w3.org/2000/01/rdf-schema#comment> "A company that pays for services or goods." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Payer> <http://www.w3.org/2000/01/rdf-schema#label> "Payer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority> <http://www.w3.org/2004/02/skos/core#broader> <https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "The organization responsible for maintenance and safe and optimal use of the port infrastructure (quays, waterways, roads, rail)" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Port Authority" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Producer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "A producer produces the goods that are transported in the supply chain." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Producer> <http://www.w3.org/2000/01/rdf-schema#label> "Producer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Retailer
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Retailer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Retailer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Retailer> <http://www.w3.org/2000/01/rdf-schema#comment> "A retailer sells goods for use of consumption rather than for resale." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Retailer> <http://www.w3.org/2000/01/rdf-schema#label> "Retailer" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#Sender
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Sender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Sender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Sender> <http://www.w3.org/2000/01/rdf-schema#comment> "A sender of goods" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#Sender> <http://www.w3.org/2000/01/rdf-schema#label> "Sender" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#ServiceProvider
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ServiceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ServiceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ServiceProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "Any enterprise that is able to perform a business activity on behalf of customers can be identified as a service provider. A business activity is defined by its business services and/or timetables of itineraries of transport means. A flight or a voyage are examples of these itineraries." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ServiceProvider> <http://www.w3.org/2000/01/rdf-schema#label> "Service Provider" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#ShuntingYard
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ShuntingYard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ShuntingYard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ShuntingYard> <http://www.w3.org/2000/01/rdf-schema#comment> "A company that is responsible for the movement of trailers in and around a yard site." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#ShuntingYard> <http://www.w3.org/2000/01/rdf-schema#label> "Shunting Yard" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator> <http://www.w3.org/2004/02/skos/core#broader> <https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "The organization offering transhipment services where one of the modalities is sea. Terminal operators have framework contracts with shipping lines." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal Operator" .
+# 
+# https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator> <http://www.w3.org/2004/02/skos/core#broader> <https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles> .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "The organization offering a storage service for products (bulk and other products) and/or goods" .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator> <http://www.w3.org/2000/01/rdf-schema#label> "Warehouse Operator" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic term for all logistics stakeholders that provide business services." .
+<https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider> <http://www.w3.org/2000/01/rdf-schema#label> "Logistic Service Provider" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

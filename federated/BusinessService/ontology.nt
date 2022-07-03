@@ -1,0 +1,233 @@
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/2002/07/owl#versionIRI> <https://vocab.plataformasimple.es/def/logistics/federated/BusinessService/0.2.2> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/2002/07/owl#imports> <https://ontology.tno.nl/logistics/federated/BusinessService> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/Classifications> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/2002/07/owl#imports> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/elements/1.1/creator> "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/elements/1.1/creator> "XXXXX (Indra)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Business Service ontology of the Federated platform, as required by the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService.owl" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/terms/issued> "2022-07-03" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-bs" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology has been created in the context of the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> <http://www.w3.org/2002/07/owl#versionInfo> "Release containing entities required for the representation of road and train transport"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite relacionar un Envío (Shipment) con sus varias fases de envío (Consignments)."@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows relating a Shipment with one or several Consignments on which it is divided."@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/2000/01/rdf-schema#label> "contains business transaction"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction> <http://www.w3.org/2000/01/rdf-schema#label> "contiene transacción de negocio"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite especificar la localización de llegada de un servicio de transporte o de un envío (Shipment o Consignment)"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows specifying the arrival location of a transport service, a Shipment or Consignment"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has arrival location"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation> <http://www.w3.org/2000/01/rdf-schema#label> "tiene localización de llegada"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite especificar la localización de partida de un servicio de transporte o de un envío (Shipment o Consignment)"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows specifying the departure location of a transport service, a Shipment or Consignment"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has departure location"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation> <http://www.w3.org/2000/01/rdf-schema#label> "tiene localización de partida"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#involvedDriver
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#involvedDriver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#involvedDriver> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontology.tno.nl/logistics/federated/BusinessService#involvedLogisticsActor> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#involvedDriver> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#involvedDriver> <http://www.w3.org/2000/01/rdf-schema#range> <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> .
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Earliest time in which a shipment or consignment can be delivered into the final destination"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha a partir de la cual se puede realizar una entrega"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#label> "earliest delivery time"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de entrega mínima"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Expected delivery time for a shipment or consignment"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#label> "expected delivery time"@en .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha máxima en la que se puede realizar una entrega"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Latest time in which a shipment or consignment should be delivered into the final destination"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de entrega máxima"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime> <http://www.w3.org/2000/01/rdf-schema#label> "latest delivery time"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject
+<https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/BusinessService#Order> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Business transaction where an organisation is responsible for managing some cargo (e.g., inside a rail terminal)"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Transacción de negocio donde una organización se hace responsable de gestionar algún tipo de carga (por ejemplo, en una terminal ferroviaria)"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Cargo Handling Order"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Orden de gestión de carga"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/BusinessService#LogisticsService> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService> <http://www.w3.org/2000/01/rdf-schema#comment> "A service for the handling of cargo (e.g., moving cargo from a truck to a train, from a truck to a deposit in a freight terminal, etc.)"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService> <http://www.w3.org/2000/01/rdf-schema#comment> "Servicio para la gestión de la carga (por ejemplo, mover carga de un camión a un tren, de un camión a un depósito en una terminal de carga, etc.)"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService> <http://www.w3.org/2000/01/rdf-schema#label> "Cargo Handling Service"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService> <http://www.w3.org/2000/01/rdf-schema#label> "Servicio de gestión de carga"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/BusinessService#Order> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Order in which an organisation is made responsible of / agrees to discharge some cargo (e.g., inside a rail terminal)"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Transacción de negocio en la que una organización se hace responsable de descargar algún tipo de carga (por ejemplo, en una terminal ferroviaria)"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Discharge Order"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Orden de descarga"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/BusinessService#Order> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Order that allows a transport means to go into a cargo terminal (e.g., a rail terminal). Although this may be considered an event, it represents a business transaction."@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Transacción de negocio por la cual un medio de transporte puede entrar en una terminal de carga (por ejemplo, una terminal ferroviaria)."@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Gate-In Order"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Orden de entrada en terminal"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/BusinessService#Order> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Order that allows a transport means to go out from a cargo terminal (e.g., a rail terminal). Although this may be considered an event, it represents a business transaction."@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Transacción de negocio por la cual un medio de transporte puede salir de una terminal de carga (por ejemplo, una terminal ferroviaria)."@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Gate-Out Order"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Orden de salida de terminal"@es .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/BusinessService#Order> .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Business transaction associated to the process of sorting items of rolling stock into complete trains, or the reverse. In the United States this activity is known as switching. [source: Wikipedia]"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Orden de maniobra que se establece entre dos organizaciones, donde se encarga el proceso de maniobras que consiste en generar un pie de tren, o desmontar un tren"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Orden de Maniobra"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Shunting Order"@en .
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

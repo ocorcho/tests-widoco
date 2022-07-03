@@ -1,0 +1,219 @@
+@prefix : <https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#> .
+
+<https://vocab.plataformasimple.es/def/logistics/federated/BusinessService> rdf:type owl:Ontology ;
+                                                                             owl:versionIRI <https://vocab.plataformasimple.es/def/logistics/federated/BusinessService/0.2.2> ;
+                                                                             owl:imports <https://ontology.tno.nl/logistics/federated/BusinessService> ,
+                                                                                         <https://vocab.plataformasimple.es/def/logistics/federated/Classifications> ,
+                                                                                         <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles> ;
+                                                                             <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                                       "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                                       "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                                       "XXXXX (Indra)" ;
+                                                                             <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService" ;
+                                                                             <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Business Service ontology of the Federated platform, as required by the SIMPLE project" ;
+                                                                             <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService.owl" ;
+                                                                             <http://purl.org/dc/terms/issued> "2022-07-03" ;
+                                                                             <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-bs" ;
+                                                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#" ;
+                                                                             rdfs:comment "This ontology has been created in the context of the SIMPLE project" ;
+                                                                             owl:versionInfo "Release containing entities required for the representation of road and train transport"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#containsBusinessTransaction
+:containsBusinessTransaction rdf:type owl:ObjectProperty ;
+                             rdfs:domain <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment> ;
+                             rdfs:range <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment> ;
+                             rdfs:comment "Esta propiedad permite relacionar un Envío (Shipment) con sus varias fases de envío (Consignments)."@es ,
+                                          "This property allows relating a Shipment with one or several Consignments on which it is divided."@en ;
+                             rdfs:label "contains business transaction"@en ,
+                                        "contiene transacción de negocio"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasArrivalLocation
+:hasArrivalLocation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment>
+                                                <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment>
+                                                <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService>
+                                              )
+                                ] ;
+                    rdfs:range <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> ;
+                    rdfs:comment "Esta propiedad permite especificar la localización de llegada de un servicio de transporte o de un envío (Shipment o Consignment)"@es ,
+                                 "This property allows specifying the arrival location of a transport service, a Shipment or Consignment"@en ;
+                    rdfs:label "has arrival location"@en ,
+                               "tiene localización de llegada"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#hasDepartureLocation
+:hasDepartureLocation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <https://ontology.tno.nl/logistics/federated/BusinessService#hasLocation> ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment>
+                                                  <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment>
+                                                  <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService>
+                                                )
+                                  ] ;
+                      rdfs:range <https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> ;
+                      rdfs:comment "Esta propiedad permite especificar la localización de partida de un servicio de transporte o de un envío (Shipment o Consignment)"@es ,
+                                   "This property allows specifying the departure location of a transport service, a Shipment or Consignment"@en ;
+                      rdfs:label "has departure location"@en ,
+                                 "tiene localización de partida"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#involvedDriver
+:involvedDriver rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://ontology.tno.nl/logistics/federated/BusinessService#involvedLogisticsActor> ;
+                rdfs:domain <https://ontology.tno.nl/logistics/federated/BusinessService#TransportService> ;
+                rdfs:range <https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#earliestDeliveryTime
+:earliestDeliveryTime rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment>
+                                                  <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment>
+                                                )
+                                  ] ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Earliest time in which a shipment or consignment can be delivered into the final destination"@en ,
+                                   "Fecha a partir de la cual se puede realizar una entrega"@es ;
+                      rdfs:label "earliest delivery time"@en ,
+                                 "fecha de entrega mínima"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#expectedDeliveryTime
+:expectedDeliveryTime rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment>
+                                                  <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment>
+                                                )
+                                  ] ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Expected delivery time for a shipment or consignment"@en ;
+                      rdfs:label "expected delivery time"@en .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#latestDeliveryTime
+:latestDeliveryTime rdf:type owl:DatatypeProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( <https://ontology.tno.nl/logistics/federated/BusinessService#Consignment>
+                                                <https://ontology.tno.nl/logistics/federated/BusinessService#Shipment>
+                                              )
+                                ] ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "Fecha máxima en la que se puede realizar una entrega"@es ,
+                                 "Latest time in which a shipment or consignment should be delivered into the final destination"@en ;
+                    rdfs:label "fecha de entrega máxima"@es ,
+                               "latest delivery time"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject
+<https://ontology.tno.nl/logistics/federated/DigitalTwin#PhysicalObject> rdf:type owl:Class .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingOrder
+:CargoHandlingOrder rdf:type owl:Class ;
+                    rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/BusinessService#Order> ;
+                    rdfs:comment "Business transaction where an organisation is responsible for managing some cargo (e.g., inside a rail terminal)"@en ,
+                                 "Transacción de negocio donde una organización se hace responsable de gestionar algún tipo de carga (por ejemplo, en una terminal ferroviaria)"@es ;
+                    rdfs:label "Cargo Handling Order"@en ,
+                               "Orden de gestión de carga"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#CargoHandlingService
+:CargoHandlingService rdf:type owl:Class ;
+                      rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/BusinessService#LogisticsService> ;
+                      rdfs:comment "A service for the handling of cargo (e.g., moving cargo from a truck to a train, from a truck to a deposit in a freight terminal, etc.)"@en ,
+                                   "Servicio para la gestión de la carga (por ejemplo, mover carga de un camión a un tren, de un camión a un depósito en una terminal de carga, etc.)"@es ;
+                      rdfs:label "Cargo Handling Service"@en ,
+                                 "Servicio de gestión de carga"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#DischargeOrder
+:DischargeOrder rdf:type owl:Class ;
+                rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/BusinessService#Order> ;
+                rdfs:comment "Order in which an organisation is made responsible of / agrees to discharge some cargo (e.g., inside a rail terminal)"@en ,
+                             "Transacción de negocio en la que una organización se hace responsable de descargar algún tipo de carga (por ejemplo, en una terminal ferroviaria)"@es ;
+                rdfs:label "Discharge Order"@en ,
+                           "Orden de descarga"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateInOrder
+:GateInOrder rdf:type owl:Class ;
+             rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/BusinessService#Order> ;
+             rdfs:comment "Order that allows a transport means to go into a cargo terminal (e.g., a rail terminal). Although this may be considered an event, it represents a business transaction."@es ,
+                          "Transacción de negocio por la cual un medio de transporte puede entrar en una terminal de carga (por ejemplo, una terminal ferroviaria)."@es ;
+             rdfs:label "Gate-In Order"@en ,
+                        "Orden de entrada en terminal"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#GateOutOrder
+:GateOutOrder rdf:type owl:Class ;
+              rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/BusinessService#Order> ;
+              rdfs:comment "Order that allows a transport means to go out from a cargo terminal (e.g., a rail terminal). Although this may be considered an event, it represents a business transaction."@en ,
+                           "Transacción de negocio por la cual un medio de transporte puede salir de una terminal de carga (por ejemplo, una terminal ferroviaria)."@es ;
+              rdfs:label "Gate-Out Order"@en ,
+                         "Orden de salida de terminal"@es .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/BusinessService#ShuntingOrder
+:ShuntingOrder rdf:type owl:Class ;
+               rdfs:subClassOf <https://ontology.tno.nl/logistics/federated/BusinessService#Order> ;
+               rdfs:comment "Business transaction associated to the process of sorting items of rolling stock into complete trains, or the reverse. In the United States this activity is known as switching. [source: Wikipedia]"@en ,
+                            "Orden de maniobra que se establece entre dos organizaciones, donde se encarga el proceso de maniobras que consiste en generar un pie de tren, o desmontar un tren"@es ;
+               rdfs:label "Orden de Maniobra"@es ,
+                          "Shunting Order"@en .
+
+
+###  https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver
+<https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

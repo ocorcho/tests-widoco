@@ -1,0 +1,977 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#isAbout"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#involves"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/Event#Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#involves"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#involves"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/Event#Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#logisticsRoleName"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#LegalPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/BusinessService#logisticsRoleName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/DigitalTwin#TransportMeans",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/Event#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Enterprise, Person or Organization can have different roles depending on the context. This class defines these different roles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any public organization responsible for governing one or more regulations and/or maintenance and capacity optimization of public infrastructure can be identified as an Authority. Capacity optimization of public infrastructure can also be expressed by access restrictions, e.g. city distribution restrictions in city centers, expressed by time windows and types of vehicles that are allowed to access. As such, municipalities are also in scope of FEDeRATED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority"
+  }, {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Bank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A financial institution licensed to receive deposits and make loans."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bank"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Logistics roles that describe the different functions of companies regarding services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Carrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The organization that is responsible for transport of goods/containers with a transport means (truck, vessel, etc.). Each modality has a different name per modality: airline (air), shipping line (sea), barge operator (inlande waterways), railway undertaking (rail), and carrier (road). These should also be supported by the model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carrier"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Logistics roles that describe the different commercial functions of companies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Commercial Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A consignee is the role of an enterprise where it is the operator and/or owner of a logistical function at a place with the role 'place of delivery'. A consignee can act as customer (e.g. Terms of Delivery is 'ex works').  \r\ndefintions 2: A consignee is the role of an enterprise where it is the operator and/or owner of a logistical function at a place with the role 'place of delivery'. A consignee can act as customer (e.g. Terms of Delivery is 'ex works')."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Consignee"
+  } ],
+  "https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Consignor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A consignor is the role of an enterprise where it is the operator and/or owner of a logistical function at a place with the role 'place of acceptance'. A consignor can act as customer.  Consignor is the person sending a shipment to be delivered whether by land, sea or air. Some carriers, such as national postal entities, use the term \"sender\" or \"shipper\" but in the event of a legal dispute the proper and technical term \"consignor\" will generally be used.\r\n\r\nIf Sender sends a widget to Receiver via a delivery service, Sender is the consignor and Receiver is the consignee."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Consignor"
+  } ],
+  "https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Consumer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A consumer consumes the goods that were supplied through the supply chain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Consumer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ContactPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any employee that acts as a contact person of an organization towards other organizations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contact Person"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Customer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any enterprise that requires a business service from any other enterprise that is able to provide can be identified as a customer.Ã‚Â "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Customer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CustomsAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The organization providing permission for goods movements compliant with (VAT) regulations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Customs Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Declarant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The enterprise lodging a declaration (on behalf of his customer, it is called a customs agent) based on declaration services it provides. This can be a forwarder (import, export, transit) or a shipping -/airline (ENS, incoming goods). A shipper or consignee can also act as declarant."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Declerant"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#DeliveryParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is the operator of the location for final delivery of the goods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delivery Party"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#DispatchParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is the operator of the location where the goods have to be shipped from."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dispatch Party"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#DropOffLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where cargo on a transport means was dropped off. Modality 'road'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drop Off Location Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Exporter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name and address of party who makes - or on whose behalf a Customs clearing agent or other authorized person makes - an export declaration. This may include a manufacturer, seller or other person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Exporter"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Logistics roles that describe the different financial functions of companies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Financial Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Forwarder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A forwarder is the service provider in a business transaction providing a transport - and other (administrative) services to a consignor or consignee acting as customer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Forwarder"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Importer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name and address of party who makes - or on whose behalf a Customs clearing agent or other authorized person makes - an import declaration. This may include a person who has possession of the goods or to whom the goods are consigned."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Importer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Insurer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A company that issues insurance contracts to provide with financial coverage in the case of unexpected events."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Insurer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Issuer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An employee of the authority that issued the security status of a business transaction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Issuer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A location such as hub or port can have different roles depending on the context. This class defines these different roles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ],
+  "https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A generic term for all logistics stakeholders that provide business services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Logistic Service Provider"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Logistics roles that describe the different functions of companies during transportation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Logistics Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#NotifyParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The contact person to be notified when a shipment arrives at its destination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Notify Party"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A generic operator role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Operator Roles"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator"
+  }, {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Payee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A company that is paid for it services or goods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Payee"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Payer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#FinancialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A company that pays for services or goods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Payer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PickupLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A location where cargo is picked up by a transport means."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pickup Location Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfAcceptance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place of acceptance of a product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Acceptance Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfArrival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place of a call of a transport means following (in time) the last place of departure (milestone value is departure)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arrival Location Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfBorderCrossing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where a new customs domain is entered by a transport means during its itinerary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Border Crossing Place Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ],
+  "https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where a transport means stops on a voyage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Call Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place of receipt by a consignee or place of delivery is the place where the cargo is handed over by a carrier according a business transaction to the recipeint (consignee). The transport means and the cargo have to be at the location mentioned in a business transaction between a carrier and its customer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Delivery Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDeparture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where a transport means arrived (milestone value: arrival) and is able to depart."
+  }, {
+    "@value" : "The first place of call of a transport means or a place of call of a transport means following arrival."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Departure Location Role"
+  }, {
+    "@value" : "Place of Departure Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "For modality 'road'. Same as place of discharge."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Inland Terminal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place of loading is the place where the cargo is offered for transport by a business transaction to the service provider that is the carrier, where the transport means is considered to be the main modality. The cargo and the transport means have to be at that location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Loading Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ],
+  "https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfReceipt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place of receipt is the place where the cargo is offered for transport by a business transaction to the service provider that is the carrier and has to be transported by that carrier to the place of loading of the main transport. The cargo has to be at that location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Receipt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStripping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where goods is unloaded from a container."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Stripping Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfStuffing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where goods is loaded into an empty container which is then sealed and transported to the carrier for loading on a transport means."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Stuffing Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfUnloading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place of unloading is the place to where the cargo has to be transported by a business transaction to the service provider that is the carrier and will be discharged/unloaded from that transport means. The cargo and the transport means have to be at that location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place of Unloading Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PortAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The organization responsible for maintenance and safe and optimal use of the port infrastructure (quays, waterways, roads, rail)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Port Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Authority"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfCall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where a vessel stops on a voyage. The necessary context is a location and transport means with modality 'sea'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Port of Call Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfCall"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfDischarge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A place where a vessel (partially) discharges or unloads its shipments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Port of Discharge Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfDischarge"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PortOfLoading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A port where shipments are loaded aboard a vessel for transport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Port of Loading Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#PlaceOfLoading"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A producer produces the goods that are transported in the supply chain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Producer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Retailer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A retailer sells goods for use of consumption rather than for resale."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Retailer"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#Sender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#BusinessRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A sender of goods"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sender"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ServiceProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#CommercialRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any enterprise that is able to perform a business activity on behalf of customers can be identified as a service provider. A business activity is defined by its business services and/or timetables of itineraries of transport means. A flight or a voyage are examples of these itineraries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Service Provider"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ShuntingYard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A company that is responsible for the movement of trailers in and around a yard site."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Shunting Yard"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#SupplyChainRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "These are roles that are found elsewhere in the supply chain than described by bussiness, commercial, financial or logistical roles. Such as the consumer or producer of products."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Supply Chain Roles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#TerminalOperator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The organization offering transhipment services where one of the modalities is sea. Terminal operators have framework contracts with shipping lines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Terminal Operator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#WarehouseOperator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticsRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The organization offering a storage service for products (bulk and other products) and/or goods"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Warehouse Operator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#OperatorRoles"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Involves"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#isAbout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is About"
+  } ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontology.tno.nl/logistics/federated/ReusableTags#isDerived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "XXXXX (Indra)"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ontology for the representation of the extensions to the Logistic Roles ontology of the Federated platform, as required by the SIMPLE project"
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles.owl"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2022-07-03"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "simple-lr"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology has been created in the context of the SIMPLE project"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles/0.2.2"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "Release containing entities required for the representation of road and train transport"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#Driver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Persona que conduce un vehículo"
+  }, {
+    "@language" : "en",
+    "@value" : "Someone who drives a vehicle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Conductor"
+  }, {
+    "@language" : "en",
+    "@value" : "Driver"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LogisticServiceProvider"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#LocationRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "involves"
+  } ]
+}, {
+  "@id" : "https://vocab.plataformasimple.es/def/logistics/federated/LogisticRoles#isAbout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.tno.nl/logistics/federated/LogisticRoles#ActorRoles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is about"
+  } ]
+} ]

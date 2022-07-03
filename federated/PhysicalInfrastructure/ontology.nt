@@ -1,0 +1,94 @@
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://www.w3.org/2002/07/owl#versionIRI> <https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure/0.2.2> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://www.w3.org/2002/07/owl#imports> <https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/elements/1.1/creator> "Alberto Megina (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/elements/1.1/creator> "Mario de Lucas (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/elements/1.1/creator> "XXXXX (Indra)" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/elements/1.1/identifier> "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of the extensions to the Physical Infrastructure ontology of the Federated platform, as required by the SIMPLE project" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/terms/hasFormat> "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure.owl" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/terms/issued> "2022-07-03" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/vocab/vann/preferredNamespacePrefix> "simple-pi" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology has been created in the context of the project SIMPLE" .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure> <http://www.w3.org/2002/07/owl#versionInfo> "Release containing entities required for the representation of road and train transport"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/email
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/telephone
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontology.tno.nl/logistics/federated/PhysicalInfrastructure#Location> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/address> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/email> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/telephone> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A location with additional attributes as requested in the context of the Plataforma SIMPLE"@en .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "UIna localización con atributos adicionales necesarios y utilizados por la plataforma SIMPLE"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Localización"@es .
+<https://vocab.plataformasimple.es/def/logistics/federated/PhysicalInfrastructure#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
