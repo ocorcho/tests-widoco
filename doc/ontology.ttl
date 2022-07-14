@@ -282,7 +282,8 @@ above the local reference ellipsoid).""" ;
                      :rinfIndex "1.1.1.3.3.10" ;
                      <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                      <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                     rdfs:comment "Radio requirements used for demonstrating technical compatibility data. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en ;
+                     rdfs:comment """Radio requirements used for demonstrating technical compatibility voice.
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"""@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                      rdfs:label "Radio system compatibility data"@en ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -657,8 +658,8 @@ above the local reference ellipsoid).""" ;
 ###  http://data.europa.eu/949/hasAbstraction
 :hasAbstraction rdf:type owl:ObjectProperty ;
                 owl:inverseOf :hasImplementation ;
-                rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
-                rdfs:range :NetElement ;
+                rdfs:domain :PhysicalImplementationFeature ;
+                rdfs:range :TopologicalObject ;
                 <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
                 <http://purl.org/dc/terms/modified> "2021-04-13"^^xsd:date ;
                 rdfs:comment "Property that links a physical entity with its topological abstraction representation."@en ;
@@ -669,8 +670,8 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/hasImplementation
 :hasImplementation rdf:type owl:ObjectProperty ;
-                   rdfs:domain :NetElement ;
-                   rdfs:range <http://www.opengis.net/ont/geosparql#Feature> ;
+                   rdfs:domain :TopologicalObject ;
+                   rdfs:range :PhysicalImplementationFeature ;
                    <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-04-13"^^xsd:date ;
                    rdfs:comment "Property that links a topological abstraction entity with its physical representation."@en ;
@@ -691,8 +692,23 @@ above the local reference ellipsoid).""" ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
+###  http://data.europa.eu/949/hotAxleBoxDetectorDirection
+:hotAxleBoxDetectorDirection rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain :Track ;
+                             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                             :rinfIndex "1.1.1.1.7.9." ;
+                             <http://purl.org/dc/terms/created> "2022-07-08"^^xsd:date ;
+                             rdfs:comment """Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.
+
+This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS."""@en ;
+                             rdfs:isDefinedBy "http://data.europa.eu/949/"@en ;
+                             rdfs:label "hot axle box detector direction"@en .
+
+
 ###  http://data.europa.eu/949/inCountry
 :inCountry rdf:type owl:ObjectProperty ;
+           rdfs:domain :PhysicalImplementationFeature ;
            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
            <http://purl.org/dc/terms/created> "2020-09-01"^^xsd:date ;
            <http://purl.org/dc/terms/modified> "2020-11-20"^^xsd:date ;
@@ -700,6 +716,16 @@ above the local reference ellipsoid).""" ;
            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
            rdfs:label "in country"@en ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://data.europa.eu/949/infrastructureMgr
+:infrastructureMgr rdf:type owl:ObjectProperty ;
+                   rdfs:domain :PhysicalImplementationFeature ;
+                   rdfs:range :InfrastructureManager ;
+                   <http://purl.org/dc/terms/created> "2022-07-07"@en ;
+                   rdfs:comment "Relates any feature implemented in the European railway infrastructure with its infrastructure manager."@en ;
+                   rdfs:isDefinedBy "http://data.europa.eu/949/" ;
+                   rdfs:label "infrastructure manager"@en .
 
 
 ###  http://data.europa.eu/949/legacyRadioSystem
@@ -793,8 +819,7 @@ above the local reference ellipsoid).""" ;
                              ] ;
                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                  :eratvIndex "4.7.4.2.1" ;
-                 :isCoreParameter "false"^^xsd:boolean ,
-                                  "true"^^xsd:boolean ;
+                 :isCoreParameter "true"^^xsd:boolean ;
                  :rinfIndex "1.1.1.1.6.3" ;
                  <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                  <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
@@ -976,10 +1001,13 @@ above the local reference ellipsoid).""" ;
 
 ###  http://data.europa.eu/949/otherPantographHead
 :otherPantographHead rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Track ;
+                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                      :rinfIndex "1.1.1.2.3.2" ;
                      <http://purl.org/dc/terms/created> "2022-06-03"^^xsd:date ;
                      <http://purl.org/dc/terms/modified> "2022-06-03"^^xsd:date ;
-                     rdfs:comment "Indication of which non-TSI compliant pantograph heads are allowed to be used."@en ;
+                     rdfs:comment """Indication of which non-TSI compliant pantograph heads are allowed to be used.
+Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads. The concept scheme is temporarily non-deferenceable."""@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                      rdfs:label "Accepted other pantograph heads"@en ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1010,6 +1038,16 @@ above the local reference ellipsoid).""" ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                   rdfs:label "parking brake type"@en ;
                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://data.europa.eu/949/partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:domain :LinearLocation ;
+        rdfs:range :NetElement ;
+        <http://purl.org/dc/terms/created> "2022-07-11"^^xsd:date ;
+        rdfs:comment "Linear locations are subsections (part of) of other net elements"@en ;
+        rdfs:isDefinedBy "http://data.europa.eu/949/" ;
+        rdfs:label "part of"@en .
 
 
 ###  http://data.europa.eu/949/passesThroughTunnel
@@ -1077,6 +1115,19 @@ above the local reference ellipsoid).""" ;
              rdfs:isDefinedBy <http://data.europa.eu/949/> ;
              rdfs:label "position on B"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://data.europa.eu/949/previousVehicleType
+:previousVehicleType rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :VehicleType ;
+                     rdfs:range :VehicleType ;
+                     <http://purl.org/dc/terms/created> "2022-06-15"^^xsd:date ;
+                     <http://purl.org/dc/terms/modified> "2022-06-15"^^xsd:date ;
+                     rdfs:comment "Denotes a the previous VehicleType."@en ;
+                     rdfs:isDefinedBy "http://data.europa.eu/949/"@en ;
+                     rdfs:label "previous vehicle type"@en ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 
 
 ###  http://data.europa.eu/949/profileNumberSemiTrailers
@@ -1236,6 +1287,18 @@ above the local reference ellipsoid).""" ;
                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
+###  http://data.europa.eu/949/state
+:state rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Certificate ;
+       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+       <http://purl.org/dc/terms/created> "2022-06-15"^^xsd:date ;
+       <http://purl.org/dc/terms/modified> "2022-06-15"^^xsd:date ;
+       rdfs:comment "Denoting the state of the certificate and range the following instances."@en ;
+       rdfs:label "state"@en ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+
+
 ###  http://data.europa.eu/949/subCategory
 :subCategory rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
@@ -1278,7 +1341,7 @@ above the local reference ellipsoid).""" ;
                               "1.2.2.0.0.3" ;
                    <http://purl.org/dc/terms/created> "2021-08-02"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
-                   rdfs:comment "Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TenClassifications. The concept scheme is temporarily non-deferenceable."@en ;
+                   rdfs:comment "Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TENClassifications."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "TEN classification (of track, of platform, of siding)"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1513,7 +1576,7 @@ The concept scheme is temporarily non-deferenceable."""@en ;
                    :rinfIndex "1.1.1.2.3.1" ;
                    <http://purl.org/dc/terms/created> "2020-08-25"^^xsd:date ;
                    <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date ;
-                   rdfs:comment "Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable."@en ;
+                   rdfs:comment "Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads. The concept scheme is temporarily non-deferenceable."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "Accepted TSI compliant pantograph heads"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1569,7 +1632,8 @@ The concept scheme is temporarily non-deferenceable."""@en ;
                       :rinfIndex "1.1.1.3.3.9" ;
                       <http://purl.org/dc/terms/created> "2020-08-31"^^xsd:date ;
                       <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date ;
-                      rdfs:comment "Radio requirements used for demonstrating technical compatibility voice. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en ;
+                      rdfs:comment """Radio requirements used for demonstrating technical compatibility voice.
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"""@en ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                       rdfs:label "Radio system compatibility voice"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1797,8 +1861,7 @@ The concept scheme is temporarily non-deferenceable."""@en ;
                          owl:FunctionalProperty ;
                 rdfs:domain :Track ;
                 rdfs:range xsd:integer ;
-                :isCoreParameter "false"^^xsd:boolean ,
-                                 "true"^^xsd:boolean ;
+                :isCoreParameter "true"^^xsd:boolean ;
                 :rinfIndex "1.1.1.1.4.2" ;
                 <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                 <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date ;
@@ -1819,6 +1882,18 @@ The concept scheme is temporarily non-deferenceable."""@en ;
                          rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                          rdfs:label "catenary max rated current"@en ;
                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://data.europa.eu/949/certificate
+:certificate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :VehicleType ;
+             rdfs:range xsd:string ;
+             <http://purl.org/dc/terms/created> "2022-06-15"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2022-06-15"^^xsd:date ;
+             rdfs:comment "Denotes a certificate for this particular vehicleType."@en ;
+             rdfs:isDefinedBy "http://data.europa.eu/949/" ;
+             rdfs:label "certificate"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 
 
 ###  http://data.europa.eu/949/compatibilityProcedureDocument
@@ -2358,8 +2433,11 @@ The concept scheme is temporarily non-deferenceable."""@en ;
 ###  http://data.europa.eu/949/gradient
 :gradient rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
-          rdfs:domain :GradientCurve ,
-                      :Siding ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :GradientCurve
+                                      :Siding
+                                    )
+                      ] ;
           rdfs:range xsd:double ;
           :rinfIndex "1.2.2.0.3.1" ;
           <http://purl.org/dc/terms/created> "2021-08-10"^^xsd:date ;
@@ -2817,20 +2895,6 @@ The concept scheme is temporarily non-deferenceable."""@en ;
                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
-###  http://data.europa.eu/949/hotAxleBoxDetectorDirection
-:hotAxleBoxDetectorDirection rdf:type owl:DatatypeProperty ,
-                                      owl:FunctionalProperty ;
-                             rdfs:domain :Track ;
-                             rdfs:range xsd:string ;
-                             :rinfIndex "1.1.1.1.7.9" ;
-                             <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
-                             <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date ;
-                             rdfs:comment "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."@en ;
-                             rdfs:isDefinedBy <http://data.europa.eu/949/> ;
-                             rdfs:label "Direction of measurement of trackside HABD"@en ;
-                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
 ###  http://data.europa.eu/949/hotAxleBoxDetectorGeneration
 :hotAxleBoxDetectorGeneration rdf:type owl:DatatypeProperty ,
                                        owl:FunctionalProperty ;
@@ -2890,6 +2954,7 @@ The concept scheme is temporarily non-deferenceable."""@en ;
 :imCode rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
         rdf:type owl:FunctionalProperty ;
+        rdfs:domain :InfrastructureManager ;
         rdfs:range xsd:string ;
         :isCoreParameter "true"^^xsd:boolean ;
         :rinfIndex "1.1.0.0.0.1" ,
@@ -2900,7 +2965,7 @@ The concept scheme is temporarily non-deferenceable."""@en ;
                    "1.2.2.0.0.1" ,
                    "1.2.2.0.5.1" ;
         <http://purl.org/dc/terms/created> "2021-08-02"^^xsd:date ;
-        <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
         rdfs:comment "Infrastructure Manager means any body or undertaking that is responsible in particular for establishing and maintaining railway infrastructure or a part thereof. The Code is a unique identifier for the Infrastructure Manager and it shall be verified on national level."@en ;
         rdfs:isDefinedBy <http://data.europa.eu/949/> ;
         rdfs:label "IM's code"@en ;
@@ -2936,8 +3001,11 @@ The concept scheme is temporarily non-deferenceable."""@en ;
 
 ###  http://data.europa.eu/949/kilometer
 :kilometer rdf:type owl:DatatypeProperty ;
-           rdfs:domain :LineReference ,
-                       :SpotLocation ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :LineReference
+                                       :SpotLocation
+                                     )
+                       ] ;
            rdfs:range xsd:double ;
            <http://purl.org/dc/terms/created> "2021-01-29"^^xsd:date ;
            <http://purl.org/dc/terms/modified> "2021-01-29"^^xsd:date ;
@@ -2950,6 +3018,7 @@ The concept scheme is temporarily non-deferenceable."""@en ;
 ###  http://data.europa.eu/949/length
 :length rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
+        rdfs:domain :EraFeature ;
         rdfs:range xsd:double ;
         :eratvIndex "4.8.1" ;
         :isCoreParameter "true"^^xsd:boolean ;
@@ -3341,6 +3410,7 @@ The concept scheme is temporarily non-deferenceable."""@en ;
 ###  http://data.europa.eu/949/maximumSpeedAndCantDeficiency
 :maximumSpeedAndCantDeficiency rdf:type owl:DatatypeProperty ,
                                         owl:FunctionalProperty ;
+                               rdfs:domain :VehicleType ;
                                rdfs:range xsd:string ;
                                :eratvIndex "4.6.4" ;
                                <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
@@ -3720,6 +3790,19 @@ This property was before an object skos property. The values for this property d
                     rdfs:range xsd:integer ;
                     rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                     rdfs:label "netElementPosition"@en .
+
+
+###  http://data.europa.eu/949/nonCodedRestrictions
+:nonCodedRestrictions rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :VehicleType ;
+                      rdfs:range xsd:string ;
+                      <http://purl.org/dc/terms/created> "2022-06-15" ;
+                      <http://purl.org/dc/terms/modified> "2022-06-15"^^xsd:date ;
+                      rdfs:isDefinedBy "Denotes a non coded restrictions for this particular vehicleType, as a set of sentences."@en ,
+                                       "http://data.europa.eu/949/"^^xsd:date ;
+                      rdfs:label "non coded restrictions"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 
 
 ###  http://data.europa.eu/949/numberElementsRakeFreightWagons
@@ -4570,7 +4653,8 @@ This property was before an object skos property. The values for this property d
 
 
 ###  http://data.europa.eu/949/typeVersionNumber
-:typeVersionNumber rdf:type owl:DatatypeProperty ;
+:typeVersionNumber rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
                    rdfs:domain :VehicleType ;
                    rdfs:range xsd:string ;
                    <http://purl.org/dc/terms/created> "2020-11-22"^^xsd:date ;
@@ -4858,6 +4942,15 @@ This property was before an object skos property. The values for this property d
         <http://www.w3.org/2004/02/skos/core#definition> "A border point is used to separate the railway network due to different reasons. Typical examples are country borders, the change of owning infrastructure manager or the border of a station."@en .
 
 
+###  http://data.europa.eu/949/Certificate
+:Certificate rdf:type owl:Class ;
+             <http://purl.org/dc/terms/created> "2022-06-15"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2022-06-15"^^xsd:date ;
+             rdfs:isDefinedBy "http://data.europa.eu/949/" ;
+             rdfs:label "Certificate"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+
+
 ###  http://data.europa.eu/949/ContactLineSystem
 :ContactLineSystem rdf:type owl:Class ;
                    <http://purl.org/dc/terms/created> "2021-08-04"^^xsd:date ;
@@ -4876,6 +4969,15 @@ This property was before an object skos property. The values for this property d
            rdfs:isDefinedBy <http://data.europa.eu/949/> ;
            rdfs:label "ETCS Level"@en ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://data.europa.eu/949/EraFeature
+:EraFeature rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+            <http://purl.org/dc/terms/created> "2022-07-07"@en ;
+            rdfs:comment "Class that encompasses the features that have been physically implemented (class PhysicalImplementationFeature) and the topological objects (class Topological Object). It is a subclass of the geographical Feature class that has a spatial representation."@en ;
+            rdfs:isDefinedBy "http://data.europa.eu/949/" ;
+            rdfs:label "ERA Feature"@en .
 
 
 ###  http://data.europa.eu/949/FreightTerminal
@@ -4920,7 +5022,6 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/LinearLocation
 :LinearLocation rdf:type owl:Class ;
-                rdfs:subClassOf :NetElement ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                 rdfs:label "linear location"@en ;
                 <http://www.w3.org/2004/02/skos/core#scopeNote> "Some values are defined at parts of net elements.  These parts are indicated by the "@en .
@@ -4983,10 +5084,9 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/OperationalPoint
 :OperationalPoint rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
-                                  <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                  rdfs:subClassOf :PhysicalImplementationFeature ;
                   <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                  <http://purl.org/dc/terms/modified> "2020-09-01"^^xsd:date ;
+                  <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
                   rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                   rdfs:label "Operational Point"@en ;
@@ -5002,11 +5102,21 @@ This property was before an object skos property. The values for this property d
               <http://www.w3.org/2004/02/skos/core#definition> "An over crossing describes a crossing, where something crosses over the railway line. From constructional point of view an over crossing can be a bridge or a tunnel."@nl .
 
 
+###  http://data.europa.eu/949/PhysicalImplementationFeature
+:PhysicalImplementationFeature rdf:type owl:Class ;
+                               rdfs:subClassOf :EraFeature ;
+                               <http://purl.org/dc/terms/created> "2022-07-07" ;
+                               rdfs:comment """This class encompasses all those classes that represent features that are physically implemented in the European railway infrastructure. It is a subclass of the geographical class Feature that has a spatial representation. It covers sidings, tracks, platforms, tunnels, operational points, and sections of line.
+A feature that has been physically implemented can be abstracted (hasAbstraction) as a topological object. It also is related to the infrastructure manager through the property infrastructureMgr.""" ;
+                               rdfs:isDefinedBy "http://data.europa.eu/949/" ;
+                               rdfs:label "Physical Implementation Feature"@en .
+
+
 ###  http://data.europa.eu/949/Platform
 :Platform rdf:type owl:Class ;
-          rdfs:subClassOf :OperationalPoint ;
+          rdfs:subClassOf :PhysicalImplementationFeature ;
           <http://purl.org/dc/terms/created> "2021-08-02"^^xsd:date ;
-          <http://purl.org/dc/terms/modified> "2021-08-02"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
           rdfs:comment "Platform for the purpose of RINF is understood as a platform edge. A platform concerns only the part of the structure neighbouring to the track (interfaced with trains)."@en ;
           rdfs:isDefinedBy <http://data.europa.eu/949/> ;
           rdfs:label "Platform"@en ;
@@ -5029,7 +5139,7 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/SectionOfLine
 :SectionOfLine rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+               rdfs:subClassOf :PhysicalImplementationFeature ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :lineNationalId ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -5046,7 +5156,7 @@ This property was before an object skos property. The values for this property d
                                  owl:onClass :OperationalPoint
                                ] ;
                <http://purl.org/dc/terms/created> "2021-04-02"^^xsd:date ;
-               <http://purl.org/dc/terms/modified> "2021-04-02"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
                rdfs:comment "A section of line means the part of line between adjacent operational points and may consist of several tracks."@en ;
                rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                rdfs:label "Section Of Line"@en ;
@@ -5055,9 +5165,9 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/Siding
 :Siding rdf:type owl:Class ;
-        rdfs:subClassOf :OperationalPoint ;
+        rdfs:subClassOf :PhysicalImplementationFeature ;
         <http://purl.org/dc/terms/created> "2021-08-10"^^xsd:date ;
-        <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
         <http://purl.org/dc/terms/source> "Official Journal of the European Union L 139 I/85" ;
         rdfs:comment "Sidings are all those tracks where running trains in service movements ends and which are not used for operational routing of a train."@en ;
         rdfs:isDefinedBy <http://data.europa.eu/949/> ;
@@ -5097,17 +5207,6 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/Station
 :Station rdf:type owl:Class ;
-         owl:equivalentClass [ rdf:type owl:Class ;
-                               owl:unionOf ( [ rdf:type owl:Restriction ;
-                                               owl:onProperty :opType ;
-                                               owl:hasValue <http://data.europa.eu/949/concepts/op-types/borderStation>
-                                             ]
-                                             [ rdf:type owl:Restriction ;
-                                               owl:onProperty :opType ;
-                                               owl:hasValue <http://data.europa.eu/949/concepts/op-types/station>
-                                             ]
-                                           )
-                             ] ;
          rdfs:subClassOf :PrincipalLocation ;
          rdfs:isDefinedBy <http://data.europa.eu/949/> .
 
@@ -5133,6 +5232,7 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/TopologicalObject
 :TopologicalObject rdf:type owl:Class ;
+                   rdfs:subClassOf :EraFeature ;
                    <http://purl.org/dc/terms/created> "2022-05-04"^^xsd:date ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/> ;
                    rdfs:label "Topological Object"@en ;
@@ -5141,8 +5241,9 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/Track
 :Track rdf:type owl:Class ;
+       rdfs:subClassOf :PhysicalImplementationFeature ;
        <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-       <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
+       <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
        rdfs:comment "A running track that is used for train service movements."@en ;
        rdfs:isDefinedBy <http://data.europa.eu/949/> ;
        rdfs:label "Track"@en ;
@@ -5161,9 +5262,9 @@ This property was before an object skos property. The values for this property d
 
 ###  http://data.europa.eu/949/Tunnel
 :Tunnel rdf:type owl:Class ;
-        rdfs:subClassOf :OperationalPoint ;
+        rdfs:subClassOf :PhysicalImplementationFeature ;
         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-        <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2022-07-07"^^xsd:date ;
         rdfs:comment "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."@en ;
         rdfs:isDefinedBy <http://data.europa.eu/949/> ;
         rdfs:label "Tunnel"@en ;
@@ -5257,69 +5358,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  http://data.europa.eu/949/concepts/op-types/station
 <http://data.europa.eu/949/concepts/op-types/station> rdf:type owl:NamedIndividual .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/funicular
-<http://data.europa.eu/949/concepts/osmClass/funicular> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                        <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                        rdfs:label "funicular"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/light_rail
-<http://data.europa.eu/949/concepts/osmClass/light_rail> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                         <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                         rdfs:label "light rail"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/miniature_railway
-<http://data.europa.eu/949/concepts/osmClass/miniature_railway> rdf:type owl:NamedIndividual ,
-                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                                rdfs:label "miniature railway"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/monorail
-<http://data.europa.eu/949/concepts/osmClass/monorail> rdf:type owl:NamedIndividual ,
-                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                       rdfs:label "monorail"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/narrow_gauge
-<http://data.europa.eu/949/concepts/osmClass/narrow_gauge> rdf:type owl:NamedIndividual ,
-                                                                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                           <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                           rdfs:label "narrow gauge"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/rail
-<http://data.europa.eu/949/concepts/osmClass/rail> rdf:type owl:NamedIndividual ,
-                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                   rdfs:label "rail"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/subway
-<http://data.europa.eu/949/concepts/osmClass/subway> rdf:type owl:NamedIndividual ,
-                                                              <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                     <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                     rdfs:label "subway"@en .
-
-
-###  http://data.europa.eu/949/concepts/osmClass/tram
-<http://data.europa.eu/949/concepts/osmClass/tram> rdf:type owl:NamedIndividual ,
-                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> ;
-                                                   rdfs:label "tram"@en .
-
-
-###  http://data.europa.eu/949/schemes/osmClass
-<http://data.europa.eu/949/schemes/osmClass> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                                             rdfs:label "OSM class"@en ;
-                                             <http://www.w3.org/2004/02/skos/core#definition> "Concepts for OpenStreetMap classes."@en .
 
 
 #################################################################

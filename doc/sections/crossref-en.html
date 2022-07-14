@@ -9,7 +9,13 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#Border" title="http://data.europa.eu/949/Border">border</a>
       </li>
       <li>
+         <a href="#Certificate" title="http://data.europa.eu/949/Certificate">Certificate</a>
+      </li>
+      <li>
          <a href="#ContactLineSystem" title="http://data.europa.eu/949/ContactLineSystem">Contact Line System</a>
+      </li>
+      <li>
+         <a href="#EraFeature" title="http://data.europa.eu/949/EraFeature">ERA Feature</a>
       </li>
       <li>
          <a href="#ETCSLevel" title="http://data.europa.eu/949/ETCSLevel">ETCS Level</a>
@@ -57,6 +63,10 @@ This section provides details for each class and property defined by ERA vocabul
       </li>
       <li>
          <a href="#OverCrossing" title="http://data.europa.eu/949/OverCrossing">over crossing</a>
+      </li>
+      <li>
+         <a href="#PhysicalImplementationFeature"
+            title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
       </li>
       <li>
          <a href="#Platform" title="http://data.europa.eu/949/Platform">Platform</a>
@@ -147,6 +157,29 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Certificate">
+      <h3>Certificate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/Certificate</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#state" title="http://data.europa.eu/949/state">state</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ContactLineSystem">
       <h3>Contact Line System<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -185,6 +218,41 @@ This section provides details for each class and property defined by ERA vocabul
          <dd>
             <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EraFeature">
+      <h3>ERA Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/EraFeature</p>
+      <div class="comment">
+         <span class="markdown">Class that encompasses the features that have been physically implemented (class PhysicalImplementationFeature) and the topological objects (class Topological Object). It is a subclass of the geographical Feature class that has a spatial representation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#Feature"
+               target="_blank"
+               title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#length" title="http://data.europa.eu/949/length">Length (of Section of Line, of Tunnel, of Siding, Usable lenght of Platform)</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -263,11 +331,6 @@ This section provides details for each class and property defined by ERA vocabul
                title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">bag</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#gradient" title="http://data.europa.eu/949/gradient">Gradient for stabling tracks</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="InfrastructureManager">
@@ -300,6 +363,16 @@ This section provides details for each class and property defined by ERA vocabul
                target="_blank"
                title="https://schema.org/Organization">organization</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#imCode" title="http://data.europa.eu/949/imCode">IM's code</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#infrastructureMgr" title="http://data.europa.eu/949/infrastructureMgr">infrastructure manager</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -345,11 +418,6 @@ This section provides details for each class and property defined by ERA vocabul
          <dd>stable</dd>
       </dl>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#kilometer" title="http://data.europa.eu/949/kilometer">kilometer</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#lineReference" title="http://data.europa.eu/949/lineReference">Railway location of Operational point</a>
@@ -371,10 +439,10 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#partOf" title="http://data.europa.eu/949/partOf">part of</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -504,18 +572,12 @@ This section provides details for each class and property defined by ERA vocabul
             <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#LinearLocation" title="http://data.europa.eu/949/LinearLocation">linear location</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#elementPart" title="http://data.europa.eu/949/elementPart">element part</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#endIntrinsicCoordinate"
                title="http://data.europa.eu/949/endIntrinsicCoordinate">end intrinsic coordinate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasImplementation" title="http://data.europa.eu/949/hasImplementation">has implementation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSignal" title="http://data.europa.eu/949/hasSignal">has signal</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSignal" title="http://data.europa.eu/949/hasSignal">has signal</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#posBegin" title="http://data.europa.eu/949/posBegin">position begin</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#posEnd" title="http://data.europa.eu/949/posEnd">position end</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#startIntrinsicCoordinate"
@@ -528,9 +590,9 @@ This section provides details for each class and property defined by ERA vocabul
             <a href="#elementA" title="http://data.europa.eu/949/elementA">element A</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#elementB" title="http://data.europa.eu/949/elementB">element B</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#elementPart" title="http://data.europa.eu/949/elementPart">element part</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasAbstraction" title="http://data.europa.eu/949/hasAbstraction">has abstraction</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#netElement" title="http://data.europa.eu/949/netElement">net element</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#netElementReference" title="http://data.europa.eu/949/netElementReference">net element reference</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#partOf" title="http://data.europa.eu/949/partOf">part of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -595,18 +657,13 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-               title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">SpatialThing</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://www.opengis.net/ont/geosparql#Feature"
-               target="_blank"
-               title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Platform" title="http://data.europa.eu/949/Platform">Platform</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Siding" title="http://data.europa.eu/949/Siding">Siding</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Signal" title="http://data.europa.eu/949/Signal">Signal</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Tunnel" title="http://data.europa.eu/949/Tunnel">Tunnel</a>
+            <a href="#Signal" title="http://data.europa.eu/949/Signal">Signal</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Border" title="http://data.europa.eu/949/Border">border</a>
             <sup class="type-c" title="class">c</sup>, <a href="#OverCrossing" title="http://data.europa.eu/949/OverCrossing">over crossing</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Switch" title="http://data.europa.eu/949/Switch">switch</a>
@@ -659,6 +716,51 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PhysicalImplementationFeature">
+      <h3>Physical Implementation Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/PhysicalImplementationFeature</p>
+      <div class="comment">
+         <span class="markdown">This class encompasses all those classes that represent features that are physically implemented in the European railway infrastructure. It is a subclass of the geographical class Feature that has a spatial representation. It covers sidings, tracks, platforms, tunnels, operational points, and sections of line.
+A feature that has been physically implemented can be abstracted (hasAbstraction) as a topological object. It also is related to the infrastructure manager through the property infrastructureMgr.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EraFeature" title="http://data.europa.eu/949/EraFeature">ERA Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Platform" title="http://data.europa.eu/949/Platform">Platform</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Siding" title="http://data.europa.eu/949/Siding">Siding</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tunnel" title="http://data.europa.eu/949/Tunnel">Tunnel</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasAbstraction" title="http://data.europa.eu/949/hasAbstraction">has abstraction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inCountry" title="http://data.europa.eu/949/inCountry">in country</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#infrastructureMgr" title="http://data.europa.eu/949/infrastructureMgr">infrastructure manager</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasImplementation" title="http://data.europa.eu/949/hasImplementation">has implementation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Platform">
       <h3>Platform<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -682,7 +784,8 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -783,9 +886,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.opengis.net/ont/geosparql#Feature"
-               target="_blank"
-               title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
@@ -826,7 +929,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -838,7 +942,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSandRestocking" title="http://data.europa.eu/949/hasSandRestocking">Existence of sand restocking</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasToiletDischarge" title="http://data.europa.eu/949/hasToiletDischarge">Existence of toilet discharge</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasWaterRestocking" title="http://data.europa.eu/949/hasWaterRestocking">Existence of water restocking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#gradient" title="http://data.europa.eu/949/gradient">Gradient for stabling tracks</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#sidingId" title="http://data.europa.eu/949/sidingId">Identification of siding</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minimumVerticalRadius" title="http://data.europa.eu/949/minimumVerticalRadius">minimum radius of vertical curve</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -903,8 +1006,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
+            <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -983,8 +1085,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#kilometer" title="http://data.europa.eu/949/kilometer">kilometer</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#netElementReference" title="http://data.europa.eu/949/netElementReference">net element reference</a>
+            <a href="#netElementReference" title="http://data.europa.eu/949/netElementReference">net element reference</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#netElementPosition" title="http://data.europa.eu/949/netElementPosition">netElementPosition</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -1004,18 +1105,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
       </dl>
       <dl class="description">
-         <dt>is equivalent to</dt>
-         <dd>(<a href="#opType" title="http://data.europa.eu/949/opType">Type of operational point</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">value</span> 
-            <a href="http://data.europa.eu/949/concepts/op-types/borderStation"
-               target="_blank"
-               title="http://data.europa.eu/949/concepts/op-types/borderStation">border station</a>) <span class="logic">or</span> (<a href="#opType" title="http://data.europa.eu/949/opType">Type of operational point</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">value</span> 
-            <a href="http://data.europa.eu/949/concepts/op-types/station"
-               target="_blank"
-               title="http://data.europa.eu/949/concepts/op-types/station">station</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
             <a href="#PrincipalLocation" title="http://data.europa.eu/949/PrincipalLocation">principal location</a>
@@ -1096,11 +1185,26 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dd>unstable</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EraFeature" title="http://data.europa.eu/949/EraFeature">ERA Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
             <sup class="type-c" title="class">c</sup>, <a href="#NetRelation" title="http://data.europa.eu/949/NetRelation">Net Relation</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasImplementation" title="http://data.europa.eu/949/hasImplementation">has implementation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasAbstraction" title="http://data.europa.eu/949/hasAbstraction">has abstraction</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1125,6 +1229,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dd>stable</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Loop" title="http://data.europa.eu/949/Loop">Loop</a>
@@ -1135,6 +1245,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <a href="#accelerationLevelCrossing"
                title="http://data.europa.eu/949/accelerationLevelCrossing">Acceleration allowed at level crossing</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tsiPantographHead" title="http://data.europa.eu/949/tsiPantographHead">Accepted TSI compliant pantograph heads</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#otherPantographHead" title="http://data.europa.eu/949/otherPantographHead">Accepted other pantograph heads</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#gsmRAdditionalInfo" title="http://data.europa.eu/949/gsmRAdditionalInfo">Additional information on network characteristics</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#gsmRActiveMobiles" title="http://data.europa.eu/949/gsmRActiveMobiles">Advised required number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#automaticDroppingDeviceRequired"
@@ -1148,8 +1259,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#permittedContactForce" title="http://data.europa.eu/949/permittedContactForce">Contact force permitted</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicNetworkRoamingDetails"
                title="http://data.europa.eu/949/publicNetworkRoamingDetails">Details on roaming to public networks</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hotAxleBoxDetectorDirection"
-               title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">Direction of measurement of trackside HABD</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#distSignToPhaseEnd" title="http://data.europa.eu/949/distSignToPhaseEnd">Distance between signboard and phase separation ending</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#eddyCurrentBrakingConditionsDocument"
                title="http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument">Document with the conditions for the use of eddy current brakes</a>
@@ -1241,6 +1350,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#flangeLubeForbidden" title="http://data.europa.eu/949/flangeLubeForbidden">Use of flange lubrication forbidden</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#etcsLevel" title="http://data.europa.eu/949/etcsLevel">etcs level</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hotAxleBoxDetectorDirection"
+               title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">hot axle box detector direction</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#bridge" title="http://data.europa.eu/949/bridge">is bridge</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tunnel" title="http://data.europa.eu/949/tunnel">is tunnel</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#osmClass" title="http://data.europa.eu/949/osmClass">osm class</a>
@@ -1341,7 +1452,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+            <a href="#PhysicalImplementationFeature"
+               title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1491,6 +1603,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#cantDefficiency" title="http://data.europa.eu/949/cantDefficiency">cant defficiency</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#catenaryMaxRatedCurrent"
                title="http://data.europa.eu/949/catenaryMaxRatedCurrent">catenary max rated current</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#certificate" title="http://data.europa.eu/949/certificate">certificate</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#conditionsTrainFormation"
                title="http://data.europa.eu/949/conditionsTrainFormation">conditions train formation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#dangerousGoodsTankCode"
@@ -1545,6 +1658,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumLocomotivesCoupled"
                title="http://data.europa.eu/949/maximumLocomotivesCoupled">maximum locomotives coupled</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumServiceBrake" title="http://data.europa.eu/949/maximumServiceBrake">maximum service break</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumSpeedAndCantDeficiency"
+               title="http://data.europa.eu/949/maximumSpeedAndCantDeficiency">maximum speed and cant deficiency</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumSpeedEmpty" title="http://data.europa.eu/949/maximumSpeedEmpty">maximum speed empty</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#meetsRequirementVehicleAuthorisation"
                title="http://data.europa.eu/949/meetsRequirementVehicleAuthorisation">meets requirement vehicle authorization</a>
@@ -1553,6 +1668,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minimumConvexVerticalRadius"
                title="http://data.europa.eu/949/minimumConvexVerticalRadius">minimum convex vertical radius</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minVehicleImpedance" title="http://data.europa.eu/949/minVehicleImpedance">minimum vehicle impedance</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nonCodedRestrictions" title="http://data.europa.eu/949/nonCodedRestrictions">non coded restrictions</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberElementsRakeFreightWagons"
                title="http://data.europa.eu/949/numberElementsRakeFreightWagons">number elements rake freight wagons</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfPantographsInContactWithOCL"
@@ -1569,7 +1685,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#portableBoardingAids" title="http://data.europa.eu/949/portableBoardingAids">portable boarding aids</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#preventRegenerativeBrakeUse"
                title="http://data.europa.eu/949/preventRegenerativeBrakeUse">prevent regenerative brake use</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#prioritySeats" title="http://data.europa.eu/949/prioritySeats">priority seats</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#previousVehicleType" title="http://data.europa.eu/949/previousVehicleType">previous vehicle type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#prioritySeats" title="http://data.europa.eu/949/prioritySeats">priority seats</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#prmAccessibleToilets" title="http://data.europa.eu/949/prmAccessibleToilets">prm accessible toilets</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#quasiStaticGuidingForce"
                title="http://data.europa.eu/949/quasiStaticGuidingForce">quasi static guiding force</a>
@@ -1630,7 +1747,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#vehicleType" title="http://data.europa.eu/949/vehicleType">vehicle type</a>
+            <a href="#previousVehicleType" title="http://data.europa.eu/949/previousVehicleType">previous vehicle type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleType" title="http://data.europa.eu/949/vehicleType">vehicle type</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1748,7 +1866,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#platformHeight" title="http://data.europa.eu/949/platformHeight">Height of platform</a>
       </li>
       <li>
+         <a href="#hotAxleBoxDetectorDirection"
+            title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">hot axle box detector direction</a>
+      </li>
+      <li>
          <a href="#inCountry" title="http://data.europa.eu/949/inCountry">in country</a>
+      </li>
+      <li>
+         <a href="#infrastructureMgr" title="http://data.europa.eu/949/infrastructureMgr">infrastructure manager</a>
       </li>
       <li>
          <a href="#loadCapability" title="http://data.europa.eu/949/loadCapability">Load Capability</a>
@@ -1821,6 +1946,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#parkingBrakeType" title="http://data.europa.eu/949/parkingBrakeType">parking brake type</a>
       </li>
       <li>
+         <a href="#partOf" title="http://data.europa.eu/949/partOf">part of</a>
+      </li>
+      <li>
          <a href="#freightCorridor" title="http://data.europa.eu/949/freightCorridor">Part of a Railway freight corridor</a>
       </li>
       <li>
@@ -1837,6 +1965,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#positionOnB" title="http://data.europa.eu/949/positionOnB">position on B</a>
+      </li>
+      <li>
+         <a href="#previousVehicleType" title="http://data.europa.eu/949/previousVehicleType">previous vehicle type</a>
       </li>
       <li>
          <a href="#quieterRoutesExemptedCountry"
@@ -1874,6 +2005,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#startLocation" title="http://data.europa.eu/949/startLocation">Start of tunnel</a>
+      </li>
+      <li>
+         <a href="#state" title="http://data.europa.eu/949/state">state</a>
       </li>
       <li>
          <a href="#supportedPlatformHeight"
@@ -1983,7 +2117,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/otherPantographHead</p>
       <div class="comment">
-         <span class="markdown">Indication of which non-TSI compliant pantograph heads are allowed to be used.</span>
+         <span class="markdown">Indication of which non-TSI compliant pantograph heads are allowed to be used.
+Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads. The concept scheme is temporarily non-deferenceable.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1999,6 +2134,21 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dt>Rinf index</dt>
          <dd>1.1.1.2.3.2</dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="tsiPantographHead">
       <h3>Accepted TSI compliant pantograph heads<sup class="type-op" title="object property">op</sup>
@@ -2008,7 +2158,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiPantographHead</p>
       <div class="comment">
-         <span class="markdown">Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads. The concept scheme is temporarily non-deferenceable.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3246,13 +3396,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.opengis.net/ont/geosparql#Feature"
-                  target="_blank"
-                  title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+               <a href="#PhysicalImplementationFeature"
+                  title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
+               <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -3287,14 +3437,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
+               <a href="#TopologicalObject" title="http://data.europa.eu/949/TopologicalObject">Topological Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.opengis.net/ont/geosparql#Feature"
-                  target="_blank"
-                  title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
+               <a href="#PhysicalImplementationFeature"
+                  title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -3382,6 +3532,48 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="hotAxleBoxDetectorDirection">
+      <h3>hot axle box detector direction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/hotAxleBoxDetectorDirection</p>
+      <div class="comment">
+         <span class="markdown">Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.
+
+This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Rinf index</dt>
+         <dd>1.1.1.1.7.9.</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="inCountry">
       <h3>in country<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3404,11 +3596,48 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PhysicalImplementationFeature"
+                  title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2004/02/skos/core#Concept"
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="infrastructureMgr">
+      <h3>infrastructure manager<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/infrastructureMgr</p>
+      <div class="comment">
+         <span class="markdown">Relates any feature implemented in the European railway infrastructure with its infrastructure manager.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PhysicalImplementationFeature"
+                  title="http://data.europa.eu/949/PhysicalImplementationFeature">Physical Implementation Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InfrastructureManager"
+                  title="http://data.europa.eu/949/InfrastructureManager">Infrastructure manager</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -4248,6 +4477,35 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="partOf">
+      <h3>part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/partOf</p>
+      <div class="comment">
+         <span class="markdown">Linear locations are subsections (part of) of other net elements</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LinearLocation" title="http://data.europa.eu/949/LinearLocation">linear location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NetElement" title="http://data.europa.eu/949/NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="freightCorridor">
       <h3>Part of a Railway freight corridor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4481,6 +4739,42 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="previousVehicleType">
+      <h3>previous vehicle type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/previousVehicleType</p>
+      <div class="comment">
+         <span class="markdown">Denotes a the previous VehicleType.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="quieterRoutesExemptedCountry">
       <h3>quieter route exempted country<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4525,7 +4819,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/dataRadioCompatible</p>
       <div class="comment">
-         <span class="markdown">Radio requirements used for demonstrating technical compatibility data. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</span>
+         <span class="markdown">Radio requirements used for demonstrating technical compatibility voice.
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4572,7 +4867,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/voiceRadioCompatible</p>
       <div class="comment">
-         <span class="markdown">Radio requirements used for demonstrating technical compatibility voice. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</span>
+         <span class="markdown">Radio requirements used for demonstrating technical compatibility voice.
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4950,6 +5246,39 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="state">
+      <h3>state<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/state</p>
+      <div class="comment">
+         <span class="markdown">Denoting the state of the certificate and range the following instances.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Certificate" title="http://data.europa.eu/949/Certificate">Certificate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="supportedPlatformHeight">
       <h3>supported platform height<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4998,7 +5327,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tenClassification</p>
       <div class="comment">
-         <span class="markdown">Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TenClassifications. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TENClassifications.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6168,6 +6497,9 @@ The concept scheme is temporarily non-deferenceable.</span>
             title="http://data.europa.eu/949/catenaryMaxRatedCurrent">catenary max rated current</a>
       </li>
       <li>
+         <a href="#certificate" title="http://data.europa.eu/949/certificate">certificate</a>
+      </li>
+      <li>
          <a href="#highSpeedLoadModelCompliance"
             title="http://data.europa.eu/949/highSpeedLoadModelCompliance">Compliance of structures with the High Speed Load Model (HSLM) dynamic load model</a>
       </li>
@@ -6218,10 +6550,6 @@ The concept scheme is temporarily non-deferenceable.</span>
       </li>
       <li>
          <a href="#dieselThermalAllowed" title="http://data.europa.eu/949/dieselThermalAllowed">Diesel or other thermal traction allowed</a>
-      </li>
-      <li>
-         <a href="#hotAxleBoxDetectorDirection"
-            title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">Direction of measurement of trackside HABD</a>
       </li>
       <li>
          <a href="#distSignToPhaseEnd" title="http://data.europa.eu/949/distSignToPhaseEnd">Distance between signboard and phase separation ending</a>
@@ -6640,6 +6968,9 @@ The concept scheme is temporarily non-deferenceable.</span>
       </li>
       <li>
          <a href="#gsmRNoCoverage" title="http://data.europa.eu/949/gsmRNoCoverage">No GSM-R coverage</a>
+      </li>
+      <li>
+         <a href="#nonCodedRestrictions" title="http://data.europa.eu/949/nonCodedRestrictions">non coded restrictions</a>
       </li>
       <li>
          <a href="#numberElementsRakeFreightWagons"
@@ -7523,6 +7854,40 @@ The concept scheme is temporarily non-deferenceable.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="certificate">
+      <h3>certificate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/certificate</p>
+      <div class="comment">
+         <span class="markdown">Denotes a certificate for this particular vehicleType.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="highSpeedLoadModelCompliance">
       <h3>Compliance of structures with the High Speed Load Model (HSLM) dynamic load model<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -8102,49 +8467,6 @@ The concept scheme is temporarily non-deferenceable.</span>
                <a href="http://www.w3.org/2001/XMLSchema#boolean"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hotAxleBoxDetectorDirection">
-      <h3>Direction of measurement of trackside HABD<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/hotAxleBoxDetectorDirection</p>
-      <div class="comment">
-         <span class="markdown">Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <dl>
-         <dt>Rinf index</dt>
-         <dd>1.1.1.1.7.9</dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -10399,9 +10721,8 @@ The concept scheme is temporarily non-deferenceable.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#GradientCurve" title="http://data.europa.eu/949/GradientCurve">Gradient Curve</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Siding" title="http://data.europa.eu/949/Siding">Siding</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -11058,6 +11379,12 @@ The concept scheme is temporarily non-deferenceable.</span>
                   title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InfrastructureManager"
+                  title="http://data.europa.eu/949/InfrastructureManager">Infrastructure manager</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -11318,9 +11645,8 @@ The concept scheme is temporarily non-deferenceable.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#LineReference" title="http://data.europa.eu/949/LineReference">Line Reference</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -11371,6 +11697,11 @@ The concept scheme is temporarily non-deferenceable.</span>
             <strong>has characteristics:
                 </strong> functional</p>
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EraFeature" title="http://data.europa.eu/949/EraFeature">ERA Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#double"
@@ -12306,6 +12637,11 @@ This property was before an object skos property. The values for this property d
             <strong>has characteristics:
                 </strong> functional</p>
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -13373,6 +13709,41 @@ This property was before an object skos property. The values for this property d
                <a href="http://www.w3.org/2001/XMLSchema#boolean"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nonCodedRestrictions">
+      <h3>non coded restrictions<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/nonCodedRestrictions</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -15794,6 +16165,9 @@ This property was before an object skos property. The values for this property d
          <dd>stable</dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -16464,200 +16838,11 @@ This property was before an object skos property. The values for this property d
          </dl>
       </div>
    </div>
-</div><div xmlns:era="http://data.europa.eu/949/"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#concepts/osmClass/funicular"
-            title="http://data.europa.eu/949/concepts/osmClass/funicular">funicular</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/light_rail"
-            title="http://data.europa.eu/949/concepts/osmClass/light_rail">light rail</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/miniature_railway"
-            title="http://data.europa.eu/949/concepts/osmClass/miniature_railway">miniature railway</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/monorail"
-            title="http://data.europa.eu/949/concepts/osmClass/monorail">monorail</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/narrow_gauge"
-            title="http://data.europa.eu/949/concepts/osmClass/narrow_gauge">narrow gauge</a>
-      </li>
-      <li>
-         <a href="#schemes/osmClass" title="http://data.europa.eu/949/schemes/osmClass">OSM class</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/rail"
-            title="http://data.europa.eu/949/concepts/osmClass/rail">rail</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/subway"
-            title="http://data.europa.eu/949/concepts/osmClass/subway">subway</a>
-      </li>
-      <li>
-         <a href="#concepts/osmClass/tram"
-            title="http://data.europa.eu/949/concepts/osmClass/tram">tram</a>
-      </li>
-   </ul>
-   <div class="entity" id="concepts/osmClass/funicular">
-      <h3>funicular<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/funicular</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/light_rail">
-      <h3>light rail<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/light_rail</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/miniature_railway">
-      <h3>miniature railway<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/miniature_railway</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/monorail">
-      <h3>monorail<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/monorail</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/narrow_gauge">
-      <h3>narrow gauge<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/narrow_gauge</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="schemes/osmClass">
-      <h3>OSM class<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/schemes/osmClass</p>
-      <div class="comment">
-         <span class="markdown">Concepts for OpenStreetMap classes.</span>
-      </div>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/rail">
-      <h3>rail<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/rail</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/subway">
-      <h3>subway<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/subway</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="concepts/osmClass/tram">
-      <h3>tram<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/concepts/osmClass/tram</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2004/02/skos/core#Concept"
-               target="_blank"
-               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-         </dd>
-      </dl>
-   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>

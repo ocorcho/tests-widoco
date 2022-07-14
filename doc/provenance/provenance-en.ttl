@@ -17,9 +17,9 @@
 	 prov:wasAttributedTo :agent4;
 	 prov:wasAttributedTo :agent5;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.2>;
-	 prov:wasRevisionOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.1>;
-	 prov:wasGeneratedAt "2022-06-27";
+	 prov:specializationOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.5.0>;
+	 prov:wasRevisionOf <https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.2>;
+	 prov:wasGeneratedAt "2022-07-14";
 .
 :agent0 a prov:Agent; foaf:name "Ivo Velitchkov".
 :agent1 a prov:Agent; foaf:name "Marina Aguado".

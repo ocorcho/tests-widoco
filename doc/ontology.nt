@@ -261,7 +261,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/dataRadioCompatible> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.10" .
 <http://data.europa.eu/949/dataRadioCompatible> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/dataRadioCompatible> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility data. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en .
+<http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility voice.\n The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "Radio system compatibility data"@en .
 <http://data.europa.eu/949/dataRadioCompatible> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -643,8 +643,8 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/hasAbstraction
 <http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.europa.eu/949/hasImplementation> .
-<http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
-<http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/NetElement> .
+<http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/PhysicalImplementationFeature> .
+<http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/TopologicalObject> .
 <http://data.europa.eu/949/hasAbstraction> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasAbstraction> <http://purl.org/dc/terms/modified> "2021-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a physical entity with its topological abstraction representation."@en .
@@ -654,8 +654,8 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/hasImplementation
 <http://data.europa.eu/949/hasImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/hasImplementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/NetElement> .
-<http://data.europa.eu/949/hasImplementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://data.europa.eu/949/hasImplementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/TopologicalObject> .
+<http://data.europa.eu/949/hasImplementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/hasImplementation> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasImplementation> <http://purl.org/dc/terms/modified> "2021-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/hasImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a topological abstraction entity with its physical representation."@en .
@@ -674,8 +674,20 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/hasSignal> <http://www.w3.org/2000/01/rdf-schema#label> "has signal"@en .
 <http://data.europa.eu/949/hasSignal> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://data.europa.eu/949/hotAxleBoxDetectorDirection
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.7.9." .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://purl.org/dc/terms/created> "2022-07-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.\n\nThis property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS."@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/"@en .
+<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector direction"@en .
+# 
 # http://data.europa.eu/949/inCountry
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/inCountry> <http://purl.org/dc/terms/created> "2020-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/inCountry> <http://purl.org/dc/terms/modified> "2020-11-20"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -683,6 +695,15 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2000/01/rdf-schema#label> "in country"@en .
 <http://data.europa.eu/949/inCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://data.europa.eu/949/infrastructureMgr
+<http://data.europa.eu/949/infrastructureMgr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/infrastructureMgr> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/PhysicalImplementationFeature> .
+<http://data.europa.eu/949/infrastructureMgr> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/InfrastructureManager> .
+<http://data.europa.eu/949/infrastructureMgr> <http://purl.org/dc/terms/created> "2022-07-07"@en .
+<http://data.europa.eu/949/infrastructureMgr> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates any feature implemented in the European railway infrastructure with its infrastructure manager."@en .
+<http://data.europa.eu/949/infrastructureMgr> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/" .
+<http://data.europa.eu/949/infrastructureMgr> <http://www.w3.org/2000/01/rdf-schema#label> "infrastructure manager"@en .
 # 
 # http://data.europa.eu/949/legacyRadioSystem
 <http://data.europa.eu/949/legacyRadioSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -782,7 +803,6 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/magneticBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/magneticBraking> <http://data.europa.eu/949/eratvIndex> "4.7.4.2.1" .
-<http://data.europa.eu/949/magneticBraking> <http://data.europa.eu/949/isCoreParameter> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/magneticBraking> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/magneticBraking> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.6.3" .
 <http://data.europa.eu/949/magneticBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -954,10 +974,12 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/otherPantographHead
 <http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/otherPantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.2" .
 <http://data.europa.eu/949/otherPantographHead> <http://purl.org/dc/terms/created> "2022-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/otherPantographHead> <http://purl.org/dc/terms/modified> "2022-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which non-TSI compliant pantograph heads are allowed to be used."@en .
+<http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which non-TSI compliant pantograph heads are allowed to be used.\nIndication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads. The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted other pantograph heads"@en .
 <http://data.europa.eu/949/otherPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -986,6 +1008,15 @@ _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2000/01/rdf-schema#label> "parking brake type"@en .
 <http://data.europa.eu/949/parkingBrakeType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://data.europa.eu/949/partOf
+<http://data.europa.eu/949/partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/LinearLocation> .
+<http://data.europa.eu/949/partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/NetElement> .
+<http://data.europa.eu/949/partOf> <http://purl.org/dc/terms/created> "2022-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linear locations are subsections (part of) of other net elements"@en .
+<http://data.europa.eu/949/partOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/" .
+<http://data.europa.eu/949/partOf> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
 # 
 # http://data.europa.eu/949/passesThroughTunnel
 <http://data.europa.eu/949/passesThroughTunnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1052,6 +1083,18 @@ _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2000/01/rdf-schema#label> "position on B"@en .
 <http://data.europa.eu/949/positionOnB> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://data.europa.eu/949/previousVehicleType
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/VehicleType> .
+<http://data.europa.eu/949/previousVehicleType> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/previousVehicleType> <http://purl.org/dc/terms/modified> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a the previous VehicleType."@en .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/"@en .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "previous vehicle type"@en .
+<http://data.europa.eu/949/previousVehicleType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 # 
 # http://data.europa.eu/949/profileNumberSemiTrailers
 <http://data.europa.eu/949/profileNumberSemiTrailers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1212,6 +1255,17 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/startLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Start of tunnel"@en .
 <http://data.europa.eu/949/startLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://data.europa.eu/949/state
+<http://data.europa.eu/949/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/state> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Certificate> .
+<http://data.europa.eu/949/state> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/state> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/state> <http://purl.org/dc/terms/modified> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/state> <http://www.w3.org/2000/01/rdf-schema#comment> "Denoting the state of the certificate and range the following instances."@en .
+<http://data.europa.eu/949/state> <http://www.w3.org/2000/01/rdf-schema#label> "state"@en .
+<http://data.europa.eu/949/state> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
 # http://data.europa.eu/949/subCategory
 <http://data.europa.eu/949/subCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.europa.eu/949/subCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -1256,7 +1310,7 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tenClassification> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.0.3" .
 <http://data.europa.eu/949/tenClassification> <http://purl.org/dc/terms/created> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tenClassification> <http://purl.org/dc/terms/modified> "2021-09-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TenClassifications. The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the related TEN (trans-European network). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TENClassifications."@en .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2000/01/rdf-schema#label> "TEN classification (of track, of platform, of siding)"@en .
 <http://data.europa.eu/949/tenClassification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1480,7 +1534,7 @@ _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/tsiPantographHead> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.3.1" .
 <http://data.europa.eu/949/tsiPantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/tsiPantographHead> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable."@en .
+<http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads. The concept scheme is temporarily non-deferenceable."@en .
 <http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted TSI compliant pantograph heads"@en .
 <http://data.europa.eu/949/tsiPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1536,7 +1590,7 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/voiceRadioCompatible> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.9" .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://purl.org/dc/terms/modified> "2021-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility voice. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en .
+<http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#comment> "Radio requirements used for demonstrating technical compatibility voice.\n The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities"@en .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2000/01/rdf-schema#label> "Radio system compatibility voice"@en .
 <http://data.europa.eu/949/voiceRadioCompatible> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -1756,7 +1810,6 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
 <http://data.europa.eu/949/cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://data.europa.eu/949/cantDeficiency> <http://data.europa.eu/949/isCoreParameter> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/cantDeficiency> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/cantDeficiency> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.4.2" .
 <http://data.europa.eu/949/cantDeficiency> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -1777,6 +1830,17 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/catenaryMaxRatedCurrent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/catenaryMaxRatedCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "catenary max rated current"@en .
 <http://data.europa.eu/949/catenaryMaxRatedCurrent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://data.europa.eu/949/certificate
+<http://data.europa.eu/949/certificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/certificate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
+<http://data.europa.eu/949/certificate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.europa.eu/949/certificate> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/certificate> <http://purl.org/dc/terms/modified> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/certificate> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a certificate for this particular vehicleType."@en .
+<http://data.europa.eu/949/certificate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/" .
+<http://data.europa.eu/949/certificate> <http://www.w3.org/2000/01/rdf-schema#label> "certificate"@en .
+<http://data.europa.eu/949/certificate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 # 
 # http://data.europa.eu/949/compatibilityProcedureDocument
 <http://data.europa.eu/949/compatibilityProcedureDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -2280,8 +2344,15 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/gradient
 <http://data.europa.eu/949/gradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/GradientCurve> .
-<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Siding> .
+<http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/GradientCurve> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/gradient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/gradient> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.3.1" .
 <http://data.europa.eu/949/gradient> <http://purl.org/dc/terms/created> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2546,15 +2617,15 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/hasRegenerativeBrake
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid73 .
-_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/ContactLineSystem> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/ContactLineSystem> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://data.europa.eu/949/eratvIndex> "4.7.4.3.1" .
 <http://data.europa.eu/949/hasRegenerativeBrake> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.2.4" .
@@ -2711,19 +2782,6 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance of structures with the High Speed Load Model (HSLM) dynamic load model"@en .
 <http://data.europa.eu/949/highSpeedLoadModelCompliance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
-# http://data.europa.eu/949/hotAxleBoxDetectorDirection
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Track> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.7.9" .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://purl.org/dc/terms/modified> "2021-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."@en .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Direction of measurement of trackside HABD"@en .
-<http://data.europa.eu/949/hotAxleBoxDetectorDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
 # http://data.europa.eu/949/hotAxleBoxDetectorGeneration
 <http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/hotAxleBoxDetectorGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -2779,6 +2837,7 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/imCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/InfrastructureManager> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/imCode> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/imCode> <http://data.europa.eu/949/rinfIndex> "1.1.0.0.0.1" .
@@ -2789,7 +2848,7 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/imCode> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.0.1" .
 <http://data.europa.eu/949/imCode> <http://data.europa.eu/949/rinfIndex> "1.2.2.0.5.1" .
 <http://data.europa.eu/949/imCode> <http://purl.org/dc/terms/created> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/imCode> <http://purl.org/dc/terms/modified> "2021-08-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/imCode> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Infrastructure Manager means any body or undertaking that is responsible in particular for establishing and maintaining railway infrastructure or a part thereof. The Code is a unique identifier for the Infrastructure Manager and it shall be verified on national level."@en .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/imCode> <http://www.w3.org/2000/01/rdf-schema#label> "IM's code"@en .
@@ -2822,8 +2881,15 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/kilometer
 <http://data.europa.eu/949/kilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/kilometer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/LineReference> .
-<http://data.europa.eu/949/kilometer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/SpotLocation> .
+<http://data.europa.eu/949/kilometer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#unionOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/SpotLocation> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/LineReference> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/kilometer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/kilometer> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/kilometer> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2835,6 +2901,7 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/length
 <http://data.europa.eu/949/length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/EraFeature> .
 <http://data.europa.eu/949/length> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/length> <http://data.europa.eu/949/eratvIndex> "4.8.1" .
 <http://data.europa.eu/949/length> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -2887,15 +2954,15 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/localRulesOrRestrictions
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid76 .
-_:genid76 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/OperationalPoint> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#unionOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/OperationalPoint> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://data.europa.eu/949/rinfIndex> "1.1.1.4.1" .
 <http://data.europa.eu/949/localRulesOrRestrictions> <http://data.europa.eu/949/rinfIndex> "1.2.3.1" .
@@ -2908,15 +2975,15 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/localRulesOrRestrictionsDoc
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid79 .
-_:genid79 <http://www.w3.org/2002/07/owl#unionOf> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/OperationalPoint> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#unionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/OperationalPoint> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://data.europa.eu/949/rinfIndex> "1.1.1.4.2" .
 <http://data.europa.eu/949/localRulesOrRestrictionsDoc> <http://data.europa.eu/949/rinfIndex> "1.2.3.2" .
@@ -2968,18 +3035,18 @@ _:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/maxCurrentStandstillPantograph
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid82 .
-_:genid82 <http://www.w3.org/2002/07/owl#unionOf> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/ContactLineSystem> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#unionOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/ContactLineSystem> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://data.europa.eu/949/eratvIndex> "4.10.4" .
 <http://data.europa.eu/949/maxCurrentStandstillPantograph> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.2.3" .
@@ -2993,15 +3060,15 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/maxDistConsecutiveAxles
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid86 .
-_:genid86 <http://www.w3.org/2002/07/owl#unionOf> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#unionOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://data.europa.eu/949/eratvIndex> "4.14.2.1" .
 <http://data.europa.eu/949/maxDistConsecutiveAxles> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.2.2" .
@@ -3026,15 +3093,15 @@ _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/maxFlangeHeight
 <http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid89 .
-_:genid89 <http://www.w3.org/2002/07/owl#unionOf> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#unionOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/maxFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/maxFlangeHeight> <http://data.europa.eu/949/eratvIndex> "4.14.2.9" .
 <http://data.europa.eu/949/maxFlangeHeight> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.10" .
@@ -3047,15 +3114,15 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/maxImpedanceWheelset
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid92 .
-_:genid92 <http://www.w3.org/2002/07/owl#unionOf> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#unionOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://data.europa.eu/949/eratvIndex> "4.14.2.16" .
 <http://data.europa.eu/949/maxImpedanceWheelset> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.15.2" .
@@ -3155,15 +3222,15 @@ _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/maximumContactWireHeight
 <http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid95 .
-_:genid95 <http://www.w3.org/2002/07/owl#unionOf> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#unionOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://data.europa.eu/949/eratvIndex> "4.10.5" .
 <http://data.europa.eu/949/maximumContactWireHeight> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.2.5" .
@@ -3230,6 +3297,7 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/maximumSpeedAndCantDeficiency
 <http://data.europa.eu/949/maximumSpeedAndCantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/maximumSpeedAndCantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
 <http://data.europa.eu/949/maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/maximumSpeedAndCantDeficiency> <http://data.europa.eu/949/eratvIndex> "4.6.4" .
 <http://data.europa.eu/949/maximumSpeedAndCantDeficiency> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -3253,15 +3321,15 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://data.europa.eu/949/maximumTemperature
 <http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#unionOf> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#unionOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/maximumTemperature> <http://data.europa.eu/949/eratvIndex> "4.3.1" .
 <http://data.europa.eu/949/maximumTemperature> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -3302,15 +3370,15 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/minAxleLoad
 <http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid101 .
-_:genid101 <http://www.w3.org/2002/07/owl#unionOf> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#unionOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minAxleLoad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/minAxleLoad> <http://data.europa.eu/949/eratvIndex> "4.14.2.10" .
 <http://data.europa.eu/949/minAxleLoad> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.11" .
@@ -3336,15 +3404,15 @@ _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/minDistFirstLastAxle
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid104 .
-_:genid104 <http://www.w3.org/2002/07/owl#unionOf> _:genid106 .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#unionOf> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://data.europa.eu/949/eratvIndex> "4.14.2.3" .
 <http://data.europa.eu/949/minDistFirstLastAxle> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.4" .
@@ -3357,15 +3425,15 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/minFlangeHeight
 <http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid107 .
-_:genid107 <http://www.w3.org/2002/07/owl#unionOf> _:genid109 .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid113 .
+_:genid113 <http://www.w3.org/2002/07/owl#unionOf> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minFlangeHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/minFlangeHeight> <http://data.europa.eu/949/eratvIndex> "4.14.2.8" .
 <http://data.europa.eu/949/minFlangeHeight> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.9" .
@@ -3378,15 +3446,15 @@ _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/minFlangeThickness
 <http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid110 .
-_:genid110 <http://www.w3.org/2002/07/owl#unionOf> _:genid112 .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#unionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minFlangeThickness> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/minFlangeThickness> <http://data.europa.eu/949/eratvIndex> "4.14.2.7" .
 <http://data.europa.eu/949/minFlangeThickness> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.8" .
@@ -3399,15 +3467,15 @@ _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/minRimWidth
 <http://data.europa.eu/949/minRimWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid113 .
-_:genid113 <http://www.w3.org/2002/07/owl#unionOf> _:genid115 .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#unionOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minRimWidth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/minRimWidth> <http://data.europa.eu/949/eratvIndex> "4.14.2.5" .
 <http://data.europa.eu/949/minRimWidth> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.6" .
@@ -3432,15 +3500,15 @@ _:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/minWheelDiameter
 <http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid116 .
-_:genid116 <http://www.w3.org/2002/07/owl#unionOf> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#unionOf> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/TrainDetectionSystem> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/minWheelDiameter> <http://data.europa.eu/949/eratvIndex> "4.14.2.6" .
 <http://data.europa.eu/949/minWheelDiameter> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.7.7" .
@@ -3467,15 +3535,15 @@ _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://data.europa.eu/949/minimumContactWireHeight
 <http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid119 .
-_:genid119 <http://www.w3.org/2002/07/owl#unionOf> _:genid121 .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#unionOf> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://data.europa.eu/949/eratvIndex> "4.10.5" .
 <http://data.europa.eu/949/minimumContactWireHeight> <http://data.europa.eu/949/rinfIndex> "1.1.1.2.2.6" .
@@ -3502,18 +3570,18 @@ _:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://data.europa.eu/949/minimumHorizontalRadius
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid122 .
-_:genid122 <http://www.w3.org/2002/07/owl#unionOf> _:genid125 .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#unionOf> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://data.europa.eu/949/eratvIndex> "4.8.4" .
 <http://data.europa.eu/949/minimumHorizontalRadius> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -3528,15 +3596,15 @@ _:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/minimumTemperature
 <http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid126 .
-_:genid126 <http://www.w3.org/2002/07/owl#unionOf> _:genid128 .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#unionOf> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/minimumTemperature> <http://data.europa.eu/949/eratvIndex> "4.3.1" .
 <http://data.europa.eu/949/minimumTemperature> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -3564,15 +3632,15 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://data.europa.eu/949/minimumWheelDiameter
 <http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid129 .
-_:genid129 <http://www.w3.org/2002/07/owl#unionOf> _:genid131 .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid135 .
+_:genid135 <http://www.w3.org/2002/07/owl#unionOf> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://data.europa.eu/949/eratvIndex> "4.8.2" .
 <http://data.europa.eu/949/minimumWheelDiameter> <http://data.europa.eu/949/isCoreParameter> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -3630,6 +3698,18 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/netElementPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.europa.eu/949/netElementPosition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/netElementPosition> <http://www.w3.org/2000/01/rdf-schema#label> "netElementPosition"@en .
+# 
+# http://data.europa.eu/949/nonCodedRestrictions
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://purl.org/dc/terms/created> "2022-06-15" .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://purl.org/dc/terms/modified> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Denotes a non coded restrictions for this particular vehicleType, as a set of sentences."@en .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/2000/01/rdf-schema#label> "non coded restrictions"@en .
+<http://data.europa.eu/949/nonCodedRestrictions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
 # 
 # http://data.europa.eu/949/numberElementsRakeFreightWagons
 <http://data.europa.eu/949/numberElementsRakeFreightWagons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -4417,6 +4497,7 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/typeVersionNumber
 <http://data.europa.eu/949/typeVersionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/949/typeVersionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://data.europa.eu/949/typeVersionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
 <http://data.europa.eu/949/typeVersionNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/typeVersionNumber> <http://purl.org/dc/terms/created> "2020-11-22"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -4456,15 +4537,15 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://data.europa.eu/949/usesGroup555
 <http://data.europa.eu/949/usesGroup555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/usesGroup555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid132 .
-_:genid132 <http://www.w3.org/2002/07/owl#unionOf> _:genid134 .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid138 .
+_:genid138 <http://www.w3.org/2002/07/owl#unionOf> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/VehicleType> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/usesGroup555> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://data.europa.eu/949/usesGroup555> <http://data.europa.eu/949/eratvIndex> "4.13.2.12" .
 <http://data.europa.eu/949/usesGroup555> <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.4" .
@@ -4584,15 +4665,15 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/verificationINF
 <http://data.europa.eu/949/verificationINF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid135 .
-_:genid135 <http://www.w3.org/2002/07/owl#unionOf> _:genid137 .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#unionOf> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Track> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Siding> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/verificationINF> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/verificationINF> <http://data.europa.eu/949/rinfIndex> "1.1.1.1.1.1" .
 <http://data.europa.eu/949/verificationINF> <http://data.europa.eu/949/rinfIndex> "1.2.1.0.1.1" .
@@ -4695,6 +4776,14 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/Border> <http://www.w3.org/2000/01/rdf-schema#label> "border"@en .
 <http://data.europa.eu/949/Border> <http://www.w3.org/2004/02/skos/core#definition> "A border point is used to separate the railway network due to different reasons. Typical examples are country borders, the change of owning infrastructure manager or the border of a station."@en .
 # 
+# http://data.europa.eu/949/Certificate
+<http://data.europa.eu/949/Certificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/Certificate> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/Certificate> <http://purl.org/dc/terms/modified> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/Certificate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/" .
+<http://data.europa.eu/949/Certificate> <http://www.w3.org/2000/01/rdf-schema#label> "Certificate"@en .
+<http://data.europa.eu/949/Certificate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
 # http://data.europa.eu/949/ContactLineSystem
 <http://data.europa.eu/949/ContactLineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/ContactLineSystem> <http://purl.org/dc/terms/created> "2021-08-04"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -4712,6 +4801,14 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/ETCSLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/ETCSLevel> <http://www.w3.org/2000/01/rdf-schema#label> "ETCS Level"@en .
 <http://data.europa.eu/949/ETCSLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://data.europa.eu/949/EraFeature
+<http://data.europa.eu/949/EraFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/EraFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://data.europa.eu/949/EraFeature> <http://purl.org/dc/terms/created> "2022-07-07"@en .
+<http://data.europa.eu/949/EraFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that encompasses the features that have been physically implemented (class PhysicalImplementationFeature) and the topological objects (class Topological Object). It is a subclass of the geographical Feature class that has a spatial representation."@en .
+<http://data.europa.eu/949/EraFeature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/" .
+<http://data.europa.eu/949/EraFeature> <http://www.w3.org/2000/01/rdf-schema#label> "ERA Feature"@en .
 # 
 # http://data.europa.eu/949/FreightTerminal
 <http://data.europa.eu/949/FreightTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -4750,7 +4847,6 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/LinearLocation
 <http://data.europa.eu/949/LinearLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/LinearLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/NetElement> .
 <http://data.europa.eu/949/LinearLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/LinearLocation> <http://www.w3.org/2000/01/rdf-schema#label> "linear location"@en .
 <http://data.europa.eu/949/LinearLocation> <http://www.w3.org/2004/02/skos/core#scopeNote> "Some values are defined at parts of net elements.  These parts are indicated by the "@en .
@@ -4807,10 +4903,9 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/OperationalPoint
 <http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/OperationalPoint> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/OperationalPoint> <http://purl.org/dc/terms/modified> "2020-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/OperationalPoint> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers."@en .
 <http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Point"@en .
@@ -4824,11 +4919,19 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://data.europa.eu/949/OverCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "over crossing"@en .
 <http://data.europa.eu/949/OverCrossing> <http://www.w3.org/2004/02/skos/core#definition> "An over crossing describes a crossing, where something crosses over the railway line. From constructional point of view an over crossing can be a bridge or a tunnel."@nl .
 # 
+# http://data.europa.eu/949/PhysicalImplementationFeature
+<http://data.europa.eu/949/PhysicalImplementationFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/PhysicalImplementationFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/EraFeature> .
+<http://data.europa.eu/949/PhysicalImplementationFeature> <http://purl.org/dc/terms/created> "2022-07-07" .
+<http://data.europa.eu/949/PhysicalImplementationFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class encompasses all those classes that represent features that are physically implemented in the European railway infrastructure. It is a subclass of the geographical class Feature that has a spatial representation. It covers sidings, tracks, platforms, tunnels, operational points, and sections of line.\nA feature that has been physically implemented can be abstracted (hasAbstraction) as a topological object. It also is related to the infrastructure manager through the property infrastructureMgr." .
+<http://data.europa.eu/949/PhysicalImplementationFeature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/949/" .
+<http://data.europa.eu/949/PhysicalImplementationFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Implementation Feature"@en .
+# 
 # http://data.europa.eu/949/Platform
 <http://data.europa.eu/949/Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/OperationalPoint> .
+<http://data.europa.eu/949/Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/Platform> <http://purl.org/dc/terms/created> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/Platform> <http://purl.org/dc/terms/modified> "2021-08-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/Platform> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/Platform> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform for the purpose of RINF is understood as a platform edge. A platform concerns only the part of the structure neighbouring to the track (interfaced with trains)."@en .
 <http://data.europa.eu/949/Platform> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/Platform> <http://www.w3.org/2000/01/rdf-schema#label> "Platform"@en .
@@ -4836,41 +4939,41 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/PrincipalLocation
 <http://data.europa.eu/949/PrincipalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/PrincipalLocation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid138 .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid138 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid141 .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid140 .
-_:genid140 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opType> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/OperationalPoint> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/949/PrincipalLocation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid144 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
+_:genid146 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opType> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/OperationalPoint> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://data.europa.eu/949/PrincipalLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/PrincipalLocation> <http://www.w3.org/2000/01/rdf-schema#label> "principal location"@en .
 # 
 # http://data.europa.eu/949/SectionOfLine
 <http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
-_:genid142 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/NationalRailwayLine> .
-_:genid142 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/lineNationalId> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
-_:genid143 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/OperationalPoint> .
-_:genid143 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opEnd> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
-_:genid144 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/OperationalPoint> .
-_:genid144 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opStart> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PhysicalImplementationFeature> .
+<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid148 .
+_:genid148 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/NationalRailwayLine> .
+_:genid148 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/lineNationalId> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid149 .
+_:genid149 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/OperationalPoint> .
+_:genid149 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid149 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opEnd> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid150 .
+_:genid150 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/OperationalPoint> .
+_:genid150 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid150 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opStart> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://data.europa.eu/949/SectionOfLine> <http://purl.org/dc/terms/created> "2021-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/SectionOfLine> <http://purl.org/dc/terms/modified> "2021-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/SectionOfLine> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#comment> "A section of line means the part of line between adjacent operational points and may consist of several tracks."@en .
 <http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/SectionOfLine> <http://www.w3.org/2000/01/rdf-schema#label> "Section Of Line"@en .
@@ -4878,9 +4981,9 @@ _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/Siding
 <http://data.europa.eu/949/Siding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/Siding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/OperationalPoint> .
+<http://data.europa.eu/949/Siding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/Siding> <http://purl.org/dc/terms/created> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/Siding> <http://purl.org/dc/terms/modified> "2021-08-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/Siding> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/Siding> <http://purl.org/dc/terms/source> "Official Journal of the European Union L 139 I/85" .
 <http://data.europa.eu/949/Siding> <http://www.w3.org/2000/01/rdf-schema#comment> "Sidings are all those tracks where running trains in service movements ends and which are not used for operational routing of a train."@en .
 <http://data.europa.eu/949/Siding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
@@ -4916,21 +5019,6 @@ _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/Station
 <http://data.europa.eu/949/Station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/Station> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid145 .
-_:genid145 <http://www.w3.org/2002/07/owl#unionOf> _:genid148 .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid147 .
-_:genid147 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/949/concepts/op-types/station> .
-_:genid147 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opType> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid149 .
-_:genid149 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/949/concepts/op-types/borderStation> .
-_:genid149 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/opType> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/Station> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PrincipalLocation> .
 <http://data.europa.eu/949/Station> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 # 
@@ -4953,6 +5041,7 @@ _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/TopologicalObject
 <http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/EraFeature> .
 <http://data.europa.eu/949/TopologicalObject> <http://purl.org/dc/terms/created> "2022-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/TopologicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Topological Object"@en .
@@ -4960,8 +5049,9 @@ _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/Track
 <http://data.europa.eu/949/Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/Track> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/Track> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/Track> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/Track> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/Track> <http://www.w3.org/2000/01/rdf-schema#comment> "A running track that is used for train service movements."@en .
 <http://data.europa.eu/949/Track> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/Track> <http://www.w3.org/2000/01/rdf-schema#label> "Track"@en .
@@ -4978,9 +5068,9 @@ _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/Tunnel
 <http://data.europa.eu/949/Tunnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/Tunnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/OperationalPoint> .
+<http://data.europa.eu/949/Tunnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/PhysicalImplementationFeature> .
 <http://data.europa.eu/949/Tunnel> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/Tunnel> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/Tunnel> <http://purl.org/dc/terms/modified> "2022-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/Tunnel> <http://www.w3.org/2000/01/rdf-schema#comment> "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."@en .
 <http://data.europa.eu/949/Tunnel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/Tunnel> <http://www.w3.org/2000/01/rdf-schema#label> "Tunnel"@en .
@@ -5008,11 +5098,11 @@ _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/VehicleType
 <http://data.europa.eu/949/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/VehicleType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid150 .
-_:genid150 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/Manufacturer> .
-_:genid150 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid150 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/manufacturer> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/949/VehicleType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid151 .
+_:genid151 <http://www.w3.org/2002/07/owl#onClass> <http://data.europa.eu/949/Manufacturer> .
+_:genid151 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/manufacturer> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://data.europa.eu/949/VehicleType> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/VehicleType> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/VehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "A vehicle type that has been authorized to operate on the EU railway infrastructure."@en .
@@ -5058,60 +5148,6 @@ _:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # http://data.europa.eu/949/concepts/op-types/station
 <http://data.europa.eu/949/concepts/op-types/station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# http://data.europa.eu/949/concepts/osmClass/funicular
-<http://data.europa.eu/949/concepts/osmClass/funicular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/funicular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/funicular> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/funicular> <http://www.w3.org/2000/01/rdf-schema#label> "funicular"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/light_rail
-<http://data.europa.eu/949/concepts/osmClass/light_rail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/light_rail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/light_rail> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/light_rail> <http://www.w3.org/2000/01/rdf-schema#label> "light rail"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/miniature_railway
-<http://data.europa.eu/949/concepts/osmClass/miniature_railway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/miniature_railway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/miniature_railway> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/miniature_railway> <http://www.w3.org/2000/01/rdf-schema#label> "miniature railway"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/monorail
-<http://data.europa.eu/949/concepts/osmClass/monorail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/monorail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/monorail> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/monorail> <http://www.w3.org/2000/01/rdf-schema#label> "monorail"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/narrow_gauge
-<http://data.europa.eu/949/concepts/osmClass/narrow_gauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/narrow_gauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/narrow_gauge> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/narrow_gauge> <http://www.w3.org/2000/01/rdf-schema#label> "narrow gauge"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/rail
-<http://data.europa.eu/949/concepts/osmClass/rail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/rail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/rail> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/rail> <http://www.w3.org/2000/01/rdf-schema#label> "rail"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/subway
-<http://data.europa.eu/949/concepts/osmClass/subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/subway> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/subway> <http://www.w3.org/2000/01/rdf-schema#label> "subway"@en .
-# 
-# http://data.europa.eu/949/concepts/osmClass/tram
-<http://data.europa.eu/949/concepts/osmClass/tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/concepts/osmClass/tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/concepts/osmClass/tram> <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/949/schemes/osmClass> .
-<http://data.europa.eu/949/concepts/osmClass/tram> <http://www.w3.org/2000/01/rdf-schema#label> "tram"@en .
-# 
-# http://data.europa.eu/949/schemes/osmClass
-<http://data.europa.eu/949/schemes/osmClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://data.europa.eu/949/schemes/osmClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://data.europa.eu/949/schemes/osmClass> <http://www.w3.org/2000/01/rdf-schema#label> "OSM class"@en .
-<http://data.europa.eu/949/schemes/osmClass> <http://www.w3.org/2004/02/skos/core#definition> "Concepts for OpenStreetMap classes."@en .
 # 
 # 
 # 
