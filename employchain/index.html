@@ -1,0 +1,2645 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Vocabulary for the representation of EmployChain Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://employchain.se/def#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://employchain.se/def#","name":"Vocabulary for the representation of EmployChain Ontology", "headline":"The purpose of this vocabulary is to describe in a semantic manner information related to the EmployChain Ontology, which consists of a set of skills, occupations and qualifications related to each other, and also to job advertisements and people who search for that jobs.", "datePublished":"Mon Jul 11 18:30:24 CEST 2022", "version":"This is the initial version of the EmployChain Ontology", "license":"http://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Víctor Morcuende"},{"@type":"Person","name":"Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"}], "contributor":[{"@type":"Person","name":"Víctor Morcuende"},{"@type":"Person","name":"Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Vocabulary for the representation of EmployChain Ontology</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://employchain.se/def#">http://employchain.se/def#</a></dd>
+<!-- <dt>Latest version:</dt>
+<dd><a href="http://employchain.se/def#">http://employchain.se/def#</a></dd> -->
+<dt>Revision:</dt>
+<dd>This is the initial version of the EmployChain Ontology</dd>
+<dt>Authors:</dt>
+<dd>Víctor Morcuende</dd><dd>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</dd>
+
+<dt>Contributors:</dt>
+<dd>Víctor Morcuende</dd><dd>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</dd>
+
+<dt>Publisher:</dt>
+<dd>Víctor Morcuende</dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/4.0/-blue.svg" alt="http://creativecommons.org/licenses/by/4.0/" /></a>
+</dd>
+<dt>Cite as:</dt>
+<dd>Víctor Morcuende, Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid). Vocabulary for the representation of EmployChain Ontology. Revision: This is the initial version of the EmployChain Ontology. http://employchain.se/def#</dd>
+</dl>
+<br>
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+The purpose of this vocabulary is to describe in a semantic manner information related to the EmployChain Ontology, which consists of a set of skills, occupations and qualifications related to each other, and also to job advertisements and people in a search for jobs.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+<div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <p>
+      This vocabulary represents information related to EmployChain Ontology. The data used in it comes from the company EmployChain along with information from the taxonomy 
+      European Skills, Competences, qualifications and Occupations (ESCO) Ontology. In this way, this vocabulary describes information about a company, which offers a job advertisement, and 
+      a seeker (a person) that wants to apply to that specific offer, taking into account the classes from ESCO (Occupations, Qualifications and Skills required for that job or acquired by 
+      that seeker).
+   </p>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>emp</b></td><td>&lt;http://employchain.se/def#&gt;</td></tr>
+<tr><td><b>empkos</b></td><td>&lt;http://employchain.se/kos#&gt;</td></tr>
+<tr><td><b>esco</b></td><td>&lt;http://data.europa.eu/esco/&gt;</td></tr>
+<tr><td><b>escokos</b></td><td>&lt;http://data.europa.eu/kos/esco/&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>dct</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;https://schema.org/&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace#&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Vocabulary for the representation of EmployChain Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://data.europa.eu/esco/Accreditation" title="http://data.europa.eu/esco/Accreditation">Accreditation</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/AwardingActivity" title="http://data.europa.eu/esco/AwardingActivity">Awarding Activity</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/AwardingBody" title="http://data.europa.eu/esco/AwardingBody">Awarding Body</a>
+   </li>
+   <li>
+      <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/EntryRequirement" title="http://data.europa.eu/esco/EntryRequirement">Entry Requirement</a>
+   </li>
+   <li>
+      <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/Organization" title="https://schema.org/Organization">Organization</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/Recognition" title="http://data.europa.eu/esco/Recognition">Recognition</a>
+   </li>
+   <li>
+      <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#appliesFor" title="http://employchain.se/def#appliesFor">applies for</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasAccreditation" title="http://data.europa.eu/esco/hasAccreditation">has accreditation</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasAwardingActivity" title="http://data.europa.eu/esco/hasAwardingActivity">has awarding activity</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasAwardingBody" title="http://data.europa.eu/esco/hasAwardingBody">has awarding body</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasEntryRequirement" title="http://data.europa.eu/esco/hasEntryRequirement">has entry requirement</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasLearningOutcome" title="http://data.europa.eu/esco/hasLearningOutcome">has learning outcome</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasNACECode" title="http://data.europa.eu/esco/hasNACECode">has nace code</a>
+   </li>
+   <li>
+      <a href="#hasOccupation" title="http://employchain.se/def#hasOccupation">has occupation</a>
+   </li>
+   <li>
+      <a href="#hasQualification" title="http://employchain.se/def#hasQualification">has qualification</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasRecognition" title="http://data.europa.eu/esco/hasRecognition">has recognition</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasRequirementCategory"
+         title="http://data.europa.eu/esco/hasRequirementCategory">has requirement category</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasRequirementLevel" title="http://data.europa.eu/esco/hasRequirementLevel">has requirement level</a>
+   </li>
+   <li>
+      <a href="#hasSkill" title="http://employchain.se/def#hasSkill">has skill</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/hasWorkContext" title="http://data.europa.eu/esco/hasWorkContext">has work context</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/isEssentialSkillFor" title="http://data.europa.eu/esco/isEssentialSkillFor">is essential skill for</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/isLegallyRequiredQualificationFor"
+         title="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">is legally required qualification for</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/isOptionalSkillFor" title="http://data.europa.eu/esco/isOptionalSkillFor">is optional skill for</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/isQualificationFor" title="http://data.europa.eu/esco/isQualificationFor">is qualification for</a>
+   </li>
+   <li>
+      <a href="#isRecommendedFor" title="http://employchain.se/def#isRecommendedFor">is recommended for</a>
+   </li>
+   <li>
+      <a href="#offers" title="http://employchain.se/def#offers">offers</a>
+   </li>
+   <li>
+      <a href="#requiresOccupation" title="http://employchain.se/def#requiresOccupation">requires occupation</a>
+   </li>
+   <li>
+      <a href="#requiresQualification" title="http://employchain.se/def#requiresQualification">requires qualification</a>
+   </li>
+   <li>
+      <a href="#requiresSkill" title="http://employchain.se/def#requiresSkill">requires skill</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/skillReusabilityLevel" title="http://data.europa.eu/esco/skillReusabilityLevel">skill reusability level</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/skillType" title="http://data.europa.eu/esco/skillType">skill type</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/wayToAcquire" title="http://data.europa.eu/esco/wayToAcquire">way to acquire</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://data.europa.eu/esco/approvalDate" title="http://data.europa.eu/esco/approvalDate">approval date</a>
+   </li>
+   <li>
+      <a href="#company" title="http://employchain.se/def#company">company</a>
+   </li>
+   <li>
+      <a href="#companyLocation" title="http://employchain.se/def#companyLocation">company location</a>
+   </li>
+   <li>
+      <a href="#contactPersonEmail" title="http://employchain.se/def#contactPersonEmail">contact person email</a>
+   </li>
+   <li>
+      <a href="#contactPersonName" title="http://employchain.se/def#contactPersonName">contact person name</a>
+   </li>
+   <li>
+      <a href="#contacts" title="http://employchain.se/def#contacts">contacts</a>
+   </li>
+   <li>
+      <a href="#createdAt" title="http://employchain.se/def#createdAt">created at</a>
+   </li>
+   <li>
+      <a href="#dailyApplications" title="http://employchain.se/def#dailyApplications">daily applications</a>
+   </li>
+   <li>
+      <a href="#dailyBookmarks" title="http://employchain.se/def#dailyBookmarks">daily bookmarks</a>
+   </li>
+   <li>
+      <a href="#deadline" title="http://employchain.se/def#deadline">deadline</a>
+   </li>
+   <li>
+      <a href="#degreeLevel" title="http://employchain.se/def#degreeLevel">degree level</a>
+   </li>
+   <li>
+      <a href="#duration" title="http://employchain.se/def#duration">duration</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/ECTSCreditPoints" title="http://data.europa.eu/esco/ECTSCreditPoints">e c t s credit points</a>
+   </li>
+   <li>
+      <a href="#educationLevel" title="http://employchain.se/def#educationLevel">education level</a>
+   </li>
+   <li>
+      <a href="#email" title="http://employchain.se/def#email">email</a>
+   </li>
+   <li>
+      <a href="#employmentType" title="http://employchain.se/def#employmentType">employment type</a>
+   </li>
+   <li>
+      <a href="#experienceLevel" title="http://employchain.se/def#experienceLevel">experience level</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/expiryDate" title="http://data.europa.eu/esco/expiryDate">expiry date</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/expiryPeriod" title="http://data.europa.eu/esco/expiryPeriod">expiry period</a>
+   </li>
+   <li>
+      <a href="#firstName" title="http://employchain.se/def#firstName">first name</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/isPartialQualification"
+         title="http://data.europa.eu/esco/isPartialQualification">is partial qualification</a>
+   </li>
+   <li>
+      <a href="#lastName" title="http://employchain.se/def#lastName">last name</a>
+   </li>
+   <li>
+      <a href="#location" title="http://employchain.se/def#location">location</a>
+   </li>
+   <li>
+      <a href="#name" title="http://employchain.se/def#name">name</a>
+   </li>
+   <li>
+      <a href="#numberOfVacancies" title="http://employchain.se/def#numberOfVacancies">number of vacancies</a>
+   </li>
+   <li>
+      <a href="#occupationField" title="http://employchain.se/def#occupationField">occupation field</a>
+   </li>
+   <li>
+      <a href="#position" title="http://employchain.se/def#position">position</a>
+   </li>
+   <li>
+      <a href="#program" title="http://employchain.se/def#program">program</a>
+   </li>
+   <li>
+      <a href="#remoteWork" title="http://employchain.se/def#remoteWork">remote work</a>
+   </li>
+   <li>
+      <a href="#responsibilityTasks" title="http://employchain.se/def#responsibilityTasks">responsibility tasks</a>
+   </li>
+   <li>
+      <a href="#role" title="http://employchain.se/def#role">role</a>
+   </li>
+   <li>
+      <a href="#salaryType" title="http://employchain.se/def#salaryType">salary type</a>
+   </li>
+   <li>
+      <a href="#school" title="http://employchain.se/def#school">school</a>
+   </li>
+   <li>
+      <a href="#schoolLocation" title="http://employchain.se/def#schoolLocation">school location</a>
+   </li>
+   <li>
+      <a href="#status" title="http://employchain.se/def#status">status</a>
+   </li>
+   <li>
+      <a href="#title" title="http://employchain.se/def#title">title</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/esco/volumeOfLearning" title="http://data.europa.eu/esco/volumeOfLearning">volume of learning</a>
+   </li>
+   <li>
+      <a href="#workingHoursType" title="http://employchain.se/def#workingHoursType">working hours type</a>
+   </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+<div id="description"><h2 id="desc" class="list">Vocabulary for the representation of EmployChain Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <span class="markdown">Figure 1 shows the classes and properties of the vocabulary that represents the data of EmployChain Ontology: </span>
+   <center>
+      <img src="resources/images/EmployChain Diagram.png" width="915px" height="635px">
+      <figcaption>Figure 1. Conceptual model for the representation of EmployChain Ontology</figcaption>
+   </center>
+   <p>
+      As mentioned before, the scope of this vocabulary is the representation of data from the EmployChain Ontology. To accomplish this purpose, as it can be seen in the figure, 
+      several classes and properties have been defined in order to describe these data, such as the Job class, which collects information about the title of the job, its status, its type of 
+      working hours, its contact's person name and email, its deadline and duration, its educational and experience level, its employment type, its location and position, its number of vacancies, 
+      its occupation field, its remote work type, its responsibility tasks and its type of salary. Furthermore, the Occupation class, among others, has several SKOS concept schemes to represent the NACE code 
+      of the occupation as well as its work context. Additionally, the <a target="_blank" href="https://esco.ec.europa.eu/en/classification/occupation_main">esco:Occupation</a>, 
+      <a target="_blank" href="https://esco.ec.europa.eu/en/classification/qualifications">esco:Qualification</a> and 
+      <a target="_blank" href="https://esco.ec.europa.eu/en/classification/skill_main">esco:Skill</a> classes have been used to show the skills, qualifications and occupations that 
+      a certain seeker possesses in order to link these characteristics with a suitable job advertisement or vice versa.
+      
+      Finally, multiple vocabularies have been reused: the <a target="_blank" href="https://schema.org/Person">schema:Person</a> vocabulary, to describe the seeker of the job and the 
+      vocabulary of <a target="_blank" href="https://schema.org/Organization">schema:Organization</a> to show how the classes Company and AwardingBody are organizations.
+   </p>
+   <h3 id="use-examples" class="list">Examples of use</h3>
+   <p>In order to understand the use of some classes and properties in this vocabulary some examples have been provided:</p>
+   <pre>
+      <<!---->http://www.example.org/employchain/seeker/Jürgen-Klopp> a emp:Seeker ;
+         dct:identifier "afffcc40-47cc-11ec-a987-c91dfadae1bc" ;
+         emp:firstName "Jürgen" ;
+         emp:lastName "Klopp" ;
+         emp:email "jürgenklopp@icloud.com" ;
+         emp:dailyApplications "2"^^xsd:integer ;
+         emp:dailyBookmarks "3"^^xsd:integer ;
+         emp:degreeLevel "Bachelor" ;
+         emp:program "Computer Science" ;
+         emp:school "University of Wismar" ;
+         emp:schoolLocation "Germany" ;
+         emp:company "BlockchainX AB" ;
+         emp:employmentType "Contract" ;
+         emp:companyLocation "Jönköping" ;
+         emp:role "Tester" ;
+         emp:appliesFor <<!---->http://www.example.org/employchain/job/ontology-engineer> ;
+         emp:isRecommendedFor <<!---->http://www.example.org/employchain/job/database-developer> ;
+         emp:hasSkill <<!---->http://www.example.org/employchain/skill/python> ;
+         emp:hasQualification <<!---->http://www.example.org/employchain/qualification/master-degree-in-computer-science-&-mathematics> ;
+         emp:hasOccupation <<!---->http://www.example.org/employchain/occupation/web-developer> ;
+         rdfs:subClassOf schema:Person .
+   </pre>
+   <p style="text-align: center">A seeker named Jürgen-Klopp who studied Computer Science and applies for a job called Ontology Engineer.
+   </p>
+   <br>
+   <pre>
+      <<!---->http://www.example.org/employchain/company/EmployChain> a emp:Company ;
+         dct:identifier "559203-8656" ;
+         emp:name "EmployChain" ;
+         emp:contacts "employchain@icloud.com" ;
+         emp:createdAt "2007-01-01"^^xsd:date ;
+         rdfs:subClassOf schema:Organization .
+   </pre>
+   <p style="text-align: center">A company called EmployChain that offers jobs (such as Ontology Engineer).
+   </p>
+   <br>
+   <pre>
+      <<!---->http://www.example.org/employchain/job/ontology-engineer> a emp:Job ;
+         emp:title "Ontology Engineer" ;
+         emp:status "Published" ;
+         emp:workingHoursType "Full-time" ;
+         emp:contactPersonEmail "employchain@gmail.com" ;
+         emp:contactPersonName "André" ;
+         emp:deadline "2022-06-30"^^xsd:date ;
+         emp:duration "Permanent" ;
+         emp:educationLevel "Masters" ;
+         emp:employmentType "Permanent employment" ;
+         emp:experienceLevel "Associate" ;
+         emp:location "Landkreis Rostock" ;
+         emp:numberOfVacancies "1"^^xsd:integer ;
+         emp:occupationField "apaJ_2ja_LuF" ;
+         emp:position "Software Architect" ;
+         emp:remoteWork "Fully Remote" ;
+         emp:responsibilityTasks "Build an ontology. Develop a superior matching algorithm" ;
+         emp:salaryType "FixedMonthlyWeeklyHourlySalary" ;
+         emp:requiresSkill <<!---->http://www.example.org/employchain/skill/python> ;
+         emp:requiresQualification <<!---->http://www.example.org/employchain/qualification/master-degree-in-computer-science-&-mathematics> .
+   </pre>
+   <p style="text-align: center">A job advertisement to build an ontology that requires certain skills and qualifications.
+   </p>
+   <br>
+   <pre>
+      <<!---->http://www.example.org/employchain/skill/python> a esco:Skill ;
+         esco:isEssentialSkillFor <<!---->http://www.example.org/employchain/occupation/computer-vision-engineer> ;
+         esco:isOptionalSkillFor <<!---->http://www.example.org/employchain/occupation/cloud-engineer> ;
+         esco:skillType <<!---->http://data.europa.eu/kos/esco/competence-sub-type/knowledge> ;
+         esco:skillReusabilityLevel <<!---->http://data.europa.eu/kos/esco/skill-reuse-level/sector-specific-skills-and-competences> .
+   
+      <<!---->http://www.example.org/employchain/occupation/web-developer> a esco:Occupation ;
+         esco:hasNACECode <<!---->http://data.europa.eu/kos/esco/NACE-code/2513.5> ;
+         esco:hasWorkContext <<!---->http://data.europa.eu/kos/esco/work-context/web-and-multimedia-developers> .
+   
+      <<!---->http://www.example.org/employchain/qualification/master-degree-in-computer-science-&-mathematics> a esco:Qualification ;
+         esco:ECTSCreditPoints "120"^^xsd:integer ;
+         esco:expiryPeriod "P6Y"^^xsd:duration ;
+         esco:isPartialQualification "false"^^xsd:boolean ;
+         esco:volumeOfLearning "P2Y"^^xsd:duration ;
+         esco:hasLearningOutcome <<!---->http://www.example.org/employchain/skill/python> ;
+         esco:isQualificationFor <<!---->http://www.example.org/employchain/occupation/web-developer> ;
+         esco:isQualificationFor <<!---->http://www.example.org/employchain/skill/python> ;
+         esco:isLegallyRequiredQualificationFor <<!---->http://www.example.org/employchain/occupation/mobile-application-developer> ;
+         esco:isLegallyRequiredQualificationFor <<!---->http://www.example.org/employchain/skill/java> ;
+         esco:wayToAcquire <<!---->http://data.europa.eu/kos/esco/acquisition-way/formal-learning-processes> ;
+         esco:hasAwardingBody <<!---->http://www.example.org/employchain/awarding-body/UPM> ;
+         esco:hasAwardingActivity <<!---->http://www.example.org/employchain/awarding-activity/UPM> ;
+         esco:hasRecognition <<!---->http://www.example.org/employchain/recognition/UPM> ;
+         esco:hasAccreditation <<!---->http://www.example.org/employchain/accreditation/UPM-diploma> ;
+         esco:hasEntryRequirement <<!---->http://www.example.org/employchain/entry-requirement/32> .
+   
+      <<!---->http://www.example.org/employchain/awarding-body/UPM> a esco:AwardingBody ;
+         rdfs:subClassOf schema:Organization .
+   
+      <<!---->http://www.example.org/employchain/awarding-activity/UPM> a esco:AwardingActivity .
+   
+      <<!---->http://www.example.org/employchain/recognition/UPM> a esco:Recognition .
+   
+      <<!---->http://www.example.org/employchain/accreditation/UPM-diploma> a esco:Accreditation ;
+         esco:approvalDate "2020-06-30"^^xsd:date ;
+         esco:expiryDate "P6Y"^^xsd:duration .
+   
+      <<!---->http://www.example.org/employchain/entry-requirement/32> a esco:EntryRequirement ;
+         esco:hasRequirementLevel <<!---->http://data.europa.eu/kos/esco/requirement-level/4> ;
+         esco:hasRequirementCategory <<!---->http://data.europa.eu/kos/esco/requirement-category/academic-qualification> .
+   </pre>
+   <p style="text-align: center">A set of ESCO Skill, Occupation and Qualification related to the seeker Jürgen-Klopp and the job advertisement Ontology Engineer.
+   </p>
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Vocabulary for the representation of EmployChain Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Vocabulary for the representation of EmployChain Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://data.europa.eu/esco/Accreditation" title="http://data.europa.eu/esco/Accreditation">Accreditation</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/AwardingActivity" title="http://data.europa.eu/esco/AwardingActivity">Awarding Activity</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/AwardingBody" title="http://data.europa.eu/esco/AwardingBody">Awarding Body</a>
+      </li>
+      <li>
+         <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/EntryRequirement" title="http://data.europa.eu/esco/EntryRequirement">Entry Requirement</a>
+      </li>
+      <li>
+         <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/Organization" title="https://schema.org/Organization">Organization</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/Recognition" title="http://data.europa.eu/esco/Recognition">Recognition</a>
+      </li>
+      <li>
+         <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://data.europa.eu/esco/Accreditation">
+      <h3>Accreditation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/Accreditation</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/approvalDate" title="http://data.europa.eu/esco/approvalDate">approval date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/esco/expiryDate" title="http://data.europa.eu/esco/expiryDate">expiry date</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasAccreditation" title="http://data.europa.eu/esco/hasAccreditation">has accreditation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/AwardingActivity">
+      <h3>Awarding Activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/AwardingActivity</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasAwardingActivity" title="http://data.europa.eu/esco/hasAwardingActivity">has awarding activity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/AwardingBody">
+      <h3>Awarding Body<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/AwardingBody</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://schema.org/Organization" title="https://schema.org/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasAwardingBody" title="http://data.europa.eu/esco/hasAwardingBody">has awarding body</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Company">
+      <h3>Company<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#Company</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://schema.org/Organization" title="https://schema.org/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#contacts" title="http://employchain.se/def#contacts">contacts</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#createdAt" title="http://employchain.se/def#createdAt">created at</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name" title="http://employchain.se/def#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#offers" title="http://employchain.se/def#offers">offers</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/EntryRequirement">
+      <h3>Entry Requirement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/EntryRequirement</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasRequirementCategory"
+               title="http://data.europa.eu/esco/hasRequirementCategory">has requirement category</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasRequirementLevel" title="http://data.europa.eu/esco/hasRequirementLevel">has requirement level</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasEntryRequirement" title="http://data.europa.eu/esco/hasEntryRequirement">has entry requirement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Job">
+      <h3>Job<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#Job</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#contactPersonEmail" title="http://employchain.se/def#contactPersonEmail">contact person email</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#contactPersonName" title="http://employchain.se/def#contactPersonName">contact person name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#deadline" title="http://employchain.se/def#deadline">deadline</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#duration" title="http://employchain.se/def#duration">duration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#educationLevel" title="http://employchain.se/def#educationLevel">education level</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#experienceLevel" title="http://employchain.se/def#experienceLevel">experience level</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#location" title="http://employchain.se/def#location">location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfVacancies" title="http://employchain.se/def#numberOfVacancies">number of vacancies</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#occupationField" title="http://employchain.se/def#occupationField">occupation field</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#position" title="http://employchain.se/def#position">position</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#remoteWork" title="http://employchain.se/def#remoteWork">remote work</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#requiresOccupation" title="http://employchain.se/def#requiresOccupation">requires occupation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requiresQualification" title="http://employchain.se/def#requiresQualification">requires qualification</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requiresSkill" title="http://employchain.se/def#requiresSkill">requires skill</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#responsibilityTasks" title="http://employchain.se/def#responsibilityTasks">responsibility tasks</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#salaryType" title="http://employchain.se/def#salaryType">salary type</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#status" title="http://employchain.se/def#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#title" title="http://employchain.se/def#title">title</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#workingHoursType" title="http://employchain.se/def#workingHoursType">working hours type</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#appliesFor" title="http://employchain.se/def#appliesFor">applies for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#offers" title="http://employchain.se/def#offers">offers</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/Occupation">
+      <h3>Occupation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/Occupation</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasNACECode" title="http://data.europa.eu/esco/hasNACECode">has nace code</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasWorkContext" title="http://data.europa.eu/esco/hasWorkContext">has work context</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasOccupation" title="http://employchain.se/def#hasOccupation">has occupation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isEssentialSkillFor" title="http://data.europa.eu/esco/isEssentialSkillFor">is essential skill for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isLegallyRequiredQualificationFor"
+               title="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">is legally required qualification for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isOptionalSkillFor" title="http://data.europa.eu/esco/isOptionalSkillFor">is optional skill for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isQualificationFor" title="http://data.europa.eu/esco/isQualificationFor">is qualification for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requiresOccupation" title="http://employchain.se/def#requiresOccupation">requires occupation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/Organization">
+      <h3>Organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Organization</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/AwardingBody" title="http://data.europa.eu/esco/AwardingBody">Awarding Body</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/Person">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Person</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/Qualification">
+      <h3>Qualification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/Qualification</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/ECTSCreditPoints" title="http://data.europa.eu/esco/ECTSCreditPoints">e c t s credit points</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/esco/expiryPeriod" title="http://data.europa.eu/esco/expiryPeriod">expiry period</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/esco/hasAccreditation" title="http://data.europa.eu/esco/hasAccreditation">has accreditation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasAwardingActivity" title="http://data.europa.eu/esco/hasAwardingActivity">has awarding activity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasAwardingBody" title="http://data.europa.eu/esco/hasAwardingBody">has awarding body</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasEntryRequirement" title="http://data.europa.eu/esco/hasEntryRequirement">has entry requirement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasLearningOutcome" title="http://data.europa.eu/esco/hasLearningOutcome">has learning outcome</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/hasRecognition" title="http://data.europa.eu/esco/hasRecognition">has recognition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isLegallyRequiredQualificationFor"
+               title="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">is legally required qualification for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isPartialQualification"
+               title="http://data.europa.eu/esco/isPartialQualification">is partial qualification</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/esco/isQualificationFor" title="http://data.europa.eu/esco/isQualificationFor">is qualification for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/volumeOfLearning" title="http://data.europa.eu/esco/volumeOfLearning">volume of learning</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/esco/wayToAcquire" title="http://data.europa.eu/esco/wayToAcquire">way to acquire</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasQualification" title="http://employchain.se/def#hasQualification">has qualification</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requiresQualification" title="http://employchain.se/def#requiresQualification">requires qualification</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/Recognition">
+      <h3>Recognition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/Recognition</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasRecognition" title="http://data.europa.eu/esco/hasRecognition">has recognition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Seeker">
+      <h3>Seeker<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#Seeker</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#appliesFor" title="http://employchain.se/def#appliesFor">applies for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#company" title="http://employchain.se/def#company">company</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#companyLocation" title="http://employchain.se/def#companyLocation">company location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#dailyApplications" title="http://employchain.se/def#dailyApplications">daily applications</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#dailyBookmarks" title="http://employchain.se/def#dailyBookmarks">daily bookmarks</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#degreeLevel" title="http://employchain.se/def#degreeLevel">degree level</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#email" title="http://employchain.se/def#email">email</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#employmentType" title="http://employchain.se/def#employmentType">employment type</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#firstName" title="http://employchain.se/def#firstName">first name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasOccupation" title="http://employchain.se/def#hasOccupation">has occupation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasQualification" title="http://employchain.se/def#hasQualification">has qualification</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSkill" title="http://employchain.se/def#hasSkill">has skill</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRecommendedFor" title="http://employchain.se/def#isRecommendedFor">is recommended for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#lastName" title="http://employchain.se/def#lastName">last name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#program" title="http://employchain.se/def#program">program</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#role" title="http://employchain.se/def#role">role</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#school" title="http://employchain.se/def#school">school</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#schoolLocation" title="http://employchain.se/def#schoolLocation">school location</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/Skill">
+      <h3>Skill<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/Skill</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/isEssentialSkillFor" title="http://data.europa.eu/esco/isEssentialSkillFor">is essential skill for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isOptionalSkillFor" title="http://data.europa.eu/esco/isOptionalSkillFor">is optional skill for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/skillReusabilityLevel" title="http://data.europa.eu/esco/skillReusabilityLevel">skill reusability level</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/skillType" title="http://data.europa.eu/esco/skillType">skill type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/esco/hasLearningOutcome" title="http://data.europa.eu/esco/hasLearningOutcome">has learning outcome</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSkill" title="http://employchain.se/def#hasSkill">has skill</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isEssentialSkillFor" title="http://data.europa.eu/esco/isEssentialSkillFor">is essential skill for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isLegallyRequiredQualificationFor"
+               title="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">is legally required qualification for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isOptionalSkillFor" title="http://data.europa.eu/esco/isOptionalSkillFor">is optional skill for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/esco/isQualificationFor" title="http://data.europa.eu/esco/isQualificationFor">is qualification for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requiresSkill" title="http://employchain.se/def#requiresSkill">requires skill</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="objectproperties-headline" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#appliesFor" title="http://employchain.se/def#appliesFor">applies for</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasAccreditation" title="http://data.europa.eu/esco/hasAccreditation">has accreditation</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasAwardingActivity" title="http://data.europa.eu/esco/hasAwardingActivity">has awarding activity</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasAwardingBody" title="http://data.europa.eu/esco/hasAwardingBody">has awarding body</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasEntryRequirement" title="http://data.europa.eu/esco/hasEntryRequirement">has entry requirement</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasLearningOutcome" title="http://data.europa.eu/esco/hasLearningOutcome">has learning outcome</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasNACECode" title="http://data.europa.eu/esco/hasNACECode">has nace code</a>
+      </li>
+      <li>
+         <a href="#hasOccupation" title="http://employchain.se/def#hasOccupation">has occupation</a>
+      </li>
+      <li>
+         <a href="#hasQualification" title="http://employchain.se/def#hasQualification">has qualification</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasRecognition" title="http://data.europa.eu/esco/hasRecognition">has recognition</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasRequirementCategory"
+            title="http://data.europa.eu/esco/hasRequirementCategory">has requirement category</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasRequirementLevel" title="http://data.europa.eu/esco/hasRequirementLevel">has requirement level</a>
+      </li>
+      <li>
+         <a href="#hasSkill" title="http://employchain.se/def#hasSkill">has skill</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/hasWorkContext" title="http://data.europa.eu/esco/hasWorkContext">has work context</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/isEssentialSkillFor" title="http://data.europa.eu/esco/isEssentialSkillFor">is essential skill for</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/isLegallyRequiredQualificationFor"
+            title="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">is legally required qualification for</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/isOptionalSkillFor" title="http://data.europa.eu/esco/isOptionalSkillFor">is optional skill for</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/isQualificationFor" title="http://data.europa.eu/esco/isQualificationFor">is qualification for</a>
+      </li>
+      <li>
+         <a href="#isRecommendedFor" title="http://employchain.se/def#isRecommendedFor">is recommended for</a>
+      </li>
+      <li>
+         <a href="#offers" title="http://employchain.se/def#offers">offers</a>
+      </li>
+      <li>
+         <a href="#requiresOccupation" title="http://employchain.se/def#requiresOccupation">requires occupation</a>
+      </li>
+      <li>
+         <a href="#requiresQualification" title="http://employchain.se/def#requiresQualification">requires qualification</a>
+      </li>
+      <li>
+         <a href="#requiresSkill" title="http://employchain.se/def#requiresSkill">requires skill</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/skillReusabilityLevel" title="http://data.europa.eu/esco/skillReusabilityLevel">skill reusability level</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/skillType" title="http://data.europa.eu/esco/skillType">skill type</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/wayToAcquire" title="http://data.europa.eu/esco/wayToAcquire">way to acquire</a>
+      </li>
+   </ul>
+   <div class="entity" id="appliesFor">
+      <h3>applies for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#appliesFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasAccreditation">
+      <h3>has accreditation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasAccreditation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Accreditation" title="http://data.europa.eu/esco/Accreditation">Accreditation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasAwardingActivity">
+      <h3>has awarding activity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasAwardingActivity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/AwardingActivity" title="http://data.europa.eu/esco/AwardingActivity">Awarding Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasAwardingBody">
+      <h3>has awarding body<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasAwardingBody</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/AwardingBody" title="http://data.europa.eu/esco/AwardingBody">Awarding Body</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasEntryRequirement">
+      <h3>has entry requirement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasEntryRequirement</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/EntryRequirement" title="http://data.europa.eu/esco/EntryRequirement">Entry Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasLearningOutcome">
+      <h3>has learning outcome<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasLearningOutcome</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasNACECode">
+      <h3>has nace code<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasNACECode</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/NACE-code"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/NACE-code">n a c e code</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOccupation">
+      <h3>has occupation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#hasOccupation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasQualification">
+      <h3>has qualification<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#hasQualification</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasRecognition">
+      <h3>has recognition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasRecognition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Recognition" title="http://data.europa.eu/esco/Recognition">Recognition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasRequirementCategory">
+      <h3>has requirement category<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasRequirementCategory</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/EntryRequirement" title="http://data.europa.eu/esco/EntryRequirement">Entry Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/requirement-category"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/requirement-category">requirement category</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasRequirementLevel">
+      <h3>has requirement level<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasRequirementLevel</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/EntryRequirement" title="http://data.europa.eu/esco/EntryRequirement">Entry Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/requirement-level"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/requirement-level">requirement level</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSkill">
+      <h3>has skill<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#hasSkill</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/hasWorkContext">
+      <h3>has work context<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/hasWorkContext</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/work-context"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/work-context">work context</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/isEssentialSkillFor">
+      <h3>is essential skill for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/isEssentialSkillFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">
+      <h3>is legally required qualification for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/isLegallyRequiredQualificationFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/isOptionalSkillFor">
+      <h3>is optional skill for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/isOptionalSkillFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/isQualificationFor">
+      <h3>is qualification for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/isQualificationFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isRecommendedFor">
+      <h3>is recommended for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#isRecommendedFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="offers">
+      <h3>offers<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#offers</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="requiresOccupation">
+      <h3>requires occupation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#requiresOccupation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Occupation" title="http://data.europa.eu/esco/Occupation">Occupation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="requiresQualification">
+      <h3>requires qualification<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#requiresQualification</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="requiresSkill">
+      <h3>requires skill<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#requiresSkill</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/skillReusabilityLevel">
+      <h3>skill reusability level<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/skillReusabilityLevel</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/skill-reuse-level"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/skill-reuse-level">skill reuse level</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/skillType">
+      <h3>skill type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/skillType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Skill" title="http://data.europa.eu/esco/Skill">Skill</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/competence-sub-type"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/competence-sub-type">competence sub type</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/wayToAcquire">
+      <h3>way to acquire<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/wayToAcquire</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="http://data.europa.eu/kos/esco/acquisition-way"
+                  target="_blank"
+                  title="http://data.europa.eu/kos/esco/acquisition-way">acquisition way</a>)</dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://data.europa.eu/esco/approvalDate" title="http://data.europa.eu/esco/approvalDate">approval date</a>
+      </li>
+      <li>
+         <a href="#company" title="http://employchain.se/def#company">company</a>
+      </li>
+      <li>
+         <a href="#companyLocation" title="http://employchain.se/def#companyLocation">company location</a>
+      </li>
+      <li>
+         <a href="#contactPersonEmail" title="http://employchain.se/def#contactPersonEmail">contact person email</a>
+      </li>
+      <li>
+         <a href="#contactPersonName" title="http://employchain.se/def#contactPersonName">contact person name</a>
+      </li>
+      <li>
+         <a href="#contacts" title="http://employchain.se/def#contacts">contacts</a>
+      </li>
+      <li>
+         <a href="#createdAt" title="http://employchain.se/def#createdAt">created at</a>
+      </li>
+      <li>
+         <a href="#dailyApplications" title="http://employchain.se/def#dailyApplications">daily applications</a>
+      </li>
+      <li>
+         <a href="#dailyBookmarks" title="http://employchain.se/def#dailyBookmarks">daily bookmarks</a>
+      </li>
+      <li>
+         <a href="#deadline" title="http://employchain.se/def#deadline">deadline</a>
+      </li>
+      <li>
+         <a href="#degreeLevel" title="http://employchain.se/def#degreeLevel">degree level</a>
+      </li>
+      <li>
+         <a href="#duration" title="http://employchain.se/def#duration">duration</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/ECTSCreditPoints" title="http://data.europa.eu/esco/ECTSCreditPoints">e c t s credit points</a>
+      </li>
+      <li>
+         <a href="#educationLevel" title="http://employchain.se/def#educationLevel">education level</a>
+      </li>
+      <li>
+         <a href="#email" title="http://employchain.se/def#email">email</a>
+      </li>
+      <li>
+         <a href="#employmentType" title="http://employchain.se/def#employmentType">employment type</a>
+      </li>
+      <li>
+         <a href="#experienceLevel" title="http://employchain.se/def#experienceLevel">experience level</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/expiryDate" title="http://data.europa.eu/esco/expiryDate">expiry date</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/expiryPeriod" title="http://data.europa.eu/esco/expiryPeriod">expiry period</a>
+      </li>
+      <li>
+         <a href="#firstName" title="http://employchain.se/def#firstName">first name</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/isPartialQualification"
+            title="http://data.europa.eu/esco/isPartialQualification">is partial qualification</a>
+      </li>
+      <li>
+         <a href="#lastName" title="http://employchain.se/def#lastName">last name</a>
+      </li>
+      <li>
+         <a href="#location" title="http://employchain.se/def#location">location</a>
+      </li>
+      <li>
+         <a href="#name" title="http://employchain.se/def#name">name</a>
+      </li>
+      <li>
+         <a href="#numberOfVacancies" title="http://employchain.se/def#numberOfVacancies">number of vacancies</a>
+      </li>
+      <li>
+         <a href="#occupationField" title="http://employchain.se/def#occupationField">occupation field</a>
+      </li>
+      <li>
+         <a href="#position" title="http://employchain.se/def#position">position</a>
+      </li>
+      <li>
+         <a href="#program" title="http://employchain.se/def#program">program</a>
+      </li>
+      <li>
+         <a href="#remoteWork" title="http://employchain.se/def#remoteWork">remote work</a>
+      </li>
+      <li>
+         <a href="#responsibilityTasks" title="http://employchain.se/def#responsibilityTasks">responsibility tasks</a>
+      </li>
+      <li>
+         <a href="#role" title="http://employchain.se/def#role">role</a>
+      </li>
+      <li>
+         <a href="#salaryType" title="http://employchain.se/def#salaryType">salary type</a>
+      </li>
+      <li>
+         <a href="#school" title="http://employchain.se/def#school">school</a>
+      </li>
+      <li>
+         <a href="#schoolLocation" title="http://employchain.se/def#schoolLocation">school location</a>
+      </li>
+      <li>
+         <a href="#status" title="http://employchain.se/def#status">status</a>
+      </li>
+      <li>
+         <a href="#title" title="http://employchain.se/def#title">title</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/esco/volumeOfLearning" title="http://data.europa.eu/esco/volumeOfLearning">volume of learning</a>
+      </li>
+      <li>
+         <a href="#workingHoursType" title="http://employchain.se/def#workingHoursType">working hours type</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://data.europa.eu/esco/approvalDate">
+      <h3>approval date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/approvalDate</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Accreditation" title="http://data.europa.eu/esco/Accreditation">Accreditation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="company">
+      <h3>company<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#company</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="companyLocation">
+      <h3>company location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#companyLocation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contactPersonEmail">
+      <h3>contact person email<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#contactPersonEmail</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contactPersonName">
+      <h3>contact person name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#contactPersonName</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contacts">
+      <h3>contacts<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#contacts</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createdAt">
+      <h3>created at<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#createdAt</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dailyApplications">
+      <h3>daily applications<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#dailyApplications</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dailyBookmarks">
+      <h3>daily bookmarks<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#dailyBookmarks</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="deadline">
+      <h3>deadline<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#deadline</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="degreeLevel">
+      <h3>degree level<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#degreeLevel</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="duration">
+      <h3>duration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#duration</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/ECTSCreditPoints">
+      <h3>e c t s credit points<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/ECTSCreditPoints</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="educationLevel">
+      <h3>education level<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#educationLevel</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="email">
+      <h3>email<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#email</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="employmentType">
+      <h3>employment type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#employmentType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="experienceLevel">
+      <h3>experience level<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#experienceLevel</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/expiryDate">
+      <h3>expiry date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/expiryDate</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Accreditation" title="http://data.europa.eu/esco/Accreditation">Accreditation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#duration"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#duration">duration</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/expiryPeriod">
+      <h3>expiry period<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/expiryPeriod</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#duration"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#duration">duration</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="firstName">
+      <h3>first name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#firstName</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/isPartialQualification">
+      <h3>is partial qualification<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/isPartialQualification</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lastName">
+      <h3>last name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#lastName</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="location">
+      <h3>location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#location</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#name</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Company" title="http://employchain.se/def#Company">Company</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numberOfVacancies">
+      <h3>number of vacancies<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#numberOfVacancies</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="occupationField">
+      <h3>occupation field<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#occupationField</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="position">
+      <h3>position<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#position</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="program">
+      <h3>program<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#program</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="remoteWork">
+      <h3>remote work<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#remoteWork</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="responsibilityTasks">
+      <h3>responsibility tasks<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#responsibilityTasks</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="role">
+      <h3>role<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#role</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="salaryType">
+      <h3>salary type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#salaryType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="school">
+      <h3>school<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#school</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="schoolLocation">
+      <h3>school location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#schoolLocation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Seeker" title="http://employchain.se/def#Seeker">Seeker</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="status">
+      <h3>status<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#status</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="title">
+      <h3>title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#title</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/esco/volumeOfLearning">
+      <h3>volume of learning<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/esco/volumeOfLearning</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/esco/Qualification" title="http://data.europa.eu/esco/Qualification">Qualification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#duration"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#duration">duration</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="workingHoursType">
+      <h3>working hours type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://employchain.se/def#workingHoursType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Job" title="http://employchain.se/def#Job">Job</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div>
+<div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

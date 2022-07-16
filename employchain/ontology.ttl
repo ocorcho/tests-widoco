@@ -1,0 +1,690 @@
+@prefix : <http://employchain.se/def#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://employchain.se/def#> .
+
+<http://employchain.se/def#> rdf:type owl:Ontology ;
+                              <http://purl.org/dc/elements/1.1/creator> "Víctor Morcuende" ;
+                              <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
+                              <http://purl.org/dc/elements/1.1/title> "EmployChain Ontology" ;
+                              owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.europa.eu/esco/hasAccreditation
+<http://data.europa.eu/esco/hasAccreditation> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                              rdfs:range <http://data.europa.eu/esco/Accreditation> ;
+                                              rdfs:label "has accreditation" .
+
+
+###  http://data.europa.eu/esco/hasAwardingActivity
+<http://data.europa.eu/esco/hasAwardingActivity> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                                 rdfs:range <http://data.europa.eu/esco/AwardingActivity> ;
+                                                 rdfs:label "has awarding activity" .
+
+
+###  http://data.europa.eu/esco/hasAwardingBody
+<http://data.europa.eu/esco/hasAwardingBody> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                             rdfs:range <http://data.europa.eu/esco/AwardingBody> ;
+                                             rdfs:label "has awarding body" .
+
+
+###  http://data.europa.eu/esco/hasEntryRequirement
+<http://data.europa.eu/esco/hasEntryRequirement> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                                 rdfs:range <http://data.europa.eu/esco/EntryRequirement> ;
+                                                 rdfs:label "has entry requirement" .
+
+
+###  http://data.europa.eu/esco/hasLearningOutcome
+<http://data.europa.eu/esco/hasLearningOutcome> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                                rdfs:range <http://data.europa.eu/esco/Skill> ;
+                                                rdfs:label "has learning outcome" .
+
+
+###  http://data.europa.eu/esco/hasNACECode
+<http://data.europa.eu/esco/hasNACECode> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://data.europa.eu/esco/Occupation> ;
+                                         rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                             owl:hasValue <http://data.europa.eu/kos/esco/NACE-code>
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                         rdfs:label "has nace code" .
+
+
+###  http://data.europa.eu/esco/hasRecognition
+<http://data.europa.eu/esco/hasRecognition> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                            rdfs:range <http://data.europa.eu/esco/Recognition> ;
+                                            rdfs:label "has recognition" .
+
+
+###  http://data.europa.eu/esco/hasRequirementCategory
+<http://data.europa.eu/esco/hasRequirementCategory> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://data.europa.eu/esco/EntryRequirement> ;
+                                                    rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                        owl:hasValue <http://data.europa.eu/kos/esco/requirement-category>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                                    rdfs:label "has requirement category" .
+
+
+###  http://data.europa.eu/esco/hasRequirementLevel
+<http://data.europa.eu/esco/hasRequirementLevel> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://data.europa.eu/esco/EntryRequirement> ;
+                                                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                     owl:hasValue <http://data.europa.eu/kos/esco/requirement-level>
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                                 rdfs:label "has requirement level" .
+
+
+###  http://data.europa.eu/esco/hasWorkContext
+<http://data.europa.eu/esco/hasWorkContext> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://data.europa.eu/esco/Occupation> ;
+                                            rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                owl:hasValue <http://data.europa.eu/kos/esco/work-context>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                            rdfs:label "has work context" .
+
+
+###  http://data.europa.eu/esco/isEssentialSkillFor
+<http://data.europa.eu/esco/isEssentialSkillFor> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://data.europa.eu/esco/Skill> ;
+                                                 rdfs:range <http://data.europa.eu/esco/Occupation> ,
+                                                            <http://data.europa.eu/esco/Skill> ;
+                                                 rdfs:label "is essential skill for" .
+
+
+###  http://data.europa.eu/esco/isLegallyRequiredQualificationFor
+<http://data.europa.eu/esco/isLegallyRequiredQualificationFor> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                                               rdfs:range <http://data.europa.eu/esco/Occupation> ,
+                                                                          <http://data.europa.eu/esco/Skill> ;
+                                                               rdfs:label "is legally required qualification for" .
+
+
+###  http://data.europa.eu/esco/isOptionalSkillFor
+<http://data.europa.eu/esco/isOptionalSkillFor> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://data.europa.eu/esco/Skill> ;
+                                                rdfs:range <http://data.europa.eu/esco/Occupation> ,
+                                                           <http://data.europa.eu/esco/Skill> ;
+                                                rdfs:label "is optional skill for" .
+
+
+###  http://data.europa.eu/esco/isQualificationFor
+<http://data.europa.eu/esco/isQualificationFor> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                                rdfs:range <http://data.europa.eu/esco/Occupation> ,
+                                                           <http://data.europa.eu/esco/Skill> ;
+                                                rdfs:label "is qualification for" .
+
+
+###  http://data.europa.eu/esco/skillReusabilityLevel
+<http://data.europa.eu/esco/skillReusabilityLevel> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://data.europa.eu/esco/Skill> ;
+                                                   rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                       owl:hasValue <http://data.europa.eu/kos/esco/skill-reuse-level>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
+                                                   rdfs:label "skill reusability level" .
+
+
+###  http://data.europa.eu/esco/skillType
+<http://data.europa.eu/esco/skillType> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://data.europa.eu/esco/Skill> ;
+                                       rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                           owl:hasValue <http://data.europa.eu/kos/esco/competence-sub-type>
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                                       rdfs:label "skill type" .
+
+
+###  http://data.europa.eu/esco/wayToAcquire
+<http://data.europa.eu/esco/wayToAcquire> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                          rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                              owl:hasValue <http://data.europa.eu/kos/esco/acquisition-way>
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] ;
+                                          rdfs:label "way to acquire" .
+
+
+###  http://employchain.se/def#appliesFor
+:appliesFor rdf:type owl:ObjectProperty ;
+            rdfs:domain :Seeker ;
+            rdfs:range :Job ;
+            rdfs:label "applies for" .
+
+
+###  http://employchain.se/def#hasOccupation
+:hasOccupation rdf:type owl:ObjectProperty ;
+               rdfs:domain :Seeker ;
+               rdfs:range <http://data.europa.eu/esco/Occupation> ;
+               rdfs:label "has occupation" .
+
+
+###  http://employchain.se/def#hasQualification
+:hasQualification rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Seeker ;
+                  rdfs:range <http://data.europa.eu/esco/Qualification> ;
+                  rdfs:label "has qualification" .
+
+
+###  http://employchain.se/def#hasSkill
+:hasSkill rdf:type owl:ObjectProperty ;
+          rdfs:domain :Seeker ;
+          rdfs:range <http://data.europa.eu/esco/Skill> ;
+          rdfs:label "has skill" .
+
+
+###  http://employchain.se/def#isRecommendedFor
+:isRecommendedFor rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Seeker ;
+                  rdfs:label "is recommended for" .
+
+
+###  http://employchain.se/def#offers
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:domain :Company ;
+        rdfs:range :Job ;
+        rdfs:label "offers" .
+
+
+###  http://employchain.se/def#requiresOccupation
+:requiresOccupation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Job ;
+                    rdfs:range <http://data.europa.eu/esco/Occupation> ;
+                    rdfs:label "requires occupation" .
+
+
+###  http://employchain.se/def#requiresQualification
+:requiresQualification rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Job ;
+                       rdfs:range <http://data.europa.eu/esco/Qualification> ;
+                       rdfs:label "requires qualification" .
+
+
+###  http://employchain.se/def#requiresSkill
+:requiresSkill rdf:type owl:ObjectProperty ;
+               rdfs:domain :Job ;
+               rdfs:range <http://data.europa.eu/esco/Skill> ;
+               rdfs:label "requires skill" .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://data.europa.eu/esco/ECTSCreditPoints
+<http://data.europa.eu/esco/ECTSCreditPoints> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                              rdfs:range xsd:integer ;
+                                              rdfs:label "e c t s credit points" .
+
+
+###  http://data.europa.eu/esco/approvalDate
+<http://data.europa.eu/esco/approvalDate> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://data.europa.eu/esco/Accreditation> ;
+                                          rdfs:range xsd:date ;
+                                          rdfs:label "approval date" .
+
+
+###  http://data.europa.eu/esco/expiryDate
+<http://data.europa.eu/esco/expiryDate> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://data.europa.eu/esco/Accreditation> ;
+                                        rdfs:range xsd:duration ;
+                                        rdfs:label "expiry date" .
+
+
+###  http://data.europa.eu/esco/expiryPeriod
+<http://data.europa.eu/esco/expiryPeriod> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                          rdfs:range xsd:duration ;
+                                          rdfs:label "expiry period" .
+
+
+###  http://data.europa.eu/esco/isPartialQualification
+<http://data.europa.eu/esco/isPartialQualification> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                                    rdfs:range xsd:boolean ;
+                                                    rdfs:label "is partial qualification" .
+
+
+###  http://data.europa.eu/esco/volumeOfLearning
+<http://data.europa.eu/esco/volumeOfLearning> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://data.europa.eu/esco/Qualification> ;
+                                              rdfs:range xsd:duration ;
+                                              rdfs:label "volume of learning" .
+
+
+###  http://employchain.se/def#company
+:company rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Seeker ;
+         rdfs:range xsd:string ;
+         rdfs:label "company" .
+
+
+###  http://employchain.se/def#companyLocation
+:companyLocation rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Seeker ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "company location" .
+
+
+###  http://employchain.se/def#contactPersonEmail
+:contactPersonEmail rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Job ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "contact person email" .
+
+
+###  http://employchain.se/def#contactPersonName
+:contactPersonName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Job ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "contact person name" .
+
+
+###  http://employchain.se/def#contacts
+:contacts rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Company ;
+          rdfs:range xsd:string ;
+          rdfs:label "contacts" .
+
+
+###  http://employchain.se/def#createdAt
+:createdAt rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Company ;
+           rdfs:range xsd:date ;
+           rdfs:label "created at" .
+
+
+###  http://employchain.se/def#dailyApplications
+:dailyApplications rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Seeker ;
+                   rdfs:range xsd:integer ;
+                   rdfs:label "daily applications" .
+
+
+###  http://employchain.se/def#dailyBookmarks
+:dailyBookmarks rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Seeker ;
+                rdfs:range xsd:integer ;
+                rdfs:label "daily bookmarks" .
+
+
+###  http://employchain.se/def#deadline
+:deadline rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Job ;
+          rdfs:range xsd:date ;
+          rdfs:label "deadline" .
+
+
+###  http://employchain.se/def#degreeLevel
+:degreeLevel rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Seeker ;
+             rdfs:range xsd:string ;
+             rdfs:label "degree level" .
+
+
+###  http://employchain.se/def#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Job ;
+          rdfs:range xsd:string ;
+          rdfs:label "duration" .
+
+
+###  http://employchain.se/def#educationLevel
+:educationLevel rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Job ;
+                rdfs:range xsd:string ;
+                rdfs:label "education level" .
+
+
+###  http://employchain.se/def#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Seeker ;
+       rdfs:range xsd:string ;
+       rdfs:label "email" .
+
+
+###  http://employchain.se/def#employmentType
+:employmentType rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Seeker ;
+                rdfs:range xsd:string ;
+                rdfs:label "employment type" .
+
+
+###  http://employchain.se/def#experienceLevel
+:experienceLevel rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Job ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "experience level" .
+
+
+###  http://employchain.se/def#firstName
+:firstName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Seeker ;
+           rdfs:range xsd:string ;
+           rdfs:label "first name" .
+
+
+###  http://employchain.se/def#lastName
+:lastName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Seeker ;
+          rdfs:range xsd:string ;
+          rdfs:label "last name" .
+
+
+###  http://employchain.se/def#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Job ;
+          rdfs:range xsd:string ;
+          rdfs:label "location" .
+
+
+###  http://employchain.se/def#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Company ;
+      rdfs:range xsd:string ;
+      rdfs:label "name" .
+
+
+###  http://employchain.se/def#numberOfVacancies
+:numberOfVacancies rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Job ;
+                   rdfs:range xsd:integer ;
+                   rdfs:label "number of vacancies" .
+
+
+###  http://employchain.se/def#occupationField
+:occupationField rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Job ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "occupation field" .
+
+
+###  http://employchain.se/def#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Job ;
+          rdfs:range xsd:string ;
+          rdfs:label "position" .
+
+
+###  http://employchain.se/def#program
+:program rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Seeker ;
+         rdfs:range xsd:string ;
+         rdfs:label "program" .
+
+
+###  http://employchain.se/def#remoteWork
+:remoteWork rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Job ;
+            rdfs:range xsd:string ;
+            rdfs:label "remote work" .
+
+
+###  http://employchain.se/def#responsibilityTasks
+:responsibilityTasks rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Job ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "responsibility tasks" .
+
+
+###  http://employchain.se/def#role
+:role rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Seeker ;
+      rdfs:range xsd:string ;
+      rdfs:label "role" .
+
+
+###  http://employchain.se/def#salaryType
+:salaryType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Job ;
+            rdfs:range xsd:string ;
+            rdfs:label "salary type" .
+
+
+###  http://employchain.se/def#school
+:school rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Seeker ;
+        rdfs:range xsd:string ;
+        rdfs:label "school" .
+
+
+###  http://employchain.se/def#schoolLocation
+:schoolLocation rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Seeker ;
+                rdfs:range xsd:string ;
+                rdfs:label "school location" .
+
+
+###  http://employchain.se/def#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Job ;
+        rdfs:range xsd:string ;
+        rdfs:label "status" .
+
+
+###  http://employchain.se/def#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Job ;
+       rdfs:range xsd:string ;
+       rdfs:label "title" .
+
+
+###  http://employchain.se/def#workingHoursType
+:workingHoursType rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Job ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "working hours type" .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain :Company ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:label "identifier" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europa.eu/esco/Accreditation
+<http://data.europa.eu/esco/Accreditation> rdf:type owl:Class ;
+                                           rdfs:label "Accreditation" .
+
+
+###  http://data.europa.eu/esco/AwardingActivity
+<http://data.europa.eu/esco/AwardingActivity> rdf:type owl:Class ;
+                                              rdfs:label "Awarding Activity" .
+
+
+###  http://data.europa.eu/esco/AwardingBody
+<http://data.europa.eu/esco/AwardingBody> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://schema.org/Organization> ;
+                                          rdfs:label "Awarding Body" .
+
+
+###  http://data.europa.eu/esco/EntryRequirement
+<http://data.europa.eu/esco/EntryRequirement> rdf:type owl:Class ;
+                                              rdfs:label "Entry Requirement" .
+
+
+###  http://data.europa.eu/esco/Occupation
+<http://data.europa.eu/esco/Occupation> rdf:type owl:Class ;
+                                        rdfs:label "Occupation" .
+
+
+###  http://data.europa.eu/esco/Qualification
+<http://data.europa.eu/esco/Qualification> rdf:type owl:Class ;
+                                           rdfs:label "Qualification" .
+
+
+###  http://data.europa.eu/esco/Recognition
+<http://data.europa.eu/esco/Recognition> rdf:type owl:Class ;
+                                         rdfs:label "Recognition" .
+
+
+###  http://data.europa.eu/esco/Skill
+<http://data.europa.eu/esco/Skill> rdf:type owl:Class ;
+                                   rdfs:label "Skill" .
+
+
+###  http://employchain.se/def#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf <https://schema.org/Organization> ;
+         rdfs:label "Company" .
+
+
+###  http://employchain.se/def#Job
+:Job rdf:type owl:Class ;
+     rdfs:label "Job" .
+
+
+###  http://employchain.se/def#Seeker
+:Seeker rdf:type owl:Class ;
+        rdfs:subClassOf <https://schema.org/Person> ;
+        rdfs:label "Seeker" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  https://schema.org/Organization
+<https://schema.org/Organization> rdf:type owl:Class ;
+                                  rdfs:label "Organization" .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class ;
+                            rdfs:label "Person" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.europa.eu/kos/esco/NACE-code
+<http://data.europa.eu/kos/esco/NACE-code> rdf:type owl:NamedIndividual .
+
+
+###  http://data.europa.eu/kos/esco/acquisition-way
+<http://data.europa.eu/kos/esco/acquisition-way> rdf:type owl:NamedIndividual .
+
+
+###  http://data.europa.eu/kos/esco/competence-sub-type
+<http://data.europa.eu/kos/esco/competence-sub-type> rdf:type owl:NamedIndividual .
+
+
+###  http://data.europa.eu/kos/esco/requirement-category
+<http://data.europa.eu/kos/esco/requirement-category> rdf:type owl:NamedIndividual .
+
+
+###  http://data.europa.eu/kos/esco/requirement-level
+<http://data.europa.eu/kos/esco/requirement-level> rdf:type owl:NamedIndividual .
+
+
+###  http://data.europa.eu/kos/esco/skill-reuse-level
+<http://data.europa.eu/kos/esco/skill-reuse-level> rdf:type owl:NamedIndividual .
+
+
+###  http://data.europa.eu/kos/esco/work-context
+<http://data.europa.eu/kos/esco/work-context> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/creator> "Víctor Morcuende" .
+
+
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+
+
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/elements/1.1/title> "EmployChain Ontology" .
+
+
+owl:versionInfo owl:versionInfo "0.0.1" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

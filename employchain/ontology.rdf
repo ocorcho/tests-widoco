@@ -1,0 +1,1131 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://employchain.se/def#"
+     xml:base="http://employchain.se/def"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://employchain.se/def#">
+        <dc:creator>Víctor Morcuende</dc:creator>
+        <dc:description>Ontology code created by Chowlk</dc:description>
+        <dc:title>EmployChain Ontology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/esco/hasAccreditation -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasAccreditation">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Accreditation"/>
+        <rdfs:label>has accreditation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasAwardingActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasAwardingActivity">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/AwardingActivity"/>
+        <rdfs:label>has awarding activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasAwardingBody -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasAwardingBody">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/AwardingBody"/>
+        <rdfs:label>has awarding body</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasEntryRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasEntryRequirement">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/EntryRequirement"/>
+        <rdfs:label>has entry requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasLearningOutcome -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasLearningOutcome">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>has learning outcome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasNACECode -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasNACECode">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/NACE-code"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>has nace code</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasRecognition -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasRecognition">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Recognition"/>
+        <rdfs:label>has recognition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasRequirementCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasRequirementCategory">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/EntryRequirement"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/requirement-category"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>has requirement category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasRequirementLevel -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasRequirementLevel">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/EntryRequirement"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/requirement-level"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>has requirement level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/hasWorkContext -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/hasWorkContext">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/work-context"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>has work context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/isEssentialSkillFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/isEssentialSkillFor">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>is essential skill for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/isLegallyRequiredQualificationFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/isLegallyRequiredQualificationFor">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>is legally required qualification for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/isOptionalSkillFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/isOptionalSkillFor">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>is optional skill for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/isQualificationFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/isQualificationFor">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>is qualification for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/skillReusabilityLevel -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/skillReusabilityLevel">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/skill-reuse-level"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>skill reusability level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/skillType -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/skillType">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/competence-sub-type"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>skill type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/wayToAcquire -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/esco/wayToAcquire">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/kos/esco/acquisition-way"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>way to acquire</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#appliesFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#appliesFor">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:label>applies for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#hasOccupation -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#hasOccupation">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:label>has occupation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#hasQualification -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#hasQualification">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:label>has qualification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#hasSkill -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#hasSkill">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>has skill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#isRecommendedFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#isRecommendedFor">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:label>is recommended for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#offers -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#offers">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Company"/>
+        <rdfs:range rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:label>offers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#requiresOccupation -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#requiresOccupation">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Occupation"/>
+        <rdfs:label>requires occupation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#requiresQualification -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#requiresQualification">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:label>requires qualification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://employchain.se/def#requiresSkill -->
+
+
+    <owl:ObjectProperty rdf:about="http://employchain.se/def#requiresSkill">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/esco/Skill"/>
+        <rdfs:label>requires skill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/esco/ECTSCreditPoints -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/esco/ECTSCreditPoints">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>e c t s credit points</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/approvalDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/esco/approvalDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Accreditation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>approval date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/expiryDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/esco/expiryDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Accreditation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:label>expiry date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/expiryPeriod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/esco/expiryPeriod">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:label>expiry period</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/isPartialQualification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/esco/isPartialQualification">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is partial qualification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/esco/volumeOfLearning -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/esco/volumeOfLearning">
+        <rdfs:domain rdf:resource="http://data.europa.eu/esco/Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:label>volume of learning</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#company -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#company">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>company</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#companyLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#companyLocation">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>company location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#contactPersonEmail -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#contactPersonEmail">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>contact person email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#contactPersonName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#contactPersonName">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>contact person name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#contacts -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#contacts">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>contacts</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#createdAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#createdAt">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>created at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#dailyApplications -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#dailyApplications">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>daily applications</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#dailyBookmarks -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#dailyBookmarks">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>daily bookmarks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#deadline -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#deadline">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>deadline</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#degreeLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#degreeLevel">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>degree level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#duration">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#educationLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#educationLevel">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>education level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#email">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#employmentType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#employmentType">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>employment type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#experienceLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#experienceLevel">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>experience level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#firstName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#firstName">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>first name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#lastName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#lastName">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>last name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#location -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#location">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#name">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#numberOfVacancies -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#numberOfVacancies">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>number of vacancies</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#occupationField -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#occupationField">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>occupation field</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#position -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#position">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#program -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#program">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>program</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#remoteWork -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#remoteWork">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>remote work</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#responsibilityTasks -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#responsibilityTasks">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>responsibility tasks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#role -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#role">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#salaryType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#salaryType">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>salary type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#school -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#school">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>school</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#schoolLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#schoolLocation">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Seeker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>school location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#status -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#status">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#title">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://employchain.se/def#workingHoursType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://employchain.se/def#workingHoursType">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>working hours type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:domain rdf:resource="http://employchain.se/def#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/esco/Accreditation -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/Accreditation">
+        <rdfs:label>Accreditation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/AwardingActivity -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/AwardingActivity">
+        <rdfs:label>Awarding Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/AwardingBody -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/AwardingBody">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
+        <rdfs:label>Awarding Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/EntryRequirement -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/EntryRequirement">
+        <rdfs:label>Entry Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/Occupation -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/Occupation">
+        <rdfs:label>Occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/Qualification -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/Qualification">
+        <rdfs:label>Qualification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/Recognition -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/Recognition">
+        <rdfs:label>Recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/esco/Skill -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/esco/Skill">
+        <rdfs:label>Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://employchain.se/def#Company -->
+
+
+    <owl:Class rdf:about="http://employchain.se/def#Company">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
+        <rdfs:label>Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://employchain.se/def#Job -->
+
+
+    <owl:Class rdf:about="http://employchain.se/def#Job">
+        <rdfs:label>Job</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://employchain.se/def#Seeker -->
+
+
+    <owl:Class rdf:about="http://employchain.se/def#Seeker">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>Seeker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="https://schema.org/Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+
+    <owl:Class rdf:about="https://schema.org/Person">
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/NACE-code -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/NACE-code"/>
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/acquisition-way -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/acquisition-way"/>
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/competence-sub-type -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/competence-sub-type"/>
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/requirement-category -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/requirement-category"/>
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/requirement-level -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/requirement-level"/>
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/skill-reuse-level -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/skill-reuse-level"/>
+    
+
+
+    <!-- http://data.europa.eu/kos/esco/work-context -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/kos/esco/work-context"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <dc:creator>Víctor Morcuende</dc:creator>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <dc:description>Ontology code created by Chowlk</dc:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <dc:title>EmployChain Ontology</dc:title>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

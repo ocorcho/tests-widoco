@@ -1,0 +1,647 @@
+<http://employchain.se/def#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://employchain.se/def#> <http://purl.org/dc/elements/1.1/creator> "Víctor Morcuende" .
+<http://employchain.se/def#> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<http://employchain.se/def#> <http://purl.org/dc/elements/1.1/title> "EmployChain Ontology" .
+<http://employchain.se/def#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#duration
+<http://www.w3.org/2001/XMLSchema#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/esco/hasAccreditation
+<http://data.europa.eu/esco/hasAccreditation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasAccreditation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/hasAccreditation> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Accreditation> .
+<http://data.europa.eu/esco/hasAccreditation> <http://www.w3.org/2000/01/rdf-schema#label> "has accreditation" .
+# 
+# http://data.europa.eu/esco/hasAwardingActivity
+<http://data.europa.eu/esco/hasAwardingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasAwardingActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/hasAwardingActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/AwardingActivity> .
+<http://data.europa.eu/esco/hasAwardingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "has awarding activity" .
+# 
+# http://data.europa.eu/esco/hasAwardingBody
+<http://data.europa.eu/esco/hasAwardingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasAwardingBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/hasAwardingBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/AwardingBody> .
+<http://data.europa.eu/esco/hasAwardingBody> <http://www.w3.org/2000/01/rdf-schema#label> "has awarding body" .
+# 
+# http://data.europa.eu/esco/hasEntryRequirement
+<http://data.europa.eu/esco/hasEntryRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasEntryRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/hasEntryRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/EntryRequirement> .
+<http://data.europa.eu/esco/hasEntryRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "has entry requirement" .
+# 
+# http://data.europa.eu/esco/hasLearningOutcome
+<http://data.europa.eu/esco/hasLearningOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has learning outcome" .
+# 
+# http://data.europa.eu/esco/hasNACECode
+<http://data.europa.eu/esco/hasNACECode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasNACECode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Occupation> .
+<http://data.europa.eu/esco/hasNACECode> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/NACE-code> .
+<http://data.europa.eu/kos/esco/NACE-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/hasNACECode> <http://www.w3.org/2000/01/rdf-schema#label> "has nace code" .
+# 
+# http://data.europa.eu/esco/hasRecognition
+<http://data.europa.eu/esco/hasRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Recognition> .
+<http://data.europa.eu/esco/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "has recognition" .
+# 
+# http://data.europa.eu/esco/hasRequirementCategory
+<http://data.europa.eu/esco/hasRequirementCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasRequirementCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/EntryRequirement> .
+<http://data.europa.eu/esco/hasRequirementCategory> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/requirement-category> .
+<http://data.europa.eu/kos/esco/requirement-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/hasRequirementCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has requirement category" .
+# 
+# http://data.europa.eu/esco/hasRequirementLevel
+<http://data.europa.eu/esco/hasRequirementLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasRequirementLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/EntryRequirement> .
+<http://data.europa.eu/esco/hasRequirementLevel> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/requirement-level> .
+<http://data.europa.eu/kos/esco/requirement-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/hasRequirementLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has requirement level" .
+# 
+# http://data.europa.eu/esco/hasWorkContext
+<http://data.europa.eu/esco/hasWorkContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/hasWorkContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Occupation> .
+<http://data.europa.eu/esco/hasWorkContext> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/work-context> .
+<http://data.europa.eu/kos/esco/work-context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/hasWorkContext> <http://www.w3.org/2000/01/rdf-schema#label> "has work context" .
+# 
+# http://data.europa.eu/esco/isEssentialSkillFor
+<http://data.europa.eu/esco/isEssentialSkillFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/isEssentialSkillFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/isEssentialSkillFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Occupation> .
+<http://data.europa.eu/esco/isEssentialSkillFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/isEssentialSkillFor> <http://www.w3.org/2000/01/rdf-schema#label> "is essential skill for" .
+# 
+# http://data.europa.eu/esco/isLegallyRequiredQualificationFor
+<http://data.europa.eu/esco/isLegallyRequiredQualificationFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/isLegallyRequiredQualificationFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/isLegallyRequiredQualificationFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Occupation> .
+<http://data.europa.eu/esco/isLegallyRequiredQualificationFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/isLegallyRequiredQualificationFor> <http://www.w3.org/2000/01/rdf-schema#label> "is legally required qualification for" .
+# 
+# http://data.europa.eu/esco/isOptionalSkillFor
+<http://data.europa.eu/esco/isOptionalSkillFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/isOptionalSkillFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/isOptionalSkillFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Occupation> .
+<http://data.europa.eu/esco/isOptionalSkillFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/isOptionalSkillFor> <http://www.w3.org/2000/01/rdf-schema#label> "is optional skill for" .
+# 
+# http://data.europa.eu/esco/isQualificationFor
+<http://data.europa.eu/esco/isQualificationFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/isQualificationFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/isQualificationFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Occupation> .
+<http://data.europa.eu/esco/isQualificationFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/isQualificationFor> <http://www.w3.org/2000/01/rdf-schema#label> "is qualification for" .
+# 
+# http://data.europa.eu/esco/skillReusabilityLevel
+<http://data.europa.eu/esco/skillReusabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/skillReusabilityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/skillReusabilityLevel> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/skill-reuse-level> .
+<http://data.europa.eu/kos/esco/skill-reuse-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/skillReusabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "skill reusability level" .
+# 
+# http://data.europa.eu/esco/skillType
+<http://data.europa.eu/esco/skillType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/skillType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Skill> .
+<http://data.europa.eu/esco/skillType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/competence-sub-type> .
+<http://data.europa.eu/kos/esco/competence-sub-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/skillType> <http://www.w3.org/2000/01/rdf-schema#label> "skill type" .
+# 
+# http://data.europa.eu/esco/wayToAcquire
+<http://data.europa.eu/esco/wayToAcquire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/esco/wayToAcquire> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/wayToAcquire> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://data.europa.eu/kos/esco/acquisition-way> .
+<http://data.europa.eu/kos/esco/acquisition-way> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://data.europa.eu/esco/wayToAcquire> <http://www.w3.org/2000/01/rdf-schema#label> "way to acquire" .
+# 
+# http://employchain.se/def#appliesFor
+<http://employchain.se/def#appliesFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#appliesFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#appliesFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://employchain.se/def#Job> .
+<http://employchain.se/def#appliesFor> <http://www.w3.org/2000/01/rdf-schema#label> "applies for" .
+# 
+# http://employchain.se/def#hasOccupation
+<http://employchain.se/def#hasOccupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Occupation> .
+<http://employchain.se/def#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#label> "has occupation" .
+# 
+# http://employchain.se/def#hasQualification
+<http://employchain.se/def#hasQualification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#hasQualification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#hasQualification> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Qualification> .
+<http://employchain.se/def#hasQualification> <http://www.w3.org/2000/01/rdf-schema#label> "has qualification" .
+# 
+# http://employchain.se/def#hasSkill
+<http://employchain.se/def#hasSkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#hasSkill> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#hasSkill> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://employchain.se/def#hasSkill> <http://www.w3.org/2000/01/rdf-schema#label> "has skill" .
+# 
+# http://employchain.se/def#isRecommendedFor
+<http://employchain.se/def#isRecommendedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#isRecommendedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#isRecommendedFor> <http://www.w3.org/2000/01/rdf-schema#label> "is recommended for" .
+# 
+# http://employchain.se/def#offers
+<http://employchain.se/def#offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#offers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Company> .
+<http://employchain.se/def#offers> <http://www.w3.org/2000/01/rdf-schema#range> <http://employchain.se/def#Job> .
+<http://employchain.se/def#offers> <http://www.w3.org/2000/01/rdf-schema#label> "offers" .
+# 
+# http://employchain.se/def#requiresOccupation
+<http://employchain.se/def#requiresOccupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#requiresOccupation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#requiresOccupation> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Occupation> .
+<http://employchain.se/def#requiresOccupation> <http://www.w3.org/2000/01/rdf-schema#label> "requires occupation" .
+# 
+# http://employchain.se/def#requiresQualification
+<http://employchain.se/def#requiresQualification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#requiresQualification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#requiresQualification> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Qualification> .
+<http://employchain.se/def#requiresQualification> <http://www.w3.org/2000/01/rdf-schema#label> "requires qualification" .
+# 
+# http://employchain.se/def#requiresSkill
+<http://employchain.se/def#requiresSkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://employchain.se/def#requiresSkill> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#requiresSkill> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/esco/Skill> .
+<http://employchain.se/def#requiresSkill> <http://www.w3.org/2000/01/rdf-schema#label> "requires skill" .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/esco/ECTSCreditPoints
+<http://data.europa.eu/esco/ECTSCreditPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/esco/ECTSCreditPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/ECTSCreditPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://data.europa.eu/esco/ECTSCreditPoints> <http://www.w3.org/2000/01/rdf-schema#label> "e c t s credit points" .
+# 
+# http://data.europa.eu/esco/approvalDate
+<http://data.europa.eu/esco/approvalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/esco/approvalDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Accreditation> .
+<http://data.europa.eu/esco/approvalDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/esco/approvalDate> <http://www.w3.org/2000/01/rdf-schema#label> "approval date" .
+# 
+# http://data.europa.eu/esco/expiryDate
+<http://data.europa.eu/esco/expiryDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/esco/expiryDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Accreditation> .
+<http://data.europa.eu/esco/expiryDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://data.europa.eu/esco/expiryDate> <http://www.w3.org/2000/01/rdf-schema#label> "expiry date" .
+# 
+# http://data.europa.eu/esco/expiryPeriod
+<http://data.europa.eu/esco/expiryPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/esco/expiryPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/expiryPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://data.europa.eu/esco/expiryPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "expiry period" .
+# 
+# http://data.europa.eu/esco/isPartialQualification
+<http://data.europa.eu/esco/isPartialQualification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/esco/isPartialQualification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/isPartialQualification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://data.europa.eu/esco/isPartialQualification> <http://www.w3.org/2000/01/rdf-schema#label> "is partial qualification" .
+# 
+# http://data.europa.eu/esco/volumeOfLearning
+<http://data.europa.eu/esco/volumeOfLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/esco/volumeOfLearning> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/esco/Qualification> .
+<http://data.europa.eu/esco/volumeOfLearning> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://data.europa.eu/esco/volumeOfLearning> <http://www.w3.org/2000/01/rdf-schema#label> "volume of learning" .
+# 
+# http://employchain.se/def#company
+<http://employchain.se/def#company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#company> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#company> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#company> <http://www.w3.org/2000/01/rdf-schema#label> "company" .
+# 
+# http://employchain.se/def#companyLocation
+<http://employchain.se/def#companyLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#companyLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#companyLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#companyLocation> <http://www.w3.org/2000/01/rdf-schema#label> "company location" .
+# 
+# http://employchain.se/def#contactPersonEmail
+<http://employchain.se/def#contactPersonEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#contactPersonEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#contactPersonEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#contactPersonEmail> <http://www.w3.org/2000/01/rdf-schema#label> "contact person email" .
+# 
+# http://employchain.se/def#contactPersonName
+<http://employchain.se/def#contactPersonName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#contactPersonName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#contactPersonName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#contactPersonName> <http://www.w3.org/2000/01/rdf-schema#label> "contact person name" .
+# 
+# http://employchain.se/def#contacts
+<http://employchain.se/def#contacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#contacts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Company> .
+<http://employchain.se/def#contacts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#contacts> <http://www.w3.org/2000/01/rdf-schema#label> "contacts" .
+# 
+# http://employchain.se/def#createdAt
+<http://employchain.se/def#createdAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#createdAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Company> .
+<http://employchain.se/def#createdAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://employchain.se/def#createdAt> <http://www.w3.org/2000/01/rdf-schema#label> "created at" .
+# 
+# http://employchain.se/def#dailyApplications
+<http://employchain.se/def#dailyApplications> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#dailyApplications> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#dailyApplications> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://employchain.se/def#dailyApplications> <http://www.w3.org/2000/01/rdf-schema#label> "daily applications" .
+# 
+# http://employchain.se/def#dailyBookmarks
+<http://employchain.se/def#dailyBookmarks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#dailyBookmarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#dailyBookmarks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://employchain.se/def#dailyBookmarks> <http://www.w3.org/2000/01/rdf-schema#label> "daily bookmarks" .
+# 
+# http://employchain.se/def#deadline
+<http://employchain.se/def#deadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#deadline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#deadline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://employchain.se/def#deadline> <http://www.w3.org/2000/01/rdf-schema#label> "deadline" .
+# 
+# http://employchain.se/def#degreeLevel
+<http://employchain.se/def#degreeLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#degreeLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#degreeLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#degreeLevel> <http://www.w3.org/2000/01/rdf-schema#label> "degree level" .
+# 
+# http://employchain.se/def#duration
+<http://employchain.se/def#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#duration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#duration> <http://www.w3.org/2000/01/rdf-schema#label> "duration" .
+# 
+# http://employchain.se/def#educationLevel
+<http://employchain.se/def#educationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#educationLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#educationLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#educationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "education level" .
+# 
+# http://employchain.se/def#email
+<http://employchain.se/def#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#email> <http://www.w3.org/2000/01/rdf-schema#label> "email" .
+# 
+# http://employchain.se/def#employmentType
+<http://employchain.se/def#employmentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#employmentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#employmentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#employmentType> <http://www.w3.org/2000/01/rdf-schema#label> "employment type" .
+# 
+# http://employchain.se/def#experienceLevel
+<http://employchain.se/def#experienceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#experienceLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#experienceLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#experienceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "experience level" .
+# 
+# http://employchain.se/def#firstName
+<http://employchain.se/def#firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#firstName> <http://www.w3.org/2000/01/rdf-schema#label> "first name" .
+# 
+# http://employchain.se/def#lastName
+<http://employchain.se/def#lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#lastName> <http://www.w3.org/2000/01/rdf-schema#label> "last name" .
+# 
+# http://employchain.se/def#location
+<http://employchain.se/def#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# http://employchain.se/def#name
+<http://employchain.se/def#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Company> .
+<http://employchain.se/def#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://employchain.se/def#numberOfVacancies
+<http://employchain.se/def#numberOfVacancies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#numberOfVacancies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#numberOfVacancies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://employchain.se/def#numberOfVacancies> <http://www.w3.org/2000/01/rdf-schema#label> "number of vacancies" .
+# 
+# http://employchain.se/def#occupationField
+<http://employchain.se/def#occupationField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#occupationField> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#occupationField> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#occupationField> <http://www.w3.org/2000/01/rdf-schema#label> "occupation field" .
+# 
+# http://employchain.se/def#position
+<http://employchain.se/def#position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#position> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#position> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#position> <http://www.w3.org/2000/01/rdf-schema#label> "position" .
+# 
+# http://employchain.se/def#program
+<http://employchain.se/def#program> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#program> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#program> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#program> <http://www.w3.org/2000/01/rdf-schema#label> "program" .
+# 
+# http://employchain.se/def#remoteWork
+<http://employchain.se/def#remoteWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#remoteWork> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#remoteWork> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#remoteWork> <http://www.w3.org/2000/01/rdf-schema#label> "remote work" .
+# 
+# http://employchain.se/def#responsibilityTasks
+<http://employchain.se/def#responsibilityTasks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#responsibilityTasks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#responsibilityTasks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#responsibilityTasks> <http://www.w3.org/2000/01/rdf-schema#label> "responsibility tasks" .
+# 
+# http://employchain.se/def#role
+<http://employchain.se/def#role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#role> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#role> <http://www.w3.org/2000/01/rdf-schema#label> "role" .
+# 
+# http://employchain.se/def#salaryType
+<http://employchain.se/def#salaryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#salaryType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#salaryType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#salaryType> <http://www.w3.org/2000/01/rdf-schema#label> "salary type" .
+# 
+# http://employchain.se/def#school
+<http://employchain.se/def#school> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#school> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#school> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#school> <http://www.w3.org/2000/01/rdf-schema#label> "school" .
+# 
+# http://employchain.se/def#schoolLocation
+<http://employchain.se/def#schoolLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#schoolLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Seeker> .
+<http://employchain.se/def#schoolLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#schoolLocation> <http://www.w3.org/2000/01/rdf-schema#label> "school location" .
+# 
+# http://employchain.se/def#status
+<http://employchain.se/def#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#status> <http://www.w3.org/2000/01/rdf-schema#label> "status" .
+# 
+# http://employchain.se/def#title
+<http://employchain.se/def#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# 
+# http://employchain.se/def#workingHoursType
+<http://employchain.se/def#workingHoursType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://employchain.se/def#workingHoursType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Job> .
+<http://employchain.se/def#workingHoursType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://employchain.se/def#workingHoursType> <http://www.w3.org/2000/01/rdf-schema#label> "working hours type" .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://employchain.se/def#Company> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/esco/Accreditation
+<http://data.europa.eu/esco/Accreditation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/Accreditation> <http://www.w3.org/2000/01/rdf-schema#label> "Accreditation" .
+# 
+# http://data.europa.eu/esco/AwardingActivity
+<http://data.europa.eu/esco/AwardingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/AwardingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Awarding Activity" .
+# 
+# http://data.europa.eu/esco/AwardingBody
+<http://data.europa.eu/esco/AwardingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/AwardingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Organization> .
+<http://data.europa.eu/esco/AwardingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Awarding Body" .
+# 
+# http://data.europa.eu/esco/EntryRequirement
+<http://data.europa.eu/esco/EntryRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/EntryRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Entry Requirement" .
+# 
+# http://data.europa.eu/esco/Occupation
+<http://data.europa.eu/esco/Occupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/Occupation> <http://www.w3.org/2000/01/rdf-schema#label> "Occupation" .
+# 
+# http://data.europa.eu/esco/Qualification
+<http://data.europa.eu/esco/Qualification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/Qualification> <http://www.w3.org/2000/01/rdf-schema#label> "Qualification" .
+# 
+# http://data.europa.eu/esco/Recognition
+<http://data.europa.eu/esco/Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/Recognition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition" .
+# 
+# http://data.europa.eu/esco/Skill
+<http://data.europa.eu/esco/Skill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/esco/Skill> <http://www.w3.org/2000/01/rdf-schema#label> "Skill" .
+# 
+# http://employchain.se/def#Company
+<http://employchain.se/def#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://employchain.se/def#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Organization> .
+<http://employchain.se/def#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
+# 
+# http://employchain.se/def#Job
+<http://employchain.se/def#Job> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://employchain.se/def#Job> <http://www.w3.org/2000/01/rdf-schema#label> "Job" .
+# 
+# http://employchain.se/def#Seeker
+<http://employchain.se/def#Seeker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://employchain.se/def#Seeker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
+<http://employchain.se/def#Seeker> <http://www.w3.org/2000/01/rdf-schema#label> "Seeker" .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+# 
+# https://schema.org/Organization
+<https://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# https://schema.org/Person
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/kos/esco/NACE-code
+# 
+# http://data.europa.eu/kos/esco/acquisition-way
+# 
+# http://data.europa.eu/kos/esco/competence-sub-type
+# 
+# http://data.europa.eu/kos/esco/requirement-category
+# 
+# http://data.europa.eu/kos/esco/requirement-level
+# 
+# http://data.europa.eu/kos/esco/skill-reuse-level
+# 
+# http://data.europa.eu/kos/esco/work-context
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/creator> "Víctor Morcuende" .
+# 
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+# 
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/elements/1.1/title> "EmployChain Ontology" .
+# 
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
