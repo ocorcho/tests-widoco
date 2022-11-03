@@ -33,9 +33,7 @@ This section provides details for each class and property defined by ERA vocabul
             title="http://data.europa.eu/949/InfrastructureManager">Infrastructure manager</a>
       </li>
       <li>
-         <a href="#Junction" title="http://data.europa.eu/949/Junction">
-            <span>junction</span>
-         </a>
+         <a href="#Junction" title="http://data.europa.eu/949/Junction">Junction</a>
       </li>
       <li>
          <a href="#LineReference" title="http://data.europa.eu/949/LineReference">Line Reference</a>
@@ -97,9 +95,7 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
       </li>
       <li>
-         <a href="#Station" title="http://data.europa.eu/949/Station">
-            <span>station</span>
-         </a>
+         <a href="#Station" title="http://data.europa.eu/949/Station">Station</a>
       </li>
       <li>
          <a href="#StoppingPlace" title="http://data.europa.eu/949/StoppingPlace">Stopping Place</a>
@@ -118,6 +114,11 @@ This section provides details for each class and property defined by ERA vocabul
       </li>
       <li>
          <a href="#Tunnel" title="http://data.europa.eu/949/Tunnel">Tunnel</a>
+      </li>
+      <li>
+         <a href="#ValidityPeriod" title="http://data.europa.eu/949/ValidityPeriod">
+            <span>validity period</span>
+         </a>
       </li>
       <li>
          <a href="#Vehicle" title="http://data.europa.eu/949/Vehicle">Vehicle</a>
@@ -166,7 +167,9 @@ This section provides details for each class and property defined by ERA vocabul
          <strong>IRI:</strong> http://data.europa.eu/949/Certificate</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl>
          <dt>Term status</dt>
@@ -233,7 +236,9 @@ This section provides details for each class and property defined by ERA vocabul
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -252,7 +257,8 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in domain of</dt>
          <dd>
             <a href="#length" title="http://data.europa.eu/949/length">Length (of Section of Line, of Tunnel, of Siding, Usable lenght of Platform)</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#validityPeriod" title="http://data.europa.eu/949/validityPeriod">validity period</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -279,7 +285,7 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#etcsLevelType" title="http://data.europa.eu/949/etcsLevelType">ETCS level</a>
+            <a href="#etcsLevelType" title="http://data.europa.eu/949/etcsLevelType">ETCS level type</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -359,9 +365,6 @@ This section provides details for each class and property defined by ERA vocabul
             <a href="http://www.w3.org/ns/org#Organization"
                target="_blank"
                title="http://www.w3.org/ns/org#Organization">organization</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Organization"
-               target="_blank"
-               title="https://schema.org/Organization">organization</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -377,7 +380,7 @@ This section provides details for each class and property defined by ERA vocabul
       </dl>
    </div>
    <div class="entity" id="Junction">
-      <h3>junction<sup class="type-c" title="class">c</sup>
+      <h3>Junction<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -444,6 +447,11 @@ This section provides details for each class and property defined by ERA vocabul
             <a href="#partOf" title="http://data.europa.eu/949/partOf">part of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#composedOf" title="http://data.europa.eu/949/composedOf">composed of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Loop">
@@ -500,9 +508,6 @@ This section provides details for each class and property defined by ERA vocabul
             <a href="http://www.w3.org/ns/org#Organization"
                target="_blank"
                title="http://www.w3.org/ns/org#Organization">organization</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Organization"
-               target="_blank"
-               title="https://schema.org/Organization">organization</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -536,7 +541,6 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in domain of</dt>
          <dd>
             <a href="#lineCategory" title="http://data.europa.eu/949/lineCategory">Category of line</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#freightCorridor" title="http://data.europa.eu/949/freightCorridor">Part of a Railway freight corridor</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -729,7 +733,9 @@ A feature that has been physically implemented can be abstracted (hasAbstraction
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -856,9 +862,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>)</dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#FreightTerminal" title="http://data.europa.eu/949/FreightTerminal">freight terminal</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Junction" title="http://data.europa.eu/949/Junction">junction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Station" title="http://data.europa.eu/949/Station">station</a>
+            <a href="#Junction" title="http://data.europa.eu/949/Junction">Junction</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Station" title="http://data.europa.eu/949/Station">Station</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FreightTerminal" title="http://data.europa.eu/949/FreightTerminal">freight terminal</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1092,7 +1098,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="Station">
-      <h3>station<sup class="type-c" title="class">c</sup>
+      <h3>Station<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -1272,7 +1278,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://data.europa.eu/949/gaugingTransversalDocument">Document with the transversal section of the particular points requiring specific checks</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#additionalBrakingInformationDocument"
                title="http://data.europa.eu/949/additionalBrakingInformationDocument">Documents available by the IM relating to braking performance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#verificationCSS" title="http://data.europa.eu/949/verificationCSS">EC declaration of verification for track (CCS)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#verificationCCS" title="http://data.europa.eu/949/verificationCCS">EC declaration of verification for track (CCS)</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#verificationENE" title="http://data.europa.eu/949/verificationENE">EC declaration of verification for track (ENE)</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#demonstrationENE" title="http://data.europa.eu/949/demonstrationENE">EI declaration of demonstration for track (ENE)</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#etcsMVersion" title="http://data.europa.eu/949/etcsMVersion">ETCS M_version</a>
@@ -1324,6 +1330,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trackDirection" title="http://data.europa.eu/949/trackDirection">Normal running direction</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#gsmROptionalFunctions" title="http://data.europa.eu/949/gsmROptionalFunctions">Optional GSM-R functions</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#otherTrainProtection" title="http://data.europa.eu/949/otherTrainProtection">Other train protection, control and warning systems for degraded situation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#freightCorridor" title="http://data.europa.eu/949/freightCorridor">Part of a Railway freight corridor</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#phaseSeparation" title="http://data.europa.eu/949/phaseSeparation">Phase separation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#gaugingCheckLocation" title="http://data.europa.eu/949/gaugingCheckLocation">Railway location of particular points requiring specific checks</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#structureCheckLocation"
@@ -1347,8 +1354,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant">Trackside HABD TSI compliant</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trainIntegrityOnBoardRequired"
                title="http://data.europa.eu/949/trainIntegrityOnBoardRequired">Train integrity confirmation from on-board necessary for line access</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#flangeLubeForbidden" title="http://data.europa.eu/949/flangeLubeForbidden">Use of flange lubrication forbidden</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#eddyCurrentBraking" title="http://data.europa.eu/949/eddyCurrentBraking">Use of eddy current brakes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#flangeLubeForbidden" title="http://data.europa.eu/949/flangeLubeForbidden">Use of flange lubrication forbidden</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#magneticBraking" title="http://data.europa.eu/949/magneticBraking">Use of magnetic brakes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#etcsLevel" title="http://data.europa.eu/949/etcsLevel">etcs level</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hotAxleBoxDetectorDirection"
                title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">hot axle box detector direction</a>
@@ -1356,7 +1365,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tunnel" title="http://data.europa.eu/949/tunnel">is tunnel</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#osmClass" title="http://data.europa.eu/949/osmClass">osm class</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#platform" title="http://data.europa.eu/949/platform">platform</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">train detection system</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#railInclinationMeasurement"
+               title="http://data.europa.eu/949/railInclinationMeasurement">rail inclination measurement</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">train detection system</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1481,6 +1492,38 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ValidityPeriod">
+      <h3>validity period<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/ValidityPeriod</p>
+      <div class="comment">
+         <span class="markdown">Class to define validity start date and validity end date for objects in the infrastructure such as operational points.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#validityEndDate" title="http://data.europa.eu/949/validityEndDate">validity end date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#validityStartDate" title="http://data.europa.eu/949/validityStartDate">validity start date</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#validityPeriod" title="http://data.europa.eu/949/validityPeriod">validity period</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Vehicle">
       <h3>Vehicle<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1544,9 +1587,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <a href="http://www.w3.org/ns/org#Organization"
                target="_blank"
                title="http://www.w3.org/ns/org#Organization">organization</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Organization"
-               target="_blank"
-               title="https://schema.org/Organization">organization</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1591,6 +1631,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#gsmRRadioDataCommunication"
                title="http://data.europa.eu/949/gsmRRadioDataCommunication">GSM-R radio data communication</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#gsmRSetsInDrivingCab" title="http://data.europa.eu/949/gsmRSetsInDrivingCab">GSM-R sets in driving cab</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRegenerativeBrake" title="http://data.europa.eu/949/hasRegenerativeBrake">Permission for regenerative braking</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#alternativeName" title="http://data.europa.eu/949/alternativeName">alternative name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#altitudeRange" title="http://data.europa.eu/949/altitudeRange">altitude range</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#altitudeRangeDetail" title="http://data.europa.eu/949/altitudeRangeDetail">altitude range detail</a>
@@ -1618,6 +1659,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#drivingCabs" title="http://data.europa.eu/949/drivingCabs">driving cabs</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#eddyCurrentBrakePrevention"
                title="http://data.europa.eu/949/eddyCurrentBrakePrevention">eddy current brake prevention</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#eddyCurrentBrakingFitted"
+               title="http://data.europa.eu/949/eddyCurrentBrakingFitted">eddy current braking fitted</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#emergencyBrake" title="http://data.europa.eu/949/emergencyBrake">emergency braking</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#endCouplingType" title="http://data.europa.eu/949/endCouplingType">end coupling type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#energyMeterInstalled" title="http://data.europa.eu/949/energyMeterInstalled">energy meter installed</a>
@@ -1644,9 +1687,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasWheelSlideProtectionSystem"
                title="http://data.europa.eu/949/hasWheelSlideProtectionSystem">has wheel slide protection system</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#letterMarking" title="http://data.europa.eu/949/letterMarking">letter marking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#loadingPlatformHeight" title="http://data.europa.eu/949/loadingPlatformHeight">loadng platform height</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#loadingPlatformHeight" title="http://data.europa.eu/949/loadingPlatformHeight">loading platform height</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#magneticBrakePrevention"
                title="http://data.europa.eu/949/magneticBrakePrevention">magnetic brake prevention</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#magneticBrakingFitted" title="http://data.europa.eu/949/magneticBrakingFitted">magnetic braking fitted</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturer" title="http://data.europa.eu/949/manufacturer">manufacturer</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#massPerWheel" title="http://data.europa.eu/949/massPerWheel">mass per wheel</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumAverageDeceleration"
@@ -1721,7 +1765,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trainControlSwitchOverSpecialConditions"
                title="http://data.europa.eu/949/trainControlSwitchOverSpecialConditions">train control switch over special conditions</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#transportableOnFerry" title="http://data.europa.eu/949/transportableOnFerry">transportable on ferry</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#typeVersionNumber" title="http://data.europa.eu/949/typeVersionNumber">type version number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#typeVersionId" title="http://data.europa.eu/949/typeVersionId">type version id</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#typeVersionNumber" title="http://data.europa.eu/949/typeVersionNumber">type version number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#category" title="http://data.europa.eu/949/category">vehicle category</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#vehicleContactForce" title="http://data.europa.eu/949/vehicleContactForce">vehicle contact force</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleKinematicGaugeOther"
@@ -1778,6 +1823,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#lineCategory" title="http://data.europa.eu/949/lineCategory">Category of line</a>
       </li>
       <li>
+         <a href="#composedOf" title="http://data.europa.eu/949/composedOf">composed of</a>
+      </li>
+      <li>
          <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
       </li>
       <li>
@@ -1815,10 +1863,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#etcsLevel" title="http://data.europa.eu/949/etcsLevel">etcs level</a>
       </li>
       <li>
-         <a href="#etcsLevelType" title="http://data.europa.eu/949/etcsLevelType">ETCS level</a>
+         <a href="#etcsDegradedSituation" title="http://data.europa.eu/949/etcsDegradedSituation">ETCS level for degraded situation</a>
       </li>
       <li>
-         <a href="#etcsDegradedSituation" title="http://data.europa.eu/949/etcsDegradedSituation">ETCS level for degraded situation</a>
+         <a href="#etcsLevelType" title="http://data.europa.eu/949/etcsLevelType">ETCS level type</a>
       </li>
       <li>
          <a href="#etcsMVersion" title="http://data.europa.eu/949/etcsMVersion">ETCS M_version</a>
@@ -2084,10 +2132,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://data.europa.eu/949/trainDetectionSystemType">Type of train detection system</a>
       </li>
       <li>
+         <a href="#typeVersionId" title="http://data.europa.eu/949/typeVersionId">
+            <span>type version id</span>
+         </a>
+      </li>
+      <li>
          <a href="#eddyCurrentBraking" title="http://data.europa.eu/949/eddyCurrentBraking">Use of eddy current brakes</a>
       </li>
       <li>
          <a href="#magneticBraking" title="http://data.europa.eu/949/magneticBraking">Use of magnetic brakes</a>
+      </li>
+      <li>
+         <a href="#validityPeriod" title="http://data.europa.eu/949/validityPeriod">validity period</a>
       </li>
       <li>
          <a href="#category" title="http://data.europa.eu/949/category">vehicle category</a>
@@ -2118,7 +2174,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <strong>IRI:</strong> http://data.europa.eu/949/otherPantographHead</p>
       <div class="comment">
          <span class="markdown">Indication of which non-TSI compliant pantograph heads are allowed to be used.
-Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads. The concept scheme is temporarily non-deferenceable.</span>
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2158,7 +2214,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiPantographHead</p>
       <div class="comment">
-         <span class="markdown">Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2350,6 +2406,43 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
          </dl>
       </div>
    </div>
+   <div class="entity" id="composedOf">
+      <h3>composed of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/composedOf</p>
+      <div class="comment">
+         <span class="markdown">The speed section and the gradient curve are composed of zero or more
+linear locations.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GradientCurve" title="http://data.europa.eu/949/GradientCurve">Gradient Curve</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#SpeedSection" title="http://data.europa.eu/949/SpeedSection">Speed Section</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LinearLocation" title="http://data.europa.eu/949/LinearLocation">linear location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="contactLineSystem">
       <h3>contact line system<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2358,7 +2451,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/contactLineSystem</p>
       <div class="comment">
-         <span class="markdown">Contact line system present in the section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems</span>
+         <span class="markdown">Contact line system present in the section of line.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2541,7 +2634,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/endCouplingType</p>
       <div class="comment">
-         <span class="markdown">Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2727,7 +2820,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/etcsEquipmentOnBoardLevel</p>
       <div class="comment">
-         <span class="markdown">ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2847,46 +2940,6 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
          </dl>
       </div>
    </div>
-   <div class="entity" id="etcsLevelType">
-      <h3>ETCS level<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/etcsLevelType</p>
-      <div class="comment">
-         <span class="markdown">ERTMS / ETCS application level which expresses the possible operating relationships between track and train. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <dl>
-         <dt>Rinf index</dt>
-         <dd>1.1.1.3.2.1</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ETCSLevel" title="http://data.europa.eu/949/ETCSLevel">ETCS Level</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2004/02/skos/core#Concept"
-                  target="_blank"
-                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="etcsDegradedSituation">
       <h3>ETCS level for degraded situation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2916,6 +2969,46 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
             <dt>has domain</dt>
             <dd>
                <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="etcsLevelType">
+      <h3>ETCS level type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/etcsLevelType</p>
+      <div class="comment">
+         <span class="markdown">ERTMS / ETCS application level which expresses the possible operating relationships between track and train. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Rinf index</dt>
+         <dd>1.1.1.3.2.1</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ETCSLevel" title="http://data.europa.eu/949/ETCSLevel">ETCS Level</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3025,7 +3118,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/TSITractionHarmonics</p>
       <div class="comment">
-         <span class="markdown">Existence and TSI compliance of limits in harmonics in the traction current of vehicles. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Existence and TSI compliance of limits in harmonics in the traction current of vehicles. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3068,7 +3161,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/TSIMagneticFields</p>
       <div class="comment">
-         <span class="markdown">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3111,7 +3204,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/rollingStockFireCategory</p>
       <div class="comment">
-         <span class="markdown">Applicable rolling stock fire category for a tunnel. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Applicable rolling stock fire category for a tunnel. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3156,7 +3249,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/fireSafetyCategory</p>
       <div class="comment">
-         <span class="markdown">Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3287,7 +3380,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/gsmRRadioDataCommunication</p>
       <div class="comment">
-         <span class="markdown">GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3542,15 +3635,17 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
       <div class="comment">
          <span class="markdown">Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.
 
-This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS.</span>
+This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/hot-axle/HotAxleBoxDetectorDirections</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl>
          <dt>Rinf index</dt>
-         <dd>1.1.1.1.7.9.</dd>
+         <dd>1.1.1.1.7.9</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3623,7 +3718,9 @@ This property was previously a datatype property with domain Track and range str
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -3932,7 +4029,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/navigability</p>
       <div class="comment">
-         <span class="markdown">Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3968,7 +4065,8 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/netElement</p>
       <div class="comment">
-         <span class="markdown">References an associated topological object.</span>
+         <span class="markdown">References an associated topological object.
+The reason for deprecating this property is that it is defined as "References an associated topological object." and the vocabulary has already a property "hasAbstraction" which relates the implementation layer with the topological layer.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3979,6 +4077,10 @@ This property was previously a datatype property with domain Track and range str
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4084,7 +4186,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/trackDirection</p>
       <div class="comment">
-         <span class="markdown">Track normal running direction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections.  The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Track normal running direction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4247,7 +4349,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/operationalRestriction</p>
       <div class="comment">
-         <span class="markdown">Indicates an operational restriction of vehicle or wagon. Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/restrictions/Restrictions. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indicates an operational restriction of vehicle or wagon. Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/restrictions/Restrictions.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4323,7 +4425,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/osmClass</p>
       <div class="comment">
-         <span class="markdown">Additional concept class according to OpenStreetMap.</span>
+         <span class="markdown">Additional concept class according to OpenStreetMap. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/osmclass/OSMClasses.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4445,7 +4547,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/parkingBrakeType</p>
       <div class="comment">
-         <span class="markdown">Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4489,7 +4591,9 @@ This property was previously a datatype property with domain Track and range str
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -4535,7 +4639,7 @@ This property was previously a datatype property with domain Track and range str
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#NationalRailwayLine" title="http://data.europa.eu/949/NationalRailwayLine">National Railway Line</a>
+               <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4675,7 +4779,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/positionOnA</p>
       <div class="comment">
-         <span class="markdown">Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4711,7 +4815,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/positionOnB</p>
       <div class="comment">
-         <span class="markdown">Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4751,7 +4855,9 @@ This property was previously a datatype property with domain Track and range str
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl>
          <dt>Term status</dt>
@@ -4783,7 +4889,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/quieterRoutesExemptedCountry</p>
       <div class="comment">
-         <span class="markdown">Country where a vehicle may operate without noise restrictions</span>
+         <span class="markdown">Country where a vehicle may operate without noise restrictions. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4820,7 +4926,7 @@ This property was previously a datatype property with domain Track and range str
          <strong>IRI:</strong> http://data.europa.eu/949/dataRadioCompatible</p>
       <div class="comment">
          <span class="markdown">Radio requirements used for demonstrating technical compatibility voice.
- The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</span>
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4868,7 +4974,7 @@ This property was previously a datatype property with domain Track and range str
          <strong>IRI:</strong> http://data.europa.eu/949/voiceRadioCompatible</p>
       <div class="comment">
          <span class="markdown">Radio requirements used for demonstrating technical compatibility voice.
- The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</span>
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4915,7 +5021,9 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/railInclination</p>
       <div class="comment">
-         <span class="markdown">An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations</span>
+         <span class="markdown">An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations
+This property has been changed, its rinfIndex was deleted. RINF treats this parameter as an integer. A new datatype property for RINF has been defined called railInclinationMeasurement.
+This change was rolled back, RINF index was again added.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5004,7 +5112,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/frenchTrainDetectionSystemLimitation</p>
       <div class="comment">
-         <span class="markdown">Section with train detection limitation, specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Section with train detection limitation, specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5254,7 +5362,7 @@ This property was previously a datatype property with domain Track and range str
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/state</p>
       <div class="comment">
-         <span class="markdown">Denoting the state of the certificate and range the following instances.</span>
+         <span class="markdown">Denoting the state of the certificate and range the following instances. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/states/States. This concept scheme is temporarily non-dereferenceable.</span>
       </div>
       <dl>
          <dt>Term status</dt>
@@ -5578,7 +5686,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles</p>
       <div class="comment">
-         <span class="markdown">Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5618,7 +5726,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5658,7 +5766,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantMetalFreeSpace</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5698,7 +5806,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantMetalConstruction</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5738,7 +5846,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantRSTShuntImpedance</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5778,7 +5886,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantSandCharacteristics</p>
       <div class="comment">
-         <span class="markdown">TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5818,7 +5926,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantShuntDevices</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5858,7 +5966,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5898,7 +6006,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/tsiCompliantSanding</p>
       <div class="comment">
-         <span class="markdown">TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -5978,7 +6086,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/opType</p>
       <div class="comment">
-         <span class="markdown">Indicates the type on an operational point. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Indicates the type on an operational point. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6100,6 +6208,43 @@ The concept scheme is temporarily non-deferenceable.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="typeVersionId">
+      <h3>type version id<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/typeVersionId</p>
+      <div class="comment">
+         <span class="markdown">Indicates the registrationVersion with Ids 10,20 and 30 indicating registration according to Directive 2008/57/EC and implementing Decision 2011/665/EU, and 40 and 50 indicating registration according to regime described in Directive 2008/57/EC.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/version-ids/VehicleTypeVersionIds.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="eddyCurrentBraking">
       <h3>Use of eddy current brakes<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -6108,7 +6253,8 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/eddyCurrentBraking</p>
       <div class="comment">
-         <span class="markdown">Use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking</span>
+         <span class="markdown">Use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking
+This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, eddyCurrentBrakingFitted with boolean values.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6124,10 +6270,6 @@ The concept scheme is temporarily non-deferenceable.</span>
          <dt>Rinf index</dt>
          <dd>1.1.1.1.6.2</dd>
       </dl>
-      <dl>
-         <dt>EraTV index</dt>
-         <dd>4.7.4.1.1</dd>
-      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -6136,9 +6278,6 @@ The concept scheme is temporarily non-deferenceable.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6158,7 +6297,8 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/magneticBraking</p>
       <div class="comment">
-         <span class="markdown">Use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking.
+This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, magneticBrakingFitted with boolean values.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6174,10 +6314,6 @@ The concept scheme is temporarily non-deferenceable.</span>
          <dt>Rinf index</dt>
          <dd>1.1.1.1.6.3</dd>
       </dl>
-      <dl>
-         <dt>EraTV index</dt>
-         <dd>4.7.4.2.1</dd>
-      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -6186,9 +6322,6 @@ The concept scheme is temporarily non-deferenceable.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6196,6 +6329,39 @@ The concept scheme is temporarily non-deferenceable.</span>
                <a href="http://www.w3.org/2004/02/skos/core#Concept"
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="validityPeriod">
+      <h3>validity period<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/validityPeriod</p>
+      <div class="comment">
+         <span class="markdown">Resltionship among an object of the infrastructure and its period of validity</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EraFeature" title="http://data.europa.eu/949/EraFeature">ERA Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ValidityPeriod" title="http://data.europa.eu/949/ValidityPeriod">validity period</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -6208,7 +6374,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/category</p>
       <div class="comment">
-         <span class="markdown">Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6286,7 +6452,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/subCategory</p>
       <div class="comment">
-         <span class="markdown">Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories. The concept scheme is temporarily non-deferenceable.</span>
+         <span class="markdown">Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6582,7 +6748,7 @@ The concept scheme is temporarily non-deferenceable.</span>
          <a href="#drivingCabs" title="http://data.europa.eu/949/drivingCabs">driving cabs</a>
       </li>
       <li>
-         <a href="#verificationCSS" title="http://data.europa.eu/949/verificationCSS">EC declaration of verification for track (CCS)</a>
+         <a href="#verificationCCS" title="http://data.europa.eu/949/verificationCCS">EC declaration of verification for track (CCS)</a>
       </li>
       <li>
          <a href="#verificationENE" title="http://data.europa.eu/949/verificationENE">EC declaration of verification for track (ENE)</a>
@@ -6596,6 +6762,10 @@ The concept scheme is temporarily non-deferenceable.</span>
       <li>
          <a href="#eddyCurrentBrakePrevention"
             title="http://data.europa.eu/949/eddyCurrentBrakePrevention">eddy current brake prevention</a>
+      </li>
+      <li>
+         <a href="#eddyCurrentBrakingFitted"
+            title="http://data.europa.eu/949/eddyCurrentBrakingFitted">eddy current braking fitted</a>
       </li>
       <li>
          <a href="#demonstrationENE" title="http://data.europa.eu/949/demonstrationENE">EI declaration of demonstration for track (ENE)</a>
@@ -6818,11 +6988,14 @@ The concept scheme is temporarily non-deferenceable.</span>
          <a href="#linearCoordinate" title="http://data.europa.eu/949/linearCoordinate">linear coordinate</a>
       </li>
       <li>
-         <a href="#loadingPlatformHeight" title="http://data.europa.eu/949/loadingPlatformHeight">loadng platform height</a>
+         <a href="#loadingPlatformHeight" title="http://data.europa.eu/949/loadingPlatformHeight">loading platform height</a>
       </li>
       <li>
          <a href="#magneticBrakePrevention"
             title="http://data.europa.eu/949/magneticBrakePrevention">magnetic brake prevention</a>
+      </li>
+      <li>
+         <a href="#magneticBrakingFitted" title="http://data.europa.eu/949/magneticBrakingFitted">magnetic braking fitted</a>
       </li>
       <li>
          <a href="#massPerWheel" title="http://data.europa.eu/949/massPerWheel">mass per wheel</a>
@@ -7042,6 +7215,10 @@ The concept scheme is temporarily non-deferenceable.</span>
             title="http://data.europa.eu/949/radioSwitchOverSpecialConditions">radio switch over special conditions</a>
       </li>
       <li>
+         <a href="#railInclinationMeasurement"
+            title="http://data.europa.eu/949/railInclinationMeasurement">rail inclination measurement</a>
+      </li>
+      <li>
          <a href="#gaugingCheckLocation" title="http://data.europa.eu/949/gaugingCheckLocation">Railway location of particular points requiring specific checks</a>
       </li>
       <li>
@@ -7182,6 +7359,14 @@ The concept scheme is temporarily non-deferenceable.</span>
       </li>
       <li>
          <a href="#usesGroup555" title="http://data.europa.eu/949/usesGroup555">Use of group 555</a>
+      </li>
+      <li>
+         <a href="#validityEndDate" title="http://data.europa.eu/949/validityEndDate">validity end date</a>
+      </li>
+      <li>
+         <a href="#validityStartDate" title="http://data.europa.eu/949/validityStartDate">
+            <span>validity start date</span>
+         </a>
       </li>
       <li>
          <a href="#vehicleContactForce" title="http://data.europa.eu/949/vehicleContactForce">vehicle contact force</a>
@@ -7866,7 +8051,9 @@ The concept scheme is temporarily non-deferenceable.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl>
          <dt>Term status</dt>
@@ -8798,13 +8985,13 @@ The concept scheme is temporarily non-deferenceable.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="verificationCSS">
+   <div class="entity" id="verificationCCS">
       <h3>EC declaration of verification for track (CCS)<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/verificationCSS</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/verificationCCS</p>
       <div class="comment">
          <span class="markdown">Unique number for EC declarations concerning requirements of CCS (Command - Control and Signalling subsystem) on the specific track.</span>
       </div>
@@ -8988,6 +9175,43 @@ The concept scheme is temporarily non-deferenceable.</span>
       <dl>
          <dt>EraTV index</dt>
          <dd>4.7.4.1.2</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="eddyCurrentBrakingFitted">
+      <h3>eddy current braking fitted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/eddyCurrentBrakingFitted</p>
+      <div class="comment">
+         <span class="markdown">Eddy current track brake fitted. New property defined to distinghish it from eddyCurrentBraking which is a RINF SKOS property.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>EraTV index</dt>
+         <dd>4.7.4.1.1</dd>
       </dl>
       <div class="description">
          <p>
@@ -11783,7 +12007,7 @@ The concept scheme is temporarily non-deferenceable.</span>
       </div>
    </div>
    <div class="entity" id="loadingPlatformHeight">
-      <h3>loadng platform height<sup class="type-dp" title="data property">dp</sup>
+      <h3>loading platform height<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -11850,6 +12074,40 @@ The concept scheme is temporarily non-deferenceable.</span>
          <p>
             <strong>has characteristics:
                 </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="magneticBrakingFitted">
+      <h3>magnetic braking fitted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/magneticBrakingFitted</p>
+      <div class="comment">
+         <span class="markdown">Magnetic track brake fitted. New property defined to distinguish it from magneticBraking which is a RINF SKOS property.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>EraTV index</dt>
+         <dd>4.7.4.2.1</dd>
+      </dl>
+      <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -11944,9 +12202,9 @@ The concept scheme is temporarily non-deferenceable.</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+               <a href="http://www.w3.org/2001/XMLSchema#double"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
             </dd>
          </dl>
       </div>
@@ -13720,10 +13978,14 @@ This property was before an object skos property. The values for this property d
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/nonCodedRestrictions</p>
+      <div class="comment">
+         <span class="markdown">Denotes a non coded restrictions for this particular vehicleType, as a set of sentences.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl>
          <dt>Term status</dt>
@@ -14188,10 +14450,6 @@ This property was before an object skos property. The values for this property d
          <dd>stable</dd>
       </dl>
       <dl>
-         <dt>Rinf index</dt>
-         <dd>1.1.1.2.2.4</dd>
-      </dl>
-      <dl>
          <dt>EraTV index</dt>
          <dd>4.7.4.3.1</dd>
       </dl>
@@ -14202,9 +14460,6 @@ This property was before an object skos property. The values for this property d
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#ContactLineSystem" title="http://data.europa.eu/949/ContactLineSystem">Contact Line System</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -14600,6 +14855,52 @@ This property was before an object skos property. The values for this property d
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="railInclinationMeasurement">
+      <h3>rail inclination measurement<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/railInclinationMeasurement</p>
+      <div class="comment">
+         <span class="markdown">An angle defining the inclination of the head of a rail relative to the running surface. 
+This is a RINF parameter treated as an integer. It has been defined in order to distinguish it from the ERATV parameter, railInclination, which is a SKOS.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
+      </dl>
+      <dl>
+         <dt>Rinf index</dt>
+         <dd>1.1.1.1.4.3</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -16366,6 +16667,74 @@ This property was before an object skos property. The values for this property d
          </dl>
       </div>
    </div>
+   <div class="entity" id="validityEndDate">
+      <h3>validity end date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/validityEndDate</p>
+      <div class="comment">
+         <span class="markdown">Defines the validity end date (e.g., an operational point that is not valid anymore), so that it is possible to filter out those that are not applicable for a specific application (e.g., for route planning)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ValidityPeriod" title="http://data.europa.eu/949/ValidityPeriod">validity period</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="validityStartDate">
+      <h3>validity start date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/validityStartDate</p>
+      <div class="comment">
+         <span class="markdown">Defines the validity start date (e.g., an operational point that is not valid now since it is planned for the future), so that it is possible to filter out those that are not applicable for a specific application (e.g., for route planning)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ValidityPeriod" title="http://data.europa.eu/949/ValidityPeriod">validity period</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="vehicleContactForce">
       <h3>vehicle contact force<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -16421,7 +16790,9 @@ This property was before an object skos property. The values for this property d
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>http://data.europa.eu/949/</dd>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
       </dl>
       <dl>
          <dt>Term status</dt>

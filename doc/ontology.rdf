@@ -27,14 +27,14 @@
         <terms:contributor>Polymnia Vasilopoulou</terms:contributor>
         <terms:contributor>Wouter Beek</terms:contributor>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-27</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-20</terms:modified>
         <terms:publisher>European Union Agency for Railways</terms:publisher>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways. It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit. Currently, this vocabulary covers the European railway infrastructure and the vehicles authorized to operate over it. It is a semantic/browsable representation of the [RINF](https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf) and [ERATV](https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf) application guides that were built by domain experts in the RINF and ERATV working parties.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
-        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.1</owl:priorVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#date">v2.4.2</owl:versionInfo>
-        <owl:versionURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.4.2</owl:versionURI>
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.5.2</owl:priorVersion>
+        <owl:versionInfo>v2.5.3</owl:versionInfo>
+        <owl:versionURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.5.3</owl:versionURI>
     </owl:Ontology>
     
 
@@ -163,6 +163,13 @@
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#label"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#versionURI -->
 
 
@@ -250,7 +257,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rinfIndex>1.1.1.3.9.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
-        <rdfs:comment xml:lang="en">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Existence and TSI compliance of rules for magnetic fields emitted by a vehicle</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -268,7 +275,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rinfIndex>1.1.1.3.9.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
-        <rdfs:comment xml:lang="en">Existence and TSI compliance of limits in harmonics in the traction current of vehicles. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Existence and TSI compliance of limits in harmonics in the traction current of vehicles. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Existence and TSI compliance of limits in harmonics in the traction current of vehicles</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -319,9 +326,32 @@ above the local reference ellipsoid).</rdfs:comment>
         <eratvIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">vehicle category</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/composedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/composedOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://data.europa.eu/949/GradientCurve"/>
+                    <rdf:Description rdf:about="http://data.europa.eu/949/SpeedSection"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/LinearLocation"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-12</terms:created>
+        <rdfs:comment xml:lang="en">The speed section and the gradient curve are composed of zero or more
+linear locations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">composed of</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -335,7 +365,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="http://data.europa.eu/949/ContactLineSystem"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
-        <rdfs:comment xml:lang="en">Contact line system present in the section of line. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems</rdfs:comment>
+        <rdfs:comment xml:lang="en">Contact line system present in the section of line.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">contact line system</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -422,7 +452,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Radio requirements used for demonstrating technical compatibility voice.
- The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</rdfs:comment>
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-radio-system-compatibilities/DataRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Radio system compatibility data</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -435,21 +465,14 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/eddyCurrentBraking">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://data.europa.eu/949/Track"/>
-                    <rdf:Description rdf:about="http://data.europa.eu/949/VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <eratvIndex>4.7.4.1.1</eratvIndex>
         <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
         <rinfIndex>1.1.1.1.6.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
-        <rdfs:comment xml:lang="en">Use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-06</terms:modified>
+        <rdfs:comment xml:lang="en">Use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking
+This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, eddyCurrentBrakingFitted with boolean values.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Use of eddy current brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -514,7 +537,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <eratvIndex>4.9.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:modified>
-        <rdfs:comment xml:lang="en">Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">end coupling type</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -627,7 +650,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <eratvIndex>4.13.1.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:modified>
-        <rdfs:comment xml:lang="en">ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">ETCS equipment level</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -689,7 +712,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-07</terms:modified>
         <rdfs:comment xml:lang="en">ERTMS / ETCS application level which expresses the possible operating relationships between track and train. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">ETCS level</rdfs:label>
+        <rdfs:label xml:lang="en">ETCS level type</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -749,7 +772,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <eratvIndex>4.4.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">fire safety category</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -761,7 +784,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/freightCorridor">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/NationalRailwayLine"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rinfIndex>1.1.1.1.2.3</rinfIndex>
         <rinfIndex>1.2.1.0.2.3</rinfIndex>
@@ -784,7 +807,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rinfIndex>1.1.1.3.7.1.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
-        <rdfs:comment xml:lang="en">Section with train detection limitation, specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Section with train detection limitation, specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Section with train detection limitation, only for the French network</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -864,7 +887,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <eratvIndex>4.13.2.7</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:modified>
-        <rdfs:comment xml:lang="en">GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">GSM-R radio data communication</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -972,12 +995,12 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rinfIndex>1.1.1.1.7.9.</rinfIndex>
+        <rinfIndex>1.1.1.1.7.9</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-08</terms:created>
         <rdfs:comment xml:lang="en">Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.
 
-This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://data.europa.eu/949/</rdfs:isDefinedBy>
+This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/hot-axle/HotAxleBoxDetectorDirections</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">hot axle box detector direction</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1007,7 +1030,7 @@ This property was previously a datatype property with domain Track and range str
         <rdfs:range rdf:resource="http://data.europa.eu/949/InfrastructureManager"/>
         <terms:created xml:lang="en">2022-07-07</terms:created>
         <rdfs:comment xml:lang="en">Relates any feature implemented in the European railway infrastructure with its infrastructure manager.</rdfs:comment>
-        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">infrastructure manager</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1125,21 +1148,14 @@ This property was previously a datatype property with domain Track and range str
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/magneticBraking">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://data.europa.eu/949/Track"/>
-                    <rdf:Description rdf:about="http://data.europa.eu/949/VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <eratvIndex>4.7.4.2.1</eratvIndex>
         <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
         <rinfIndex>1.1.1.1.6.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
-        <rdfs:comment xml:lang="en">Use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-12</terms:modified>
+        <rdfs:comment xml:lang="en">Use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking.
+This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, magneticBrakingFitted with boolean values.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Use of magnetic brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1228,7 +1244,7 @@ This property was previously a datatype property with domain Track and range str
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-01</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">navigability</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1242,10 +1258,12 @@ This property was previously a datatype property with domain Track and range str
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/netElement">
         <rdfs:range rdf:resource="http://data.europa.eu/949/NetElement"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-01</terms:modified>
-        <rdfs:comment xml:lang="en">References an associated topological object.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-06</terms:modified>
+        <rdfs:comment xml:lang="en">References an associated topological object.
+The reason for deprecating this property is that it is defined as &quot;References an associated topological object.&quot; and the vocabulary has already a property &quot;hasAbstraction&quot; which relates the implementation layer with the topological layer.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">net element</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -1340,7 +1358,7 @@ This property was previously a datatype property with domain Track and range str
         <rinfIndex>1.2.0.0.0.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Indicates the type on an operational point. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the type on an operational point. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Type of operational point</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1356,7 +1374,7 @@ This property was previously a datatype property with domain Track and range str
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-23</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Indicates an operational restriction of vehicle or wagon. Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/restrictions/Restrictions. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates an operational restriction of vehicle or wagon. Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/restrictions/Restrictions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">operational restriction</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1371,7 +1389,7 @@ This property was previously a datatype property with domain Track and range str
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <skos:definition xml:lang="en">Additional concept class according to OpenStreetMap.</skos:definition>
+        <skos:definition xml:lang="en">Additional concept class according to OpenStreetMap. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/osmclass/OSMClasses.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1386,7 +1404,7 @@ This property was previously a datatype property with domain Track and range str
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-03</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which non-TSI compliant pantograph heads are allowed to be used.
-Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Accepted other pantograph heads</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1421,7 +1439,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <eratvIndex>4.7.3.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-26</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-26</terms:modified>
-        <rdfs:comment xml:lang="en">Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">parking brake type</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1437,7 +1455,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rdfs:range rdf:resource="http://data.europa.eu/949/NetElement"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-11</terms:created>
         <rdfs:comment xml:lang="en">Linear locations are subsections (part of) of other net elements</rdfs:comment>
-        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1509,7 +1527,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-03</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">position on A</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1525,7 +1543,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-03</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">position on B</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1543,7 +1561,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
         <rdfs:comment xml:lang="en">Denotes a the previous VehicleType.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">previous vehicle type</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:ObjectProperty>
@@ -1620,7 +1638,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-23</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-23</terms:modified>
-        <rdfs:comment xml:lang="en">Country where a vehicle may operate without noise restrictions</rdfs:comment>
+        <rdfs:comment xml:lang="en">Country where a vehicle may operate without noise restrictions. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">quieter route exempted country</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1646,8 +1664,10 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
         <rinfIndex>1.1.1.1.4.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
-        <rdfs:comment xml:lang="en">An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-20</terms:modified>
+        <rdfs:comment xml:lang="en">An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations
+This property has been changed, its rinfIndex was deleted. RINF treats this parameter as an integer. A new datatype property for RINF has been defined called railInclinationMeasurement.
+This change was rolled back, RINF index was again added.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Rail inclination</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1668,7 +1688,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rinfIndex>1.2.2.0.5.7</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</terms:modified>
-        <rdfs:comment xml:lang="en">Applicable rolling stock fire category for a tunnel. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Applicable rolling stock fire category for a tunnel. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Fire category of rolling stock required</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1765,7 +1785,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
-        <rdfs:comment xml:lang="en">Denoting the state of the certificate and range the following instances.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Denoting the state of the certificate and range the following instances. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/states/States. This concept scheme is temporarily non-dereferenceable.</rdfs:comment>
         <rdfs:label xml:lang="en">state</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:ObjectProperty>
@@ -1782,7 +1802,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <eratvIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:modified>
-        <rdfs:comment xml:lang="en">Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">vehicle subcategory</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1887,7 +1907,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rinfIndex>1.1.1.0.0.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-09</terms:modified>
-        <rdfs:comment xml:lang="en">Track normal running direction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections.  The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Track normal running direction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Normal running direction</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -1963,7 +1983,7 @@ Indication of which TSI compliant pantograph heads are allowed to be used. The a
         <rinfIndex>1.1.1.3.7.21</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of rules on the use of composite brake blocks</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2000,7 +2020,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.2.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-07</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of maximum permitted distance between two consecutive axles</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2017,7 +2037,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.15.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of maximum permitted impedance between opposite wheels of a wheelset</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2034,7 +2054,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.13</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of rules for vehicle metal construction</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2051,7 +2071,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.12</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of rules for metal-free space around wheels</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2068,7 +2088,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.23</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of rules on combination of RST characteristics influencing shunting impedance</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2085,7 +2105,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.19</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI Compliance of rules on sand characteristics</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2102,7 +2122,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.16</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of sanding</rdfs:label>
         <ns:term_status>unstable</ns:term_status>
@@ -2119,7 +2139,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.3.7.22</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-09</terms:modified>
-        <rdfs:comment xml:lang="en">TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">TSI compliance of rules on shunt assisting devices</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2136,9 +2156,40 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rinfIndex>1.1.1.2.3.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</terms:modified>
-        <rdfs:comment xml:lang="en">Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads. The concept scheme is temporarily non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indication of which TSI compliant pantograph heads are allowed to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/compliant-pantograph-heads/CompliantPantographHeads.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Accepted TSI compliant pantograph heads</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/typeVersionId -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/typeVersionId">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11-03</terms:created>
+        <rdf:label xml:lang="en">type version id</rdf:label>
+        <rdfs:comment xml:lang="en">Indicates the registrationVersion with Ids 10,20 and 30 indicating registration according to Directive 2008/57/EC and implementing Decision 2011/665/EU, and 40 and 50 indicating registration according to regime described in Directive 2008/57/EC.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/version-ids/VehicleTypeVersionIds.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/validityPeriod -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/validityPeriod">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/EraFeature"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/ValidityPeriod"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-21</terms:created>
+        <rdfs:comment xml:lang="en">Resltionship among an object of the infrastructure and its period of validity</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">validity period</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
@@ -2212,7 +2263,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
         <rdfs:comment xml:lang="en">Radio requirements used for demonstrating technical compatibility voice.
- The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable. The current concept scheme is http://data.europa.eu/949/concepts/radio-system-compatibilities/RadioSystemCompatibilities</rdfs:comment>
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/voice-radio-system-compatibilities/VoiceRadioSystemCompatibilities. This concept scheme is temporatily non-deferenceable.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Radio system compatibility voice</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2556,7 +2607,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
         <rdfs:comment xml:lang="en">Denotes a certificate for this particular vehicleType.</rdfs:comment>
-        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">certificate</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:DatatypeProperty>
@@ -2902,6 +2953,23 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Document with the conditions for the use of eddy current brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/eddyCurrentBrakingFitted -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/eddyCurrentBrakingFitted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.1.1</eratvIndex>
+        <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-06</terms:created>
+        <rdfs:comment xml:lang="en">Eddy current track brake fitted. New property defined to distinghish it from eddyCurrentBraking which is a RINF SKOS property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">eddy current braking fitted</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3633,17 +3701,9 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/hasRegenerativeBrake">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://data.europa.eu/949/ContactLineSystem"/>
-                    <rdf:Description rdf:about="http://data.europa.eu/949/VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <eratvIndex>4.7.4.3.1</eratvIndex>
-        <rinfIndex>1.1.1.2.2.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-06</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether regenerative braking is permitted or not.</rdfs:comment>
@@ -4078,7 +4138,7 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-31</terms:modified>
         <rdfs:comment xml:lang="en">Height of loading platform (for flat wagons and combined transport), given in mm.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
-        <rdfs:label xml:lang="en">loadng platform height</rdfs:label>
+        <rdfs:label xml:lang="en">loading platform height</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -4165,6 +4225,22 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Document with the conditions for the use of magnetic brakes</rdfs:label>
         <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/magneticBrakingFitted -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/magneticBrakingFitted">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.2.1</eratvIndex>
+        <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-12</terms:created>
+        <rdfs:comment xml:lang="en">Magnetic track brake fitted. New property defined to distinguish it from magneticBraking which is a RINF SKOS property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">magnetic braking fitted</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4360,11 +4436,11 @@ The concept scheme is temporarily non-deferenceable.</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/maximumAltitude">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
         <rinfIndex>1.1.1.1.2.7</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-03</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-10</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-20</terms:modified>
         <rdfs:comment xml:lang="en">Highest point of the section of line above sea level in reference to Normal Amsterdam’s Peil (NAP). The value of the parameter shall be given in metres, with tolerance of +/-100m.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Maximum altitude</rdfs:label>
@@ -5050,8 +5126,8 @@ This property was before an object skos property. The values for this property d
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:created>2022-06-15</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
-        <rdfs:isDefinedBy xml:lang="en">Denotes a non coded restrictions for this particular vehicleType, as a set of sentences.</rdfs:isDefinedBy>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#date">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Denotes a non coded restrictions for this particular vehicleType, as a set of sentences.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">non coded restrictions</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:DatatypeProperty>
@@ -5483,6 +5559,28 @@ This property was before an object skos property. The values for this property d
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">radio switch over special conditions</rdfs:label>
         <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/railInclinationMeasurement -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/railInclinationMeasurement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <isCoreParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isCoreParameter>
+        <rinfIndex>1.1.1.1.4.3</rinfIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-06</terms:created>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/railInclination</terms:description>
+        <rdfs:comment xml:lang="en">An angle defining the inclination of the head of a rail relative to the running surface. 
+This is a RINF parameter treated as an integer. It has been defined in order to distinguish it from the ERATV parameter, railInclination, which is a SKOS.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The reason for deprecation is that the definition of this porperty is being rolled back, as before, the property railInclination is a SKOS for both RINF and ERATV.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">rail inclination measurement</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -6237,6 +6335,36 @@ This property was before an object skos property. The values for this property d
     
 
 
+    <!-- http://data.europa.eu/949/validityEndDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/validityEndDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/ValidityPeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-19</terms:created>
+        <rdfs:comment xml:lang="en">Defines the validity end date (e.g., an operational point that is not valid anymore), so that it is possible to filter out those that are not applicable for a specific application (e.g., for route planning)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">validity end date</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/validityStartDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/validityStartDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/ValidityPeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-20</terms:created>
+        <rdf:label xml:lang="en">validity start date</rdf:label>
+        <rdfs:comment xml:lang="en">Defines the validity start date (e.g., an operational point that is not valid now since it is planned for the future), so that it is possible to filter out those that are not applicable for a specific application (e.g., for route planning)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://data.europa.eu/949/vehicleContactForce -->
 
 
@@ -6264,7 +6392,7 @@ This property was before an object skos property. The values for this property d
         <eratvIndex>4.2.2</eratvIndex>
         <terms:created>2022-05-30</terms:created>
         <rdfs:comment xml:lang="en">Vehicle kinematic gauge  that corresponds to other gauges assessed using the kinematic method</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">vehicle kinematic gauge other</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:DatatypeProperty>
@@ -6355,15 +6483,15 @@ This property was before an object skos property. The values for this property d
     
 
 
-    <!-- http://data.europa.eu/949/verificationCSS -->
+    <!-- http://data.europa.eu/949/verificationCCS -->
 
 
-    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/verificationCSS">
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/verificationCCS">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rinfIndex>1.1.1.3.1.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-08</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-12</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-28</terms:modified>
         <rdfs:comment xml:lang="en">Unique number for EC declarations concerning requirements of CCS (Command - Control and Signalling subsystem) on the specific track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">EC declaration of verification for track (CCS)</rdfs:label>
@@ -6554,7 +6682,7 @@ This property was before an object skos property. The values for this property d
     <owl:Class rdf:about="http://data.europa.eu/949/Certificate">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
-        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Certificate</rdfs:label>
         <ns:term_status xml:lang="en">stable</ns:term_status>
     </owl:Class>
@@ -6596,7 +6724,7 @@ This property was before an object skos property. The values for this property d
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <terms:created xml:lang="en">2022-07-07</terms:created>
         <rdfs:comment xml:lang="en">Class that encompasses the features that have been physically implemented (class PhysicalImplementationFeature) and the topological objects (class Topological Object). It is a subclass of the geographical Feature class that has a spatial representation.</rdfs:comment>
-        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">ERA Feature</rdfs:label>
     </owl:Class>
     
@@ -6607,6 +6735,7 @@ This property was before an object skos property. The values for this property d
 
     <owl:Class rdf:about="http://data.europa.eu/949/FreightTerminal">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/PrincipalLocation"/>
+        <rdf:label xml:lang="en">Freight Terminal</rdf:label>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
     </owl:Class>
     
@@ -6628,7 +6757,6 @@ This property was before an object skos property. The values for this property d
 
     <owl:Class rdf:about="http://data.europa.eu/949/InfrastructureManager">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
         <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki3.railml.org/wiki/CO:infrastructureManager</terms:source>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Infrastructure manager</rdfs:label>
@@ -6644,6 +6772,7 @@ This property was before an object skos property. The values for this property d
     <owl:Class rdf:about="http://data.europa.eu/949/Junction">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/PrincipalLocation"/>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Junction</rdfs:label>
     </owl:Class>
     
 
@@ -6668,7 +6797,7 @@ This property was before an object skos property. The values for this property d
     <owl:Class rdf:about="http://data.europa.eu/949/LinearLocation">
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">linear location</rdfs:label>
-        <skos:scopeNote xml:lang="en">Some values are defined at parts of net elements.  These parts are indicated by the </skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Defines location information as a linear shape (no branches) with a start- and end point. (Definition RSM)</skos:scopeNote>
     </owl:Class>
     
 
@@ -6691,7 +6820,6 @@ This property was before an object skos property. The values for this property d
 
     <owl:Class rdf:about="http://data.europa.eu/949/Manufacturer">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-19</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-19</terms:modified>
         <rdfs:comment xml:lang="en">A company or organization that manufactures vehicles.</rdfs:comment>
@@ -6784,7 +6912,7 @@ This property was before an object skos property. The values for this property d
         <terms:created>2022-07-07</terms:created>
         <rdfs:comment>This class encompasses all those classes that represent features that are physically implemented in the European railway infrastructure. It is a subclass of the geographical class Feature that has a spatial representation. It covers sidings, tracks, platforms, tunnels, operational points, and sections of line.
 A feature that has been physically implemented can be abstracted (hasAbstraction) as a topological object. It also is related to the infrastructure manager through the property infrastructureMgr.</rdfs:comment>
-        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Physical Implementation Feature</rdfs:label>
     </owl:Class>
     
@@ -6873,7 +7001,6 @@ A feature that has been physically implemented can be abstracted (hasAbstraction
         <rdfs:comment xml:lang="en">Sidings are all those tracks where running trains in service movements ends and which are not used for operational routing of a train.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Siding</rdfs:label>
-        <rdfs:label xml:lang="en">siding</rdfs:label>
         <ns:term_status>stable</ns:term_status>
         <skos:definition xml:lang="en">Siding Any track(s) within an operational point which is not used for operational routing of a train.</skos:definition>
     </owl:Class>
@@ -6926,6 +7053,7 @@ A feature that has been physically implemented can be abstracted (hasAbstraction
     <owl:Class rdf:about="http://data.europa.eu/949/Station">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/PrincipalLocation"/>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Station</rdfs:label>
     </owl:Class>
     
 
@@ -7014,6 +7142,19 @@ A feature that has been physically implemented can be abstracted (hasAbstraction
     
 
 
+    <!-- http://data.europa.eu/949/ValidityPeriod -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/ValidityPeriod">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-21</terms:created>
+        <rdf:label xml:lang="en">Validity period</rdf:label>
+        <rdfs:comment xml:lang="en">Class to define validity start date and validity end date for objects in the infrastructure such as operational points.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
     <!-- http://data.europa.eu/949/Vehicle -->
 
 
@@ -7033,7 +7174,6 @@ A feature that has been physically implemented can be abstracted (hasAbstraction
 
     <owl:Class rdf:about="http://data.europa.eu/949/VehicleKeeper">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-23</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-23</terms:modified>
         <rdfs:comment xml:lang="en">A company or organization that owns or operates a certain vehicle.</rdfs:comment>
@@ -7115,13 +7255,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
-    
-
-
-    <!-- https://schema.org/Organization -->
-
-
-    <owl:Class rdf:about="https://schema.org/Organization"/>
     
 
 

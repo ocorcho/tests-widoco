@@ -33,9 +33,7 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/InfrastructureManager">Infrastructure manager</a>
    </li>
    <li>
-      <a href="#Junction" title="http://data.europa.eu/949/Junction">
-         <span>junction</span>
-      </a>
+      <a href="#Junction" title="http://data.europa.eu/949/Junction">Junction</a>
    </li>
    <li>
       <a href="#LineReference" title="http://data.europa.eu/949/LineReference">Line Reference</a>
@@ -97,9 +95,7 @@ This ontology has the following classes and properties.</span>
       <a href="#SpotLocation" title="http://data.europa.eu/949/SpotLocation">Spot Location</a>
    </li>
    <li>
-      <a href="#Station" title="http://data.europa.eu/949/Station">
-         <span>station</span>
-      </a>
+      <a href="#Station" title="http://data.europa.eu/949/Station">Station</a>
    </li>
    <li>
       <a href="#StoppingPlace" title="http://data.europa.eu/949/StoppingPlace">Stopping Place</a>
@@ -118,6 +114,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Tunnel" title="http://data.europa.eu/949/Tunnel">Tunnel</a>
+   </li>
+   <li>
+      <a href="#ValidityPeriod" title="http://data.europa.eu/949/ValidityPeriod">
+         <span>validity period</span>
+      </a>
    </li>
    <li>
       <a href="#Vehicle" title="http://data.europa.eu/949/Vehicle">Vehicle</a>
@@ -149,6 +150,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#lineCategory" title="http://data.europa.eu/949/lineCategory">Category of line</a>
+   </li>
+   <li>
+      <a href="#composedOf" title="http://data.europa.eu/949/composedOf">composed of</a>
    </li>
    <li>
       <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
@@ -188,10 +192,10 @@ This ontology has the following classes and properties.</span>
       <a href="#etcsLevel" title="http://data.europa.eu/949/etcsLevel">etcs level</a>
    </li>
    <li>
-      <a href="#etcsLevelType" title="http://data.europa.eu/949/etcsLevelType">ETCS level</a>
+      <a href="#etcsDegradedSituation" title="http://data.europa.eu/949/etcsDegradedSituation">ETCS level for degraded situation</a>
    </li>
    <li>
-      <a href="#etcsDegradedSituation" title="http://data.europa.eu/949/etcsDegradedSituation">ETCS level for degraded situation</a>
+      <a href="#etcsLevelType" title="http://data.europa.eu/949/etcsLevelType">ETCS level type</a>
    </li>
    <li>
       <a href="#etcsMVersion" title="http://data.europa.eu/949/etcsMVersion">ETCS M_version</a>
@@ -457,10 +461,18 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/trainDetectionSystemType">Type of train detection system</a>
    </li>
    <li>
+      <a href="#typeVersionId" title="http://data.europa.eu/949/typeVersionId">
+         <span>type version id</span>
+      </a>
+   </li>
+   <li>
       <a href="#eddyCurrentBraking" title="http://data.europa.eu/949/eddyCurrentBraking">Use of eddy current brakes</a>
    </li>
    <li>
       <a href="#magneticBraking" title="http://data.europa.eu/949/magneticBraking">Use of magnetic brakes</a>
+   </li>
+   <li>
+      <a href="#validityPeriod" title="http://data.europa.eu/949/validityPeriod">validity period</a>
    </li>
    <li>
       <a href="#category" title="http://data.europa.eu/949/category">vehicle category</a>
@@ -619,7 +631,7 @@ This ontology has the following classes and properties.</span>
       <a href="#drivingCabs" title="http://data.europa.eu/949/drivingCabs">driving cabs</a>
    </li>
    <li>
-      <a href="#verificationCSS" title="http://data.europa.eu/949/verificationCSS">EC declaration of verification for track (CCS)</a>
+      <a href="#verificationCCS" title="http://data.europa.eu/949/verificationCCS">EC declaration of verification for track (CCS)</a>
    </li>
    <li>
       <a href="#verificationENE" title="http://data.europa.eu/949/verificationENE">EC declaration of verification for track (ENE)</a>
@@ -633,6 +645,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#eddyCurrentBrakePrevention"
          title="http://data.europa.eu/949/eddyCurrentBrakePrevention">eddy current brake prevention</a>
+   </li>
+   <li>
+      <a href="#eddyCurrentBrakingFitted"
+         title="http://data.europa.eu/949/eddyCurrentBrakingFitted">eddy current braking fitted</a>
    </li>
    <li>
       <a href="#demonstrationENE" title="http://data.europa.eu/949/demonstrationENE">EI declaration of demonstration for track (ENE)</a>
@@ -855,11 +871,14 @@ This ontology has the following classes and properties.</span>
       <a href="#linearCoordinate" title="http://data.europa.eu/949/linearCoordinate">linear coordinate</a>
    </li>
    <li>
-      <a href="#loadingPlatformHeight" title="http://data.europa.eu/949/loadingPlatformHeight">loadng platform height</a>
+      <a href="#loadingPlatformHeight" title="http://data.europa.eu/949/loadingPlatformHeight">loading platform height</a>
    </li>
    <li>
       <a href="#magneticBrakePrevention"
          title="http://data.europa.eu/949/magneticBrakePrevention">magnetic brake prevention</a>
+   </li>
+   <li>
+      <a href="#magneticBrakingFitted" title="http://data.europa.eu/949/magneticBrakingFitted">magnetic braking fitted</a>
    </li>
    <li>
       <a href="#massPerWheel" title="http://data.europa.eu/949/massPerWheel">mass per wheel</a>
@@ -1079,6 +1098,10 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/radioSwitchOverSpecialConditions">radio switch over special conditions</a>
    </li>
    <li>
+      <a href="#railInclinationMeasurement"
+         title="http://data.europa.eu/949/railInclinationMeasurement">rail inclination measurement</a>
+   </li>
+   <li>
       <a href="#gaugingCheckLocation" title="http://data.europa.eu/949/gaugingCheckLocation">Railway location of particular points requiring specific checks</a>
    </li>
    <li>
@@ -1219,6 +1242,14 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#usesGroup555" title="http://data.europa.eu/949/usesGroup555">Use of group 555</a>
+   </li>
+   <li>
+      <a href="#validityEndDate" title="http://data.europa.eu/949/validityEndDate">validity end date</a>
+   </li>
+   <li>
+      <a href="#validityStartDate" title="http://data.europa.eu/949/validityStartDate">
+         <span>validity start date</span>
+      </a>
    </li>
    <li>
       <a href="#vehicleContactForce" title="http://data.europa.eu/949/vehicleContactForce">vehicle contact force</a>
