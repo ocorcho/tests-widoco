@@ -3,25 +3,94 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+      "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
     }, {
       "@id" : "http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"
     } ]
   } ]
 }, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
-    }, {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
-    }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
-    } ]
+  "@id" : "_:genid100",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid101",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -31,27 +100,27 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
   "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
-    }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -61,7 +130,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -71,11 +140,21 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerEventType"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+      "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
     }, {
       "@id" : "http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"
     } ]
@@ -85,9 +164,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -95,9 +174,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     } ]
   } ]
 }, {
@@ -107,7 +186,7 @@
     "@list" : [ {
       "@id" : "http://data.europa.eu/949/iss/SafetyAuthorisation"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessment"
+      "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
     } ]
   } ]
 }, {
@@ -115,9 +194,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -125,9 +204,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SafetyAuthorisation"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
     } ]
   } ]
 }, {
@@ -135,9 +214,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -145,9 +224,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -155,9 +234,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -165,9 +244,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -175,9 +254,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/SafetyAuthorisation"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessment"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     } ]
   } ]
 }, {
@@ -185,9 +264,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/Notification"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/VolumeOfOperation"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -195,9 +274,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/Notification"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/VolumeOfOperation"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
   } ]
 }, {
@@ -205,13 +284,65 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SafetyAuthorisation"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
     } ]
   } ]
 }, {
   "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/SafetyAuthorisation"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/Notification"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/VolumeOfOperation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/Notification"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/VolumeOfOperation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
+    }, {
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -224,7 +355,7 @@
     "@id" : "http://data.europa.eu/949/iss/inputAndgate"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -237,17 +368,7 @@
     "@id" : "http://data.europa.eu/949/iss/inputOrGate"
   } ]
 }, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
-    }, {
-      "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerEventType"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -260,124 +381,16 @@
     "@id" : "http://data.europa.eu/949/iss/outputEvent"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
     }, {
-      "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+      "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid75",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid76",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid77",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid78",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid79",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid80",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid81",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid82",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid83",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid84",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid85",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "_:genid86",
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
   } ]
 }, {
   "@id" : "_:genid87",
@@ -462,6 +475,33 @@
   } ]
 }, {
   "@id" : "_:genid96",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ]
+}, {
+  "@id" : "_:genid99",
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
@@ -572,6 +612,27 @@
   "@id" : "http://data.europa.eu/949/appendixD2Index",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://data.europa.eu/949/inSkosConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-11-17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links an object SKOS property to a the URI of the corresponding SKOS Concept Scheme."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In SKOS Concept Scheme"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://data.europa.eu/949/iss",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
@@ -605,37 +666,11 @@
     "@language" : "en",
     "@value" : "ISS vocabulary"
   } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#"
-  }, {
-    "@id" : "http://www.w3.org/2008/05/skos"
-  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "v1.0.0"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/Attachment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Document linked to a record"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Attachment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://schema.org/DigitalDocument"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent",
+  "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -646,14 +681,31 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Details of the safety related event"
+    "@value" : "Detailed report of the safety related event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Details of the occurrence"
+    "@value" : "Detailed report of the occurrence"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Detailed report (TDG part)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/Document",
@@ -661,6 +713,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any form of document whose type is specified by a document type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -686,7 +742,7 @@
     "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure",
+  "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -697,7 +753,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Failed risk control measure"
+    "@value" : "Failure of risk control measure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
@@ -801,32 +857,11 @@
     "@value" : "Occurrence scenario building block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid68"
+    "@id" : "_:genid80"
   }, {
-    "@id" : "_:genid69"
+    "@id" : "_:genid81"
   }, {
-    "@id" : "_:genid70"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Overview of the safety related event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Overview of the occurrence"
+    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/Record",
@@ -845,6 +880,27 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Record"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/RecordAttachment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Document linked to a record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Record attachment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/DigitalDocument"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/RecordVersion",
@@ -980,7 +1036,7 @@
     "@value" : "Safety level per type of operation"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessment",
+  "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -991,13 +1047,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Safety performance assessment"
+    "@value" : "Safety performance self-estimation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea",
+  "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1008,10 +1064,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Safety performance assessment per area"
+    "@value" : "Safety performance self-estimation per element"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerElement",
+  "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1022,7 +1078,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Safety performance assessment per element"
+    "@value" : "Safety performance self-estimation per area"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/SafetyRelatedEvent",
@@ -1042,14 +1098,14 @@
     "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid71"
+    "@id" : "_:genid83"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Occurrence"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent",
+  "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1060,14 +1116,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Transportation of dangerous goods information of safety related event."
+    "@value" : "Simple report of the safety related event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Transportation of dangerous goods information of occurrence."
+    "@value" : "Simple report of the occurrence"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/VolumeOfOperation",
@@ -1098,6 +1154,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "additional explanation of resources management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/additionalExplanationRiskControlMeasureEffectedEffectiveness",
@@ -1111,6 +1174,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "additional explanation of risk control measure expected effectiveness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/additionalExplanationRiskControlMeasureNormalFunctioning",
@@ -1124,6 +1194,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "additional explanation of risk control measure normal functioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/additionalExplanationRiskControlMeasureThreats",
@@ -1137,6 +1214,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "additional explanation of risk control emasure threats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/airPollution",
@@ -1146,10 +1230,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "air pollution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/airTemperatureAmbientConditionNarrative",
@@ -1158,16 +1249,27 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "air temperature and ambient condition narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/ambientCondition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/ambient-conditions/AmbientConditions"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1175,7 +1277,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1190,7 +1292,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/applicable-safety-measure-functions/ApplicableRiskControlMeasureFunction"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1211,7 +1313,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/assessmentPeriod",
+  "@id" : "http://data.europa.eu/949/iss/assesmentPeriodEndDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1222,11 +1324,38 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "assessment period end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/assessmentPeriodStartDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "assessment period start date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/authoritiesInvolvement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/authorities-involvement-types/AuthoritiesInvolvementTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1234,14 +1363,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "authorities involvement"
+    "@value" : "involvement of authorities"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -1254,10 +1383,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cargo number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/cargoSpeed",
@@ -1267,16 +1403,23 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cargo speed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/causeOfReportedEventType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1287,7 +1430,7 @@
     "@value" : "List of event type code(s) considered as causal factor(s).\nTaken from Annexes ISC-2022-00728_2023-07."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1311,6 +1454,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "certificate end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/certificateStartDate",
@@ -1324,35 +1474,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/class",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "certificate start date"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/contactIdForOccurrenceConsequences",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/identifier"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/contactIdForOccurrenceContext",
@@ -1362,42 +1490,25 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/identifier"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/contextNarrative",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Free text (optional), Only to be used if needed for better understanding of the reported dataset.\nTaken from Annexes ISC-2022-00728_2023-07."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "context narrative"
+    "@value" : "reporting contact ID for the occurrence context"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/identifier"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/contributingFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1429,7 +1540,7 @@
     "@value" : "Relates the failed risk control measure information with the corresponding risk control measure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1444,7 +1555,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/countryOfOccurrence",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/country"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1471,7 +1582,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/countryOfOperation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/country"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1498,11 +1609,22 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "damage to the environment narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/damageInfrastructureNarrative",
@@ -1512,15 +1634,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "damage to infrastructure narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/damageLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/damage-levels/DamageLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1528,7 +1657,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1547,11 +1676,22 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "damage to operating services narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/damageRollingStockNarrative",
@@ -1560,11 +1700,22 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "damage to the Rolling Stock narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/damageToRollingStock",
@@ -1578,7 +1729,7 @@
     "@value" : "Relates the safety related event with the number of vehicles damaged broken down per type of damage (to vehicle) and vehicle type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1598,10 +1749,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "damages for the reporting entity (monetised)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -1618,14 +1773,14 @@
     "@value" : "Free text (optional), Only to be used if needed for better understanding of the reported dataset.\nTaken from Annexes ISC-2022-00728_2023-07."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid41"
+    "@id" : "_:genid44"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "deemed causes narrative"
+    "@value" : "deemed cause(s) narrative"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1633,7 +1788,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/documentAccess",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/document-accesses/DocumentAccesses"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1665,6 +1820,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "document copyright"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/documentId",
@@ -1679,13 +1841,20 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "document ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/dc/terms/identifier"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/documentLanguage",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/document-languages/DocumentLanguages"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1708,7 +1877,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/documentStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/document-statuses/DocumentStatuses"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1740,11 +1909,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "document title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/documentType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/document-types/DocumentTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -1776,22 +1952,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/entityId",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/Entity"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "document version"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/identifier"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedCostDepollution",
@@ -1801,10 +1968,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated cost of depollution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedCostOperationDisruption",
@@ -1814,10 +1988,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated cost of operation disruption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedCostOperationDisruptionFreightService",
@@ -1827,10 +2008,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated cost of operation disruption for freight service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedCostOperationDisruptionPassengerService",
@@ -1840,10 +2028,20 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated cost of operation disruption for TDG freight service"
+  }, {
+    "@language" : "en",
+    "@value" : "estimated cost of operation disruption for passenger service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedCostOperationDisruptionTDGFreightService",
@@ -1853,23 +2051,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/estimatedCostOperationDisruptionTerminalService",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated cost of operation disruption for terminal service"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedDamageBuiltSurrounding",
@@ -1879,10 +2071,37 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated damage to built surrounding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/estimatedLevelDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/estimated-level-damage-types/EstimatedLevelDamagetTypes"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated level of damage"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/estimatedQuantityLossProduct",
@@ -1892,33 +2111,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/eventType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@value" : "http://data.europa.eu/949/iss/concepts/event/types/EventTypes"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid7"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "event type"
+    "@value" : "estimated quantity of loss of product (kg or l)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/evidenceReferenceRecord",
@@ -1932,7 +2135,7 @@
     "@value" : "Relates the safety performance assessment per element with the corresponding evidence document."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerElement"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1952,14 +2155,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "exact occurrence location positioning norm"
+    "@value" : "exact location of occurrence - positioning norm applied"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1976,7 +2179,7 @@
     "@value" : "Relates the failed safety measure information with the corresponding occurrence scenario building block."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1999,10 +2202,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "failure mode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/failureAnalysis",
@@ -2012,10 +2222,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "failure analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod",
@@ -2029,11 +2246,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "frequency probability during assessment period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2045,11 +2269,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "frequency probability prior to assessment period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2072,7 +2303,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2100,41 +2331,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "general occurence narrative"
+    "@value" : "occurrence narrative (general)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/hasAttachment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Relates the record version that is being reported with files (e.g. documents, images, videoa) that are attachments to the record.\n."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/RecordVersion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has attachment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/iss/Attachment"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/hasFailedRiskControlMeasure",
@@ -2158,7 +2365,7 @@
     "@value" : "has failed risk control measure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/hasInfoInRecordVersion",
@@ -2196,7 +2403,7 @@
     "@value" : "Relates a safety related event with an occurrence scenario."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2231,6 +2438,30 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/hasRecordAttachment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates the record version that is being reported with files (e.g. documents, images, videoa) that are attachments to the record.\n."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/RecordVersion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has record attachment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/949/iss/RecordAttachment"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/hasRecordVersion",
@@ -2372,7 +2603,7 @@
     "@value" : "Relates the safety related event with the class that represents human consequences (victims) per person category (passengers, trespassers, employees, others)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2396,7 +2627,7 @@
     "@value" : "Relates the safety related event with the human consequences total per injury type (fatalities, serious injuries, light injuries)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2409,20 +2640,9 @@
     "@id" : "http://data.europa.eu/949/iss/HumanConsequencesTotalPerInjuryType"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/inSkosConceptScheme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that links an object SKOS property to a the URI of the corresponding SKOS Concept Scheme."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "In SKOS Concept Scheme"
-  } ]
-}, {
   "@id" : "http://data.europa.eu/949/iss/injuryTdgType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2445,7 +2665,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/injuryType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2453,7 +2673,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2468,8 +2688,8 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/inputAndgate",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -2511,7 +2731,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/introducesThreatOfEventOccurrence",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2554,8 +2774,8 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/introducesThreatToNewEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -2577,24 +2797,17 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/isADangerousGoodsEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
+  "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Is it a Dangerous Goods occurrence in accordance with applicable legislation.\nTaken from Annexes ISC-2022-00728_2023-07."
+    "@value" : "2023-10-25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "damages for reporting entity"
-  }, {
     "@language" : "en",
     "@value" : "is a dangerous goods event"
   } ],
@@ -2629,23 +2842,37 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerElement"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is the element fullfiled"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/lengthTrackRailsDamage",
+  "@id" : "http://data.europa.eu/949/iss/lengthTrackRailsDamaged",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of track (rail) damaged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/lengthTrackSubstructureDamaged",
@@ -2655,10 +2882,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of track substructure damaged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/lengthTrackSuperstructureDamaged",
@@ -2668,15 +2902,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of track superstructure damaged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/levelCrossingType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/level/crossing-types/LevelCrossingTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2684,7 +2925,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2699,7 +2940,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/lightCondition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/light-conditions/LightConditions"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2707,7 +2948,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2726,11 +2967,22 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "light conditions narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/lineKilometerPoint",
@@ -2744,7 +2996,7 @@
     "@value" : "Relates the safety related event with the railway location (kilometer) relative to a railway line."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid17"
+    "@id" : "_:genid14"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2756,7 +3008,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/locationDetails",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/location-details/LocationDetails"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2764,7 +3016,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2777,21 +3029,28 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/locationNarrative",
+  "@id" : "http://data.europa.eu/949/iss/locationDetailsNarrative",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
+    "@value" : "2023-10-25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Free text (optional), Only to be used if needed for better understanding of the reported dataset.\nTaken from Annexes ISC-2022-00728_2023-07."
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "location details narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/locationRINF",
@@ -2805,7 +3064,7 @@
     "@value" : "Relates the safety related event with the location in the RINF infrastructure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid20"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2815,6 +3074,29 @@
     "@value" : "location in RINF"
   } ]
 }, {
+  "@id" : "http://data.europa.eu/949/iss/lossOfProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/product-losss-types/ProductLossTypes"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "loss of product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "http://data.europa.eu/949/iss/meanContainmentMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2822,15 +3104,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "means of containment material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/meansContainment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/means-of-containment-types/MeansOfContainmentTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2838,7 +3127,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2853,7 +3142,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/meansContainmentFailureType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/means-containment-failure-types/MeansContainmentFailureTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2861,7 +3150,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -2876,8 +3165,26 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/measuringMonitoring",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Description of leading and/or lagging indicators"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measuring or monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/minutesDelayFreightTrains",
@@ -2887,10 +3194,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "minutes of delay for freight trains"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/minutesDelayPassengerTrains",
@@ -2900,16 +3214,23 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "minutes of delay for passenger trains"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/mitigatesEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -2936,14 +3257,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "monetized damages"
+    "@value" : "damages (monetised)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -2960,6 +3281,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/notificationLegalBasis",
@@ -2975,12 +3303,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/iss/notificationLegalVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/Notification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "notification legal basis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/notificationMessage",
@@ -2994,11 +3323,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "notification message"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/notificationType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3019,22 +3355,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/notifiedContactId",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/Notification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/identifier"
-  } ]
-}, {
   "@id" : "http://data.europa.eu/949/iss/notifiedEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3042,7 +3362,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid23"
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3053,6 +3373,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://data.europa.eu/949/iss/Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "addressee"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/notifyingEntity",
@@ -3079,17 +3402,48 @@
     "@id" : "http://data.europa.eu/949/iss/Entity"
   } ]
 }, {
+  "@id" : "http://data.europa.eu/949/iss/notifyingReporter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reporting entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/949/iss/Entity"
+  } ]
+}, {
   "@id" : "http://data.europa.eu/949/iss/numberAndSpeedNarrative",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number and speed of train/vehicle/cargo -narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberDGFreightTonKilometers",
@@ -3103,6 +3457,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of DG freight ton kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberDGFreightTrainKilometers",
@@ -3116,6 +3477,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of DG freight train kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals",
@@ -3129,6 +3497,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of DG railway vehicles processed freight terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberDelayedFreightTrains",
@@ -3138,10 +3513,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of delayed freight trains"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberDelayedPassengerTrains",
@@ -3151,10 +3533,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of delayed passenger trains"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberFreightTonKilometers",
@@ -3168,6 +3557,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of freight ton kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberFreightTrainKilometers",
@@ -3181,6 +3577,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of freight train kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberLineKilometers",
@@ -3194,6 +3597,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of line kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberOfVehicles",
@@ -3207,6 +3617,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of vehicles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberOfVictims",
@@ -3217,6 +3634,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/HumanConsequencesPerPersonCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of victims"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberOperatedTerminals",
@@ -3230,6 +3654,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of operated terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberOperatedTrackKilometers",
@@ -3243,6 +3674,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of operated track kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberOperatingHoursTerminals",
@@ -3256,6 +3694,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of operating hours terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberPassengerKilometers",
@@ -3269,6 +3714,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of passenger kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberPassengerKilometersHighSpeedService",
@@ -3282,6 +3734,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of passenger kilometers high speed service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberPassengerTrainKilometers",
@@ -3295,6 +3754,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of passenger train kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberRailwayVehiclesDGProcessedTerminals",
@@ -3308,6 +3774,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of railway vehicles DG processed terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedFreightTerminals",
@@ -3321,6 +3794,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of railway vehicles processed freight terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedTerminals",
@@ -3334,19 +3814,33 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of railway vehicles processed terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/numberSwithcesPintsDamaged",
+  "@id" : "http://data.europa.eu/949/iss/numberSwitchesPointsDamaged",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of switches, points damaged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberTotalTrainKilometers",
@@ -3360,6 +3854,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of total train kilometers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberTrackKilometersOperatedTerminals",
@@ -3373,6 +3874,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of track kilometers operated terminals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/numberWagonsCarryingDangerousGoods",
@@ -3382,14 +3892,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "number of wagons carrying dangerous goods"
+    "@value" : "number of wagons carrying Dangerous Goods in the train"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -3402,14 +3912,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "number of wagons involved in occurrence"
+    "@value" : "number of TDG Wagons Involved in the occurrence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -3422,7 +3932,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3446,7 +3956,7 @@
     "@value" : "Free text (optional), Only to be used if needed for better understanding of the reported dataset.\nTaken from Annexes ISC-2022-00728_2023-07."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "_:genid47"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3459,6 +3969,26 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://data.europa.eu/949/iss/occurrenceContextNarrative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "occurrence context narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://data.europa.eu/949/iss/occurrenceDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3466,7 +3996,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid44"
+    "@id" : "_:genid50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3486,7 +4016,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3510,10 +4040,17 @@
     "@value" : "Free text (optional), Only to be used if needed for better understanding of the reported dataset.\nTaken from Annexes ISC-2022-00728_2023-07."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "_:genid56"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "occurrence details narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/occurrenceId",
@@ -3523,14 +4060,14 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "occurrence id"
+    "@value" : "occurrence ID"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3546,7 +4083,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid50"
+    "@id" : "_:genid59"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3574,6 +4111,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "occurrence scenario narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/occurrenceTitle",
@@ -3583,7 +4123,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3603,7 +4143,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid53"
+    "@id" : "_:genid62"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3616,36 +4156,9 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/operationType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/operation-types/OperationTypes"
-  }, {
-    "@value" : "http://data.europa.eu/949/iss/concepts/operation-types/OperationTypes"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
-  }, {
-    "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "operation type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
   "@id" : "http://data.europa.eu/949/iss/operational_cause",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/cause-types/CauseTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3653,7 +4166,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3693,15 +4206,42 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessment"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "overall result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/packingGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "packing group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/personCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@value" : "http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3709,7 +4249,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -3729,16 +4269,23 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "position failed risk control measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/preventsEventOccurrence",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -3758,29 +4305,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/productLoss",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/product-losss-types/ProductLossTypes"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "product loss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
   "@id" : "http://data.europa.eu/949/iss/recordDatetime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3792,6 +4316,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "record date and time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/recordId",
@@ -3805,11 +4336,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "record ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/recordStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3845,11 +4383,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "record title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/recordType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/record-types/RecordTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3881,23 +4426,97 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "record version number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/referencePeriod",
+  "@id" : "http://data.europa.eu/949/iss/referencePeriodEndDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid56"
+    "@id" : "_:genid65"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reference period end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/reportingEntity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "http://data.europa.eu/949/iss/referencePeriodStartDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid68"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reference period start date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/reportingContactEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reporting contact email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/reportingContactFax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "tdg reporting contact fax"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/reportingContactId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
@@ -3910,15 +4529,60 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "reporting entity"
+    "@value" : "reporting contact ID"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/iss/Entity"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/identifier"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/reportingContactIdForOccurrenceConsequences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reporting contact ID for the Occurrence consequences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/identifier"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/reportingContactName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reporting contact name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/reportingEntityRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3946,10 +4610,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid59"
+    "@id" : "_:genid71"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reporting period end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/reportingPeriodStartDate",
@@ -3959,15 +4630,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid62"
+    "@id" : "_:genid74"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reporting period start date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/reportingReason",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3999,6 +4677,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "resources maintenance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/resourcesOperation",
@@ -4012,6 +4697,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "resources operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/resourcesSettingUp",
@@ -4025,19 +4717,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "resources setting up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/resultFailureRiskControlMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/event-types/EventTypes"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/FailedRiskControlMeasure"
+    "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4054,6 +4753,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureAim",
@@ -4067,6 +4773,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk control measure aim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureExpectedEffectiveness",
@@ -4080,11 +4793,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk control measure expected effectiveness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-measure-function-types/RiskControlMeasureFunctionTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4116,6 +4836,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk control measure function description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureFunctionName",
@@ -4129,6 +4856,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureId",
@@ -4142,6 +4872,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk control measure ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/dc/terms/identifier"
@@ -4158,6 +4895,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk control measure name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureRequired",
@@ -4167,7 +4911,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4182,7 +4926,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskControlMeasureType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-measure-types/RiskControlMeasureTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4205,7 +4949,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/rollingStockVehicleDamageType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4228,7 +4972,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/rollingStockVehicleType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4249,9 +4993,36 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
+  "@id" : "http://data.europa.eu/949/iss/safetEventType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@value" : "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "safety event type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "occurrence event type"
+  } ]
+}, {
   "@id" : "http://data.europa.eu/949/iss/safetyLevelScore",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4274,7 +5045,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/safetyMaturityLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/maturity-levels/MaturityLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4282,7 +5053,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4297,7 +5068,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/safetyPerformanceArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-performance-areas/SafetyPerformanceAreas"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4305,7 +5076,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4318,9 +5089,9 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceAssessmentElement",
+  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-performance-assessment-elements/SafetyPerformanceAssessmentElements"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4328,22 +5099,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerElement"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "safety performance assessment element"
+    "@value" : "safety performance self-estimation element"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceAssessmentElementNumber",
+  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationElementNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-element-numbers/SafetyElementNumbers"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4351,57 +5122,57 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerElement"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "safety performance assessment element number"
+    "@value" : "safety performance self-estimation element number"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceAssessmentPerArea",
+  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationPerArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessment"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "safety performance assessment per area"
+    "@value" : "safety performance self-estimation per area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceAssessmentPerElement",
+  "@id" : "http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationPerElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "safety performance assessment per element"
+    "@value" : "safety performance self-estimation per element"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerElement"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/safetyResultPerArea",
@@ -4411,10 +5182,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessmentPerArea"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "safety result per area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/schema:version",
@@ -4431,6 +5209,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "scope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/selfEstimationNarrative",
@@ -4440,15 +5225,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceAssessment"
+    "@id" : "http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "self estimation narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4460,6 +5252,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "severity probability during assessment period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod",
@@ -4473,6 +5272,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "severity probability prior to assessment period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod",
@@ -4497,7 +5303,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4525,10 +5331,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "soil pollution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/supportingDocumentEffectedEffectiveness",
@@ -4542,12 +5355,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supporting document effected effectiveness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/supportingDocumentMeasuringMonitoring",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supporting document measuring monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/supportingDocumentResourcesManagement",
@@ -4561,11 +5388,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/systemicFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4613,10 +5443,37 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supporting document resources management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/tdgClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tdg class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgCompanyAddress",
@@ -4626,16 +5483,30 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tdg company address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgCompanyFaxNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tdg company fax number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgCompanyTelephone",
@@ -4645,15 +5516,42 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tdg company telephone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/tdgEvnNumberVagon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EVN number of the wagon concerned"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/tdg-location-types/TdgLocationTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4661,7 +5559,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4676,7 +5574,7 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgOccurrenceCause",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/tdg-occurrence-causes/TDGOccurrenceCauses"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4684,34 +5582,23 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "transport of dangerous good occurrence cause"
+    "@value" : "transport of dangerous goods occurrence cause"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgOccurrenceDescription",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-09-30"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/iss"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "transport of dangerous goods occurrence description"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4724,10 +5611,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tdg total number of deaths"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgTotalNumberInjuries",
@@ -4737,10 +5631,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tdg total number of injuries"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/temperature",
@@ -4750,15 +5651,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid65"
+    "@id" : "_:genid77"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/topography",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4766,7 +5674,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4786,10 +5694,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total cost of infrastructure damage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/totalCostRollingStockDamage",
@@ -4799,10 +5714,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total cost rolling stock damage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/totalLengthTrackDamaged",
@@ -4812,10 +5734,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total length of track damaged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/totalNumberDamagedVehicles",
@@ -4825,10 +5754,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total number of damaged vehicles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/totalNumberOfVictims",
@@ -4839,6 +5775,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/HumanConsequencesTotalPerInjuryType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total number of victims"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/totalNumberOverturnedVehicles",
@@ -4848,10 +5791,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total number of overturned vehicles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/totalNumberWagonsLeaking",
@@ -4861,23 +5811,30 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total number of wagons leaking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/trackSurfaceCondition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/track-surface-condiitons/TrackSurfaceConditions"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/track-surface-conditions/TrackSurfaceConditions"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -4896,15 +5853,29 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "track surface condition narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/trainMovementType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/train-movement-types/TrainMovementTypes"
+  } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
@@ -4917,7 +5888,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "train movement type"
+    "@value" : "type of train movement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -4930,10 +5901,17 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "train number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/trainSpeed",
@@ -4943,16 +5921,66 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "train speed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/transportOperationCtegory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
+  }, {
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "transport operation category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/typeOfMovementNarrative",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "type of movement narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/unNumber",
@@ -4962,13 +5990,40 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "UN number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/iss/validityPeriod",
+  "@id" : "http://data.europa.eu/949/iss/validityPeriodEndDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "29023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/iss/SafetyAuthorisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "validity period end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/iss/validityPeriodStartDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -4979,6 +6034,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "validity period start date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/vehicleInvolved",
@@ -5004,7 +6066,14 @@
   "@id" : "http://data.europa.eu/949/iss/vehicleSpeed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "vehicle speed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/waterPollution",
@@ -5014,15 +6083,22 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/DetailsSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "water pollution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/iss/weatherCondition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/weather-conditions/WeatherConditions"
   } ],
   "http://purl.org/dc/terms/created" : [ {
@@ -5030,7 +6106,7 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/TDGInfoSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -5110,23 +6186,26 @@
   "@id" : "http://data.europa.eu/949/rinfIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/author",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://creativecommons.org/ns#license"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://creativecommons.org/ns#license"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://creativecommons.org/ns#license"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -5135,19 +6214,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://creativecommons.org/ns#license"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://creativecommons.org/ns#license"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/DigitalDocument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -5394,7 +6467,7 @@
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -5416,6 +6489,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes.\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SpatialThing"
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
@@ -5452,7 +6537,7 @@
     "@value" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/iss/OverviewSafetyRelatedEvent"
+    "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -5462,6 +6547,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.opengis.net/ont/sf#Geometry"
+  }, {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
@@ -5490,6 +6577,9 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2008/05/skos#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/ns/org#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -5537,7 +6627,7 @@
 }, {
   "@id" : "http://www.w3.org/ns/org#classification",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/iss/inSkosConceptScheme" : [ {
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
     "@id" : "http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories"
   } ],
   "http://purl.org/dc/terms/created" : [ {
