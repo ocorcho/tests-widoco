@@ -26,7 +26,7 @@ This section provides details for each class and property defined by ISS vocabul
       </li>
       <li>
          <a href="#/FailureOfRiskControlMeasure"
-            title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+            title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/Feature" title="http://data.europa.eu/949/Feature">Feature</a>
@@ -201,6 +201,9 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/DetailedReportTdgPart</p>
+      <div class="comment">
+         <span class="markdown">Supplement to an occurrence detailed report when the occurrence is involving the transport of dangerous goods in accordance with RID 1.8.5.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -243,9 +246,7 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
                title="http://data.europa.eu/949/iss/tdgCompanyFaxNumber">tdg company fax number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#/tdgCompanyTelephone"
                title="http://data.europa.eu/949/iss/tdgCompanyTelephone">tdg company telephone</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#/tdgOccurrenceDescription"
-               title="http://data.europa.eu/949/iss/tdgOccurrenceDescription">tdg occurrence description</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#/tdgTotalNumberDeaths"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/tdgTotalNumberDeaths"
                title="http://data.europa.eu/949/iss/tdgTotalNumberDeaths">tdg total number of deaths</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#/tdgTotalNumberInjuries"
                title="http://data.europa.eu/949/iss/tdgTotalNumberInjuries">tdg total number of injuries</a>
@@ -253,6 +254,8 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
             <sup class="type-op" title="object property">op</sup>, <a href="#/tdgLocation" title="http://data.europa.eu/949/iss/tdgLocation">transport of dangerous goods location</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/tdgOccurrenceCause"
                title="http://data.europa.eu/949/iss/tdgOccurrenceCause">transport of dangerous goods occurrence cause</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/tdgOccurrenceDescription"
+               title="http://data.europa.eu/949/iss/tdgOccurrenceDescription">transport of dangerous goods occurrence description</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/weatherCondition" title="http://data.europa.eu/949/iss/weatherCondition">weather condition</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -265,6 +268,9 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent</p>
+      <div class="comment">
+         <span class="markdown">Report on an occurrence as defined in CDR (EU) 2024/xxxx, Annex I, Part A.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -374,7 +380,9 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/Document</p>
       <div class="comment">
-         <span class="markdown">Any form of document whose type is specified by a document type.</span>
+         <span class="markdown">Any form of document whose type is specified by a document type.
+
+In the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements for reporting supporting evidence with the Information Sharing System using the dataset defined in CDR (EU) 2024/xxxx, Annex IV, Part C .</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -447,12 +455,15 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
       </dl>
    </div>
    <div class="entity" id="/FailureOfRiskControlMeasure">
-      <h3>Failure of risk control measure<sup class="type-c" title="class">c</sup>
+      <h3>Failed risk control measure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/FailureOfRiskControlMeasure</p>
+      <div class="comment">
+         <span class="markdown">A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -774,7 +785,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
                title="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent">Detailed report of the safety related event</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/Document" title="http://data.europa.eu/949/iss/Document">Document</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/FailureOfRiskControlMeasure"
-               title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+               title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/OccurrenceScenario"
                title="http://data.europa.eu/949/iss/OccurrenceScenario">Occurrence scenario</a>
@@ -829,6 +840,9 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/Notification</p>
+      <div class="comment">
+         <span class="markdown">A communication of data and information between two or more entities which can be performed with the Information Sharing System in accordance with CDR (EU) 2024/xxxx  using the dataset defined in Annex IV, part D.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -861,6 +875,11 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/OccurrenceScenario</p>
+      <div class="comment">
+         <span class="markdown">Description of the combination of events leading to an ocuurrence.
+
+In the context of CDR (EU) 2024/xxxx the reporting of occurrence scenarios shall implement the method and the applicable datasets described in Annex I, Part B.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -897,6 +916,11 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock</p>
+      <div class="comment">
+         <span class="markdown">Generic element used for the description of occurrence scenarios or fault trees.
+
+Bluiding blocks shall be used to compose the description of an occurrence scenario in accordance with the method defined in CDR (EU) 2024/xxxx, Annex I, Part B.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1166,6 +1190,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/RiskControlMeasure</p>
+      <div class="comment">
+         <span class="markdown">'Risk control measure’ or ‘RCM’ means one of the safety measures as defined in Article 3, second paragraph, point (10) of Commission Implementing Regulation (EU) No 402/2013.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1246,6 +1273,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/RiskControlMeasureFunction</p>
+      <div class="comment">
+         <span class="markdown">“Risk control measure function” or “RCMF” means a function designed to contribute to the reduction of risks.
+The CDR (EU) 2024/xxxx defines the applicable functions as following:
+“detect function” means a function detecting a specified undesirable situation applicable to the linked event types; 
+“diagnose function” means a function evaluating the detected undesirable situation, taking into account its context, and deciding whether or not an action needs to be performed; 
+“act function” means a function that is designed to avoid the occurrence of the linked event types, or will directly reduce its consequences, or both.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1371,6 +1405,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyLevel</p>
+      <div class="comment">
+         <span class="markdown">‘safety level’ means a level of safety risks as estimated and assessed by the methods set out in Part A of the Annex  III of  CDR (EU) 2024/xxxx</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1466,6 +1503,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation</p>
+      <div class="comment">
+         <span class="markdown">Self-estimation of safety performance of an Entity reported with the dataset applicable in accordance with CDR (EU) 2024/xxxx, Annex II, Part B.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1497,6 +1537,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea</p>
+      <div class="comment">
+         <span class="markdown">Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1533,6 +1576,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement</p>
+      <div class="comment">
+         <span class="markdown">Safety performance self-estimation per elements of proofs in accordance with CDR (EU) 2024/xxxx, Annex II, part C.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1567,6 +1613,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyRelatedEvent</p>
+      <div class="comment">
+         <span class="markdown">Equivalent to Occurrence.
+
+In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety related event shall be reported using the datasets defined in Annex I, Part A.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1603,6 +1654,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent</p>
+      <div class="comment">
+         <span class="markdown">‘occurrence’ means a safety relevant event, incident or accident</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1753,6 +1807,11 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/VolumeOfOperation</p>
+      <div class="comment">
+         <span class="markdown">Volume of operation of railway operators over a defined period of tme.
+
+In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reported in accordance ith the dataset defined in Annex III, Part D.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2096,12 +2155,6 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
          <a href="#/targetedDocument" title="http://data.europa.eu/949/iss/targetedDocument">targeted document</a>
       </li>
       <li>
-         <a href="#/tdgOccurrenceDescription"
-            title="http://data.europa.eu/949/iss/tdgOccurrenceDescription">
-            <span>tdg occurrence description</span>
-         </a>
-      </li>
-      <li>
          <a href="#/topography" title="http://data.europa.eu/949/iss/topography">topography</a>
       </li>
       <li>
@@ -2118,6 +2171,10 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
       <li>
          <a href="#/tdgOccurrenceCause"
             title="http://data.europa.eu/949/iss/tdgOccurrenceCause">transport of dangerous goods occurrence cause</a>
+      </li>
+      <li>
+         <a href="#/tdgOccurrenceDescription"
+            title="http://data.europa.eu/949/iss/tdgOccurrenceDescription">transport of dangerous goods occurrence description</a>
       </li>
       <li>
          <a href="#/transportOperationCtegory"
@@ -2140,6 +2197,9 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/ambientCondition</p>
+      <div class="comment">
+         <span class="markdown">Qualitative description of the weather ambiant condiftions at the time of the occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2171,6 +2231,9 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction</p>
+      <div class="comment">
+         <span class="markdown">RCM Functions which are covered by a given risk control measure.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2202,6 +2265,9 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/resultFailureRiskControlMeasure</p>
+      <div class="comment">
+         <span class="markdown">List of possible resulting safety related events in case a given risk control measure fails to operate as planned.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2213,7 +2279,7 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2234,8 +2300,7 @@ A Polygon is a simple Surface that is planar. A PolyhedralSurface is a simple su
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/causeOfReportedEventType</p>
       <div class="comment">
-         <span class="markdown">List of event type code(s) considered as causal factor(s).
-Taken from Annexes ISC-2022-00728_2023-07.</span>
+         <span class="markdown">Applicable lists of causes, as defined in CDR (EU) 2024/xxx, Annex I, Part C, Appendix 1, Reference lists of Category B events and Category C events.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2304,6 +2369,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/contributingFactor</p>
+      <div class="comment">
+         <span class="markdown">‘contributing factor’ means a contributing factor as defined in Article 2, point (2) of Commission Implementing Regulation (EU) 2020/5721, i.e means any action, omission, event or condition that affects an occurrence by increasing its likelihood, accelerating the effect in time or increasing the severity of the consequences, but the elimination of which would not have prevented the occurrence.
+
+In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is defined in Annex I, Part C, Appendix 2.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2315,7 +2385,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#/OccurrenceScenarioBuildingBlock"
@@ -2353,7 +2423,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2373,7 +2443,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/countryOfOccurrence</p>
       <div class="comment">
-         <span class="markdown">Country where the safety related event occurred</span>
+         <span class="markdown">Country where the safety related event occurred.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2410,6 +2480,13 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/countryOfOperation</p>
+      <div class="comment">
+         <span class="markdown">Country(ies) in which the railway operator operates.
+
+For Railway Undertakings, it corresponds to the list of countries applicable in accordance with the applicable (in force) safety certificate(s).
+
+For Infrastructure managers it coresponds to the list of countries applicable in accordance with the applicable (in force) safety authorisation(s).</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2534,6 +2611,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/documentLanguage</p>
+      <div class="comment">
+         <span class="markdown">Language(s) in which the document is available.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2564,6 +2644,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/documentStatus</p>
+      <div class="comment">
+         <span class="markdown">Language(s) in which the document is available.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2594,6 +2677,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/documentType</p>
+      <div class="comment">
+         <span class="markdown">Type of document (e.g. report, note, e-mail...).
+
+Not ot confuse with the ICT format of the digital document.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2694,7 +2782,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2719,6 +2807,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod</p>
+      <div class="comment">
+         <span class="markdown">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2750,6 +2843,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod</p>
+      <div class="comment">
+         <span class="markdown">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -2801,7 +2899,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has range</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -3169,6 +3267,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/injuryTdgType</p>
+      <div class="comment">
+         <span class="markdown">Type of injury relating to human exposure to dangerous goods substances and associated dangerous phenomena.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3200,6 +3301,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/injuryType</p>
+      <div class="comment">
+         <span class="markdown">Type of injury in accordance with Directive (EU) 2016/798 and in accordance with the Abreviated Injuriy Scale (AIS).</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3235,6 +3339,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/inputAndgate</p>
+      <div class="comment">
+         <span class="markdown">Input to the AND gate of a building block.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3266,6 +3373,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/inputOrGate</p>
+      <div class="comment">
+         <span class="markdown">Input to the OR gate of a building block.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3390,6 +3500,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/authoritiesInvolvement</p>
+      <div class="comment">
+         <span class="markdown">Indication that authorities had to intervene to mitigate the consequences of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3421,6 +3534,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/isRelatedToRecord</p>
+      <div class="comment">
+         <span class="markdown">Reference to a record.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3449,6 +3565,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/levelCrossingType</p>
+      <div class="comment">
+         <span class="markdown">Type of level crossing in accordance with the applicable list of types.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3480,6 +3599,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/lightCondition</p>
+      <div class="comment">
+         <span class="markdown">Light condition at the time and location of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3543,14 +3665,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#location</p>
       <div class="comment">
-         <span class="markdown">The relation between something and the point, 
- or other geometrical thing in space, where it is.  For example, the realtionship between
- a radio tower and a Point with a given lat and long.
- Or a relationship between a park and its outline as a closed arc of points, or a road and
- its location as a arc (a sequence of points).
- Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
- an accuracy appropriate for the size of the object and uses such as mapping .
- </span>
+         <span class="markdown">Location of the occurrence expressed with a reference point (long/lat/alt).
+
+The precision of the reference point shall be better than 0.001 for long and lat values.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3586,6 +3703,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/locationDetails</p>
+      <div class="comment">
+         <span class="markdown">Detailed description of the location at which an occurrence took place.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3648,6 +3768,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/lossOfProduct</p>
+      <div class="comment">
+         <span class="markdown">Relates to occurrences with dangerous goods involvement, in which a loss of containment of the dangerous substance (loss of product) occurred.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3679,6 +3802,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/meansContainment</p>
+      <div class="comment">
+         <span class="markdown">Type of contianment of a dangerous good substance, in accordance with the list of applicable types defined in RID.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3710,6 +3836,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/meansContainmentFailureType</p>
+      <div class="comment">
+         <span class="markdown">Type of failure of the dangerous goods containment leading to the loss of containment, in accordance witht he applicable list of failure defined in RID.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3741,6 +3870,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/mitigatesEvent</p>
+      <div class="comment">
+         <span class="markdown">Indicate that a risk control measure mitigates the impact of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3772,6 +3904,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/notificationType</p>
+      <div class="comment">
+         <span class="markdown">Type of notification in accordance with the ISS applicable types.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3802,6 +3937,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/notifiedEntity</p>
+      <div class="comment">
+         <span class="markdown">ISS registered entity to which the notification is addressed.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3896,6 +4034,11 @@ Taken from Detailed Report.xlsx template.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/outputEvent</p>
+      <div class="comment">
+         <span class="markdown">Event type identitied as output of a building block.
+
+(Equivalent to ouput of the OR gate)</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3927,6 +4070,9 @@ Taken from Detailed Report.xlsx template.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/personCategory</p>
+      <div class="comment">
+         <span class="markdown">Category of person in accordance with the Directive (EU) 2016/798 which is victim of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3962,6 +4108,9 @@ Taken from Detailed Report.xlsx template.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/preventsEventOccurrence</p>
+      <div class="comment">
+         <span class="markdown">Indicate that a risk control measure is able to prevent the listed event(s).</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -3994,8 +4143,11 @@ Taken from Detailed Report.xlsx template.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/recordStatus</p>
       <div class="comment">
-         <span class="markdown">This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Correcte. Only the applicable statuses for the record type can be selected. The status 'Validated' can be selected only if all the mandatory fields have been filled-out.
-Taken from the ISS templates.</span>
+         <span class="markdown">This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.
+
+The status 'Validated' can be selected only if all the mandatory fields have been filled-out.
+
+The status 'Corrected' is an exception treatment applicable after 'Vlidation' or upon the notification of a justified request.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4027,6 +4179,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/recordType</p>
+      <div class="comment">
+         <span class="markdown">Applicable type of record in accordance with the applicable ISS version.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4057,6 +4212,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/notifyingReporter</p>
+      <div class="comment">
+         <span class="markdown">ISS registered User issuing a notification on behalf a registered Entity.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4085,6 +4243,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/reportingEntityRole</p>
+      <div class="comment">
+         <span class="markdown">Role of the Entity when reporting a record in accordance with the applicable roles and applicable registration process defined by CDR (EU) 2024/xxxx, Annex IV, Part C .</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4115,6 +4276,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/reportingReason</p>
+      <div class="comment">
+         <span class="markdown">Legal basis applicable for the reported record.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4145,6 +4309,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/riskControlMeasureFunction</p>
+      <div class="comment">
+         <span class="markdown">RCM functions applied by an RCM in accordance with the applicable list of functions.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4299,6 +4466,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/safetEventType</p>
+      <div class="comment">
+         <span class="markdown">'safety event type' or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4549,6 +4719,10 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod</p>
+      <div class="comment">
+         <span class="markdown">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4580,6 +4754,10 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod</p>
+      <div class="comment">
+         <span class="markdown">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4611,6 +4789,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/systemicFactor</p>
+      <div class="comment">
+         <span class="markdown">Systemic factors applicable to a given occurrence or to the failure of a risk control measure in accordance with the applicable list of factors defined in CDR (EU) 2024/xxxx, Annex I, Part C, Appendix 3.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4622,7 +4803,7 @@ Taken from the ISS templates.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#/OccurrenceScenarioBuildingBlock"
@@ -4646,6 +4827,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/targetedDocument</p>
+      <div class="comment">
+         <span class="markdown">Record that is the subject of the notification.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4667,31 +4851,6 @@ Taken from the ISS templates.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="/tdgOccurrenceDescription">
-      <h3>tdg occurrence description<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/tdgOccurrenceDescription</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#/DetailedReportTdgPart"
-                  title="http://data.europa.eu/949/iss/DetailedReportTdgPart">Detailed report (TDG part)</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2004/02/skos/core#Concept"
-                  target="_blank"
-                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="/topography">
       <h3>topography<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4699,6 +4858,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/topography</p>
+      <div class="comment">
+         <span class="markdown">Qualitative description of the topography at the time and location of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4763,6 +4925,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/trackSurfaceCondition</p>
+      <div class="comment">
+         <span class="markdown">Condition of the surface at the time and location of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4825,6 +4990,42 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/tdgOccurrenceCause</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/DetailedReportTdgPart"
+                  title="http://data.europa.eu/949/iss/DetailedReportTdgPart">Detailed report (TDG part)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/tdgOccurrenceDescription">
+      <h3>transport of dangerous goods occurrence description<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/tdgOccurrenceDescription</p>
+      <div class="comment">
+         <span class="markdown">Description of the specific properties of an occurrence involving dangerous goods, supplementing the other reports concerning the same occurrence.
+
+This description is consistent with properties reported in accordance with RID 1.8.5.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4960,6 +5161,9 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/weatherCondition</p>
+      <div class="comment">
+         <span class="markdown">Ambient condition and air temperature at the time and location of an occurrence.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -5420,9 +5624,7 @@ Taken from the ISS templates.</span>
       </li>
       <li>
          <a href="#/riskControlMeasureFunctionName"
-            title="http://data.europa.eu/949/iss/riskControlMeasureFunctionName">
-            <span>risk control measure function name</span>
-         </a>
+            title="http://data.europa.eu/949/iss/riskControlMeasureFunctionName">risk control measure function name</a>
       </li>
       <li>
          <a href="#/riskControlMeasureId"
@@ -6034,7 +6236,7 @@ Taken from the ISS templates.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/damageOperationServicesNarrative</p>
       <div class="comment">
-         <span class="markdown">free text in accordance with Appendix D – General Part, section 3.2.</span>
+         <span class="markdown">Damage to the railway system operations, for example, disruption of railway services (passenger, freight, dangerous goods transport).</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6067,7 +6269,7 @@ Taken from the ISS templates.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/damageEnvironmentNarrative</p>
       <div class="comment">
-         <span class="markdown">Free text in accordance with Appendix D – General Part, section 3.2.</span>
+         <span class="markdown">Environmentat damage, for example, pollution or contamination of land, air, waters, intoxication of wildlife or livestock.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6132,6 +6334,12 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/monetizedDamages</p>
+      <div class="comment">
+         <span class="markdown">Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).
+Damage may be quantified or qualified by the measurement of its severity.
+Damage are equivalent to harm in the case of human or animal
+vulnerabilities.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -6162,6 +6370,12 @@ Taken from the ISS templates.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/damagesForReportingEntity</p>
+      <div class="comment">
+         <span class="markdown">Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).
+Damage may be quantified or qualified by the measurement of its severity.
+Damage are equivalent to harm in the case of human or animal
+vulnerabilities.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -6634,7 +6848,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6664,7 +6878,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6683,6 +6897,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod</p>
+      <div class="comment">
+         <span class="markdown">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -6713,6 +6932,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod</p>
+      <div class="comment">
+         <span class="markdown">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -8434,7 +8658,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dt>has domain</dt>
             <dd>
                <a href="#/FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failure of risk control measure</a>
+                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8992,6 +9216,12 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/riskAnalysis</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -9293,6 +9523,10 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod</p>
+      <div class="comment">
+         <span class="markdown">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -9323,6 +9557,10 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod</p>
+      <div class="comment">
+         <span class="markdown">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -9557,6 +9795,12 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/tdgCompanyFaxNumber</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -10129,6 +10373,12 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/vehicleSpeed</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>

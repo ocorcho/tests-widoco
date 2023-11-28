@@ -1,10 +1,10 @@
 <http://data.europa.eu/949/iss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://data.europa.eu/949/iss> <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
-<http://data.europa.eu/949/iss> <http://purl.org/dc/terms/author> "Edna Ruckhaus" .
-<http://data.europa.eu/949/iss> <http://purl.org/dc/terms/author> "Oscar Corcho" .
 <http://data.europa.eu/949/iss> <http://purl.org/dc/terms/contributor> "Emmanuel Ruffin" .
 <http://data.europa.eu/949/iss> <http://purl.org/dc/terms/contributor> "Marina Aguado" .
 <http://data.europa.eu/949/iss> <http://purl.org/dc/terms/created> "2023-09-20" .
+<http://data.europa.eu/949/iss> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
+<http://data.europa.eu/949/iss> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
 <http://data.europa.eu/949/iss> <http://purl.org/dc/terms/publisher> "European Railway Agency (ERA)" .
 <http://data.europa.eu/949/iss> <http://purl.org/dc/terms/title> "ISS vocabulary"@en .
 <http://data.europa.eu/949/iss> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways (https://www.era.europa.eu/). It represents the concepts and relationships linked to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation (hereinafter the ‘CSM’ or ‘CSM ASLP)."@en .
@@ -59,6 +59,9 @@
 # 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/modified
 <http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -135,6 +138,7 @@
 <http://data.europa.eu/949/iss/ambientCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/ambientCondition> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/ambient-conditions/AmbientConditions> .
 <http://data.europa.eu/949/iss/ambientCondition> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/ambientCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "Qualitative description of the weather ambiant condiftions at the time of the occurrence."@en .
 <http://data.europa.eu/949/iss/ambientCondition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/ambientCondition> <http://www.w3.org/2000/01/rdf-schema#label> "ambient condition"@en .
 # 
@@ -144,6 +148,7 @@
 <http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/applicable-safety-measure-functions/ApplicableRiskControlMeasureFunction> .
 <http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "RCM Functions which are covered by a given risk control measure."@en .
 <http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#label> "applicable risk control measure function"@en .
 # 
@@ -153,6 +158,7 @@
 <http://data.europa.eu/949/iss/authoritiesInvolvement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/authoritiesInvolvement> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/authorities-involvement-types/AuthoritiesInvolvementTypes> .
 <http://data.europa.eu/949/iss/authoritiesInvolvement> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/authoritiesInvolvement> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication that authorities had to intervene to mitigate the consequences of an occurrence."@en .
 <http://data.europa.eu/949/iss/authoritiesInvolvement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/authoritiesInvolvement> <http://www.w3.org/2000/01/rdf-schema#label> "involvement of authorities"@en .
 # 
@@ -162,7 +168,7 @@
 <http://data.europa.eu/949/iss/causeOfReportedEventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/causeOfReportedEventType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
 <http://data.europa.eu/949/iss/causeOfReportedEventType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/iss/causeOfReportedEventType> <http://www.w3.org/2000/01/rdf-schema#comment> "List of event type code(s) considered as causal factor(s).\nTaken from Annexes ISC-2022-00728_2023-07."@en .
+<http://data.europa.eu/949/iss/causeOfReportedEventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicable lists of causes, as defined in CDR (EU) 2024/xxx, Annex I, Part C, Appendix 1, Reference lists of Category B events and Category C events."@en .
 <http://data.europa.eu/949/iss/causeOfReportedEventType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/causeOfReportedEventType> <http://www.w3.org/2000/01/rdf-schema#label> "cause of the event type reported"@en .
 # 
@@ -180,6 +186,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/contributingFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/contributingFactor> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors> .
 <http://data.europa.eu/949/iss/contributingFactor> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/contributingFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "‘contributing factor’ means a contributing factor as defined in Article 2, point (2) of Commission Implementing Regulation (EU) 2020/5721, i.e means any action, omission, event or condition that affects an occurrence by increasing its likelihood, accelerating the effect in time or increasing the severity of the consequences, but the elimination of which would not have prevented the occurrence.\n\nIn the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is defined in Annex I, Part C, Appendix 2."@en .
 <http://data.europa.eu/949/iss/contributingFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/contributingFactor> <http://www.w3.org/2000/01/rdf-schema#label> "contributing factor"@en .
 # 
@@ -206,7 +213,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/countryOfOccurrence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/countryOfOccurrence> <http://data.europa.eu/949/inSkosConceptScheme> <http://publications.europa.eu/resource/authority/country> .
 <http://data.europa.eu/949/iss/countryOfOccurrence> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/iss/countryOfOccurrence> <http://www.w3.org/2000/01/rdf-schema#comment> "Country where the safety related event occurred"@en .
+<http://data.europa.eu/949/iss/countryOfOccurrence> <http://www.w3.org/2000/01/rdf-schema#comment> "Country where the safety related event occurred."@en .
 <http://data.europa.eu/949/iss/countryOfOccurrence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/countryOfOccurrence> <http://www.w3.org/2000/01/rdf-schema#label> "country of occurrence"@en .
 # 
@@ -216,6 +223,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/countryOfOperation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/countryOfOperation> <http://data.europa.eu/949/inSkosConceptScheme> <http://publications.europa.eu/resource/authority/country> .
 <http://data.europa.eu/949/iss/countryOfOperation> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/countryOfOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "Country(ies) in which the railway operator operates.\n\nFor Railway Undertakings, it corresponds to the list of countries applicable in accordance with the applicable (in force) safety certificate(s).\n\nFor Infrastructure managers it coresponds to the list of countries applicable in accordance with the applicable (in force) safety authorisation(s)."@en .
 <http://data.europa.eu/949/iss/countryOfOperation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/countryOfOperation> <http://www.w3.org/2000/01/rdf-schema#label> "country of operation"@en .
 # 
@@ -252,6 +260,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/documentLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/documentLanguage> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/document-languages/DocumentLanguages> .
 <http://data.europa.eu/949/iss/documentLanguage> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/documentLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "Language(s) in which the document is available."@en .
 <http://data.europa.eu/949/iss/documentLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/documentLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "document language"@en .
 # 
@@ -261,6 +270,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/documentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/documentStatus> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/document-statuses/DocumentStatuses> .
 <http://data.europa.eu/949/iss/documentStatus> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/documentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Language(s) in which the document is available."@en .
 <http://data.europa.eu/949/iss/documentStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/documentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "document status"@en .
 # 
@@ -270,6 +280,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/documentType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/document-types/DocumentTypes> .
 <http://data.europa.eu/949/iss/documentType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of document (e.g. report, note, e-mail...).\n\nNot ot confuse with the ICT format of the digital document."@en .
 <http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#label> "document type"@en .
 # 
@@ -306,6 +317,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> .
 <http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."@en .
 <http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "frequency safety level prior to the assessed period"@en .
 # 
@@ -315,6 +327,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> .
 <http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."@en .
 <http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "frequency safety level same as assessed period"@en .
 # 
@@ -448,6 +461,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/injuryTdgType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/injuryTdgType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes> .
 <http://data.europa.eu/949/iss/injuryTdgType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/injuryTdgType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of injury relating to human exposure to dangerous goods substances and associated dangerous phenomena."@en .
 <http://data.europa.eu/949/iss/injuryTdgType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/injuryTdgType> <http://www.w3.org/2000/01/rdf-schema#label> "injury dangerous goods type"@en .
 # 
@@ -465,6 +479,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/injuryType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/injuryType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes> .
 <http://data.europa.eu/949/iss/injuryType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/injuryType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of injury in accordance with Directive (EU) 2016/798 and in accordance with the Abreviated Injuriy Scale (AIS)."@en .
 <http://data.europa.eu/949/iss/injuryType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/injuryType> <http://www.w3.org/2000/01/rdf-schema#label> "injury type"@en .
 # 
@@ -474,6 +489,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/inputAndgate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/inputAndgate> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
 <http://data.europa.eu/949/iss/inputAndgate> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/inputAndgate> <http://www.w3.org/2000/01/rdf-schema#comment> "Input to the AND gate of a building block."@en .
 <http://data.europa.eu/949/iss/inputAndgate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/inputAndgate> <http://www.w3.org/2000/01/rdf-schema#label> "input AND gate"@en .
 # 
@@ -482,6 +498,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/inputOrGate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock> .
 <http://data.europa.eu/949/iss/inputOrGate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/inputOrGate> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/inputOrGate> <http://www.w3.org/2000/01/rdf-schema#comment> "Input to the OR gate of a building block."@en .
 <http://data.europa.eu/949/iss/inputOrGate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/inputOrGate> <http://www.w3.org/2000/01/rdf-schema#label> "input OR gate"@en .
 # 
@@ -516,6 +533,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/isRelatedToRecord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/Record> .
 <http://data.europa.eu/949/iss/isRelatedToRecord> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/iss/Record> .
 <http://data.europa.eu/949/iss/isRelatedToRecord> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/isRelatedToRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a record."@en .
 <http://data.europa.eu/949/iss/isRelatedToRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/isRelatedToRecord> <http://www.w3.org/2000/01/rdf-schema#label> "is related to record"@en .
 # 
@@ -525,6 +543,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/levelCrossingType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/levelCrossingType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/level/crossing-types/LevelCrossingTypes> .
 <http://data.europa.eu/949/iss/levelCrossingType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/levelCrossingType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of level crossing in accordance with the applicable list of types."@en .
 <http://data.europa.eu/949/iss/levelCrossingType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/levelCrossingType> <http://www.w3.org/2000/01/rdf-schema#label> "level crossing type"@en .
 # 
@@ -534,6 +553,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/lightCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/lightCondition> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/light-conditions/LightConditions> .
 <http://data.europa.eu/949/iss/lightCondition> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/lightCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "Light condition at the time and location of an occurrence."@en .
 <http://data.europa.eu/949/iss/lightCondition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/lightCondition> <http://www.w3.org/2000/01/rdf-schema#label> "light condition"@en .
 # 
@@ -559,6 +579,7 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/locationDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/locationDetails> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/location-details/LocationDetails> .
 <http://data.europa.eu/949/iss/locationDetails> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/locationDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of the location at which an occurrence took place."@en .
 <http://data.europa.eu/949/iss/locationDetails> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/locationDetails> <http://www.w3.org/2000/01/rdf-schema#label> "location details"@en .
 # 
@@ -584,6 +605,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/lossOfProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/lossOfProduct> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/product-losss-types/ProductLossTypes> .
 <http://data.europa.eu/949/iss/lossOfProduct> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/lossOfProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates to occurrences with dangerous goods involvement, in which a loss of containment of the dangerous substance (loss of product) occurred."@en .
 <http://data.europa.eu/949/iss/lossOfProduct> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/lossOfProduct> <http://www.w3.org/2000/01/rdf-schema#label> "loss of product"@en .
 # 
@@ -593,6 +615,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/meansContainment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/meansContainment> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/means-of-containment-types/MeansOfContainmentTypes> .
 <http://data.europa.eu/949/iss/meansContainment> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/meansContainment> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of contianment of a dangerous good substance, in accordance with the list of applicable types defined in RID."@en .
 <http://data.europa.eu/949/iss/meansContainment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/meansContainment> <http://www.w3.org/2000/01/rdf-schema#label> "means of containment"@en .
 # 
@@ -602,6 +625,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/meansContainmentFailureType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/meansContainmentFailureType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/means-containment-failure-types/MeansContainmentFailureTypes> .
 <http://data.europa.eu/949/iss/meansContainmentFailureType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/meansContainmentFailureType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of failure of the dangerous goods containment leading to the loss of containment, in accordance witht he applicable list of failure defined in RID."@en .
 <http://data.europa.eu/949/iss/meansContainmentFailureType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/meansContainmentFailureType> <http://www.w3.org/2000/01/rdf-schema#label> "means of containment failure type"@en .
 # 
@@ -611,6 +635,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/mitigatesEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/mitigatesEvent> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
 <http://data.europa.eu/949/iss/mitigatesEvent> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/mitigatesEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate that a risk control measure mitigates the impact of an occurrence."@en .
 <http://data.europa.eu/949/iss/mitigatesEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/mitigatesEvent> <http://www.w3.org/2000/01/rdf-schema#label> "mitigates event"@en .
 # 
@@ -620,6 +645,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/notificationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/notificationType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes> .
 <http://data.europa.eu/949/iss/notificationType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/notificationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of notification in accordance with the ISS applicable types."@en .
 <http://data.europa.eu/949/iss/notificationType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/notificationType> <http://www.w3.org/2000/01/rdf-schema#label> "notification type"@en .
 # 
@@ -636,6 +662,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/notifiedEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/iss/Entity> .
 <http://data.europa.eu/949/iss/notifiedEntity> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/notifiedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "ISS registered entity to which the notification is addressed."@en .
 <http://data.europa.eu/949/iss/notifiedEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/notifiedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "notified entity"@en .
 <http://data.europa.eu/949/iss/notifiedEntity> <http://www.w3.org/2004/02/skos/core#altLabel> "addressee" .
@@ -654,6 +681,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/notifyingReporter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/Record> .
 <http://data.europa.eu/949/iss/notifyingReporter> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/iss/Entity> .
 <http://data.europa.eu/949/iss/notifyingReporter> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/notifyingReporter> <http://www.w3.org/2000/01/rdf-schema#comment> "ISS registered User issuing a notification on behalf a registered Entity."@en .
 <http://data.europa.eu/949/iss/notifyingReporter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/notifyingReporter> <http://www.w3.org/2000/01/rdf-schema#label> "reporting entity"@en .
 # 
@@ -671,6 +699,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/outputEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock> .
 <http://data.europa.eu/949/iss/outputEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/outputEvent> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/outputEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Event type identitied as output of a building block.\n\n(Equivalent to ouput of the OR gate)"@en .
 <http://data.europa.eu/949/iss/outputEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/outputEvent> <http://www.w3.org/2000/01/rdf-schema#label> "output event"@en .
 # 
@@ -688,6 +717,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/personCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/personCategory> <http://data.europa.eu/949/inSkosConceptScheme> "http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories" .
 <http://data.europa.eu/949/iss/personCategory> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/personCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of person in accordance with the Directive (EU) 2016/798 which is victim of an occurrence."@en .
 <http://data.europa.eu/949/iss/personCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/personCategory> <http://www.w3.org/2000/01/rdf-schema#label> "person category"@en .
 # 
@@ -697,6 +727,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/preventsEventOccurrence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/preventsEventOccurrence> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
 <http://data.europa.eu/949/iss/preventsEventOccurrence> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/preventsEventOccurrence> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate that a risk control measure is able to prevent the listed event(s)."@en .
 <http://data.europa.eu/949/iss/preventsEventOccurrence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/preventsEventOccurrence> <http://www.w3.org/2000/01/rdf-schema#label> "prevents event occurrence"@en .
 # 
@@ -706,7 +737,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/recordStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/recordStatus> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses> .
 <http://data.europa.eu/949/iss/recordStatus> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/iss/recordStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Correcte. Only the applicable statuses for the record type can be selected. The status 'Validated' can be selected only if all the mandatory fields have been filled-out.\nTaken from the ISS templates."@en .
+<http://data.europa.eu/949/iss/recordStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.\n\nThe status 'Validated' can be selected only if all the mandatory fields have been filled-out.\n\nThe status 'Corrected' is an exception treatment applicable after 'Vlidation' or upon the notification of a justified request."@en .
 <http://data.europa.eu/949/iss/recordStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/recordStatus> <http://www.w3.org/2000/01/rdf-schema#label> "record status"@en .
 # 
@@ -716,6 +747,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/recordType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/recordType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/record-types/RecordTypes> .
 <http://data.europa.eu/949/iss/recordType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/recordType> <http://www.w3.org/2000/01/rdf-schema#comment> "Applicable type of record in accordance with the applicable ISS version."@en .
 <http://data.europa.eu/949/iss/recordType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/recordType> <http://www.w3.org/2000/01/rdf-schema#label> "record type"@en .
 # 
@@ -725,6 +757,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/reportingEntityRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/reportingEntityRole> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories> .
 <http://data.europa.eu/949/iss/reportingEntityRole> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/reportingEntityRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Role of the Entity when reporting a record in accordance with the applicable roles and applicable registration process defined by CDR (EU) 2024/xxxx, Annex IV, Part C ."@en .
 <http://data.europa.eu/949/iss/reportingEntityRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/reportingEntityRole> <http://www.w3.org/2000/01/rdf-schema#label> "reporting entity role"@en .
 # 
@@ -734,6 +767,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/reportingReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/reportingReason> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons> .
 <http://data.europa.eu/949/iss/reportingReason> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/reportingReason> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal basis applicable for the reported record."@en .
 <http://data.europa.eu/949/iss/reportingReason> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/reportingReason> <http://www.w3.org/2000/01/rdf-schema#label> "reporting reason"@en .
 # 
@@ -743,6 +777,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/resultFailureRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/resultFailureRiskControlMeasure> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
 <http://data.europa.eu/949/iss/resultFailureRiskControlMeasure> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/resultFailureRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "List of possible resulting safety related events in case a given risk control measure fails to operate as planned."@en .
 <http://data.europa.eu/949/iss/resultFailureRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/resultFailureRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "can be the result of failure of a risk control measure"@en .
 # 
@@ -752,6 +787,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/riskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/riskControlMeasureFunction> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-measure-function-types/RiskControlMeasureFunctionTypes> .
 <http://data.europa.eu/949/iss/riskControlMeasureFunction> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/riskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "RCM functions applied by an RCM in accordance with the applicable list of functions."@en .
 <http://data.europa.eu/949/iss/riskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/riskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#label> "risk control measure function"@en .
 # 
@@ -804,6 +840,7 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/safetEventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/safetEventType> <http://data.europa.eu/949/inSkosConceptScheme> "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes" .
 <http://data.europa.eu/949/iss/safetEventType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/safetEventType> <http://www.w3.org/2000/01/rdf-schema#comment> "'safety event type' or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1."@en .
 <http://data.europa.eu/949/iss/safetEventType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/safetEventType> <http://www.w3.org/2000/01/rdf-schema#label> "safety event type"@en .
 <http://data.europa.eu/949/iss/safetEventType> <http://www.w3.org/2004/02/skos/core#altLabel> "occurrence event type"@en .
@@ -874,6 +911,7 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation> .
 <http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."@en .
 <http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "severity safety level during the assessment period"@en .
 # 
@@ -883,6 +921,7 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> .
 <http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."@en .
 <http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "severity safety level prior to the assessment period"@en .
 # 
@@ -900,6 +939,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/systemicFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/systemicFactor> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors> .
 <http://data.europa.eu/949/iss/systemicFactor> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/systemicFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Systemic factors applicable to a given occurrence or to the failure of a risk control measure in accordance with the applicable list of factors defined in CDR (EU) 2024/xxxx, Annex I, Part C, Appendix 3."@en .
 <http://data.europa.eu/949/iss/systemicFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/systemicFactor> <http://www.w3.org/2000/01/rdf-schema#label> "systemic factor"@en .
 # 
@@ -908,6 +948,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/targetedDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/Notification> .
 <http://data.europa.eu/949/iss/targetedDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/iss/Document> .
 <http://data.europa.eu/949/iss/targetedDocument> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/targetedDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Record that is the subject of the notification."@en .
 <http://data.europa.eu/949/iss/targetedDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/targetedDocument> <http://www.w3.org/2000/01/rdf-schema#label> "targeted document"@en .
 # 
@@ -933,6 +974,10 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/DetailedReportTdgPart> .
 <http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the specific properties of an occurrence involving dangerous goods, supplementing the other reports concerning the same occurrence.\n\nThis description is consistent with properties reported in accordance with RID 1.8.5."@en .
+<http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
+<http://data.europa.eu/949/iss/tdgOccurrenceDescription> <http://www.w3.org/2000/01/rdf-schema#label> "transport of dangerous goods occurrence description"@en .
 # 
 # http://data.europa.eu/949/iss/topography
 <http://data.europa.eu/949/iss/topography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -940,6 +985,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/topography> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/topography> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes> .
 <http://data.europa.eu/949/iss/topography> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/topography> <http://www.w3.org/2000/01/rdf-schema#comment> "Qualitative description of the topography at the time and location of an occurrence."@en .
 <http://data.europa.eu/949/iss/topography> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/topography> <http://www.w3.org/2000/01/rdf-schema#label> "topography"@en .
 # 
@@ -949,6 +995,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/trackSurfaceCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/trackSurfaceCondition> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/track-surface-conditions/TrackSurfaceConditions> .
 <http://data.europa.eu/949/iss/trackSurfaceCondition> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/trackSurfaceCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "Condition of the surface at the time and location of an occurrence."@en .
 <http://data.europa.eu/949/iss/trackSurfaceCondition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/trackSurfaceCondition> <http://www.w3.org/2000/01/rdf-schema#label> "track surface condition"@en .
 # 
@@ -1001,6 +1048,7 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/weatherCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/weatherCondition> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/weather-conditions/WeatherConditions> .
 <http://data.europa.eu/949/iss/weatherCondition> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/weatherCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "Ambient condition and air temperature at the time and location of an occurrence."@en .
 <http://data.europa.eu/949/iss/weatherCondition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/weatherCondition> <http://www.w3.org/2000/01/rdf-schema#label> "weather condition"@en .
 # 
@@ -1015,6 +1063,7 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/sf#Geometry> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of the occurrence expressed with a reference point (long/lat/alt).\n\nThe precision of the reference point shall be better than 0.001 for long and lat values."@en .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n " .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
@@ -1198,6 +1247,7 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> .
 <http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://www.w3.org/2000/01/rdf-schema#comment> "Environmentat damage, for example, pollution or contamination of land, air, waters, intoxication of wildlife or livestock."@en .
 <http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://www.w3.org/2000/01/rdf-schema#comment> "Free text in accordance with Appendix D – General Part, section 3.2."@en .
 <http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/damageEnvironmentNarrative> <http://www.w3.org/2000/01/rdf-schema#label> "damage to the environment narrative"@en .
@@ -1215,7 +1265,8 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> .
 <http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#comment> "free text in accordance with Appendix D – General Part, section 3.2."@en .
+<http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#comment> "Damage to the railway system operations, for example, disruption of railway services (passenger, freight, dangerous goods transport)."@en .
+<http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#comment> "Free text in accordance with Appendix D – General Part, section 3.2."@en .
 <http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/damageOperationServicesNarrative> <http://www.w3.org/2000/01/rdf-schema#label> "damage to operating services narrative"@en .
 # 
@@ -1233,6 +1284,7 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/damagesForReportingEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> .
 <http://data.europa.eu/949/iss/damagesForReportingEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://data.europa.eu/949/iss/damagesForReportingEntity> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/damagesForReportingEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).\nDamage may be quantified or qualified by the measurement of its severity.\nDamage are equivalent to harm in the case of human or animal\nvulnerabilities."@en .
 <http://data.europa.eu/949/iss/damagesForReportingEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/damagesForReportingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "damages for the reporting entity (monetised)"@en .
 # 
@@ -1317,7 +1369,6 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/estimatedCostOperationDisruptionPassengerService> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/iss/estimatedCostOperationDisruptionPassengerService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/estimatedCostOperationDisruptionPassengerService> <http://www.w3.org/2000/01/rdf-schema#label> "estimated cost of operation disruption for TDG freight service"@en .
-<http://data.europa.eu/949/iss/estimatedCostOperationDisruptionPassengerService> <http://www.w3.org/2000/01/rdf-schema#label> "estimated cost of operation disruption for passenger service"@en .
 # 
 # http://data.europa.eu/949/iss/estimatedCostOperationDisruptionTDGFreightService
 <http://data.europa.eu/949/iss/estimatedCostOperationDisruptionTDGFreightService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1372,6 +1423,7 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation> .
 <http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."@en .
 <http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "frequency probability during assessment period"@en .
 # 
@@ -1381,6 +1433,7 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> .
 <http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."@en .
 <http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "frequency probability prior to assessment period"@en .
 # 
@@ -1488,6 +1541,7 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/monetizedDamages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> .
 <http://data.europa.eu/949/iss/monetizedDamages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://data.europa.eu/949/iss/monetizedDamages> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/monetizedDamages> <http://www.w3.org/2000/01/rdf-schema#comment> "Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).\nDamage may be quantified or qualified by the measurement of its severity.\nDamage are equivalent to harm in the case of human or animal\nvulnerabilities."@en .
 <http://data.europa.eu/949/iss/monetizedDamages> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/monetizedDamages> <http://www.w3.org/2000/01/rdf-schema#label> "damages (monetised)"@en .
 # 
@@ -2046,6 +2100,8 @@ _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/riskAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/iss/riskAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/RiskControlMeasure> .
 <http://data.europa.eu/949/iss/riskAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.europa.eu/949/iss/riskAnalysis> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/riskAnalysis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/riskAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "risk analysis"@en .
 # 
 # http://data.europa.eu/949/iss/riskControlMeasureAim
@@ -2078,6 +2134,7 @@ _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/riskControlMeasureFunctionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/iss/riskControlMeasureFunctionName> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/iss/riskControlMeasureFunctionName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
+<http://data.europa.eu/949/iss/riskControlMeasureFunctionName> <http://www.w3.org/2000/01/rdf-schema#label> "risk control measure function name"@en .
 # 
 # http://data.europa.eu/949/iss/riskControlMeasureId
 <http://data.europa.eu/949/iss/riskControlMeasureId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -2126,6 +2183,7 @@ _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> .
 <http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."@en .
 <http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "severity probability during assessment period"@en .
 # 
@@ -2134,6 +2192,7 @@ _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation> .
 <http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."@en .
 <http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "severity probability prior to assessment period"@en .
 # 
@@ -2194,6 +2253,8 @@ _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/tdgCompanyFaxNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/iss/tdgCompanyFaxNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/DetailedReportTdgPart> .
 <http://data.europa.eu/949/iss/tdgCompanyFaxNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.europa.eu/949/iss/tdgCompanyFaxNumber> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/tdgCompanyFaxNumber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/tdgCompanyFaxNumber> <http://www.w3.org/2000/01/rdf-schema#label> "tdg company fax number"@en .
 # 
 # http://data.europa.eu/949/iss/tdgCompanyTelephone
@@ -2361,6 +2422,8 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/vehicleSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/iss/vehicleSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> .
 <http://data.europa.eu/949/iss/vehicleSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://data.europa.eu/949/iss/vehicleSpeed> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/vehicleSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/vehicleSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle speed"@en .
 # 
 # http://data.europa.eu/949/iss/waterPollution
@@ -2449,6 +2512,7 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Report on an occurrence as defined in CDR (EU) 2024/xxxx, Annex I, Part A."@en .
 <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Detailed report of the safety related event"@en .
 <http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent> <http://www.w3.org/2004/02/skos/core#altLabel> "Detailed report of the occurrence"@en .
@@ -2457,6 +2521,7 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/DetailedReportTdgPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/DetailedReportTdgPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/DetailedReportTdgPart> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/DetailedReportTdgPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Supplement to an occurrence detailed report when the occurrence is involving the transport of dangerous goods in accordance with RID 1.8.5."@en .
 <http://data.europa.eu/949/iss/DetailedReportTdgPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/DetailedReportTdgPart> <http://www.w3.org/2000/01/rdf-schema#label> "Detailed report (TDG part)"@en .
 # 
@@ -2464,7 +2529,7 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/Document> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/iss/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Any form of document whose type is specified by a document type."@en .
+<http://data.europa.eu/949/iss/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Any form of document whose type is specified by a document type.\n\nIn the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements for reporting supporting evidence with the Information Sharing System using the dataset defined in CDR (EU) 2024/xxxx, Annex IV, Part C ."@en .
 <http://data.europa.eu/949/iss/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
 # 
@@ -2478,8 +2543,9 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3."@en .
 <http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
-<http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Failure of risk control measure"@en .
+<http://data.europa.eu/949/iss/FailureOfRiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Failed risk control measure"@en .
 # 
 # http://data.europa.eu/949/iss/HumanConsequencesPerPersonCategory
 <http://data.europa.eu/949/iss/HumanConsequencesPerPersonCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2505,6 +2571,7 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/Notification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/Notification> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/Notification> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication of data and information between two or more entities which can be performed with the Information Sharing System in accordance with CDR (EU) 2024/xxxx  using the dataset defined in Annex IV, part D."@en .
 <http://data.europa.eu/949/iss/Notification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/Notification> <http://www.w3.org/2000/01/rdf-schema#label> "Notification"@en .
 # 
@@ -2512,6 +2579,7 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/OccurrenceScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/OccurrenceScenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/OccurrenceScenario> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/OccurrenceScenario> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the combination of events leading to an ocuurrence.\n\nIn the context of CDR (EU) 2024/xxxx the reporting of occurrence scenarios shall implement the method and the applicable datasets described in Annex I, Part B."@en .
 <http://data.europa.eu/949/iss/OccurrenceScenario> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/OccurrenceScenario> <http://www.w3.org/2000/01/rdf-schema#label> "Occurrence scenario"@en .
 # 
@@ -2533,6 +2601,7 @@ _:genid82 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://w
 _:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/949/iss/outputEvent> .
 _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic element used for the description of occurrence scenarios or fault trees.\n\nBluiding blocks shall be used to compose the description of an occurrence scenario in accordance with the method defined in CDR (EU) 2024/xxxx, Annex I, Part B."@en .
 <http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock> <http://www.w3.org/2000/01/rdf-schema#label> "Occurrence scenario building block"@en .
 # 
@@ -2561,6 +2630,7 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/RiskControlMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/RiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/RiskControlMeasure> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/RiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "'Risk control measure’ or ‘RCM’ means one of the safety measures as defined in Article 3, second paragraph, point (10) of Commission Implementing Regulation (EU) No 402/2013."@en .
 <http://data.europa.eu/949/iss/RiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/RiskControlMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Risk control measure"@en .
 <http://data.europa.eu/949/iss/RiskControlMeasure> <http://www.w3.org/2004/02/skos/core#altLabel> "Safety measure"@en .
@@ -2568,6 +2638,7 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/iss/RiskControlMeasureFunction
 <http://data.europa.eu/949/iss/RiskControlMeasureFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/RiskControlMeasureFunction> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/RiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "“Risk control measure function” or “RCMF” means a function designed to contribute to the reduction of risks.\nThe CDR (EU) 2024/xxxx defines the applicable functions as following:\n“detect function” means a function detecting a specified undesirable situation applicable to the linked event types; \n“diagnose function” means a function evaluating the detected undesirable situation, taking into account its context, and deciding whether or not an action needs to be performed; \n“act function” means a function that is designed to avoid the occurrence of the linked event types, or will directly reduce its consequences, or both."@en .
 <http://data.europa.eu/949/iss/RiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/RiskControlMeasureFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Risk control measure function"@en .
 # 
@@ -2592,6 +2663,7 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://data.europa.eu/949/iss/SafetyLevel
 <http://data.europa.eu/949/iss/SafetyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/SafetyLevel> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/SafetyLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "‘safety level’ means a level of safety risks as estimated and assessed by the methods set out in Part A of the Annex  III of  CDR (EU) 2024/xxxx"@en .
 <http://data.europa.eu/949/iss/SafetyLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/SafetyLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Safety level"@en .
 # 
@@ -2611,18 +2683,21 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation> <http://www.w3.org/2000/01/rdf-schema#comment> "Self-estimation of safety performance of an Entity reported with the dataset applicable in accordance with CDR (EU) 2024/xxxx, Annex II, Part B."@en .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation> <http://www.w3.org/2000/01/rdf-schema#label> "Safety performance self-estimation"@en .
 # 
 # http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety performance self-estimation per elements of proofs in accordance with CDR (EU) 2024/xxxx, Annex II, part C."@en .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement> <http://www.w3.org/2000/01/rdf-schema#label> "Safety performance self-estimation per element"@en .
 # 
 # http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea
 <http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C."@en .
 <http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "Safety performance self-estimation per area"@en .
 # 
@@ -2642,6 +2717,7 @@ _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/SafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/SafetyRelatedEvent> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/SafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Equivalent to Occurrence.\n\nIn the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety related event shall be reported using the datasets defined in Annex I, Part A."@en .
 <http://data.europa.eu/949/iss/SafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/SafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Safety related event"@en .
 <http://data.europa.eu/949/iss/SafetyRelatedEvent> <http://www.w3.org/2004/02/skos/core#altLabel> "Occurrence"@en .
@@ -2650,6 +2726,7 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "‘occurrence’ means a safety relevant event, incident or accident"@en .
 <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Simple report of the safety related event"@en .
 <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> <http://www.w3.org/2004/02/skos/core#altLabel> "Simple report of the occurrence"@en .
@@ -2658,6 +2735,7 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/VolumeOfOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/iss/VolumeOfOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/iss/InfoInRecordVersion> .
 <http://data.europa.eu/949/iss/VolumeOfOperation> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/iss/VolumeOfOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "Volume of operation of railway operators over a defined period of tme.\n\nIn the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reported in accordance ith the dataset defined in Annex III, Part D."@en .
 <http://data.europa.eu/949/iss/VolumeOfOperation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/VolumeOfOperation> <http://www.w3.org/2000/01/rdf-schema#label> "Volume of operation"@en .
 # 

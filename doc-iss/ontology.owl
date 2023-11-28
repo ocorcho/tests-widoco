@@ -15,11 +15,11 @@
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="http://data.europa.eu/949/iss">
         <ns1:license>https://creativecommons.org/licenses/by/4.0/</ns1:license>
-        <terms:author>Edna Ruckhaus</terms:author>
-        <terms:author>Oscar Corcho</terms:author>
         <terms:contributor>Emmanuel Ruffin</terms:contributor>
         <terms:contributor>Marina Aguado</terms:contributor>
         <terms:created>2023-09-20</terms:created>
+        <terms:creator>Edna Ruckhaus</terms:creator>
+        <terms:creator>Oscar Corcho</terms:creator>
         <terms:publisher>European Railway Agency (ERA)</terms:publisher>
         <terms:title xml:lang="en">ISS vocabulary</terms:title>
         <rdfs:comment xml:lang="en">This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways (https://www.era.europa.eu/). It represents the concepts and relationships linked to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation (hereinafter the ‘CSM’ or ‘CSM ASLP).</rdfs:comment>
@@ -128,6 +128,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -274,6 +281,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/ambient-conditions/AmbientConditions"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Qualitative description of the weather ambiant condiftions at the time of the occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">ambient condition</rdfs:label>
     </owl:ObjectProperty>
@@ -288,6 +296,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/applicable-safety-measure-functions/ApplicableRiskControlMeasureFunction"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">RCM Functions which are covered by a given risk control measure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">applicable risk control measure function</rdfs:label>
     </owl:ObjectProperty>
@@ -302,6 +311,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/authorities-involvement-types/AuthoritiesInvolvementTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Indication that authorities had to intervene to mitigate the consequences of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">involvement of authorities</rdfs:label>
     </owl:ObjectProperty>
@@ -316,8 +326,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
-        <rdfs:comment xml:lang="en">List of event type code(s) considered as causal factor(s).
-Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Applicable lists of causes, as defined in CDR (EU) 2024/xxx, Annex I, Part C, Appendix 1, Reference lists of Category B events and Category C events.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">cause of the event type reported</rdfs:label>
     </owl:ObjectProperty>
@@ -339,6 +348,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">‘contributing factor’ means a contributing factor as defined in Article 2, point (2) of Commission Implementing Regulation (EU) 2020/5721, i.e means any action, omission, event or condition that affects an occurrence by increasing its likelihood, accelerating the effect in time or increasing the severity of the consequences, but the elimination of which would not have prevented the occurrence.
+
+In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is defined in Annex I, Part C, Appendix 2.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">contributing factor</rdfs:label>
     </owl:ObjectProperty>
@@ -374,7 +386,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://publications.europa.eu/resource/authority/country"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
-        <rdfs:comment xml:lang="en">Country where the safety related event occurred</rdfs:comment>
+        <rdfs:comment xml:lang="en">Country where the safety related event occurred.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">country of occurrence</rdfs:label>
     </owl:ObjectProperty>
@@ -389,6 +401,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://publications.europa.eu/resource/authority/country"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Country(ies) in which the railway operator operates.
+
+For Railway Undertakings, it corresponds to the list of countries applicable in accordance with the applicable (in force) safety certificate(s).
+
+For Infrastructure managers it coresponds to the list of countries applicable in accordance with the applicable (in force) safety authorisation(s).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">country of operation</rdfs:label>
     </owl:ObjectProperty>
@@ -445,6 +462,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/document-languages/DocumentLanguages"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Language(s) in which the document is available.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">document language</rdfs:label>
     </owl:ObjectProperty>
@@ -459,6 +477,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/document-statuses/DocumentStatuses"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Language(s) in which the document is available.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">document status</rdfs:label>
     </owl:ObjectProperty>
@@ -473,6 +492,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/document-types/DocumentTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of document (e.g. report, note, e-mail...).
+
+Not ot confuse with the ICT format of the digital document.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">document type</rdfs:label>
     </owl:ObjectProperty>
@@ -529,6 +551,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">frequency safety level prior to the assessed period</rdfs:label>
     </owl:ObjectProperty>
@@ -543,6 +568,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">frequency safety level same as assessed period</rdfs:label>
     </owl:ObjectProperty>
@@ -744,6 +772,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of injury relating to human exposure to dangerous goods substances and associated dangerous phenomena.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">injury dangerous goods type</rdfs:label>
     </owl:ObjectProperty>
@@ -765,6 +794,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of injury in accordance with Directive (EU) 2016/798 and in accordance with the Abreviated Injuriy Scale (AIS).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">injury type</rdfs:label>
     </owl:ObjectProperty>
@@ -779,6 +809,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Input to the AND gate of a building block.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">input AND gate</rdfs:label>
     </owl:ObjectProperty>
@@ -792,6 +823,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Input to the OR gate of a building block.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">input OR gate</rdfs:label>
     </owl:ObjectProperty>
@@ -846,6 +878,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/Record"/>
         <rdfs:range rdf:resource="http://data.europa.eu/949/iss/Record"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Reference to a record.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">is related to record</rdfs:label>
     </owl:ObjectProperty>
@@ -860,6 +893,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/level/crossing-types/LevelCrossingTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of level crossing in accordance with the applicable list of types.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">level crossing type</rdfs:label>
     </owl:ObjectProperty>
@@ -874,6 +908,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/light-conditions/LightConditions"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Light condition at the time and location of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">light condition</rdfs:label>
     </owl:ObjectProperty>
@@ -908,6 +943,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/location-details/LocationDetails"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Detailed description of the location at which an occurrence took place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">location details</rdfs:label>
     </owl:ObjectProperty>
@@ -942,6 +978,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/product-losss-types/ProductLossTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Relates to occurrences with dangerous goods involvement, in which a loss of containment of the dangerous substance (loss of product) occurred.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">loss of product</rdfs:label>
     </owl:ObjectProperty>
@@ -956,6 +993,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/means-of-containment-types/MeansOfContainmentTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of contianment of a dangerous good substance, in accordance with the list of applicable types defined in RID.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">means of containment</rdfs:label>
     </owl:ObjectProperty>
@@ -970,6 +1008,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/means-containment-failure-types/MeansContainmentFailureTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of failure of the dangerous goods containment leading to the loss of containment, in accordance witht he applicable list of failure defined in RID.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">means of containment failure type</rdfs:label>
     </owl:ObjectProperty>
@@ -984,6 +1023,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Indicate that a risk control measure mitigates the impact of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">mitigates event</rdfs:label>
     </owl:ObjectProperty>
@@ -998,6 +1038,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Type of notification in accordance with the ISS applicable types.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">notification type</rdfs:label>
     </owl:ObjectProperty>
@@ -1018,6 +1059,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://data.europa.eu/949/iss/Entity"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">ISS registered entity to which the notification is addressed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">notified entity</rdfs:label>
         <skos:altLabel>addressee</skos:altLabel>
@@ -1047,6 +1089,7 @@ Taken from Detailed Report.xlsx template.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/Record"/>
         <rdfs:range rdf:resource="http://data.europa.eu/949/iss/Entity"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">ISS registered User issuing a notification on behalf a registered Entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">reporting entity</rdfs:label>
     </owl:ObjectProperty>
@@ -1074,6 +1117,9 @@ Taken from Detailed Report.xlsx template.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Event type identitied as output of a building block.
+
+(Equivalent to ouput of the OR gate)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">output event</rdfs:label>
     </owl:ObjectProperty>
@@ -1095,6 +1141,7 @@ Taken from Detailed Report.xlsx template.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme>http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories</data:inSkosConceptScheme>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Category of person in accordance with the Directive (EU) 2016/798 which is victim of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">person category</rdfs:label>
     </owl:ObjectProperty>
@@ -1109,6 +1156,7 @@ Taken from Detailed Report.xlsx template.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Indicate that a risk control measure is able to prevent the listed event(s).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">prevents event occurrence</rdfs:label>
     </owl:ObjectProperty>
@@ -1123,8 +1171,11 @@ Taken from Detailed Report.xlsx template.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
-        <rdfs:comment xml:lang="en">This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Correcte. Only the applicable statuses for the record type can be selected. The status &apos;Validated&apos; can be selected only if all the mandatory fields have been filled-out.
-Taken from the ISS templates.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.
+
+The status &apos;Validated&apos; can be selected only if all the mandatory fields have been filled-out.
+
+The status &apos;Corrected&apos; is an exception treatment applicable after &apos;Vlidation&apos; or upon the notification of a justified request.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">record status</rdfs:label>
     </owl:ObjectProperty>
@@ -1139,6 +1190,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/record-types/RecordTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Applicable type of record in accordance with the applicable ISS version.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">record type</rdfs:label>
     </owl:ObjectProperty>
@@ -1153,6 +1205,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Role of the Entity when reporting a record in accordance with the applicable roles and applicable registration process defined by CDR (EU) 2024/xxxx, Annex IV, Part C .</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">reporting entity role</rdfs:label>
     </owl:ObjectProperty>
@@ -1167,6 +1220,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Legal basis applicable for the reported record.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">reporting reason</rdfs:label>
     </owl:ObjectProperty>
@@ -1181,6 +1235,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">List of possible resulting safety related events in case a given risk control measure fails to operate as planned.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">can be the result of failure of a risk control measure</rdfs:label>
     </owl:ObjectProperty>
@@ -1195,6 +1250,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-measure-function-types/RiskControlMeasureFunctionTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">RCM functions applied by an RCM in accordance with the applicable list of functions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">risk control measure function</rdfs:label>
     </owl:ObjectProperty>
@@ -1271,6 +1327,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme>http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes</data:inSkosConceptScheme>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">&apos;safety event type&apos; or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">safety event type</rdfs:label>
         <skos:altLabel xml:lang="en">occurrence event type</skos:altLabel>
@@ -1381,6 +1438,8 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">severity safety level during the assessment period</rdfs:label>
     </owl:ObjectProperty>
@@ -1395,6 +1454,8 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">severity safety level prior to the assessment period</rdfs:label>
     </owl:ObjectProperty>
@@ -1416,6 +1477,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Systemic factors applicable to a given occurrence or to the failure of a risk control measure in accordance with the applicable list of factors defined in CDR (EU) 2024/xxxx, Annex I, Part C, Appendix 3.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">systemic factor</rdfs:label>
     </owl:ObjectProperty>
@@ -1429,6 +1491,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/Notification"/>
         <rdfs:range rdf:resource="http://data.europa.eu/949/iss/Document"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Record that is the subject of the notification.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">targeted document</rdfs:label>
     </owl:ObjectProperty>
@@ -1469,6 +1532,12 @@ Taken from the ISS templates.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/iss/tdgOccurrenceDescription">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/DetailedReportTdgPart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Description of the specific properties of an occurrence involving dangerous goods, supplementing the other reports concerning the same occurrence.
+
+This description is consistent with properties reported in accordance with RID 1.8.5.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
+        <rdfs:label xml:lang="en">transport of dangerous goods occurrence description</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1481,6 +1550,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Qualitative description of the topography at the time and location of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">topography</rdfs:label>
     </owl:ObjectProperty>
@@ -1495,6 +1565,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/track-surface-conditions/TrackSurfaceConditions"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Condition of the surface at the time and location of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">track surface condition</rdfs:label>
     </owl:ObjectProperty>
@@ -1565,6 +1636,7 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/weather-conditions/WeatherConditions"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Ambient condition and air temperature at the time and location of an occurrence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">weather condition</rdfs:label>
     </owl:ObjectProperty>
@@ -1590,6 +1662,9 @@ Taken from the ISS templates.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Location of the occurrence expressed with a reference point (long/lat/alt).
+
+The precision of the reference point shall be better than 0.001 for long and lat values.</rdfs:comment>
         <rdfs:comment>The relation between something and the point, 
  or other geometrical thing in space, where it is.  For example, the realtionship between
  a radio tower and a Point with a given lat and long.
@@ -1863,6 +1938,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Environmentat damage, for example, pollution or contamination of land, air, waters, intoxication of wildlife or livestock.</rdfs:comment>
         <rdfs:comment xml:lang="en">Free text in accordance with Appendix D – General Part, section 3.2.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">damage to the environment narrative</rdfs:label>
@@ -1890,7 +1966,8 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
-        <rdfs:comment xml:lang="en">free text in accordance with Appendix D – General Part, section 3.2.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Damage to the railway system operations, for example, disruption of railway services (passenger, freight, dangerous goods transport).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Free text in accordance with Appendix D – General Part, section 3.2.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">damage to operating services narrative</rdfs:label>
     </owl:DatatypeProperty>
@@ -1918,6 +1995,10 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).
+Damage may be quantified or qualified by the measurement of its severity.
+Damage are equivalent to harm in the case of human or animal
+vulnerabilities.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">damages for the reporting entity (monetised)</rdfs:label>
     </owl:DatatypeProperty>
@@ -2047,7 +2128,6 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">estimated cost of operation disruption for TDG freight service</rdfs:label>
-        <rdfs:label xml:lang="en">estimated cost of operation disruption for passenger service</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2137,6 +2217,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">frequency probability during assessment period</rdfs:label>
     </owl:DatatypeProperty>
@@ -2151,6 +2234,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">frequency probability prior to assessment period</rdfs:label>
     </owl:DatatypeProperty>
@@ -2323,6 +2409,10 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).
+Damage may be quantified or qualified by the measurement of its severity.
+Damage are equivalent to harm in the case of human or animal
+vulnerabilities.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">damages (monetised)</rdfs:label>
     </owl:DatatypeProperty>
@@ -3169,6 +3259,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/iss/riskAnalysis">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/RiskControlMeasure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">risk analysis</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3221,6 +3313,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
+        <rdfs:label xml:lang="en">risk control measure function name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3299,6 +3392,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">severity probability during assessment period</rdfs:label>
     </owl:DatatypeProperty>
@@ -3312,6 +3407,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">severity probability prior to assessment period</rdfs:label>
     </owl:DatatypeProperty>
@@ -3412,6 +3509,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/iss/tdgCompanyFaxNumber">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/DetailedReportTdgPart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">tdg company fax number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3679,6 +3778,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/iss/vehicleSpeed">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">vehicle speed</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3828,6 +3929,7 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Report on an occurrence as defined in CDR (EU) 2024/xxxx, Annex I, Part A.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Detailed report of the safety related event</rdfs:label>
         <skos:altLabel xml:lang="en">Detailed report of the occurrence</skos:altLabel>
@@ -3841,6 +3943,7 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/DetailedReportTdgPart">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Supplement to an occurrence detailed report when the occurrence is involving the transport of dangerous goods in accordance with RID 1.8.5.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Detailed report (TDG part)</rdfs:label>
     </owl:Class>
@@ -3853,7 +3956,9 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/Document">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
-        <rdfs:comment xml:lang="en">Any form of document whose type is specified by a document type.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any form of document whose type is specified by a document type.
+
+In the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements for reporting supporting evidence with the Information Sharing System using the dataset defined in CDR (EU) 2024/xxxx, Annex IV, Part C .</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Document</rdfs:label>
     </owl:Class>
@@ -3877,8 +3982,9 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
-        <rdfs:label xml:lang="en">Failure of risk control measure</rdfs:label>
+        <rdfs:label xml:lang="en">Failed risk control measure</rdfs:label>
     </owl:Class>
     
 
@@ -3925,6 +4031,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:Class rdf:about="http://data.europa.eu/949/iss/Notification">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">A communication of data and information between two or more entities which can be performed with the Information Sharing System in accordance with CDR (EU) 2024/xxxx  using the dataset defined in Annex IV, part D.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Notification</rdfs:label>
     </owl:Class>
@@ -3937,6 +4044,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:Class rdf:about="http://data.europa.eu/949/iss/OccurrenceScenario">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Description of the combination of events leading to an ocuurrence.
+
+In the context of CDR (EU) 2024/xxxx the reporting of occurrence scenarios shall implement the method and the applicable datasets described in Annex I, Part B.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Occurrence scenario</rdfs:label>
     </owl:Class>
@@ -3969,6 +4079,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Generic element used for the description of occurrence scenarios or fault trees.
+
+Bluiding blocks shall be used to compose the description of an occurrence scenario in accordance with the method defined in CDR (EU) 2024/xxxx, Annex I, Part B.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Occurrence scenario building block</rdfs:label>
     </owl:Class>
@@ -4017,6 +4130,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:Class rdf:about="http://data.europa.eu/949/iss/RiskControlMeasure">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">&apos;Risk control measure’ or ‘RCM’ means one of the safety measures as defined in Article 3, second paragraph, point (10) of Commission Implementing Regulation (EU) No 402/2013.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Risk control measure</rdfs:label>
         <skos:altLabel xml:lang="en">Safety measure</skos:altLabel>
@@ -4029,6 +4143,11 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/RiskControlMeasureFunction">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">“Risk control measure function” or “RCMF” means a function designed to contribute to the reduction of risks.
+The CDR (EU) 2024/xxxx defines the applicable functions as following:
+“detect function” means a function detecting a specified undesirable situation applicable to the linked event types; 
+“diagnose function” means a function evaluating the detected undesirable situation, taking into account its context, and deciding whether or not an action needs to be performed; 
+“act function” means a function that is designed to avoid the occurrence of the linked event types, or will directly reduce its consequences, or both.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Risk control measure function</rdfs:label>
     </owl:Class>
@@ -4073,6 +4192,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/SafetyLevel">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">‘safety level’ means a level of safety risks as estimated and assessed by the methods set out in Part A of the Annex  III of  CDR (EU) 2024/xxxx</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Safety level</rdfs:label>
     </owl:Class>
@@ -4107,6 +4227,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:Class rdf:about="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Self-estimation of safety performance of an Entity reported with the dataset applicable in accordance with CDR (EU) 2024/xxxx, Annex II, Part B.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Safety performance self-estimation</rdfs:label>
     </owl:Class>
@@ -4118,6 +4239,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Safety performance self-estimation per elements of proofs in accordance with CDR (EU) 2024/xxxx, Annex II, part C.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Safety performance self-estimation per element</rdfs:label>
     </owl:Class>
@@ -4129,6 +4251,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
 
     <owl:Class rdf:about="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Safety performance self-estimation per area</rdfs:label>
     </owl:Class>
@@ -4150,6 +4273,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Equivalent to Occurrence.
+
+In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety related event shall be reported using the datasets defined in Annex I, Part A.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Safety related event</rdfs:label>
         <skos:altLabel xml:lang="en">Occurrence</skos:altLabel>
@@ -4163,6 +4289,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:Class rdf:about="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">‘occurrence’ means a safety relevant event, incident or accident</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Simple report of the safety related event</rdfs:label>
         <skos:altLabel xml:lang="en">Simple report of the occurrence</skos:altLabel>
@@ -4176,6 +4303,9 @@ Taken from Annexes ISC-2022-00728_2023-07.</rdfs:comment>
     <owl:Class rdf:about="http://data.europa.eu/949/iss/VolumeOfOperation">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/iss/InfoInRecordVersion"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
+        <rdfs:comment xml:lang="en">Volume of operation of railway operators over a defined period of tme.
+
+In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reported in accordance ith the dataset defined in Annex III, Part D.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">Volume of operation</rdfs:label>
     </owl:Class>

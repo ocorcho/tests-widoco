@@ -638,11 +638,6 @@
   "http://creativecommons.org/ns#license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
-  "http://purl.org/dc/terms/author" : [ {
-    "@value" : "Edna Ruckhaus"
-  }, {
-    "@value" : "Oscar Corcho"
-  } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Emmanuel Ruffin"
   }, {
@@ -650,6 +645,11 @@
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2023-09-20"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Edna Ruckhaus"
+  }, {
+    "@value" : "Oscar Corcho"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "European Railway Agency (ERA)"
@@ -676,6 +676,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Report on an occurrence as defined in CDR (EU) 2024/xxxx, Annex I, Part A."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -697,6 +701,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Supplement to an occurrence detailed report when the occurrence is involving the transport of dangerous goods in accordance with RID 1.8.5."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -716,7 +724,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Any form of document whose type is specified by a document type."
+    "@value" : "Any form of document whose type is specified by a document type.\n\nIn the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements for reporting supporting evidence with the Information Sharing System using the dataset defined in CDR (EU) 2024/xxxx, Annex IV, Part C ."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -748,12 +756,16 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Failure of risk control measure"
+    "@value" : "Failed risk control measure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://data.europa.eu/949/iss/InfoInRecordVersion"
@@ -815,6 +827,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A communication of data and information between two or more entities which can be performed with the Information Sharing System in accordance with CDR (EU) 2024/xxxx  using the dataset defined in Annex IV, part D."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -832,6 +848,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Description of the combination of events leading to an ocuurrence.\n\nIn the context of CDR (EU) 2024/xxxx the reporting of occurrence scenarios shall implement the method and the applicable datasets described in Annex I, Part B."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -848,6 +868,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Generic element used for the description of occurrence scenarios or fault trees.\n\nBluiding blocks shall be used to compose the description of an occurrence scenario in accordance with the method defined in CDR (EU) 2024/xxxx, Annex I, Part B."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -923,6 +947,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "'Risk control measure’ or ‘RCM’ means one of the safety measures as defined in Article 3, second paragraph, point (10) of Commission Implementing Regulation (EU) No 402/2013."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -943,6 +971,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "“Risk control measure function” or “RCMF” means a function designed to contribute to the reduction of risks.\nThe CDR (EU) 2024/xxxx defines the applicable functions as following:\n“detect function” means a function detecting a specified undesirable situation applicable to the linked event types; \n“diagnose function” means a function evaluating the detected undesirable situation, taking into account its context, and deciding whether or not an action needs to be performed; \n“act function” means a function that is designed to avoid the occurrence of the linked event types, or will directly reduce its consequences, or both."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1000,6 +1032,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "‘safety level’ means a level of safety risks as estimated and assessed by the methods set out in Part A of the Annex  III of  CDR (EU) 2024/xxxx"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -1042,6 +1078,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Self-estimation of safety performance of an Entity reported with the dataset applicable in accordance with CDR (EU) 2024/xxxx, Annex II, Part B."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -1059,6 +1099,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Safety performance self-estimation per elements of proofs in accordance with CDR (EU) 2024/xxxx, Annex II, part C."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -1073,6 +1117,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -1086,6 +1134,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Equivalent to Occurrence.\n\nIn the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety related event shall be reported using the datasets defined in Annex I, Part A."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1111,6 +1163,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "‘occurrence’ means a safety relevant event, incident or accident"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
   } ],
@@ -1131,6 +1187,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Volume of operation of railway operators over a defined period of tme.\n\nIn the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reported in accordance ith the dataset defined in Annex III, Part D."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
@@ -1276,6 +1336,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Qualitative description of the weather ambiant condiftions at the time of the occurrence."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
@@ -1298,6 +1362,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "RCM Functions which are covered by a given risk control measure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasureFunction"
@@ -1361,6 +1429,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication that authorities had to intervene to mitigate the consequences of an occurrence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
@@ -1427,7 +1499,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "List of event type code(s) considered as causal factor(s).\nTaken from Annexes ISC-2022-00728_2023-07."
+    "@value" : "Applicable lists of causes, as defined in CDR (EU) 2024/xxx, Annex I, Part C, Appendix 1, Reference lists of Category B events and Category C events."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
@@ -1515,6 +1587,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "‘contributing factor’ means a contributing factor as defined in Article 2, point (2) of Commission Implementing Regulation (EU) 2020/5721, i.e means any action, omission, event or condition that affects an occurrence by increasing its likelihood, accelerating the effect in time or increasing the severity of the consequences, but the elimination of which would not have prevented the occurrence.\n\nIn the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is defined in Annex I, Part C, Appendix 2."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
   } ],
@@ -1564,7 +1640,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Country where the safety related event occurred"
+    "@value" : "Country where the safety related event occurred."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid4"
@@ -1589,6 +1665,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Country(ies) in which the railway operator operates.\n\nFor Railway Undertakings, it corresponds to the list of countries applicable in accordance with the applicable (in force) safety certificate(s).\n\nFor Infrastructure managers it coresponds to the list of countries applicable in accordance with the applicable (in force) safety authorisation(s)."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/VolumeOfOperation"
   } ],
@@ -1610,6 +1690,9 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Environmentat damage, for example, pollution or contamination of land, air, waters, intoxication of wildlife or livestock."
+  }, {
     "@language" : "en",
     "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
   } ],
@@ -1678,7 +1761,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "free text in accordance with Appendix D – General Part, section 3.2."
+    "@value" : "Damage to the railway system operations, for example, disruption of railway services (passenger, freight, dangerous goods transport)."
+  }, {
+    "@language" : "en",
+    "@value" : "Free text in accordance with Appendix D – General Part, section 3.2."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
@@ -1747,6 +1833,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).\nDamage may be quantified or qualified by the measurement of its severity.\nDamage are equivalent to harm in the case of human or animal\nvulnerabilities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
@@ -1861,6 +1951,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Language(s) in which the document is available."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Document"
   } ],
@@ -1883,6 +1977,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Language(s) in which the document is available."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Document"
@@ -1926,6 +2024,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of document (e.g. report, note, e-mail...).\n\nNot ot confuse with the ICT format of the digital document."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Document"
@@ -2036,9 +2138,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "estimated cost of operation disruption for TDG freight service"
-  }, {
-    "@language" : "en",
-    "@value" : "estimated cost of operation disruption for passenger service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -2241,6 +2340,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
   } ],
@@ -2263,6 +2366,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
@@ -2287,6 +2394,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
   } ],
@@ -2309,6 +2420,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Frequency is the number of pre-defined type of occurrences divided by a given normaliser.\nTypical normalisers can be, for example, year, volume of transport (number\nof tons, number of tons/km) or number of predefined operations."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
@@ -2649,6 +2764,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of injury relating to human exposure to dangerous goods substances and associated dangerous phenomena."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/HumanConsequencesPerPersonCategory"
   } ],
@@ -2671,6 +2790,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of injury in accordance with Directive (EU) 2016/798 and in accordance with the Abreviated Injuriy Scale (AIS)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid11"
@@ -2695,6 +2818,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Input to the AND gate of a building block."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"
   } ],
@@ -2714,6 +2841,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Input to the OR gate of a building block."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"
@@ -2821,6 +2952,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reference to a record."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Record"
   } ],
@@ -2924,6 +3059,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of level crossing in accordance with the applicable list of types."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
@@ -2946,6 +3085,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Light condition at the time and location of an occurrence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
@@ -3015,6 +3158,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detailed description of the location at which an occurrence took place."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
   } ],
@@ -3083,6 +3230,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates to occurrences with dangerous goods involvement, in which a loss of containment of the dangerous substance (loss of product) occurred."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
@@ -3126,6 +3277,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of contianment of a dangerous good substance, in accordance with the list of applicable types defined in RID."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
   } ],
@@ -3148,6 +3303,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of failure of the dangerous goods containment leading to the loss of containment, in accordance witht he applicable list of failure defined in RID."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
@@ -3236,6 +3395,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicate that a risk control measure mitigates the impact of an occurrence."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
   } ],
@@ -3255,6 +3418,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Damages is the outcome of hazardous events in which vulnerabilities are exposed to hazards (see exposure).\nDamage may be quantified or qualified by the measurement of its severity.\nDamage are equivalent to harm in the case of human or animal\nvulnerabilities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"
@@ -3341,6 +3508,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of notification in accordance with the ISS applicable types."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Notification"
   } ],
@@ -3360,6 +3531,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ISS registered entity to which the notification is addressed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid20"
@@ -3407,6 +3582,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ISS registered User issuing a notification on behalf a registered Entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Record"
@@ -4185,6 +4364,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Event type identitied as output of a building block.\n\n(Equivalent to ouput of the OR gate)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock"
   } ],
@@ -4248,6 +4431,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of person in accordance with the Directive (EU) 2016/798 which is victim of an occurrence."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid23"
   } ],
@@ -4290,6 +4477,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicate that a risk control measure is able to prevent the listed event(s)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
@@ -4356,7 +4547,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Correcte. Only the applicable statuses for the record type can be selected. The status 'Validated' can be selected only if all the mandatory fields have been filled-out.\nTaken from the ISS templates."
+    "@value" : "This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.\n\nThe status 'Validated' can be selected only if all the mandatory fields have been filled-out.\n\nThe status 'Corrected' is an exception treatment applicable after 'Vlidation' or upon the notification of a justified request."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Record"
@@ -4400,6 +4591,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Applicable type of record in accordance with the applicable ISS version."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Record"
@@ -4589,6 +4784,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Role of the Entity when reporting a record in accordance with the applicable roles and applicable registration process defined by CDR (EU) 2024/xxxx, Annex IV, Part C ."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Record"
   } ],
@@ -4651,6 +4850,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Legal basis applicable for the reported record."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Record"
@@ -4735,6 +4938,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of possible resulting safety related events in case a given risk control measure fails to operate as planned."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/FailureOfRiskControlMeasure"
   } ],
@@ -4751,8 +4958,15 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/riskAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4811,6 +5025,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "RCM functions applied by an RCM in accordance with the applicable list of functions."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/RiskControlMeasure"
   } ],
@@ -4856,6 +5074,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk control measure function name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -5001,6 +5223,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "'safety event type' or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid26"
@@ -5247,6 +5473,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
   } ],
@@ -5267,6 +5497,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
   } ],
@@ -5286,6 +5520,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
@@ -5309,6 +5547,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The severity is Intensity of harm.\nThe severity is estimated by the exposure of vulnerabilities to hazardous areas."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"
@@ -5402,6 +5644,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Systemic factors applicable to a given occurrence or to the failure of a risk control measure in accordance with the applicable list of factors defined in CDR (EU) 2024/xxxx, Annex I, Part C, Appendix 3."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid29"
   } ],
@@ -5421,6 +5667,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Record that is the subject of the notification."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Notification"
@@ -5498,8 +5748,15 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgCompanyFaxNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5597,8 +5854,23 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/tdgOccurrenceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Description of the specific properties of an occurrence involving dangerous goods, supplementing the other reports concerning the same occurrence.\n\nThis description is consistent with properties reported in accordance with RID 1.8.5."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "transport of dangerous goods occurrence description"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -5672,6 +5944,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Qualitative description of the topography at the time and location of an occurrence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
@@ -5832,6 +6108,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Condition of the surface at the time and location of an occurrence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
@@ -6065,8 +6345,15 @@
 }, {
   "@id" : "http://data.europa.eu/949/iss/vehicleSpeed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-30"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/iss"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6104,6 +6391,10 @@
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-09-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ambient condition and air temperature at the time and location of an occurrence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/DetailedReportTdgPart"
@@ -6205,6 +6496,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/identifier",
@@ -6534,6 +6828,9 @@
     "@value" : "2023-09-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Location of the occurrence expressed with a reference point (long/lat/alt).\n\nThe precision of the reference point shall be better than 0.001 for long and lat values."
+  }, {
     "@value" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
