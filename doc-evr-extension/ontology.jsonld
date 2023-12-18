@@ -3,7 +3,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
+      "@id" : "http://data.europa.eu/949/OrganisationRole"
     }, {
       "@id" : "http://data.europa.eu/949/RailwayOrganisation"
     } ]
@@ -54,7 +54,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole",
+  "@id" : "http://data.europa.eu/949/OrganisationRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -65,17 +65,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Represents an organisation that has a role in EVR. Examples of roles are: Owner, Keeper, Fleet manager, Maintenance entity."
+    "@value" : "A role of an organisation, e.g. Vehicle Keeper, Owner, ECM. Each role played by an organisation may have its own  data such as name, address, email, etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Organisation with vehicle registration role"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
+    "@value" : "Organisation role"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -422,7 +418,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"
+    "@value" : "Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/VehicleType"
@@ -727,7 +723,7 @@
     "@value" : "EIN of corresponding valid ECM certificate in accordance with points 3.1.5 and 7."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
+    "@id" : "http://data.europa.eu/949/OrganisationRole"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -906,14 +902,14 @@
 }, {
   "@id" : "http://data.europa.eu/949/http://data.europa.eu/949/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/author" : [ {
-    "@value" : "Edna Ruckhaus"
-  }, {
-    "@value" : "Oscar Corcho"
-  } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2023-06-26"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Edna Ruckhaus"
+  }, {
+    "@value" : "Oscar Corcho"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -930,36 +926,6 @@
 }, {
   "@id" : "http://data.europa.eu/949/inSkosConceptScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://data.europa.eu/949/linkedRailwayOrganisation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-06-26"
-  } ],
-  "http://purl.org/dc/terms/source" : [ {
-    "@id" : "https://eur-lex.europa.eu/eli/dec_impl/2018/1614"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Relates an organisation that has a role in the vehicle organisation with the railway organization that is is linked to, maybe by being a subsidiary."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://data.europa.eu/949/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Linked railway organisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/RailwayOrganisation"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
-  } ]
 }, {
   "@id" : "http://data.europa.eu/949/manufacturingSerialNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1060,10 +1026,10 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/organizationWithVehicleRegistrationRole",
+  "@id" : "http://data.europa.eu/949/organisationRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/evrIndex" : [ {
-    "@value" : "2.2"
+  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
+    "@id" : "http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1074,20 +1040,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates the vehicle registration with the organizations that have a role in this registration, e.g. Vehicle registration entity, Vehicle keeper, etc."
+    "@value" : "The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles.\nThis concept scheme is currently non-deferenceable."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/VehicleRegistration"
+    "@id" : "http://data.europa.eu/949/OrganisationRole"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Organisation with vehicle registration role"
+    "@value" : "Organisation role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1107,7 +1073,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Code in accordance with the specification referenced in the Appendix index [D] identifying the territory in which the vehicle is registered."
+    "@value" : "Code in accordance with the specification referenced in the Appendix index [D] identifying the territory in which the vehicle is registered.\nThe allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/VehicleRegistration"
@@ -1117,7 +1083,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Place Of Registration"
+    "@value" : "Place of registration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -1190,7 +1156,37 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://data.europa.eu/949/railwayOrganisationAddressCountry",
+  "@id" : "http://data.europa.eu/949/railwayOrganisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-06-26"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://eur-lex.europa.eu/eli/dec_impl/2018/1614"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates the role of an organisation in the vehicle registration with the corresponding railway organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/OrganisationRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Railway organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/949/RailwayOrganisation"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/949/railwayOrganisationCountry",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://data.europa.eu/949/evrIndex" : [ {
     "@value" : "6.3.5"
@@ -1202,7 +1198,7 @@
     "@value" : "9.5"
   } ],
   "http://data.europa.eu/949/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/concepts/evr-countries/EVRCountries"
+    "@id" : "http://publications.europa.eu/resource/authority/country"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1210,7 +1206,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Railway organisation country.\nIncludes the coding for the country used in the address of the organisations that have different roles in EVR (owner, vehicle keeper, etc.).\nThe allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/evr-countries/EVRCountries.\nThis concept scheme is currently non-deferenceable."
+    "@value" : "Includes the coding for the country used in the address of the organisations that have different roles in EVR (Owner, Vehicle Keeper, etc.).\nThe allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/RailwayOrganisation"
@@ -1220,7 +1216,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Railway organisation address country"
+    "@value" : "Railway organisation country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -1494,6 +1490,39 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "http://data.europa.eu/949/roleInVehicleRegistration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://data.europa.eu/949/evrIndex" : [ {
+    "@value" : "2.2"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-06-26"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://eur-lex.europa.eu/eli/dec_impl/2018/1614"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates the vehicle registration with the role of the organisation in this registration, e.g. Vehicle Keeper, Owner, ECM."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/VehicleRegistration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://data.europa.eu/949/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Role in vehicle registration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/949/OrganisationRole"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://data.europa.eu/949/series",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://data.europa.eu/949/evrIndex" : [ {
@@ -1642,7 +1671,7 @@
     "@value" : "The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/validity-status-certificate-ecm-function/ValidityStatusCertificateECMFunction.\nThis concept scheme is currently non-deferenceable."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
+    "@id" : "http://data.europa.eu/949/OrganisationRole"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -1834,10 +1863,10 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/terms/author",
+  "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/created",
+  "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
@@ -1978,53 +2007,6 @@
   "@id" : "http://www.w3.org/ns/org#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.w3.org/ns/org#classification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://data.europa.eu/949/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Indica una classificazione per questa Organization all'interno di un qualche schema di classificazione. Alcuni vocabolari potrebbero voler specializzare questa proprietà per avere un codominio corrispondente a uno specifico `skos:ConceptScheme`. Si noti che la presenza di questa proprietà è ancora in fase di discussione e potrebbe  essere revisionata o rimossa."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates a classification for this Organization within some classification scheme. Extension vocabularies may wish to specialize this property to have a range corresponding to a specific `skos:ConceptScheme`. This property is under discussion and may be revised or removed - in many cases organizations are best categorized by defining a sub-class hierarchy in an extension vocabulary."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates the role that the railway organisation has in the vehicle registration or the role that an organisation has in the vehicle registration.\nThe allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles.\nThis concept scheme is currently non-deferenceable."
-  }, {
-    "@language" : "fr",
-    "@value" : "Indique une classification pour cette Organisation dans le cadre d'un schéma de classification. Il est possible de spécialiser cette propriété en utilisant un vocabulaire spécialisé pour que le champ corresponde à un concept spécifique `skos:ConceptScheme`. Cette propriété est en discussion est pourrait être révisée ou supprimée - dans de nombreux cas, les organisations sont mieux catégorisées par une hiérarchie de sous-classe dans un vocabulaire externe."
-  }, {
-    "@language" : "es",
-    "@value" : "Ordenación jerárquica que se hace de una organización dentro de un esquema de clasificación. Es posible que algunos vocabularios especifiquen esta propiedad de forma que el rango se corresponda con un `skos:ConceptScheme` específico. La conveniencia de incluir esta propiedad se está debatiendo y puede que se revise o elimine (en muchos casos las organizaciones se clasifican mejor si se define una jerarquía de subclases en un vocabulario aparte)"
-  }, {
-    "@language" : "ja",
-    "@value" : "ある分類表内のこの組織に対する分類を示します。\nアプリケーションがorg:Organizationのサブクラスを組織的なカテゴリーを表わす手段として定義することも許容されることに注意してください。"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/ns/org"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "classification"
-  }, {
-    "@language" : "fr",
-    "@value" : "classification"
-  }, {
-    "@language" : "it",
-    "@value" : "classificazione"
-  }, {
-    "@language" : "es",
-    "@value" : "pertenece a la clasificación"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
   "@id" : "http://www.w3.org/ns/org#identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://data.europa.eu/949/evrIndex" : [ {
@@ -2076,52 +2058,5 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#notation"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/org#linkedTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "ja",
-    "@value" : "2つの組織の任意の関係を示します。"
-  }, {
-    "@language" : "it",
-    "@value" : "Indica una relazione arbitraria tra due organizzazioni. Ad esempio, specializzazioni di questa proprietà possono essere usate per denotare relazioni particolari tipo il finanziamento o la fornitura."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates an arbitrary relationship between two organizations. Specializations of this can be used to, for example, denote funding or supply chain relationships."
-  }, {
-    "@language" : "fr",
-    "@value" : "Indique une relation arbitraire entre deux Organisations. Des spécialisations peuvent être utilisées pour, par exemple, qualifier une relation de fournisseur ou de financeur."
-  }, {
-    "@language" : "es",
-    "@value" : "Relación arbitraria entre dos organizaciones. Las especializaciones de esta relación se pueden utilizar para denotar relaciones de financiación o suministro, entre otras."
-  }, {
-    "@language" : "en",
-    "@value" : "Relates an organisation that has a role in the vehicle organisation with the railway organization that is is linked to, e.g. a subsidiary."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/ns/org"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "collegato a"
-  }, {
-    "@language" : "es",
-    "@value" : "está relacionada con"
-  }, {
-    "@language" : "es",
-    "@value" : "está relacionado con"
-  }, {
-    "@language" : "en",
-    "@value" : "linked to"
-  }, {
-    "@language" : "fr",
-    "@value" : "relié à"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 } ]

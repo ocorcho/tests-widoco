@@ -15,8 +15,7 @@ This section provides details for each class and property defined by EVR extensi
          <a href="#http://data.europa.eu/949/HarmonisedRestriction" title="http://data.europa.eu/949/HarmonisedRestriction">Harmonised restriction</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-            title="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+         <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/RailwayOrganisation" title="http://data.europa.eu/949/RailwayOrganisation">Railway organisation</a>
@@ -134,15 +133,15 @@ This section provides details for each class and property defined by EVR extensi
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">
-      <h3>Organisation with vehicle registration role<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://data.europa.eu/949/OrganisationRole">
+      <h3>Organisation role<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/OrganisationRole</p>
       <div class="comment">
-         <span class="markdown">Represents an organisation that has a role in EVR. Examples of roles are: Owner, Keeper, Fleet manager, Maintenance entity.</span>
+         <span class="markdown">A role of an organisation, e.g. Vehicle Keeper, Owner, ECM. Each role played by an organisation may have its own  data such as name, address, email, etc.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -161,27 +160,20 @@ This section provides details for each class and property defined by EVR extensi
          <dd>stable</dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://www.w3.org/ns/org#Organization"
-               target="_blank"
-               title="http://www.w3.org/ns/org#Organization">organization</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://data.europa.eu/949/ecmEuropeanIdentificationNumber"
                title="http://data.europa.eu/949/ecmEuropeanIdentificationNumber">ECM European identification number (EIN)</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/linkedRailwayOrganisation"
-               title="http://data.europa.eu/949/linkedRailwayOrganisation">Linked railway organisation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/organisationRole" title="http://data.europa.eu/949/organisationRole">Organisation role</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/railwayOrganisation" title="http://data.europa.eu/949/railwayOrganisation">Railway organisation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/validityStatusCertificateEcmFunction"
                title="http://data.europa.eu/949/validityStatusCertificateEcmFunction">Validity status of the certificate of the ECM function</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/organizationWithVehicleRegistrationRole"
-               title="http://data.europa.eu/949/organizationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+            <a href="#http://data.europa.eu/949/roleInVehicleRegistration"
+               title="http://data.europa.eu/949/roleInVehicleRegistration">Role in vehicle registration</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -220,14 +212,13 @@ This section provides details for each class and property defined by EVR extensi
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/railwayOrganisationAddressCountry"
-               title="http://data.europa.eu/949/railwayOrganisationAddressCountry">Railway organisation address country</a>
+            <a href="#http://data.europa.eu/949/railwayOrganisationCountry"
+               title="http://data.europa.eu/949/railwayOrganisationCountry">Railway organisation country</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/linkedRailwayOrganisation"
-               title="http://data.europa.eu/949/linkedRailwayOrganisation">Linked railway organisation</a>
+            <a href="#http://data.europa.eu/949/railwayOrganisation" title="http://data.europa.eu/949/railwayOrganisation">Railway organisation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -392,14 +383,14 @@ number in a vehicle register.</span>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/manufacturingSerialNumber"
                title="http://data.europa.eu/949/manufacturingSerialNumber">Manufacturing serial number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/manufacturingYear" title="http://data.europa.eu/949/manufacturingYear">Manufacturing year</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/organizationWithVehicleRegistrationRole"
-               title="http://data.europa.eu/949/organizationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/placeOfRegistration" title="http://data.europa.eu/949/placeOfRegistration">Place Of Registration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/placeOfRegistration" title="http://data.europa.eu/949/placeOfRegistration">Place of registration</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/previousVehicleNumber" title="http://data.europa.eu/949/previousVehicleNumber">Previous vehicle number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/registeredVehicle" title="http://data.europa.eu/949/registeredVehicle">Registered vehicle</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/registrationStatus" title="http://data.europa.eu/949/registrationStatus">Registration status</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/resultingAreaOfuse" title="http://data.europa.eu/949/resultingAreaOfuse">Resulting area of use</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/series" title="http://data.europa.eu/949/series">Series</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/roleInVehicleRegistration"
+               title="http://data.europa.eu/949/roleInVehicleRegistration">Role in vehicle registration</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/series" title="http://data.europa.eu/949/series">Series</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/supportingDocument" title="http://data.europa.eu/949/supportingDocument">Supporting document</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/urvisNumber" title="http://data.europa.eu/949/urvisNumber">URVIS number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/vehicleAuthorisation" title="http://data.europa.eu/949/vehicleAuthorisation">Vehicle authorisation</a>
@@ -539,9 +530,6 @@ number in a vehicle register.</span>
          <a href="#http://data.europa.eu/949/certificate" title="http://data.europa.eu/949/certificate">Certificate</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
-      </li>
-      <li>
          <a href="#http://data.europa.eu/949/harmonisedRestriction" title="http://data.europa.eu/949/harmonisedRestriction">Coded restriction</a>
       </li>
       <li>
@@ -552,25 +540,20 @@ number in a vehicle register.</span>
             title="http://data.europa.eu/949/harmonisedRestrictionType">Harmonised restriction type</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/linkedRailwayOrganisation"
-            title="http://data.europa.eu/949/linkedRailwayOrganisation">Linked railway organisation</a>
+         <a href="#http://data.europa.eu/949/organisationRole" title="http://data.europa.eu/949/organisationRole">Organisation role</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/org#linkedTo" title="http://www.w3.org/ns/org#linkedTo">linked to</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/organizationWithVehicleRegistrationRole"
-            title="http://data.europa.eu/949/organizationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/placeOfRegistration" title="http://data.europa.eu/949/placeOfRegistration">Place Of Registration</a>
+         <a href="#http://data.europa.eu/949/placeOfRegistration" title="http://data.europa.eu/949/placeOfRegistration">Place of registration</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/previousVehicleType" title="http://data.europa.eu/949/previousVehicleType">Previous vehicle type</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/railwayOrganisationAddressCountry"
-            title="http://data.europa.eu/949/railwayOrganisationAddressCountry">Railway organisation address country</a>
+         <a href="#http://data.europa.eu/949/railwayOrganisation" title="http://data.europa.eu/949/railwayOrganisation">Railway organisation</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/railwayOrganisationCountry"
+            title="http://data.europa.eu/949/railwayOrganisationCountry">Railway organisation country</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/registeredVehicle" title="http://data.europa.eu/949/registeredVehicle">Registered vehicle</a>
@@ -581,6 +564,10 @@ number in a vehicle register.</span>
       <li>
          <a href="#http://data.europa.eu/949/registrationStatusCoding"
             title="http://data.europa.eu/949/registrationStatusCoding">Registration status coding</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/roleInVehicleRegistration"
+            title="http://data.europa.eu/949/roleInVehicleRegistration">Role in vehicle registration</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/state" title="http://data.europa.eu/949/state">State</a>
@@ -662,7 +649,7 @@ This concept scheme is currently non-deferenceable.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/authorisedCountry</p>
       <div class="comment">
-         <span class="markdown">Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country</span>
+         <span class="markdown">Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -766,41 +753,6 @@ be publicly available or restricted to authorised entities in accordance with po
             <dt>has range</dt>
             <dd>
                <a href="#http://data.europa.eu/949/Certificate" title="http://data.europa.eu/949/Certificate">Certificate</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://www.w3.org/ns/org#classification">
-      <h3>classification<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/org#classification</p>
-      <div class="comment">
-         <span class="markdown">Indicates a classification for this Organization within some classification scheme. Extension vocabularies may wish to specialize this property to have a range corresponding to a specific `skos:ConceptScheme`. This property is under discussion and may be revised or removed - in many cases organizations are best categorized by defining a sub-class hierarchy in an extension vocabulary.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://www.w3.org/ns/org">http://www.w3.org/ns/org</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://www.w3.org/ns/org#Organization"
-                  target="_blank"
-                  title="http://www.w3.org/ns/org#Organization">organization</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2004/02/skos/core#Concept"
-                  target="_blank"
-                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -932,15 +884,16 @@ This concept scheme is currently non-deferenceable.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/linkedRailwayOrganisation">
-      <h3>Linked railway organisation<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="http://data.europa.eu/949/organisationRole">
+      <h3>Organisation role<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/linkedRailwayOrganisation</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/organisationRole</p>
       <div class="comment">
-         <span class="markdown">Relates an organisation that has a role in the vehicle organisation with the railway organization that is is linked to, maybe by being a subsidiary.</span>
+         <span class="markdown">The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles.
+This concept scheme is currently non-deferenceable.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -962,104 +915,29 @@ This concept scheme is currently non-deferenceable.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-                  title="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/RailwayOrganisation" title="http://data.europa.eu/949/RailwayOrganisation">Railway organisation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://www.w3.org/ns/org#linkedTo">
-      <h3>linked to<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/org#linkedTo</p>
-      <div class="comment">
-         <span class="markdown">Indicates an arbitrary relationship between two organizations. Specializations of this can be used to, for example, denote funding or supply chain relationships.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://www.w3.org/ns/org">http://www.w3.org/ns/org</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://www.w3.org/ns/org#Organization"
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
                   target="_blank"
-                  title="http://www.w3.org/ns/org#Organization">organization</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/ns/org#Organization"
-                  target="_blank"
-                  title="http://www.w3.org/ns/org#Organization">organization</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/organizationWithVehicleRegistrationRole">
-      <h3>Organisation with vehicle registration role<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/organizationWithVehicleRegistrationRole</p>
-      <div class="comment">
-         <span class="markdown">Relates the vehicle registration with the organizations that have a role in this registration, e.g. Vehicle registration entity, Vehicle keeper, etc.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl class="definedBy">
-         <dt>Source</dt>
-         <dd>
-            <a href="https://eur-lex.europa.eu/eli/dec_impl/2018/1614">https://eur-lex.europa.eu/eli/dec_impl/2018/1614</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/VehicleRegistration" title="http://data.europa.eu/949/VehicleRegistration">Vehicle registration</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-                  title="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="http://data.europa.eu/949/placeOfRegistration">
-      <h3>Place Of Registration<sup class="type-op" title="object property">op</sup>
+      <h3>Place of registration<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/placeOfRegistration</p>
       <div class="comment">
-         <span class="markdown">Code in accordance with the specification referenced in the Appendix index [D] identifying the territory in which the vehicle is registered.</span>
+         <span class="markdown">Code in accordance with the specification referenced in the Appendix index [D] identifying the territory in which the vehicle is registered.
+The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1132,18 +1010,57 @@ This concept scheme is currently non-deferenceable.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/railwayOrganisationAddressCountry">
-      <h3>Railway organisation address country<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="http://data.europa.eu/949/railwayOrganisation">
+      <h3>Railway organisation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/railwayOrganisationAddressCountry</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/railwayOrganisation</p>
       <div class="comment">
-         <span class="markdown">Railway organisation country.
-Includes the coding for the country used in the address of the organisations that have different roles in EVR (owner, vehicle keeper, etc.).
-The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/evr-countries/EVRCountries.
-This concept scheme is currently non-deferenceable.</span>
+         <span class="markdown">Relates the role of an organisation in the vehicle registration with the corresponding railway organization.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>
+            <a href="https://eur-lex.europa.eu/eli/dec_impl/2018/1614">https://eur-lex.europa.eu/eli/dec_impl/2018/1614</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/RailwayOrganisation" title="http://data.europa.eu/949/RailwayOrganisation">Railway organisation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/railwayOrganisationCountry">
+      <h3>Railway organisation country<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/railwayOrganisationCountry</p>
+      <div class="comment">
+         <span class="markdown">Includes the coding for the country used in the address of the organisations that have different roles in EVR (Owner, Vehicle Keeper, etc.).
+The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1299,6 +1216,47 @@ This concept scheme is currently non-deferenceable.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://data.europa.eu/949/roleInVehicleRegistration">
+      <h3>Role in vehicle registration<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/roleInVehicleRegistration</p>
+      <div class="comment">
+         <span class="markdown">Relates the vehicle registration with the role of the organisation in this registration, e.g. Vehicle Keeper, Owner, ECM.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>
+            <a href="https://eur-lex.europa.eu/eli/dec_impl/2018/1614">https://eur-lex.europa.eu/eli/dec_impl/2018/1614</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/VehicleRegistration" title="http://data.europa.eu/949/VehicleRegistration">Vehicle registration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://data.europa.eu/949/state">
       <h3>State<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1408,8 +1366,7 @@ This concept scheme is currently non-deferenceable.</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-                  title="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2183,8 +2140,7 @@ This authorisation is  a permission given by an Authorising Entity to place a se
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-                  title="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2544,8 +2500,7 @@ responsible for the registration of organisations of their type in their Member 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"
-                  title="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">Organisation with vehicle registration role</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation role</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/RailwayOrganisation" title="http://data.europa.eu/949/RailwayOrganisation">Railway organisation</a>
