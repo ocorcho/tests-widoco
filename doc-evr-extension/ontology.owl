@@ -1,0 +1,1318 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://data.europa.eu/949/http://data.europa.eu/949/"
+     xml:base="http://data.europa.eu/949/http://data.europa.eu/949/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:data="http://data.europa.eu/949/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://data.europa.eu/949/http://data.europa.eu/949/">
+        <terms:author>Edna Ruckhaus</terms:author>
+        <terms:author>Oscar Corcho</terms:author>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-15</terms:issued>
+        <rdfs:comment xml:lang="en">This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways (https://www.era.europa.eu/). It represents the concepts and relationships linked to the sectorial legal framework and the use cases under the Agency´s remit, as described in the Commission Implementing Regulation (EU) [to be updated after publication] on the common specifications for the register of railway infrastructure [to be updated after publication].
+
+
+This documentation presents the European Vehicle Register (EVR) concepts have been included in the Vocabulary according to the document  of the COMMISSION IMPLEMENTING DECISION (EU) 2018/1614 of 25 October 2018 (https://eur-lex.europa.eu/eli/dec_impl/2018/1614)</rdfs:comment>
+        <rdfs:label xml:lang="en">EVR extension of the ERA vocabulary</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/949/evrIndex -->
+
+
+    <owl:AnnotationProperty rdf:about="http://data.europa.eu/949/evrIndex"/>
+    
+
+
+    <!-- http://data.europa.eu/949/inSkosConceptScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://data.europa.eu/949/inSkosConceptScheme"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/author -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/author"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/949/additionalConditionsApplicableVehicle -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/additionalConditionsApplicableVehicle">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:evrIndex>4.1</data:evrIndex>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/evr-applicable-agreements/EVRApplicableAgreements"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Identification of applicable bilateral or multilateral agreements such as RIV, RIC, TEN, TEN-CW, TEN-GE, …
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/evr-applicable-agreements/EVRApplicableAgreements.
+This concept scheme is currently non-deferenceable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Additional conditions applicable to the vehicle</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/authorisedCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/authorisedCountry">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:inSkosConceptScheme rdf:resource="http://publications.europa.eu/resource/authority/country"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Authorised country</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/availabilityOfRegistrationData -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/availabilityOfRegistrationData">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:evrIndex>12.1</data:evrIndex>
+        <data:evrIndex>12.2</data:evrIndex>
+        <data:evrIndex>12.3</data:evrIndex>
+        <data:evrIndex>12.4</data:evrIndex>
+        <data:evrIndex>12.5</data:evrIndex>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/data-availability-types/DataAvailabilityTypes"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Can be several options:
+- Exclusion of required public availability. Choice of the vehicle keeper for justified cases and subject to the validation of the VRE to exclude all data of the vehicle registration from required public availability.
+
+- Public availability of owner data. Choice of the vehicle keeper for owner data to be publicly available or restricted to authorised entities in accordance with point 4.2.
+
+-Public availability of applicant data. Choice of the vehicle keeper for data relating to the issuing body of the EC Declaration of verification to
+be publicly available or restricted to authorised entities in accordance with point 4.2.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/data-availability-types/DataAvailabilityTypes.
+This concept scheme is currently non-deferenceable</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Availability of data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/certificate -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/certificate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/Certificate"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11-15</terms:modified>
+        <rdfs:comment xml:lang="en">Denotes a certificate for this particular vehicleType.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Certificate</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/eratvReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/eratvReference">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <data:evrIndex>5.3</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Identification in ERATV of the authorised vehicle type (or version or variant) the vehicle is in conformity with.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">ERATV reference</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/harmonisedRestriction -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/harmonisedRestriction">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/HarmonisedRestriction"/>
+        <data:evrIndex>11.9.1</data:evrIndex>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/evr-conditions-restrictions/EVRConditionsRestrictions"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Conditions for use and restrictions on how the vehicle may be used in accordance with Article [condition for use] and point 6.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Coded restriction</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/harmonisedRestrictionType -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/harmonisedRestrictionType">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/HarmonisedRestriction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/evr-harmonised-restriction-types/EVRHarmonisedRestrictionTypes."/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/evr-harmonised-restriction-types/EVRHarmonisedRestrictionTypes.
+This concept scheme is currently non-deferenceable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Harmonised restriction type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/linkedRailwayOrganisation -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/linkedRailwayOrganisation">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/RailwayOrganisation"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Relates an organisation that has a role in the vehicle organisation with the railway organization that is is linked to, maybe by being a subsidiary.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Linked railway organisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/organizationWithVehicleRegistrationRole -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/organizationWithVehicleRegistrationRole">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"/>
+        <data:evrIndex>2.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Relates the vehicle registration with the organizations that have a role in this registration, e.g. Vehicle registration entity, Vehicle keeper, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Organisation with vehicle registration role</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/placeOfRegistration -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/placeOfRegistration">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:evrIndex>2.1</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Code in accordance with the specification referenced in the Appendix index [D] identifying the territory in which the vehicle is registered.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Place Of Registration</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/previousVehicleType -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/previousVehicleType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
+        <rdfs:comment xml:lang="en">Denotes the previous VehicleType.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Previous vehicle type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/railwayOrganisationAddressCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/railwayOrganisationAddressCountry">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/RailwayOrganisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:evrIndex>6.3.5</data:evrIndex>
+        <data:evrIndex>7.5</data:evrIndex>
+        <data:evrIndex>8.5</data:evrIndex>
+        <data:evrIndex>9.5</data:evrIndex>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/evr-countries/EVRCountries"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <rdfs:comment xml:lang="en">Railway organisation country.
+Includes the coding for the country used in the address of the organisations that have different roles in EVR (owner, vehicle keeper, etc.).
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/evr-countries/EVRCountries.
+This concept scheme is currently non-deferenceable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Railway organisation address country</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registeredVehicle -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/registeredVehicle">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/Vehicle"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Relates the vehicle registration with the corresponding vehicle.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registered vehicle</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registrationStatus -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/registrationStatus">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/RegistrationStatus"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Indicates the relationship between a Vehicle registration and the registration status which encompasses the registration status coding, the registration status date and the registration status reason.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registration status</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registrationStatusCoding -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/registrationStatusCoding">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/RegistrationStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:evrIndex>10.1</data:evrIndex>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/evr-registration-status-codes/EVRRegistrationStatusCodes"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Registration status coding.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/evr-registration-status-codes/EVRRegistrationStatusCodes.
+This concept scheme is currently non-deferenceable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registration status coding</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/state -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/state">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Certificate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/states/States"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
+        <rdfs:comment xml:lang="en">Denoting the state of the certificate and range the following instances. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/states/States.</rdfs:comment>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/supportingDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/supportingDocument">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/SupportingDocument"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Indicates the relationship between the Vehicle registration and its attached supporting documents.
+These documents provide the recording of registrations and registration changes with the information related to these changes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Supporting document</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/validityStatusCertificateEcmFunction -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/validityStatusCertificateEcmFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:evrIndex>9.10</data:evrIndex>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/validity-status-certificate-ecm-function/ValidityStatusCertificateECMFunction"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/validity-status-certificate-ecm-function/ValidityStatusCertificateECMFunction.
+This concept scheme is currently non-deferenceable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Validity status of the certificate of the ECM function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/variantOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/variantOf">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Vehicle type or variant of a Vehicle type  to which a variant of a Vehicle type  relates to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Variant of a vehicle type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/vehicleAuthorisation -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vehicleAuthorisation">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Relates the Vehicle registration with an Authorisation that has been granted to it. Contains several parameters regarding the authorising entity, authorisaion dates, area of use, conditions for use of the vehicle and other restrictions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle authorisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/vehicleType -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vehicleType">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/Vehicle"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-22</terms:created>
+        <rdfs:comment xml:lang="en">Indicates the vehicle type of a specific vehicle or wagon.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/vehicleTypeAuthorisation -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vehicleTypeAuthorisation">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleTypeAuthorisation"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Indicates the relationship between a Vehicle type and its authorisation.
+This authorisation is  a permission given by an Authorising Entity to place a set of vehicles belonging to a TVV back in service after some change or on the market for later operation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle type authorisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/versionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/versionOf">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/VehicleType"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle type or variant of a Vehicle type to which a version of a  Vehicle type relates to.</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#classification -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#classification">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles."/>
+        <rdfs:comment xml:lang="it">Indica una classificazione per questa Organization all&apos;interno di un qualche schema di classificazione. Alcuni vocabolari potrebbero voler specializzare questa proprietà per avere un codominio corrispondente a uno specifico `skos:ConceptScheme`. Si noti che la presenza di questa proprietà è ancora in fase di discussione e potrebbe  essere revisionata o rimossa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a classification for this Organization within some classification scheme. Extension vocabularies may wish to specialize this property to have a range corresponding to a specific `skos:ConceptScheme`. This property is under discussion and may be revised or removed - in many cases organizations are best categorized by defining a sub-class hierarchy in an extension vocabulary.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the role that the railway organisation has in the vehicle registration or the role that an organisation has in the vehicle registration.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/organisation-roles/OrganisationRoles.
+This concept scheme is currently non-deferenceable.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique une classification pour cette Organisation dans le cadre d&apos;un schéma de classification. Il est possible de spécialiser cette propriété en utilisant un vocabulaire spécialisé pour que le champ corresponde à un concept spécifique `skos:ConceptScheme`. Cette propriété est en discussion est pourrait être révisée ou supprimée - dans de nombreux cas, les organisations sont mieux catégorisées par une hiérarchie de sous-classe dans un vocabulaire externe.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Ordenación jerárquica que se hace de una organización dentro de un esquema de clasificación. Es posible que algunos vocabularios especifiquen esta propiedad de forma que el rango se corresponda con un `skos:ConceptScheme` específico. La conveniencia de incluir esta propiedad se está debatiendo y puede que se revise o elimine (en muchos casos las organizaciones se clasifican mejor si se define una jerarquía de subclases en un vocabulario aparte)</rdfs:comment>
+        <rdfs:comment xml:lang="ja">ある分類表内のこの組織に対する分類を示します。
+アプリケーションがorg:Organizationのサブクラスを組織的なカテゴリーを表わす手段として定義することも許容されることに注意してください。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="en">classification</rdfs:label>
+        <rdfs:label xml:lang="fr">classification</rdfs:label>
+        <rdfs:label xml:lang="it">classificazione</rdfs:label>
+        <rdfs:label xml:lang="es">pertenece a la clasificación</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#linkedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#linkedTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="ja">2つの組織の任意の関係を示します。</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica una relazione arbitraria tra due organizzazioni. Ad esempio, specializzazioni di questa proprietà possono essere usate per denotare relazioni particolari tipo il finanziamento o la fornitura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates an arbitrary relationship between two organizations. Specializations of this can be used to, for example, denote funding or supply chain relationships.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique une relation arbitraire entre deux Organisations. Des spécialisations peuvent être utilisées pour, par exemple, qualifier une relation de fournisseur ou de financeur.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Relación arbitraria entre dos organizaciones. Las especializaciones de esta relación se pueden utilizar para denotar relaciones de financiación o suministro, entre otras.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an organisation that has a role in the vehicle organisation with the railway organization that is is linked to, e.g. a subsidiary.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="it">collegato a</rdfs:label>
+        <rdfs:label xml:lang="es">está relacionada con</rdfs:label>
+        <rdfs:label xml:lang="es">está relacionado con</rdfs:label>
+        <rdfs:label xml:lang="en">linked to</rdfs:label>
+        <rdfs:label xml:lang="fr">relié à</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/949/areaOfUse -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/areaOfUse">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>11.4</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">As stated in the issued vehicle authorisation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Area of use</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/authorisationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/authorisationDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>11.5</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Date of authorisation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Date of authorisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/authorisationValidUntil -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/authorisationValidUntil">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>11.6</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Authorisation valid until (if specified).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Authorisation valid until (if specified)</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/authorisingEntity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/authorisingEntity">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>11.2</data:evrIndex>
+        <terms:created xml:lang="en">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Code identifying the authorising entity(ies) in relation to the latest change(s) validated and in accordance with the specification referenced in Appendix A index [D].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Authorising entity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/dateOfLastChange -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/dateOfLastChange">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>2.3</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Log of the lastest valid change registered.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Date of Last Change</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/dateRevocationAuthorisation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/dateRevocationAuthorisation">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>11.8</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Date of revocation of authorisation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Date of revocation of authorisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/dateSuspensionAuthorisation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/dateSuspensionAuthorisation">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>11.7</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment>Date of suspension of authorisation.</rdfs:comment>
+        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Date of suspension of authorisation.</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/ecDeclarationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/ecDeclarationDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>6.1</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Date of EC declaration of verification.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Date of EC declaration</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/ecDeclarationReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/ecDeclarationReference">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>6.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Reference to the EC declaration of verification.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">EC delaration reference</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/ecmEuropeanIdentificationNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/ecmEuropeanIdentificationNumber">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>9.9</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">EIN of corresponding valid ECM certificate in accordance with points 3.1.5 and 7.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">ECM European identification number (EIN)</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/europeanVehicleNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/europeanVehicleNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>1.1</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">European Vehicle Number. Numeric identification code as defined in Appendix 6. Each railway vehicle shall receive a number consisting of 12 figures (called European vehicle number (EVN)) with the following structure:
+
+- Interoperability capability and vehicle type [2 figures]  
+- Country in whcih the vehicle is regisstered [2 figures]  
+- Technical characteristics [4 figures]  
+- Serial number [3 figures]  
+- Check digit [1 figure]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">European Vehicle Number</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/harmonisedRestrictionValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/harmonisedRestrictionValue">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/HarmonisedRestriction"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Harmonised restriction value</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/manufacturingSerialNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/manufacturingSerialNumber">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>5.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Manufacturing serial number as marked on the vehicle frame.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Manufacturing serial number</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/manufacturingYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/manufacturingYear">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <data:evrIndex>5.1</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Year in which the vehicle left the factory.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Manufacturing year</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/nonHarmonisedRestriction -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/nonHarmonisedRestriction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleAuthorisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>11.9.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Conditions for use and restrictions on how the vehicle may be used in accordance with Article [condition for use] and point 6.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Non harmonised restriction</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/previousVehicleNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/previousVehicleNumber">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>1.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Previous number (if applicable, for renumbered vehicle)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Previous vehicle number</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registeredBusinessNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/registeredBusinessNumber">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole"/>
+                    <rdf:Description rdf:about="http://data.europa.eu/949/RailwayOrganisation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>6.3.2</data:evrIndex>
+        <data:evrIndex>7.2</data:evrIndex>
+        <data:evrIndex>8.2</data:evrIndex>
+        <data:evrIndex>9.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <rdfs:comment xml:lang="en">alphanumeric identifier assigned to the organisation by the authorities
+responsible for the registration of organisations of their type in their Member State and which allows the organisation (rather than any single person representing it) to act as a Juridical or Legal entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registered business number</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registrationStatusDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/registrationStatusDate">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/RegistrationStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <data:evrIndex>10.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Date from which of the status of the registration is applicable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registration status date</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registrationStatusReason -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/registrationStatusReason">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/RegistrationStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>10.3.1</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Registration status in accordance with the list of reasons defined in point 8.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registration status reason</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/registrationStatusReasonDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/registrationStatusReasonDescription">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/RegistrationStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>10.3.2</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">When applicable, description of the status reason specified by the requestor of the change in accordance with point 8.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Description of the status reason</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#date">stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/resultingAreaOfuse -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/resultingAreaOfuse">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>3.1</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">A network or networks within a Member State or a group of Member States inbwhich a vehicle is intended to be used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Resulting area of use</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/series -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/series">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>5.4</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Identification of the series the vehicle is part of. Series is a number of identical vehicles of a design type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Series</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/urvisNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/urvisNumber">
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>5.5</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Unique Rail Vehicle Identification System (URVIS) identifier.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">URVIS number</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#date">stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/949/vehicleKeeperMarking -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/vehicleKeeperMarking">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/VehicleRegistration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <data:evrIndex>8.9</data:evrIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">A Vehicle Keeper Marking (VKM) is an alphabetic code, consisting of 2 to 5 letters (*). A VKM is inscribed on each rail vehicle, near the European Vehicle Number.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle keeper marking</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/addressLocality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/addressLocality">
+        <data:evrIndex>6.3.4</data:evrIndex>
+        <data:evrIndex>7.4</data:evrIndex>
+        <data:evrIndex>8.4</data:evrIndex>
+        <data:evrIndex>9.4</data:evrIndex>
+        <rdfs:comment xml:lang="en">The locality in which the street address is, and which is in the region. For example, Mountain View.</rdfs:comment>
+        <rdfs:label xml:lang="en">Address locality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/email">
+        <data:evrIndex>6.3.7</data:evrIndex>
+        <data:evrIndex>7.7</data:evrIndex>
+        <data:evrIndex>8.7</data:evrIndex>
+        <data:evrIndex>9.7</data:evrIndex>
+        <rdfs:comment xml:lang="en">Email address.</rdfs:comment>
+        <rdfs:label xml:lang="en">email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/name">
+        <data:evrIndex>6.3.1</data:evrIndex>
+        <data:evrIndex>7.1</data:evrIndex>
+        <data:evrIndex>8.1</data:evrIndex>
+        <data:evrIndex>9.1</data:evrIndex>
+        <rdfs:comment xml:lang="en">The name of the item.</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/postalCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/postalCode">
+        <data:evrIndex>6.3.6</data:evrIndex>
+        <data:evrIndex>7.6</data:evrIndex>
+        <data:evrIndex>8.6</data:evrIndex>
+        <data:evrIndex>9.6</data:evrIndex>
+        <rdfs:comment xml:lang="en">The postal code. For example, 94043.</rdfs:comment>
+        <rdfs:label xml:lang="en">postal code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/streetAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/streetAddress">
+        <data:evrIndex>6.3.3</data:evrIndex>
+        <data:evrIndex>7.3</data:evrIndex>
+        <data:evrIndex>8.3</data:evrIndex>
+        <data:evrIndex>9.3</data:evrIndex>
+        <rdfs:comment xml:lang="en">The street address. For example, 1600 Amphitheatre Pkwy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Street address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/org#identifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <data:evrIndex>6.3.8</data:evrIndex>
+        <data:evrIndex>7.8</data:evrIndex>
+        <data:evrIndex>8.8</data:evrIndex>
+        <data:evrIndex>9.8</data:evrIndex>
+        <rdfs:comment xml:lang="es">Código o identificador, como por ejemplo el CIF de una empresa, que permite identificar de forma inequívoca a una organización. Existen muchos códigos de identificación tanto nacionales como internacionales. Esta ontología no obliga al uso de ningún esquema en concreto. Los códigos de identificación utilizados en cada caso se deberían indicar mediante el uso de la propiedad “datatype” del valor del identificador. El uso de la propiedad “datatype” para especificar el esquema de notación utilizado está en consonancia con las buenas prácticas recomendadas para el uso de la propiedad `skos:notation`, de la que esta propiedad es una especialización.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Donne un identifiant, comme par exemple le numéro d&apos;enregistrement d&apos;une entreprise, qui peut être utilisé comme identifiant unique pour l&apos;Organisation. De nombreux schémas nationaux et internationaux sont disponibles. Cette ontologie reste neutre par rapport au schéma utilisé. Le schéma particulier utilisé devrait être indiqué par le `datatype` de la valeur de l&apos;identifiant. Utiliser les datatypes pour distinguer les schémas de notation est cohérent avec les bonnes pratiques pour `skos:notation` dont cette propriété est une spécialisation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">For EVR, it is equivalent to the Organisation Code.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization. Many different national and international identier schemes are available. The org ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value.  Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for `skos:notation` of which this property is a specialization.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica un identificatore univoco per l&apos;organizzazione, come ad esempio la partita IVA di un&apos;azienda. Molti schemi di identificazione a livello nazionale e internazionale sono disponibili allo scopo. L&apos;ontologia ORG è neutrale rispetto allo schema da utilizzare. Lo schema di identificazione dovrebbe essere indicato dal datatype del valore dell&apos;identificatore. L&apos;uso del datatype per distinguere lo schema di identificazione è coerente con le best practice per `skos:notation`, di cui questa proprietà è una specializzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">組織を一意に識別するために使用できる会社登録番号などの識別子を与えます。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="fr">identifiant</rdfs:label>
+        <rdfs:label xml:lang="it">identificatore</rdfs:label>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <rdfs:label xml:lang="es">tiene identificador</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/949/Certificate -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/Certificate">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-15</terms:modified>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Certificate</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/HarmonisedRestriction -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/HarmonisedRestriction">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Conditions for use and restrictions on how the vehicle may be used in accordance with Article [condition for use] and point 6.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Harmonised restriction</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/OrganisationWithVehicleRegistrationRole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Represents an organisation that has a role in EVR. Examples of roles are: Owner, Keeper, Fleet manager, Maintenance entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Organisation with vehicle registration role</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/RailwayOrganisation -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/RailwayOrganisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Represents. the generalization of organisations that have different roles in Vehicle (EVR) and Vehicle type processes. Examples of roles are: Owner, Keeper, Fleet manager, Maintenance entity, Manufacturer.</rdfs:comment>
+        <rdfs:isDefinedBy>http://data.europa.eu/949/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Railway organisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/RegistrationStatus -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/RegistrationStatus">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <rdfs:comment xml:lang="en">This concept allows the traceability of the history of the vehicle registration with its different status and dates. The Registration status encompasses the registration status coding, the registration status date, and the registration status reason.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Registration status</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/SupportingDocument -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/SupportingDocument">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DigitalDocument"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <rdfs:comment xml:lang="en">Related attachments to the vehicle registration that provide the recording of registrations and registration changes with the information related to these changes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle registration supporting document</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/Vehicle -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/Vehicle">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-22</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-22</terms:modified>
+        <rdfs:comment xml:lang="en">A specific vehicle or wagon able to operate over railway lines.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/VehicleAuthorisation -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/VehicleAuthorisation">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <rdfs:comment xml:lang="en">Data for an authorisation granted to the vehicle</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle authorisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/VehicleRegistration -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/VehicleRegistration">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Vehicle registration that ensures traceability of vehicles and their history, vehicles should be registered under a European vehicle
+number in a vehicle register.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle registration</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/VehicleType -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/VehicleType">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A vehicle type that has been authorized to operate on the EU railway infrastructure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle Type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/949/VehicleTypeAuthorisation -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/949/VehicleTypeAuthorisation">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-26</terms:created>
+        <terms:source rdf:resource="https://eur-lex.europa.eu/eli/dec_impl/2018/1614"/>
+        <rdfs:comment xml:lang="en">Permission given by an Authorising Entity to place a set of vehicles belonging to a TVV back in service after some change or on the market for later operation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
+        <rdfs:label xml:lang="en">Vehicle type authorisation</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/DigitalDocument -->
+
+
+    <owl:Class rdf:about="http://schema.org/DigitalDocument">
+        <rdfs:comment xml:lang="en">An electronic file or document.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digital document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
