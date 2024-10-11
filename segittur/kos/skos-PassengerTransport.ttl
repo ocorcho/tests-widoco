@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-passengertransport: <https://ontologia.segittur.es/turismo/kos/passengertransport/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:PassengerTransportType a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2024-05-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Passenger Transport Type"@en ;
+    rdfs:label "Tipo de transporte de pasajeros"@es ;
+    dct:title "Concept scheme grouping passengertransport types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de transporte de pasajeros"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-passengertransport:BoardingPriority a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Boarding Priority"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-passengertransport:CustomerService a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Customer Service"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-passengertransport:DisembarkationPriority a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Disembarkation Priority"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-passengertransport:EquipmentTransport a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Equipment Transport"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-passengertransport:Insurance a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Insurance"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-passengertransport:PetTransport a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Pet Transport"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-passengertransport:VirtualAdvisor a skos:Concept;
+  skos:inScheme estur-kos:PassengertransportType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Virtual Advisor"@en ;
+  skos:prefLabel "XXXXX"@es .
+

@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-cruiseshipcabin: <https://ontologia.segittur.es/turismo/kos/cruiseshipcabin/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:CruiseShipCabinType a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2024-05-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Cruise Ship Cabin Type"@en ;
+    rdfs:label "Tipo de crucerocabina"@es ;
+    dct:title "Concept scheme grouping cruiseshipcabin types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de crucerocabina"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-cruiseshipcabin:AirConditioning a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Air Conditioning"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:AlarmClock a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Alarm Clock"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Amenities a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Amenities"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:CoffeeMachine a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Coffee Machine"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Cradle a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Cradle"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Dryer a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Dryer"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Heating a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Heating"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Jacuzzi a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Jacuzzi"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Minibar a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Minibar"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:RoomService a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Room Service"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:SafetyBox a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Safety Box"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Telephone a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Telephone"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:Tv a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Tv"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-cruiseshipcabin:WiredInternet a skos:Concept;
+  skos:inScheme estur-kos:CruiseshipcabinType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Wired Internet"@en ;
+  skos:prefLabel "XXXXX"@es .
+

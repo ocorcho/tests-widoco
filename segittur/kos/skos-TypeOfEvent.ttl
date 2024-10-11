@@ -1,0 +1,343 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-typeofevent: <https://ontologia.segittur.es/turismo/kos/typeofevent/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TypeOfEventType a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2024-05-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Type Of Event Type"@en ;
+    rdfs:label "Tipo de tipo de evento"@es ;
+    dct:title "Concept scheme grouping typeofevent types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de tipo de evento"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-typeofevent:AcrobaticsShow a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Acrobatics Show"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:ArtEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Art Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Ballet a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Ballet"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Bullfight a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Bullfight"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:BusinessEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Business Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:CabaretShow a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Cabaret Show"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Cinema a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Cinema"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Circus a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Circus"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:ClownAct a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Clown Act"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Competition a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Competition"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Concert a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Concert"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Congress a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Congress"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Convention a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Convention"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:DanceEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Dance Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:DigitalCulture a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Digital Culture"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:EducationEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Education Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Environmental a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Environmental"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:ExhibitionEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Exhibition Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Fair a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Fair"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Festival a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Festival"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Flamenco a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Flamenco"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:FoodEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Food Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Hiphop a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Hiphop"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Jazz a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Jazz"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:MagicShow a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Magic Show"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:MimeAct a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Mime Act"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Music a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Music"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Musical a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Musical"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:NewsRadioTv a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "News Radio Tv"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Opera a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Opera"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Pantomime a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Pantomime"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:PoetryExhibition a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Poetry Exhibition"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:PuppetShow a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Puppet Show"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Race a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Race"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:ReligionEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Religion Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Specials a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Specials"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Spectacle a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Spectacle"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:SportsEvent a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Sports Event"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:SportsMatch a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Sports Match"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:StandupComedy a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Standup Comedy"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:Tap a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Tap"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:TheaterPlay a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Theater Play"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:TraditionalFestival a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Traditional Festival"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-typeofevent:WineFestival a skos:Concept;
+  skos:inScheme estur-kos:TypeofeventType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Wine Festival"@en ;
+  skos:prefLabel "XXXXX"@es .
+
