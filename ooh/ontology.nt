@@ -1,0 +1,678 @@
+<https://purl.archive.org/cpwo/ontology/ooh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://purl.org/dc/elements/1.1/creator> "\"Morales Tirado, Alba\", \"Fernandez, Miriam\"" .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://purl.org/dc/elements/1.1/license> "GPL-3.0 license" .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://purl.org/dc/elements/1.1/title> "Ontology of Online Gender-based Harms" .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://purl.org/dc/terms/language> "\"en\"" .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://purl.org/dc/terms/preferredNamespacePrefix> "ooh" .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://www.w3.org/2000/01/rdf-schema#comment> "The ontology aims to formalise and integrate diverse conceptualisations of online harms, grounded in empirical evidence, stakeholder engagement, and iterative feedback loops. Led by the Centre for Protecting Women Online (CPWO) it is developed on the grounds of a collaborative and coordinated work across domains and sectors, and provide a reusable resource for researchers, practitioners, and developers aiming to understand, detect, and prevent online gender-based harms." .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology of Online Gender-based Harms"@en-gb .
+<https://purl.archive.org/cpwo/ontology/ooh> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/preferredNamespacePrefix
+<http://purl.org/dc/terms/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#enforcedBy
+<http://cpwo.open.ac.uk/ontology/ohh#enforcedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#hasIntent
+<http://cpwo.open.ac.uk/ontology/ohh#hasIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasIntent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#hasMotivation
+<http://cpwo.open.ac.uk/ontology/ohh#hasMotivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasMotivation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasMotivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#hasTarget
+<http://cpwo.open.ac.uk/ontology/ohh#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasTarget> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#identifiedBy
+<http://cpwo.open.ac.uk/ontology/ohh#identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+<http://cpwo.open.ac.uk/ontology/ohh#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#includes
+<http://cpwo.open.ac.uk/ontology/ohh#includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isBasedOn
+<http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor> .
+<http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> .
+<http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy
+<http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+<http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor
+<http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+<http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isObservedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://cpwo.open.ac.uk/ontology/ohh#observes> .
+<http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#Bystander> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#observes
+<http://cpwo.open.ac.uk/ontology/ohh#observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#observes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#Bystander> .
+<http://cpwo.open.ac.uk/ontology/ohh#observes> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#occursOn
+<http://cpwo.open.ac.uk/ontology/ohh#occursOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#occursOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#occursOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#resultsIn
+<http://cpwo.open.ac.uk/ontology/ohh#resultsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#resultsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#resultsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName
+<http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#hasDefinition
+<http://cpwo.open.ac.uk/ontology/ohh#hasDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasDefinition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+<http://cpwo.open.ac.uk/ontology/ohh#hasDefinition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#otherNames
+<http://cpwo.open.ac.uk/ontology/ohh#otherNames> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cpwo.open.ac.uk/ontology/ohh#otherNames> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#AIBasedDetection
+<http://cpwo.open.ac.uk/ontology/ohh#AIBasedDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#AIBasedDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Accountability
+<http://cpwo.open.ac.uk/ontology/ohh#Accountability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Accountability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#AlgorithmicBias
+<http://cpwo.open.ac.uk/ontology/ohh#AlgorithmicBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#AlgorithmicBias> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation
+<http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Bots
+<http://cpwo.open.ac.uk/ontology/ohh#Bots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Bots> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Collective> .
+<http://cpwo.open.ac.uk/ontology/ohh#Bots> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> .
+<http://cpwo.open.ac.uk/ontology/ohh#Bots> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> .
+<http://cpwo.open.ac.uk/ontology/ohh#Bots> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Bystander
+<http://cpwo.open.ac.uk/ontology/ohh#Bystander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#BystanderIntervention
+<http://cpwo.open.ac.uk/ontology/ohh#BystanderIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#BystanderIntervention> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SocialSupport> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CauseHumilliation
+<http://cpwo.open.ac.uk/ontology/ohh#CauseHumilliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CauseHumilliation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CivilSocietyCampaigns
+<http://cpwo.open.ac.uk/ontology/ohh#CivilSocietyCampaigns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CivilSocietyCampaigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Collective
+<http://cpwo.open.ac.uk/ontology/ohh#Collective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Collective> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#Individual> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator
+<http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Collective> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget
+<http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Collective> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+<http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses
+<http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor
+<http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ControlAndPower
+<http://cpwo.open.ac.uk/ontology/ohh#ControlAndPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ControlAndPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CulturalBeliefs
+<http://cpwo.open.ac.uk/ontology/ohh#CulturalBeliefs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CulturalBeliefs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#CulturalContext
+<http://cpwo.open.ac.uk/ontology/ohh#CulturalContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#CulturalContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Cyberbullying
+<http://cpwo.open.ac.uk/ontology/ohh#Cyberbullying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Cyberbullying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Cyberstalking
+<http://cpwo.open.ac.uk/ontology/ohh#Cyberstalking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Cyberstalking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#DatingApp
+<http://cpwo.open.ac.uk/ontology/ohh#DatingApp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#DatingApp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Doxxing
+<http://cpwo.open.ac.uk/ontology/ohh#Doxxing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Doxxing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact
+<http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#EducationAndAwarenessCampaigns
+<http://cpwo.open.ac.uk/ontology/ohh#EducationAndAwarenessCampaigns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#EducationAndAwarenessCampaigns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#EnhancedContentModeration
+<http://cpwo.open.ac.uk/ontology/ohh#EnhancedContentModeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#EnhancedContentModeration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Ethnicity
+<http://cpwo.open.ac.uk/ontology/ohh#Ethnicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Ethnicity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Explainability
+<http://cpwo.open.ac.uk/ontology/ohh#Explainability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Explainability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Fairness
+<http://cpwo.open.ac.uk/ontology/ohh#Fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Fairness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#FinancialGain
+<http://cpwo.open.ac.uk/ontology/ohh#FinancialGain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#FinancialGain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Forum
+<http://cpwo.open.ac.uk/ontology/ohh#Forum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Forum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform
+<http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Gender
+<http://cpwo.open.ac.uk/ontology/ohh#Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Gender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#hasMotivation> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#Bystander> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#resultsIn> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#hasTarget> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://cpwo.open.ac.uk/ontology/ohh#Space> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#occursOn> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#comment> "Primary class representing the legal concept of a criminal act. A crime requires both actus reus and mens rea" .
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "actusReus" .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Harrassment
+<http://cpwo.open.ac.uk/ontology/ohh#Harrassment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Harrassment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#HateSpeech
+<http://cpwo.open.ac.uk/ontology/ohh#HateSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#HateSpeech> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#IdeologicalMotivation
+<http://cpwo.open.ac.uk/ontology/ohh#IdeologicalMotivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#IdeologicalMotivation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ImageBasedAbuse
+<http://cpwo.open.ac.uk/ontology/ohh#ImageBasedAbuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ImageBasedAbuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Impact
+<http://cpwo.open.ac.uk/ontology/ohh#Impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ImprovedPrivacyDesign
+<http://cpwo.open.ac.uk/ontology/ohh#ImprovedPrivacyDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ImprovedPrivacyDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ImprovedSecuritySetting
+<http://cpwo.open.ac.uk/ontology/ohh#ImprovedSecuritySetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ImprovedSecuritySetting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Individual
+<http://cpwo.open.ac.uk/ontology/ohh#Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Bystander> .
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Individual> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Individual> .
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Individual> .
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#InitiateViolence
+<http://cpwo.open.ac.uk/ontology/ohh#InitiateViolence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#InitiateViolence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#International
+<http://cpwo.open.ac.uk/ontology/ohh#International> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#International> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#InternationalFrameworks
+<http://cpwo.open.ac.uk/ontology/ohh#InternationalFrameworks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#InternationalFrameworks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#LegalContext
+<http://cpwo.open.ac.uk/ontology/ohh#LegalContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#LegalContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions
+<http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+<http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#MessagingApp
+<http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Misogyny
+<http://cpwo.open.ac.uk/ontology/ohh#Misogyny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Misogyny> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Motivation
+<http://cpwo.open.ac.uk/ontology/ohh#Motivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Motivation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "mensRea" .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace
+<http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Space> .
+<http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#OnlineExploitation
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineExploitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineExploitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of harm or violence experienced or perpetrated through online or digital channels" .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Space> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#OnlineThreat
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineThreat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineThreat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Perpetrator
+<http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#PhysicalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#PhysicalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#PhysicalImpact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Platform
+<http://cpwo.open.ac.uk/ontology/ohh#Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#PlatformPolicies
+<http://cpwo.open.ac.uk/ontology/ohh#PlatformPolicies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#PlatformPolicies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures
+<http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#PoliticalOrientation
+<http://cpwo.open.ac.uk/ontology/ohh#PoliticalOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#PoliticalOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks
+<http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Race
+<http://cpwo.open.ac.uk/ontology/ohh#Race> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Race> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Religion
+<http://cpwo.open.ac.uk/ontology/ohh#Religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Religion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ReportingTools
+<http://cpwo.open.ac.uk/ontology/ohh#ReportingTools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ReportingTools> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ReputationalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#ReputationalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ReputationalImpact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention
+<http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign
+<http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Revenge
+<http://cpwo.open.ac.uk/ontology/ohh#Revenge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Revenge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SafetyTools
+<http://cpwo.open.ac.uk/ontology/ohh#SafetyTools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SafetyTools> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes
+<http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SexualOrientation
+<http://cpwo.open.ac.uk/ontology/ohh#SexualOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SexualOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SocialImpact
+<http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SocialMedia
+<http://cpwo.open.ac.uk/ontology/ohh#SocialMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SocialMedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SocialSupport
+<http://cpwo.open.ac.uk/ontology/ohh#SocialSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SocioeconomicContext
+<http://cpwo.open.ac.uk/ontology/ohh#SocioeconomicContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SocioeconomicContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Space
+<http://cpwo.open.ac.uk/ontology/ohh#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor
+<http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Collective> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#SupportGroups
+<http://cpwo.open.ac.uk/ontology/ohh#SupportGroups> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#SupportGroups> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#TechnologicalContext
+<http://cpwo.open.ac.uk/ontology/ohh#TechnologicalContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#TechnologicalContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions
+<http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Transparency
+<http://cpwo.open.ac.uk/ontology/ohh#Transparency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#Transparency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#UK
+<http://cpwo.open.ac.uk/ontology/ohh#UK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#UK> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#VictimAdvocacy
+<http://cpwo.open.ac.uk/ontology/ohh#VictimAdvocacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#VictimAdvocacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#SocialSupport> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform
+<http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+# 
+# https://purl.archive.org/cpwo/ontology/ooh#Target/Victim
+<https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://cpwo.open.ac.uk/ontology/ohh#identifiedBy> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Anxiety
+<http://cpwo.open.ac.uk/ontology/ohh#Anxiety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Anxiety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Bumble
+<http://cpwo.open.ac.uk/ontology/ohh#Bumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Bumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#DatingApp> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Depression
+<http://cpwo.open.ac.uk/ontology/ohh#Depression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Depression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#DigitalWithdrawal
+<http://cpwo.open.ac.uk/ontology/ohh#DigitalWithdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#DigitalWithdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Discord
+<http://cpwo.open.ac.uk/ontology/ohh#Discord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Discord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#EmploymentLoss
+<http://cpwo.open.ac.uk/ontology/ohh#EmploymentLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#EmploymentLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Facebook
+<http://cpwo.open.ac.uk/ontology/ohh#Facebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Facebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#SocialMedia> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Instagram
+<http://cpwo.open.ac.uk/ontology/ohh#Instagram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Isolation
+<http://cpwo.open.ac.uk/ontology/ohh#Isolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Isolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#LinkedIn
+<http://cpwo.open.ac.uk/ontology/ohh#LinkedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#LinkedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#LowerPerceptionOnlineSafety
+<http://cpwo.open.ac.uk/ontology/ohh#LowerPerceptionOnlineSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#LowerPerceptionOnlineSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#PSTD
+<http://cpwo.open.ac.uk/ontology/ohh#PSTD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#PSTD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Reddit
+<http://cpwo.open.ac.uk/ontology/ohh#Reddit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Reddit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#Forum> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Telegram
+<http://cpwo.open.ac.uk/ontology/ohh#Telegram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Telegram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#TikTok
+<http://cpwo.open.ac.uk/ontology/ohh#TikTok> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#TikTok> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Tinder
+<http://cpwo.open.ac.uk/ontology/ohh#Tinder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Tinder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#DatingApp> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#Twitch
+<http://cpwo.open.ac.uk/ontology/ohh#Twitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#Twitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#WhatsApp
+<http://cpwo.open.ac.uk/ontology/ohh#WhatsApp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#WhatsApp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> .
+# 
+# http://cpwo.open.ac.uk/ontology/ohh#YouTube
+<http://cpwo.open.ac.uk/ontology/ohh#YouTube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpwo.open.ac.uk/ontology/ohh#YouTube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> .
+# 
+# https://purl.archive.org/cpwo/ontology/ooh#4chan
+<https://purl.archive.org/cpwo/ontology/ooh#4chan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.archive.org/cpwo/ontology/ooh#4chan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpwo.open.ac.uk/ontology/ohh#Forum> .
+# 
+# https://purl.archive.org/cpwo/ontology/ooh#Twitter/X
+<https://purl.archive.org/cpwo/ontology/ooh#Twitter/X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpwo.open.ac.uk/ontology/ohh#Bystander> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,788 @@
+@prefix : <https://purl.archive.org/cpwo/ontology/ooh#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.archive.org/cpwo/ontology/ooh#> .
+
+<https://purl.archive.org/cpwo/ontology/ooh> rdf:type owl:Ontology ;
+                                              <http://purl.org/dc/elements/1.1/creator> "\"Morales Tirado, Alba\", \"Fernandez, Miriam\"" ;
+                                              <http://purl.org/dc/elements/1.1/license> "GPL-3.0 license" ;
+                                              <http://purl.org/dc/elements/1.1/title> "Ontology of Online Gender-based Harms" ;
+                                              <http://purl.org/dc/terms/language> "\"en\"" ;
+                                              <http://purl.org/dc/terms/preferredNamespacePrefix> "ooh" ;
+                                              rdfs:comment "The ontology aims to formalise and integrate diverse conceptualisations of online harms, grounded in empirical evidence, stakeholder engagement, and iterative feedback loops. Led by the Centre for Protecting Women Online (CPWO) it is developed on the grounds of a collaborative and coordinated work across domains and sectors, and provide a reusable resource for researchers, practitioners, and developers aiming to understand, detect, and prevent online gender-based harms." ;
+                                              rdfs:label "Ontology of Online Gender-based Harms"@en-gb ;
+                                              owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/preferredNamespacePrefix
+<http://purl.org/dc/terms/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://cpwo.open.ac.uk/ontology/ohh#enforcedBy
+<http://cpwo.open.ac.uk/ontology/ohh#enforcedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#hasIntent
+<http://cpwo.open.ac.uk/ontology/ohh#hasIntent> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#hasMotivation
+<http://cpwo.open.ac.uk/ontology/ohh#hasMotivation> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                    rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#hasTarget
+<http://cpwo.open.ac.uk/ontology/ohh#hasTarget> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                rdfs:range <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#identifiedBy
+<http://cpwo.open.ac.uk/ontology/ohh#identifiedBy> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> ;
+                                                   rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#includes
+<http://cpwo.open.ac.uk/ontology/ohh#includes> rdf:type owl:ObjectProperty .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isBasedOn
+<http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> rdf:type owl:ObjectProperty ;
+                                                owl:inverseOf <http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor> ;
+                                                rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> ;
+                                                rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy
+<http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> ;
+                                                     rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                     rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor
+<http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> ;
+                                                   rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                    rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isObservedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> rdf:type owl:ObjectProperty ;
+                                                   owl:inverseOf <http://cpwo.open.ac.uk/ontology/ohh#observes> ;
+                                                   rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                   rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#Bystander> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                      rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy
+<http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                     rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#observes
+<http://cpwo.open.ac.uk/ontology/ohh#observes> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#Bystander> ;
+                                               rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#occursOn
+<http://cpwo.open.ac.uk/ontology/ohh#occursOn> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                               rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#resultsIn
+<http://cpwo.open.ac.uk/ontology/ohh#resultsIn> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                rdfs:range <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName
+<http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName> rdf:type owl:DatatypeProperty ,
+                                                                  owl:FunctionalProperty ;
+                                                         rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                         rdfs:range xsd:string .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#hasDefinition
+<http://cpwo.open.ac.uk/ontology/ohh#hasDefinition> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> ;
+                                                    rdfs:range xsd:string .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#otherNames
+<http://cpwo.open.ac.uk/ontology/ohh#otherNames> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cpwo.open.ac.uk/ontology/ohh#AIBasedDetection
+<http://cpwo.open.ac.uk/ontology/ohh#AIBasedDetection> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Accountability
+<http://cpwo.open.ac.uk/ontology/ohh#Accountability> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#AlgorithmicBias
+<http://cpwo.open.ac.uk/ontology/ohh#AlgorithmicBias> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation
+<http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> rdf:type owl:Class ;
+                                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy> ;
+                                                                              owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation>
+                                                                            ] .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Bots
+<http://cpwo.open.ac.uk/ontology/ohh#Bots> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Collective> ;
+                                           owl:disjointWith <http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> ,
+                                                            <http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> ,
+                                                            <http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Bystander
+<http://cpwo.open.ac.uk/ontology/ohh#Bystander> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#BystanderIntervention
+<http://cpwo.open.ac.uk/ontology/ohh#BystanderIntervention> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SocialSupport> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CauseHumilliation
+<http://cpwo.open.ac.uk/ontology/ohh#CauseHumilliation> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CivilSocietyCampaigns
+<http://cpwo.open.ac.uk/ontology/ohh#CivilSocietyCampaigns> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Collective
+<http://cpwo.open.ac.uk/ontology/ohh#Collective> rdf:type owl:Class ;
+                                                 owl:disjointWith <http://cpwo.open.ac.uk/ontology/ohh#Individual> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator
+<http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Collective> ,
+                                                                            <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> ;
+                                                            owl:disjointWith <http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> ,
+                                                                             <http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget
+<http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Collective> ,
+                                                                       <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> ;
+                                                       owl:disjointWith <http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses
+<http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor
+<http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ControlAndPower
+<http://cpwo.open.ac.uk/ontology/ohh#ControlAndPower> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CulturalBeliefs
+<http://cpwo.open.ac.uk/ontology/ohh#CulturalBeliefs> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#CulturalContext
+<http://cpwo.open.ac.uk/ontology/ohh#CulturalContext> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Cyberbullying
+<http://cpwo.open.ac.uk/ontology/ohh#Cyberbullying> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Cyberstalking
+<http://cpwo.open.ac.uk/ontology/ohh#Cyberstalking> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#DatingApp
+<http://cpwo.open.ac.uk/ontology/ohh#DatingApp> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Doxxing
+<http://cpwo.open.ac.uk/ontology/ohh#Doxxing> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact
+<http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#EducationAndAwarenessCampaigns
+<http://cpwo.open.ac.uk/ontology/ohh#EducationAndAwarenessCampaigns> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#EnhancedContentModeration
+<http://cpwo.open.ac.uk/ontology/ohh#EnhancedContentModeration> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Ethnicity
+<http://cpwo.open.ac.uk/ontology/ohh#Ethnicity> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Explainability
+<http://cpwo.open.ac.uk/ontology/ohh#Explainability> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Fairness
+<http://cpwo.open.ac.uk/ontology/ohh#Fairness> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#FinancialGain
+<http://cpwo.open.ac.uk/ontology/ohh#FinancialGain> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Forum
+<http://cpwo.open.ac.uk/ontology/ohh#Forum> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform
+<http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Gender
+<http://cpwo.open.ac.uk/ontology/ohh#Gender> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct
+<http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct> rdf:type owl:Class ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#hasMotivation> ;
+                                                                   owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#Motivation>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy> ;
+                                                                   owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isObservedBy> ;
+                                                                   owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#Bystander>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#resultsIn> ;
+                                                                   owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#Impact>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#hasTarget> ;
+                                                                   owl:allValuesFrom <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy> ;
+                                                                   owl:allValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy> ;
+                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#occursOn> ;
+                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://cpwo.open.ac.uk/ontology/ohh#Space>
+                                                                 ] ;
+                                                 rdfs:comment "Primary class representing the legal concept of a criminal act. A crime requires both actus reus and mens rea" ;
+                                                 rdfs:seeAlso "actusReus" .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Harrassment
+<http://cpwo.open.ac.uk/ontology/ohh#Harrassment> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#HateSpeech
+<http://cpwo.open.ac.uk/ontology/ohh#HateSpeech> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#IdeologicalMotivation
+<http://cpwo.open.ac.uk/ontology/ohh#IdeologicalMotivation> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ImageBasedAbuse
+<http://cpwo.open.ac.uk/ontology/ohh#ImageBasedAbuse> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Impact
+<http://cpwo.open.ac.uk/ontology/ohh#Impact> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ImprovedPrivacyDesign
+<http://cpwo.open.ac.uk/ontology/ohh#ImprovedPrivacyDesign> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ImprovedSecuritySetting
+<http://cpwo.open.ac.uk/ontology/ohh#ImprovedSecuritySetting> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Individual
+<http://cpwo.open.ac.uk/ontology/ohh#Individual> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Bystander> ,
+                                                                          <http://cpwo.open.ac.uk/ontology/ohh#Individual> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Individual> ,
+                                                                            <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget
+<http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Individual> ,
+                                                                       <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#InitiateViolence
+<http://cpwo.open.ac.uk/ontology/ohh#InitiateViolence> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#International
+<http://cpwo.open.ac.uk/ontology/ohh#International> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#InternationalFrameworks
+<http://cpwo.open.ac.uk/ontology/ohh#InternationalFrameworks> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#LegalContext
+<http://cpwo.open.ac.uk/ontology/ohh#LegalContext> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions
+<http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isBasedOn> ;
+                                                                           owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation>
+                                                                         ] .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#MessagingApp
+<http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Misogyny
+<http://cpwo.open.ac.uk/ontology/ohh#Misogyny> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Motivation
+<http://cpwo.open.ac.uk/ontology/ohh#Motivation> rdf:type owl:Class ;
+                                                 rdfs:seeAlso "mensRea" .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace
+<http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Space> ;
+                                                   owl:disjointWith <http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#OnlineExploitation
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineExploitation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> rdf:type owl:Class ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy> ;
+                                                                   owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct>
+                                                                 ] ;
+                                                 rdfs:comment "A type of harm or violence experienced or perpetrated through online or digital channels" .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Space> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#OnlineThreat
+<http://cpwo.open.ac.uk/ontology/ohh#OnlineThreat> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Perpetrator
+<http://cpwo.open.ac.uk/ontology/ohh#Perpetrator> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#PhysicalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#PhysicalImpact> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Platform
+<http://cpwo.open.ac.uk/ontology/ohh#Platform> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#PlatformPolicies
+<http://cpwo.open.ac.uk/ontology/ohh#PlatformPolicies> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures
+<http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#PoliticalOrientation
+<http://cpwo.open.ac.uk/ontology/ohh#PoliticalOrientation> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks
+<http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Race
+<http://cpwo.open.ac.uk/ontology/ohh#Race> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Religion
+<http://cpwo.open.ac.uk/ontology/ohh#Religion> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ReportingTools
+<http://cpwo.open.ac.uk/ontology/ohh#ReportingTools> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ReputationalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#ReputationalImpact> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention
+<http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign
+<http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Revenge
+<http://cpwo.open.ac.uk/ontology/ohh#Revenge> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Motivation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SafetyTools
+<http://cpwo.open.ac.uk/ontology/ohh#SafetyTools> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes
+<http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SexualOrientation
+<http://cpwo.open.ac.uk/ontology/ohh#SexualOrientation> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SocialImpact
+<http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SocialMedia
+<http://cpwo.open.ac.uk/ontology/ohh#SocialMedia> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SocialSupport
+<http://cpwo.open.ac.uk/ontology/ohh#SocialSupport> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact
+<http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Impact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SocioeconomicContext
+<http://cpwo.open.ac.uk/ontology/ohh#SocioeconomicContext> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Space
+<http://cpwo.open.ac.uk/ontology/ohh#Space> rdf:type owl:Class .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor
+<http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Collective> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#SupportGroups
+<http://cpwo.open.ac.uk/ontology/ohh#SupportGroups> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#TechnologicalContext
+<http://cpwo.open.ac.uk/ontology/ohh#TechnologicalContext> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions
+<http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Transparency
+<http://cpwo.open.ac.uk/ontology/ohh#Transparency> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#UK
+<http://cpwo.open.ac.uk/ontology/ohh#UK> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#VictimAdvocacy
+<http://cpwo.open.ac.uk/ontology/ohh#VictimAdvocacy> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#SocialSupport> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform
+<http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://cpwo.open.ac.uk/ontology/ohh#Platform> .
+
+
+###  https://purl.archive.org/cpwo/ontology/ooh#Target/Victim
+<https://purl.archive.org/cpwo/ontology/ooh#Target/Victim> rdf:type owl:Class ;
+                                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://cpwo.open.ac.uk/ontology/ohh#identifiedBy> ;
+                                                                             owl:someValuesFrom <http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes>
+                                                                           ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Anxiety
+<http://cpwo.open.ac.uk/ontology/ohh#Anxiety> rdf:type owl:NamedIndividual ,
+                                                       <http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Bumble
+<http://cpwo.open.ac.uk/ontology/ohh#Bumble> rdf:type owl:NamedIndividual ,
+                                                      <http://cpwo.open.ac.uk/ontology/ohh#DatingApp> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Depression
+<http://cpwo.open.ac.uk/ontology/ohh#Depression> rdf:type owl:NamedIndividual ,
+                                                          <http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#DigitalWithdrawal
+<http://cpwo.open.ac.uk/ontology/ohh#DigitalWithdrawal> rdf:type owl:NamedIndividual ,
+                                                                 <http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Discord
+<http://cpwo.open.ac.uk/ontology/ohh#Discord> rdf:type owl:NamedIndividual ,
+                                                       <http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#EmploymentLoss
+<http://cpwo.open.ac.uk/ontology/ohh#EmploymentLoss> rdf:type owl:NamedIndividual ,
+                                                              <http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Facebook
+<http://cpwo.open.ac.uk/ontology/ohh#Facebook> rdf:type owl:NamedIndividual ,
+                                                        <http://cpwo.open.ac.uk/ontology/ohh#SocialMedia> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Instagram
+<http://cpwo.open.ac.uk/ontology/ohh#Instagram> rdf:type owl:NamedIndividual .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Isolation
+<http://cpwo.open.ac.uk/ontology/ohh#Isolation> rdf:type owl:NamedIndividual ,
+                                                         <http://cpwo.open.ac.uk/ontology/ohh#SocialImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#LinkedIn
+<http://cpwo.open.ac.uk/ontology/ohh#LinkedIn> rdf:type owl:NamedIndividual ,
+                                                        <http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#LowerPerceptionOnlineSafety
+<http://cpwo.open.ac.uk/ontology/ohh#LowerPerceptionOnlineSafety> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#PSTD
+<http://cpwo.open.ac.uk/ontology/ohh#PSTD> rdf:type owl:NamedIndividual ,
+                                                    <http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Reddit
+<http://cpwo.open.ac.uk/ontology/ohh#Reddit> rdf:type owl:NamedIndividual ,
+                                                      <http://cpwo.open.ac.uk/ontology/ohh#Forum> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Telegram
+<http://cpwo.open.ac.uk/ontology/ohh#Telegram> rdf:type owl:NamedIndividual ,
+                                                        <http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#TikTok
+<http://cpwo.open.ac.uk/ontology/ohh#TikTok> rdf:type owl:NamedIndividual ,
+                                                      <http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Tinder
+<http://cpwo.open.ac.uk/ontology/ohh#Tinder> rdf:type owl:NamedIndividual ,
+                                                      <http://cpwo.open.ac.uk/ontology/ohh#DatingApp> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#Twitch
+<http://cpwo.open.ac.uk/ontology/ohh#Twitch> rdf:type owl:NamedIndividual ,
+                                                      <http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#WhatsApp
+<http://cpwo.open.ac.uk/ontology/ohh#WhatsApp> rdf:type owl:NamedIndividual ,
+                                                        <http://cpwo.open.ac.uk/ontology/ohh#MessagingApp> .
+
+
+###  http://cpwo.open.ac.uk/ontology/ohh#YouTube
+<http://cpwo.open.ac.uk/ontology/ohh#YouTube> rdf:type owl:NamedIndividual ,
+                                                       <http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform> .
+
+
+###  https://purl.archive.org/cpwo/ontology/ooh#4chan
+<https://purl.archive.org/cpwo/ontology/ooh#4chan> rdf:type owl:NamedIndividual ,
+                                                            <http://cpwo.open.ac.uk/ontology/ohh#Forum> .
+
+
+###  https://purl.archive.org/cpwo/ontology/ooh#Twitter/X
+<https://purl.archive.org/cpwo/ontology/ooh#Twitter/X> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://cpwo.open.ac.uk/ontology/ohh#Bystander>
+                <http://cpwo.open.ac.uk/ontology/ohh#Perpetrator>
+                <https://purl.archive.org/cpwo/ontology/ooh#Target/Victim>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

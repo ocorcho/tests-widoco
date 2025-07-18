@@ -1,0 +1,1020 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#identifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bystander"
+    }, {
+      "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Perpetrator"
+    }, {
+      "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#hasMotivation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isObservedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bystander"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#resultsIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#hasTarget"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Perpetrator"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#occursOn"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#AIBasedDetection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Accountability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#AlgorithmicBias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Anxiety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bots",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Collective"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator"
+  }, {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget"
+  }, {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bumble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#DatingApp"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bystander",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#BystanderIntervention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialSupport"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CauseHumilliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CivilSocietyCampaigns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Collective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Individual"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CollectivePerpetrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Collective"
+  }, {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Perpetrator"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget"
+  }, {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CollectiveTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Collective"
+  }, {
+    "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ControlAndPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CulturalBeliefs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CulturalContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Cyberbullying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Cyberstalking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#DatingApp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Depression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#DigitalWithdrawal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Discord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Doxxing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#EducationAndAwarenessCampaigns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#EmploymentLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#EconomicImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#EnhancedContentModeration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Ethnicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Explainability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Facebook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialMedia"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Fairness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#FinancialGain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Forum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Primary class representing the legal concept of a criminal act. A crime requires both actus reus and mens rea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "actusReus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Harrassment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HateSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#IdeologicalMotivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ImageBasedAbuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ImprovedPrivacyDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ImprovedSecuritySetting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Individual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#IndividualBystander",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bystander"
+  }, {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Individual"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#IndividualPerpetrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Individual"
+  }, {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Perpetrator"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#IndividualTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Individual"
+  }, {
+    "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#InitiateViolence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Instagram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#International",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#InternationalFrameworks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Isolation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#LegalContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#LinkedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#LowerPerceptionOnlineSafety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#MessagingApp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Misogyny",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "mensRea"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OfflineSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineExploitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of harm or violence experienced or perpetrated through online or digital channels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Space"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineThreat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PSTD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Perpetrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PhysicalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineSpace"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PlatformPolicies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PolicyMeasures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PoliticalOrientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ProfessionalNetworks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#PsychologicalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Race",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Reddit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Forum"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Religion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ReportingTools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ReputationalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Revenge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SafetyTools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SexualOrientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialSupport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocietalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocioeconomicContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#StateSponsoredActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Collective"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SupportGroups",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#CommunityResponses"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TechnologicalContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TechnologicalSolutions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Telegram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#MessagingApp"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#TikTok",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Tinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#DatingApp"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Transparency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponsibleTechnologyDesign"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Twitch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#GamingPlatform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#UK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#VictimAdvocacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SocialSupport"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#WhatsApp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#MessagingApp"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#YouTube",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#VideoPlatform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#enforcedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#harmfulActMainName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#hasDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#hasIntent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#hasMotivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Motivation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#hasTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#identifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#SensitiveAttributes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isBasedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isCarriedOutBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#OnlineHarm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isInfluencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ContextualFactor"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isInvokedFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#LegalInterventions"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isMitigatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ResponseIntervention"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isObservedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bystander"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#observes"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isPerpetratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Perpetrator"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#isProhibitedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#ApplicableLegislation"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#observes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Bystander"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#occursOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Platform"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#otherNames",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ]
+}, {
+  "@id" : "http://cpwo.open.ac.uk/ontology/ohh#resultsIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#HarmfulAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Impact"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.archive.org/cpwo/ontology/ooh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "\"Morales Tirado, Alba\", \"Fernandez, Miriam\""
+  } ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@value" : "GPL-3.0 license"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ontology of Online Gender-based Harms"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "\"en\""
+  } ],
+  "http://purl.org/dc/terms/preferredNamespacePrefix" : [ {
+    "@value" : "ooh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The ontology aims to formalise and integrate diverse conceptualisations of online harms, grounded in empirical evidence, stakeholder engagement, and iterative feedback loops. Led by the Centre for Protecting Women Online (CPWO) it is developed on the grounds of a collaborative and coordinated work across domains and sectors, and provide a reusable resource for researchers, practitioners, and developers aiming to understand, detect, and prevent online gender-based harms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Ontology of Online Gender-based Harms"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cpwo/ontology/ooh#4chan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://cpwo.open.ac.uk/ontology/ohh#Forum"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Target/Victim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "https://purl.archive.org/cpwo/ontology/ooh#Twitter/X",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]
