@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-travelmotivation: <https://ontologia.segittur.es/turismo/kos/travelmotivation/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TravelMotivationType a skos:ConceptScheme ; 
+    dct:issued "2025-06-16"^^xsd:date ;
+    dct:modified "2025-06-16"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Travel Motivation Type"@en ;
+    rdfs:label "Tipo de motivo del viaje"@es ;
+    dct:title "Concept scheme grouping travel motivation types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de motivos de un viaje"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-travelmotivation:CultureAndHeritage a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Culture and Heritage"@en ;
+  skos:prefLabel "Cultura y patrimonio"@es .
+
+estur-travelmotivation:Nature a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Nature and Ecotourism"@en ;
+  skos:prefLabel "Naturaleza / Ecoturismo"@es .
+
+estur-travelmotivation:WineAndGastronomy a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Wine and Gastronomy"@en ;
+  skos:prefLabel "Vino y gastronomía"@es .
+
+estur-travelmotivation:WellnessAndHealth a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Wellness and Health"@en ;
+  skos:prefLabel "Bienestar y salud"@es .
+
+estur-travelmotivation:SportAndAdventure a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Sport and Adventure"@en ;
+  skos:prefLabel "Deporte y aventura"@es .
+
+estur-travelmotivation:EventsAndFestivals a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Events and Festivals"@en ;
+  skos:prefLabel "Eventos y festivales"@es .
+
+estur-travelmotivation:SunAndBeach a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Sun and Beach"@en ;
+  skos:prefLabel "Sol y playa"@es .
+
+estur-travelmotivation:Religious a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Religious"@en ;
+  skos:prefLabel "Religioso"@es .
+
+estur-travelmotivation:Shopping a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Shopping"@en ;
+  skos:prefLabel "Compras"@es .
+
+estur-travelmotivation:Nightlife a skos:Concept;
+  skos:inScheme estur-kos:TravelMotivationType;
+  skos:prefLabel "Nightlife"@en ;
+  skos:prefLabel "Ocio nocturno"@es .
+
+
+
+

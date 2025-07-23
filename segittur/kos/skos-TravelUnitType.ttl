@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-travelunit: <https://ontologia.segittur.es/turismo/kos/travelunit/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TravelUnitType a skos:ConceptScheme ; 
+    dct:issued "2025-07-16"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Travel Unit Type"@en ;
+    rdfs:label "Tipo de unidad de viaje"@es ;
+    dct:title "Concept scheme grouping travel unit types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de unidades de viaje"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-travelunit:Alone a skos:Concept;
+  skos:inScheme estur-kos:TravelUnitType;
+  skos:prefLabel "Alone"@en ;
+  skos:prefLabel "Sólo"@es .
+
+estur-travelunit:Couple a skos:Concept;
+  skos:inScheme estur-kos:TravelUnitType;
+  skos:prefLabel "Couple"@en ;
+  skos:prefLabel "Pareja"@es .
+
+estur-travelunit:FamilyAndKids a skos:Concept;
+  skos:inScheme estur-kos:TravelUnitType;
+  skos:prefLabel "Family and Kids"@en ;
+  skos:prefLabel "Familia con niños"@es .
+
+estur-travelunit:Group a skos:Concept;
+  skos:inScheme estur-kos:TravelUnitType;
+  skos:prefLabel "Group"@en ;
+  skos:prefLabel "Grupo"@es .
+

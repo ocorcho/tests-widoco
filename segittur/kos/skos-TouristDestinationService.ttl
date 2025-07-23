@@ -23,9 +23,9 @@ estur-kos:TouristDestinationServiceType a skos:ConceptScheme ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
     rdfs:label "Tourist Destination Service Type"@en ;
-    rdfs:label "Tipo de serviciodestinoturístico"@es ;
-    dct:title "Concept scheme grouping touristdestinationservice types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de serviciodestinoturístico"@es .
+    rdfs:label "Tipo de servicio de un destino turístico"@es ;
+    dct:title "Concept scheme grouping tourist destination service types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de servicio de un destino turístico"@es .
 
 #################################################################
 #
@@ -34,51 +34,51 @@ estur-kos:TouristDestinationServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-touristdestinationservice:DestinationApp a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Destination App"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "App de destino"@es .
 
 estur-touristdestinationservice:Event a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Event"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Evento"@es .
 
 estur-touristdestinationservice:Shop a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Shop"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Tienda"@es .
 
 estur-touristdestinationservice:TouristCard a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Tourist Card"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Tarjeta turística"@es .
 
 estur-touristdestinationservice:Travelogue a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Travelogue"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Travelogue"@es .
 
 estur-touristdestinationservice:VirtualAdvisor a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Virtual Advisor"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Asesor virtual"@es .
 
 estur-touristdestinationservice:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TouristdestinationserviceType;
+  skos:inScheme estur-kos:TouristDestinationServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wifi"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Wifi"@es .
 

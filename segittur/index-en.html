@@ -2,11 +2,21 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Modelo conceptual de referencia de turismo Segittur</title>
+
+<link rel="stylesheet" href="resources/primer.css" media="screen" />
+<link rel="stylesheet" href="resources/rec.css" media="screen" />
+<link rel="stylesheet" href="resources/extra.css" media="screen" />   
+<link rel="stylesheet" href="resources/owl.css" media="screen" />
+<link rel="stylesheet" href="resources/codemirror.css" media="screen">
+<script src="resources/codemirror.js"></script>
+<script src="resources/matchbrackets.js"></script>
+<script src="resources/turtle.js"></script>
+
+<title>Modelo conceptual de referencia de turismo SEGITTUR</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://ontologia.segittur.es/turismo/def/core#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ontologia.segittur.es/turismo/def/core#","name":"Modelo conceptual de referencia de turismo Segittur", "headline":"Este documento describe la ontología de dominio del sector turístico construida a partir del ‘Modelo Conceptual de Referencia Semántico de Turismo’ de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo.", "datePublished":"Date of release", "version":"v1.1.0", "license":"https://creativecommons.org/licenses/by/nc/nd/4.0/", "author":[{"@type":"Person","name":"SEGITTUR"}], "contributor":[{"@type":"Person","name":"lorem Ipsum"},{"@type":"Person","name":"lorem Ipsum"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://ontologia.segittur.es/turismo/def/core#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ontologia.segittur.es/turismo/def/core#","name":"Modelo conceptual de referencia de turismo Segittur", "headline":"Este documento describe la ontología de dominio del sector turístico construida a partir del ‘Modelo Conceptual de Referencia Semántico de Turismo’ de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo.", "datePublished":"2025-07-23", "version":"v1.1.2", "license":"https://creativecommons.org/licenses/by/nc/nd/4.0/", "author":[{"@type":"Person","name":"SEGITTUR"}], "contributor":[{"@type":"Person","name":"lorem Ipsum"},{"@type":"Person","name":"lorem Ipsum"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -59,8 +69,11 @@ function loadTOC(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
-<h1>Modelo conceptual de referencia de turismo Segittur</h1>
-<h2>Release Date of release</h2>
+
+<div style="overflow:hidden"><img style="float:center;max-width:100%;width:auto;height:auto;" src="images/logos-segittur.png"></div>
+
+<h1>SEGITTUR Reference Conceptual Model for Tourism</h1>
+<h2>Release v1.1.2 (2025-07-23)</h2>
 
 
 <dl>
@@ -69,7 +82,7 @@ function loadTOC(){
 <dt>Latest version:</dt>
 <dd><a href="https://ontologia.segittur.es/turismo/def/core#">https://ontologia.segittur.es/turismo/def/core#</a></dd>
 <dt>Revision:</dt>
-<dd>v1.1.0</dd>
+<dd>v1.1.2</dd>
 <dt>Authors:</dt>
 <dd>SEGITTUR, (<a href="https://www.segittur.es/">SEGITTUR</a>)</dd>
 
@@ -79,29 +92,35 @@ function loadTOC(){
 <dt>Publisher:</dt>
 <dd><a href="https://www.segittur.es/">SEGITTUR</a></dd>
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/nc/nd/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/nc/nd/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/nc/nd/4.0/" /></a>
-</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Modelo conceptual de referencia de turismo Segittur. Revision: v1.1.0.</dd>
+</dd>
+<dt>Browse SKOS concept schemes:</dt>
+<dd><span><a href="kos/skos-en.html" target="_blank"> <img src="https://img.shields.io/badge/Format-HTML-blue.svg" alt="SKOS" /></a></span></dd>
+<!--<dt>SHACL shapes:</dt>
+<dd><span><a href="shacl/shacl-core.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg"
+alt="SHACL Shapes TTL" /></a></span></dd>-->
+<dt>Cite as:</dt>
+<dd>SEGITTUR Reference Conceptual Model for Tourism. Revision: v1.1.2</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
-</div>
 <div class="status">
 <div>
 <span>Ontology Specification</span>
 </div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
+</div>     
+    <div id="abstract"></div>
+    <div id="toc"></div>     
+    <div id="introduction"></div>
+    <div id="overview"></div>
+    <div id="description"></div>
+    <div id="crossref"></div>
+    <div id="references"></div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
-
-
+</div>
 </div>
 </body>
 </html>

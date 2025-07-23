@@ -1,4 +1,289 @@
-<h2 id="desc" class="list">turismo: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="desc" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+<p>The main concept in this ontology is the <a href="#TourismEntity">Tourism Entity</a>. There are several subconcepts. First, three key subconcepts are: <a href="#TourismOrganisation">Tourism Organisation</a>, <a href="#TourismService">Tourism Service</a> and <a href="#TourismResource">Tourism Resource</a>, as shown in figure 1. In this figure we can see that organisations <a href="#offersService">offer tourism services</a>, and that these tourism services <a href="#usesResource">use tourism resources</a>. Anoter set of subconcepts are: <a href="#Event">Event</a>, <a href="#PublicService">Public Service</a>, <a href="#TouristDestination">Tourist Destination</a> and <a href="#TransportInfrastructure">Transport Infrastructure</a></p>
+
+<p><center><img src="images/fig1-General.png"/><figcaption>
+Figure 1. Top-level conceptual model, which represents the main class Tourism Entity, together with its subclasses, and applicable properties.</figcaption></center></p> 
+
+<p>There is a set of properties that are applicable to most of the instances of these concepts:</p>
+
+<ul>
+<li>Properties related to their more detailed descriptions (hasDescription, hasAdditionalInformation).<br></li>
+<li>Properties related to their category (hasAcknowledgement), which can be of type Rating, Label or Certification.<br></li>
+<li>Properties related to contact details and social networks (hasContactPoint, hasBookingChannel, hasSocialMediaProfile, hasMultimedia).<br></li>
+<li>Properties related to their location and availability (hasLocation, hasOpeningHours).<br></li>
+<li>Properties related to their prices (hasPriceInformation).<br></li>
+</ul>
+
+<p>All these properties have as a range a specific concept, with all of its related properties.</p>
+
+<p>Next we provide more details for some of these concepts (Tourism Organisation, Tourism Service and Tourism Resource) and their taxonomies, as well as examples in RDF for ficticious organisations, tourism services and tourism resources.</p>
+
+<p>Organisations are classified, as shown in figure 2, in four main categories: <a href="#PassengerTransportCompany">Passenger transport companies</a>, <a href="#TourGuide">Tour guides</a>, <a href="#TouristIntermediary">Tourist intermediaries</a> and <a href="#EventOrganisationCompany">Event organisation companies</a>. Passenger transport companies and tourist intermediaries are further divided into other subconcepts, as shown in figure 2.</p> 
+
+<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figure 2. Classification of Organisations.</figcaption></center></p>
+
+<!--<p>For some of these concepts there are specific properties applicable to them. For example, an <a href="#Airline">Airline</a> is related with the <a href="#Airplane">Airplanes</a> that it operates, to the types of traveller classes that it offers (expressed as a thesaurus <a href="https://ontologia.segittur.es/turismo/kos/TravellerClass">estur-kos:TravellerClass</a>) and to the additional services related to the airlines (also expressed as a thesaurus <a href="https://ontologia.segittur.es/turismo/kos/AirlineServiceType">estur-kos:AirlineServiceType</a>).</p> -->
+
+<p>Next we show an example in RDF, using the RDF Turtle notation, that describes a <a href="#BusOperator">Bus operator</a> that offers as an additional service the possibility of taking additional luggage. The company is located in the municipality of Galapagar, in the region of Madrid, and has a certification UNE 170001, several social network profiles, and an online reservation channel. The rest of properties applicable to an organisation would be also filled in similarly, if available.</p>
+
+<pre><textarea style="resize:none" readonly id="code1" name="code" rows="25" cols="100">
+@prefix ex: &lt;http://example.org/recurso/&gt; .
+@prefix estur: &lt;https://ontologia.segittur.es/turismo/def/core#&gt; .
+@prefix estur-busoperatorservice: &lt;https://ontologia.segittur.es/turismo/kos/busoperatorservice/&gt; .
+@prefix estur-socialmediaplatform: &lt;https://ontologia.segittur.es/turismo/kos/socialmediaplatform/&gt; .
+
+ex:OperadorBus1 a estur:BusOperator ;
+  dct:identifier "OperadorBus1" ;
+  rdfs:label "Operador de Autobuses 1" ;
+  estur:offersAdditionalBusOperatorService estur-busoperatorservice:AdditionalLuggage ;
+  estur:hasLocation ex:OperadorBus1Location ;
+  estur:hasAcknowledgement ex:certifUNE170001 ;
+  estur:hasSocialMediaProfile ex:OperadorBus1SocialMediaProfile1 ;
+  estur:hasSocialMediaProfile ex:OperadorBus1SocialMediaProfile2 ;
+  estur:hasBookingChannel ex:OperadorBus1Web .
+
+ex:certifUNE170001 a estur:Certification ;
+  rdfs:label "Certificación UNE 170001".
+  
+ex:OperadorBus1SocialMediaProfile1 a estur:SocialMediaProfile ;
+  rdfs:label "Perfil de Instagram del operador de autobús 1" ;
+  estur:socialMediaUser "operadorbus1-galapagar" ;
+  estur:socialMediaPlatform estur-socialmediaplatform:Instagram .
+
+ex:OperadorBus1SocialMediaProfile2 a estur:SocialMediaProfile ;
+  rdfs:label "Perfil de Facebook del operador de autobús 1" ;
+  estur:socialMediaUser "operadorbus1-galapag" ;
+  estur:socialMediaPlatform estur-socialmediaplatform:Facebook .
+
+ex:OperadorBus1Web a estur:BookingChannel ;
+  rdfs:label "Canales de contratación del operador de autobús 1" ;
+  estur:url "https://example.org/BusOperator1/compra" .
+</textarea></pre>
+    <script>
+      var editor1 = CodeMirror.fromTextArea(document.getElementById("code1"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+ 
+
+<p>In this context, we use the class <a href="#Location">Location</a> to describe the location of any resource, indicating not only the properties related to the postal address, but also its geometry in the <a href="http://www.opengis.net/ont/geosparql" target="_blank">GeoSPARQL</a> standard. The conceptual model that refers to this class is shown in figure 3, and next we show an example of its usage, connected to the previous example.</p>
+
+<p><center><img src="images/fig3-Location.png"/><figcaption>
+Figure 3. Conceptual model for the class Location</figcaption></center></p>
+
+<pre><textarea style="resize:none" readonly id="code2" name="code" rows="25" cols="100">
+@prefix geosparql: &lt;http://www.opengis.net/ont/geosparql#&gt; .
+@prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; .
+
+ex:OperadorBus1Location a estur:Location ;
+  rdfs:label "Localización del operador de autobuses 1" ;
+  estur:streetAddress "C/ Ejemplo, 1" ;
+  estur:city "Galapagar" ;
+  estur:autonomousCommunity "Madrid" ;
+  estur:country "España" ;
+  geosparql:hasGeometry ex:OperadorBus1LocationGeometry .
+  
+ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
+  rdfs:label "Posición geográfica de la sede del operador de autobuses 1" ;
+  geo:lat "40.574807"^^xsd:double ;
+  geo:long "-4.007874"^^xsd:double .
+</textarea></pre>
+    <script>
+      var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+
+<p><a href="#TourismService">Tourism Services</a> are classified, as shown in figure 4, as <a href="#AccommodationEstablishment">Accommodation Establishment</a>, <a href="#FoodEstablishment">Food Establishment</a>, <a href="#DestinationExperience">Destination Experiences</a>, <a href="#EventSession">Event Sessions</a>, <a href="#HolidayPackage">Holiday Packages</a>, <a href="Tour">Tours</a> and <a href="TouristDestinationService">Tourist Destination Services</a>. Several of these classes are further classified into other subclasses. </p>
+
+<p><center><img src="images/fig4-TourismService.png"/><figcaption>Figure 4. Classification of Tourism Services.</figcaption></center></p>
+
+<p>Next we show an example in RDF, using again the RDF Turtle notation, to describe an accommodation establishment (according to the model shown in figure 5 for accommodations). More specifically, it is a three-star hotel, with a medium price, with 98 rooms and a maximum capacity of 258 customers. It is located in Mérida and offers several additional services (restaurant and swimming pool), as well as four options for meal plans (accommodation only, bed an breakfast, half board and full board). In this and the following examples, we omit prefixes that have been already used. Other applicable properties would be included in a similar manner, if available.</p>
+
+<p><center><img src="images/fig5-Accomodation.png"/><figcaption>Figure 4. Conceptual model for Accommodation Establishment.</figcaption></center></p>
+
+<pre><textarea style="resize:none" readonly id="code3" name="code" rows="25" cols="100">
+@prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/priceclass/&gt; .
+@prefix estur-accommodationservice: &lt;https://ontologia.segittur.es/turismo/kos/accommodationservice/&gt; .
+@prefix estur-accommodationratetype: &lt;https://ontologia.segittur.es/turismo/kos/accomodationratetype/&gt; .
+
+ex:Hotel1 a estur:Hotel ;
+  rdfs:label "Hotel 1" ;
+  estur:numberOfBeds "258"^^xsd:int ;
+  estur:numberOfBeds "98"^^xsd:int ;
+  estur:checkinHours "15:00" ;
+  estur:checkoutHours "12:00" ;
+  estur:online "true"^^xsd:boolean ;
+  estur:accommodationRating ex:Hotel1Stars ;
+  estur:hasPriceClass estur-priceclass:MidRange ;
+  estur:offersAdditionalAccommodationService estur-accommodationservice:Restaurant ;
+  estur:offersAdditionalAccommodationService estur-accommodationservice:Pool ;
+  estur:offersAccommodationRateType estur-accommodationratetype:Accommodation ;
+  estur:offersAccommodationRateType estur-accommodationratetype:Breakfast ;
+  estur:offersAccommodationRateType estur-accommodationratetype:HalfBoard ;
+  estur:offersAccommodationRateType estur-accommodationratetype:FullBoard ;  
+  estur:hasLocation ex:Hotel11Location ;
+  estur:hasBookingChannel ex:Hotel1Web. 
+
+ex:Hotel1Stars a estur:Rating ;
+  estur:ratingValue "stars" ;
+  estur:ratingUnit "3".
+    
+estur:Hotel11Location a estur:Location ;
+  rdfs:label "Localización del hotel 1" ;
+  estur:streetAddress "C/ Ejemplo, 2" ;
+  estur:city "Mérida" ;
+  estur:autonomousCommunity "Extremadura" ;
+  estur:country "España".
+
+ex:Hotel1Web a estur:BookingChannel ;
+  rdfs:label "Canales de contratación del hotel 1" ;
+  estur:url "https://example.org/Hotel1/compra" ;
+  estur:url "https://example.org/CentralReservas1/".
+</textarea></pre>
+    <script>
+      var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+    
+<p><a href="#TourismResource">Tourism Resources</a> are organised in three main groups (as shown in figure 6): <a href="#HistoricalAndCulturalResource">Historical and Cultural Resources</a>, <a href="#Tour">Tours</a> and <a href="#NaturalResource">Natural Resources</a>. Each of these classes is further divided into other subclasses. </p>
+
+<p>There are also <a href="#TouristOrRelatedFacility">Tourist or Related Facilities</a> that are divided into <a href="#Educational Facility">Educational Facilities</a>, <a href="#EventAttendanceFacility">Event Attendance Facilities</a>, <a href="#HealthAndWellnessFacility">Health and Wellness Facilities</a>, <a href="LeisureAndCultureFacility">Leisure and Culture Facilities</a>, <a href="#PartyAndEntertainmentFacility">Party and Entertainment Facilities</a>, <a href="#SportFacility">Sport Facilities</a> and <a href="#LocalBusiness">Local Businesses</a>.</p>
+<p><center><img src="images/fig6-TourismResource.png"/><figcaption>Figure 6. Classification of Tourism Resources, Facilities and Transport Infrastructures.</figcaption></center></p>
+
+<p>Next we show an example in RDF, using the RDF Turtle notation, that describes a tourism resource, specifically a <a href="#CongressCentre">Congress Centre</a> located in Málaga, with capacity for 2000 persons, managed by an event agency, with several social network profiles, two types of opening hours during 2025 (one for weekdays and another one for weekends), and with additional services such as cloak room, accesses for disabled, event organisations and parking.</p>
+
+<pre><textarea style="resize:none" readonly id="code4" name="code" rows="25" cols="100">
+@prefix estur-eventattendanceservice: &lt;https://ontologia.segittur.es/turismo/kos/eventattendanceservice/&gt; .
+@prefix estur-touristorrelatedfacilityservice: &lt;https://ontologia.segittur.es/turismo/kos/touristorrelatedfacilityservice/&gt; .
+
+ex:CongressCentre1 a estur:CongressCentre ;
+  rdfs:label "Centro de congresos 1" ;
+  estur:hasLocation ex:CongressCentre1Location ;  
+  estur:capacity "2000"^^xsd:int ;
+  estur:hasSocialMediaProfile ex:CongressCentre1SocialMediaProfile ;
+  estur:hasOpeningHours ex:CongressCentre1OpeningHoursWeekday ;
+  estur:hasOpeningHours ex:CongressCentre1OpeningHoursWeekend ;
+  estur:offersAdditionalEventAttendanceService estur-eventattendanceservice:CloakRoom ;
+  estur:offersAdditionalTouristOrRelatedFacility estur-touristorrelatedfacilityservice:AccessForDisabled ; 
+  estur:offersAdditionalTouristOrRelatedFacility estur-touristorrelatedfacilityservice:Event ;
+  estur:offersAdditionalTouristOrRelatedFacility estur-touristorrelatedfacilityservice:ParkingFacility .
+  
+ex:CongressCentre1Location a estur:Location ;
+  rdfs:label "Localización del centro de congresos 1" ;
+  estur:streetAddress "C/ Ejemplo, 3" ;
+  estur:city "Málaga" ;
+  estur:autonomousCommunity "Andalucía" ;
+  estur:country "España".
+
+ex:CongressCentre1SocialMediaProfile a estur:SocialMediaProfile ;
+  rdfs:label "Perfil de Instagram del centro de congresos 1" ;
+  estur:socialMediaUser "centrocongresos1" ;
+  estur:socialMediaPlatform estur-socialmediaplatform:Instagram .
+
+ex:CongressCentre1OpeningHoursWeekday a estur:OpeningHours ;
+  rdfs:label "Horarios de apertura en días de diario del Centro de Congresos 1" ;
+  estur:validFrom "2025-01-01"^^xsd:date ;
+  estur:validTo "2025-12-31"^^xsd:date ;
+  estur:opensAt "09:00" ;
+  estur:closesAt "20:00" ;
+  estur:dayOfTheWeek estur:monday, estur:tuesday, estur:wednesday, estur:thursday, estur:friday .
+
+ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
+  rdfs:label "Horarios de apertura en días de fin de semana del Centro de Congresos 1" ;
+  estur:validFrom "2025-01-01"^^xsd:date ;
+  estur:validTo "2025-12-31"^^xsd:date ;
+  estur:opensAt "10:00" ;
+  estur:closesAt "22:00" ;
+  estur:dayOfTheWeek estur:saturday, estur:sunday .
+</textarea></pre>
+    <script>
+      var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+    
+<p>Next we include some additional examples that are relevant in this reference conceptual model.</p> 
+
+<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events are organised by <a href="#EventOrganisationCompany">Event organisation companies</a>, which have a set of applicable properties, such as who is performing in the event, whether it is an open air event or not, the maximum capacity, and the range of dates when it is available. Furthermore, events can have associated <a href="#EventSession">Sessions</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism services. Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
+
+<p><center><img src="images/fig7-Event.png"/><figcaption>Figure 7. Conceptual model for Events.</figcaption></center></p>
+
+<pre><textarea style="resize:none" readonly id="code5" name="code" rows="25" cols="100">
+@prefix estur-event: &lt;https://ontologia.segittur.es/turismo/kos/event/&gt; .
+@prefix estur-eventservice: &lt;https://ontologia.segittur.es/turismo/kos/eventservice/&gt; .
+
+ex:Event1 a estur:Event ;
+  rdfs:label "Evento 1" ;
+  estur:outdoorEvent "false"^^xsd:boolean ;
+  estur:maximumAttendeeCapacity "1500"^^xsd:int ;
+  estur:availabilityStarts "2024-12-07"^^xsd:date ;
+  estur:availabilityEnds "2025-01-31"^^xsd:date ;
+  estur:eventSession ex:Event1Session1, ex:Event1Session2 ;
+  estur:eventType estur-event:Music ;
+  estur:offersAdditionalEventService estur-eventservice:Lockers ;
+  estur:containedIn ex:Event2 ;
+  estur:offeredBy ex:CongressCentre1 .
+  
+ex:Event2 a estur:Event ;
+  rdfs:label "Evento 2 - semana cultural" .
+  
+ex:Event1Session1 a estur:EventSession ;
+  rdfs:label "Sesión 1 del Evento 1" ;
+  estur:sessionDate "2025-03-24"^^xsd:date ;
+  estur:startsAt "20:30" ;
+  estur:endsAt "22:30" .
+
+ex:Event1Session1 a estur:EventSession ;
+  rdfs:label "Sesión 2 del Evento 1" ;
+  estur:sessionDate "2025-03-25"^^xsd:date ;
+  estur:startsAt "20:30" ;
+  estur:endsAt "22:30" .
+</textarea></pre>
+    <script>
+      var editor5 = CodeMirror.fromTextArea(document.getElementById("code5"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+    
+<!--<p>Finally, we provide an example related with a <a href="#Person">Person</a>. A 47 years-old woman from a city in Germany, who travels as a <a href="#Tourist">Tourist</a> using a plane and a rental car, as part of a holiday package. Some additional characteristics of this person in this role follow the conceptual model shown in figure 8.</p>
+
+<p><center><img src="images/fig8-Persons.png"/><figcaption>Figure 8. Conceptual model for Persons and their Roles.</figcaption></center></p>
+
+<pre><textarea style="resize:none" readonly id="code6" name="code" rows="25" cols="100">
+@prefix estur-meansoftransport: &lt;https://ontologia.segittur.es/turismo/kos/meansoftransport/&gt; .
+@prefix estur-educationlevel: &lt;https://ontologia.segittur.es/turismo/kos/educationlevel/&gt; .
+@prefix estur-professionalposition: &lt;https://ontologia.segittur.es/turismo/kos/professionalposition/&gt; .
+
+ex:Person1 a estur:Person ;
+  rdfs:label "Persona 1" ;
+  estur:age "47"^^xsd:int ;
+  estur:gender Woman ;
+  estur:originLocation ex:Location2 ;
+  estur:educationalLevel estur-educationlevel:University ;
+  estur:professionalPosition estur-professionalposition:SelfEmployed ;
+  estur:hasPersonRole ex:TouristRole1 .
+  
+ex:TouristRole1 a estur:Tourist ;
+  rdfs:label "Rol de la persona 1 como turista" ;
+  estur:hiresTourPackage "true"^^xsd:boolean;
+  estur:meansOfTransport estur-meansoftransport:Plane, estur-meansoftransport:RentalCar ;
+  estur:averageDailyExpenditure "300"^^xsd:float .
+</textarea></pre>
+    <script>
+      var editor6 = CodeMirror.fromTextArea(document.getElementById("code6"), {
+        mode: "text/turtle",
+        matchBrackets: true
+      });
+ </script>
+-->
+    
+</span>
 
