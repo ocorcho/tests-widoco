@@ -9,7 +9,7 @@
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://ontologia.segittur.es/turismo/def/core#>;
-	 prov:wasGeneratedAt "2025-08-14";
+	 prov:wasGeneratedAt "2025-08-25";
 .
 :agent0 a prov:Agent; foaf:name "SEGITTUR".
 :agent1 a prov:Agent; foaf:name "lorem Ipsum".
