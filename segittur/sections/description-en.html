@@ -19,9 +19,9 @@ Figure 1. Top-level conceptual model, which represents the main class Tourism En
 
 <p>Next we provide more details for some of these concepts (Tourism Organisation, Tourism Service and Tourism Resource) and their taxonomies, as well as examples in RDF for ficticious organisations, tourism services and tourism resources.</p>
 
-<p>Organisations are classified, as shown in figure 2, in four main categories: <a href="#PassengerTransportCompany">Passenger transport companies</a>, <a href="#TourGuide">Tour guides</a>, <a href="#TouristIntermediary">Tourist intermediaries</a> and <a href="#EventOrganisationCompany">Event organisation companies</a>. Passenger transport companies and tourist intermediaries are further divided into other subconcepts, as shown in figure 2.</p> 
+<p>Organisations are classified, as shown in figure 2, in seven main classes: organisations that offer <a href="#Accommodation">Accommodation</a> services, <a href="#PassengerTransportCompany">Passenger transport companies</a>, organisations that offer <a href="#RestaurantService">Restaurant Services</a>, <a href="#TourGuide">Tour guides</a>, <a href="#TouristIntermediary">Tourism intermediaries</a>, <a href="#EventOrganisationCompany">Event organisation companies</a> and <a href="#ComplementaryActivitiesCompany">Complementary activities companies</a>. Passenger transport companies and tourist intermediaries are further divided into other subconcepts, as shown in figure 2.</p> 
 
-<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figure 2. Classification of Organisations.</figcaption></center></p>
+<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figure 2. Classification of Tourism Organisations.</figcaption></center></p>
 
 <!--<p>For some of these concepts there are specific properties applicable to them. For example, an <a href="#Airline">Airline</a> is related with the <a href="#Airplane">Airplanes</a> that it operates, to the types of traveller classes that it offers (expressed as a thesaurus <a href="https://ontologia.segittur.es/turismo/kos/TravellerClass">estur-kos:TravellerClass</a>) and to the additional services related to the airlines (also expressed as a thesaurus <a href="https://ontologia.segittur.es/turismo/kos/AirlineServiceType">estur-kos:AirlineServiceType</a>).</p> -->
 
@@ -44,20 +44,20 @@ ex:OperadorBus1 a estur:BusOperator ;
   estur:hasBookingChannel ex:OperadorBus1Web .
 
 ex:certifUNE170001 a estur:Certification ;
-  rdfs:label "Certificación UNE 170001".
+  rdfs:label "UNE Certification 170001".
   
 ex:OperadorBus1SocialMediaProfile1 a estur:SocialMediaProfile ;
-  rdfs:label "Perfil de Instagram del operador de autobús 1" ;
+  rdfs:label "Instagram profile of bus operator 1" ;
   estur:socialMediaUser "operadorbus1-galapagar" ;
   estur:socialMediaPlatform estur-socialmediaplatform:Instagram .
 
 ex:OperadorBus1SocialMediaProfile2 a estur:SocialMediaProfile ;
-  rdfs:label "Perfil de Facebook del operador de autobús 1" ;
+  rdfs:label "Facebook profile of bus operator 1" ;
   estur:socialMediaUser "operadorbus1-galapag" ;
   estur:socialMediaPlatform estur-socialmediaplatform:Facebook .
 
 ex:OperadorBus1Web a estur:BookingChannel ;
-  rdfs:label "Canales de contratación del operador de autobús 1" ;
+  rdfs:label "Booking channel for bus operator 1" ;
   estur:url "https://example.org/BusOperator1/compra" .
 </textarea></pre>
     <script>
@@ -97,7 +97,7 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
       });
  </script>
 
-<p><a href="#TourismService">Tourism Services</a> are classified, as shown in figure 4, as <a href="#AccommodationEstablishment">Accommodation Establishment</a>, <a href="#FoodEstablishment">Food Establishment</a>, <a href="#DestinationExperience">Destination Experiences</a>, <a href="#EventSession">Event Sessions</a>, <a href="#HolidayPackage">Holiday Packages</a>, <a href="Tour">Tours</a> and <a href="TouristDestinationService">Tourist Destination Services</a>. Several of these classes are further classified into other subclasses. </p>
+<p><a href="#TourismService">Tourism Services</a> are classified, as shown in figure 4, as <a href="#DestinationExperience">Destination Experiences</a>, which can be further classified as <a href="#SingularExperience">Singular Experiences</a>, <a href="#AgritourismExperience">Agritourism Experiences</a>, <a href="#HolidayPackage">Holiday Packages</a> and <a href="Tour">Tours</a>.</p>
 
 <p><center><img src="images/fig4-TourismService.png"/><figcaption>Figure 4. Classification of Tourism Services.</figcaption></center></p>
 
@@ -151,9 +151,9 @@ ex:Hotel1Web a estur:BookingChannel ;
       });
  </script>
     
-<p><a href="#TourismResource">Tourism Resources</a> are organised in three main groups (as shown in figure 6): <a href="#HistoricalAndCulturalResource">Historical and Cultural Resources</a>, <a href="#Tour">Tours</a> and <a href="#NaturalResource">Natural Resources</a>. Each of these classes is further divided into other subclasses. </p>
+<p><a href="#TourismResource">Tourism Resources</a> are organised in four main classes (as shown in figure 6): <a href="#HistoricalAndCulturalResource">Historical and Cultural Resources</a>, <a href="#Route">Routes</a>, <a href="#NaturalResource">Natural Resources</a> and <a href="#GastronomicResource">Gastronomic Resources</a>. Each of these classes is further divided into other subclasses. </p>
 
-<p>There are also <a href="#TouristOrRelatedFacility">Tourist or Related Facilities</a> that are divided into <a href="#Educational Facility">Educational Facilities</a>, <a href="#EventAttendanceFacility">Event Attendance Facilities</a>, <a href="#HealthAndWellnessFacility">Health and Wellness Facilities</a>, <a href="LeisureAndCultureFacility">Leisure and Culture Facilities</a>, <a href="#PartyAndEntertainmentFacility">Party and Entertainment Facilities</a>, <a href="#SportFacility">Sport Facilities</a> and <a href="#LocalBusiness">Local Businesses</a>.</p>
+<p>There are also <a href="#TourismOrRelatedFacility">Tourism or Related Facilities</a> that are divided into <a href="#AccommodationEstablishment">Accommodation Establishments</a>, <a href="#FoodEstablishment">Food Establishments</a>, <a href="#AgrotourismFacility">Agrotourism Facilities</a>, <a href="#EducationalFacility">Educational Facilities</a>, <a href="#EventAttendanceFacility">Event Attendance Facilities</a>, <a href="#HealthAndWellnessFacility">Health and Wellness Facilities</a>, <a href="#LeisureAndCultureFacility">Leisure and Culture Facilities</a>, <a href="#PartyAndEntertainmentFacility">Party and Entertainment Facilities</a>, <a href="#SportFacility">Sport Facilities</a> and <a href="#LocalBusiness">Local Businesses</a>.</p>
 <p><center><img src="images/fig6-TourismResource.png"/><figcaption>Figure 6. Classification of Tourism Resources, Facilities and Transport Infrastructures.</figcaption></center></p>
 
 <p>Next we show an example in RDF, using the RDF Turtle notation, that describes a tourism resource, specifically a <a href="#CongressCentre">Congress Centre</a> located in Málaga, with capacity for 2000 persons, managed by an event agency, with several social network profiles, two types of opening hours during 2025 (one for weekdays and another one for weekends), and with additional services such as cloak room, accesses for disabled, event organisations and parking.</p>
@@ -211,7 +211,7 @@ ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
     
 <p>Next we include some additional examples that are relevant in this reference conceptual model.</p> 
 
-<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events are organised by <a href="#EventOrganisationCompany">Event organisation companies</a>, which have a set of applicable properties, such as who is performing in the event, whether it is an open air event or not, the maximum capacity, and the range of dates when it is available. Furthermore, events can have associated <a href="#EventSession">Sessions</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism services. Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
+<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events are organised by <a href="#EventOrganisationCompany">Event organisation companies</a>, which have a set of applicable properties, such as who is performing in the event, whether it is an open air event or not, the maximum capacity, and the range of dates when it is available. Furthermore, events can have associated <a href="#subEvent">sub events</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism services. Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
 
 <p><center><img src="images/fig7-Event.png"/><figcaption>Figure 7. Conceptual model for Events.</figcaption></center></p>
 
@@ -220,29 +220,29 @@ ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
 @prefix estur-eventservice: &lt;https://ontologia.segittur.es/turismo/kos/eventservice/&gt; .
 
 ex:Event1 a estur:Event ;
-  rdfs:label "Evento 1" ;
+  rdfs:label "Event 1" ;
   estur:outdoorEvent "false"^^xsd:boolean ;
   estur:maximumAttendeeCapacity "1500"^^xsd:int ;
   estur:availabilityStarts "2024-12-07"^^xsd:date ;
   estur:availabilityEnds "2025-01-31"^^xsd:date ;
-  estur:eventSession ex:Event1Session1, ex:Event1Session2 ;
+  estur:subEvent ex:Event1Session1, ex:Event1Session2 ;
   estur:eventType estur-event:Music ;
   estur:offersAdditionalEventService estur-eventservice:Lockers ;
   estur:containedIn ex:Event2 ;
   estur:offeredBy ex:CongressCentre1 .
   
 ex:Event2 a estur:Event ;
-  rdfs:label "Evento 2 - semana cultural" .
+  rdfs:label "Event 2 - cultural week" .
   
-ex:Event1Session1 a estur:EventSession ;
-  rdfs:label "Sesión 1 del Evento 1" ;
-  estur:sessionDate "2025-03-24"^^xsd:date ;
+ex:Event1Session1 a estur:Event ;
+  rdfs:label "Session 1 of Event 1" ;
+  estur:eventDate "2025-03-24"^^xsd:date ;
   estur:startsAt "20:30" ;
   estur:endsAt "22:30" .
 
 ex:Event1Session1 a estur:EventSession ;
-  rdfs:label "Sesión 2 del Evento 1" ;
-  estur:sessionDate "2025-03-25"^^xsd:date ;
+  rdfs:label "Session 2 of Evento 2" ;
+  estur:eventDate "2025-03-25"^^xsd:date ;
   estur:startsAt "20:30" ;
   estur:endsAt "22:30" .
 </textarea></pre>

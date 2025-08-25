@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-itinerarymodality: <https://ontologia.segittur.es/turismo/kos/itinerarymodality/> .
+@prefix estur-locomotionmode: <https://ontologia.segittur.es/turismo/kos/locomotionmode/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:ItineraryModality a skos:ConceptScheme ; 
+estur-kos:LocomotionMode a skos:ConceptScheme ; 
     dct:issued "2024-07-23"^^xsd:date ;
-    dct:modified "2024-07-23"^^xsd:date ;
+    dct:modified "2025-08-18"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Itinerary modality"@en ;
-    rdfs:label "Modalidad de itinerario"@es ;
-    dct:title "Concept scheme grouping itinerary modalities"@en ;
-    dct:title "Esquema de conceptos agrupando modalidades de itinerario"@es .
+    rdfs:label "Locomotion mode"@en ;
+    rdfs:label "Modalidad de locomoción"@es ;
+    dct:title "Concept scheme grouping locomotion modes"@en ;
+    dct:title "Esquema de conceptos agrupando modalidades de locomoción"@es .
 
 #################################################################
 #
@@ -33,22 +33,22 @@ estur-kos:ItineraryModality a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-itinerarymodality:OnFoot a skos:Concept;
-  skos:inScheme estur-kos:ItineraryModality;
+estur-locomotionmode:OnFoot a skos:Concept;
+  skos:inScheme estur-kos:LocomotionMode;
   skos:prefLabel "On foot"@en ;
   skos:prefLabel "A pie"@es .
 
-estur-itinerarymodality:ByBicycle a skos:Concept;
-  skos:inScheme estur-kos:ItineraryModality;
+estur-locomotionmode:ByBicycle a skos:Concept;
+  skos:inScheme estur-kos:LocomotionMode;
   skos:prefLabel "By bicycle"@en ;
   skos:prefLabel "En bicicleta"@es .
 
-estur-itinerarymodality:OnHorseback a skos:Concept;
-  skos:inScheme estur-kos:ItineraryModality;
+estur-locomotionmode:OnHorseback a skos:Concept;
+  skos:inScheme estur-kos:LocomotionMode;
   skos:prefLabel "On horseback"@en ;
   skos:prefLabel "A caballo"@es .
 
-estur-itinerarymodality:ByCar a skos:Concept;
-  skos:inScheme estur-kos:ItineraryModality;
+estur-locomotionmode:ByCar a skos:Concept;
+  skos:inScheme estur-kos:LocomotionMode;
   skos:prefLabel "By car"@en ;
   skos:prefLabel "En coche"@es .
