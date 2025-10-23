@@ -8,9 +8,9 @@ Figure 1. Top-level conceptual model, which represents the main class Tourism En
 <p>There is a set of properties that are applicable to most of the instances of these concepts:</p>
 
 <ul>
-<li>Properties related to their more detailed descriptions (hasDescription, hasAdditionalInformation).<br></li>
-<li>Properties related to their category (hasAcknowledgement), which can be of type Rating, Label or Certification.<br></li>
-<li>Properties related to contact details and social networks (hasContactPoint, hasBookingChannel, hasSocialMediaProfile, hasMultimedia).<br></li>
+<li>Properties related to their more detailed descriptions or additional multimedia resources (hasDescription, hasAdditionalInformation, hasMultimedia).<br></li>
+<li>Properties related to their ratings, labels or certifications (hasAcknowledgement).<br></li>
+<li>Properties related to contact details and social networks (hasContactPoint, hasBookingChannel, hasSocialMediaProfile).<br></li>
 <li>Properties related to their location and availability (hasLocation, hasOpeningHours).<br></li>
 <li>Properties related to their prices (hasPriceInformation).<br></li>
 </ul>
@@ -103,7 +103,7 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 
 <p>Next we show an example in RDF, using again the RDF Turtle notation, to describe an accommodation establishment (according to the model shown in figure 5 for accommodations). More specifically, it is a three-star hotel, with a medium price, with 98 rooms and a maximum capacity of 258 customers. It is located in Mérida and offers several additional services (restaurant and swimming pool), as well as four options for meal plans (accommodation only, bed an breakfast, half board and full board). In this and the following examples, we omit prefixes that have been already used. Other applicable properties would be included in a similar manner, if available.</p>
 
-<p><center><img src="images/fig5-Accomodation.png"/><figcaption>Figure 4. Conceptual model for Accommodation Establishment.</figcaption></center></p>
+<p><center><img src="images/fig5-Accommodation.png"/><figcaption>Figure 4. Conceptual model for Accommodation Establishment.</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code3" name="code" rows="25" cols="100">
 @prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/priceclass/&gt; .
@@ -113,10 +113,10 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 ex:Hotel1 a estur:Hotel ;
   rdfs:label "Hotel 1" ;
   estur:numberOfBeds "258"^^xsd:int ;
-  estur:numberOfBeds "98"^^xsd:int ;
+  estur:numberOfAccommodationUnits "98"^^xsd:int ;
   estur:checkinHours "15:00" ;
   estur:checkoutHours "12:00" ;
-  estur:online "true"^^xsd:boolean ;
+  estur:autonomousCheckIn "true"^^xsd:boolean ;
   estur:accommodationRating ex:Hotel1Stars ;
   estur:hasPriceClass estur-priceclass:MidRange ;
   estur:offersAdditionalAccommodationService estur-accommodationservice:Restaurant ;
@@ -151,10 +151,10 @@ ex:Hotel1Web a estur:BookingChannel ;
       });
  </script>
     
-<p><a href="#TourismResource">Tourism Resources</a> are organised in four main classes (as shown in figure 6): <a href="#HistoricalAndCulturalResource">Historical and Cultural Resources</a>, <a href="#Route">Routes</a>, <a href="#NaturalResource">Natural Resources</a> and <a href="#GastronomicResource">Gastronomic Resources</a>. Each of these classes is further divided into other subclasses. </p>
-
-<p>There are also <a href="#TourismOrRelatedFacility">Tourism or Related Facilities</a> that are divided into <a href="#AccommodationEstablishment">Accommodation Establishments</a>, <a href="#FoodEstablishment">Food Establishments</a>, <a href="#AgrotourismFacility">Agrotourism Facilities</a>, <a href="#EducationalFacility">Educational Facilities</a>, <a href="#EventAttendanceFacility">Event Attendance Facilities</a>, <a href="#HealthAndWellnessFacility">Health and Wellness Facilities</a>, <a href="#LeisureAndCultureFacility">Leisure and Culture Facilities</a>, <a href="#PartyAndEntertainmentFacility">Party and Entertainment Facilities</a>, <a href="#SportFacility">Sport Facilities</a> and <a href="#LocalBusiness">Local Businesses</a>.</p>
-<p><center><img src="images/fig6-TourismResource.png"/><figcaption>Figure 6. Classification of Tourism Resources, Facilities and Transport Infrastructures.</figcaption></center></p>
+<p><a href="#Place">Places</a> are organised in seven main classes (as shown in figure 6): <a href="#TourismDestination">Tourism Destinations</a>,<a href="#TourismOrRelatedFacility">Tourism or related Facilities</a>, <a href="#HistoricalAndCulturalResource">Historical and Cultural Resources</a>, <a href="#NaturalResource">Natural Resources</a>, <a href="#Route">Routes</a>, <a href="#PublicService">Public Services</a> and <a href="#TransportInfrastructure">Transport Infrastructures</a>. Each of these classes is further divided into other subclasses. </p>
+    
+<p>For example, <a href="#TourismOrRelatedFacility">Tourism or Related Facilities</a> are divided into <a href="#AgrotourismFacility">Agrotourism Facilities</a>, <a href="#AccommodationEstablishment">Accommodation Establishments</a>, <a href="#FoodEstablishment">Food Establishments</a>, <a href="#EducationalFacility">Educational Facilities</a>, <a href="#EventAttendanceFacility">Event Attendance Facilities</a>, <a href="#HealthAndWellnessFacility">Health and Wellness Facilities</a>, <a href="#LeisureAndCultureFacility">Leisure and Culture Facilities</a>, <a href="#PartyAndEntertainmentFacility">Party and Entertainment Facilities</a>, <a href="#SportFacility">Sport Facilities</a> and <a href="#LocalBusiness">Local Businesses</a>.</p>
+<p><center><img src="images/fig6-Place.png"/><figcaption>Figure 6. Classification of Places.</figcaption></center></p>
 
 <p>Next we show an example in RDF, using the RDF Turtle notation, that describes a tourism resource, specifically a <a href="#CongressCentre">Congress Centre</a> located in Málaga, with capacity for 2000 persons, managed by an event agency, with several social network profiles, two types of opening hours during 2025 (one for weekdays and another one for weekends), and with additional services such as cloak room, accesses for disabled, event organisations and parking.</p>
 
@@ -211,7 +211,8 @@ ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
     
 <p>Next we include some additional examples that are relevant in this reference conceptual model.</p> 
 
-<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events are organised by <a href="#EventOrganisationCompany">Event organisation companies</a>, which have a set of applicable properties, such as who is performing in the event, whether it is an open air event or not, the maximum capacity, and the range of dates when it is available. Furthermore, events can have associated <a href="#subEvent">sub events</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism services. Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
+<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events may be organised by <a href="#TourismOrganisation">Tourism Organisations</a> or <a href="#TourismDestinations">Tourism Destinations</a>. They have a set of applicable properties, such as the type of event, additional services, whether it is an outdoor event or not, the maximum capacity, and the dates when it is available. Furthermore, events have a <a href="#Schedule">Schedule</a> and an <a href="#Agenda">Agenda</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism entities. </p>
+<!--<p>Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
 
 <p><center><img src="images/fig7-Event.png"/><figcaption>Figure 7. Conceptual model for Events.</figcaption></center></p>
 
@@ -252,7 +253,7 @@ ex:Event1Session1 a estur:EventSession ;
         matchBrackets: true
       });
  </script>
-    
+-->    
 <!--<p>Finally, we provide an example related with a <a href="#Person">Person</a>. A 47 years-old woman from a city in Germany, who travels as a <a href="#Tourist">Tourist</a> using a plane and a rental car, as part of a holiday package. Some additional characteristics of this person in this role follow the conceptual model shown in figure 8.</p>
 
 <p><center><img src="images/fig8-Persons.png"/><figcaption>Figure 8. Conceptual model for Persons and their Roles.</figcaption></center></p>

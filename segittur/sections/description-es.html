@@ -9,17 +9,16 @@ Figura 1. Modelo conceptual general, representando Organizaciones, Servicios Tur
 <p>Hay un conjunto de propiedades que son aplicables a las instancias de estos tres conceptos:</p>
 
 <ul>
-<li>Propiedades relacionadas con sus descripciones más detalladas (hasDescription, hasAdditionalInformation).<br></li>
-<li>Propiedades relacionadas con la categoría de las organizaciones, servicios y recursos (hasAcknowledgement), que pueden ser de tipo Rating, Label o Certification.<br></li>
-<li>Propiedades relacionadas con datos de contacto y de redes sociales (hasContactInfo, hasSocialMediaProfile, hasMultimedia).<br></li>
-<li>Propiedades relacionadas con localización y disponibilidad (hasLocation, hasOpeningHours, hasTemporaryClosure).<br></li>
-<li>Propiedades relacionadas con reservas y sus precios (hasBookingChannel, hasBookingInformation, hasPriceInformation).<br></li>
-<li>Propiedades relacionadas con transacciones y pagos (hasTransactionInformation, hasPaymentInformation).<br></li>
+<li>Propiedades relacionadas con sus descripciones más detalladas o recursos multimedia adicionales (hasDescription, hasAdditionalInformation, hasMultimedia).<br></li>
+<li>Propiedades relacionadas con certificaciones, puntuaciones y distintivos de las entidades (hasAcknowledgement).<br></li>
+<li>Propiedades relacionadas con datos de contacto y de redes sociales (hasContactPoint, hasBookingChannel, hasSocialMediaProfile).<br></li>
+<li>Propiedades relacionadas con localización y disponibilidad (hasLocation, hasOpeningHours).<br></li>
+<li>Propiedades relacionadas con sus precios (hasPriceInformation).<br></li>
 </ul>
 
 <p>Todas estas propiedades tienen como rango un concepto específico para cada una de ellas, con sus propiedades correspondientes.</p>
 
-<p>A continuación se ofrecerán más detalles para cada uno de estos conceptos (Organización, Servicio turístico y Recurso turístico) y sus jerarquías, así como ejemplos en RDF asociados a una organización, un servicio turístico y un recurso turístico imaginarios.</p>
+<p>A continuación se ofrecerán más detalles sobre algunos de estos conceptos (Organización, Servicio turístico y Recurso turístico) y sus jerarquías, así como ejemplos en RDF asociados a una organización, un servicio turístico y un recurso turístico imaginarios.</p>
 
 <p>Comenzando con las organizaciones, estas están clasificadas, tal y como se muestra en la figura 2, en siete clases principales: organizaciones que ofrecen servicios de <a href="#Accommodation">Alojamiento</a>, <a href="#PassengerTransportCompany">Compañías de transporte de pasajeros</a>, organizaciones que ofrecen <a href="#RestaurantService">Servicios de restauración</a>, <a href="#TourGuide">Guías turísticos</a>, <a href="#TouristIntermediary">Intermediarios turísticos</a> y <a href="#EventOrganisationCompany">Empresas de organización de eventos</a> y <a href="#ComplementaryActivitiesCompany">Empresas de actividades complementarias</a>. Tanto las compañías de transporte de pasajeros como los intermediarios turísticos están subclasificados en otros conceptos, como también se puede ver en la figura 2.</p>  
 
@@ -102,52 +101,37 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 
 <p><center><img src="images/fig4-TourismService.png"/><figcaption>Figura 4. Clasificación de Servicios Turísticos.</figcaption></center></p>
 
-<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe un tipo de servicio de alojamiento (de acuerdo con el modelo que presenta la figura 5 para alojamientos), específicamente un hotel de tres estrellas de precio medio, con 98 habitaciones (8 individuales, 20 dobles y 70 triples) y una capacidad máxima para 258 clientes, localizado en Mérida y que ofrece algunos servicios adicionales (restaurante y piscina), así como cuatro opciones de alojamiento (sólo alojamiento, alojamiento y desayuno, media pensión y pensión completa). Se omiten los prefijos que ya han sido utilizados con anterioridad en otros ejemplos. Como en el caso anterior, otras propiedades aplicables se incluirían de manera similar a las utilizadas como ejemplo.</p>
+<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe un tipo de servicio de alojamiento (de acuerdo con el modelo que presenta la figura 4 para alojamientos), específicamente un hotel de tres estrellas de precio medio, con 98 habitaciones y una capacidad máxima para 258 clientes. El hotel está localizado en Mérida y ofrece algunos servicios adicionales (restaurante y piscina), así como cuatro opciones de alojamiento (sólo alojamiento, alojamiento y desayuno, media pensión y pensión completa). Se omiten los prefijos que ya han sido utilizados con anterioridad en otros ejemplos. Como en el caso anterior, otras propiedades aplicables se incluirían de manera similar a las utilizadas como ejemplo.</p>
 
-<p><center><img src="images/fig5-Accomodation.png"/><figcaption>Figura 5. Modelo conceptual de los Alojamientos.</figcaption></center></p>
+<p><center><img src="images/fig5-Accommodation.png"/><figcaption>Figura 4. Modelo conceptual de los Establecimientos alojativos.</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code3" name="code" rows="25" cols="100">
 @prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/priceclass/&gt; .
 @prefix estur-accommodationservice: &lt;https://ontologia.segittur.es/turismo/kos/accommodationservice/&gt; .
-@prefix estur-roomtype: &lt;https://ontologia.segittur.es/turismo/kos/roomtype/&gt; .
-@prefix estur-mealplan: &lt;https://ontologia.segittur.es/turismo/kos/mealplan/&gt; .
+@prefix estur-accommodationratetype: &lt;https://ontologia.segittur.es/turismo/kos/accomodationratetype/&gt; .
 
 ex:Hotel1 a estur:Hotel ;
   rdfs:label "Hotel 1" ;
-  estur:stars "4" ;
+  estur:numberOfBeds "258"^^xsd:int ;
+  estur:numberOfAccommodationUnits "98"^^xsd:int ;
+  estur:checkinHours "15:00" ;
+  estur:checkoutHours "12:00" ;
+  estur:autonomousCheckIn "true"^^xsd:boolean ;
+  estur:accommodationRating ex:Hotel1Stars ;
   estur:hasPriceClass estur-priceclass:MidRange ;
-  estur:accommodationCapacity ex:Hotel1AccommodationCapacity ;
   estur:offersAdditionalAccommodationService estur-accommodationservice:Restaurant ;
   estur:offersAdditionalAccommodationService estur-accommodationservice:Pool ;
-  estur:offersRoom ex:Hotel1SingleRoom ;
-  estur:offersRoom ex:Hotel1DoubleRoom ;
-  estur:offersRoom ex:Hotel1TripleRoom ;
-  estur:offersMealPlan estur-mealplan:Accommodation ;
-  estur:offersMealPlan estur-mealplan:Breakfast ;
-  estur:offersMealPlan estur-mealplan:HalfBoard ;
-  estur:offersMealPlan estur-mealplan:FullBoard ;  
-  estur:registration ex:Hotel1AccommodationRegistration ;
+  estur:offersAccommodationRateType estur-accommodationratetype:Accommodation ;
+  estur:offersAccommodationRateType estur-accommodationratetype:Breakfast ;
+  estur:offersAccommodationRateType estur-accommodationratetype:HalfBoard ;
+  estur:offersAccommodationRateType estur-accommodationratetype:FullBoard ;  
   estur:hasLocation ex:Hotel11Location ;
   estur:hasBookingChannel ex:Hotel1Web. 
 
-ex:Hotel1AccommodationCapacity a estur:AccommodationCapacity ;
-  rdfs:label "Capacidad del hotel 1" ;
-  estur:maximumCapacity "258"^^xsd:int ;
-  estur:numberOfRooms "98"^^xsd:int .
-  
-ex:Hotel1SingleRoom a estur:Room;
-  rdfs:label "Habitaciones individuales del hotel 1";
-  estur:roomType estur-roomtype:SingleRoom;
-  estur:numberOfRooms "8"^^xsd:int.
-ex:Hotel1DoubleRoom a estur:Room;
-  rdfs:label "Habitaciones dobles del hotel 1";
-  estur:roomType estur-roomtype:DoubleRoom;
-  estur:numberOfRooms "20"^^xsd:int.
-ex:Hotel1TripleRoom a estur:Room;
-  rdfs:label "Habitaciones triples del hotel 1";
-  estur:roomType estur-roomtype:TripleRoom;
-  estur:numberOfRooms "70"^^xsd:int.
-
+ex:Hotel1Stars a estur:Rating ;
+  estur:ratingValue "stars" ;
+  estur:ratingUnit "3".
+    
 estur:Hotel11Location a estur:Location ;
   rdfs:label "Localización del hotel 1" ;
   estur:streetAddress "C/ Ejemplo, 2" ;
@@ -155,13 +139,6 @@ estur:Hotel11Location a estur:Location ;
   estur:autonomousCommunity "Extremadura" ;
   estur:country "España".
 
-ex:Hotel1AccommodationRegistration a AcommodationRegistration ;
-  rdfs:label "Registration options for Hotel 1" ;
-  estur:checkinHours "15:00" ;
-  estur:checkoutHours "12:00" ;
-  estur:online "true"^^xsd:boolean ;
-  estur:onsite "true"^^xsd:boolean.
-  
 ex:Hotel1Web a estur:BookingChannel ;
   rdfs:label "Canales de contratación del hotel 1" ;
   estur:url "https://example.org/Hotel1/compra" ;
@@ -173,12 +150,12 @@ ex:Hotel1Web a estur:BookingChannel ;
         matchBrackets: true
       });
  </script>
+        
+<p>Con respecto a los <a href="#Place">Lugares</a>, estos se organizan en siete grandes grupos (tal y como se presenta en la figura 6): <a href="#TourismDestination">Destinos turísticos</a>,<a href="#TourismOrRelatedFacility">Instalaciones turísticas  vinculadas</a>, <a href="#HistoricalAndCulturalResource">Recursos históricos y culturales</a>, <a href="#NaturalResource">Recursos Naturales</a>, <a href="#Route">Rutas</a>, <a href="#PublicService">Servicios Públicos</a> e <a href="#TransportInfrastructure">Infraestructuras de transportes</a>. Cada una de estas clases se divide en otras subclases. </p>
     
-<p>Con respecto a los <a href="#TourismResource">Recursos Turísticos</a>, estos se organizan en cuatro grandes grupos (tal y como se presenta en la figura 6): <a href="#HistoricalAndCulturalResource">Recursos históricos y culturales</a>, <a href="#Route">Rutas</a>, <a href="#NaturalResource">Recursos Naturales</a> y <a href="#GastronomicResource">Recursos Gastronómicos</a>. Cada una de estas clases se divide en otras subclases. </p>
-    
-<p>También están las <a href="#TourismOrRelatedFacility">Instalaciones turísticas o vinculadas</a> que se dividen en <a href="#AccommodationEstablishment">Establecimientos alojativos</a>, <a href="#FoodEstablishment">Establecimientos de comida</a>, <a href="#AgrotourismFacility">Instalaciones Agroturísticas</a>, <a href="#Educational Facility">Instalaciones Educativas</a>, <a href="#EventAttendanceFacility">Instalaciones para Eventos</a>, <a href="#HealthAndWellnessFacility">Instalaciones de Salud y Bienestar</a>, <a href="#LeisureAndCultureFacility">Instalaciones de Ocio y Cultura</a>, <a href="#PartyAndEntertainmentFacility">Instalaciones para Fiestas y Entretenimiento</a>, <a href="#SportFacility">Instalaciones Deportivas</a> y <a href="#LocalBusiness">Negocios Locales</a>.</p>
+<p>Por ejemplo, las <a href="#TourismOrRelatedFacility">Instalaciones turísticas o vinculadas</a> se dividen en <a href="#AgrotourismFacility">Instalaciones Agroturísticas</a>, <a href="#AccommodationEstablishment">Establecimientos alojativos</a>, <a href="#FoodEstablishment">Establecimientos de restauración</a>,  <a href="#Educational Facility">Instalaciones Educativas</a>, <a href="#EventAttendanceFacility">Instalaciones para Eventos</a>, <a href="#HealthAndWellnessFacility">Instalaciones de Salud y Bienestar</a>, <a href="#LeisureAndCultureFacility">Instalaciones de Ocio y Cultura</a>, <a href="#PartyAndEntertainmentFacility">Instalaciones para Fiestas y Entretenimiento</a>, <a href="#SportFacility">Instalaciones Deportivas</a> y <a href="#LocalBusiness">Negocios Locales</a>.</p>
 
-<p><center><img src="images/fig6-TourismResource.png"/><figcaption>Figura 6. Clasificación de Recursos Turísticos, instalaciones e infraestructuras de transportes.</figcaption></center></p>
+<p><center><img src="images/fig6-Place.png"/><figcaption>Figura 6. Clasificación de Lugares.</figcaption></center></p>
 
 <p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe un recurso turístico, específicamente un <a href="#CongressCentre">Centro de Congresos</a> situado en Málaga, con capacidad para 2000 personas, gestionado por una agencia de eventos, con varios perfiles de redes sociales, dos tipos de horarios de apertura durante el año 2025 (en días de diario y de fin de semana), con servicio de guardarropa, con acceso para personas de movilidad reducida, organización de eventos y parking.</p>
 
@@ -236,7 +213,8 @@ ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
     
 <p>A continuación se presentan algunos ejemplos adicionales de conceptos que tienen también relevancia en esta ontología.</p> 
 
-<p>Se comienza con la clase <a href="#Event">Evento</a>, cuyas propiedades y relaciones principales con otros conceptos y tesauros se muestran en la figura 7. Los eventos son organizados por <a href="#EventOrganisationCompany">Compañías de organización de eventos</a>, tienen una serie de propiedades aplicables, como quién o quiénes son los que actúan en el evento, si se trata de un evento al aire libre o no, el aforo máximo, y el rango de fechas en las que está disponible. Asimismo, los eventos pueden tener <a href="#subEvent">eventos relacionados (también conocidos como sub-eventos)</a>. Todo esto se une a las propiedades ya indicadas para los servicios turísticos. A continuación se muestra un ejemplo de un evento musical (un concierto) que se celebra en dos días consecutivos, y que ofrece como servicio adicional el uso de taquillas. Este evento está relacionado (contenido) en otro evento (en una semana cultural) y se celebra en el centro de congresos CongressCentre1, ya utilizado como ejemplo anteriormente.</p>
+<p>Se comienza con la clase <a href="#Event">Evento</a>, cuyas propiedades y relaciones principales con otros conceptos y tesauros se muestran en la figura 7. Los eventos pueden ser organizados por <a href="#TourismOrganisation">Organizaciones turísticas</a> o <a href="#TourismDestination">Destinos turísticos</a>. Tienen una serie de propiedades aplicables, como el tipo de evento o servicios adicionales que se ofrecen, si se trata de un evento al aire libre o no, el aforo máximo, y las fechas en las que está disponible. Asimismo, los eventos tienen una <a href="#Schedule">programación</a> y una <a href="#Agenda">agenda</a>. Todo esto se une a las propiedades ya indicadas para entidades turísticas.</p>
+<!--<p>A continuación se muestra un ejemplo de un evento musical (un concierto) que se celebra en dos días consecutivos, y que ofrece como servicio adicional el uso de taquillas. Este evento está relacionado (contenido) en otro evento (en una semana cultural) y se celebra en el centro de congresos CongressCentre1, ya utilizado como ejemplo anteriormente.</p>
 
 <p><center><img src="images/fig7-Event.png"/><figcaption>Figura 7. Modelo conceptual de los Eventos.</figcaption></center></p>
 
@@ -278,7 +256,7 @@ ex:Event1Session1 a estur:Event ;
         matchBrackets: true
       });
  </script>
-    
+-->    
 <!--<p>Finalmente, añadimos un ejemplo relacionado con una <a href="#Person">Persona</a>, mujer de 47 años procedente de una ciudad en Alemania, que viaja como <a href="#Tourist">Turista</a> en avión y en coche de alquiler, como parte de un paquete turístico, representando varias de sus características de acuerdo con el modelo conceptual presentado en la figura 8.</p>
 
 <p><center><img src="images/fig8-Persons.png"/><figcaption>Figura 8. Modelo conceptual de las Personas y sus Roles.</figcaption></center></p>

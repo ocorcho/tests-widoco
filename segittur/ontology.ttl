@@ -8,17 +8,80 @@
 
 <https://ontologia.segittur.es/turismo/def/core#> rdf:type owl:Ontology ;
                                                    owl:versionIRI <https://ontologia.segittur.es/turismo/def/core/1.2.0> ;
-                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International (CC BY-NC-ND 4.0)" ;
+                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution Share-Alike 4.0 International (CC BY-SA 4.0)" ;
                                                    <http://purl.org/dc/terms/description> "Esta ontología de dominio del sector turístico está construida a partir del Modelo Conceptual de Referencia Semántico de Turismo de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo."@es ,
                                                                                           "This tourism domain ontology is built from SEGITTUR's Conceptual Tourism Semantic Reference Model, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information."@en ;
                                                    <http://purl.org/dc/terms/hasFormat> <https://ontologia.segittur.es/turismo/def/core.owl> ;
                                                    <http://purl.org/dc/terms/issued> "2025-08-25" ;
-                                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-nd/4.0/> ,
-                                                                                      "CC BY-NC-ND" ;
+                                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ,
+                                                                                      "CC BY-SA" ;
                                                    <http://purl.org/dc/terms/title> "Core ontology for tourism by SEGITTUR"@en ,
                                                                                     "Ontología de referencia de turismo de SEGITTUR"@es ;
                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "estur" ;
                                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://ontologia.segittur.es/turismo/def/core#> ;
+                                                   rdfs:seeAlso <https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationRate.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationUnitCategory.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-Adversity.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-AgritourismExperienceType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-AquariumService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-ArtGalleryService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-BeachService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-BeachType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-BusOperatorService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-CongressCentreService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-CuisineType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-CultureCenterService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-DMCService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-DestinationType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-EducationalService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-Event.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-EventAttendanceService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-EventService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-ExperienceRelatedProduct.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-GymService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-HandiCraftService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-HealthAndBeautyService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-HistoricalAndCultureService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-LabelType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-LakeService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-LeisureAndCultureService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-LocalBusinessService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-LocomotionMode.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-MenuOptions.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-MultiadventureActivityType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-MuseumService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-MuseumType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-ParkingFacilityService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-PartyAndEntertainmentService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-PaymentMethod.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-PlaceOfWorshipType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-PlanetariumService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-PriceClass.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-RestaurantService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-RiverService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-RouteService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-SocialMediaPlatform.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-SportService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-SportsCentrePremise.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-StadiumService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-StationType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-SwimmingPoolService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TourGuideService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TourService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TourismResourceService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TouristDestinationService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TouristOrRelatedFacilityService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TouristType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TrailType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TransportInfrastructureService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TravelAgencyService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-TravelUnit.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-VehicleRentalCompanyService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-VehicleType.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-VineyardService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-WineryService.ttl> ,
+                                                                <https://ontologia.segittur.es/turismo/def/core/kos/skos-ZooService.ttl> ;
                                                    owl:priorVersion "1.1.1" ;
                                                    owl:versionInfo "1.2.0" .
 
@@ -686,23 +749,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                  ] ;
                                       rdfs:label "offers additional accommodation service"@en ,
                                                  "ofrece servicio adicional de alojamiento"@es ;
-                                      <https://ontologia.segittur.es/turismo/def/annot#presentationOrderCategory> "other" .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAmusementParkService
-:offersAdditionalAmusementParkService rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf :offersAdditionalService ;
-                                      rdfs:domain :AmusementPark ;
-                                      rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                          owl:hasValue <https://ontologia.segittur.es/turismo/kos/AmusementParkServiceType>
-                                                                        ]
-                                                                      ) ;
-                                                   rdf:type owl:Class
-                                                 ] ;
-                                      rdfs:label "offers additional amusement park service"@en ,
-                                                 "ofrece servicio adicional del parque de atracciones"@es ;
                                       <https://ontologia.segittur.es/turismo/def/annot#presentationOrderCategory> "other" .
 
 
@@ -2215,8 +2261,8 @@ xsd:date rdf:type rdfs:Datatype .
 :numberOfBeds rdf:type owl:DatatypeProperty ;
               rdfs:domain :AccommodationEstablishment ;
               rdfs:range xsd:int ;
-              rdfs:comment "numberOfBeds"@en ,
-                           "número de camas"@es ;
+              rdfs:label "number of beds"@en ,
+                         "número de camas"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#presentationOrderCategory> "other" .
 
 
@@ -2619,7 +2665,7 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:comment "Machine computer-connected to a bank that allows certain banking operations to be carried out using a card or magnetic book that has a personal password assigned to it."@en ,
                   "Máquina conectada informáticamente con un banco que permite efectuar ciertas operaciones bancarias mediante una tarjeta o libreta magnética que tienen asignada una clave personal."@es ;
      rdfs:label "ATM"@en ,
-                "cajero automático"@es ;
+                "Cajero automático"@es ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2628,8 +2674,8 @@ xsd:date rdf:type rdfs:Datatype .
                            rdfs:subClassOf :RetailAndFashion ;
                            rdfs:comment "Establecimiento en el que se venden objetos que complementan la indumentaria de una persona, como bolsos, calzado, paraguas, corbatas, sombreros, gafas, guantes, etc."@es ,
                                         "Establishment in which objects that complement a person's clothing are sold, such as bags, footwear, umbrellas, ties, hats, glasses, gloves, etc."@en ;
-                           rdfs:label "accessories and complements"@en ,
-                                      "tienda de accesorios y complementos"@es ;
+                           rdfs:label "Accessories and complements"@en ,
+                                      "Tienda de accesorios y complementos"@es ;
                            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2755,8 +2801,8 @@ xsd:date rdf:type rdfs:Datatype .
                                        ] ;
                        rdfs:comment "Additional details, data or explanations that complement or expand the main information provided. It is extra information that can provide clarification, context, or specific details on a given topic."@en ,
                                     "Detalles, datos o explicaciones adicionales que complementan o amplían la información principal proporcionada. Es información extra que puede proporcionar aclaraciones, contexto o detalles específicos sobre un tema determinado."@es ;
-                       rdfs:label "additional information"@en ,
-                                  "información adicional"@es ;
+                       rdfs:label "Additional information"@en ,
+                                  "Información adicional"@es ;
                        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -2844,8 +2890,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :TransportInfrastructure ;
          rdfs:comment "Area intended for the landing and takeoff of airplanes equipped with facilities for air traffic control and passenger services."@en ,
                       "Área destinada al aterrizaje y despegue de aviones dotada de instalaciones para el control del tráfico aéreo y de servicios a los pasajeros."@es ;
-         rdfs:label "aeropuerto"@es ,
-                    "airport"@en ;
+         rdfs:label "Aeropuerto"@es ,
+                    "Airport"@en ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2853,8 +2899,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Alcazar rdf:type owl:Class ;
          rdfs:subClassOf :HistoricalOrCulturalResource ;
          rdfs:comment "Castillo fortificado situado en un lugar estratégico, especialmente cuando está amurallado."@es ;
-         rdfs:label "alcazar"@en ,
-                    "alcázar"@es ;
+         rdfs:label "Alcazar"@en ,
+                    "Alcázar"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2862,22 +2908,18 @@ xsd:date rdf:type rdfs:Datatype .
 :Amphitheatre rdf:type owl:Class ;
               rdfs:subClassOf :HistoricalOrCulturalResource ;
               rdfs:comment "Construcción oval o circular provista de un graderío alrededor de una zona arenosa central, en la que en la esantigua Roma se celebraban espectáculos públicos."@es ;
-              rdfs:label "amphitheater"@en ,
-                         "anfiteatro"@es ;
+              rdfs:label "Amphitheater"@en ,
+                         "Anfiteatro"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#AmusementPark
 :AmusementPark rdf:type owl:Class ;
-               rdfs:subClassOf :LeisureAndCultureFacility ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :offersAdditionalAmusementParkService ;
-                                 owl:allValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                               ] ;
+               rdfs:subClassOf :LeisureAndCultureFacility ;
                rdfs:comment "A venue that hosts a wide variety of attractions and events for fun and entertainment."@en ,
                             "Recinto que acoge una gran variedad de atracciones y acontecimientos destinados a la diversión y al entretenimiento."@es ;
-               rdfs:label "amusement park"@en ,
-                          "parque de atracciones"@es ;
+               rdfs:label "Amusement park"@en ,
+                          "Parque de atracciones"@es ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2886,8 +2928,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :AccommodationEstablishment ;
             rdfs:comment "Establecimiento que facilita el servicio de alojamiento para clientes en estudios o unidades de servicio, dentro de las cuales se dispone de instalaciones adecuadas para la conservación, elaboración y consumo de alimentos."@es ,
                          "Establishment that provides accommodation service for clients in studios or service units, within which adequate facilities are available for the conservation, preparation and consumption of food."@en ;
-            rdfs:label "apartahotel"@es ,
-                       "aparthotel"@en ;
+            rdfs:label "Apartahotel"@es ,
+                       "Aparthotel"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2900,8 +2942,8 @@ xsd:date rdf:type rdfs:Datatype .
                           ] ;
           rdfs:comment "Enclosure intended for the exhibition of live aquatic animals."@en ,
                        "Recinto destinado a la exhibición de animales acuáticos vivos."@es ;
-          rdfs:label "acuario"@es ,
-                     "aquarium"@en ;
+          rdfs:label "Acuario"@es ,
+                     "Aquarium"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2909,17 +2951,17 @@ xsd:date rdf:type rdfs:Datatype .
 :Aqueduct rdf:type owl:Class ;
           rdfs:subClassOf :HistoricalOrCulturalResource ;
           rdfs:comment "Construcción en forma de puente soportado por una o más filas de arcos sobre la cual se conduce agua de un lado a otro de una fuerte depresión de terreno."@es ;
-          rdfs:label "acueducto"@es ,
-                     "aqueduct"@en ;
+          rdfs:label "Acueducto"@es ,
+                     "Aqueduct"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#ArabicBath
 :ArabicBath rdf:type owl:Class ;
             rdfs:subClassOf :HistoricalOrCulturalResource ;
+            rdfs:comment "Los baños árabes, también conocidos como hammam, son espacios públicos de baño que combinan la limpieza del cuerpo con la relajación y el bienestar"@es ;
             rdfs:label "Arabic Bath"@en ,
-                       "Baños árabes"@es ,
-                       "Los baños árabes, también conocidos como hammam, son espacios públicos de baño que combinan la limpieza del cuerpo con la relajación y el bienestar"@es ;
+                       "Baños árabes"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2928,8 +2970,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :LeisureAndCultureFacility ;
         rdfs:comment "Lugar donde se encuentran un conjunto de máquinas o juegos, en los que a cambio de una determinada cantidad de dinero se obtiene un tiempo de juego."@es ,
                      "Place where a set of machines or games are found, in which in exchange for a certain amount of money you get playing time."@en ;
-        rdfs:label "arcade"@en ,
-                   "salón recreativo"@es ;
+        rdfs:label "Arcade"@en ,
+                   "Salón recreativo"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2937,8 +2979,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Arch rdf:type owl:Class ;
       rdfs:subClassOf :HistoricalOrCulturalResource ;
       rdfs:comment "Elemento constructivo de directriz en forma curvada o poligonal."@es ;
-      rdfs:label "arch"@en ,
-                 "arco"@es ;
+      rdfs:label "Arch"@en ,
+                 "Arco"@es ;
       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2946,8 +2988,8 @@ xsd:date rdf:type rdfs:Datatype .
 :ArcheologicalSite rdf:type owl:Class ;
                    rdfs:subClassOf :HistoricalOrCulturalResource ;
                    rdfs:comment "Lugar donde se hallan restos arqueológicos."@es ;
-                   rdfs:label "archaelogical site"@es ,
-                              "yacimiento arqueológico"@es ;
+                   rdfs:label "Archaelogical site"@en ,
+                              "Yacimiento arqueológico"@es ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2960,8 +3002,8 @@ xsd:date rdf:type rdfs:Datatype .
                             ] ;
             rdfs:comment "Establecimiento para exposición y venta de obras de arte."@es ,
                          "Establishment for exhibition and sale of works of art."@en ;
-            rdfs:label "art gallery"@en ,
-                       "galería de arte"@es ;
+            rdfs:label "Art gallery"@en ,
+                       "Galería de arte"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2970,8 +3012,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :EventAttendanceFacility ;
             rdfs:comment "Room for concerts, recitals, conferences, colloquiums, public readings, etc."@en ,
                          "Sala destinada a conciertos, recitales, conferencias, coloquios, lecturas públicas, etc."@es ;
-            rdfs:label "auditorio"@es ,
-                       "auditorium"@en ;
+            rdfs:label "Auditorio"@es ,
+                       "Auditorium"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2980,8 +3022,8 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf :Groceries ;
                  rdfs:comment "Establecimiento donde se hacen y/o se venden panes, pasteles, pastas u otros dulces."@es ,
                               "Establishment where breads, cakes, pastas or other sweets are made and/or sold."@en ;
-                 rdfs:label "bakery and pastry"@en ,
-                            "panadería y pastelería"@es ;
+                 rdfs:label "Bakery and pastry"@en ,
+                            "Panadería y pastelería"@es ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -2990,8 +3032,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :FinancialService ;
             rdfs:comment "Lugar donde una institución financiera ofrece asistencia personal y automatizada a los clientes."@es ,
                          "Place where a financial institution offers personal and automated assistance to customers"@en ;
-            rdfs:label "bank office"@en ,
-                       "oficina bancaria"@es ;
+            rdfs:label "Bank office"@en ,
+                       "Oficina bancaria"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3000,8 +3042,8 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:subClassOf :FoodEstablishment ;
      rdfs:comment "Establecimiento en el que se despachan bebidas que suelen tomarse de pie ante el mostrador."@es ,
                   "Establishment in which drinks are served that are usually drunk standing at the counter."@en ;
-     rdfs:label "bar"@en ,
-                "bar"@es ;
+     rdfs:label "Bar"@en ,
+                "Bar"@es ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3009,8 +3051,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Basilica rdf:type owl:Class ;
           rdfs:subClassOf :HistoricalOrCulturalResource ;
           rdfs:comment "Iglesia notable por su antigüedad o magnificencia o por los cultos que en ella se celebran."@es ;
-          rdfs:label "basilica"@en ,
-                     "basílica"@es ;
+          rdfs:label "Basilica"@en ,
+                     "Basílica"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3019,8 +3061,8 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf :SportFacility ;
                  rdfs:comment "Flat surface, indoor or outdoor, with a hoop at each end suspended about three meters high for practicing this sport."@en ,
                               "Superficie plana, interior o exterior, con un aro en cada extremo suspendido a unos tres metros de altura para la práctica de este deporte."@es ;
-                 rdfs:label "basketball court"@en ,
-                            "cancha de baloncesto"@es ;
+                 rdfs:label "Basketball court"@en ,
+                            "Cancha de baloncesto"@es ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3029,8 +3071,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :RetailAndFashion ;
         rdfs:comment "Establecimiento en el que se venden gran diversidad de productos, como ropa, relojes, juguetes, artículos para la casa y objetos de regalo."@es ,
                      "Establishment where a wide variety of products are sold, such as clothing, watches, toys, household items and gift items."@en ;
-        rdfs:label "bazaar"@en ,
-                   "bazar"@es ;
+        rdfs:label "Bazaar"@en ,
+                   "Bazar"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3047,8 +3089,8 @@ xsd:date rdf:type rdfs:Datatype .
                        ] ;
        rdfs:comment "Bank of the sea or a large river, formed by sandbanks on an almost flat surface"@en ,
                     "Ribera del mar o de un río grande, formada de arenales en superficie casi plana."@es ;
-       rdfs:label "beach"@en ,
-                  "playa"@es ;
+       rdfs:label "Beach"@en ,
+                  "Playa"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3057,8 +3099,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :FoodEstablishment ;
           rdfs:comment "Pequeño establecimiento a pie de playa, que ofrece comidas y bebidas y que posee una terraza o área de mesas al aire libre."@es ,
                        "Small establishment on the beach, which offers food and drinks and has a terrace or outdoor table area."@en ;
-          rdfs:label "beach bar"@en ,
-                     "chiringuito"@es ;
+          rdfs:label "Beach bar"@en ,
+                     "Chiringuito"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3067,8 +3109,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :PartyAndEntertainmentFacility ;
            rdfs:comment "Leisure and entertainment venue in coastal areas with facilities and services similar to those of a hotel, but without the lodging option."@en ,
                         "Lugar de ocio y entretenimiento en las zonas costeras con instalaciones y servicios semejantes a los de un hotel, pero sin la opción de hospedaje."@es ;
-           rdfs:label "beach club"@en ,
-                      "club de playa"@es ;
+           rdfs:label "Beach club"@en ,
+                      "Club de playa"@es ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3077,8 +3119,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :HealthAndWellnessFacility ;
               rdfs:comment "Establecimiento orientado a la belleza y cuidado del cuerpo."@es ,
                            "Establishment aimed at beauty and body care."@en ;
-              rdfs:label "beauty centre"@en ,
-                         "centro estético"@es ;
+              rdfs:label "Beauty centre"@en ,
+                         "Centro estético"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3086,8 +3128,8 @@ xsd:date rdf:type rdfs:Datatype .
 :BellTower rdf:type owl:Class ;
            rdfs:subClassOf :HistoricalOrCulturalResource ;
            rdfs:comment "Torre elevada, exenta, adosada o integrada en un edificio, donde se colocan las campanas."@es ;
-           rdfs:label "bell tower"@en ,
-                      "campanario"@es ;
+           rdfs:label "Bell tower"@en ,
+                      "Campanario"@es ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3100,8 +3142,8 @@ xsd:date rdf:type rdfs:Datatype .
                                       ] ;
                       rdfs:comment "Service that makes a series of bicycles available to users to be used temporarily as a means of transportation."@en ,
                                    "Servicio que pone a disposición de los usuarios una serie de bicicletas para que sean utilizadas temporalmente como medio de transporte."@es ;
-                      rdfs:label "bicycle sharing system"@en ,
-                                 "sistema de bicicletas compartidas"@es ;
+                      rdfs:label "Bicycle sharing system"@en ,
+                                 "Sistema de bicicletas compartidas"@es ;
                       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3110,16 +3152,16 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :TransportInfrastructure ;
           rdfs:comment "Cycle route that runs adjacent to the road in one or two directions."@en ,
                        "Vía ciclista que discurre adosada a la calzada en uno o en doble sentido."@es ;
-          rdfs:label "bike lane"@en ,
-                     "carril bici"@es ;
+          rdfs:label "Bike lane"@en ,
+                     "Carril bici"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#Bingo
 :Bingo rdf:type owl:Class ;
        rdfs:subClassOf :PartyAndEntertainmentFacility ;
-       rdfs:label "bingo"@en ,
-                  "bingo"@es ;
+       rdfs:label "Bingo"@en ,
+                  "Bingo"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3136,8 +3178,8 @@ xsd:date rdf:type rdfs:Datatype .
                                 ] ;
                 rdfs:comment "Means or platforms used by guests to make a reservation"@en ,
                              "Medios o plataformas utilizados por los huéspedes para realizar una reserva."@es ;
-                rdfs:label "booking channel"@en ,
-                           "canal de reserva"@es ;
+                rdfs:label "Booking channel"@en ,
+                           "Canal de reserva"@es ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -3147,7 +3189,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "Shop where books are sold"@en ,
                        "Tienda donde se venden libros."@es ;
           rdfs:label "Bookshop"@en ,
-                     "librería"@es ;
+                     "Librería"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3156,8 +3198,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :SportFacility ;
               rdfs:comment "Lugar destinado al juego de bolos."@es ,
                            "Place for bowling."@en ;
-              rdfs:label "bolera"@es ,
-                         "bowling alley"@en ;
+              rdfs:label "Bolera"@es ,
+                         "Bowling alley"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3166,8 +3208,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :FoodEstablishment ;
          rdfs:comment "Establecimiento en el que se sirve cerveza como especialidad."@es ,
                       "Establishment in which beer is served as specialty."@en ;
-         rdfs:label "brewery"@en ,
-                    "cervecería"@es ;
+         rdfs:label "Brewery"@en ,
+                    "Cervecería"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3175,8 +3217,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Bridge rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Construcción de piedra, ladrillo, madera, hierro, hormigón, etc., que se construye y forma sobre los ríos, fosos y otros sitios, para comunicar dos lados."@es ;
-        rdfs:label "bridge"@en ,
-                   "puente"@es ;
+        rdfs:label "Bridge"@en ,
+                   "Puente"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3199,8 +3241,8 @@ xsd:date rdf:type rdfs:Datatype .
                              ] ;
              rdfs:comment "Company specialized in providing passenger transport services using coaches on pre-established routes."@en ,
                           "Empresa especializada en la prestación de servicios de transporte de pasajeros utilizando autocares en rutas preestablecidas."@es ;
-             rdfs:label "bus operator"@en ,
-                        "operador de autocares"@es ;
+             rdfs:label "Bus operator"@en ,
+                        "Operador de autocares"@es ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3209,8 +3251,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :TransportInfrastructure ;
             rdfs:comment "Facility for the arrival and departure of buses."@en ,
                          "Instalación destinada a la llegada y salida de autobuses."@es ;
-            rdfs:label "bus station"@en ,
-                       "estación de autobuses"@es ;
+            rdfs:label "Bus station"@en ,
+                       "Estación de autobuses"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3219,8 +3261,8 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf :FoodEstablishment ;
                  rdfs:comment "Coffee and other beverage outlet, where snacks and meals are sometimes served"@en ,
                               "Despacho de café y otras bebidas, donde a veces se sirven aperitivos y comidas"@es ;
-                 rdfs:label "cafe or coffee shop"@en ,
-                            "cafetería"@es ;
+                 rdfs:label "Cafe or coffee shop"@en ,
+                            "Cafetería"@es ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3229,8 +3271,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :MiscellaneousService ;
           rdfs:comment "Local que ofrece a sus clientes servicios de telefonía y conexión a internet principalmente."@es ,
                        "Local that offers its clients telephone services and internet connection mainly."@en ;
-          rdfs:label "call shop"@en ,
-                     "locutorio"@es ;
+          rdfs:label "Call shop"@en ,
+                     "Locutorio"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3239,8 +3281,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :AccommodationEstablishment ;
          rdfs:comment "Tipo de establecimiento situado al aire libre que posee las instalaciones necesarias para atender la demanda y las necesidades alojativas y servicios para albergar a turistas."@es ,
                       "Type of establishment located outdoors that has the necessary facilities to meet the demand and accommodation needs and services to accommodate tourists."@en ;
-         rdfs:label "camping"@en ,
-                    "camping"@es ;
+         rdfs:label "Camping"@en ,
+                    "Camping"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3250,7 +3292,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "Instalación eventual, en terreno abierto, donde se practican actividades de convivencia al aire libre, orientada a fines educativos y de formación."@es ,
                        "Possible installation, in open terrain, where outdoor coexistence activities are practiced, aimed at educational and training purposes."@en ;
           rdfs:label "Campamento"@es ,
-                     "campsite"@en ;
+                     "Campsite"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3259,8 +3301,8 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:subClassOf :NaturalResource ;
        rdfs:comment "Artificial channel through which water is conducted to discharge it or for other uses"@en ,
                     "Cauce artificial por donde se conduce el agua para darle salida o para otros usos"@es ;
-       rdfs:label "canal"@en ,
-                  "canal"@es ;
+       rdfs:label "Canal"@en ,
+                  "Canal"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3277,8 +3319,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://ontologia.segittur.es/turismo/def/core#Casino
 :Casino rdf:type owl:Class ;
         rdfs:subClassOf :PartyAndEntertainmentFacility ;
-        rdfs:label "casino"@en ,
-                   "casino"@es ;
+        rdfs:label "Casino"@en ,
+                   "Casino"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3286,8 +3328,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Castle rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Edificio o conjunto de edificios rodeados de murallas, fosos y otras obras de fortificación, construido generalmente en un lugar elevado y estratégicamente situado para la guerra."@es ;
-        rdfs:label "castillo"@es ,
-                   "castle"@en ;
+        rdfs:label "Castillo"@es ,
+                   "Castle"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3295,8 +3337,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Catacomb rdf:type owl:Class ;
           rdfs:subClassOf :HistoricalOrCulturalResource ;
           rdfs:comment "Galerías subterráneas que algunas civilizaciones mediterráneas antiguas construyeron y utilizaron como lugar de enterramiento."@es ;
-          rdfs:label "catacomb"@en ,
-                     "catacumba"@es ;
+          rdfs:label "Catacomb"@en ,
+                     "Catacumba"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3314,8 +3356,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Cathedral rdf:type owl:Class ;
            rdfs:subClassOf :HistoricalOrCulturalResource ;
            rdfs:comment "Iglesia principal en que el obispo, con su cabildo, tiene su sede o cátedra."@es ;
-           rdfs:label "catedral"@es ,
-                      "cathedral"@en ;
+           rdfs:label "Catedral"@es ,
+                      "Cathedral"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3324,8 +3366,8 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:subClassOf :NaturalResource ;
       rdfs:comment "Cavidad natural del terreno causada por algún tipo de erosión de corrientes de agua, hielo o lava."@es ,
                    "Natural cavity in the ground caused by some type of erosion from water currents, ice or lava."@en ;
-      rdfs:label "cave"@en ,
-                 "cueva o caverna"@es ;
+      rdfs:label "Cave"@en ,
+                 "Cueva o caverna"@es ;
       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3352,8 +3394,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Chapel rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Edificio contiguo a una iglesia o parte integrante de ella, con altar y advocación particular."@es ;
-        rdfs:label "capilla"@es ,
-                   "chapel"@en ;
+        rdfs:label "Capilla"@es ,
+                   "Chapel"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3362,8 +3404,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :PartyAndEntertainmentFacility ;
           rdfs:comment "A place where drinks are served and calm and relaxing electronic music is listened to."@en ,
                        "Local en el que se despachan bebidas y se escucha música electrónica tranquila y relajante."@es ;
-          rdfs:label "chill out"@en ,
-                     "chill out"@es ;
+          rdfs:label "Chill out"@en ,
+                     "Chill out"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3372,8 +3414,8 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subClassOf :FoodEstablishment ;
                rdfs:comment "Establecimiento en el que se sirve chocolate a la taza, bebidas y productos de pastelería."@es ,
                             "Establishment that serves hot chocolate, drinks and pastries."@en ;
-               rdfs:label "chocolate shop"@en ,
-                          "chocolatería"@es ;
+               rdfs:label "Chocolate shop"@en ,
+                          "Chocolatería"@es ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3381,8 +3423,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Church rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Templo cristiano. También se pueden utilizar otros términos como parroquia"@es ;
-        rdfs:label "church"@en ,
-                   "iglesia"@es ;
+        rdfs:label "Church"@en ,
+                   "Iglesia"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3391,8 +3433,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :FoodEstablishment ;
             rdfs:comment "Establecimiento en el que se elaboran y se comercializan churros y porras, de forma artesanal, así como chocolate a la taza."@es ,
                          "Establishment where artisanal churros and porras are made and sold, as well as hot chocolate."@en ;
-            rdfs:label "churrería"@es ,
-                       "churro shop"@en ;
+            rdfs:label "Churrería"@es ,
+                       "Churro shop"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3401,8 +3443,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :FoodEstablishment ;
           rdfs:comment "Establecimiento en el que se vende y se consume sidra como especialidad."@es ,
                        "Establishment in which cider is sold and consumed as a specialty."@en ;
-          rdfs:label "cider bar"@en ,
-                     "sidrería"@es ;
+          rdfs:label "Cider bar"@en ,
+                     "Sidrería"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3411,8 +3453,8 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf :PublicService ;
                  rdfs:comment "Public service that protects people and property, guaranteeing an adequate response to different types of emergencies and catastrophes"@en ,
                               "Servicio público que protege a las personas y bienes garantizando una respuesta adecuada ante los distintos tipos de emergencias y catástrofes."@es ;
-                 rdfs:label "civil protection"@en ,
-                            "protección civil"@es ;
+                 rdfs:label "Civil protection"@en ,
+                            "Protección civil"@es ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3421,8 +3463,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :SportFacility ;
               rdfs:comment "Instalación deportiva consistente en una pared rocosa para el entrenamiento de la escalada."@es ,
                            "Sports facility consisting of a rock wall for climbing training."@en ;
-              rdfs:label "climbing wall"@en ,
-                         "rocódromo"@es ;
+              rdfs:label "Climbing wall"@en ,
+                         "Rocódromo"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3440,8 +3482,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :RetailAndFashion ;
           rdfs:comment "Store where the latest news in clothing is sold."@en ,
                        "Tienda en la que se venden las últimas novedades en ropa."@es ;
-          rdfs:label "clothing"@en ,
-                     "tienda de moda"@es ;
+          rdfs:label "Clothing"@en ,
+                     "Tienda de moda"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3450,8 +3492,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:subClassOf :FoodEstablishment ;
              rdfs:comment "Establecimiento especializado en la preparación y en el servicio de cócteles -bebida, generalmente alcohólica, que resulta de una mezcla de otras con varios ingredientes más-."@es ,
                           "Establishment specialized in the preparation and serving of cocktails - a drink, generally alcoholic, that results from a mixture of others with several other ingredients."@en ;
-             rdfs:label "cocktail bar"@en ,
-                        "coctelería"@es ;
+             rdfs:label "Cocktail bar"@en ,
+                        "Coctelería"@es ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3475,8 +3517,8 @@ xsd:date rdf:type rdfs:Datatype .
                                 ] ;
                 rdfs:comment "Espacio preparado para la acogida y celebración de congresos, convenciones, ferias, incentivos y cualquier otro acontecimiento similar."@es ,
                              "Space prepared for hosting and holding conferences, conventions, fairs, incentives and any other similar event."@en ;
-                rdfs:label "congress centre"@en ,
-                           "palacio de congresos y exposiciones"@es ;
+                rdfs:label "Congress centre"@en ,
+                           "Palacio de congresos y exposiciones"@es ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3498,8 +3540,8 @@ xsd:date rdf:type rdfs:Datatype .
                               ] ;
               rdfs:comment "Data necessary to establish communication with a person or entity. This information allows other individuals or companies to directly and effectively contact the person or entity in question."@en ,
                            "Datos necesarios para establecer comunicación con una persona o entidad. Esta información permite a otros individuos o empresas ponerse en contacto de manera directa y efectiva con la persona o entidad en cuestión."@es ;
-              rdfs:label "contact point"@en ,
-                         "punto de contacto"@es ;
+              rdfs:label "Contact point"@en ,
+                         "Punto de contacto"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -3507,8 +3549,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Convent rdf:type owl:Class ;
          rdfs:subClassOf :HistoricalOrCulturalResource ;
          rdfs:comment "Casa en que viven religiosos o religiosas bajo las reglas de su instituto."@es ;
-         rdfs:label "convent"@en ,
-                    "convento"@es ;
+         rdfs:label "Convent"@en ,
+                    "Convento"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3531,15 +3573,15 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                rdfs:comment "Recinto en los que se organizan actividades de carácter cultural: conferencias, exposiciones, tertulias, etc."@es ,
                             "Venue where cultural activities are organized: conferences, exhibitions, gatherings, etc."@en ;
-               rdfs:label "centro cultural"@es ,
-                          "culture centre"@en ;
+               rdfs:label "Centro cultural"@es ,
+                          "Culture centre"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#DayOfTheWeek
 :DayOfTheWeek rdf:type owl:Class ;
-              rdfs:label "day of the week"@en ,
-                         "día de la semana"@es ;
+              rdfs:label "Day of the week"@en ,
+                         "Día de la semana"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -3562,8 +3604,8 @@ xsd:date rdf:type rdfs:Datatype .
                              ] ;
              rdfs:comment "Proporciona información concisa y resumida sobre un elemento específico, como un producto, servicio o entidad. Este bloque suele contener detalles clave y destacados que describen las características principales, funciones, beneficios o aspectos destacados del elemento en cuestión."@es ,
                           "Provides concise, summarized information about a specific item, such as a product, service, or entity. This block usually contains key details and highlights that describe the main features, functions, benefits or highlights of the item in question."@en ;
-             rdfs:label "descripción"@es ,
-                        "description"@en ;
+             rdfs:label "Descripción"@es ,
+                        "Description"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -3572,8 +3614,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :NaturalResource ;
         rdfs:comment "Sandy or rocky territory, which due to the almost total lack of rain lacks or has very little vegetation"@en ,
                      "Territorio arenoso o pedregoso, que por la falta casi total de lluvias carece de vegetación o la tiene muy escasa."@es ;
-        rdfs:label "desert"@en ,
-                   "desierto"@es ;
+        rdfs:label "Desert"@en ,
+                   "Desierto"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3614,8 +3656,8 @@ xsd:date rdf:type rdfs:Datatype .
                                        ] ;
                        rdfs:comment "Price-free experiences that the destination proposes so that the tourist integrates into the way of life of its inhabitants, their culture and their authenticity, to motivate the completion of the trip or so that they take away a memory that survives after it and can be transmitted to others. It allows establishing an emotional relationship between the tourist and the inhabitants of the destination."@en ,
                                     "Vivencias libres de precio que el destino propone para que el turista se integre en la forma de vivir de sus habitantes, su cultura y su autenticidad, para motivar la realización del viaje o bien para que se lleve un recuerdo que perviva después del mismo y pueda ser transmitido a los demás. Permite establecer una relación emocional entre el turista y los habitantes del destino."@es ;
-                       rdfs:label "destination experience"@en ,
-                                  "experiencia en destino"@es ;
+                       rdfs:label "Destination experience"@en ,
+                                  "Experiencia en destino"@es ;
                        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3628,8 +3670,8 @@ xsd:date rdf:type rdfs:Datatype .
                                               ] ;
                               rdfs:comment "Company specialized in the organization and management of tourist services for foreign visitors in a specific destination."@en ,
                                            "Empresa especializada en la organización y gestión de servicios turísticos para visitantes extranjeros en un destino específico."@es ;
-                              rdfs:label "destination management company"@en ,
-                                         "operador receptivo"@es ;
+                              rdfs:label "Destination management company"@en ,
+                                         "Operador receptivo"@es ;
                               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3638,8 +3680,8 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf :MiscellaneousService ;
                       rdfs:comment "Establecimiento en el que se tiñen, se planchan o se limpian en seco o mediante otro procedimiento tejidos y prendas de vestir."@es ,
                                    "Establishment in which fabrics and clothing are dyed, ironed, dry cleaned or otherwise cleaned."@en ;
-                      rdfs:label "dry cleaning or laundry"@en ,
-                                 "tintorería o lavandería"@es ;
+                      rdfs:label "Dry cleaning or laundry"@en ,
+                                 "Tintorería o lavandería"@es ;
                       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3653,8 +3695,8 @@ xsd:date rdf:type rdfs:Datatype .
                                    ] ;
                    rdfs:comment "Lugar que provee electricidad para la recarga rápida de las baterías de los vehículos eléctricos."@es ,
                                 "Place that provides electricity for the rapid recharging of electric vehicle batteries."@en ;
-                   rdfs:label "electric vehicle charging station"@en ,
-                              "estación de carga de vehículos eléctricos"@es ;
+                   rdfs:label "Electric vehicle charging station"@en ,
+                              "Estación de carga de vehículos eléctricos"@es ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3663,8 +3705,8 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:subClassOf :EducationalFacility ;
                    rdfs:comment "Establecimiento destinado a la enseñanza."@es ,
                                 "Establishment intended for teaching."@en ;
-                   rdfs:label "centro educativo"@es ,
-                              "educational centre"@en ;
+                   rdfs:label "Centro educativo"@es ,
+                              "Educational centre"@en ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3677,8 +3719,8 @@ xsd:date rdf:type rdfs:Datatype .
                                      ] ;
                      rdfs:comment "Espacios dedicados al aprendizaje y desarrollo de habilidades donde los participantes, generalmente niños o jóvenes, participan en actividades educativas, recreativas y sociales fuera del entorno escolar tradicional y con un enfoque generalmente temático."@es ,
                                   "Spaces dedicated to learning and skill development where participants, generally children or young people, participate in educational, recreational and social activities outside the traditional school environment and with a generally thematic focus."@en ;
-                     rdfs:label "educational facility"@en ,
-                                "instalación educativa"@es ;
+                     rdfs:label "Educational facility"@en ,
+                                "Instalación educativa"@es ;
                      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3692,16 +3734,16 @@ xsd:date rdf:type rdfs:Datatype .
                                      ] ;
                      rdfs:comment "Representación de la administración pública de un país en otro."@es ,
                                   "Representation of the public administration of a country in another"@en ;
-                     rdfs:label "embajada y consulado"@es ,
-                                "embassy and consulate"@en ;
+                     rdfs:label "Embajada y consulado"@es ,
+                                "Embassy and consulate"@en ;
                      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#EngineCircuit
 :EngineCircuit rdf:type owl:Class ;
                rdfs:subClassOf :SportFacility ;
-               rdfs:label "circuito de motor"@es ,
-                          "engine circuit"@en ;
+               rdfs:label "Circuito de motor"@es ,
+                          "Engine circuit"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3710,8 +3752,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :AgrotourismFacility ;
          rdfs:comment "Lugar donde se exponen, guardan, venden e incluso se catan o degustan distintas clases de vinos. En algunos lugares también se puede utilizar el término tabanco"@es ,
                       "Place where different types of wines are exhibited, stored, sold and even tasted or tasted"@en ;
-         rdfs:label "enoteca"@en ,
-                    "enoteca"@es ;
+         rdfs:label "Enoteca"@en ,
+                    "Enoteca"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3720,8 +3762,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :SportFacility ;
                 rdfs:comment "Facilities that house horses for recreational, sporting or tourist purposes, including sports stables, rental stables and other establishments for equestrian practice."@en ,
                              "Instalaciones que albergan caballos con fines recreativos deportivos o turísticos incluyendo las cuadras deportivas, las cuadras en alquiler y otros establecimientos para la práctica ecuestre."@es ;
-                rdfs:label "club hípico"@es ,
-                           "equestrian club"@en ;
+                rdfs:label "Club hípico"@es ,
+                           "Equestrian club"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3730,8 +3772,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :LeisureAndCultureFacility ;
             rdfs:comment "Game that is based on solving a series of tests and finding objects with the objective of escaping from a room."@en ,
                          "Juego que se basa en resolver una serie de pruebas y encontrar objetos con el objetivo de escapar de una habitación."@es ;
-            rdfs:label "escape room"@en ,
-                       "escape room"@es ;
+            rdfs:label "Escape room"@en ,
+                       "Escape room"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3842,8 +3884,8 @@ xsd:date rdf:type rdfs:Datatype .
                        ] ;
        rdfs:comment "A planned or scheduled event that has a specific purpose and brings together a group of people to participate in activities, celebrations, or shared experiences."@en ,
                     "Acontecimiento planificado o programado que tiene un propósito específico y reúne a un grupo de personas para participar en actividades, celebraciones o experiencias compartidas."@es ;
-       rdfs:label "event"@en ,
-                  "evento"@es ;
+       rdfs:label "Event"@en ,
+                  "Evento"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3856,8 +3898,8 @@ xsd:date rdf:type rdfs:Datatype .
                                          ] ;
                          rdfs:comment "Espacios diseñados y equipados para albergar la celebración de diversas actividades y acontecimientos."@es ,
                                       "Spaces designed and equipped to host various activities and events."@en ;
-                         rdfs:label "event attendance facility"@en ,
-                                    "instalación para eventos"@es ;
+                         rdfs:label "Event attendance facility"@en ,
+                                    "Instalación para eventos"@es ;
                          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3876,8 +3918,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :FinancialService ;
                 rdfs:comment "Organización o centro que permite a los clientes cambiar una divisa por otra."@es ,
                              "Organization or facility that allows customers to exchange one currency for another"@en ;
-                rdfs:label "casa de cambio"@es ,
-                           "exchange bureau"@en ;
+                rdfs:label "Casa de cambio"@es ,
+                           "Exchange bureau"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3886,8 +3928,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :LeisureAndCultureFacility ;
                 rdfs:comment "Espacio de fomento, promoción y difusión de las artes plásticas."@es ,
                              "Space for the promotion, promotion and dissemination of the plastic arts."@en ;
-                rdfs:label "exhibition hall"@en ,
-                           "sala de exposiciones"@es ;
+                rdfs:label "Exhibition hall"@en ,
+                           "Sala de exposiciones"@es ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3896,8 +3938,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :AgrotourismFacility ;
             rdfs:comment "Educational and learning space where activities related to nature, the rural world and respect for the environment are carried out."@en ,
                          "Espacio educativo y de aprendizaje donde se realizan actividades relacionadas con la naturaleza, el mundo rural y el respeto al medio ambiente."@es ;
-            rdfs:label "farm school"@en ,
-                       "granja escuela"@es ;
+            rdfs:label "Farm school"@en ,
+                       "Granja escuela"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3906,8 +3948,8 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subClassOf :PassengerTransportCompany ;
                rdfs:comment "Company dedicated to operating maritime transportation services for passengers and vehicles through ferries and specific maritime routes."@en ,
                             "Compañía que se dedica a operar servicios de transporte marítimo de pasajeros y vehículos a través de ferris y rutas marítimas específicas."@es ;
-               rdfs:label "ferry operator"@en ,
-                          "operador de ferris"@es ;
+               rdfs:label "Ferry operator"@en ,
+                          "Operador de ferris"@es ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3916,8 +3958,8 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:subClassOf :LocalBusiness ;
                   rdfs:comment "Actividad o función relacionada con la gestión, el manejo o la intermediación de dinero y recursos financieros."@es ,
                                "Activity or function related to the management, handling or intermediation of money and financial resources."@en ;
-                  rdfs:label "financial service"@en ,
-                             "servicio financiero"@es ;
+                  rdfs:label "Financial service"@en ,
+                             "Servicio financiero"@es ;
                   <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3926,8 +3968,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:subClassOf :PublicService ;
              rdfs:comment "Competent body for the prevention, preparation and attention of fires and other emergencies"@en ,
                           "Órgano competente para la prevención, preparación y atención de incendios y otras emergencias"@es ;
-             rdfs:label "estación de bomberos"@es ,
-                        "fire station"@en ;
+             rdfs:label "Estación de bomberos"@es ,
+                        "Fire station"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3978,8 +4020,8 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subClassOf :SportFacility ;
                rdfs:comment "Area where a soccer match takes place."@en ,
                             "Área donde se desarrolla un partido de fútbol."@es ;
-               rdfs:label "campo de fútbol"@es ,
-                          "football field"@en ;
+               rdfs:label "Campo de fútbol"@es ,
+                          "Football field"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -3988,8 +4030,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :NaturalResource ;
         rdfs:comment "Ecosistema donde la vegetación predominante la constituyen los árboles y arbustos."@es ,
                      "Ecosystem where the predominant vegetation is trees and shrubs."@en ;
-        rdfs:label "bosque"@es ,
-                   "forest"@en ;
+        rdfs:label "Bosque"@es ,
+                   "Forest"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4006,8 +4048,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Garden rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio. También pueden referirse a parques urbanos."@es ;
-        rdfs:label "garden"@en ,
-                   "jardín"@es ;
+        rdfs:label "Garden"@en ,
+                   "Jardín"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4016,8 +4058,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :TransportInfrastructure ;
             rdfs:comment "Establecimiento o puesto de venta en el que se vende y suministra a vehículos automóviles gasolina u otros combustibles."@es ,
                          "Establishment or sales stand in which gasoline or other fuels are sold and supplied to automobile vehicles."@en ;
-            rdfs:label "gas station"@en ,
-                       "gasolinera"@es ;
+            rdfs:label "Gas station"@en ,
+                       "Gasolinera"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4026,8 +4068,8 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:subClassOf :FoodEstablishment ;
                    rdfs:comment "Lugar donde se reúnen diferentes puestos de comida y bebida en un espacio común donde consumir productos y elaboraciones de carácter gourmet."@es ,
                                 "Place where different food and drink stalls meet in a common space where you can consume gourmet products and preparations."@en ;
-                   rdfs:label "gastronomic market"@en ,
-                              "mercado gastronómico"@es ;
+                   rdfs:label "Gastronomic market"@en ,
+                              "Mercado gastronómico"@es ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4036,8 +4078,8 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:subClassOf :TourismResource ;
                      rdfs:comment "Clase que representa gastronomía"@es ,
                                   "This class represents Gastronomy"@en ;
-                     rdfs:label "gastronomic resource"@en ,
-                                "recurso gastronómico"@es ;
+                     rdfs:label "Gastronomic resource"@en ,
+                                "Recurso gastronómico"@es ;
                      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4046,8 +4088,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :Groceries ;
               rdfs:comment "Establecimiento o tienda comercial que vende diversos productos alimenticios."@es ,
                            "Establishment or commercial store that sells various food products."@en ;
-              rdfs:label "general store"@en ,
-                         "tienda de ultramarinos"@es ;
+              rdfs:label "General store"@en ,
+                         "Tienda de ultramarinos"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4056,8 +4098,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :NaturalResource ;
         rdfs:comment "Fuente termal intermitente, en forma de surtidor."@es ,
                      "Intermittent hot spring, in the form of a jet"@en ;
-        rdfs:label "geyser"@en ,
-                   "géiser"@es ;
+        rdfs:label "Geyser"@en ,
+                   "Géiser"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4066,8 +4108,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :AccommodationEstablishment ;
           rdfs:comment "Camping type that combines the experience of outdoor camping with the comforts and luxuries of the best hotels."@en ,
                        "Modalidad de acampada que combina la experiencia de acampar al aire libre con las comodidades y lujos propios de los mejores hoteles."@es ;
-          rdfs:label "glamping"@en ,
-                     "glamping"@es ;
+          rdfs:label "Glamping"@en ,
+                     "Glamping"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4076,8 +4118,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :SportFacility ;
             rdfs:comment "Large outdoor natural grass area where golf is practiced."@en ,
                          "Área amplia de hierba natural al aire libre donde se practica el golf."@es ;
-            rdfs:label "campo de golf"@es ,
-                       "golf course"@en ;
+            rdfs:label "Campo de golf"@es ,
+                       "Golf course"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4086,8 +4128,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :LocalBusiness ;
            rdfs:comment "Espacios físicos que proporcionan a los consumidores un lugar accesible y conveniente donde se ofrecen productos alimenticios para su compra y consumo."@es ,
                         "Physical spaces that provide consumers with an accessible and convenient place where food products are offered for purchase and consumption."@en ;
-           rdfs:label "alimentación"@es ,
-                      "groceries"@en ;
+           rdfs:label "Alimentación"@es ,
+                      "Groceries"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4096,8 +4138,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :AccommodationEstablishment ;
             rdfs:comment "Casa donde se reciben huéspedes mediante precio convenido."@es ,
                          "House where guests are received at an agreed price."@en ;
-            rdfs:label "guest house"@en ,
-                       "pensión"@es ;
+            rdfs:label "Guest house"@en ,
+                       "Pensión"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4110,8 +4152,8 @@ xsd:date rdf:type rdfs:Datatype .
                      ] ;
      rdfs:comment "Local dotado de las instalaciones y los aparatos adecuados para hacer gimnasia y practicar ciertos deportes."@es ,
                   "Local equipped with the appropriate facilities and equipment to do gymnastics and practice certain sports."@en ;
-     rdfs:label "gimnasio"@es ,
-                "gym"@en ;
+     rdfs:label "Gimnasio"@es ,
+                "Gym"@en ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4120,8 +4162,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :MiscellaneousService ;
               rdfs:comment "Establecimiento en el que se peina, se corta, se arregla y se cuida el cabello."@es ,
                            "Establishment where hair is combed, cut, groomed and cared for."@en ;
-              rdfs:label "hairdressing"@en ,
-                         "peluquería"@es ;
+              rdfs:label "Hairdressing"@en ,
+                         "Peluquería"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4134,8 +4176,8 @@ xsd:date rdf:type rdfs:Datatype .
                              ] ;
              rdfs:comment "Store dedicated to the sale of handmade products by artisans."@en ,
                           "Tienda que se dedica a la venta de productos hechos a mano por artesanos."@es ;
-             rdfs:label "handicrafts"@en ,
-                        "tienda de artesanías"@es ;
+             rdfs:label "Handicrafts"@en ,
+                        "Tienda de artesanías"@es ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4146,8 +4188,8 @@ xsd:date rdf:type rdfs:Datatype .
                                              owl:onProperty :offersAdditionalHealthAndBeautyService ;
                                              owl:allValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
                                            ] ;
-                           rdfs:label "health and wellness facility"@en ,
-                                      "instalación de salud y bienestar"@es ;
+                           rdfs:label "Health and wellness facility"@en ,
+                                      "Instalación de salud y bienestar"@es ;
                            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4156,8 +4198,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :HealthAndWellnessFacility ;
               rdfs:comment "Establecimiento dotado de instalaciones apropiadas para tomar baños medicinales y curativos."@es ,
                            "Establishment equipped with appropriate facilities to take medicinal and curative baths."@en ;
-              rdfs:label "balneario"@es ,
-                         "health resort"@en ;
+              rdfs:label "Balneario"@es ,
+                         "Health resort"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4197,8 +4239,8 @@ xsd:date rdf:type rdfs:Datatype .
                                               ] ;
                               rdfs:comment "Lugares, sitios y estructuras que tienen un valor significativo para los turistas desde el punto de vista histórico, arqueológico, arquitectónico o cultural."@es ,
                                            "Places, sites and structures that have significant value to tourists from a historical, archaeological, architectural or cultural point of view"@en ;
-                              rdfs:label "historical or cultural resource"@en ,
-                                         "recurso histórico o cultural"@es ;
+                              rdfs:label "Historical or cultural resource"@en ,
+                                         "Recurso histórico o cultural"@es ;
                               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4227,8 +4269,8 @@ xsd:date rdf:type rdfs:Datatype .
                                 ] ;
                 rdfs:comment "Experience that is marketed only through travel agencies that contains two or more tourist services (accommodation, maintenance or transportation) for which the client pays a price."@en ,
                              "Experiencia que se comercializa únicamente por medio de las agencias de viajes que contiene dos o más servicios de carácter turístico (alojamiento, manutención o transporte) por el que el cliente abona un precio."@es ;
-                rdfs:label "holiday package"@en ,
-                           "paquete turístico"@es ;
+                rdfs:label "Holiday package"@en ,
+                           "Paquete turístico"@es ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4237,8 +4279,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :AccommodationEstablishment ;
         rdfs:comment "Establecimiento hotelero de categoría inferior a un hotel."@es ,
                      "Hotel establishment of a category lower than a hotel."@en ;
-        rdfs:label "hostal"@en ,
-                   "hostal"@es ;
+        rdfs:label "Hostal"@en ,
+                   "Hostal"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4248,7 +4290,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:comment "Establecimiento hotelero para estancias cortas, generalmente situado en un lugar de paso o estratégico."@es ,
                      "Hotel establishment for short stays, generally located in a transit or strategic location."@en ;
         rdfs:label "Albergue"@es ,
-                   "hostel"@en ;
+                   "Hostel"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4262,8 +4304,8 @@ xsd:date rdf:type rdfs:Datatype .
                        ] ;
        rdfs:comment "Establecimiento, reconocido o registrado como hotel según la legislación aplicable, con recepción, servicios e instalaciones adicionales que ofrece alojamiento y, en la mayoría de los casos, servicios de comidas."@es ,
                     "Establishment, recognized or registered as a hotel under applicable legislation, with reception, additional services and facilities offering accommodation and, in most cases, food services."@en ;
-       rdfs:label "hotel"@en ,
-                  "hotel"@es ;
+       rdfs:label "Hotel"@en ,
+                  "Hotel"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4272,8 +4314,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :FoodEstablishment ;
               rdfs:comment "Establecimiento en el que se comercializan y se sirven helados."@es ,
                            "Establishment in which ice cream is sold and served."@en ;
-              rdfs:label "heladería"@es ,
-                         "ice cream shop"@en ;
+              rdfs:label "Heladería"@es ,
+                         "Ice cream shop"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4282,9 +4324,9 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:subClassOf :FoodEstablishment ;
      rdfs:comment "Establecimiento en el que se preparan y sirven comidas y que está decorado de forma tradicional y rústica. También se puede utilizar el término venta"@es ,
                   "Establishment in which meals are prepared and served and which is decorated in a traditional and rustic way."@en ;
-     rdfs:label "inn"@en ,
-                "mesón"@es ,
-                "venta"@es ;
+     rdfs:label "Mesón"@es ,
+                "Venta"@es ,
+                "inn"@en ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4293,8 +4335,8 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf :EducationalFacility ;
                       rdfs:comment "Espacio que revela el significado y la relación del patrimonio con el visitante que llega hasta el sitio turístico que lo contiene."@es ,
                                    "Space that reveals the meaning and relationship of heritage with the visitor who arrives at the tourist site that contains it."@en ;
-                      rdfs:label "centro de interpretación"@es ,
-                                 "interpretation centre"@en ;
+                      rdfs:label "Centro de interpretación"@es ,
+                                 "Interpretation centre"@en ;
                       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4312,8 +4354,8 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:subClassOf :RetailAndFashion ;
                    rdfs:comment "Establecimiento donde se venden joyas y relojes"@es ,
                                 "Establishment where jewelry and watches are sold"@en ;
-                   rdfs:label "jewelry and watches"@en ,
-                              "joyería y relojería"@es ;
+                   rdfs:label "Jewelry and watches"@en ,
+                              "Joyería y relojería"@es ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4322,8 +4364,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :PartyAndEntertainmentFacility ;
          rdfs:comment "Local público con instalaciones para karaoke, equipo que se usa para interpretar canciones sobre un fondo musical grabado, mientras se sigue la letra que aparece en una pantalla."@es ,
                       "Public venue with karaoke facilities, equipment used to perform songs over a recorded musical background, while following the lyrics that appear on a screen."@en ;
-         rdfs:label "karaoke"@en ,
-                    "karaoke"@es ;
+         rdfs:label "Karaoke"@en ,
+                    "Karaoke"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4332,8 +4374,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :SportFacility ;
               rdfs:comment "Espacio provisto de una o varias pistas preparadas para disputar carreras con estos vehículos."@es ,
                            "Space provided with one or more tracks prepared to compete in races with these vehicles."@en ;
-              rdfs:label "circuito de karts"@es ,
-                         "karts circuit"@en ;
+              rdfs:label "Circuito de karts"@es ,
+                         "Karts circuit"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4342,8 +4384,8 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:subClassOf :RetailAndFashion ;
        rdfs:comment "Local comercial de pequeño tamaño destinado a la venta de periódicos, revistas, golosinas y otros artículos."@es ,
                     "Small commercial premises for the sale of newspapers, magazines, candy and other items."@en ;
-       rdfs:label "kiosk"@en ,
-                  "quiosco"@es ;
+       rdfs:label "Kiosk"@en ,
+                  "Quiosco"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4370,8 +4412,8 @@ xsd:date rdf:type rdfs:Datatype .
                       ] ;
       rdfs:comment "Gran masa permanente de agua depositada en depresiones del terreno."@es ,
                    "Large permanent mass of water deposited in depressions in the ground."@en ;
-      rdfs:label "lago"@es ,
-                 "lake"@en ;
+      rdfs:label "Lago"@es ,
+                 "Lake"@en ;
       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4384,8 +4426,8 @@ xsd:date rdf:type rdfs:Datatype .
                                            ] ;
                            rdfs:comment "Espacios destinados a actividades recreativas, artísticas y culturales que ofrecen oportunidades para el entretenimiento, la diversión y la apreciación de diversas formas de expresión artística y cultural."@es ,
                                         "Spaces for recreational, artistic and cultural activities that offer opportunities for entertainment, fun and appreciation of various forms of artistic and cultural expression."@en ;
-                           rdfs:label "instalación de cultura y ocio"@es ,
-                                      "leisure and culture facility"@en ;
+                           rdfs:label "Instalación de cultura y ocio"@es ,
+                                      "Leisure and culture facility"@en ;
                            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4404,8 +4446,8 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subClassOf :TourismOrRelatedFacility ;
                rdfs:comment "Company or commercial establishment that operates in a specific physical location that provides products or services."@en ,
                             "Empresa o establecimiento comercial que opera en una ubicación física específica que proporciona productos o servicios."@es ;
-               rdfs:label "local business"@en ,
-                          "negocio local"@es ;
+               rdfs:label "Local business"@en ,
+                          "Negocio local"@es ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4449,8 +4491,8 @@ xsd:date rdf:type rdfs:Datatype .
                           ] ;
           rdfs:comment "Proporciona información sobre la ubicación física de un negocio, establecimiento u organización."@es ,
                        "Provides information about the physical location of a business, establishment or organization."@en ;
-          rdfs:label "localización"@es ,
-                     "location"@en .
+          rdfs:label "Localización"@es ,
+                     "Location"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#Lodge
@@ -4468,8 +4510,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :MiscellaneousService ;
                 rdfs:comment "Lugares reservados para guardar el equipaje de forma segura y para espacios de tiempo cortos."@es ,
                              "Reserved places to store luggage safely and for short periods of time."@en ;
-                rdfs:label "consigna de equipaje"@es ,
-                           "lugagge storage"@en ;
+                rdfs:label "Consigna de equipaje"@es ,
+                           "Lugagge storage"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4478,8 +4520,8 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subClassOf :HealthAndWellnessFacility ;
                rdfs:comment "Business that provides relaxation, health and body well-being services through therapeutic and anti-stress massages."@en ,
                             "Negocio que brinda los servicios de relax, salud y bienestar corporal por medio de masajes terapéuticos y anti estrés."@es ;
-               rdfs:label "centro de masajes"@es ,
-                          "massage centre"@en ;
+               rdfs:label "Centro de masajes"@es ,
+                          "Massage centre"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4488,8 +4530,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :LocalBusiness ;
                 rdfs:comment "Atención y cuidado de la salud proporcionados por profesionales de la salud para mantener, promover y restablecer la salud de las personas, prevenir enfermedades y lesiones, y brindar diagnóstico, tratamiento y seguimiento médico."@es ,
                              "Health care and care provided by health professionals to maintain, promote and restore people's health, prevent illness and injury, and provide diagnosis, treatment and medical follow-up."@en ;
-                rdfs:label "medical service"@en ,
-                           "servicio médico"@es ;
+                rdfs:label "Medical service"@en ,
+                           "Servicio médico"@es ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4497,8 +4539,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Minaret rdf:type owl:Class ;
          rdfs:subClassOf :HistoricalOrCulturalResource ;
          rdfs:comment "Torre de las mezquitas desde cuya altura convoca el almuédano a los musulmanes en las horas de oración."@es ;
-         rdfs:label "minaret"@en ,
-                    "minarete"@es ;
+         rdfs:label "Minaret"@en ,
+                    "Minarete"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4507,8 +4549,8 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf :LocalBusiness ;
                       rdfs:comment "Espacios físicos donde se ofrecen una variedad de servicios para satisfacer las necesidades de los clientes."@es ,
                                    "Physical spaces where a variety of services are offered to satisfy customer needs."@en ;
-                      rdfs:label "miscallaneous service"@en ,
-                                 "servicios varios"@es ;
+                      rdfs:label "Miscallaneous service"@en ,
+                                 "Servicios varios"@es ;
                       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4516,15 +4558,15 @@ xsd:date rdf:type rdfs:Datatype .
 :Monastery rdf:type owl:Class ;
            rdfs:subClassOf :HistoricalOrCulturalResource ;
            rdfs:comment "Casa, ordinariamente fuera de poblado, donde viven monjes en comunidad."@es ;
-           rdfs:label "monasterio"@es ,
-                      "monastery"@en ;
+           rdfs:label "Monasterio"@es ,
+                      "Monastery"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#MonthOfTheYear
 :MonthOfTheYear rdf:type owl:Class ;
-                rdfs:label "mes del año"@es ,
-                           "month of the year"@en ;
+                rdfs:label "Mes del año"@es ,
+                           "Month of the year"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -4532,8 +4574,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Monument rdf:type owl:Class ;
           rdfs:subClassOf :HistoricalOrCulturalResource ;
           rdfs:comment "Construcción arquitectónica o escultórica, generalmente de grandes dimensiones, que se erige en recuerdo de una persona o hecho memorable."@es ;
-          rdfs:label "monument"@en ,
-                     "monumento"@es ;
+          rdfs:label "Monument"@en ,
+                     "Monumento"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4541,8 +4583,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Mosque rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Templo musulmán."@es ;
-        rdfs:label "mezquita"@es ,
-                   "mosque"@en ;
+        rdfs:label "Mezquita"@es ,
+                   "Mosque"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4561,8 +4603,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :NaturalResource ;
           rdfs:comment "Gran elevación natural del terreno."@es ,
                        "Great natural elevation of the land"@en ;
-          rdfs:label "montaña"@es ,
-                     "mountain"@en ;
+          rdfs:label "Montaña"@es ,
+                     "Mountain"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4571,8 +4613,8 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf :LeisureAndCultureFacility ;
               rdfs:comment "Establecimiento destinado a la proyección de películas cinematográficas."@es ,
                            "Establishment intended for the projection of cinematographic films."@en ;
-              rdfs:label "cine"@es ,
-                         "movie theater"@en ;
+              rdfs:label "Cine"@es ,
+                         "Movie theater"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4581,8 +4623,8 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf :SportFacility ;
                       rdfs:comment "Center oriented towards sports or practices that involve, in addition to physical activity, intense recreational activity in the natural environment."@en ,
                                    "Centro orientado a los deportes o prácticas que conllevan, además de una actividad física, una intensa actividad recreativa en el medio natural."@es ;
-                      rdfs:label "centro de actividades multiaventura"@es ,
-                                 "multiadventure centre"@en ;
+                      rdfs:label "Centro de actividades multiaventura"@es ,
+                                 "Multiadventure centre"@en ;
                       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4609,8 +4651,8 @@ xsd:date rdf:type rdfs:Datatype .
                             ] ;
             rdfs:comment "Contenido visual o interactivo utilizados para captar la atención del usuario, transmitir información de manera más visual y atractiva, y proporcionar una experiencia interactiva."@es ,
                          "Visual or interactive content used to capture the user's attention, convey information in a more visual and attractive way, and provide an interactive experience."@en ;
-            rdfs:label "multimedia"@en ,
-                       "multimedia"@es ;
+            rdfs:label "Multimedia"@en ,
+                       "Multimedia"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -4628,8 +4670,8 @@ xsd:date rdf:type rdfs:Datatype .
                         ] ;
         rdfs:comment "Institución sin ánimo de lucro permanente cuya finalidad consiste en la adquisición, conservación, estudio y exposición al público de objetos de interés cultural."@es ,
                      "Permanent non-profit institution whose purpose is the acquisition, conservation, study and exhibition to the public of objects of cultural interest."@en ;
-        rdfs:label "museo"@es ,
-                   "museum"@en ;
+        rdfs:label "Museo"@es ,
+                   "Museum"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4638,8 +4680,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :EventAttendanceFacility ;
             rdfs:comment "Local dedicado a interpretaciones de música en vivo"@es ,
                          "Venue dedicated to live music performances"@en ;
-            rdfs:label "music venue"@en ,
-                       "sala de conciertos"@es ;
+            rdfs:label "Music venue"@en ,
+                       "Sala de conciertos"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4648,8 +4690,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:subClassOf :NaturalResource ;
              rdfs:comment "Espacio natural legalmente protegido que, por su belleza o por la singularidad de su fauna y flora, posee valor ecológico y cultural."@es ,
                           "Legally protected natural space that, due to its beauty or the uniqueness of its fauna and flora, has ecological and cultural value"@en ;
-             rdfs:label "natural park"@en ,
-                        "parque natural"@es ;
+             rdfs:label "Natural park"@en ,
+                        "Parque natural"@es ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4677,8 +4719,8 @@ xsd:date rdf:type rdfs:Datatype .
                                  ] ;
                  rdfs:comment "Lugar, paisaje o fenómeno de la naturaleza que posee un valor especial y atractivo para los turistas. Son apreciados por su belleza escénica, biodiversidad, características geológicas únicas o experiencias al aire libre que ofrecen a los visitantes."@es ,
                               "Place, landscape or natural phenomenon that has a special and attractive value for tourists. They are appreciated for their scenic beauty, biodiversity, unique geological features or outdoor experiences they offer to visitors."@en ;
-                 rdfs:label "natural resource"@en ,
-                            "recurso natural"@es ;
+                 rdfs:label "Natural resource"@en ,
+                            "Recurso natural"@es ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4687,8 +4729,8 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:subClassOf :NaturalResource ;
                   rdfs:comment "Lugar o punto elevado desde el cual puede contemplarse con facilidad un paisaje."@es ,
                                "Place or elevated point from which a landscape can be easily seen"@en ;
-                  rdfs:label "mirador natural"@es ,
-                             "natural viewpoint"@en ;
+                  rdfs:label "Mirador natural"@es ,
+                             "Natural viewpoint"@en ;
                   <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4697,8 +4739,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :PartyAndEntertainmentFacility ;
            rdfs:comment "Local público donde sirven bebidas y se baila al son de música grabada."@es ,
                         "Public place where they serve drinks and dance to recorded music."@en ;
-           rdfs:label "discoteca"@es ,
-                      "night club"@en ;
+           rdfs:label "Discoteca"@es ,
+                      "Night club"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4762,8 +4804,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://ontologia.segittur.es/turismo/def/core#OrnamentalFountain
 :OrnamentalFountain rdf:type owl:Class ;
                     rdfs:subClassOf :HistoricalOrCulturalResource ;
-                    rdfs:label "Estructura, típicamente de agua, diseñada para embellecer un espacio, tanto interior como exterior, a través de su forma, diseño y efectos visuales y/o auditivos"@es ,
-                               "Fuente ornamental"@es ,
+                    rdfs:comment "Estructura, típicamente de agua, diseñada para embellecer un espacio, tanto interior como exterior, a través de su forma, diseño y efectos visuales y/o auditivos"@es ,
+                                 "Structure, typically made of water, designed to embellish a space, both interior and exterior, through its shape, design and visual and/or auditory effects"@en ;
+                    rdfs:label "Fuente ornamental"@es ,
                                "Ornamental Fountain"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
@@ -4773,8 +4816,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:subClassOf :SportFacility ;
              rdfs:comment "Cancha rectangular cerrada para la práctica de este deporte."@es ,
                           "Closed rectangular court for the practice of this sport."@en ;
-             rdfs:label "paddle court"@en ,
-                        "pista de pádel"@es ;
+             rdfs:label "Paddle court"@en ,
+                        "Pista de pádel"@es ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4782,8 +4825,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Palace rdf:type owl:Class ;
         rdfs:subClassOf :HistoricalOrCulturalResource ;
         rdfs:comment "Mansión grande y lujosa destinada a ser residencia de reyes, de aristócratas o de personajes importantes."@es ;
-        rdfs:label "palace"@en ,
-                   "palacio"@es ;
+        rdfs:label "Palace"@en ,
+                   "Palacio"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4792,8 +4835,8 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:subClassOf :MiscellaneousService ;
                   rdfs:comment "Mail and package delivery service carried out by a company."@en ,
                                "Servicio de reparto de correspondencia y de paquetes realizado por una empresa."@es ;
-                  rdfs:label "paquetería y mensajería"@es ,
-                             "parcel and courier"@en ;
+                  rdfs:label "Paquetería y mensajería"@es ,
+                             "Parcel and courier"@en ;
                   <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4820,8 +4863,8 @@ xsd:date rdf:type rdfs:Datatype .
                                  ] ;
                  rdfs:comment "Lugar o recinto destinado a aparcar vehículos."@es ,
                               "Place or area intended for parking vehicles."@en ;
-                 rdfs:label "aparcamiento"@es ,
-                            "parking"@en ;
+                 rdfs:label "Aparcamiento"@es ,
+                            "Parking"@en ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4834,8 +4877,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                ] ;
                                rdfs:comment "Espacios destinados a la diversión, celebración y entretenimiento de las personas, diseñados para ofrecer experiencias sociales y recreativas a través de música, baile, bebidas, espectáculos en vivo y actividades temáticas o lúdicas."@es ,
                                             "Spaces intended for fun, celebration and entertainment of people, designed to offer social and recreational experiences through music, dance, drinks, live shows and thematic or recreational activities."@en ;
-                               rdfs:label "instalación para fiestas y entretenimiento"@es ,
-                                          "party and entertainment facility"@en ;
+                               rdfs:label "Instalación para fiestas y entretenimiento"@es ,
+                                          "Party and entertainment facility"@en ;
                                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4844,8 +4887,8 @@ xsd:date rdf:type rdfs:Datatype .
                            rdfs:subClassOf :TourismOrganisation ;
                            rdfs:comment "Transportation dedicated to the movement of people and their luggage in vehicles built and conditioned for this purpose."@en ,
                                         "Transporte dedicado al desplazamiento de las personas y sus equipajes en vehículos construidos y acondicionados para tal fin."@es ;
-                           rdfs:label "compañía de transporte de viajeros"@es ,
-                                      "passenger transport company"@en ;
+                           rdfs:label "Compañía de transporte de viajeros"@es ,
+                                      "Passenger transport company"@en ;
                            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4854,8 +4897,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :RetailAndFashion ;
            rdfs:comment "Store where perfumes are sold."@en ,
                         "Tienda donde se venden perfumes."@es ;
-           rdfs:label "perfumery"@en ,
-                      "perfumería"@es ;
+           rdfs:label "Perfumery"@en ,
+                      "Perfumería"@es ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4864,8 +4907,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :MedicalService ;
           rdfs:comment "Establecimiento en el que se preparan y venden medicamentos."@es ,
                        "Establishment in which medicines are prepared and sold."@en ;
-          rdfs:label "farmacia"@es ,
-                     "pharmacy"@en ;
+          rdfs:label "Farmacia"@es ,
+                     "Pharmacy"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4889,7 +4932,7 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:comment "It represents a place, that may have an associated location"@en ,
                     "Representa un lugar, que puede tener o no localización asociada"@es ;
        rdfs:label "Lugar"@es ,
-                  "place"@en ;
+                  "Place"@en ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -4902,8 +4945,8 @@ xsd:date rdf:type rdfs:Datatype .
                              ] ;
              rdfs:comment "Estructura acondicionada para la proyección de espectáculos relacionados con la astronomía."@es ,
                           "Structure equipped for the projection of shows related to astronomy."@en ;
-             rdfs:label "planetario"@es ,
-                        "planetarium"@en ;
+             rdfs:label "Planetario"@es ,
+                        "Planetarium"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4912,8 +4955,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :LeisureAndCultureFacility ;
             rdfs:comment "Espacio recreativo enfocado a los niños, que cuenta con juegos infantiles y que suele estar en espacios abiertos."@es ,
                          "Recreational space focused on children, which has children's games and is usually in open spaces."@en ;
-            rdfs:label "parque infantil"@es ,
-                       "playground"@en ;
+            rdfs:label "Parque infantil"@es ,
+                       "Playground"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4932,8 +4975,8 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subClassOf :PublicService ;
                rdfs:comment "Building where police activities are centralized of a neighborhood or district under the command of a commissioner"@en ,
                             "Edificio donde se centralizan las actividades policiales de un barrio o distrito bajo el mando de un comisario."@es ;
-               rdfs:label "comisaría de policía"@es ,
-                          "police station"@en ;
+               rdfs:label "Comisaría de policía"@es ,
+                          "Police station"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4942,8 +4985,8 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:subClassOf :TransportInfrastructure ;
                        rdfs:comment "Unidad establecida en un puerto o fuera de él, formada por obras, instalaciones y superficies, incluida su zona de agua, que permite la realización íntegra de la operación portuaria de tránsito de pasajeros, incluyendo el embarque y el desembarque de pasajeros y equipajes del buque al puerto."@es ,
                                     "Unit established in a port or outside it, made up of works, facilities and surfaces, including its water area, that allows the full implementation of the port operation of passenger transit, including the boarding and disembarkation of passengers and luggage from the ship to the port."@en ;
-                       rdfs:label "port passenger terminal"@en ,
-                                  "terminal portuaria de pasajeros"@es ;
+                       rdfs:label "Port passenger terminal"@en ,
+                                  "Terminal portuaria de pasajeros"@es ;
                        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -4952,8 +4995,8 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :PublicService ;
             rdfs:comment "Establecimiento encargado de enviar, recibir, ordenar, manejar, transmitir y entregar el correo. En algunas de ellas se ofrecen servicios como formularios, giros de dinero, cambio de monedas y servicios bancarios, entre otros."@es ,
                          "Establishment responsible for sending, receiving, sorting, handling, transmitting and delivering mail. Some of them offer services such as forms, money transfers, currency exchange and banking services, among others"@en ;
-            rdfs:label "oficina de correos"@es ,
-                       "post office"@en ;
+            rdfs:label "Oficina de correos"@es ,
+                       "Post office"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5001,7 +5044,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:comment "Coste total del producto o servicio que puede incluir impuestos, cargos o reducciones en las tarifas."@es ,
                                  "Total cost of the product or service that may include taxes, charges, or rate reductions."@en ;
                     rdfs:label "Especificación del precio"@es ,
-                               "price specification"@en ;
+                               "Price specification"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -5010,8 +5053,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:subClassOf :PublicService ;
              rdfs:comment "Building where the population is served at a first level of health care"@en ,
                           "Edificio donde se atiende a la población en un primer nivel asistencial sanitario"@es ;
-             rdfs:label "centro de atención primaria"@es ,
-                        "primary care"@en ;
+             rdfs:label "Centro de atención primaria"@es ,
+                        "Primary care"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5020,8 +5063,8 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:subClassOf :PassengerTransportCompany ;
                     rdfs:comment "Company that provides passenger transportation services using private vehicles and professional drivers."@en ,
                                  "Empresa que proporciona servicios de transporte de pasajeros utilizando vehículos privados y conductores profesionales."@es ;
-                    rdfs:label "empresa VTC"@es ,
-                               "private hire company"@en ;
+                    rdfs:label "Empresa VTC"@es ,
+                               "Private hire company"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5030,8 +5073,8 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf :MedicalService ;
                  rdfs:comment "Establecimiento destinado al diagnóstico y tratamiento de enfermos, cuya financiación corre a cargo de los propios pacientes, de las aseguradoras o de embajadas extranjeras."@es ,
                               "Establishment intended for the diagnosis and treatment of patients, whose financing is provided by the patients themselves, by insurance companies or by foreign embassies."@en ;
-                 rdfs:label "hospital privado"@es ,
-                            "private hospital"@en ;
+                 rdfs:label "Hospital privado"@es ,
+                            "Private hospital"@en ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5064,8 +5107,8 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:subClassOf :PartyAndEntertainmentFacility ;
      rdfs:comment "Local público, de diseño cuidado, donde se sirven bebidas y se escucha música."@es ,
                   "Public place, with a careful design, where drinks are served and music is listened to."@en ;
-     rdfs:label "pub"@en ,
-                "pub"@es ;
+     rdfs:label "Pub"@en ,
+                "Pub"@es ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5074,8 +5117,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :PublicService ;
                 rdfs:comment "Establecimiento financiado con fondos estatales destinado al diagnóstico y tratamiento de enfermos, donde a menudo se practican la investigación y la docencia."@es ,
                              "Establishment financed by state funds for the diagnosis and treatment of patients, where research and teaching are often practiced"@en ;
-                rdfs:label "hospital público"@es ,
-                           "public hospital"@en ;
+                rdfs:label "Hospital público"@es ,
+                           "Public hospital"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5084,8 +5127,8 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf :PublicService ;
                 rdfs:comment "Habitación o edificación pequeña con uno o más inodoros para uso del público en general."@es ,
                              "Room or small building with one or more toilets for use by the general public"@en ;
-                rdfs:label "baño público"@es ,
-                           "public restroom"@en ;
+                rdfs:label "Baño público"@es ,
+                           "Public restroom"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5103,8 +5146,8 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                rdfs:comment "Actividad o función proporcionada por la administración local con el propósito de satisfacer las necesidades básicas de la sociedad y promover el bienestar común."@en ,
                             "Activity or function provided by the local administration with the purpose of satisfying the basic needs of society and promoting the common well-being."@en ;
-               rdfs:label "public service"@en ,
-                          "servicio público"@es ;
+               rdfs:label "Public service"@en ,
+                          "Servicio público"@es ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5127,8 +5170,8 @@ xsd:date rdf:type rdfs:Datatype .
                                      ] ;
                      rdfs:comment "En los tranvías, autobuses, metro, etc. sitio donde habitualmente hacen parada los vehículos."@es ,
                                   "On trams, buses, subways, etc. place where vehicles usually stop."@en ;
-                     rdfs:label "parada de transporte público"@es ,
-                                "public transport stop"@en ;
+                     rdfs:label "Parada de transporte público"@es ,
+                                "Public transport stop"@en ;
                      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5137,8 +5180,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :SportFacility ;
            rdfs:comment "Lugar destinado a carreras de caballos"@es ,
                         "Place for horse racing"@en ;
-           rdfs:label "hipódromo"@es ,
-                      "race track"@en ;
+           rdfs:label "Hipódromo"@es ,
+                      "Race track"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5169,8 +5212,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
            rdfs:subClassOf :NaturalResource ;
            rdfs:comment "Accumulation of water produced by a construction in the bed of a river or stream that partially or totally closes its channel"@en ,
                         "Acumulación de agua producida por una construcción en el lecho de un río o arroyo que cierra parcial o totalmente su cauce."@es ;
-           rdfs:label "embalse"@es ,
-                      "reservoir"@en ;
+           rdfs:label "Embalse"@es ,
+                      "Reservoir"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5199,8 +5242,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
             rdfs:subClassOf :FoodEstablishment ;
             rdfs:comment "Establecimiento público donde se sirven comidas y bebidas, mediante precio, para ser consumidas en el mismo local"@es ,
                          "Public establishment where food and drinks are served, for a price, to be consumed in the same premises"@en ;
-            rdfs:label "restaurant"@en ,
-                       "restaurante"@es ;
+            rdfs:label "Restaurant"@en ,
+                       "Restaurante"@es ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5219,8 +5262,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                   rdfs:subClassOf :LocalBusiness ;
                   rdfs:comment "Espacios físicos que ofrecen un lugar accesible y conveniente para que los consumidores adquieran diversos productos."@es ,
                                "Physical spaces that offer an accessible and convenient place for consumers to purchase various products."@en ;
-                  rdfs:label "comercio y moda"@es ,
-                             "retail and fashion"@en ;
+                  rdfs:label "Comercio y moda"@es ,
+                             "Retail and fashion"@en ;
                   <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5233,8 +5276,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                        ] ;
        rdfs:comment "Continuous and more or less large current of water that flows into another, a lake or the sea"@en ,
                     "Corriente de agua continua y más o menos caudalosa que va a desembocar en otra, en un lago o en el mar."@es ;
-       rdfs:label "river"@en ,
-                  "río"@es ;
+       rdfs:label "River"@en ,
+                  "Río"@es ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5375,8 +5418,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
               rdfs:subClassOf :SportFacility ;
               rdfs:comment "Area in which the athletics discipline races are held."@en ,
                            "Zona en la que se realizan las carreras de la disciplina de atletismo."@es ;
-              rdfs:label "pista de atletismo"@es ,
-                         "running track"@en ;
+              rdfs:label "Pista de atletismo"@es ,
+                         "Running track"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5385,8 +5428,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
             rdfs:subClassOf :AccommodationEstablishment ;
             rdfs:comment "Tipo de establecimiento extrahotelero ubicado en un inmueble situado en suelo rústico y de ámbito rural que dispone de una unidad alojativa y que cuenta con el equipamiento y las instalaciones necesarias para la conservación, manipulado y consumo de alimentos."@es ,
                          "Type of non-hotel establishment located in a property located on rustic land and in a rural area that has an accommodation unit and that has the equipment and facilities necessary for the conservation, handling and consumption of food."@en ;
-            rdfs:label "casa rural"@es ,
-                       "rural house"@en ;
+            rdfs:label "Casa rural"@es ,
+                       "Rural house"@en ;
             <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5395,8 +5438,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
         rdfs:subClassOf :NaturalResource ;
         rdfs:comment "Lugar donde se deja evaporar agua salada para dejar solo la sal, secarla y recogerla luego para su utilización, consumo o venta."@es ,
                      "Place where salt water is allowed to evaporate to leave only the salt, dry it and then collect it for use, consumption or sale"@en ;
-        rdfs:label "salina"@en ,
-                   "salina"@es ;
+        rdfs:label "Salina"@en ,
+                   "Salina"@es ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5404,8 +5447,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :Sanctuary rdf:type owl:Class ;
            rdfs:subClassOf :HistoricalOrCulturalResource ;
            rdfs:comment "Templo en que se venera la imagen o reliquia de un santo de especial devoción. También puede utilizarse el término ermita."@es ;
-           rdfs:label "sanctuary"@en ,
-                      "santuario"@es ;
+           rdfs:label "Sanctuary"@en ,
+                      "Santuario"@es ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5413,8 +5456,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :Schedule rdf:type owl:Class ;
           rdfs:comment "Esta clase permite definir la validez, duración y recurrencia de, por ejemplo, euna especificación del precio en condiciones normales y, aún más importante, de promociones y propuestas especiales que las empresas deseen ofrecer."@es ,
                        "This class allows you to define the validity, duration, and recurrence of, for example, a price specification under normal conditions and, even more importantly, of promotions and special offers that companies wish to offer."@en ;
-          rdfs:label "programación"@es ,
-                     "schedule"@en ;
+          rdfs:label "Programación"@es ,
+                     "Schedule"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -5422,8 +5465,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :ShootingRange rdf:type owl:Class ;
                rdfs:subClassOf :SportFacility ;
                rdfs:comment "Espacios habilitados para la práctica del tiro que reúnan las características y medidas de seguridad pertinentes."@es ;
-               rdfs:label "campo de tiro"@es ,
-                          "shooting range"@en ;
+               rdfs:label "Campo de tiro"@es ,
+                          "Shooting range"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5432,8 +5475,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
               rdfs:subClassOf :RetailAndFashion ;
               rdfs:comment "Complejo formado por establecimientos dedicados a actividades comerciales y de ocio."@es ,
                            "Complex made up of establishments dedicated to commercial and leisure activities."@en ;
-              rdfs:label "centro comercial"@es ,
-                         "shopping mall"@en ;
+              rdfs:label "Centro comercial"@es ,
+                         "Shopping mall"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5456,8 +5499,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                     ] ;
                     rdfs:comment "Destination experience with link to a particular business with a differential value, which may or may not involve the transaction of a product or service. Also called microexperiences."@en ,
                                  "Experiencia en destino con vínculo a un negocio particular con un valor diferencial, que puede llevar consigo o no la transacción de un producto o servicio. También llamadas microexperiencias."@es ;
-                    rdfs:label "experiencia singular"@es ,
-                               "singular experience"@en ;
+                    rdfs:label "Experiencia singular"@es ,
+                               "Singular experience"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5466,8 +5509,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
               rdfs:subClassOf :NaturalResource ;
               rdfs:comment "Tree that stands out among others due to its size, shape, age, rarity, biological origin, state of conservation, beauty or for being part of myths or traditions."@en ,
                            "Árbol que destaca entre los demás por su tamaño, forma, edad, rareza, origen biológico, estado de conservación, belleza o por formar parte de mitos o tradiciones."@es ;
-              rdfs:label "singular tree"@en ,
-                         "árbol singular"@es ;
+              rdfs:label "Singular tree"@en ,
+                         "Árbol singular"@es ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5476,8 +5519,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
            rdfs:subClassOf :SportFacility ;
            rdfs:comment "Instalación deportiva diseñada específicamente para la práctica del monopatinaje."@es ,
                         "Sports facility designed specifically for skateboarding."@en ;
-           rdfs:label "skatepark"@en ,
-                      "skatepark"@es ;
+           rdfs:label "Skatepark"@en ,
+                      "Skatepark"@es ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5486,8 +5529,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
              rdfs:subClassOf :SportFacility ;
              rdfs:comment "Superficie acondicionada y diseñada para la práctica del patinaje sobre ruedas o sobre hielo, dependiendo del tipo de pista."@es ,
                           "Surface conditioned and designed for the practice of roller or ice skating, depending on the type of rink."@en ;
-             rdfs:label "pista de patinaje"@es ,
-                        "skating rink"@en ;
+             rdfs:label "Pista de patinaje"@es ,
+                        "Skating rink"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5506,8 +5549,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                     ] ;
                     rdfs:comment "Cuentas individuales o de empresas creadas en plataformas digitales diseñadas para la interacción social. Permiten a las personas y organizaciones compartir información, publicar contenido, interactuar con otros usuarios y construir una presencia en línea."@es ,
                                  "Individual or company accounts created on digital platforms designed for social interaction. They allow people and organizations to share information, publish content, interact with other users and build an online presence."@en ;
-                    rdfs:label "perfil en redes sociales"@es ,
-                               "social media profile"@en ;
+                    rdfs:label "Perfil en redes sociales"@es ,
+                               "Social media profile"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "false"^^xsd:boolean .
 
 
@@ -5516,8 +5559,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
           rdfs:subClassOf :RetailAndFashion ;
           rdfs:comment "Store that sells objects that serve as souvenirs of the visit to a certain place."@en ,
                        "Tienda que vende objetos que sirven como recuerdo de la visita a un lugar determinado."@es ;
-          rdfs:label "souvenirs"@en ,
-                     "tienda de souvenirs"@es ;
+          rdfs:label "Souvenirs"@en ,
+                     "Tienda de souvenirs"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5526,8 +5569,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
      rdfs:subClassOf :HealthAndWellnessFacility ;
      rdfs:comment "Establecimiento que ofrece tratamientos, terapias o sistemas de relajación, utilizando como base principal el agua, generalmente corriente, no medicinal."@es ,
                   "Establishment that offers treatments, therapies or relaxation systems, using water as its main base, generally running water, not medicinal."@en ;
-     rdfs:label "spa"@en ,
-                "spa"@es ;
+     rdfs:label "Spa"@en ,
+                "Spa"@es ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5589,8 +5632,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                ] ;
                rdfs:comment "Espacios diseñados y equipados específicamente para brindar servicios y oportunidades relacionadas con actividades deportivas y recreativas para turistas, visitantes y residentes."@es ,
                             "Spaces designed and equipped specifically to provide services and opportunities related to sports and recreational activities for tourists, visitors and residents."@en ;
-               rdfs:label "instalación deportiva"@es ,
-                          "sport facility"@en ;
+               rdfs:label "Instalación deportiva"@es ,
+                          "Sport facility"@en ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5603,8 +5646,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                               ] ;
               rdfs:comment "Lugar que dispone de diferentes instalaciones e infraestructuras para la práctica de disciplinas deportivas. También se puede denominar centro deportivo."@es ,
                            "Place that has different facilities and infrastructure for practicing sports disciplines."@en ;
-              rdfs:label "polideportivo"@es ,
-                         "sports centre"@en ;
+              rdfs:label "Polideportivo"@es ,
+                         "Sports centre"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5613,8 +5656,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
         rdfs:subClassOf :NaturalResource ;
         rdfs:comment "Corriente de agua que mana del suelo o de entre las rocas de forma natural."@es ,
                      "Current of water that flows from the ground or between rocks naturally"@en ;
-        rdfs:label "manantial"@es ,
-                   "spring"@en ;
+        rdfs:label "Manantial"@es ,
+                   "Spring"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5637,8 +5680,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                          ] ;
          rdfs:comment "Large venue with stands for spectators, intended for sports competitions."@en ,
                       "Recinto de grandes dimensiones con graderías para los espectadores, destinado a competiciones deportivas."@es ;
-         rdfs:label "estadio"@es ,
-                    "stadium"@en ;
+         rdfs:label "Estadio"@es ,
+                    "Stadium"@en ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5647,8 +5690,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
              rdfs:subClassOf :Groceries ;
              rdfs:comment "Establecimiento comercial de venta al por menor en el que se expenden todo género de artículos alimenticios, bebidas, productos de limpieza, etc., y en el que el cliente se sirve y paga a la salida"@es ,
                           "Retail commercial establishment in which all types of food items, beverages, cleaning products, etc. are sold, and in which the customer is served and pays upon departure"@en ;
-             rdfs:label "supermarket"@en ,
-                        "supermercado"@es ;
+             rdfs:label "Supermarket"@en ,
+                        "Supermercado"@es ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5657,8 +5700,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
        rdfs:subClassOf :NaturalResource ;
        rdfs:comment "Sunken land with a more or less muddy bottom and abundant vegetation, where the water stagnates naturally"@en ,
                     "Terreno hundido de fondo más o menos cenagoso y abundante vegetación, donde las aguas se estancan de forma natural."@es ;
-       rdfs:label "pantano"@es ,
-                  "swamp"@en ;
+       rdfs:label "Pantano"@es ,
+                  "Swamp"@en ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5671,8 +5714,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                               ] ;
               rdfs:comment "Construcción que contiene gran cantidad de agua y que se destina al baño, a la natación o a otros ejercicios y deportes acuáticos."@es ,
                            "Construction that contains a large amount of water and is intended for bathing, swimming or other water exercises and sports."@en ;
-              rdfs:label "piscina"@es ,
-                         "swimming pool"@en ;
+              rdfs:label "Piscina"@es ,
+                         "Swimming pool"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5680,8 +5723,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :Synagogue rdf:type owl:Class ;
            rdfs:subClassOf :HistoricalOrCulturalResource ;
            rdfs:comment "Edificio dedicado a la congregación y culto de la religión judía."@es ;
-           rdfs:label "sinagoga"@es ,
-                      "synagogue"@en ;
+           rdfs:label "Sinagoga"@es ,
+                      "Synagogue"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5700,8 +5743,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
           rdfs:subClassOf :FoodEstablishment ;
           rdfs:comment "Establecimiento donde se preparan y venden alimentos listos para ser llevados y consumidos fuera del lugar de venta."@es ,
                        "Establishment where food is prepared and sold ready to be taken and consumed outside the place of sale."@en ;
-          rdfs:label "casa de comidas para llevar"@es ,
-                     "take away"@en ;
+          rdfs:label "Casa de comidas para llevar"@es ,
+                     "Take away"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5710,8 +5753,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
         rdfs:subClassOf :FoodEstablishment ;
         rdfs:comment "Establecimiento público, de carácter popular, donde se sirven y expenden bebidas y, a veces, se sirven comidas."@es ,
                      "Public establishment, of a popular nature, where drinks are served and sold and, sometimes, meals are served."@en ;
-        rdfs:label "taberna"@es ,
-                   "tavern"@en ;
+        rdfs:label "Taberna"@es ,
+                   "Tavern"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5720,8 +5763,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
            rdfs:subClassOf :TransportInfrastructure ;
            rdfs:comment "Lugar en que se detienen los taxis a la espera de pasajeros."@es ,
                         "Place where taxis stop waiting for passengers."@en ;
-           rdfs:label "parada de taxis"@es ,
-                      "taxi stand"@en ;
+           rdfs:label "Parada de taxis"@es ,
+                      "Taxi stand"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5730,8 +5773,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
          rdfs:subClassOf :FoodEstablishment ;
          rdfs:comment "Establecimiento especializado en la venta y servicio de tés e infusiones de todo el mundo."@es ,
                       "Establishment specialized in the sale and service of teas and infusions from around the world."@en ;
-         rdfs:label "tea room"@en ,
-                    "tetería"@es ;
+         rdfs:label "Tea room"@en ,
+                    "Tetería"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5740,8 +5783,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                rdfs:subClassOf :RetailAndFashion ;
                rdfs:comment "Establecimiento de venta al por menor de artículos de telefonía, teléfonos móviles y accesorios."@es ,
                             "Retail establishment of telephone items, mobile phones and accessories."@en ;
-               rdfs:label "telephone shop"@en ,
-                          "tienda de telefonía"@es ;
+               rdfs:label "Telephone shop"@en ,
+                          "Tienda de telefonía"@es ;
                <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5755,8 +5798,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                                   ] ;
                                   rdfs:comment "Espacio ubicado en lugares de máxima afluencia donde se ofrece información de interés al visitante."@es ,
                                                "Space located in places of maximum influx where information of interest to the visitor is offered"@en ;
-                                  rdfs:label "punto de información turística temporal"@es ,
-                                             "temporary tourist information point"@en ;
+                                  rdfs:label "Punto de información turística temporal"@es ,
+                                             "Temporary tourist information point"@en ;
                                   <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5765,8 +5808,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
              rdfs:subClassOf :SportFacility ;
              rdfs:comment "Campo de juego donde se juega al tenis."@es ,
                           "Playing field where tennis is played."@en ;
-             rdfs:label "pista de tenis"@es ,
-                        "tennnis court"@en ;
+             rdfs:label "Pista de tenis"@es ,
+                        "Tennnis court"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5776,8 +5819,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                          :LeisureAndCultureFacility ;
          rdfs:comment "Building or site intended for the representation of dramatic works or other public spectacles typical of the scene."@en ,
                       "Edificio o sitio destinado a la representación de obras dramáticas o a otros espectáculos públicos propios de la escena."@es ;
-         rdfs:label "teatro"@es ,
-                    "theater"@en ;
+         rdfs:label "Teatro"@es ,
+                    "Theater"@en ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5786,8 +5829,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
              rdfs:subClassOf :RetailAndFashion ;
              rdfs:comment "Site or store where stamps and tobacco are mainly sold, in addition to offering recharge services for prepaid telephone and urban transport cards."@en ,
                           "Sitio o tienda donde se venden principalmente sellos y tabaco, además de ofrecer servicios de recarga de tarjetas prepago de telefonía y de transportes urbanos."@es ;
-             rdfs:label "estanco"@es ,
-                        "tobacco shop"@en ;
+             rdfs:label "Estanco"@es ,
+                        "Tobacco shop"@en ;
              <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5840,8 +5883,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                       ] ;
       rdfs:comment "Experiencia turística que incluye el recorrido por algún lugar o recinto de interés, que se hace generalmente en grupo y con la ayuda de un guía que conduce y proporciona información acerca de lo que se muestra."@es ,
                    "Tourist experience that includes a tour of a place or area of ​​interest, which is generally done in a group and with the help of a guide who drives and provides information about what is shown."@en ;
-      rdfs:label "tour"@en ,
-                 "visita guiada"@es ;
+      rdfs:label "Tour"@en ,
+                 "Visita guiada"@es ;
       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5863,8 +5906,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                            ] ;
            rdfs:comment "Person with extensive knowledge of the destination, capable of expressing himself in two or more languages, whose responsibility is to serve, inform and assist tourists on the tours they take."@en ,
                         "Persona con amplio conocimiento del destino, capaz de expresarse en dos o más idiomas, cuya responsabilidad es atender, informar y asistir a los turistas en los tours que realizan."@es ;
-           rdfs:label "guía turístico"@es ,
-                      "tour guide"@en ;
+           rdfs:label "Guía turístico"@es ,
+                      "Tour guide"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5914,8 +5957,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                     ] ;
                     rdfs:comment "Espacio físico, con o sin una delimitación de carácter administrativo o analítico, en el que un visitante puede pernoctar."@es ,
                                  "Physical space, with or without an administrative or analytical delimitation, in which a visitor can spend the night."@en ;
-                    rdfs:label "destino turístico"@es ,
-                               "tourism destination"@en ;
+                    rdfs:label "Destino turístico"@es ,
+                               "Tourism destination"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -5974,8 +6017,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                      ] ;
                      rdfs:comment "Agente de distribución que participa en la venta y/o corretaje de productos y servicios relacionados con viajes y turismo."@es ,
                                   "Distribution agent that participates in the sale and/or brokerage of products and services related to travel and tourism."@en ;
-                     rdfs:label "intermediario turístico"@es ,
-                                "tourism intermediary"@en ;
+                     rdfs:label "Intermediario turístico"@es ,
+                                "Tourism intermediary"@en ;
                      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6023,8 +6066,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                           ] ;
                           rdfs:comment "Infraestructuras y servicios que están diseñados tanto para satisfacer las necesidades de los turistas como para brindar beneficios a los residentes locales."@es ,
                                        "Infrastructure and services that are designed to both meet the needs of tourists and provide benefits to local residents."@en ;
-                          rdfs:label "Tourism or related facility"@en ,
-                                     "instalación turística o vinculada"@es ;
+                          rdfs:label "Instalación turística o vinculada"@es ,
+                                     "Tourism or related facility"@en ;
                           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6227,8 +6270,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :TouristAttractionSite rdf:type owl:Class ;
                        rdfs:subClassOf :HistoricalOrCulturalResource ;
                        rdfs:comment "Espacio delimitado en el que se reúnen diferentes atractivos que no son exclusivamente turísticos, pero que en razón de sus condiciones y singularidad suscitan interés para la actividad turística. Por ejemplo, puede incluir el casco antiguo de una población"@es ;
-                       rdfs:label "conjunto de interés artístico"@es ,
-                                  "tourist attraction site"@en ;
+                       rdfs:label "Conjunto de interés artístico"@es ,
+                                  "Tourist attraction site"@en ;
                        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6242,8 +6285,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                           ] ;
                           rdfs:comment "Organización encargada de proveer información a los turistas potenciales y turistas que visitan un determinado lugar."@es ,
                                        "Organization in charge of providing information to potential tourists and tourists who visit a certain place"@en ;
-                          rdfs:label "oficina de turismo"@es ,
-                                     "tourist information office"@en ;
+                          rdfs:label "Oficina de turismo"@es ,
+                                     "Tourist information office"@en ;
                           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6270,8 +6313,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
           rdfs:subClassOf :RetailAndFashion ;
           rdfs:comment "Store where toys are sold."@en ,
                        "Tienda donde se venden juguetes."@es ;
-          rdfs:label "juguetería"@es ,
-                     "toy store"@en ;
+          rdfs:label "Juguetería"@es ,
+                     "Toy store"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6281,8 +6324,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                    :HistoricalOrCulturalResource ;
                    rdfs:comment "An area made up of individual stalls that offer products of various kinds with a predominance of fresh products: meat, fruits, vegetables, fish, etc."@en ,
                                 "Recinto formado por puestos individuales que ofrecen productos de diversa índole con predominancia de los productos frescos: carne, frutas, verduras, pescado, etc."@es ;
-                   rdfs:label "mercado tradicional"@es ,
-                              "traditional market"@en ;
+                   rdfs:label "Mercado tradicional"@es ,
+                              "Traditional market"@en ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6291,8 +6334,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
        rdfs:subClassOf :NaturalResource ;
        rdfs:comment "Road, path or path that is characterized by being very small and narrow and that is generally found in rural areas"@en ,
                     "Vía, senda o camino que se caracteriza por ser muy pequeña y angosta y que por lo general se encuentran en las zonas rurales."@es ;
-       rdfs:label "sendero"@es ,
-                  "trail"@en ;
+       rdfs:label "Sendero"@es ,
+                  "Trail"@en ;
        <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6301,8 +6344,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
           rdfs:subClassOf :NaturalResource ;
           rdfs:comment "Caminos disponibles para ir en bicicleta por la montaña o el campo."@es ,
                        "Paths available for cycling in the mountains or countryside"@en ;
-          rdfs:label "sendero BTT"@es ,
-                     "trail for mountain bike"@en ;
+          rdfs:label "Sendero BTT"@es ,
+                     "Trail for mountain bike"@en ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6312,8 +6355,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                               :TransportInfrastructure ;
               rdfs:comment "Instalación ferroviaria con vías a la que pueden llegar y desde la que se pueden expedir trenes."@es ,
                            "Railway facility with tracks that can be reached and from which trains can be dispatched."@en ;
-              rdfs:label "estación de tren"@es ,
-                         "train station"@en ;
+              rdfs:label "Estación de tren"@es ,
+                         "Train station"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6331,8 +6374,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                          ] ;
                          rdfs:comment "Instalaciones físicas que permiten el movimiento de personas de un lugar a otro. Proporcionan las vías, conexiones y recursos necesarios para el transporte terrestre, aéreo, marítimo y ferroviario, facilitando la movilidad tanto a nivel local como global."@es ,
                                       "Physical facilities that allow the movement of people from one place to another. They provide the roads, connections and resources necessary for land, air, sea and rail transportation, facilitating mobility both locally and globally."@en ;
-                         rdfs:label "infraestructura de transporte"@es ,
-                                    "transport infrastructure"@en ;
+                         rdfs:label "Infraestructura de transporte"@es ,
+                                    "Transport infrastructure"@en ;
                          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6345,8 +6388,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                               ] ;
               rdfs:comment "Company that provides organization, planning, development and sale services of products or services of a tourist nature and purposes between suppliers and end customers."@en ,
                            "Empresa que presta servicios de organización, planificación, desarrollo y venta de productos o servicios de naturaleza y fines turísticos entre proveedores y clientes finales."@es ;
-              rdfs:label "agencia de viajes"@es ,
-                         "travel agency"@en ;
+              rdfs:label "Agencia de viajes"@es ,
+                         "Travel agency"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6354,8 +6397,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :UrbanViewPoint rdf:type owl:Class ;
                 rdfs:subClassOf :HistoricalOrCulturalResource ;
                 rdfs:comment "Lugar para disfrutar de las vistas de una ciudad desde una perspectiva única, desde la cima de un edificio o de una colina."@es ;
-                rdfs:label "mirador urbano"@es ,
-                           "urban viewpoint"@en ;
+                rdfs:label "Mirador urbano"@es ,
+                           "Urban viewpoint"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6364,8 +6407,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
            rdfs:subClassOf :FinancialService ;
            rdfs:comment "Companies specialized in managing the return of Value Added Tax (VAT) to tourists or foreign visitors."@en ,
                         "Compañías especializadas en la gestión de la devolución del Impuesto al Valor Agregado (IVA) a los turistas o visitantes extranjeros."@es ;
-           rdfs:label "VAT refund"@en ,
-                      "devolución de IVA"@es ;
+           rdfs:label "Devolución de IVA"@es ,
+                      "VAT refund"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6384,8 +6427,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
         rdfs:subClassOf :NaturalResource ;
         rdfs:comment "Llanura entre montes o alturas"@es ,
                      "Plain between mountains or heights"@en ;
-        rdfs:label "valle"@es ,
-                   "valley"@en ;
+        rdfs:label "Valle"@es ,
+                   "Valley"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6398,8 +6441,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                    ] ;
                    rdfs:comment "Pequeñas excursiones en tren, bus o barco para conocer los principales monumentos y atracciones de una ciudad."@es ,
                                 "Small excursions by train, bus or boat to see the main monuments and attractions of a city."@en ;
-                   rdfs:label "experiencia en vehículo"@es ,
-                              "vehicle experience"@en ;
+                   rdfs:label "Experiencia en vehículo"@es ,
+                              "Vehicle experience"@en ;
                    <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6416,8 +6459,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                                       ] ;
                       rdfs:comment "Commercial entity dedicated to providing short-term vehicle rental services to travelers who need a temporary means of transportation."@en ,
                                    "Entidad comercial que se dedica a proporcionar servicios de alquiler de vehículos a corto plazo a viajeros que necesitan un medio de transporte temporal."@es ;
-                      rdfs:label "empresa de alquiler de vehículos"@es ,
-                                 "vehicle rental company"@en ;
+                      rdfs:label "Empresa de alquiler de vehículos"@es ,
+                                 "Vehicle rental company"@en ;
                       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6426,8 +6469,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                  rdfs:subClassOf :MiscellaneousService ;
                  rdfs:comment "Establecimiento donde se reparan las averías de los automóviles."@es ,
                               "Establishment where automobile breakdowns are repaired."@en ;
-                 rdfs:label "taller mecánico"@es ,
-                            "vehicle workshop"@en ;
+                 rdfs:label "Taller mecánico"@es ,
+                            "Vehicle workshop"@en ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6436,8 +6479,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                 rdfs:subClassOf :Groceries ;
                 rdfs:comment "Machine that provides snacks, drinks, candy and other products to consumers"@en ,
                              "Máquina que proporciona aperitivos, bebidas, golosinas y otros productos a los consumidores."@es ;
-                rdfs:label "máquina expendedora"@es ,
-                           "vending machine"@en ;
+                rdfs:label "Máquina expendedora"@es ,
+                           "Vending machine"@en ;
                 <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6445,8 +6488,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :VernacularArchitecture rdf:type owl:Class ;
                         rdfs:subClassOf :HistoricalOrCulturalResource ;
                         rdfs:comment "Construcciones tradicionales que reflejan las tradiciones y estilos arquitectónicos locales (masías, molinos, almazaras, etc.)"@es ;
-                        rdfs:label "arquitectura vernácula"@es ,
-                                   "vernacular architecture"@en ;
+                        rdfs:label "Arquitectura vernácula"@es ,
+                                   "Vernacular architecture"@en ;
                         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6459,8 +6502,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                           ] ;
           rdfs:comment "Land planted with vineyards belonging to a winery, area, region, country, designation of origin, etc. A characteristic element of the wine landscape of La Rioja and Rioja Alavesa, currently in disuse, it became popular at the end of the 19th century, although its origin dates back centuries."@en ,
                        "Tierra plantada de viñas perteneciente a una bodega, zona, región, país, denominación de origen, etc. Elemento característico del paisaje vitivinícola de La  Rioja y la Rioja Alavesa actualmente en desuso, se popularizó a finales del siglo XIX, aunque su origen se remonta a siglos atrás."@es ;
-          rdfs:label "vineyard"@en ,
-                     "viñedo"@es ;
+          rdfs:label "Vineyard"@en ,
+                     "Viñedo"@es ;
           <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6468,8 +6511,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :VineyardShelter rdf:type owl:Class ;
                  rdfs:subClassOf :HistoricalOrCulturalResource ;
                  rdfs:comment "También conocido como chozo, se trata de una pequeña edificación de piedra de una sola planta, normalmente de forma circular y coronada con una falsa cúpula, levantada por el propio agricultor de la vid como refugio ante las inclemencias del tiempo o durante los momentos de descanso, y como almacén de herramientas de labor. También utilizada como puesto de vigilancia para proteger las cosechas. Elemento característico del paisaje vitivinícola de La Rioja y la Rioja Alavesa actualmente en desuso, se popularizó a finales del siglo XIX, aunque su origen se remonta a siglos atrás."@es ;
-                 rdfs:label "guardaviña"@es ,
-                            "vineyard shelter"@en ;
+                 rdfs:label "Guardaviña"@es ,
+                            "Vineyard shelter"@en ;
                  <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6478,8 +6521,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
          rdfs:subClassOf :NaturalResource ;
          rdfs:comment "Abertura en la tierra, y más comúnmente en una montaña, por donde salen de tiempo en tiempo humo, llamas y materias encendidas o derretidas."@es ,
                       "Opening in the earth, and more commonly in a mountain, through which smoke, flames, and burning or melted matter emerge from time to time."@en ;
-         rdfs:label "volcano"@en ,
-                    "volcán"@es ;
+         rdfs:label "Volcano"@en ,
+                    "Volcán"@es ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6487,8 +6530,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
 :Wall rdf:type owl:Class ;
       rdfs:subClassOf :HistoricalOrCulturalResource ;
       rdfs:comment "Construcción alta y robusta, generalmente coronada por un parapeto, que rodea una fortificación, plaza fuerte u otro lugar para su defensa."@es ;
-      rdfs:label "muralla"@es ,
-                 "wall"@en ;
+      rdfs:label "Muralla"@es ,
+                 "Wall"@en ;
       <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6497,8 +6540,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
            rdfs:subClassOf :NaturalResource ;
            rdfs:comment "Caída desde cierta altura del agua de un río u otra corriente por el brusco desnivel del cauce."@es ,
                         "Fall from a certain height of the water of a river or other stream due to the sudden drop in level of the channel."@en ;
-           rdfs:label "cascada"@es ,
-                      "waterfall"@en ;
+           rdfs:label "Cascada"@es ,
+                      "Waterfall"@en ;
            <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6507,8 +6550,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
          rdfs:subClassOf :FoodEstablishment ;
          rdfs:comment "Establecimiento especializado en la venta y degustación de vinos."@es ,
                       "Establishment specialized in the sale and tasting of wines."@en ;
-         rdfs:label "bar de vinos"@es ,
-                    "wine bar"@en ;
+         rdfs:label "Bar de vinos"@es ,
+                    "Wine bar"@en ;
          <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6521,8 +6564,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                         ] ;
         rdfs:comment "Lugar donde se cría y almacena el vino."@es ,
                      "Place where wine is raised and stored."@en ;
-        rdfs:label "bodega"@es ,
-                   "winery"@en ;
+        rdfs:label "Bodega"@es ,
+                   "Winery"@en ;
         <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6531,8 +6574,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                     rdfs:subClassOf :SportFacility ;
                     rdfs:comment "Centro turístico básicamente dedicado a la práctica del esquí y demás deportes de nieve y montaña, que forma un conjunto coordinado de medios de remonte mecánicos, pistas e instalaciones complementarias."@es ,
                                  "Tourist center basically dedicated to the practice of skiing and other snow and mountain sports, which forms a coordinated set of mechanical lifts, slopes and complementary facilities."@en ;
-                    rdfs:label "estación de deportes de invierno"@es ,
-                               "winter sports resort"@en ;
+                    rdfs:label "Estación de deportes de invierno"@es ,
+                               "Winter sports resort"@en ;
                     <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6541,8 +6584,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
               rdfs:subClassOf :SportFacility ;
               rdfs:comment "Instalación ubicada en una zona costera o junto a un cuerpo de agua, que se utiliza para el amarre y resguardo de embarcaciones de recreo y deportivas, como yates, veleros, lanchas y otros tipos de barcos privados."@es ,
                            "Installation located in a coastal area or next to a body of water, which is used for mooring and sheltering recreational and sports vessels, such as yachts, sailboats, motorboats and other types of private boats."@en ;
-              rdfs:label "puerto deportivo"@es ,
-                         "yachting port"@en ;
+              rdfs:label "Puerto deportivo"@es ,
+                         "Yachting port"@en ;
               <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6565,8 +6608,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
                      ] ;
      rdfs:comment "Lugar en que se conservan, cuidan y a veces se crían diversas especies animales para que sean contempladas por el público y para su estudio."@es ,
                   "Place where various animal species are conserved, cared for and sometimes raised so that they can be seen by the public and for study."@en ;
-     rdfs:label "zoo"@en ,
-                "zoológico"@es ;
+     rdfs:label "Zoo"@en ,
+                "Zoológico"@es ;
      <https://ontologia.segittur.es/turismo/def/annot#visibleResource> "true"^^xsd:boolean .
 
 
@@ -6711,11 +6754,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
 ###  https://ontologia.segittur.es/turismo/kos/AgriTourismExperienceType
 <https://ontologia.segittur.es/turismo/kos/AgriTourismExperienceType> rdf:type owl:NamedIndividual ,
                                                                                <http://www.w3.org/2008/05/skos#ConceptScheme> .
-
-
-###  https://ontologia.segittur.es/turismo/kos/AmusementParkServiceType
-<https://ontologia.segittur.es/turismo/kos/AmusementParkServiceType> rdf:type owl:NamedIndividual ,
-                                                                              <http://www.w3.org/2008/05/skos#ConceptScheme> .
 
 
 ###  https://ontologia.segittur.es/turismo/kos/AquariumServiceType

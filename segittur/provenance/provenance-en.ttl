@@ -7,10 +7,12 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://ontologia.segittur.es/turismo/def/core#>;
 	 prov:wasGeneratedAt "2025-08-25";
 .
 :agent0 a prov:Agent; foaf:name "SEGITTUR".
-:agent1 a prov:Agent; foaf:name "lorem Ipsum".
-:agent2 a prov:Agent; foaf:name "lorem Ipsum".
+:agent1 a prov:Agent; foaf:name "Ontology Engineering Group - Universidad Politécnica de Madrid".
+:agent2 a prov:Agent; foaf:name "Globaldit".
+:agent3 a prov:Agent; foaf:name "Gnoss".
