@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-accommodationratingsystem: <https://ontologia.segittur.es/turismo/kos/accommodationratingsystem/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:AccommodationRatingSystem a skos:ConceptScheme ; 
+    dct:issued "2026-01-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Accommodation rating system"@en ;
+    rdfs:label "Sistema de clasificación de alojamientos"@es ;
+    dct:title "Concept scheme grouping accommodation rating systems"@en ;
+    dct:title "Esquema de conceptos agrupando sistemas de clasificación de alojamientos"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-accommodationratingsystem:Stars a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:prefLabel "Stars"@en ;
+  skos:prefLabel "Estrellas"@es .
+
+estur-accommodationratingsystem:OneStar a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Stars;
+  skos:prefLabel "1 star"@en ;
+  skos:prefLabel "1 estrella"@es .
+
+estur-accommodationratingsystem:TwoStars a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Stars;
+  skos:prefLabel "2 stars"@en ;
+  skos:prefLabel "2 estrellas"@es .
+
+estur-accommodationratingsystem:ThreeStars a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Stars;
+  skos:prefLabel "3 stars"@en ;
+  skos:prefLabel "3 estrellas"@es .
+
+estur-accommodationratingsystem:FourStars a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Stars;
+  skos:prefLabel "4 stars"@en ;
+  skos:prefLabel "4 estrellas"@es .
+
+estur-accommodationratingsystem:FiveStars a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Stars;
+  skos:prefLabel "5 stars"@en ;
+  skos:prefLabel "5 estrellas"@es .
+
+estur-accommodationratingsystem:Keys a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:prefLabel "Keys"@en ;
+  skos:prefLabel "Llaves"@es .
+
+estur-accommodationratingsystem:OneKey a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Keys;
+  skos:prefLabel "1 key"@en ;
+  skos:prefLabel "1 llave"@es .
+
+estur-accommodationratingsystem:TwoKeys a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Keys;
+  skos:prefLabel "2 keys"@en ;
+  skos:prefLabel "2 llaves"@es .
+
+estur-accommodationratingsystem:ThreeKeys a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Keys;
+  skos:prefLabel "3 keys"@en ;
+  skos:prefLabel "3 llaves"@es .
+
+estur-accommodationratingsystem:FourKeys a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Keys;
+  skos:prefLabel "4 keys"@en ;
+  skos:prefLabel "4 llaves"@es .
+
+estur-accommodationratingsystem:FiveKeys a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:broader estur-accommodationratingsystem:Keys;
+  skos:prefLabel "5 keys"@en ;
+  skos:prefLabel "5 llaves"@es .

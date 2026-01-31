@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:RiverServiceType a skos:ConceptScheme ; 
+estur-kos:RiverService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "River Service Type"@en ;
-    rdfs:label "Tipo de servicio asociado a un río"@es ;
-    dct:title "Concept scheme grouping river service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio asociado a un río"@es .
+    rdfs:label "River service"@en ;
+    rdfs:label "Servicio asociado a un río"@es ;
+    dct:title "Concept scheme grouping river services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios asociados a un río"@es .
 
 #################################################################
 #
@@ -33,52 +33,31 @@ estur-kos:RiverServiceType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-riverservice:BathingArea a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Bathing Area"@en ;
-  skos:prefLabel "Área de baño"@es .
-
 estur-riverservice:FishingArea a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
+  skos:inScheme estur-kos:RiverService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Fishing Area"@en ;
+  skos:prefLabel "Fishing area"@en ;
   skos:prefLabel "Área de pesca"@es .
 
 estur-riverservice:Infirmary a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
+  skos:inScheme estur-kos:RiverService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Infirmary"@en ;
   skos:prefLabel "Enfermería"@es .
 
 estur-riverservice:LifeGuard a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
+  skos:inScheme estur-kos:RiverService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Life Guard"@en ;
+  skos:prefLabel "Life guard"@en ;
   skos:prefLabel "Socorrista"@es .
 
-estur-riverservice:Surveillance a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Surveillance"@en ;
-  skos:prefLabel "Vigilancia"@es .
-
 estur-riverservice:Walkway a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
+  skos:inScheme estur-kos:RiverService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Walkway"@en ;
-  skos:prefLabel "Camino transitable"@es .
-
-estur-riverservice:WasteCollection a skos:Concept;
-  skos:inScheme estur-kos:RiverServiceType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Waste Collection"@en ;
-  skos:prefLabel "Recogida de basuras"@es .
+  skos:prefLabel "Pasarela"@es .
 

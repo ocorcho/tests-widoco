@@ -17,7 +17,7 @@
   <div class="container">
     <div class="head">
       <div style="float:right"><a href="../index-es.html"><b>atrás</b></a> al modelo conceptual de referencia de SEGITTUR </div>
-      <h1>Esquemas de conceptos SKOS de SEGITTUR. Versión 1.2.0</h1>
+      <h1>Esquemas de conceptos SKOS de SEGITTUR. Versión 1.2.2</h1>
 
 
 
@@ -26,7 +26,7 @@
         <dd><a href="https://ontologia.segittur.es/kos/skos-es.html">https://ontologia.segittur.es/kos/skos-es.html</a>
         </dd>
         <dt>Versión:</dt>
-        <dd>v1.2.0 (generada en 2025-08-25)</dd>
+        <dd>v1.2.2 (generada en 2026-01-31)</dd>
 
         <dt>Publicador:</dt>
         <dd><a href="https://www.segittur.es/">SEGITTUR</a></dd>
@@ -35,7 +35,7 @@
         <dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/"></a>
         </dd>
         <dt>Citar como:</dt>
-        <dd>Esquemas de conceptos SKOS de SEGITTUR. Versión v1.2.0. Descargado de <a href="https://ontologia.segittur.es/kos/skos-es.html">https://ontologia.segittur.es/kos/skos-es.html</a>
+        <dd>Esquemas de conceptos SKOS de SEGITTUR. Versión v1.2.2. Descargado de <a href="https://ontologia.segittur.es/kos/skos-es.html">https://ontologia.segittur.es/kos/skos-es.html</a>
         </dd>
       </dl>
 
@@ -60,10 +60,6 @@
           <tr>
             <th>Esquema de conceptos SKOS</th>
             <th>Fuente (en RDF Turtle)</th>
-<!--            
-            <th>URIs and values (en, es)</th>
--->
-
           </tr>
         </thead>
         <tbody>
@@ -73,13 +69,17 @@
             <!-- 
       SELECT DISTINCT ?skosConcept ?label_en ?label_es WHERE
       {
-      ?skosConcept skos:inScheme <https://ontologia.segittur.es/turismo/kos/AccommodationRateType> .
+      ?skosConcept skos:inScheme <https://ontologia.segittur.es/turismo/kos/AccommodationRate> .
       ?skosConcept skos:label ?label_en .
       FILTER(lang(?label_en) = "en") .
       ?skosConcept skos:label ?label_es .
       FILTER(lang(?label_en) = "es") .
       }
       -->
+          </tr>
+          <tr>
+            <td>skos-AccommodationRatingSystem</td>
+            <td><a href="./skos-AccommodationRatingSystem.ttl" target="_blank">skos-AccommodationRatingSystem.ttl</a></td>
           </tr>
           <tr>
             <td>skos-AccommodationService</td>
@@ -90,22 +90,19 @@
             <td><a href="./skos-AccommodationUnitCategory.ttl" target="_blank">skos-AccommodationUnitCategory.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-Adversity</td>
-            <td><a href="./skos-Adversity.ttl" target="_blank">skos-Adversity.ttl</a>
+            <td>skos-AdventureActivityType</td>
+            <td><a href="./skos-AdventureActivityType.ttl" target="_blank">skos-AdventureActivityType.ttl</a>
             </td>
           </tr>
           <tr>
-            <td>skos-AgritourismExperienceType</td>
-            <td><a href="./skos-AgritourismExperienceType.ttl" target="_blank">skos-AgritourismExperienceType.ttl</a>
+            <td>skos-AdversityType</td>
+            <td><a href="./skos-AdversityType.ttl" target="_blank">skos-AdversityType.ttl</a>
             </td>
           </tr>
           <tr>
-            <td>skos-AquariumService</td>
-            <td><a href="./skos-AquariumService.ttl" target="_blank">skos-AquariumService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-ArtGalleryService</td>
-            <td><a href="./skos-ArtGalleryService.ttl" target="_blank">skos-ArtGalleryService.ttl</a></td>
+            <td>skos-AgrotourismExperienceType</td>
+            <td><a href="./skos-AgrotourismExperienceType.ttl" target="_blank">skos-AgrotourismExperienceType.ttl</a>
+            </td>
           </tr>
           <tr>
             <td>skos-BeachService</td>
@@ -116,38 +113,32 @@
             <td><a href="./skos-BeachType.ttl" target="_blank">skos-BeachType.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-BusOperatorService</td>
-            <td><a href="./skos-BusOperatorService.ttl" target="_blank">skos-BusOperatorService.ttl</a></td>
+            <td>skos-CertificationType</td>
+            <td><a href="./skos-CertificationType.ttl" target="_blank">skos-CertificationType.ttl</a></td>
           </tr>
-<!--
           <tr>
             <td>skos-CivicBuildingType</td>
             <td><a href="./skos-CivicBuildingType.ttl" target="_blank">skos-CivicBuildingType.ttl</a></td>
-          </tr>
--->
-          <tr>
-            <td>skos-CongressCentreService</td>
-            <td><a href="./skos-CongressCentreService.ttl" target="_blank">skos-CongressCentreService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-CuisineType</td>
             <td><a href="./skos-CuisineType.ttl" target="_blank">skos-CuisineType.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-CultureCenterService</td>
-            <td><a href="./skos-CultureCenterService.ttl" target="_blank">skos-CultureCenterService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-DMCService</td>
-            <td><a href="./skos-DMCService.ttl" target="_blank">skos-DMCService.ttl</a></td>
+            <td>skos-DayOfTheWeek</td>
+            <td><a href="./skos-DayOfTheWeek.ttl" target="_blank">skos-DayOfTheWeek.ttl</a></td>
           </tr>
           <tr>
             <td>skos-DestinationType</td>
             <td><a href="./skos-DestinationType.ttl" target="_blank">skos-DestinationType.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-EducationalService</td>
-            <td><a href="./skos-EducationalService.ttl" target="_blank">skos-EducationalService.ttl</a></td>
+            <td>skos-DMCService</td>
+            <td><a href="./skos-DMCService.ttl" target="_blank">skos-DMCService.ttl</a></td>
+          </tr>
+          <tr>
+            <td>skos-EducationalFacilityService</td>
+            <td><a href="./skos-EducationalFacilityService.ttl" target="_blank">skos-EducationalFacilityService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-Event</td>
@@ -168,21 +159,17 @@
             </td>
           </tr>
           <tr>
-            <td>skos-GymService</td>
-            <td><a href="./skos-GymService.ttl" target="_blank">skos-GymService.ttl</a></td>
+            <td>skos-FoodEstablishmentService</td>
+            <td><a href="./skos-FoodEstablishmentService.ttl" target="_blank">skos-FoodEstablishmentService.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-HandiCraftService</td>
-            <td><a href="./skos-HandiCraftService.ttl" target="_blank">skos-HandiCraftService.ttl</a>
+            <td>skos-HandiCraftsType</td>
+            <td><a href="./skos-HandiCraftsType.ttl" target="_blank">skos-HandiCraftsType.ttl</a>
             </td>
           </tr>
           <tr>
-            <td>skos-HealthAndBeautyService</td>
-            <td><a href="./skos-HealthAndBeautyService.ttl" target="_blank">skos-HealthAndBeautyService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-HistoricalAndCultureService</td>
-            <td><a href="./skos-HistoricalAndCultureService.ttl" target="_blank">skos-HistoricalAndCultureService.ttl</a></td>
+            <td>skos-HistoricalOrCulturalResourceService</td>
+            <td><a href="./skos-HistoricalOrCulturalResourceService.ttl" target="_blank">skos-HistoricalOrCulturalResourceService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-LabelType</td>
@@ -193,12 +180,8 @@
             <td><a href="./skos-LakeService.ttl" target="_blank">skos-LakeService.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-LeisureAndCultureService</td>
-            <td><a href="./skos-LeisureAndCultureService.ttl" target="_blank">skos-LeisureAndCultureService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-LocalBusinessService</td>
-            <td><a href="./skos-LocalBusinessService.ttl" target="_blank">skos-LocalBusinessService.ttl</a></td>
+            <td>skos-LeisureAndCultureFacilityService</td>
+            <td><a href="./skos-LeisureAndCultureFacilityService.ttl" target="_blank">skos-LeisureAndCultureFacilityService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-LocomotionMode</td>
@@ -208,53 +191,25 @@
             <td>skos-MenuOptions</td>
             <td><a href="./skos-MenuOptions.ttl" target="_blank">skos-MenuOptions.ttl</a></td>
           </tr>
-<!--
           <tr>
-            <td>skos-MilitaryBuildingType</td>
-            <td><a href="./skos-MilitaryBuildingType.ttl" target="_blank">skos-MilitaryBuildingType.ttl</a></td>
-          </tr>
--->
-          <tr>
-            <td>skos-MultiadventureActivityType</td>
-            <td><a href="./skos-MultiadventureActivityType.ttl" target="_blank">skos-MultiadventureActivityType.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-MuseumService</td>
-            <td><a href="./skos-MuseumService.ttl" target="_blank">skos-MuseumService.ttl</a></td>
+            <td>skos-MonthOfTheYear</td>
+            <td><a href="./skos-MonthOfTheYear.ttl" target="_blank">skos-MonthOfTheYear.ttl</a></td>
           </tr>
           <tr>
             <td>skos-MuseumType</td>
             <td><a href="./skos-MuseumType.ttl" target="_blank">skos-MuseumType.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-ParkingFacilityService</td>
-            <td><a href="./skos-ParkingFacilityService.ttl" target="_blank">skos-ParkingFacilityService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-PartyAndEntertainmentService</td>
-            <td><a href="./skos-PartyAndEntertainmentService.ttl" target="_blank">skos-PartyAndEntertainmentService.ttl</a></td>
+            <td>skos-PartyAndEntertainmentFacilityService</td>
+            <td><a href="./skos-PartyAndEntertainmentFacilityService.ttl" target="_blank">skos-PartyAndEntertainmentFacilityService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-PaymentMethod</td>
             <td><a href="./skos-PaymentMethod.ttl" target="_blank">skos-PaymentMethod.ttl</a></td>
           </tr>
-<!--
-          <tr>
-            <td>skos-PlaceOfWorshipType</td>
-            <td><a href="./skos-PlaceOfWorshipType.ttl" target="_blank">skos-PlaceOfWorshipType.ttl</a></td>
-          </tr>
--->
-          <tr>
-            <td>skos-PlanetariumService</td>
-            <td><a href="./skos-PlanetariumService.ttl" target="_blank">skos-PlanetariumService.ttl</a></td>
-          </tr>
           <tr>
             <td>skos-PriceClass</td>
             <td><a href="./skos-PriceClass.ttl" target="_blank">skos-PriceClass.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-RestaurantService</td>
-            <td><a href="./skos-RestaurantService.ttl" target="_blank">skos-RestaurantService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-RiverService</td>
@@ -269,40 +224,24 @@
             <td><a href="./skos-SocialMediaPlatform.ttl" target="_blank">skos-SocialMediaPlatform.ttl</a></td>
           </tr>
           <tr>
+            <td>skos-SportFacilityService</td>
+            <td><a href="./skos-SportFacilityService.ttl" target="_blank">skos-SportFacilityService.ttl</a></td>
+          </tr>
+          <tr>
             <td>skos-SportsCentrePremise</td>
             <td><a href="./skos-SportsCentrePremise.ttl" target="_blank">skos-SportsCentrePremise.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-SportService</td>
-            <td><a href="./skos-SportService.ttl" target="_blank">skos-SportService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-StadiumService</td>
-            <td><a href="./skos-StadiumService.ttl" target="_blank">skos-StadiumService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-StationType</td>
             <td><a href="./skos-StationType.ttl" target="_blank">skos-StationType.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-SwimmingPoolService</td>
-            <td><a href="./skos-SwimmingPoolService.ttl" target="_blank">skos-SwimmingPoolService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-TourGuideService</td>
-            <td><a href="./skos-TourGuideService.ttl" target="_blank">skos-TourGuideService.ttl</a></td>
+            <td>skos-TourismOrRelatedFacilityService</td>
+            <td><a href="./skos-TourismOrRelatedFacilityService.ttl" target="_blank">skos-TourismOrRelatedFacilityService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-TourismResourceService</td>
             <td><a href="./skos-TourismResourceService.ttl" target="_blank">skos-TourismResourceService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-TouristDestinationService</td>
-            <td><a href="./skos-TouristDestinationService.ttl" target="_blank">skos-TouristDestinationService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-TouristOrRelatedFacilityService</td>
-            <td><a href="./skos-TouristOrRelatedFacilityService.ttl" target="_blank">skos-TouristOrRelatedFacilityService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-TouristType</td>
@@ -313,6 +252,10 @@
             <td><a href="./skos-TourService.ttl" target="_blank">skos-TourService.ttl</a></td>
           </tr>
           <tr>
+            <td>skos-TourSpecialty</td>
+            <td><a href="./skos-TourSpecialty.ttl" target="_blank">skos-TourSpecialty.ttl</a></td>
+          </tr>
+          <tr>
             <td>skos-TrailType</td>
             <td><a href="./skos-TrailType.ttl" target="_blank">skos-TrailType.ttl</a></td>
           </tr>
@@ -321,35 +264,35 @@
             <td><a href="./skos-TransportInfrastructureService.ttl" target="_blank">skos-TransportInfrastructureService.ttl</a></td>
           </tr>
           <tr>
+            <td>skos-TransportService</td>
+            <td><a href="./skos-TransportService.ttl" target="_blank">skos-TransportService.ttl</a></td>
+          </tr>
+          <tr>
             <td>skos-TravelAgencyService</td>
             <td><a href="./skos-TravelAgencyService.ttl" target="_blank">skos-TravelAgencyService.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-TravelUnitType</td>
+            <td>skos-TravelUnit</td>
             <td><a href="./skos-TravelUnit.ttl" target="_blank">skos-TravelUnit.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-VehicleRentalCompanyService</td>
-            <td><a href="./skos-VehicleRentalCompanyService.ttl" target="_blank">skos-VehicleRentalCompanyService.ttl</a></td>
+            <td>skos-VehicleExperience</td>
+            <td><a href="./skos-VehicleExperience.ttl" target="_blank">skos-VehicleExperience.ttl</a></td>
+          </tr>
+          <tr>
+            <td>skos-VehicleRentalAgencyService</td>
+            <td><a href="./skos-VehicleRentalAgencyService.ttl" target="_blank">skos-VehicleRentalAgencyService.ttl</a></td>
           </tr>
           <tr>
             <td>skos-VehicleType</td>
             <td><a href="./skos-VehicleType.ttl" target="_blank">skos-VehicleType.ttl</a></td>
           </tr>
           <tr>
-            <td>skos-VineyardService</td>
-            <td><a href="./skos-VineyardService.ttl" target="_blank">skos-VineyardService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-WineryService</td>
-            <td><a href="./skos-WineryService.ttl" target="_blank">skos-WineryService.ttl</a></td>
-          </tr>
-          <tr>
-            <td>skos-ZooService</td>
-            <td><a href="./skos-ZooService.ttl" target="_blank">skos-ZooService.ttl</a></td>
+            <td>skos-WineTourismFacilityService</td>
+            <td><a href="./skos-WineTourismFacilityService.ttl" target="_blank">skos-WineTourismFacilityService.ttl</a></td>
           </tr>
          </tbody>
-      </table>
+        </table>
 
     </span>
           <span>
@@ -358,19 +301,15 @@
     <table>
         <thead>
           <tr>
-            <th>SKOS Concept Scheme</th>
-            <th>Fuente (en RDF - varios formatos)</th>
+            <th>Esquema de conceptos SKOS</th>
+            <th>Fuente (en RDF Turtle)</th>
             <th>Disponible en URI</th>
-<!--            
-            <th>URIs and values (en, es)</th>
--->
-
           </tr>
         </thead>
        <tbody>
           <tr>
             <td>iso 639-2</td>
-            <td><a href="./iso639-2.nt" target="_blank">iso639-2-nt</a></td>
+            <td><a href="./iso639-2.ttl" target="_blank">iso639-2.ttl</a></td>
             <td><a href="https://id.loc.gov/vocabulary/iso639-2" target="_blank">https://id.loc.gov/vocabulary/iso639-2</a></td>
           </tr>
         </tbody>
@@ -383,8 +322,8 @@
       <p>
         </p><dt>Colaboradores:</dt>
         Las siguientes personas han contribuido al desarrollo de este conjunto de esquemas de conceptos SKOS:
-        <dd>Lorem Ipsum, (<a href="https://www.example.eu/">Lorem Ipsum</a>)</dd>
-        <dd>Lorem Ipsum, (<a href="https://www.example.eu/">Lorem Ipsum</a>)</dd>
+        <dd>Oscar Corcho, (<a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>)</dd>
+        <dd>Daniel Da Silva (<a href="https://www.globaldit.es/">Globaldit</a>)</dd>
     </div>
 
   </div>

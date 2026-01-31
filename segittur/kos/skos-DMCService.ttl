@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:DMCServiceType a skos:ConceptScheme ; 
+estur-kos:DMCService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "D M C Service Type"@en ;
-    rdfs:label "Tipo de servicio dmc"@es ;
-    dct:title "Concept scheme grouping d m c service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio dmc"@es .
+    rdfs:label "D M C Service"@en ;
+    rdfs:label "Servicio dmc"@es ;
+    dct:title "Concept scheme grouping d m c services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios dmc"@es .
 
 #################################################################
 #
@@ -34,44 +34,44 @@ estur-kos:DMCServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-dmcservice:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:DMCServiceType;
+  skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Access for disabled"@en ;
   skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
 estur-dmcservice:CurrencyExchange a skos:Concept;
-  skos:inScheme estur-kos:DMCServiceType;
+  skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Currency Exchange"@en ;
+  skos:prefLabel "Currency exchange"@en ;
   skos:prefLabel "Cambio de moneda"@es .
 
 estur-dmcservice:Insurance a skos:Concept;
-  skos:inScheme estur-kos:DMCServiceType;
+  skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Insurance"@en ;
-  skos:prefLabel "Seguro"@es .
+  skos:prefLabel "Seguros"@es .
 
 estur-dmcservice:LuggageStorage a skos:Concept;
-  skos:inScheme estur-kos:DMCServiceType;
+  skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Luggage Storage"@en ;
+  skos:prefLabel "Luggage storage"@en ;
   skos:prefLabel "Almacenamiento de equipaje"@es .
 
 estur-dmcservice:TravelAgency a skos:Concept;
-  skos:inScheme estur-kos:DMCServiceType;
+  skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Travel Agency"@en ;
+  skos:prefLabel "Travel agency"@en ;
   skos:prefLabel "Agencia de viajes"@es .
 
 estur-dmcservice:VisasAndPermits a skos:Concept;
-  skos:inScheme estur-kos:DMCServiceType;
+  skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Visas And Permits"@en ;
+  skos:prefLabel "Visas and permits"@en ;
   skos:prefLabel "Visas y permisos"@es .
 

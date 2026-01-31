@@ -1,12 +1,232 @@
 <h2 id="desc" class="list">Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
 
 <span class="markdown">
-<p>Tres de los conceptos principales de esta ontología son los de <a href="#Organisation">Organización</a>, <a href="#TourismService">Servicio turístico</a> y <a href="#TourismResource">Recurso turístico</a>, tal y como se presenta en la figura 1. En esta figura se puede ver que las organizaciones <a href="#offersService">ofrecen servicios turísticos</a>, y que estos servicios turísticos <a href="#usesResource">utilizan recursos turísticos</a>.</p>
+<p>En esta sección se describen las dos clases principales de esta ontología de referencia, que permiten organizar la representación del dominio del turismo y que se pueden agrupar en la representación de entidades turísticas y lugares. Posteriormente se describen el resto de clases relevantes.</p>
 
-<p><center><img src="images/fig1-General.png"/><figcaption>
-Figura 1. Modelo conceptual general, representando Organizaciones, Servicios Turísticos y Recursos Turísticos.</figcaption></center></p> 
+<h3>Entidad turística</h3>
+    
+<p>Una de las clases principales de la ontología es la <a href="#TourismEntity">Entidad turística</a>, un concepto general que permite agrupar los servicios, organizaciones, recursos, destinos e instalaciones turísticas. En la Figura 1 se puede ver una conceptualización general con esta clase como elemento central, y a continuación se proporciona una descripción general de cada una de sus subclases, que luego será elaborada con mayor detalle más adelante.</p>
+    
+<p>La Figura 1 muestra la jerarquía de <a href="#TourismEntity">Entidad turística</a> con sus subclases.</p>
 
-<p>Hay un conjunto de propiedades que son aplicables a las instancias de estos tres conceptos:</p>
+<p><center><img src="images/fig1-General-tourism-entity-hierarchy.png"/><figcaption>
+Figura 1. Clase Entidad Turística y sus subclases principales.</figcaption></center></p> 
+    
+<p>Las relaciones entre las subclases de la <a href="#TourismEntity">Entidad turística</a> se presentan en las Figuras 2, 3 y 4.</p>
+   
+<p><center><img src="images/fig1-General-tourism-entiy-classes-1.png"/><figcaption>
+Figura 2. Clase Entidad turística y sus relaciones. Subclases Servicio turístico, Organización turística, Recurso turístico, Destino turístico e Instalación turística o vinculada.</figcaption></center></p> 
+
+<p>La Figura 2 ilustra varias de las subclases de <a href="#TourismEntity">Entidad turística</a> y sus relaciones: <a href="#TourismService">Servicio turístico</a>, <a href="#TourismOrganization">Organización turística</a>, <a href="#TourismResource">Recurso turístico</a>, <a href="#TourismDestination">Destino turístico</a> e <a href="#TourismOrRelatedFacility">Instalación turística o vinculada</a>.</p>  
+
+<p>Un <a href="#TourismService">Servicio turístico</a> puede ser ofrecido por una <a href="#TourismOrganization">Organización turística</a> y/o por un <a href="#TourismDestination">Destino turístico</a>. El <a href="#TourismService">Servicio turístico</a> agrupa de manera general los servicios relevantes para el sector turístico, por ejemplo una visita guiada o una experiencia agroturística. Un <a href="#TourismService">Servicio turístico</a> puede tener asociada una o varias <a href="#TourismOrRelatedFacility">Instalaciones turísticas o vinculadas</a> (mediante la relación <a href="#hasTourismOrRelatedFacility">instalación turística o vinculada relacionada</a>).</p>
+    
+<p>La clase <a href="#TourismOrganization">Organización turística</a> representa al conjunto de organizaciones que gestionan y coordinan actividades relacionadas con el turismo, incluyendo la oferta de servicios, la comercialización y la atención al cliente, entre otras. La <a href="#TourismOrganization">Organización turística</a> puede relacionarse con una <a href="#TourismOrRelatedFacility">Instalación turística o vinculada</a>.</p>
+    
+<p>Un <a href="#TourismResource">Recurso turístico</a> representa un lugar, sitio o elemento que tiene un valor significativo y atractivo para los turistas y es capaz de motivar su desplazamiento. Suelen ser destacados por su belleza escénica, importancia histórica, singularidad cultural o valor recreativo. Un <a href="#TourismResource">Recurso turístico</a> puede tener un <a href="#TourismDestination">Destino turístico</a> asociado.</p>
+    
+<p>El <a href="#TourismDestination">Destino turístico</a> es un espacio físico, con o sin una delimitación de carácter administrativo o analítico, en el que un visitante puede pernoctar y disfrutar de los servicios y recursos turísticos, y de sus instalaciones.</p> 
+
+<p>La clase <a href="#TourismOrRelatedFacility">Instalación turística o vinculada</a> representa el conjunto de infraestructuras y servicios que están diseñados tanto para satisfacer las necesidades de los turistas como para brindar beneficios a los residentes locales. Una <a href="#TourismOrRelatedFacility">Instalación turística o vinculada</a> puede ser ofrecida por un <a href="#TourismDestination">Destino turístico.</a></p>
+    
+<p>Tanto el <a href="#TourismService">Servicio turístico</a> como la <a href="#TourismOrganization">Organización turística</a> pueden estar relacionados con una <a href="#TourismEntity">Entidad turística</a>.</p>
+
+<p>La Figura 3 ilustra algunas otras subclases más particulares de la clase <a href="#TourismEntity">Entidad turística</a>: <a href="#Event">Evento</a>, <a href="#PublicService">Servicio público</a> e <a href="#TransportInfrastructure">Infraestructura de transporte</a>. Se mantienen en la figura algunas de las subclases anteriores, para mostrar algunas de sus relaciones principales con las mismas. </p> 
+    
+<p><center><img src="images/fig1-General-tourism-entity-classes-2.png"/><figcaption>
+Figura 3. Clase Entidad turística y sus relaciones. Subclases Evento, Servicio público, e Infraestructura de transporte.</figcaption></center></p> 
+    
+<p>El <a href="#Event">Evento</a> se define como un acontecimiento planificado o programado que tiene un propósito específico y reúne a un grupo de personas para participar en actividades, celebraciones o experiencias compartidas. Puede ser ofrecido por un <a href="#TourismDestination">Destino turístico</a> o por una <a href="#TourismOrganization">Organización turística</a>. Asimismo, un <a href="#TourismService">Servicio turístico</a> puede tener uno o varios eventos relacionados. El <a href="#Event">Evento</a> puede estar relacionado con una <a href="#TourismEntity">Entidad turística</a>.</p>
+    
+<p>Un <a href="#PublicService">Servicio público</a> es una actividad o función proporcionada por la administración local con el propósito de satisfacer las necesidades básicas de la sociedad y promover el bienestar común (por ejemplo, <a href="#PoliceStation">Comisarías de policía</a>, <a href="#PublicHospital">Hospitales públicos</a>, etc.). Puede tener un <a href="#TourismDestination">Destino turístico</a> asociado. </p>
+    
+<p>La clase <a href="#TransportInfrastructure">Infraestructura de transporte</a> representa el conjunto de instalaciones físicas que permiten el movimiento de personas de un lugar a otro, tanto a nivel local como global. Incluye paradas de autobús, conexiones y recursos necesarios para el transporte terrestre, aéreo, marítimo y ferroviario. También pueden tener un <a href="#TourismDestination">Destino turístico</a> asociado.</p> 
+    
+<p>Finalmente, la Figura 4 ilustra la subclase <a href="#SpecialOffer">Oferta especial</a> y sus relaciones con otras subclases de la clase <a href="#TourismEntity">Entidad turística</a>.</p>
+   
+<p><center><img src="images/fig1-General-tourism-entity-classes-3.png"/><figcaption>
+Figura 4. La subclase particular de Entidad turística: Oferta especial.</figcaption></center></p> 
+   
+<p>La <a href="#SpecialOffer">Oferta especial</a> puede ser una promoción temporal, un descuento o un paquete de servicios (alojamiento, actividades, comidas) <a href="#offeredBy">ofrecida por</a> un <a href="#TourismDestination">Destino turístico</a> o por una <a href="#TourismOrganization">Organización turística</a>. Puede tener una <a href="#relatedTourismOrRelatedFacility">instalación turística o vinculada relacionada</a>.</p>
+    
+<h3>Lugar y Localización</h3>
+    
+<p>La clase <a href="#Place">Lugar</a> es una clase relevante dentro de este dominio y representa un lugar que puede tener o no una localización asociada. Una representación más detallada de la tipología de un <a href="#Place">Lugar</a> puede verse en la Figura 5.</p>   
+    
+<p><center><img src="images/fig6-Place-place-hierarchy"/><figcaption>
+Figura 5. La clase Lugar.</figcaption></center></p> 
+
+Varias de las subclases de <a href="#TourismEntity">Entidad turística</a> son también subclases de <a href="#Place">Lugar</a> (<a href="#TourismDestination">Destino turístico</a>, <a href="#TourismOrRelatedFacility">Instalación turística o vinculada</a>, <a href="#PublicService">Servicio público</a> e <a href="#TransportInfrastructure">Infraestructura de transporte</a>). Asimismo, varias subclases de la clase <a href="#TourismResource">Recurso turístico</a>, tales como los <a href="#HistoricalAndCulturalResource">Recursos históricos y culturales</a>, <a href="#NaturalResource">Recursos Naturales</a> y <a href="#Route">Rutas</a>, son también subclases de <a href="#Place">Lugar</a>. Estas tres clases se describirán con más detalle en la sección 3, junto con la clase <a href="#GastronomicResource">Recurso Gastronómico</a>, que es la única que no se considera como un tipo de <a href="#Place">Lugar</a>. El <a href="#Place">Lugar</a> puede estar relacionado con una <a href="#TourismEntity">Entidad turística</a>.
+    
+El <a href="#Place">Lugar</a>, <a href="#DestinationExperience">Experiencia en destino</a> y <a href="#Event">Evento</a> pueden tener o no una o varias localizaciones asociadas (agrupadas en la clase <a href="#Location">Localización</a>), que permiten representar su dirección postal y/o sus coordenadas geográficas. La Figura 6 ilustra cómo se reutiliza la ontología <a href="http://www.opengis.net/ont/geosparql#">geosparql</a> para representar una <a href="#Location">Localización</a>. Una <a href="#Location">Localización</a> proporciona información, a través de sus atributos, sobre la dirección postal de una ubicación física. Asimismo, es una subclase de la clase <a href="#http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>, lo que permite relacionarla con una o varias representaciones espaciales, <a href="#http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>, a través de la propiedad <a href="#http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a>.    
+    
+<p><center><img src="images/fig3-Location"/><figcaption>Figura 6. La clase Localización y su reutilización del vocabulario geosparql para representar datos geoespaciales.</figcaption></center></p> 
+    
+<h3>Descripciones detalladas de las clases principales</h3>    
+    
+<p>A continuación se describen de forma más detallada las clases principales de la ontología, incluyendo referencias a sus atributos y relaciones más relevantes, y a sus subclases.</p>
+    
+<p>Para cada clase se presenta en primer lugar su jerarquía de subclases y sus relaciones. En segundo lugar, se muestra el modelo con los atributos y relaciones de la clase principal y de cada una de sus subclases.</p>
+    
+<p>Las listas normalizadas de valores (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>) se representan con una caja azul en donde se indica el nombre de la lista (<a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a>).</p>
+
+<h4>Servicio turístico</h4>
+
+<p>Un <a href="#TourismService">Servicio turístico</a> puede ser de varios tipos (subclases) tal como se ilustra en la Figura 7. Los servicios pueden ser del tipo <a href="#AgritourismExperience">Experiencia agriturística</a>, <a href="#DestinationExperience">Experiencia en destino</a>, <a href="#HolidayPackage">Paquete turístico</a> y <a href="#Tour">Visita guiada</a>. Una <a href="#DestinationExperience">Experiencia en destino</a> a su vez puede ser una <a href="#SingularExperience">Experiencia singular</a>, es decir una experiencia en destino con vínculo a un negocio particular con un valor diferencial, también llamadas microexperiencias.</p> 
+
+<p><center><img src="images/fig4-TourismService-tourism-service-with-relations"/><figcaption>Figura 7. La clase Servicio turístico y sus relaciones.</figcaption></center></p> 
+
+<p>Un <a href="#TourismService">Servicio turístico</a> puede tener reconocimientos. Un <a href="#Acknowledgement">Reconomiento</a> representa los logros o distinciones otorgadas a personas, empresas o productos por cumplir con ciertos estándares o criterios específicos.</p>
+    
+<p>Un servicio tiene especificación de precio. La Especificación de precio consiste en el coste total del producto o servicio que puede incluir impuestos, cargos o reducciones en las tarifas.</p>
+    
+<p>El Servicio turístico tiene una programación del servicio. La Programación permite definir la validez, duración y recurrencia de, por ejemplo, una especificación del precio en condiciones normales y, aún más importante, de promociones y propuestas especiales que las empresas deseen ofrecer.</p>
+    
+<p>Un Servicio turístico puede ofrecerse a través de un canal de reserva. Un Canal de reserva representa los medios o plataformas utilizados por los huéspedes para realizar una reserva.</p>
+    
+<p>Adicionalmente, el Servicio turístico puede tener una unidad de viaje (por ejemplo, “Pareja”, “Familia con niños”), atender a un tipo de turista (por ejemplo, “Turismo cultural y patrimonial”) y estar en un idioma disponible. Estas relaciones corresponden a listas normalizadas de valores.</p>
+    
+<p>En la Figura 8 se presentan los atributos de la clase principal y los atributos y relaciones de sus subclases.</p>
+    
+<p><center><img src="images/fig4-TourismService-tourism-service-with-data-properties"/><figcaption>Figura 8. La clase Servicio turístico y sus subclases con relaciones y atributos</figcaption></center></p> 
+    
+<p>La clase Experiencia agriturística tiene un producto relacionado con experiencia agriturística. También tiene tipo de experiencia agriturística y tiene gama de precios. Estas propiedades son listas normalizadas de valores. Además se relaciona con un Lugar a través de un punto de interés de referencia.</p>
+    
+<p>Una Experiencia en destino tiene localización y a su vez, una Experiencia singular tiene una gama de precios.</p>
+    
+<p>Una Visita guiada tiene un punto de encuentro que es una Localización. Además tiene una gama de precios y ofrece servicio adicional de tour (listas normalizadas de valores).</p>
+
+<h4>Organización turística</h4>
+
+<p>Una Organización turística sigue una jerarquía de clases que está representada junto con las relaciones de la clase principal, en la Figura 9.</p>
+    
+<p><center><img src="images/fig2-Organisation-tourism-otganisation-with-relations.png"/><figcaption>Figura 9. La clase Organización turística y sus relaciones
+</figcaption></center></p> 
+ 
+<p>Puede ser una Empresa de alojamiento, una Empresa de transporte de pasajeros que a su vez se divide en las clases correspondientes a diferentes tipos de transporte, una Empresa que ofrece actividades complementarias, una Empresa de organización de eventos, una Empresa de servicios de restauración, un Guía turístico, o un Intermediario turístico que puede ser una Agencia de viajes o un Operador receptivo.</p>
+
+<p>La organización tiene reconocimiento. También puede tener perfil en redes sociales. Un Perfil en redes sociales representa cuentas individuales o de empresas creadas en plataformas digitales diseñadas para la interacción social. </p>
+
+<p>La organización puede tener un canal de reserva y tiene punto de contacto. Un Punto de contacto contiene los datos necesarios para establecer comunicación con una persona o entidad.</p> 
+
+<p>En la Figura 10 se presentan los atributos de la clase principal y los atributos y relaciones de sus subclases.</p>
+
+<p><center><img src="images/fig2-Organisation-tourism-organisation-with-data-properties.png"/><figcaption>Figura 10. La clase Organización turística y sus  subclases con relaciones y atributos</figcaption></center></p> 
+    
+<p>Las clases Operador de autocares, Empresa de alquiler de vehículos, Empresa de servicios de restauración, Guía turístico, Operador receptivo, Agencia de viajes ofrecen serivios adicionales, los cuales están representados a través de listas normalizadas. Por ejemplo, la propiedad ofrece servicio adicional de restauración se relaciona con la lista normalizada de servicios adicionales ofrecidos por empresas de restauración, tales como “Buffet” o “Ropero”.</p> 
+
+<p>Una Empresa de alquiler de vehículos tiene un tipo de vehículo. Un Intermediario turístico atiende a un tipo de turista. También puede tener una unidad de viaje. Estas propiedades están relacionadas con listas normalizadas de valores.</p>
+
+<h4>Instalación turística o vinculada</h4> 
+
+<p>Una Instalación turística o vinculada puede ser de varios tipos tal como se puede ver en la Figura 11. Puede ser un Establecimiento alojativo, una Instalación agroturítica, una Instalación educativa, una Instalación para eventos, un Establecimiento de restauración, una Instalación de salud y bienestar, una Instalación de cultura y ocio, un Negocio local, una Instalación para fiestas y entretenimiento o una Instalación deportiva. Los negocios locales a su vez pueden ser de varios tipos.</p>
+ 
+<p><center><img src="images/fig6-Place-tourism-or-related-facility.png"/><figcaption>Figura 11. La clase Instalación turística o vinculada</figcaption></center></p> 
+
+<p>Una Instalación turística o vinculada puede tener reconocimiento y puede tener un perfil en redes sociales.  
+Adicionalmente, la instalación turística tener una unidad de viaje, atiende a un tipo de turista, puede tener un método de pago (por ejemplo “Bizum”, “Metálico”),  y ofrece servicio adicional de la instalación turística o vinculada (por ejemplo, “Acceso para personas de movilidad reducida”. Estas relaciones corresponden a listas normalizadas de valores.</p>
+    
+<p>En la Figura 12 se presentan los atributos de la clase principal y los atributos y relaciones de sus subclases.</p>
+ 
+<p><center><img src="images/fig6-Place-tourism-or-related-facility-with-data-properties.png"/><figcaption>Figura 12. La clase Instalación turística o vinculada y sus subclases con atributos y relaciones</figcaption></center></p> 
+    
+<p>La Instalación agroturística, Instalación educativa, Instalación para eventos, Instalación de salud y bienestar, Instalación deportiva, Instalación de cultura y ocio y el Negocio local pueden ofrecer servicios adicionales. Por ejemplo, la Instalación deportiva ofrece servicio adicional de la instalación deportiva. Todas estas propiedades corresponden a listas normalizadas de valores. La Instalación agroturística además ofrece una gama de precios.</p> 
+    
+<p>Las conceptualizaciones detaladas de Establecimiento alojativo y del Establecimiento de restauración pueden verse en las Figura 13 y 14 respectivamente.</p>
+ 
+<p><center><img src="images/fig5-Accommodation.png"/><figcaption>Figura 13. La clase Instalación alojativa</figcaption></center></p> 
+
+<p><center><img src="images/fig6-Place-food-establishment.png"/><figcaption>Figura 14. La clase Establecimiento de restauración</figcaption></center></p> 
+ 
+<p>La Instalación alojativa se relaciona con listas normalizadas de valores para la categoría de unidad de alojamiento, la gama de precios, el tipo de tarifa de alojamiento y ofrece servicio adicional de alojamiento. Además tiene clasificación de alojamiento.</p>
+
+<p>El Establecimiento de restauración tiene un tipo de cocina, opciones de la carta, gama de precios y ofrece servicio adicional de restauracion. Todas estas propiedades corresponden a listas normalizadas de valores.</p>
+
+<h4>Recurso turístico</h4>
+<p>Un Recurso turístico puede ser un Recurso gastronómico, Recursos histórico o cultural, Recursos natural o una Ruta tal como puede verse en la Figura 15.</p>
+ 
+<p><center><img src="images/fig8-TourismResource-tourism-resource.png"/><figcaption>Figura 15. <p>La clase Recurso turístico</figcaption></center></p> 
+
+<p>Un recurso turístico tiene reconocimiento y puede tener un perfil en redes sociales. El recurso puede tener además un canal de reserva.</p>
+    
+<p>En la Figura 16 se presentan los atributos de la clase principal y los atributos y relaciones de sus subclases.</p>
+ 
+<p><center><img src="images/fig8-TourismResource-tourism-resource-with-datatype-properties.png"/><figcaption>Figura 16. La clase Recurso turístico y sus subclases con atributos y relaciones</figcaption></center></p> 
+
+<p>Las clases Recurso hisórico o cultural, Recurso natural y Ruta tienen un método de pago, una unidad de viaje,  y ofrece un servicio adicional de recurso turístico. En particular, el Recurso hisórico o cultural ofrece servicio adicional del recurso histórico o cultural.</p> 
+    
+<p>La conceptualización de la Ruta se ilustra en la Figura 17.</p>
+ 
+<p><center><img src="images/fig8-TourismResource-route.png"/><figcaption>Figura 17. La clase Ruta</figcaption></center></p> 
+
+<h4>Destino turístico</h4>
+<p>Un Destino turístico tiene varias relaciones como se ilustra en la Figura 18.</p>
+ 
+<p><center><img src="images/fig9-TourismDestination.png"/><figcaption>Figura 18. La clase Destino turístico</figcaption></center></p> 
+
+<p>Un Destino turístico tiene reconocimiento. También puede tener un perfil en redes sociales y tiene reglas y consejos.</p>
+    
+<p>Adicionalmente, puede tener un tipo de destino (por ejemplo, “destino de costa”), ofrece servicio de destino turístico (por ejemplo, “tarjeta turística”) y se relaciona con determinados tipo de turista. Estas relaciones corresponden a listas normalizadas de valores.</p>
+
+<h4>Evento</h4>
+<p>Un Evento tiene relaciones con otros conceptos y con listas normalizadas de valores tal como se representa en la Figura 19.</p>
+  
+<p><center><img src="images/fig7-Event-event-with-relations-dp.png"/><figcaption>Figura 19. <p>La clase Evento</figcaption></center></p> 
+
+<p>Un Evento tiene agenda asociada. La agenda tiene un sub evento y un evento puede tener un super evento. El Evento tiene especificación de precio y tiene una programación del evento. El evento tiene reconocimiento, tiene punto de contacto y un punto de interés de referencia que es un Lugar.</p>
+    
+<p>Adicionalmente, puede tener un tipo de evento (por ejemplo, “Evento artístico”), ofrece servicio adicional de evento (por ejemplo “Catering”), asiste cierto tipo de turista, se realiza en al menos un idioma disponible y tiene una unidad de viaje. Estas relaciones corresponden a listas normalizadas de valores.</p>
+
+<h4>Servicio Público</h4>
+<p>Un servicio público puede ser de varios tipos tal como se ilustra en la Figura 20.</p>
+ 
+<p><center><img src="images/fig10-PublicService.png"/><figcaption>Figura 20. La clase Servicio público</figcaption></center></p> 
+
+<h4>Infraestructura de transporte</h4>
+<p>Existen varios tipos de Infraestructura de transporte. Algunos están ejemplificados en la Figura 21 tales como Aeropuerto, Sistema de bicicleta compartidas, Aparcamiento, Carril bici, Parada de transporte público o Estación de tren.</p>
+
+<p><center><img src="images/fig12-TransportInfrastructure.png"/><figcaption>Figura 21. La clase Infraestructura de transporte</figcaption></center></p> 
+
+<p>La Infraestructura de transporte ofrece servicio adicional de la infraestructura de transporte que es una lista normalizada de valores (por ejemplo, “Parking”). Asimismo, el Aparcamiento ofrece servicio adicional del aparcamiento. La Parada de transporte público tiene un tipo de estación.</p> 
+    
+<p>Tanto el Aparcamiento como el Sistema de bicicleta compartidas tiene especificación del precio.</p> 
+
+<h4>Oferta especial</h4>
+<p>Las relaciones de la clase Oferta especial pueden verse en la Figura 22.</p> 
+
+<p><center><img src="images/fig11-SpecialOffer.png"/><figcaption>Figura 22. La clase Oferta especial</figcaption></center></p>
+
+<p>La Oferta especial tiene especificación del precio, unidad de viaje, y tiene programación de la oferta. También puede corresponder a un tipo de turista el cual es una lista normalizada de valores.</p>
+    
+<h4>Lugar</h4>
+<p>La Figura 23 ilustra las relaciones de la clase Lugar.</p>
+ 
+<p><center><img src="images/fig6-Place-place-with-relation.png"/><figcaption>Figura 23. La clase Lugar y sus relaciones</figcaption></center></p>
+
+<p>Un Lugar está relacionado con una Entidad turística. El Lugar tiene horario de apertura, tiene punto de contacto  y tiene información adicional.</p> 
+    
+<h4>Entidad turística</h4> 
+<p>La Entidad turística tiene relaciones con varias clases de identificación del negocio tal como se ilustra en la Figura 24.</p>
+ 
+<p><center><img src="images/fig1-General-tourism-entity-identifying-business-classes.png"/><figcaption>Figura 24. Relación de Entidad turística con clases de identificación del negocio</figcaption></center></p>
+
+<p>Una Entidad turística tiene información adicional. La clase  Información adicional permite proporcionar  detalles, datos o explicaciones adicionales que complementan o amplían la información principal proporcionada. Es información extra que puede proporcionar aclaraciones, contexto o detalles específicos sobre un tema determinado. La información adicional puede incluir alguna pregunta frecuente. La Pregunta frecuente es una clase que representa preguntas frecuentes y sus respuestas.</p>
+
+<p>Una Entidad turística tiene multimedia. La clase Multimedia representa contenido visual o interactivo utilizados para captar la atención del usuario, transmitir información de manera más visual y atractiva, y proporcionar una experiencia interactiva. Adicionalmente tiene descripción. La Descripción proporciona información concisa y resumida sobre un elemento específico, como un producto, servicio o entidad. Este bloque suele contener detalles clave y destacados que describen las características principales, funciones, beneficios o aspectos destacados del elemento en cuestión.</p>
+
+<p>Otras clases de identificación del negocio se representan en la Figura 25.</p>
+
+<p><center><img src="images/fig1-General-other-identifying-business-classes.png"/><figcaption>Figura 25. Clases de identificación del negocio: Descripción, Especificación de precio, Programación</figcaption></center></p>
+
+
+
+
+    
+
+    
+    
+    
+<!--<p>Hay un conjunto de propiedades que son aplicables a las instancias de estos tres conceptos:</p>
 
 <ul>
 <li>Propiedades relacionadas con sus descripciones más detalladas o recursos multimedia adicionales (hasDescription, hasAdditionalInformation, hasMultimedia).<br></li>
@@ -19,14 +239,13 @@ Figura 1. Modelo conceptual general, representando Organizaciones, Servicios Tur
 <p>Todas estas propiedades tienen como rango un concepto específico para cada una de ellas, con sus propiedades correspondientes.</p>
 
 <p>A continuación se ofrecerán más detalles sobre algunos de estos conceptos (Organización, Servicio turístico y Recurso turístico) y sus jerarquías, así como ejemplos en RDF asociados a una organización, un servicio turístico y un recurso turístico imaginarios.</p>
+-->
 
-<p>Comenzando con las organizaciones, estas están clasificadas, tal y como se muestra en la figura 2, en siete clases principales: organizaciones que ofrecen servicios de <a href="#Accommodation">Alojamiento</a>, <a href="#PassengerTransportCompany">Compañías de transporte de pasajeros</a>, organizaciones que ofrecen <a href="#RestaurantService">Servicios de restauración</a>, <a href="#TourGuide">Guías turísticos</a>, <a href="#TouristIntermediary">Intermediarios turísticos</a> y <a href="#EventOrganisationCompany">Empresas de organización de eventos</a> y <a href="#ComplementaryActivitiesCompany">Empresas de actividades complementarias</a>. Tanto las compañías de transporte de pasajeros como los intermediarios turísticos están subclasificados en otros conceptos, como también se puede ver en la figura 2.</p>  
+<!--<p>Comenzando con las organizaciones, estas están clasificadas, tal y como se muestra en la figura 2, en siete clases principales: organizaciones que ofrecen servicios de <a href="#Accommodation">Alojamiento</a>, <a href="#PassengerTransportCompany">Compañías de transporte de pasajeros</a>, organizaciones que ofrecen <a href="#RestaurantService">Servicios de restauración</a>, <a href="#TourGuide">Guías turísticos</a>, <a href="#TouristIntermediary">Intermediarios turísticos</a> y <a href="#EventOrganisationCompany">Empresas de organización de eventos</a> y <a href="#ComplementaryActivitiesCompany">Empresas de actividades complementarias</a>. Tanto las compañías de transporte de pasajeros como los intermediarios turísticos están subclasificados en otros conceptos, como también se puede ver en la figura 2.</p>  
 
-<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figura 2. Clasificación de Organizaciones.</figcaption></center></p>
+<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figura 2. Clasificación de Organizaciones.</figcaption></center></p>-->
 
-<!--<p>Para algunos de estos conceptos son aplicables algunas propiedades específicas. Por ejemplo, una <a href="#Airline">Aerolínea</a> está relacionada con los <a href="#Airplane">Aviones</a> que posee, las clases de pasaje que ofrece (expresadas en un tesauro <a href="https://ontologia.segittur.es/turismo/kos/TravellerClass">estur-kos:TravellerClass</a>) y los servicios adicionales relacionados con aerolíneas que ofrece (también expresadas en el tesauro <a href="https://ontologia.segittur.es/turismo/kos/AirlineServiceType">estur-kos:AirlineServiceType</a>).</p> -->
-
-<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe a una empresa <a href="#BusOperator">operadora de autobuses</a>, que ofrece como servicio adicional la posibilidad de llevar equipaje adicional. La empresa está localizada en el municipio de Galapagar, en Madrid, tiene una certificación UNE 170001, varios perfiles en redes sociales, y un canal de reservas online. El resto de propiedades aplicables a una organización como esta se rellenarían de manera similar.</p>
+<!--<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe a una empresa <a href="#BusOperator">operadora de autobuses</a>, que ofrece como servicio adicional la posibilidad de llevar equipaje adicional. La empresa está localizada en el municipio de Galapagar, en Madrid, tiene una certificación UNE 170001, varios perfiles en redes sociales, y un canal de reservas online. El resto de propiedades aplicables a una organización como esta se rellenarían de manera similar.</p>
 
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="25" cols="100">
 @prefix ex: &lt;http://example.org/recurso/&gt; .
@@ -257,36 +476,6 @@ ex:Event1Session1 a estur:Event ;
       });
  </script>
 -->    
-<!--<p>Finalmente, añadimos un ejemplo relacionado con una <a href="#Person">Persona</a>, mujer de 47 años procedente de una ciudad en Alemania, que viaja como <a href="#Tourist">Turista</a> en avión y en coche de alquiler, como parte de un paquete turístico, representando varias de sus características de acuerdo con el modelo conceptual presentado en la figura 8.</p>
 
-<p><center><img src="images/fig8-Persons.png"/><figcaption>Figura 8. Modelo conceptual de las Personas y sus Roles.</figcaption></center></p>
-
-<pre><textarea style="resize:none" readonly id="code6" name="code" rows="25" cols="100">
-@prefix estur-meansoftransport: &lt;https://ontologia.segittur.es/turismo/kos/meansoftransport/&gt; .
-@prefix estur-educationlevel: &lt;https://ontologia.segittur.es/turismo/kos/educationlevel/&gt; .
-@prefix estur-professionalposition: &lt;https://ontologia.segittur.es/turismo/kos/professionalposition/&gt; .
-
-ex:Person1 a estur:Person ;
-  rdfs:label "Persona 1" ;
-  estur:age "47"^^xsd:int ;
-  estur:gender Woman ;
-  estur:originLocation ex:Location2 ;
-  estur:educationalLevel estur-educationlevel:University ;
-  estur:professionalPosition estur-professionalposition:SelfEmployed ;
-  estur:hasPersonRole ex:TouristRole1 .
-  
-ex:TouristRole1 a estur:Tourist ;
-  rdfs:label "Rol de la persona 1 como turista" ;
-  estur:hiresTourPackage "true"^^xsd:boolean;
-  estur:meansOfTransport estur-meansoftransport:Plane, estur-meansoftransport:RentalCar ;
-  estur:averageDailyExpenditure "300"^^xsd:float .
-</textarea></pre>
-    <script>
-      var editor6 = CodeMirror.fromTextArea(document.getElementById("code6"), {
-        mode: "text/turtle",
-        matchBrackets: true
-      });
- </script>
--->    
 </span>
 

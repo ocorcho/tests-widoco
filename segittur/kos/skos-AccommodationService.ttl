@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:AccommodationServiceType a skos:ConceptScheme ; 
+estur-kos:AccommodationService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Accommodation Service Type"@en ;
-    rdfs:label "Tipo de servicio de alojamiento"@es ;
-    dct:title "Concept scheme grouping accommodation service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de alojamiento"@es .
+    rdfs:label "Accommodation service"@en ;
+    rdfs:label "Servicio de alojamiento"@es ;
+    dct:title "Concept scheme grouping accommodation services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de alojamiento"@es .
 
 #################################################################
 #
@@ -34,107 +34,276 @@ estur-kos:AccommodationServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-accommodationservice:Arcade a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Arcade"@en ;
   skos:prefLabel "Arcade"@es .
 
 estur-accommodationservice:Bar a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Bar"@en ;
   skos:prefLabel "Bar"@es .
 
 estur-accommodationservice:BasketballCourt a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Basketball Court"@en ;
+  skos:prefLabel "Basketball court"@en ;
   skos:prefLabel "Cancha de baloncesto"@es .
 
-estur-accommodationservice:Event a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+estur-accommodationservice:EventVenue a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Event"@en ;
-  skos:prefLabel "Evento"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-accommodationservice:FootballField a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Football Field"@en ;
+  skos:prefLabel "Football field"@en ;
   skos:prefLabel "Campo de fútbol"@es .
 
 estur-accommodationservice:GolfCourse a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Golf Course"@en ;
+  skos:prefLabel "Golf course"@en ;
   skos:prefLabel "Campo de golf"@es .
 
 estur-accommodationservice:Gym a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Gym"@en ;
   skos:prefLabel "Gimnasio"@es .
 
 estur-accommodationservice:LuggageStorage a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Luggage Storage"@en ;
+  skos:prefLabel "Luggage storage"@en ;
   skos:prefLabel "Almacenamiento de equipaje"@es .
 
 estur-accommodationservice:PaddleCourt a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Paddle Court"@en ;
+  skos:prefLabel "Paddle court"@en ;
   skos:prefLabel "Pista de paddle"@es .
 
 estur-accommodationservice:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Parking facility"@en ;
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-accommodationservice:Pool a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Pool"@en ;
   skos:prefLabel "Piscina"@es .
 
 estur-accommodationservice:Restaurant a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Restaurant"@en ;
   skos:prefLabel "Restaurante"@es .
 
 estur-accommodationservice:Spa a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Spa"@en ;
   skos:prefLabel "Spa"@es .
 
 estur-accommodationservice:TennisCourt a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Tennis Court"@en ;
+  skos:prefLabel "Tennis court"@en ;
   skos:prefLabel "Pista de tenis"@es .
 
 estur-accommodationservice:Transport a skos:Concept;
-  skos:inScheme estur-kos:AccommodationServiceType;
+  skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Transport"@en ;
   skos:prefLabel "Transporte"@es .
 
+estur-accommodationservice:Babysitter a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Babysitter"@en ;
+  skos:prefLabel "Niñera"@es .
+
+estur-accommodationservice:Banquet a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Banquet"@en ;
+  skos:prefLabel "Banquete"@es .
+
+estur-accommodationservice:BeautySalon a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Beauty salon"@en ;
+  skos:prefLabel "Salón de belleza"@es .
+
+estur-accommodationservice:Buffet a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Buffet"@en ;
+  skos:prefLabel "Buffé"@es .
+
+estur-accommodationservice:ChildrenGames a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Children games"@en ;
+  skos:prefLabel "Juegos infantiles"@es .
+
+estur-accommodationservice:CurrencyExchange a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Currency exchange"@en ;
+  skos:prefLabel "Cambio de divisas"@es .
+
+estur-accommodationservice:DryCleaning a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Dry cleaning"@en ;
+  skos:prefLabel "Tintorería"@es .
+
+estur-accommodationservice:ExtraBed a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Extra bed"@en ;
+  skos:prefLabel "Cama extra"@es .
+
+estur-accommodationservice:Infirmary a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Infirmary"@en ;
+  skos:prefLabel "Enfermería"@es .
+
+estur-accommodationservice:Reception a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Reception"@en ;
+  skos:prefLabel "Recepción"@es .
+
+estur-accommodationservice:IroningKit a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Ironing kit"@en ;
+  skos:prefLabel "Kit plancha"@es .
+
+estur-accommodationservice:Jacuzzi a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Jacuzzi"@en ;
+  skos:prefLabel "Jacuzzi"@es .
+
+estur-accommodationservice:Kitchen a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Kitchen"@en ;
+  skos:prefLabel "Cocina"@es .
+
+estur-accommodationservice:Laundry a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Laundry"@en ;
+  skos:prefLabel "Lavandería"@es .
+
+estur-accommodationservice:Microwave a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Microwave"@en ;
+  skos:prefLabel "Microondas"@es .
+
+estur-accommodationservice:LateCheckOut a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Late checkout"@en ;
+  skos:prefLabel "Salida tardía"@es .
+
+estur-accommodationservice:RentByTheHour a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Rent by the hour"@en ;
+  skos:prefLabel "Alquiler por horas"@es .
+
+estur-accommodationservice:Sauna a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Sauna"@en ;
+  skos:prefLabel "Sauna"@es .
+
+estur-accommodationservice:Balcony a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Balcony"@en ;
+  skos:prefLabel "Balcón"@es .
+
+estur-accommodationservice:TowelRental a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Towel rental"@en ;
+  skos:prefLabel "Alquiler de toallas"@es .
+
+estur-accommodationservice:ValetParking a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Valet parking"@en ;
+  skos:prefLabel "Aparcacoches"@es .
+
+estur-accommodationservice:AirConditioning a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Air conditioning"@en ;
+  skos:prefLabel "Aire acondicionado"@es .
+
+estur-accommodationservice:Amenities a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Amenities"@en ;
+  skos:prefLabel "Productos de acogida"@es .
+
+estur-accommodationservice:CoffeeMachine a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Coffee machine"@en ;
+  skos:prefLabel "Cafetera"@es .
+
+estur-accommodationservice:Cradle a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Cradle"@en ;
+  skos:prefLabel "Cuna"@es .
+
+estur-accommodationservice:Dryer a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Dryer"@en ;
+  skos:prefLabel "Secador"@es .
+
+estur-accommodationservice:Heating a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Heating"@en ;
+  skos:prefLabel "Calefacción"@es .
+
+estur-accommodationservice:Minibar a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Minibar"@en ;
+  skos:prefLabel "Minibar"@es .
+
+estur-accommodationservice:RoomService a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Room service"@en ;
+  skos:prefLabel "Servicio de habitaciones"@es .
+
+estur-accommodationservice:SafetyBox a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Safety box"@en ;
+  skos:prefLabel "Caja fuerte"@es .
+
+estur-accommodationservice:SmokingRooms a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Smoking rooms"@en ;
+  skos:prefLabel "Habitaciones para fumadores"@es .
+
+estur-accommodationservice:Telephone a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Telephone"@en ;
+  skos:prefLabel "Teléfono"@es .
+
+estur-accommodationservice:TV a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "TV"@en ;
+  skos:prefLabel "Televisión"@es .
+
+estur-accommodationservice:WiredInternet a skos:Concept;
+  skos:inScheme estur-kos:AccommodationService;
+  skos:prefLabel "Wired Internet"@en ;
+  skos:prefLabel "Internet por cable"@es .

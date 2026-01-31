@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-leisureandculturefacilityservice: <https://ontologia.segittur.es/turismo/kos/leisureandculturefacilityservice/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:LeisureAndCultureFacilityService a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Leisure and culture facility service"@en ;
+    rdfs:label "Servicio de instalación de ocio y cultura"@es ;
+    dct:title "Concept scheme grouping leisure and culture facility services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de instalaciones de ocio y cultura"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-leisureandculturefacilityservice:Audioguide a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Audioguide"@en ;
+  skos:prefLabel "Audioguía"@es .
+
+estur-leisureandculturefacilityservice:AugmentedReality a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Augmented reality"@en ;
+  skos:prefLabel "Realidad aumentada"@es .
+
+estur-leisureandculturefacilityservice:VirtualReality a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Virtual reality"@en ;
+  skos:prefLabel "Realidad virtual"@es .
+
+estur-leisureandculturefacilityservice:Audiodescription a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Audiodescription"@en ;
+  skos:prefLabel "Audiodescripción"@es .
+
+estur-leisureandculturefacilityservice:ChildrenGames a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Children games"@en ;
+  skos:prefLabel "Juegos infantiles"@es .
+
+estur-leisureandculturefacilityservice:CloakRoom a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Cloak room"@en ;
+  skos:prefLabel "Guardarropa"@es .
+
+estur-leisureandculturefacilityservice:EventVenue a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
+
+estur-leisureandculturefacilityservice:FastLane a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Fast lane"@en ;
+  skos:prefLabel "Acceso prioritario"@es .
+
+estur-leisureandculturefacilityservice:Gamification a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Gamification"@en ;
+  skos:prefLabel "Gamificación"@es .
+
+estur-leisureandculturefacilityservice:Shop a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:prefLabel "Shop"@en ;
+  skos:prefLabel "Tienda"@es .
+
+estur-leisureandculturefacilityservice:Cafeteria a skos:Concept;
+  skos:inScheme estur-kos:LeisureAndCultureFacilityService;
+  skos:prefLabel "Cafeteria"@en ;
+  skos:prefLabel "Cafetería"@es .
+
+
+
+

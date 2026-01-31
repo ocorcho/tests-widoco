@@ -16,9 +16,9 @@
 #
 #################################################################
 
-estur-kos:ExperienceRelatedProductType a skos:ConceptScheme ; 
+estur-kos:ExperienceRelatedProduct a skos:ConceptScheme ; 
     dct:issued "2025-08-18"^^xsd:date ;
-    dct:modified "2025-08-18"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -34,101 +34,101 @@ estur-kos:ExperienceRelatedProductType a skos:ConceptScheme ;
 #################################################################
 
 estur-experiencerelatedproduct:Oil a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Oil"@en ;
   skos:prefLabel "Aceite"@es .
 
 estur-experiencerelatedproduct:Almond a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Almond"@en ;
   skos:prefLabel "Almendra"@es .
 
 estur-experiencerelatedproduct:Handicraft a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Handicraft"@en ;
   skos:prefLabel "Artesanía"@es .
 
 estur-experiencerelatedproduct:Meat a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Meat"@en ;
   skos:prefLabel "Cárnico"@es .
 
 estur-experiencerelatedproduct:Beer a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Beer"@en ;
   skos:prefLabel "Cerveza"@es .
 
 estur-experiencerelatedproduct:Preserve a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Preserve"@en ;
   skos:prefLabel "Conserva"@es .
 
 estur-experiencerelatedproduct:Sweet a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Sweet"@en ;
   skos:prefLabel "Dulce"@es .
 
 estur-experiencerelatedproduct:Fruit a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Fruit"@en ;
   skos:prefLabel "Fruta"@es .
 
 estur-experiencerelatedproduct:Nut a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Nut"@en ;
   skos:prefLabel "Fruto seco"@es .
 
 estur-experiencerelatedproduct:Vegetable a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Vegetable"@en ;
   skos:prefLabel "Hortaliza"@es .
 
 estur-experiencerelatedproduct:Ham a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Ham"@en ;
   skos:prefLabel "Jamón"@es .
 
 estur-experiencerelatedproduct:Seafood a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Seafood"@en ;
   skos:prefLabel "Marisco"@es .
 
 estur-experiencerelatedproduct:Honey a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Honey"@en ;
   skos:prefLabel "Miel"@es .
 
 estur-experiencerelatedproduct:Bread a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Bread"@en ;
   skos:prefLabel "Pan"@es .
 
 estur-experiencerelatedproduct:Fish a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Fish"@en ;
   skos:prefLabel "Pescado"@es .
 
 estur-experiencerelatedproduct:Cheese a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Cheese"@en ;
   skos:prefLabel "Queso"@es .
 
 estur-experiencerelatedproduct:Mushroom a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Mushroom"@en ;
   skos:prefLabel "Seta"@es .
 
 estur-experiencerelatedproduct:Cider a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Cider"@en ;
   skos:prefLabel "Sidra"@es .
 
 estur-experiencerelatedproduct:Truffle a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Truffle"@en ;
   skos:prefLabel "Trufa"@es .
 
 estur-experiencerelatedproduct:Wine a skos:Concept;
-  skos:inScheme estur-kos:ExperienceRelatedProductType;
+  skos:inScheme estur-kos:ExperienceRelatedProduct;
   skos:prefLabel "Wine"@en ;
   skos:prefLabel "Vino"@es .

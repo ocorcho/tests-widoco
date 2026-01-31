@@ -18,7 +18,7 @@
 
 estur-kos:TouristType a skos:ConceptScheme ; 
     dct:issued "2025-08-18"^^xsd:date ;
-    dct:modified "2025-08-18"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -137,3 +137,8 @@ estur-touristtype:UrbanTourism a skos:Concept;
   skos:inScheme estur-kos:TouristType;
   skos:prefLabel "Urban tourism"@en ;
   skos:prefLabel "Turismo urbano"@es .
+
+estur-touristtype:EventsAndFestivalsTourism a skos:Concept;
+  skos:inScheme estur-kos:TouristType;
+  skos:prefLabel "Events and festivals tourism"@en ;
+  skos:prefLabel "Turismo de eventos y festivales"@es .

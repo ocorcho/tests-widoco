@@ -18,7 +18,7 @@
 
 estur-kos:LabelType a skos:ConceptScheme ; 
     dct:issued "2025-07-16"^^xsd:date ;
-    dct:modified "2025-07-16"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -47,23 +47,22 @@ estur-labeltype:TaxFree a skos:Concept;
   skos:inScheme estur-kos:LabelType;
   skos:note "This concept is only applicable to shops"@en;
   skos:note "Este concepto es sólo aplicable a comercios"@es;
-  skos:prefLabel "Tax Free"@en ;
+  skos:prefLabel "Tax free"@en ;
   skos:prefLabel "Libre de impuestos"@es .
+
+estur-labeltype:EarlyTaxRefund a skos:Concept;
+  skos:inScheme estur-kos:LabelType;
+  skos:prefLabel "Early tax refund"@en ;
+  skos:prefLabel "Devolución anticipada del IVA"@es .
 
 estur-labeltype:KidsFriendly a skos:Concept;
   skos:inScheme estur-kos:LabelType;
-  skos:prefLabel "Kids Friendly"@en ;
+  skos:prefLabel "Kids friendly"@en ;
   skos:prefLabel "Apto para niños"@es .
 
 estur-labeltype:AdultsOnly a skos:Concept;
   skos:inScheme estur-kos:LabelType;
-  skos:prefLabel "Adults Only"@en ;
+  skos:prefLabel "Adults only"@en ;
   skos:prefLabel "Sólo para adultos"@es .
-
-estur-labeltype:EnvironmentallyFriendly a skos:Concept;
-  skos:inScheme estur-kos:LabelType;
-  skos:prefLabel "Environmentally Friendly"@en ;
-  skos:prefLabel "Respetuoso con el medio ambiente"@es .
-
 
 

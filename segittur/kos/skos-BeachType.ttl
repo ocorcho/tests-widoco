@@ -22,7 +22,7 @@ estur-kos:BeachType a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Beach Type"@en ;
+    rdfs:label "Beach type"@en ;
     rdfs:label "Tipo de playa"@es ;
     dct:title "Concept scheme grouping beach types"@en ;
     dct:title "Esquema de conceptos agrupando tipos de playas"@es .
@@ -86,7 +86,7 @@ estur-beachtype:whiteSand a skos:Concept;
   skos:inScheme estur-kos:BeachType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "White Sand"@en ;
+  skos:prefLabel "White sand"@en ;
   skos:prefLabel "Arena blanca"@es .
 
 estur-beachtype:urbanised a skos:Concept;

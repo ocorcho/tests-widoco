@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-transportservice: <https://ontologia.segittur.es/turismo/kos/transportservice/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TransportService a skos:ConceptScheme ; 
+    dct:issued "2026-01-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Transport service"@en ;
+    rdfs:label "Servicio de transporte"@es ;
+    dct:title "Concept scheme grouping transport services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de transporte"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-transportservice:BabySeat a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Baby seat"@en ;
+  skos:prefLabel "Silla infantil"@es .
+
+estur-transportservice:ChargingPlug a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Charging plug"@en ;
+  skos:prefLabel "Enchufe de carga"@es .
+
+estur-transportservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Wifi"@en ;
+  skos:prefLabel "Wifi"@es .
+
+estur-transportservice:Bathrooms a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Bathrooms"@en ;
+  skos:prefLabel "Baño"@es .
+
+estur-transportservice:AirConditioning a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Air conditioning"@en ;
+  skos:prefLabel "Aire acondicionado"@es .
+
+estur-transportservice:AdditionalLuggage a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Additional luggage"@en ;
+  skos:prefLabel "Equipaje adicional"@es .
+
+estur-transportservice:UnaccompaniedChildService a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Unaccompanied child service"@en ;
+  skos:prefLabel "Servicio para menores no acompañados"@es .
+
+estur-transportservice:PetTransport a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Pet transport"@en ;
+  skos:prefLabel "Transporte de mascotas"@es .

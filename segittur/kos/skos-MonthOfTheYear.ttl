@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-monthoftheyear: <https://ontologia.segittur.es/turismo/kos/monthoftheyear/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:MonthOfTheYear a skos:ConceptScheme ; 
+    dct:issued "2026-01-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Month of the year"@en ;
+    rdfs:label "Mes del año"@es ;
+    dct:title "Concept scheme grouping months of the year"@en ;
+    dct:title "Esquema de conceptos agrupando meses del año"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-monthoftheyear:January a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "January"@en ;
+  skos:prefLabel "Enero"@es .
+
+estur-monthoftheyear:February a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "February"@en ;
+  skos:prefLabel "Febrero"@es .
+
+estur-monthoftheyear:March a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "March"@en ;
+  skos:prefLabel "Marzo"@es .
+
+estur-monthoftheyear:April a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "April"@en ;
+  skos:prefLabel "Abril"@es .
+
+estur-monthoftheyear:May a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "May"@en ;
+  skos:prefLabel "Mayo"@es .
+
+estur-monthoftheyear:June a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "June"@en ;
+  skos:prefLabel "Junio"@es .
+
+estur-monthoftheyear:July a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "July"@en ;
+  skos:prefLabel "Julio"@es .
+
+estur-monthoftheyear:August a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "August"@en ;
+  skos:prefLabel "Agosto"@es .
+
+estur-monthoftheyear:September a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "September"@en ;
+  skos:prefLabel "Septiembre"@es .
+
+estur-monthoftheyear:October a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "October"@en ;
+  skos:prefLabel "Octubre"@es .
+
+estur-monthoftheyear:November a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "November"@en ;
+  skos:prefLabel "Noviembre"@es .
+
+estur-monthoftheyear:December a skos:Concept;
+  skos:inScheme estur-kos:MonthOfTheYear;
+  skos:prefLabel "December"@en ;
+  skos:prefLabel "Diciembre"@es .

@@ -22,7 +22,7 @@ estur-kos:TransportInfrastructureService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport Infrastructure Service"@en ;
+    rdfs:label "Transport infrastructure service"@en ;
     rdfs:label "Servicio de infraestructura de transporte"@es ;
     dct:title "Concept scheme grouping transport infrastructure services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de infraestructura de transporte"@es .
@@ -33,40 +33,33 @@ estur-kos:TransportInfrastructureService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructureservice:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureService;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
-  skos:prefLabel "Acceso para personas de movilidad reducida"@es .
-
 estur-transportinfrastructureservice:InformationPoint a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
+  skos:prefLabel "Information point"@en ;
   skos:prefLabel "Punto de información"@es .
 
 estur-transportinfrastructureservice:ParkingFacility a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Parking facility"@en ;
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-transportinfrastructureservice:SmokingRooms a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
+  skos:prefLabel "Smoking rooms"@en ;
   skos:prefLabel "Salas para fumadores"@es .
 
-estur-transportinfrastructureservice:VipRoom a skos:Concept;
+estur-transportinfrastructureservice:VipRooms a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "VIP Room"@en ;
-  skos:prefLabel "Sala VIP"@es .
+  skos:prefLabel "VIP rooms"@en ;
+  skos:prefLabel "Salas VIP"@es .
 
 estur-transportinfrastructureservice:Wifi a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;

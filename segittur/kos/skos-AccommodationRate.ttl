@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-accommodationratetype: <https://ontologia.segittur.es/turismo/kos/accommodationratetype/> .
+@prefix estur-accommodationrate: <https://ontologia.segittur.es/turismo/kos/accommodationrate/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:AccommodationRateType a skos:ConceptScheme ; 
+estur-kos:AccommodationRate a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2025-07-16"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Accommodation rate type"@en ;
-    rdfs:label "Tipo de tarifa de alojamiento"@es ;
-    dct:title "Concept scheme grouping accommodation rate types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de tarifas de alojamiento"@es .
+    rdfs:label "Accommodation rate"@en ;
+    rdfs:label "Tarifa de alojamiento"@es ;
+    dct:title "Concept scheme grouping accommodation rates"@en ;
+    dct:title "Esquema de conceptos agrupando tarifas de alojamiento"@es .
 
 #################################################################
 #
@@ -33,36 +33,36 @@ estur-kos:AccommodationRateType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-accommodationratetype:AccommodationOnly a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRateType;
+estur-accommodationrate:AccommodationOnly a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRate;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Accommodation only"@en ;
   skos:prefLabel "Sólo alojamiento"@es .
 
-estur-accommodationratetype:AllInclusive a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRateType;
+estur-accommodationrate:AllInclusive a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRate;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "All inclusive"@en ;
   skos:prefLabel "Todo incluido"@es .
 
-estur-accommodationratetype:AccommodationWithBreakfast a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRateType;
+estur-accommodationrate:AccommodationWithBreakfast a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRate;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accommodation with Breakfast"@en ;
+  skos:prefLabel "Accommodation with breakfast"@en ;
   skos:prefLabel "Alojamiento con desayuno"@es .
 
-estur-accommodationratetype:FullBoard a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRateType;
+estur-accommodationrate:FullBoard a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRate;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Full board"@en ;
   skos:prefLabel "Pensión completa"@es .
 
-estur-accommodationratetype:HalfBoard a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRateType;
+estur-accommodationrate:HalfBoard a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRate;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Half board"@en ;

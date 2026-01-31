@@ -215,11 +215,11 @@ estur-museumtype:Painting a skos:Concept;
   skos:prefLabel "Painting"@en ;
   skos:prefLabel "Pintura"@es .
 
-estur-museumtype:Paleonthology a skos:Concept;
+estur-museumtype:Paleontology a skos:Concept;
   skos:inScheme estur-kos:MuseumType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Paleonthology"@en ;
+  skos:prefLabel "Paleontology"@en ;
   skos:prefLabel "Paleontología"@es .
 
 estur-museumtype:Parochial a skos:Concept;
@@ -233,7 +233,7 @@ estur-museumtype:PopularArtsAndTraditions a skos:Concept;
   skos:inScheme estur-kos:MuseumType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Popular Arts and Traditions"@en ;
+  skos:prefLabel "Popular arts and traditions"@en ;
   skos:prefLabel "Artes populares y tradiciones"@es .
 
 estur-museumtype:Prehistoric a skos:Concept;
@@ -303,7 +303,7 @@ estur-museumtype:ThematicMuseum a skos:Concept;
   skos:inScheme estur-kos:MuseumType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Thematic Museum"@en ;
+  skos:prefLabel "Thematic museum"@en ;
   skos:prefLabel "Museo temático"@es .
 
 estur-museumtype:Transport a skos:Concept;
@@ -326,4 +326,9 @@ estur-museumtype:Universitary a skos:Concept;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Universitary"@en ;
   skos:prefLabel "Universitario"@es .
+
+estur-museumtype:WineMuseum a skos:Concept;
+  skos:inScheme estur-kos:MuseumType;
+  skos:prefLabel "Wine museum"@en ;
+  skos:prefLabel "Museo del vino"@es .
 

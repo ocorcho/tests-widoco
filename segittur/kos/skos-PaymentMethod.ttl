@@ -35,12 +35,12 @@ estur-kos:PaymentMethod a skos:ConceptScheme ;
 
 estur-paymentmethod:BankCard a skos:Concept;
   skos:inScheme estur-kos:PaymentMethod;
-  skos:prefLabel "Bank Card"@en ;
+  skos:prefLabel "Bank card"@en ;
   skos:prefLabel "Tarjeta bancaria"@es .
 
 estur-paymentmethod:BankTransfer a skos:Concept;
   skos:inScheme estur-kos:PaymentMethod;
-  skos:prefLabel "Bank Transfer"@en ;
+  skos:prefLabel "Bank transfer"@en ;
   skos:prefLabel "Transferencia bancaria"@es .
 
 estur-paymentmethod:Bizum a skos:Concept;
@@ -55,7 +55,7 @@ estur-paymentmethod:Cash a skos:Concept;
 
 estur-paymentmethod:CheckAndPromissoryNote a skos:Concept;
   skos:inScheme estur-kos:PaymentMethod;
-  skos:prefLabel "Check and Promissory Note"@en ;
+  skos:prefLabel "Check and promissory note"@en ;
   skos:prefLabel "Cheque"@es .
 
 estur-paymentmethod:Cryptocurrency a skos:Concept;
@@ -65,7 +65,7 @@ estur-paymentmethod:Cryptocurrency a skos:Concept;
 
 estur-paymentmethod:DirectBill a skos:Concept;
   skos:inScheme estur-kos:PaymentMethod;
-  skos:prefLabel "Direct Bill"@en ;
+  skos:prefLabel "Direct bill"@en ;
   skos:prefLabel "Domiciliación bancaria"@es .
 
 estur-paymentmethod:NFC a skos:Concept;
@@ -77,4 +77,3 @@ estur-paymentmethod:Paypal a skos:Concept;
   skos:inScheme estur-kos:PaymentMethod;
   skos:prefLabel "Paypal"@en ;
   skos:prefLabel "Paypal"@es .
-

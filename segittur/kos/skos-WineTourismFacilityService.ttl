@@ -1,0 +1,145 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-winetourismfacilityservice: <https://ontologia.segittur.es/turismo/kos/winetourismfacilityservice/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:WineTourismFacilityService a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Wine tourism facility service"@en ;
+    rdfs:label "Servicio de una instalación de enoturismo"@es ;
+    dct:title "Concept scheme grouping wine tourism facility services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de una instalación de enoturismo"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-winetourismfacilityservice:Audioguide a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Audioguide"@en ;
+  skos:prefLabel "Audioguía"@es .
+
+estur-winetourismfacilityservice:AugmentedReality a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Augmented reality"@en ;
+  skos:prefLabel "Realidad aumentada"@es .
+
+estur-winetourismfacilityservice:Enoteca a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Enoteca"@en ;
+  skos:prefLabel "Enoteca"@es .
+
+estur-winetourismfacilityservice:HorizontalSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Horizontal sampling"@en ;
+  skos:prefLabel "Cata horizontal"@es .
+
+estur-winetourismfacilityservice:OnlineSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Online sampling"@en ;
+  skos:prefLabel "Cata online"@es .
+
+estur-winetourismfacilityservice:SamplingCourse a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Sampling course"@en ;
+  skos:prefLabel "Curso de cata"@es .
+
+estur-winetourismfacilityservice:TastingMenu a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Tasting menu"@en ;
+  skos:prefLabel "Menú especial"@es .
+
+estur-winetourismfacilityservice:EventVenue a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
+
+estur-winetourismfacilityservice:VerticalSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Vertical sampling"@en ;
+  skos:prefLabel "Cata vertical"@es .
+
+estur-winetourismfacilityservice:VirtualReality a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Virtual reality"@en ;
+  skos:prefLabel "Realidad virtual"@es .
+
+estur-winetourismfacilityservice:WineClub a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Wine club"@en ;
+  skos:prefLabel "Club de vinos"@es .
+
+estur-winetourismfacilityservice:WineSpa a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Wine spa"@en ;
+  skos:prefLabel "Spa de vino"@es .
+
+estur-winetourismfacilityservice:SaleOfProducts a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Sale of products"@en ;
+  skos:prefLabel "Venta de productos"@es .
+
+estur-winetourismfacilityservice:WineBar a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Wine bar"@en ;
+  skos:prefLabel "Bar de vinos"@es .
+
+estur-winetourismfacilityservice:BlindSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Blind sampling"@en ;
+  skos:prefLabel "Cata a ciegas"@es .
+
+estur-winetourismfacilityservice:VarietalSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Varietal sampling"@en ;
+  skos:prefLabel "Cata varietal"@es .
+
+estur-winetourismfacilityservice:AmpelographicGarden a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Ampelographic garden"@en ;
+  skos:prefLabel "Jardín ampelográfico"@es .

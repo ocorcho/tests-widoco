@@ -22,7 +22,7 @@ estur-kos:SportsCentrePremise a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Sports Centre Premise"@en ;
+    rdfs:label "Sports centre premise"@en ;
     rdfs:label "Instalación de polideportivo"@es ;
     dct:title "Concept scheme grouping sports centre premises"@en ;
     dct:title "Esquema de conceptos agrupando instalaciones de polideportivo"@es .
@@ -35,26 +35,26 @@ estur-kos:SportsCentrePremise a skos:ConceptScheme ;
 
 estur-sportscentrepremise:TennisCourt a skos:Concept;
   skos:inScheme estur-kos:SportsCentrePremise;
-  skos:prefLabel "Tennis Court"@en ;
+  skos:prefLabel "Tennis court"@en ;
   skos:prefLabel "Pista de tenis"@es .
 
 estur-sportscentrepremise:SwimmingPool a skos:Concept;
   skos:inScheme estur-kos:SportsCentrePremise;
-  skos:prefLabel "Swimming Pool"@en ;
+  skos:prefLabel "Swimming pool"@en ;
   skos:prefLabel "Piscina"@es .
 
 estur-sportscentrepremise:FootballField a skos:Concept;
   skos:inScheme estur-kos:SportsCentrePremise;
-  skos:prefLabel "Football Field"@en ;
+  skos:prefLabel "Football field"@en ;
   skos:prefLabel "Campo de fútbol"@es .
 
 estur-sportscentrepremise:PaddleCourt a skos:Concept;
   skos:inScheme estur-kos:SportsCentrePremise;
-  skos:prefLabel "Paddle Court"@en ;
+  skos:prefLabel "Paddle court"@en ;
   skos:prefLabel "Pista de pádel"@es .
 
 estur-sportscentrepremise:RunningTrack a skos:Concept;
   skos:inScheme estur-kos:SportsCentrePremise;
-  skos:prefLabel "Running Track"@en ;
+  skos:prefLabel "Running track"@en ;
   skos:prefLabel "Pista de atletismo"@es .
 

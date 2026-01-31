@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-partyandentertainmentfacilityservice: <https://ontologia.segittur.es/turismo/kos/partyandentertainmentfacilityservice/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:PartyAndEntertainmentFacilityService a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Party and entertainment facility service"@en ;
+    rdfs:label "Servicio de una instalación de fiesta y entretenimiento"@es ;
+    dct:title "Concept scheme grouping party and entertainment facility services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de instalaciones de fiesta y entretenimiento"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+estur-partyandentertainmentfacilityservice:CloackRoom a skos:Concept;
+  skos:inScheme estur-kos:PartyAndEntertainmentFacilityService;
+  skos:prefLabel "Cloack room"@en ;
+  skos:prefLabel "Guardarropa"@es .
+
+estur-partyandentertainmentfacilityservice:OutdoorTables a skos:Concept;
+  skos:inScheme estur-kos:PartyAndEntertainmentFacilityService;
+  skos:prefLabel "Outdoor tables"@en ;
+  skos:prefLabel "Mesas exteriores"@es .
+
+estur-partyandentertainmentfacilityservice:Venue a skos:Concept;
+  skos:inScheme estur-kos:PartyAndEntertainmentFacilityService;
+  skos:prefLabel "Venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
+
+estur-partyandentertainmentfacilityservice:VIPRoom a skos:Concept;
+  skos:inScheme estur-kos:PartyAndEntertainmentFacilityService;
+  skos:prefLabel "VIP room"@en ;
+  skos:prefLabel "Sala VIP"@es .
+
+
+
